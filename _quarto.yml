@@ -2,10 +2,14 @@ project:
   type: website
 
 website:
-  title: "all posts"
+  title: "tous les posts"
+  site-url: https://oskar31415.quarto.pub
+  description: "blog de osk42"
   navbar:
     right:
       - about.qmd
+      - icon: rss
+        href: index.xml
       - icon: github
         href: https://github.com/OsKaR31415
       - icon: youtube

@@ -1,16 +1,12 @@
 ---
 title: "Bienvenue sur mon blog"
 author: "Oscar Plaisant"
-date: "2022-12-30"
+date: "2023-01-02"
 categories: [news]
-image: "Bienvenue.excalidraw.png"
+image: "_images/Bienvenue.excalidraw.png"
 ---
 
 J'ai enfin pris le temps de créer mon blog !
-
-Maintenant je peux poster des images chliché de productivité !
-
-![](thumbnail.jpg)
 
 Il est fait avec [quarto](https://quarto.org), qui permet de générer des pages à partir de markdown, et avec des inclusions de code (style jupyter notebook) exécutées quand on recharge le blog.
 

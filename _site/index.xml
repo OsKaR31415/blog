@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>tous les posts</title>
+<link>https://oskar31415.quarto.pub/index.html</link>
+<atom:link href="https://oskar31415.quarto.pub/index.xml" rel="self" type="application/rss+xml"/>
+<description>blog de osk42</description>
+<generator>quarto-1.2.280</generator>
+<lastBuildDate>Sun, 01 Jan 2023 23:00:00 GMT</lastBuildDate>
+<item>
+  <title>Bienvenue sur mon blog</title>
+  <dc:creator>Oscar Plaisant</dc:creator>
+  <link>https://oskar31415.quarto.pub/posts/welcome/bienvenue sur mon blog.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>J’ai enfin pris le temps de créer mon blog !</p>
+<p>Il est fait avec <a href="https://quarto.org">quarto</a>, qui permet de générer des pages à partir de markdown, et avec des inclusions de code (style jupyter notebook) exécutées quand on recharge le blog.</p>
+<p>Bien sûr, il y à aussi toutes les fonctionnalités de base du markdown (sections, références, <img src="https://latex.codecogs.com/png.latex?%5CLaTeX">…) et quelques fonctionnalités supplémentaires intéressantes.</p>
+
+
+
+ ]]></description>
+  <category>news</category>
+  <guid>https://oskar31415.quarto.pub/posts/welcome/bienvenue sur mon blog.html</guid>
+  <pubDate>Sun, 01 Jan 2023 23:00:00 GMT</pubDate>
+  <media:content url="https://oskar31415.quarto.pub/posts/welcome/_images/Bienvenue.excalidraw.png" medium="image" type="image/png" height="94" width="144"/>
+</item>
+<item>
+  <title>Pourquoi ce blog</title>
+  <link>https://oskar31415.quarto.pub/posts/welcome/Pourquoi ce blog.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Ce blog me permettra de partager des explications de certains sujets, et des idées personnelles.</p>
+<ul>
+<li>Des explications sur divers concepts de mathématiques ou d’informatique (pour aider les gens que je connais)</li>
+<li>Des réflexions que je souhaite partager</li>
+<li>N’importe quoi que j’ai découvert et que je trouve intéressant</li>
+</ul>
+<section id="le-nom-du-blog" class="level1">
+<h1>Le nom du blog</h1>
+<p>Le Blog s’appelle <code>OSK42</code>, à la fois en référence au nombre 42, la réponse à la “<a href="https://fr.wikipedia.org/wiki/La_grande_question_sur_la_vie,_l%27Univers_et_le_reste">grande question sur la vie, l’univers et le reste</a>”, et car <code>OSK42</code> est une écriture de <code>OSKAR</code> (mon pseudo) en <a href="https://fr.wikipedia.org/wiki/Leet_speak">leet speak</a></p>
+
+
+</section>
+
+ ]]></description>
+  <category>news</category>
+  <guid>https://oskar31415.quarto.pub/posts/welcome/Pourquoi ce blog.html</guid>
+  <pubDate>Sun, 01 Jan 2023 23:00:00 GMT</pubDate>
+</item>
+</channel>
+</rss>

@@ -2,10 +2,8 @@
   {
     "listing": "/index.html",
     "items": [
-      "/posts/welcome/Bienvenue.excalidraw.html",
-      "/posts/post-with-code/index.html",
-      "/posts/welcome/other_post.html",
-      "/posts/welcome/bienvenue sur mon blog.html"
+      "/posts/welcome/bienvenue sur mon blog.html",
+      "/posts/welcome/Pourquoi ce blog.html"
     ]
   }
 ]

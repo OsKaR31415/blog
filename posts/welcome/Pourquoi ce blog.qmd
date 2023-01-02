@@ -1,0 +1,16 @@
+---
+title: "Pourquoi ce blog"
+date: "2023-01-02"
+categories: [news]
+---
+
+Ce blog me permettra de partager des explications de certains sujets, et des idées personnelles.
+
+ - Des explications sur divers concepts de mathématiques ou d'informatique (pour aider les gens que je connais)
+ - Des réflexions que je souhaite partager
+ - N'importe quoi que j'ai découvert et que je trouve intéressant
+
+# Le nom du blog
+
+Le Blog s'appelle `OSK42`, à la fois en référence au nombre 42, la réponse à la "[grande question sur la vie, l'univers et le reste](https://fr.wikipedia.org/wiki/La_grande_question_sur_la_vie,_l%27Univers_et_le_reste)", et car `OSK42` est une écriture de `OSKAR` (mon pseudo) en [leet speak](https://fr.wikipedia.org/wiki/Leet_speak)
+
