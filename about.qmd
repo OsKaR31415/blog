@@ -1,6 +1,5 @@
 ---
-title: "About"
-author: "Oscar Plaisant"
+title: "A propos"
 image: profile.jpg
 about:
   template: jolla
@@ -9,8 +8,32 @@ about:
       text: YouTube
       href: https://youtube.com/@oskar31415
     - icon: github
-      text: Github
+      text: GitHub
       href: https://github.com/OsKaR31415
+    - icon: envelope
+      text: Email
+      href: mailto:oscar.plaisant@orange.fr
 ---
 
-About this blog
+Je suis étudiant en licence d'informatique et de mathématiques, et passionné par ces deux sciences.
+
+
+# Contenu
+
+Le contenu de ce blog sera principalement :
+
+<div style="text-align: left; margin-left: 5vw;">
+ - Des explications de concepts d'informatique et de mathématiques
+ - Des réflexions sur divers sujets
+ - Des présentations de n'importe quoi que j'ai trouvé intéressant
+</div>
+
+
+# Le nom du blog
+
+Le Blog s’appelle OSK42, à la fois en référence au nombre 42, la réponse à la “grande question sur la vie, l’univers et le reste”, et car OSK42 est une écriture de OSKAR (mon pseudo) en leet speak
+
+
+
+
+

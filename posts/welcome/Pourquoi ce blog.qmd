@@ -1,10 +1,10 @@
 ---
-title: "Pourquoi ce blog"
+title: "Pourquoi ce blog ?"
 date: "2023-01-02"
 categories: [news]
 ---
 
-Ce blog me permettra de partager des explications de certains sujets, et des idées personnelles.
+Ce blog me permettra de partager des explications sur certains sujets, et des idées personnelles.
 
  - Des explications sur divers concepts de mathématiques ou d'informatique (pour aider les gens que je connais)
  - Des réflexions que je souhaite partager

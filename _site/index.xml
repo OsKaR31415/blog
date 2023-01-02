@@ -12,27 +12,6 @@
 <generator>quarto-1.2.280</generator>
 <lastBuildDate>Sun, 01 Jan 2023 23:00:00 GMT</lastBuildDate>
 <item>
-  <title>Bienvenue sur mon blog</title>
-  <dc:creator>Oscar Plaisant</dc:creator>
-  <link>https://oskar31415.quarto.pub/posts/welcome/bienvenue sur mon blog.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<p>J’ai enfin pris le temps de créer mon blog !</p>
-<p>Il est fait avec <a href="https://quarto.org">quarto</a>, qui permet de générer des pages à partir de markdown, et avec des inclusions de code (style jupyter notebook) exécutées quand on recharge le blog.</p>
-<p>Bien sûr, il y à aussi toutes les fonctionnalités de base du markdown (sections, références, <img src="https://latex.codecogs.com/png.latex?%5CLaTeX">…) et quelques fonctionnalités supplémentaires intéressantes.</p>
-
-
-
- ]]></description>
-  <category>news</category>
-  <guid>https://oskar31415.quarto.pub/posts/welcome/bienvenue sur mon blog.html</guid>
-  <pubDate>Sun, 01 Jan 2023 23:00:00 GMT</pubDate>
-  <media:content url="https://oskar31415.quarto.pub/posts/welcome/_images/Bienvenue.excalidraw.png" medium="image" type="image/png" height="94" width="144"/>
-</item>
-<item>
   <title>Pourquoi ce blog</title>
   <link>https://oskar31415.quarto.pub/posts/welcome/Pourquoi ce blog.html</link>
   <description><![CDATA[ 
@@ -57,6 +36,26 @@
   <category>news</category>
   <guid>https://oskar31415.quarto.pub/posts/welcome/Pourquoi ce blog.html</guid>
   <pubDate>Sun, 01 Jan 2023 23:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Bienvenue sur mon blog</title>
+  <link>https://oskar31415.quarto.pub/posts/welcome/bienvenue sur mon blog.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>J’ai enfin pris le temps de créer mon blog !</p>
+<p>Il est fait avec <a href="https://quarto.org">quarto</a>, qui permet de générer des pages à partir de markdown, et avec des inclusions de code (style jupyter notebook) exécutées quand on recharge le blog.</p>
+<p>Bien sûr, il y à aussi toutes les fonctionnalités de base du markdown (sections, références, <img src="https://latex.codecogs.com/png.latex?%5CLaTeX">…) et quelques fonctionnalités supplémentaires intéressantes.</p>
+
+
+
+ ]]></description>
+  <category>news</category>
+  <guid>https://oskar31415.quarto.pub/posts/welcome/bienvenue sur mon blog.html</guid>
+  <pubDate>Sat, 31 Dec 2022 23:00:00 GMT</pubDate>
+  <media:content url="https://oskar31415.quarto.pub/posts/welcome/_images/Bienvenue.excalidraw.png" medium="image" type="image/png" height="94" width="144"/>
 </item>
 </channel>
 </rss>

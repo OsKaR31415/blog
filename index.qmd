@@ -1,5 +1,5 @@
 ---
-title: "OSK42"
+title: "0SK42"
 listing:
   contents: posts
   sort: "date desc"

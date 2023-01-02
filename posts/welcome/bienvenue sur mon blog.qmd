@@ -1,9 +1,8 @@
 ---
 title: "Bienvenue sur mon blog"
-author: "Oscar Plaisant"
-date: "2023-01-02"
+date: "2023-01-01"
 categories: [news]
-image: "_images/Bienvenue.excalidraw.png"
+image: "_images/Bienvenue.excalidraw.svg"
 ---
 
 J'ai enfin pris le temps de créer mon blog !

@@ -2,8 +2,9 @@
   {
     "listing": "/index.html",
     "items": [
-      "/posts/welcome/bienvenue sur mon blog.html",
-      "/posts/welcome/Pourquoi ce blog.html"
+      "/posts/posts/formulaire d'analyse.html",
+      "/posts/welcome/Pourquoi ce blog.html",
+      "/posts/welcome/bienvenue sur mon blog.html"
     ]
   }
 ]

@@ -1,8 +1,8 @@
 ---
 title: "Contre, l'usage, abusif, de la virgule, dans la notation, mathématique"
-date: "2023-01-02"
+date: 2023-01-02
 categories: [ maths ]
-image: "image.jpg"
+image: "$,$"
 toc: true
 draft: true
 ---

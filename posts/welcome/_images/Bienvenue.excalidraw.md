@@ -8,7 +8,7 @@ tags: [excalidraw]
 
 
 # Text Elements
-Bienvenu ! ^LeftZKZe
+Bienvenue ! ^LeftZKZe
 
 %%
 # Drawing
@@ -19,27 +19,27 @@ Bienvenu ! ^LeftZKZe
 	"source": "https://excalidraw.com",
 	"elements": [
 		{
-			"id": "mfG_RD-v9SWv-uzvC2Txc",
 			"type": "rectangle",
-			"x": -270.1679164753152,
-			"y": -386.04759041017314,
-			"width": 470.80859375,
-			"height": 301.451171875,
-			"angle": 0,
-			"strokeColor": "transparent",
-			"backgroundColor": "#0f2537",
+			"version": 141,
+			"versionNonce": 875100709,
+			"isDeleted": false,
+			"id": "mfG_RD-v9SWv-uzvC2Txc",
 			"fillStyle": "solid",
 			"strokeWidth": 2,
 			"strokeStyle": "solid",
 			"roughness": 1,
 			"opacity": 100,
+			"angle": 0,
+			"x": -270.1679164753152,
+			"y": -386.04759041017314,
+			"strokeColor": "transparent",
+			"backgroundColor": "#0f2537",
+			"width": 470.80859375,
+			"height": 301.451171875,
+			"seed": 2115229477,
 			"groupIds": [],
 			"roundness": null,
-			"seed": 2115229477,
-			"version": 141,
-			"versionNonce": 875100709,
-			"isDeleted": false,
-			"boundElements": null,
+			"boundElements": [],
 			"updated": 1672621849813,
 			"link": null,
 			"locked": false
@@ -2121,8 +2121,8 @@ Bienvenu ! ^LeftZKZe
 		},
 		{
 			"type": "text",
-			"version": 345,
-			"versionNonce": 1516682245,
+			"version": 346,
+			"versionNonce": 1273891819,
 			"isDeleted": false,
 			"id": "LeftZKZe",
 			"fillStyle": "hachure",
@@ -2135,24 +2135,24 @@ Bienvenu ! ^LeftZKZe
 			"y": -260.20804645108785,
 			"strokeColor": "#007fdb",
 			"backgroundColor": "transparent",
-			"width": 176,
-			"height": 45,
+			"width": 196,
+			"height": 46,
 			"seed": 914519909,
 			"groupIds": [],
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1672621234156,
+			"updated": 1672659171016,
 			"link": null,
 			"locked": false,
 			"fontSize": 36,
 			"fontFamily": 1,
-			"text": "Bienvenu !",
-			"rawText": "Bienvenu !",
+			"text": "Bienvenue !",
+			"rawText": "Bienvenue !",
 			"baseline": 32,
 			"textAlign": "left",
 			"verticalAlign": "top",
 			"containerId": null,
-			"originalText": "Bienvenu !"
+			"originalText": "Bienvenue !"
 		},
 		{
 			"type": "line",
@@ -2585,10 +2585,10 @@ Bienvenu ! ^LeftZKZe
 		"currentItemTextAlign": "left",
 		"currentItemStartArrowhead": null,
 		"currentItemEndArrowhead": "arrow",
-		"scrollX": 419.1581508503152,
-		"scrollY": 476.66087166017314,
+		"scrollX": 286.4741459161047,
+		"scrollY": 439.2241426305678,
 		"zoom": {
-			"value": 2
+			"value": 1.9000000000000001
 		},
 		"currentItemRoundness": "sharp",
 		"gridSize": null,
