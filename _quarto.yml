@@ -1,0 +1,19 @@
+project:
+  type: website
+
+website:
+  title: "all posts"
+  navbar:
+    right:
+      - about.qmd
+      - icon: github
+        href: https://github.com/OsKaR31415
+      - icon: youtube
+        href: https://youtube.com/@oskar31415
+format:
+  html:
+    theme: superhero
+    css: styles.css
+
+
+

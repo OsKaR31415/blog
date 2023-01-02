@@ -1,0 +1,11 @@
+{
+  "hash": "b0acd32d939cf645e21cc0b776f62ce5",
+  "result": {
+    "markdown": "---\ntitle: \"Post With Code\"\nauthor: \"Harlow Malloc\"\ndate: \"2023-01-02\"\ncategories: [news, code, analysis]\nimage: \"image.jpg\"\n---\n\nThis is a post with executable code.\n\n::: {.cell execution_count=1}\n``` {.python .cell-code}\ndef factorial(n: int) -> int:\n    if n == 0:\n        return 1\n    return n * factorial(n - 1)\n\nprint(\"5! =\", factorial(5))\n```\n\n::: {.cell-output .cell-output-stdout}\n```\n5! = 120\n```\n:::\n:::\n\n\n",
+    "supporting": [
+      "index_files"
+    ],
+    "filters": [],
+    "includes": {}
+  }
+}

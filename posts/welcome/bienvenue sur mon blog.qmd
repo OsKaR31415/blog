@@ -1,0 +1,18 @@
+---
+title: "Bienvenue sur mon blog"
+author: "Oscar Plaisant"
+date: "2022-12-30"
+categories: [news]
+image: "Bienvenue.excalidraw.png"
+---
+
+J'ai enfin pris le temps de créer mon blog !
+
+Maintenant je peux poster des images chliché de productivité !
+
+![](thumbnail.jpg)
+
+Il est fait avec [quarto](https://quarto.org), qui permet de générer des pages à partir de markdown, et avec des inclusions de code (style jupyter notebook) exécutées quand on recharge le blog.
+
+Bien sûr, il y à aussi toutes les fonctionnalités de base du markdown (sections, références, $\LaTeX$...) et quelques fonctionnalités supplémentaires intéressantes.
+

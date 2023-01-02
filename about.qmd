@@ -1,0 +1,16 @@
+---
+title: "About"
+author: "Oscar Plaisant"
+image: profile.jpg
+about:
+  template: jolla
+  links:
+    - icon: youtube
+      text: YouTube
+      href: https://youtube.com/@oskar31415
+    - icon: github
+      text: Github
+      href: https://github.com/OsKaR31415
+---
+
+About this blog

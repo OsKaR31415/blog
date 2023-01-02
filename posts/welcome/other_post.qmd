@@ -1,0 +1,8 @@
+---
+title: "Other post"
+author: "Oscar Plaisant"
+date: "2022-12-30"
+categories: [news]
+---
+
+# This is another post
