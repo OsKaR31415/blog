@@ -2,7 +2,8 @@
   {
     "listing": "/index.html",
     "items": [
-      "/posts/posts/formulaire d'analyse.html",
+      "/posts/informatique/vim_tips_leader.html",
+      "/posts/maths/formulaire d'analyse.html",
       "/posts/welcome/Pourquoi ce blog.html",
       "/posts/welcome/bienvenue sur mon blog.html"
     ]

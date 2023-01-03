@@ -6,10 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Tristan O’Malley">
-<meta name="dcterms.date" content="2022-12-30">
+<meta name="dcterms.date" content="2023-01-03">
+<meta name="description" content="présentation du raccourci  dans vim">
 
-<title>blog - Welcome To My Blog</title>
+<title>0SK42 - vim tips - leader</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -37,10 +37,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -65,7 +65,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="../../styles.css">
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -73,7 +73,7 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
     <a class="navbar-brand" href="../../index.html">
-    <span class="navbar-title">blog</span>
+    <span class="navbar-title">0SK42</span>
     </a>
   </div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
@@ -83,15 +83,20 @@ ul.task-list li input[type="checkbox"] {
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
     <a class="nav-link" href="../../about.html">
- <span class="menu-text">About</span></a>
+ <span class="menu-text">A propos</span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/"><i class="bi bi-github" role="img">
+    <a class="nav-link" href="../../index.xml"><i class="bi bi-rss" role="img">
 </i> 
  <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://twitter.com"><i class="bi bi-twitter" role="img">
+    <a class="nav-link" href="https://github.com/OsKaR31415"><i class="bi bi-github" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://youtube.com/@oskar31415"><i class="bi bi-youtube" role="img">
 </i> 
  <span class="menu-text"></span></a>
   </li>  
@@ -105,9 +110,15 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Welcome To My Blog</h1>
-                                <div class="quarto-categories">
-                <div class="quarto-category">news</div>
+      <h1 class="title">vim tips - leader</h1>
+                  <div>
+        <div class="description">
+          présentation du raccourci <leader> dans vim
+        </leader></div>
+      </div>
+                          <div class="quarto-categories">
+                <div class="quarto-category">vim</div>
+                <div class="quarto-category">tips</div>
               </div>
                   </div>
   </div>
@@ -115,17 +126,11 @@ ul.task-list li input[type="checkbox"] {
   
   <div class="quarto-title-meta">
 
-      <div>
-      <div class="quarto-title-meta-heading">Author</div>
-      <div class="quarto-title-meta-contents">
-               <p>Tristan O’Malley </p>
-            </div>
-    </div>
       
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">December 30, 2022</p>
+        <p class="date">January 3, 2023</p>
       </div>
     </div>
     
@@ -136,18 +141,76 @@ ul.task-list li input[type="checkbox"] {
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#comment-utiliser-leader" id="toc-comment-utiliser-leader" class="nav-link active" data-scroll-target="#comment-utiliser-leader">Comment utiliser <code>&lt;leader&gt;</code></a>
+  <ul class="collapse">
+  <li><a href="#changer-la-touche-assignée" id="toc-changer-la-touche-assignée" class="nav-link" data-scroll-target="#changer-la-touche-assignée">Changer la touche assignée</a></li>
+  <li><a href="#cas-dutilisation" id="toc-cas-dutilisation" class="nav-link" data-scroll-target="#cas-dutilisation">Cas d’utilisation</a>
+  <ul class="collapse">
+  <li><a href="#exemples-dutilisation" id="toc-exemples-dutilisation" class="nav-link" data-scroll-target="#exemples-dutilisation">Exemples d’utilisation</a></li>
+  </ul></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
 
 
-<p>This is the first post in a Quarto blog. Welcome!</p>
-<p>[<img src="thumbnail.jpg" class="img-fluid"></p>
-<p>Since this post doesn’t specify an explicit <code>image</code>, the first image in the post will be used in the listing page of posts.</p>
+<p>Dans Vim, on peut changer les raccourcis pour absolument toutes les touches.</p>
+<p>Justement, un des raccourcis que l’on peut changer, c’est <code>&lt;leader&gt;</code>.</p>
+<p>Quand il s’agit de <code>&lt;space&gt;</code> (touche espace), <code>&lt;tab&gt;</code>, <code>&lt;cr&gt;</code> (carriage return, pour la touche entrée), on arrive à deviner. Mais pour <code>&lt;leader&gt;</code>, c’est plus difficile.</p>
+<p>En fait, <code>&lt;leader&gt;</code> peut être n’importe quel raccourci que vous choisissez ! Quand vous créez un raccourci, <code>&lt;leader&gt;</code> sera remplacé par la valeur dans la variable <code>g:mapleader</code>.</p>
+<p>Cela peut être intéressant :</p>
+<ul>
+<li>on peut avoir une touche que l’on utilise souvent dans nos raccourcis</li>
+<li>on peut changer cette touche facilement
+<ul>
+<li>si on change de clavier</li>
+<li>si on change de layout (<code>azerty</code>, <code>qwerty</code>…)</li>
+<li>si on veut changer sa position (changer la touche assignée à <code>&lt;leader&gt;</code>)</li>
+</ul></li>
+</ul>
+<section id="comment-utiliser-leader" class="level1">
+<h1>Comment utiliser <code>&lt;leader&gt;</code></h1>
+<p>Par défaut, <code>&lt;leader&gt;</code> est assigné à la touche <code>\</code> (anti-slash). C’est parce que cette touche est facilement accessible sur un clavier <code>qwerty</code>.</p>
+<section id="changer-la-touche-assignée" class="level2">
+<h2 class="anchored" data-anchor-id="changer-la-touche-assignée">Changer la touche assignée</h2>
+<p>Comme je l’ai dit plus haut, <code>&lt;leader&gt;</code> est défini par la variable <code>g:mapleader</code></p>
+<p>Par exemple, si on souhaite utiliser la touche <code>,</code> pour leader :</p>
+<pre class="vimscript"><code>let g:mapleader = ","</code></pre>
+<p>Si on souhaite utiliser une touche qui est représentée entre <code>&lt;...&gt;</code>, comme la touche espace (<code>&lt;space&gt;</code>), il ne faut pas oublier le <code>\</code> avant le nom de la touche :</p>
+<pre class="vim"><code>let g:mapleader = "\&lt;space&gt;"</code></pre>
+<p>Si vous oubliez le <code>\</code>, il faudra taper toutes les touches : <code>&lt;</code>, <code>s</code>, <code>p</code>, <code>a</code>, <code>c</code>, <code>e</code>, <code>&gt;</code> pour déclancher <code>&lt;leader&gt;</code></p>
+</section>
+<section id="cas-dutilisation" class="level2">
+<h2 class="anchored" data-anchor-id="cas-dutilisation">Cas d’utilisation</h2>
+<p>Un des usages principaux de <code>&lt;leader&gt;</code> est comme préfixe (d’où le nom, leader, en anglais).</p>
+<p>Par préfixe, je veux dire une touche qui est au début de plein de raccourcis. C’est utile car Vim assigne déjà beaucoup de raccourcis, et donc ne laisse pas beaucoup de place pour que l’utilisateur définisse les siens. C’est pour cette raison que <code>&lt;leader&gt;</code> est utile : vous pouvez faire commencer plein de vos raccourcis par leader. Par exemple, j’ai défini les raccourcis <code>&lt;leader&gt;j</code>, <code>&lt;leader&gt;k</code>, <code>&lt;leader&gt;m</code>, <code>&lt;leader&gt;ul</code>…</p>
+<section id="exemples-dutilisation" class="level3">
+<h3 class="anchored" data-anchor-id="exemples-dutilisation">Exemples d’utilisation</h3>
+<p>Voici quelques exemples d’utilisation :</p>
+<ul>
+<li><code>&lt;leader&gt;m</code> pour <code>:make&lt;cr&gt;</code>, si vous utilisez des <a href="https://shiftcode.fr/comprendre-les-makefiles/" title="https://shiftcode.fr/comprendre-les-makefiles/">makefiles</a></li>
+<li><code>&lt;leader&gt;k</code> pour sauvegarder (c’est bizarre mais c’est ce que j’utilise)</li>
+<li><code>&lt;leader&gt;w</code> ou bien <code>&lt;leader&gt;q</code> pour <code>&lt;c-w&gt;</code>, afin d’éviter la touche contrôle quand on manipule les fenêtres</li>
+<li><code>&lt;leader&gt;t</code> pour <code>:tabnew&lt;cr&gt;</code> (créer un nouvel onglet)</li>
+<li><code>&lt;leader&gt;!</code> pour <code>:term ++curwin</code> (ouvrir un terminal dans la fenêtre actuelle)</li>
+</ul>
+<p><br> <br> <br> <br> <br> <br></p>
+<hr>
+<p>Mon .vimrc est disponible ici : <a href="https://github.com/OsKaR31415/config/blob/master/.vimrc">github.com/OsKaR31415/config</a> avec le reste de ma configuration.</p>
 
 
+</section>
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

@@ -1,115 +1,24 @@
 [
   {
-    "objectID": "posts/posts/formulaire d'analyse.html",
-    "href": "posts/posts/formulaire d'analyse.html",
-    "title": "formulaire d’analyse",
+    "objectID": "posts/informatique/vim_tips_leader.html",
+    "href": "posts/informatique/vim_tips_leader.html",
+    "title": "vim tips - leader",
     "section": "",
-    "text": "Voici une liste des formules importantes en analyse"
+    "text": "Dans Vim, on peut changer les raccourcis pour absolument toutes les touches.\nJustement, un des raccourcis que l’on peut changer, c’est <leader>.\nQuand il s’agit de <space> (touche espace), <tab>, <cr> (carriage return, pour la touche entrée), on arrive à deviner. Mais pour <leader>, c’est plus difficile.\nEn fait, <leader> peut être n’importe quel raccourci que vous choisissez ! Quand vous créez un raccourci, <leader> sera remplacé par la valeur dans la variable g:mapleader.\nCela peut être intéressant :"
   },
   {
-    "objectID": "posts/posts/formulaire d'analyse.html#identités-remarquables",
-    "href": "posts/posts/formulaire d'analyse.html#identités-remarquables",
-    "title": "formulaire d’analyse",
-    "section": "0.1 Identités remarquables",
-    "text": "0.1 Identités remarquables\n\\((a + b)^{2} = a^{2} + 2ab + b^{2}\\)\n\\((a - b)^{2} = a^{2} - 2ab + b^{2}\\)\n\\((a + b)(a - b) = a^{2} - b^{2}\\)\n\\((a + b)^{3} = a^{3} + 3a^{2}b + 3ab^{2} + b^{3}\\)\n\\((a - b)^{3} = a^{3} - 3a^{2}b + 3ab^{2} - b^{3}\\)\n\\(a^{3} - b^{3} = (a - b)\\left( a^{2} + ab + b^{2} \\right)\\)\n\\(a^{3} + b^{3} = (a + b)\\left( a^{2} - ab + b^{2} \\right)\\)"
+    "objectID": "posts/informatique/vim_tips_leader.html#changer-la-touche-assignée",
+    "href": "posts/informatique/vim_tips_leader.html#changer-la-touche-assignée",
+    "title": "vim tips - leader",
+    "section": "Changer la touche assignée",
+    "text": "Changer la touche assignée\nComme je l’ai dit plus haut, <leader> est défini par la variable g:mapleader\nPar exemple, si on souhaite utiliser la touche , pour leader :\nlet g:mapleader = \",\"\nSi on souhaite utiliser une touche qui est représentée entre <...>, comme la touche espace (<space>), il ne faut pas oublier le \\ avant le nom de la touche :\nlet g:mapleader = \"\\<space>\"\nSi vous oubliez le \\, il faudra taper toutes les touches : <, s, p, a, c, e, > pour déclancher <leader>"
   },
   {
-    "objectID": "posts/posts/formulaire d'analyse.html#suites-arithmétiques",
-    "href": "posts/posts/formulaire d'analyse.html#suites-arithmétiques",
-    "title": "formulaire d’analyse",
-    "section": "1.1 Suites arithmétiques",
-    "text": "1.1 Suites arithmétiques\nTermes de la suite (\\(r\\) désigne la raison):\n\\(u_{n+1} - u_{n} = r\\)\n\\(u_{n} = u_{0} + nr\\)\n\\(u_{n} = u_{p} + (n-p)r\\)\nSomme des termes :\n\\(\\displaystyle S_{n} = \\sum_{k=0}^{n}u_{k} = \\dfrac{(n+1)(u_{0}+u_{n})}{2}\\)\nCas général avec \\(n_{1} \\leq n_{2}\\) :\n\\(\\displaystyle S' = \\sum_{k = n_{1}}^{n_{2}}u_{k} = \\frac{(nombre\\ de\\ termes)(premier\\ terme + dernier\\ terme)}{2}\\)\nCas particulier :\n\\(1 + 2 + 3\\ \\cdots + (n - 1) + n = \\frac{n(n + 1)}{2}\\)"
-  },
-  {
-    "objectID": "posts/posts/formulaire d'analyse.html#suites-géométriques",
-    "href": "posts/posts/formulaire d'analyse.html#suites-géométriques",
-    "title": "formulaire d’analyse",
-    "section": "1.2 Suites géométriques",
-    "text": "1.2 Suites géométriques\nOn suppose que la suite est non nulle. Termes de la suite ((q) désigne la raison) :\n\\(\\dfrac{u_{n+1}}{u_{n}} = q\\)\n\\(u_{n} = u_{0} \\times q^{n}\\)\n\\(u_{n} = u_{p}\\times q^{n-p}\\)\nSomme des termes :\n\\(S_{n} = \\sum\\limits_{k=0}^{n}u_{k}\\)\n\nSi \\(q \\neq 1\\) : \\(S_{n} = u_{0}\\times \\frac{1-q^{n+1}}{1-q}\\)\nSi \\(q=1\\) : \\(S_{n}=u_{0}(n+1)\\)\n\nCas général avec \\(n_{1} \\leq n_{2}\\) : \\(S'_{n} = \\sum\\limits_{k=0}^{n}u_{k}\\)\n\nSi \\(q \\neq 1\\) : \\(S'_{n} = (\\text{premier terme}) \\times \\frac{1- \\left( q^{\\text{nombre de termes}} \\right)}{1-q}\\)\nSi \\(q = 1\\) : \\(S'_{n} = (\\text{nombre de termes}) \\times (\\text{premier terme})\\)"
-  },
-  {
-    "objectID": "posts/posts/formulaire d'analyse.html#formules-générales",
-    "href": "posts/posts/formulaire d'analyse.html#formules-générales",
-    "title": "formulaire d’analyse",
-    "section": "2.1 Formules générales",
-    "text": "2.1 Formules générales\nDans ce qui suit, \\(u\\) et \\(v\\) désignent deus fonctions d’une variable réelle \\(x\\), et \\(k\\) une constante réelle.\n\\((u+v)' = u' + v'\\)\n\\((ku)' = ku'\\)\n\\((uv)' = u'v + uv'\\)\n\\(\\left( \\dfrac{u}{v} \\right)' = \\dfrac{u'v - uv'}{v^{2}}\\)\n\\((v\\circ u)' = u' \\times (v'\\circ u)\\)\n\\(\\displaystyle(u^{-1})' = \\dfrac{1}{u' \\circ u^{-1}}\\)"
-  },
-  {
-    "objectID": "posts/posts/formulaire d'analyse.html#fonctions-usuelles",
-    "href": "posts/posts/formulaire d'analyse.html#fonctions-usuelles",
-    "title": "formulaire d’analyse",
-    "section": "2.2 Fonctions usuelles",
-    "text": "2.2 Fonctions usuelles\n\n2.2.1 fonctions non composées\n\n\n\n\n\n\n\n\n\nFonction \\(f\\)\n\\(\\mathscr{D}_{f}\\)\nFonction dérivée \\(f'\\)\n\\(\\mathscr{D}_{f'}\\)\n\n\n\n\n\\(k\\)\n\\(\\mathbb{R}\\)\n0\n\\(\\mathbb{R}\\)\n\n\n\\(x\\)\n\\(\\mathbb{R}\\)\n\\(1\\)\n\\(\\mathbb{R}\\)\n\n\n\\(\\dfrac{1}{x}\\)\n\\(\\mathbb{R}^{*}\\)\n\\(-\\dfrac{1}{x^{2}}\\)\n\\(\\mathbb{R}^{*}\\)\n\n\n\\(\\sqrt{ x }\\)\n\\(\\mathbb{R}^{+}\\)\n\\(\\frac{1}{2\\sqrt{ x }}\\)\n\\(\\mathbb{R}^{+*}\\)\n\n\n\\(x^{n}\\) avec \\(n \\in\\mathbb{Z}\\)\n\\(\\mathbb{R}\\)\n\\(nx^{n-1}\\)\n\\(\\mathbb{R} \\text{ si } n \\geq 0, \\quad \\mathbb{R}^{*} \\text{ si } n < 0\\)\n\n\n\\(x^{\\alpha}\\) avec \\(\\alpha \\in\\mathbb{R}\\)\n\\(\\mathbb{R}^{+} \\text{ si } \\alpha \\geq 0, \\quad \\mathbb{R}^{+*} \\text{ si } \\alpha<0\\)\n\\(\\alpha x^{\\alpha-1}\\)\n\\(\\mathbb{R} \\text{ si } n \\geq 0, \\quad \\mathbb{R}^{*} \\text{ si } \\alpha < 1\\)\n\n\n\\(\\ln \\mid x \\mid\\)\n\\(\\mathbb{R}^{+*}\\)\n\\(\\dfrac{1}{x}\\)\n\\(\\mathbb{R}^{+*}\\)\n\n\n\\(\\exp x\\)\n\\(\\mathbb{R}\\)\n\\(\\exp x\\)\n\\(\\mathbb{R}\\)\n\n\n\\(\\sin x\\)\n\\(\\mathbb{R}\\)\n\\(\\cos x\\)\n\\(\\mathbb{R}\\)\n\n\n\\(\\cos x\\)\n\\(\\mathbb{R}\\)\n\\(-\\sin x\\)\n\\(\\mathbb{R}\\)\n\n\n\\(\\tan x\\)\n\\(\\mathbb{R} \\setminus \\left\\lbrace \\dfrac{\\pi}{2} + k\\pi \\right\\rbrace\\)\n\\(1+\\tan^2 x = \\dfrac{1}{\\cos^2 x}\\)\n\\(\\mathbb{R} \\setminus \\left\\lbrace \\dfrac{\\pi}{2} + k\\pi \\right\\rbrace\\)\n\n\n\\(\\mathrm{sh} x\\)\n\\(\\mathbb{R}\\)\n\\(\\mathrm{ch} x\\)\n\\(\\mathbb{R}\\)\n\n\n\\(\\mathrm{ch} x\\)\n\\(\\mathbb{R}\\)\n\\(\\mathrm{sh} x\\)\n\\(\\mathbb{R}\\)\n\n\n\\(\\mathrm{th} x\\)\n\\(\\mathbb{R}\\)\n\\(1-\\mathrm{th}^2 x = \\dfrac{1}{\\mathrm{ch}^2 x}\\)\n\\(\\mathbb{R}\\)\n\n\n\nLes dérivées des fonctions réciproques des fonctions trigonométriques et hyperboliques figurent dans la section “trigonométrie réciproque\n\n\n2.2.2 Fonctions composées\n\n\n\n\n\n\n\nforme de la fonction\nforme de la dérivée\n\n\n\n\n\\(\\dfrac{1}{u}\\)\n\\(-\\dfrac{u'}{u^2}\\)\n\n\n\\(\\sqrt{u}\\)\n\\(\\dfrac{u'}{2 \\sqrt{u}}\\)\n\n\n\\(u^{\\alpha}\\)\n\\(\\alpha u' u^{\\alpha - 1}\\)\n\n\n$u $\n\\(\\dfrac{u'}{u}\\)\n\n\n\\(\\exp u\\)\n\\(u' \\times \\exp u\\)\n\n\n\\(\\sin u\\)\n\\(u'\\times \\cos u\\)\n\n\n\\(\\cos u\\)\n\\(-u' \\times \\sin u\\)\n\n\n\\(\\tan u\\)\n\\(u' \\times (1+\\tan^2 u) = \\dfrac{u'}{\\cos^2 u}\\)\n\n\n\\(\\mathrm{sh} u\\)\n\\(u' \\times \\mathrm{ch} u\\)\n\n\n\\(\\mathrm{ch} u\\)\n\\(u' \\times \\mathrm{sh} u\\)\n\n\n\\(\\mathrm{th} u\\)\n\\(u' \\times (1-\\mathrm{th}^2 u) = \\dfrac{u'}{\\mathrm{ch}^2 u}\\)"
-  },
-  {
-    "objectID": "posts/posts/formulaire d'analyse.html#fonctions-trigonométriques",
-    "href": "posts/posts/formulaire d'analyse.html#fonctions-trigonométriques",
-    "title": "formulaire d’analyse",
-    "section": "3.1 Fonctions trigonométriques",
-    "text": "3.1 Fonctions trigonométriques\n\\(\\cos^2 x + \\sin^2 x = 1\\)\n\\(\\cos(a+b) = \\cos a \\cos b - \\sin a \\sin b\\)\n\\(\\cos(a-b) = \\cos a \\cos b + \\sin a \\sin b\\)\n\\(\\sin(a+b) = \\sin a\\cos b + \\sin b \\cos a\\)\n\\(\\sin(a-b) = \\sin a \\cos b - \\sin b \\cos a\\)\n\\(\\tan(a+b) = \\dfrac{\\tan a + \\tan b}{1-\\tan a \\tan b}\\)\n\\(\\tan(a-b) = \\dfrac{\\tan a - \\tan b}{1+\\tan a \\tan b}\\)\n\\(\\cos a \\cos b = \\dfrac{1}{2} \\big( \\cos(a+b)+\\cos(a-b) \\big)\\)\n\\(\\sin a\\sin b = \\dfrac{1}{2} \\big( \\cos(a-b) - \\cos(a+b) \\big)\\)\n\\(\\sin a \\cos b = \\dfrac12 \\big( \\sin(a+b) + \\sin(a-b) \\big)\\)\n\\(\\cos a + \\cos b = 2\\cos \\dfrac{(a+b)}{2}\\cos\\dfrac{(a-b)}{2}\\)\n\\(\\cos a - \\cos b = -2\\sin\\dfrac{a+b}{2}\\sin\\dfrac{a-b}{2}\\)\n\\(\\sin a + \\sin b = 2\\sin\\dfrac{a+b}{2}\\cos\\dfrac{a-b}{2}\\)\n\\(\\sin a - \\sin b = 2\\sin\\dfrac{a-b}{2} \\cos\\dfrac{a+b}{2}\\)\n\\(\\cos(2x) =\\cos ^{2}x-\\sin ^{2}x \\quad= 2\\cos ^{2}x-1 \\quad= 1-2\\sin ^{2}x \\quad= \\frac{1-\\tan ^{2}x}{1+\\tan ^{2}x}\\)\n\\(\\cos^2 x = \\dfrac{1+\\cos(2x)}{2}\\)\n\\(\\sin^2 x = \\dfrac{1-\\cos(2x)}{2}\\)\n\\(\\tan^2 x = \\dfrac{1-\\cos(2x)}{1+\\cos(2x)}\\)\n\\(\\sin(2x) = 2\\sin x\\cos x \\quad= 1+\\tan ^{2}x\\)\n\\(\\tan(2x) = \\dfrac{2\\tan x}{1 - \\tan^2 x}\\)"
-  },
-  {
-    "objectID": "posts/posts/formulaire d'analyse.html#fonctions-hyperboliques",
-    "href": "posts/posts/formulaire d'analyse.html#fonctions-hyperboliques",
-    "title": "formulaire d’analyse",
-    "section": "3.2 Fonctions hyperboliques",
-    "text": "3.2 Fonctions hyperboliques\n\\(\\mathrm{ch}^2 x - \\mathrm{sh}^2 x = 1\\)\n\\(\\mathrm{ch}(a+b) = \\mathrm{ch} (a) \\;\\mathrm{ch} (a) + \\mathrm{sh} a \\mathrm{sh} b\\)\n\\(\\mathrm{ch}(a-b) = \\mathrm{ch} (a)\\; \\mathrm{ch} (b) - \\mathrm{sh} a \\mathrm{sh} b\\)\n\\(\\mathrm{sh}(a+b) = \\mathrm{sh} (a)\\; \\mathrm{ch} (b) + \\mathrm{sh} (b)\\; \\mathrm{ch} (a)\\)\n\\(\\mathrm{sh}(a-b) = \\mathrm{sh} (a); \\mathrm{ch} (b) - \\mathrm{sh} (b) \\mathrm{ch} (a)\\)\n\\(\\mathrm{th}(a+b) = \\dfrac{\\mathrm{th} a + \\mathrm{th} b}{1 + \\mathrm{th} (a) \\mathrm{th} (b)}\\)\n\\(\\mathrm{th}(a-b) = \\dfrac{\\mathrm{th} a - \\mathrm{th} b}{1 - \\mathrm{th} (a) \\mathrm{th} (b)}\\)\n\\(\\mathrm{ch} (a) \\;\\mathrm{ch} (b) = \\dfrac12 \\big( \\mathrm{ch}(a+b) + \\mathrm{ch}(a-b) \\big)\\)\n\\(\\mathrm{sh} (a)\\; \\mathrm{sh} (b) = \\dfrac12 \\big( \\mathrm{ch}(a+b) - \\mathrm{ch}(a-b) \\big)\\)\n\\(\\mathrm{sh} (a)\\; \\mathrm{ch} (b) = \\dfrac12 \\big( \\mathrm{sh}(a+b) + \\mathrm{sh}(a-b) \\big)\\)\n\\(\\mathrm{ch} (a) + \\mathrm{ch} (b) = 2\\mathrm{ch} \\dfrac{a+b}{2} \\mathrm{ch} \\dfrac{a-b}{2}\\)\n\\(\\mathrm{ch} (a) - \\mathrm{ch} (a) = 2\\mathrm{sh} \\dfrac{a+b}{2}\\mathrm{sh}\\dfrac{a-b}{2}\\)\n\\(\\mathrm{sh} (a) + \\mathrm{sh} (b) = 2\\mathrm{sh} \\dfrac{a+b}{2}\\mathrm{ch}\\dfrac{a-b}{2}\\)\n\\(\\mathrm{sh} (a) - \\mathrm{sh} (b) = 2\\mathrm{sh}\\dfrac{a-b}{2} \\mathrm{ch}\\dfrac{a+b}{2}\\)\n\\(\\mathrm{ch}(2x) = \\mathrm{ch} ^{2}x + \\mathrm{sh} ^{2}x \\quad= 2\\mathrm{ch} ^{2}x - 1 \\quad= 1+2\\mathrm{sh} ^{2}x \\quad=\\frac{1+\\mathrm{th} ^{2}x}{1-\\mathrm{th} ^{2}x}\\)\n\\(\\mathrm{ch}^2 x = \\dfrac{1+\\mathrm{ch}(2x)}{2}\\)\n\\(\\mathrm{sh}^2 x = \\dfrac{\\mathrm{ch}(2x) - 1}{2}\\)\n\\(\\mathrm{th}^2 x = \\dfrac{\\mathrm{ch}(2x) - 1}{\\mathrm{ch}(2x) + 1}\\)\n\\(\\mathrm{sh}(2x) = 2\\mathrm{sh}(x) \\mathrm{ch}(x) \\quad= \\frac{2\\mathrm{th}(x)}{1-\\mathrm{th}^{2}(x)}\\)\n\\(\\mathrm{th}(2x) = \\dfrac{2\\mathrm{th} x}{1+\\mathrm{th}^2 x}\\)"
-  },
-  {
-    "objectID": "posts/posts/formulaire d'analyse.html#points-sur-le-cercle-trigonométrique",
-    "href": "posts/posts/formulaire d'analyse.html#points-sur-le-cercle-trigonométrique",
-    "title": "formulaire d’analyse",
-    "section": "3.3 Points sur le cercle trigonométrique",
-    "text": "3.3 Points sur le cercle trigonométrique\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\\(-x\\)\n\\(\\frac{\\pi}{2}+x\\)\n\\(\\frac{\\pi}{2}-x\\)\n\\(\\pi+x\\)\n\\(\\pi-x\\)\n\\(0\\)\n\\(\\frac{\\pi}{6}\\)\n\\(\\frac{\\pi}{4}\\)\n\\(\\frac{\\pi}{3}\\)\n\\(\\frac{\\pi}{2}\\)\n\n\n\n\n\\(\\sin\\)\n\\(-\\sin x\\)\n\\(\\cos x\\)\n\\(\\cos x\\)\n\\(-\\sin x\\)\n\\(\\sin x\\)\n\\(0\\)\n\\(\\frac{1}{2}\\)\n\\(\\frac{\\sqrt{ 2 }}{2}\\)\n\\(\\frac{\\sqrt{ 3 }}{2}\\)\n1\n\n\n\\(\\cos\\)\n\\(\\cos x\\)\n\\(-\\sin x\\)\n\\(\\sin x\\)\n\\(-\\cos x\\)\n\\(-\\cos x\\)\n\\(1\\)\n\\(\\frac{\\sqrt{ 3 }}{2}\\)\n\\(\\frac{\\sqrt{ 2 }}{2}\\)\n\\(\\frac{1}{2}\\)\n0\n\n\n\\(\\tan\\)\n\\(-\\tan x\\)\n\\(-\\frac{1}{\\tan x}\\)\n\\(\\frac{1}{\\tan x}\\)\n\\(\\tan x\\)\n\\(-\\tan x\\)\n\\(0\\)\n\\(\\frac{\\sqrt{ 3 }}{2}\\)\n\\(1\\)\n\\(\\sqrt{ 3 }\\)"
-  },
-  {
-    "objectID": "posts/posts/formulaire d'analyse.html#trigonométrie-réciproque",
-    "href": "posts/posts/formulaire d'analyse.html#trigonométrie-réciproque",
-    "title": "formulaire d’analyse",
-    "section": "3.4 Trigonométrie réciproque",
-    "text": "3.4 Trigonométrie réciproque\n\\(\\arcsin x + \\arccos x = \\dfrac{\\pi}{2}\\)\n\\(\\arctan x + \\arctan \\dfrac{1}{x} = \\text{sg}(x) \\times \\dfrac{\\pi}{2}\\) avec \\(\\mathrm{sg}(x) = 1 \\text{ si } x>0\\) et \\(\\mathrm{sg}(x) = -1 \\text{ si } x < 0\\)\n\\((\\arcsin x)' = \\dfrac{1}{\\sqrt{1-x^2}}\\)\n\\((\\arccos x)' = -\\dfrac{1}{\\sqrt{1-x^2}}\\)\n\\((\\arctan x)' = \\dfrac{1}{1+x^2}\\)\n\\((\\arcsin u)' = \\dfrac{u'}{\\sqrt{1-u^2}}\\)\n\\((\\arccos u)' = -\\dfrac{u'}{\\sqrt{1-u^2}}\\)\n\\((\\arctan u)' = \\dfrac{u'}{1+u^2}\\)"
-  },
-  {
-    "objectID": "posts/posts/formulaire d'analyse.html#trigonométrie-hyperbolique-réciproque",
-    "href": "posts/posts/formulaire d'analyse.html#trigonométrie-hyperbolique-réciproque",
-    "title": "formulaire d’analyse",
-    "section": "3.5 Trigonométrie hyperbolique réciproque",
-    "text": "3.5 Trigonométrie hyperbolique réciproque\n\\(\\arg\\mathrm{sh} x = \\ln \\left( x + \\sqrt{ 1+x^2 } \\right)\\)\n\\(\\arg\\mathrm{ch} x = \\ln \\left( x + \\sqrt{ 1 - x^2 } \\right)\\)\n\\(\\arg\\mathrm{th} x = \\dfrac12 \\ln \\left( \\dfrac{1+x}{1-x} \\right)\\)\n\\((\\arg\\mathrm{sh} x)' = \\dfrac{1}{\\sqrt{ x^2 + 1 }}\\)\n\\((\\arg\\mathrm{ch} x)' = \\dfrac{1}{\\sqrt{x^2 - 1}}\\)\n\\((\\arg\\mathrm{th} x)' = \\dfrac{1}{1-x^2}\\)\n\\((\\arg\\mathrm{sh} u)' = \\dfrac{u'}{\\sqrt{ u^2 + 1 }}\\)\n\\((\\arg\\mathrm{ch} u)' = \\dfrac{u'}{\\sqrt{ u^2 - 1}}\\)\n\\((\\arg\\mathrm{th} u)' = \\dfrac{u'}{1 - u^2}\\)"
-  },
-  {
-    "objectID": "posts/posts/formulaire d'analyse.html#comportement-à-linfini",
-    "href": "posts/posts/formulaire d'analyse.html#comportement-à-linfini",
-    "title": "formulaire d’analyse",
-    "section": "4.1 Comportement à l’infini",
-    "text": "4.1 Comportement à l’infini\n\\(\\displaystyle\\lim_{x\\to+\\infty} \\ln x = +\\infty\\)\n\\(\\displaystyle\\lim_{x\\to+\\infty}\\exp x = +\\infty\\)\n\\(\\displaystyle\\lim_{x\\to-\\infty}\\exp x = 0\\)\nSi \\(\\alpha > 0\\), \\(\\displaystyle\\lim_{x\\to+\\infty}x^{\\alpha} = +\\infty\\)\nSi \\(\\alpha < 0\\), \\(\\displaystyle\\lim_{x\\to+\\infty}x^{\\alpha} = 0\\)\nSi \\(\\alpha > 0\\), \\(\\displaystyle\\lim_{x\\to+\\infty}\\dfrac{\\exp x}{x^\\alpha} = \\lim_{x\\to+\\infty}\\dfrac{e^x}{x^\\alpha} = +\\infty\\)\nSi \\(\\alpha > 0\\), \\(\\displaystyle\\lim_{x\\to+\\infty}x^\\alpha\\times\\exp(-x) = \\lim_{x\\to+\\infty}x^\\alpha e^{-x} = 0\\)"
-  },
-  {
-    "objectID": "posts/posts/formulaire d'analyse.html#comportement-à-lorigine",
-    "href": "posts/posts/formulaire d'analyse.html#comportement-à-lorigine",
-    "title": "formulaire d’analyse",
-    "section": "4.2 Comportement à l’origine",
-    "text": "4.2 Comportement à l’origine\n\\(\\displaystyle\\lim_{x \\rightarrow 0} \\ln x = + \\infty\\)\nSi \\(\\alpha > 0\\), \\(\\displaystyle\\lim_{x \\rightarrow 0^+} x^\\alpha = +\\infty\\)\nSi \\(\\alpha < 0\\), \\(\\displaystyle\\lim_{x \\rightarrow 0^+} x^\\alpha = +\\infty\\)\nSi \\(\\alpha > 0\\), \\(\\displaystyle\\lim_{x \\rightarrow 0^+} \\left( x^\\alpha \\ln x \\right) = 0\\) propriété de croissance comparée\n\\(\\displaystyle \\lim_{x \\rightarrow 0} \\dfrac{\\ln (1+x)}{x} = 1\\)\n\\(\\displaystyle \\lim_{x \\to 0} \\dfrac{e^x - 1}{x} = 1\\)\n\\(\\displaystyle \\lim_{x \\rightarrow 0} \\dfrac{\\sin x}x = 1\\)"
-  },
-  {
-    "objectID": "posts/posts/formulaire d'analyse.html#intégration-par-parties",
-    "href": "posts/posts/formulaire d'analyse.html#intégration-par-parties",
-    "title": "formulaire d’analyse",
-    "section": "5.1 Intégration par parties",
-    "text": "5.1 Intégration par parties\n\\(\\displaystyle \\int_{a}^{b} f(x)g'(x) \\, dx = \\big[ f(x)g(x) \\big]_{a}^{b} - \\int_{a}^{b} f'(x)g(x) \\, dx\\)"
-  },
-  {
-    "objectID": "posts/posts/formulaire d'analyse.html#primitives-usuelles",
-    "href": "posts/posts/formulaire d'analyse.html#primitives-usuelles",
-    "title": "formulaire d’analyse",
-    "section": "5.2 Primitives usuelles",
-    "text": "5.2 Primitives usuelles\nSi \\(\\alpha \\neq -1\\), \\(\\displaystyle \\int x^\\alpha \\mathrm{d} x = \\dfrac{1}{\\alpha + 1}x^{\\alpha +1} + \\text{cte}\\)\n\\(\\displaystyle\\int \\dfrac{1}x \\mathrm{d} x = \\ln |x|+\\text{cte}\\)\n\\(\\displaystyle\\int \\dfrac{1}{x+\\alpha }\\mathrm{d} x = \\ln |x+\\alpha |+\\text{cte}\\)\n\\(\\displaystyle\\int e^x \\mathrm{d} x = e^x + \\text{cte}\\)\nSi \\(\\alpha > 0\\) et \\(\\alpha \\neq 1\\), \\(\\displaystyle\\int \\alpha^x \\mathrm{d} x= \\dfrac{1}{\\ln \\alpha }\\times \\alpha^x + \\text{cte}\\)\n\\(\\displaystyle\\int \\cos x \\mathrm{d} x = \\sin x + \\text{cte}\\)\n\\(\\displaystyle\\int \\sin x \\mathrm{d} x = -\\cos x + \\text{cte}\\)\nSi \\(\\alpha \\neq 0\\), \\(\\displaystyle\\int \\cos \\alpha x \\mathrm{d} x = \\dfrac{1}{\\alpha} \\sin \\alpha x + \\text{cte}\\)\nSi \\(\\alpha \\neq 0\\), \\(\\displaystyle\\int \\sin \\alpha x \\mathrm{d} x = \\dfrac{1}{\\alpha} \\cos \\alpha x + \\text{cte}\\)\n\\(\\displaystyle \\int \\dfrac{1}{\\cos ^2 x} \\mathrm{d} x = \\tan x + \\text{cte}\\)\n\\(\\displaystyle\\int 1 + \\tan ^2 x \\mathrm{d} x = \\tan x + \\text{cte}\\)\n\\(\\displaystyle\\int \\dfrac{1}{\\sin ^2 x} \\mathrm{d} x = -\\mathrm{cotan} x + \\text{cte} \\quad= -\\dfrac{1}{\\tan x} + \\text{cte}\\)\n\\(\\displaystyle\\int \\dfrac{1}{1+x^2} \\mathrm{d} x = \\arctan x + \\text{cte}\\)\n\\(\\displaystyle\\int \\mathrm{ch} x \\mathrm{d} x = \\mathrm{sh} x + \\text{cte}\\)\n\\(\\displaystyle\\int \\mathrm{sh} x \\mathrm{d} x = \\mathrm{ch} x + \\text{cte}\\)\n\\(\\displaystyle\\int \\dfrac{1}{\\mathrm{ch}^2 x} \\mathrm{d} x = \\mathrm{th} x + \\text{cte}\\)\n\\(\\displaystyle\\int \\dfrac{1}{\\mathrm{sh}^2 x} \\mathrm{d} x = \\dfrac{1}{\\mathrm{th} x} + \\text{cte}\\)"
-  },
-  {
-    "objectID": "posts/posts/formulaire d'analyse.html#primitives-de-fonctions-composées",
-    "href": "posts/posts/formulaire d'analyse.html#primitives-de-fonctions-composées",
-    "title": "formulaire d’analyse",
-    "section": "5.3 Primitives de fonctions composées",
-    "text": "5.3 Primitives de fonctions composées\n\\(\\displaystyle\\int \\frac{u'(x)}{u(x)} \\, dx = \\ln(u) + \\text{cte}\\)"
+    "objectID": "posts/informatique/vim_tips_leader.html#cas-dutilisation",
+    "href": "posts/informatique/vim_tips_leader.html#cas-dutilisation",
+    "title": "vim tips - leader",
+    "section": "Cas d’utilisation",
+    "text": "Cas d’utilisation\nUn des usages principaux de <leader> est comme préfixe (d’où le nom, leader, en anglais).\nPar préfixe, je veux dire une touche qui est au début de plein de raccourcis. C’est utile car Vim assigne déjà beaucoup de raccourcis, et donc ne laisse pas beaucoup de place pour que l’utilisateur définisse les siens. C’est pour cette raison que <leader> est utile : vous pouvez faire commencer plein de vos raccourcis par leader. Par exemple, j’ai défini les raccourcis <leader>j, <leader>k, <leader>m, <leader>ul…\n\nExemples d’utilisation\nVoici quelques exemples d’utilisation :\n\n<leader>m pour :make<cr>, si vous utilisez des makefiles\n<leader>k pour sauvegarder (c’est bizarre mais c’est ce que j’utilise)\n<leader>w ou bien <leader>q pour <c-w>, afin d’éviter la touche contrôle quand on manipule les fenêtres\n<leader>t pour :tabnew<cr> (créer un nouvel onglet)\n<leader>! pour :term ++curwin (ouvrir un terminal dans la fenêtre actuelle)\n\n     \n\nMon .vimrc est disponible ici : github.com/OsKaR31415/config avec le reste de ma configuration."
   },
   {
     "objectID": "posts/welcome/bienvenue sur mon blog.html",
@@ -126,17 +35,129 @@
     "text": "Ce blog me permettra de partager des explications sur certains sujets, et des idées personnelles.\n\nDes explications sur divers concepts de mathématiques ou d’informatique (pour aider les gens que je connais)\nDes réflexions que je souhaite partager\nN’importe quoi que j’ai découvert et que je trouve intéressant\n\n\nLe nom du blog\nLe Blog s’appelle OSK42, à la fois en référence au nombre 42, la réponse à la “grande question sur la vie, l’univers et le reste”, et car OSK42 est une écriture de OSKAR (mon pseudo) en leet speak"
   },
   {
+    "objectID": "posts/maths/formulaire d'analyse.html",
+    "href": "posts/maths/formulaire d'analyse.html",
+    "title": "formulaire d’analyse",
+    "section": "",
+    "text": "Voici une liste des formules importantes en analyse"
+  },
+  {
+    "objectID": "posts/maths/formulaire d'analyse.html#identités-remarquables",
+    "href": "posts/maths/formulaire d'analyse.html#identités-remarquables",
+    "title": "formulaire d’analyse",
+    "section": "0.1 Identités remarquables",
+    "text": "0.1 Identités remarquables\n\\((a + b)^{2} = a^{2} + 2ab + b^{2}\\)\n\\((a - b)^{2} = a^{2} - 2ab + b^{2}\\)\n\\((a + b)(a - b) = a^{2} - b^{2}\\)\n\\((a + b)^{3} = a^{3} + 3a^{2}b + 3ab^{2} + b^{3}\\)\n\\((a - b)^{3} = a^{3} - 3a^{2}b + 3ab^{2} - b^{3}\\)\n\\(a^{3} - b^{3} = (a - b)\\left( a^{2} + ab + b^{2} \\right)\\)\n\\(a^{3} + b^{3} = (a + b)\\left( a^{2} - ab + b^{2} \\right)\\)"
+  },
+  {
+    "objectID": "posts/maths/formulaire d'analyse.html#suites-arithmétiques",
+    "href": "posts/maths/formulaire d'analyse.html#suites-arithmétiques",
+    "title": "formulaire d’analyse",
+    "section": "1.1 Suites arithmétiques",
+    "text": "1.1 Suites arithmétiques\nTermes de la suite (\\(r\\) désigne la raison):\n\\(u_{n+1} - u_{n} = r\\)\n\\(u_{n} = u_{0} + nr\\)\n\\(u_{n} = u_{p} + (n-p)r\\)\nSomme des termes :\n\\(\\displaystyle S_{n} = \\sum_{k=0}^{n}u_{k} = \\dfrac{(n+1)(u_{0}+u_{n})}{2}\\)\nCas général avec \\(n_{1} \\leq n_{2}\\) :\n\\(\\displaystyle S' = \\sum_{k = n_{1}}^{n_{2}}u_{k} = \\frac{(nombre\\ de\\ termes)(premier\\ terme + dernier\\ terme)}{2}\\)\nCas particulier :\n\\(1 + 2 + 3\\ \\cdots + (n - 1) + n = \\frac{n(n + 1)}{2}\\)"
+  },
+  {
+    "objectID": "posts/maths/formulaire d'analyse.html#suites-géométriques",
+    "href": "posts/maths/formulaire d'analyse.html#suites-géométriques",
+    "title": "formulaire d’analyse",
+    "section": "1.2 Suites géométriques",
+    "text": "1.2 Suites géométriques\nOn suppose que la suite est non nulle. Termes de la suite ((q) désigne la raison) :\n\\(\\dfrac{u_{n+1}}{u_{n}} = q\\)\n\\(u_{n} = u_{0} \\times q^{n}\\)\n\\(u_{n} = u_{p}\\times q^{n-p}\\)\nSomme des termes :\n\\(S_{n} = \\sum\\limits_{k=0}^{n}u_{k}\\)\n\nSi \\(q \\neq 1\\) : \\(S_{n} = u_{0}\\times \\frac{1-q^{n+1}}{1-q}\\)\nSi \\(q=1\\) : \\(S_{n}=u_{0}(n+1)\\)\n\nCas général avec \\(n_{1} \\leq n_{2}\\) : \\(S'_{n} = \\sum\\limits_{k=0}^{n}u_{k}\\)\n\nSi \\(q \\neq 1\\) : \\(S'_{n} = (\\text{premier terme}) \\times \\frac{1- \\left( q^{\\text{nombre de termes}} \\right)}{1-q}\\)\nSi \\(q = 1\\) : \\(S'_{n} = (\\text{nombre de termes}) \\times (\\text{premier terme})\\)"
+  },
+  {
+    "objectID": "posts/maths/formulaire d'analyse.html#formules-générales",
+    "href": "posts/maths/formulaire d'analyse.html#formules-générales",
+    "title": "formulaire d’analyse",
+    "section": "2.1 Formules générales",
+    "text": "2.1 Formules générales\nDans ce qui suit, \\(u\\) et \\(v\\) désignent deus fonctions d’une variable réelle \\(x\\), et \\(k\\) une constante réelle.\n\\((u+v)' = u' + v'\\)\n\\((ku)' = ku'\\)\n\\((uv)' = u'v + uv'\\)\n\\(\\left( \\dfrac{u}{v} \\right)' = \\dfrac{u'v - uv'}{v^{2}}\\)\n\\((v\\circ u)' = u' \\times (v'\\circ u)\\)\n\\(\\displaystyle(u^{-1})' = \\dfrac{1}{u' \\circ u^{-1}}\\)"
+  },
+  {
+    "objectID": "posts/maths/formulaire d'analyse.html#fonctions-usuelles",
+    "href": "posts/maths/formulaire d'analyse.html#fonctions-usuelles",
+    "title": "formulaire d’analyse",
+    "section": "2.2 Fonctions usuelles",
+    "text": "2.2 Fonctions usuelles\n\n2.2.1 fonctions non composées\n\n\n\n\n\n\n\n\n\nFonction \\(f\\)\n\\(\\mathscr{D}_{f}\\)\nFonction dérivée \\(f'\\)\n\\(\\mathscr{D}_{f'}\\)\n\n\n\n\n\\(k\\)\n\\(\\mathbb{R}\\)\n0\n\\(\\mathbb{R}\\)\n\n\n\\(x\\)\n\\(\\mathbb{R}\\)\n\\(1\\)\n\\(\\mathbb{R}\\)\n\n\n\\(\\dfrac{1}{x}\\)\n\\(\\mathbb{R}^{*}\\)\n\\(-\\dfrac{1}{x^{2}}\\)\n\\(\\mathbb{R}^{*}\\)\n\n\n\\(\\sqrt{ x }\\)\n\\(\\mathbb{R}^{+}\\)\n\\(\\frac{1}{2\\sqrt{ x }}\\)\n\\(\\mathbb{R}^{+*}\\)\n\n\n\\(x^{n}\\) avec \\(n \\in\\mathbb{Z}\\)\n\\(\\mathbb{R}\\)\n\\(nx^{n-1}\\)\n\\(\\mathbb{R} \\text{ si } n \\geq 0, \\quad \\mathbb{R}^{*} \\text{ si } n < 0\\)\n\n\n\\(x^{\\alpha}\\) avec \\(\\alpha \\in\\mathbb{R}\\)\n\\(\\mathbb{R}^{+} \\text{ si } \\alpha \\geq 0, \\quad \\mathbb{R}^{+*} \\text{ si } \\alpha<0\\)\n\\(\\alpha x^{\\alpha-1}\\)\n\\(\\mathbb{R} \\text{ si } n \\geq 0, \\quad \\mathbb{R}^{*} \\text{ si } \\alpha < 1\\)\n\n\n\\(\\ln \\mid x \\mid\\)\n\\(\\mathbb{R}^{+*}\\)\n\\(\\dfrac{1}{x}\\)\n\\(\\mathbb{R}^{+*}\\)\n\n\n\\(\\exp x\\)\n\\(\\mathbb{R}\\)\n\\(\\exp x\\)\n\\(\\mathbb{R}\\)\n\n\n\\(\\sin x\\)\n\\(\\mathbb{R}\\)\n\\(\\cos x\\)\n\\(\\mathbb{R}\\)\n\n\n\\(\\cos x\\)\n\\(\\mathbb{R}\\)\n\\(-\\sin x\\)\n\\(\\mathbb{R}\\)\n\n\n\\(\\tan x\\)\n\\(\\mathbb{R} \\setminus \\left\\lbrace \\dfrac{\\pi}{2} + k\\pi \\right\\rbrace\\)\n\\(1+\\tan^2 x = \\dfrac{1}{\\cos^2 x}\\)\n\\(\\mathbb{R} \\setminus \\left\\lbrace \\dfrac{\\pi}{2} + k\\pi \\right\\rbrace\\)\n\n\n\\(\\mathrm{sh} x\\)\n\\(\\mathbb{R}\\)\n\\(\\mathrm{ch} x\\)\n\\(\\mathbb{R}\\)\n\n\n\\(\\mathrm{ch} x\\)\n\\(\\mathbb{R}\\)\n\\(\\mathrm{sh} x\\)\n\\(\\mathbb{R}\\)\n\n\n\\(\\mathrm{th} x\\)\n\\(\\mathbb{R}\\)\n\\(1-\\mathrm{th}^2 x = \\dfrac{1}{\\mathrm{ch}^2 x}\\)\n\\(\\mathbb{R}\\)\n\n\n\nLes dérivées des fonctions réciproques des fonctions trigonométriques et hyperboliques figurent dans la section “trigonométrie réciproque\n\n\n2.2.2 Fonctions composées\n\n\n\n\n\n\n\nforme de la fonction\nforme de la dérivée\n\n\n\n\n\\(\\dfrac{1}{u}\\)\n\\(-\\dfrac{u'}{u^2}\\)\n\n\n\\(\\sqrt{u}\\)\n\\(\\dfrac{u'}{2 \\sqrt{u}}\\)\n\n\n\\(u^{\\alpha}\\)\n\\(\\alpha u' u^{\\alpha - 1}\\)\n\n\n$u $\n\\(\\dfrac{u'}{u}\\)\n\n\n\\(\\exp u\\)\n\\(u' \\times \\exp u\\)\n\n\n\\(\\sin u\\)\n\\(u'\\times \\cos u\\)\n\n\n\\(\\cos u\\)\n\\(-u' \\times \\sin u\\)\n\n\n\\(\\tan u\\)\n\\(u' \\times (1+\\tan^2 u) = \\dfrac{u'}{\\cos^2 u}\\)\n\n\n\\(\\mathrm{sh} u\\)\n\\(u' \\times \\mathrm{ch} u\\)\n\n\n\\(\\mathrm{ch} u\\)\n\\(u' \\times \\mathrm{sh} u\\)\n\n\n\\(\\mathrm{th} u\\)\n\\(u' \\times (1-\\mathrm{th}^2 u) = \\dfrac{u'}{\\mathrm{ch}^2 u}\\)"
+  },
+  {
+    "objectID": "posts/maths/formulaire d'analyse.html#fonctions-trigonométriques",
+    "href": "posts/maths/formulaire d'analyse.html#fonctions-trigonométriques",
+    "title": "formulaire d’analyse",
+    "section": "3.1 Fonctions trigonométriques",
+    "text": "3.1 Fonctions trigonométriques\n\\(\\cos^2 x + \\sin^2 x = 1\\)\n\\(\\cos(a+b) = \\cos a \\cos b - \\sin a \\sin b\\)\n\\(\\cos(a-b) = \\cos a \\cos b + \\sin a \\sin b\\)\n\\(\\sin(a+b) = \\sin a\\cos b + \\sin b \\cos a\\)\n\\(\\sin(a-b) = \\sin a \\cos b - \\sin b \\cos a\\)\n\\(\\tan(a+b) = \\dfrac{\\tan a + \\tan b}{1-\\tan a \\tan b}\\)\n\\(\\tan(a-b) = \\dfrac{\\tan a - \\tan b}{1+\\tan a \\tan b}\\)\n\\(\\cos a \\cos b = \\dfrac{1}{2} \\big( \\cos(a+b)+\\cos(a-b) \\big)\\)\n\\(\\sin a\\sin b = \\dfrac{1}{2} \\big( \\cos(a-b) - \\cos(a+b) \\big)\\)\n\\(\\sin a \\cos b = \\dfrac12 \\big( \\sin(a+b) + \\sin(a-b) \\big)\\)\n\\(\\cos a + \\cos b = 2\\cos \\dfrac{(a+b)}{2}\\cos\\dfrac{(a-b)}{2}\\)\n\\(\\cos a - \\cos b = -2\\sin\\dfrac{a+b}{2}\\sin\\dfrac{a-b}{2}\\)\n\\(\\sin a + \\sin b = 2\\sin\\dfrac{a+b}{2}\\cos\\dfrac{a-b}{2}\\)\n\\(\\sin a - \\sin b = 2\\sin\\dfrac{a-b}{2} \\cos\\dfrac{a+b}{2}\\)\n\\(\\cos(2x) =\\cos ^{2}x-\\sin ^{2}x \\quad= 2\\cos ^{2}x-1 \\quad= 1-2\\sin ^{2}x \\quad= \\frac{1-\\tan ^{2}x}{1+\\tan ^{2}x}\\)\n\\(\\cos^2 x = \\dfrac{1+\\cos(2x)}{2}\\)\n\\(\\sin^2 x = \\dfrac{1-\\cos(2x)}{2}\\)\n\\(\\tan^2 x = \\dfrac{1-\\cos(2x)}{1+\\cos(2x)}\\)\n\\(\\sin(2x) = 2\\sin x\\cos x \\quad= 1+\\tan ^{2}x\\)\n\\(\\tan(2x) = \\dfrac{2\\tan x}{1 - \\tan^2 x}\\)"
+  },
+  {
+    "objectID": "posts/maths/formulaire d'analyse.html#fonctions-hyperboliques",
+    "href": "posts/maths/formulaire d'analyse.html#fonctions-hyperboliques",
+    "title": "formulaire d’analyse",
+    "section": "3.2 Fonctions hyperboliques",
+    "text": "3.2 Fonctions hyperboliques\n\\(\\mathrm{ch}^2 x - \\mathrm{sh}^2 x = 1\\)\n\\(\\mathrm{ch}(a+b) = \\mathrm{ch} (a) \\;\\mathrm{ch} (a) + \\mathrm{sh} a \\mathrm{sh} b\\)\n\\(\\mathrm{ch}(a-b) = \\mathrm{ch} (a)\\; \\mathrm{ch} (b) - \\mathrm{sh} a \\mathrm{sh} b\\)\n\\(\\mathrm{sh}(a+b) = \\mathrm{sh} (a)\\; \\mathrm{ch} (b) + \\mathrm{sh} (b)\\; \\mathrm{ch} (a)\\)\n\\(\\mathrm{sh}(a-b) = \\mathrm{sh} (a); \\mathrm{ch} (b) - \\mathrm{sh} (b) \\mathrm{ch} (a)\\)\n\\(\\mathrm{th}(a+b) = \\dfrac{\\mathrm{th} a + \\mathrm{th} b}{1 + \\mathrm{th} (a) \\mathrm{th} (b)}\\)\n\\(\\mathrm{th}(a-b) = \\dfrac{\\mathrm{th} a - \\mathrm{th} b}{1 - \\mathrm{th} (a) \\mathrm{th} (b)}\\)\n\\(\\mathrm{ch} (a) \\;\\mathrm{ch} (b) = \\dfrac12 \\big( \\mathrm{ch}(a+b) + \\mathrm{ch}(a-b) \\big)\\)\n\\(\\mathrm{sh} (a)\\; \\mathrm{sh} (b) = \\dfrac12 \\big( \\mathrm{ch}(a+b) - \\mathrm{ch}(a-b) \\big)\\)\n\\(\\mathrm{sh} (a)\\; \\mathrm{ch} (b) = \\dfrac12 \\big( \\mathrm{sh}(a+b) + \\mathrm{sh}(a-b) \\big)\\)\n\\(\\mathrm{ch} (a) + \\mathrm{ch} (b) = 2\\mathrm{ch} \\dfrac{a+b}{2} \\mathrm{ch} \\dfrac{a-b}{2}\\)\n\\(\\mathrm{ch} (a) - \\mathrm{ch} (a) = 2\\mathrm{sh} \\dfrac{a+b}{2}\\mathrm{sh}\\dfrac{a-b}{2}\\)\n\\(\\mathrm{sh} (a) + \\mathrm{sh} (b) = 2\\mathrm{sh} \\dfrac{a+b}{2}\\mathrm{ch}\\dfrac{a-b}{2}\\)\n\\(\\mathrm{sh} (a) - \\mathrm{sh} (b) = 2\\mathrm{sh}\\dfrac{a-b}{2} \\mathrm{ch}\\dfrac{a+b}{2}\\)\n\\(\\mathrm{ch}(2x) = \\mathrm{ch} ^{2}x + \\mathrm{sh} ^{2}x \\quad= 2\\mathrm{ch} ^{2}x - 1 \\quad= 1+2\\mathrm{sh} ^{2}x \\quad=\\frac{1+\\mathrm{th} ^{2}x}{1-\\mathrm{th} ^{2}x}\\)\n\\(\\mathrm{ch}^2 x = \\dfrac{1+\\mathrm{ch}(2x)}{2}\\)\n\\(\\mathrm{sh}^2 x = \\dfrac{\\mathrm{ch}(2x) - 1}{2}\\)\n\\(\\mathrm{th}^2 x = \\dfrac{\\mathrm{ch}(2x) - 1}{\\mathrm{ch}(2x) + 1}\\)\n\\(\\mathrm{sh}(2x) = 2\\mathrm{sh}(x) \\mathrm{ch}(x) \\quad= \\frac{2\\mathrm{th}(x)}{1-\\mathrm{th}^{2}(x)}\\)\n\\(\\mathrm{th}(2x) = \\dfrac{2\\mathrm{th} x}{1+\\mathrm{th}^2 x}\\)"
+  },
+  {
+    "objectID": "posts/maths/formulaire d'analyse.html#points-sur-le-cercle-trigonométrique",
+    "href": "posts/maths/formulaire d'analyse.html#points-sur-le-cercle-trigonométrique",
+    "title": "formulaire d’analyse",
+    "section": "3.3 Points sur le cercle trigonométrique",
+    "text": "3.3 Points sur le cercle trigonométrique\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\\(-x\\)\n\\(\\frac{\\pi}{2}+x\\)\n\\(\\frac{\\pi}{2}-x\\)\n\\(\\pi+x\\)\n\\(\\pi-x\\)\n\\(0\\)\n\\(\\frac{\\pi}{6}\\)\n\\(\\frac{\\pi}{4}\\)\n\\(\\frac{\\pi}{3}\\)\n\\(\\frac{\\pi}{2}\\)\n\n\n\n\n\\(\\sin\\)\n\\(-\\sin x\\)\n\\(\\cos x\\)\n\\(\\cos x\\)\n\\(-\\sin x\\)\n\\(\\sin x\\)\n\\(0\\)\n\\(\\frac{1}{2}\\)\n\\(\\frac{\\sqrt{ 2 }}{2}\\)\n\\(\\frac{\\sqrt{ 3 }}{2}\\)\n1\n\n\n\\(\\cos\\)\n\\(\\cos x\\)\n\\(-\\sin x\\)\n\\(\\sin x\\)\n\\(-\\cos x\\)\n\\(-\\cos x\\)\n\\(1\\)\n\\(\\frac{\\sqrt{ 3 }}{2}\\)\n\\(\\frac{\\sqrt{ 2 }}{2}\\)\n\\(\\frac{1}{2}\\)\n0\n\n\n\\(\\tan\\)\n\\(-\\tan x\\)\n\\(-\\frac{1}{\\tan x}\\)\n\\(\\frac{1}{\\tan x}\\)\n\\(\\tan x\\)\n\\(-\\tan x\\)\n\\(0\\)\n\\(\\frac{\\sqrt{ 3 }}{2}\\)\n\\(1\\)\n\\(\\sqrt{ 3 }\\)"
+  },
+  {
+    "objectID": "posts/maths/formulaire d'analyse.html#trigonométrie-réciproque",
+    "href": "posts/maths/formulaire d'analyse.html#trigonométrie-réciproque",
+    "title": "formulaire d’analyse",
+    "section": "3.4 Trigonométrie réciproque",
+    "text": "3.4 Trigonométrie réciproque\n\\(\\arcsin x + \\arccos x = \\dfrac{\\pi}{2}\\)\n\\(\\arctan x + \\arctan \\dfrac{1}{x} = \\text{sg}(x) \\times \\dfrac{\\pi}{2}\\) avec \\(\\mathrm{sg}(x) = 1 \\text{ si } x>0\\) et \\(\\mathrm{sg}(x) = -1 \\text{ si } x < 0\\)\n\\((\\arcsin x)' = \\dfrac{1}{\\sqrt{1-x^2}}\\)\n\\((\\arccos x)' = -\\dfrac{1}{\\sqrt{1-x^2}}\\)\n\\((\\arctan x)' = \\dfrac{1}{1+x^2}\\)\n\\((\\arcsin u)' = \\dfrac{u'}{\\sqrt{1-u^2}}\\)\n\\((\\arccos u)' = -\\dfrac{u'}{\\sqrt{1-u^2}}\\)\n\\((\\arctan u)' = \\dfrac{u'}{1+u^2}\\)"
+  },
+  {
+    "objectID": "posts/maths/formulaire d'analyse.html#trigonométrie-hyperbolique-réciproque",
+    "href": "posts/maths/formulaire d'analyse.html#trigonométrie-hyperbolique-réciproque",
+    "title": "formulaire d’analyse",
+    "section": "3.5 Trigonométrie hyperbolique réciproque",
+    "text": "3.5 Trigonométrie hyperbolique réciproque\n\\(\\arg\\mathrm{sh} x = \\ln \\left( x + \\sqrt{ 1+x^2 } \\right)\\)\n\\(\\arg\\mathrm{ch} x = \\ln \\left( x + \\sqrt{ 1 - x^2 } \\right)\\)\n\\(\\arg\\mathrm{th} x = \\dfrac12 \\ln \\left( \\dfrac{1+x}{1-x} \\right)\\)\n\\((\\arg\\mathrm{sh} x)' = \\dfrac{1}{\\sqrt{ x^2 + 1 }}\\)\n\\((\\arg\\mathrm{ch} x)' = \\dfrac{1}{\\sqrt{x^2 - 1}}\\)\n\\((\\arg\\mathrm{th} x)' = \\dfrac{1}{1-x^2}\\)\n\\((\\arg\\mathrm{sh} u)' = \\dfrac{u'}{\\sqrt{ u^2 + 1 }}\\)\n\\((\\arg\\mathrm{ch} u)' = \\dfrac{u'}{\\sqrt{ u^2 - 1}}\\)\n\\((\\arg\\mathrm{th} u)' = \\dfrac{u'}{1 - u^2}\\)"
+  },
+  {
+    "objectID": "posts/maths/formulaire d'analyse.html#comportement-à-linfini",
+    "href": "posts/maths/formulaire d'analyse.html#comportement-à-linfini",
+    "title": "formulaire d’analyse",
+    "section": "4.1 Comportement à l’infini",
+    "text": "4.1 Comportement à l’infini\n\\(\\displaystyle\\lim_{x\\to+\\infty} \\ln x = +\\infty\\)\n\\(\\displaystyle\\lim_{x\\to+\\infty}\\exp x = +\\infty\\)\n\\(\\displaystyle\\lim_{x\\to-\\infty}\\exp x = 0\\)\nSi \\(\\alpha > 0\\), \\(\\displaystyle\\lim_{x\\to+\\infty}x^{\\alpha} = +\\infty\\)\nSi \\(\\alpha < 0\\), \\(\\displaystyle\\lim_{x\\to+\\infty}x^{\\alpha} = 0\\)\nSi \\(\\alpha > 0\\), \\(\\displaystyle\\lim_{x\\to+\\infty}\\dfrac{\\exp x}{x^\\alpha} = \\lim_{x\\to+\\infty}\\dfrac{e^x}{x^\\alpha} = +\\infty\\)\nSi \\(\\alpha > 0\\), \\(\\displaystyle\\lim_{x\\to+\\infty}x^\\alpha\\times\\exp(-x) = \\lim_{x\\to+\\infty}x^\\alpha e^{-x} = 0\\)"
+  },
+  {
+    "objectID": "posts/maths/formulaire d'analyse.html#comportement-à-lorigine",
+    "href": "posts/maths/formulaire d'analyse.html#comportement-à-lorigine",
+    "title": "formulaire d’analyse",
+    "section": "4.2 Comportement à l’origine",
+    "text": "4.2 Comportement à l’origine\n\\(\\displaystyle\\lim_{x \\rightarrow 0} \\ln x = + \\infty\\)\nSi \\(\\alpha > 0\\), \\(\\displaystyle\\lim_{x \\rightarrow 0^+} x^\\alpha = +\\infty\\)\nSi \\(\\alpha < 0\\), \\(\\displaystyle\\lim_{x \\rightarrow 0^+} x^\\alpha = +\\infty\\)\nSi \\(\\alpha > 0\\), \\(\\displaystyle\\lim_{x \\rightarrow 0^+} \\left( x^\\alpha \\ln x \\right) = 0\\) propriété de croissance comparée\n\\(\\displaystyle \\lim_{x \\rightarrow 0} \\dfrac{\\ln (1+x)}{x} = 1\\)\n\\(\\displaystyle \\lim_{x \\to 0} \\dfrac{e^x - 1}{x} = 1\\)\n\\(\\displaystyle \\lim_{x \\rightarrow 0} \\dfrac{\\sin x}x = 1\\)"
+  },
+  {
+    "objectID": "posts/maths/formulaire d'analyse.html#intégration-par-parties",
+    "href": "posts/maths/formulaire d'analyse.html#intégration-par-parties",
+    "title": "formulaire d’analyse",
+    "section": "5.1 Intégration par parties",
+    "text": "5.1 Intégration par parties\n\\(\\displaystyle \\int_{a}^{b} f(x)g'(x) \\, dx = \\big[ f(x)g(x) \\big]_{a}^{b} - \\int_{a}^{b} f'(x)g(x) \\, dx\\)"
+  },
+  {
+    "objectID": "posts/maths/formulaire d'analyse.html#primitives-usuelles",
+    "href": "posts/maths/formulaire d'analyse.html#primitives-usuelles",
+    "title": "formulaire d’analyse",
+    "section": "5.2 Primitives usuelles",
+    "text": "5.2 Primitives usuelles\nSi \\(\\alpha \\neq -1\\), \\(\\displaystyle \\int x^\\alpha \\mathrm{d} x = \\dfrac{1}{\\alpha + 1}x^{\\alpha +1} + \\text{cte}\\)\n\\(\\displaystyle\\int \\dfrac{1}x \\mathrm{d} x = \\ln |x|+\\text{cte}\\)\n\\(\\displaystyle\\int \\dfrac{1}{x+\\alpha }\\mathrm{d} x = \\ln |x+\\alpha |+\\text{cte}\\)\n\\(\\displaystyle\\int e^x \\mathrm{d} x = e^x + \\text{cte}\\)\nSi \\(\\alpha > 0\\) et \\(\\alpha \\neq 1\\), \\(\\displaystyle\\int \\alpha^x \\mathrm{d} x= \\dfrac{1}{\\ln \\alpha }\\times \\alpha^x + \\text{cte}\\)\n\\(\\displaystyle\\int \\cos x \\mathrm{d} x = \\sin x + \\text{cte}\\)\n\\(\\displaystyle\\int \\sin x \\mathrm{d} x = -\\cos x + \\text{cte}\\)\nSi \\(\\alpha \\neq 0\\), \\(\\displaystyle\\int \\cos \\alpha x \\mathrm{d} x = \\dfrac{1}{\\alpha} \\sin \\alpha x + \\text{cte}\\)\nSi \\(\\alpha \\neq 0\\), \\(\\displaystyle\\int \\sin \\alpha x \\mathrm{d} x = \\dfrac{1}{\\alpha} \\cos \\alpha x + \\text{cte}\\)\n\\(\\displaystyle \\int \\dfrac{1}{\\cos ^2 x} \\mathrm{d} x = \\tan x + \\text{cte}\\)\n\\(\\displaystyle\\int 1 + \\tan ^2 x \\mathrm{d} x = \\tan x + \\text{cte}\\)\n\\(\\displaystyle\\int \\dfrac{1}{\\sin ^2 x} \\mathrm{d} x = -\\mathrm{cotan} x + \\text{cte} \\quad= -\\dfrac{1}{\\tan x} + \\text{cte}\\)\n\\(\\displaystyle\\int \\dfrac{1}{1+x^2} \\mathrm{d} x = \\arctan x + \\text{cte}\\)\n\\(\\displaystyle\\int \\mathrm{ch} x \\mathrm{d} x = \\mathrm{sh} x + \\text{cte}\\)\n\\(\\displaystyle\\int \\mathrm{sh} x \\mathrm{d} x = \\mathrm{ch} x + \\text{cte}\\)\n\\(\\displaystyle\\int \\dfrac{1}{\\mathrm{ch}^2 x} \\mathrm{d} x = \\mathrm{th} x + \\text{cte}\\)\n\\(\\displaystyle\\int \\dfrac{1}{\\mathrm{sh}^2 x} \\mathrm{d} x = \\dfrac{1}{\\mathrm{th} x} + \\text{cte}\\)"
+  },
+  {
+    "objectID": "posts/maths/formulaire d'analyse.html#primitives-de-fonctions-composées",
+    "href": "posts/maths/formulaire d'analyse.html#primitives-de-fonctions-composées",
+    "title": "formulaire d’analyse",
+    "section": "5.3 Primitives de fonctions composées",
+    "text": "5.3 Primitives de fonctions composées\n\\(\\displaystyle\\int \\frac{u'(x)}{u(x)} \\, dx = \\ln(u) + \\text{cte}\\)"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "0SK42",
+    "title": "0SK42 - Tous les posts",
     "section": "",
-    "text": "formulaire d’analyse\n\n\n\n\n\n\n\nmaths\n\n\n\n\n\n\n\n\n\n\n\nJan 2, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPourquoi ce blog ?\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nJan 2, 2023\n\n\n\n\n\n\n  \n\n\n\n\nBienvenue sur mon blog\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nJan 1, 2023\n\n\n\n\n\n\nNo matching items"
+    "text": "vim tips - leader\n\n\n\n\n\n\n\nvim\n\n\ntips\n\n\n\n\nprésentation du raccourci  dans vim\n\n\n\n\n\n\nJan 3, 2023\n\n\n\n\n\n\n  \n\n\n\n\nformulaire d’analyse\n\n\n\n\n\n\n\nmaths\n\n\n\n\n\n\n\n\n\n\n\nJan 3, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPourquoi ce blog ?\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nJan 2, 2023\n\n\n\n\n\n\n  \n\n\n\n\nBienvenue sur mon blog\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nJan 1, 2023\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about.html",
     "href": "about.html",
     "title": "A propos",
     "section": "",
-    "text": "Je suis étudiant en licence d’informatique et de mathématiques, et passionné par ces deux sciences.\n\nContenu\nLe contenu de ce blog sera principalement :\n\n\nDes explications de concepts d’informatique et de mathématiques\nDes réflexions sur divers sujets\nDes présentations de n’importe quoi que j’ai trouvé intéressant\n\n\n\n\nLe nom du blog\nLe Blog s’appelle OSK42, à la fois en référence au nombre 42, la réponse à la “grande question sur la vie, l’univers et le reste”, et car OSK42 est une écriture de OSKAR (mon pseudo) en leet speak"
+    "text": "Je suis étudiant en licence d’informatique et de mathématiques, et passionné par ces deux sciences.\n\nContenu\nLe contenu de ce blog sera principalement :\n\n\nDes explications de concepts d’informatique et de mathématiques\nDes réflexions sur divers sujets\nDes présentations de ce que je trouve intéressant\n\n\n\n\nLe nom du blog\nLe Blog s’appelle OSK42, à la fois en référence au nombre 42, la réponse à la “grande question sur la vie, l’univers et le reste”, et car OSK42 est une écriture de OSKAR (mon pseudo) en leet speak"
   }
 ]

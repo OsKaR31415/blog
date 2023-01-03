@@ -8,7 +8,7 @@
 
 <meta name="dcterms.date" content="2023-01-02">
 
-<title>tous les posts - Contre, l’usage, abusif, de la virgule, dans la notation, mathématique</title>
+<title>0SK42 - Contre, l’usage, abusif, de la virgule, dans la notation, mathématique</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -73,7 +73,7 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
     <a class="navbar-brand" href="../../index.html">
-    <span class="navbar-title">tous les posts</span>
+    <span class="navbar-title">0SK42</span>
     </a>
   </div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
@@ -143,7 +143,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#les-différentes-significations-de-la-virgule" id="toc-les-différentes-significations-de-la-virgule" class="nav-link active" data-scroll-target="#les-différentes-significations-de-la-virgule">Les différentes significations de la virgule</a></li>
   <li><a href="#ambiguïtés-créées-par-la-virgule" id="toc-ambiguïtés-créées-par-la-virgule" class="nav-link" data-scroll-target="#ambiguïtés-créées-par-la-virgule">Ambiguïtés créées par la virgule</a>
   <ul class="collapse">
-  <li><a href="#cas-où-la-notation-est-vraiment-ambigue" id="toc-cas-où-la-notation-est-vraiment-ambigue" class="nav-link" data-scroll-target="#cas-où-la-notation-est-vraiment-ambigue">Cas où la notation est vraiment ambigue</a></li>
+  <li><a href="#cas-où-la-notation-est-vraiment-ambiguë" id="toc-cas-où-la-notation-est-vraiment-ambiguë" class="nav-link" data-scroll-target="#cas-où-la-notation-est-vraiment-ambiguë">Cas où la notation est vraiment ambiguë</a></li>
   <li><a href="#description-des-ensembles" id="toc-description-des-ensembles" class="nav-link" data-scroll-target="#description-des-ensembles">Description des ensembles</a></li>
   </ul></li>
   <li><a href="#solutions-possibles" id="toc-solutions-possibles" class="nav-link" data-scroll-target="#solutions-possibles">Solutions possibles</a>
@@ -181,8 +181,8 @@ ul.task-list li input[type="checkbox"] {
 <p>Nous avons vu que la virgule possède plusieurs utilisations différentes. En fait, on peut aisément construire un exemple qui utilise toutes ces significations :</p>
 <p><span class="math inline">\(\forall x, y \in \mathbb{R}, \exists y \in \mathbb{R}, y \in (x, y)\)</span></p>
 <p>Ici, on a le même problème qu’avec l’écriture en français : le même mot (symbole) peut avoir beaucoup de significations selon le contexte. On peut tout de même donner des règles qui permettent de reconnaître quelle interprétation est la bonne : - dans un vecteur (une valeur entre parenthèses), c’est un séparateur des coefficients du vecteur - avant un <span class="math inline">\(\in\)</span>, c’est un raccourci pour dire que toutes les variables listées appartiennent à l’ensemble désigné - Après / entre des quantificateurs - c’est un “tel que” s’il est suivi par une expression ou bien par un “il existe” - c’est un séparateur s’il est suivi par un quantificateur “pour tout” ( <span class="math inline">\(\forall\)</span> )</p>
-<section id="cas-où-la-notation-est-vraiment-ambigue" class="level3">
-<h3 class="anchored" data-anchor-id="cas-où-la-notation-est-vraiment-ambigue">Cas où la notation est vraiment ambigue</h3>
+<section id="cas-où-la-notation-est-vraiment-ambiguë" class="level3">
+<h3 class="anchored" data-anchor-id="cas-où-la-notation-est-vraiment-ambiguë">Cas où la notation est vraiment ambiguë</h3>
 <p>On a vu que, si les interprétations possibles de la virgule, on peut dire <span class="citation" data-cites="de">@de</span> façon certaine laquelle est la bonne en fonction du contexte.</p>
 <p>Mais il arrive que, quand on sait que l’on travaille sur un ensemble particulier (par exemple en arithmétique, on travaille très souvent sur <span class="math inline">\(\mathbb{Z}\)</span>, ou bien en analyse sur <span class="math inline">\(\mathbb{R}\)</span>) on note <span class="math inline">\(\forall x, \dots\)</span> pour dire <span class="math inline">\(\forall x \in \text{ensemble concerné}, \dots\)</span>. C’est un raccourci de notation qui est pratique, mais on peut alors écrire :</p>
 <p><span class="math inline">\(\forall x,y \in \mathbb{R}\)</span></p>
@@ -192,11 +192,11 @@ ul.task-list li input[type="checkbox"] {
 <section id="description-des-ensembles" class="level3">
 <h3 class="anchored" data-anchor-id="description-des-ensembles">Description des ensembles</h3>
 <p>Une autre notation intéressante est celle que l’on utilise pour décrire les ensembles.</p>
-<p>La notation générale est : <span class="math inline">\(\lbrace x \in E \mid \mathscr{P}(x) \rbrace\)</span> où <span class="math inline">\(\mathscr{P}\)</span> est une propriété qui dépend de <span class="math inline">\(x\)</span>. On voit pafois aussi <span class="math inline">\(\lbrace x \in E : \mathscr{P}(x) \rbrace\)</span>.</p>
+<p>La notation générale est : <span class="math inline">\(\lbrace x \in E \mid \mathscr{P}(x) \rbrace\)</span> où <span class="math inline">\(\mathscr{P}\)</span> est une propriété qui dépend de <span class="math inline">\(x\)</span>. On voit parfois aussi <span class="math inline">\(\lbrace x \in E : \mathscr{P}(x) \rbrace\)</span>.</p>
 <p>Bien sûr, la propriété <span class="math inline">\(\mathscr{P}\)</span> peut contenir des quantificateurs. Par exemple, on peut noter <span class="math inline">\(\lbrace x \in \mathbb{R} \mid \not \exists y \in \mathbb{Q}, x \cdot y \in \mathbb{Z} \rbrace\)</span></p>
-<p>Ici, on note que le “tel que” est noté avec un <span class="math inline">\(\mid\)</span>. L’utilisation de la virgule dans ce contexte est assez rare. En effet, les expressions sont alors beaucoup moins lisibles : <span class="math inline">\(\lbrace x \in \mathbb{R}, \forall y \in \mathbb{N}, x\cdot y \notin \mathbb{N} \rbrace\)</span> J’ai pourtant déjà lù cette expression : <span class="math inline">\(\{ \overrightarrow{MN}, M, N \in F\}\)</span>.</p>
-<p>Dans le contexte de la définition d’ensembles, il arrive également que l’on utilise la virgule comme “et” logique : <span class="math inline">\(\left\lbrace \frac{a}{b} \mid a \in \mathbb{Z}, b \in \mathbb{Z}^{\ast} \right\rbrace\)</span> ou même <span class="math inline">\(\left\lbrace q \mid a \in \mathbb{Z}, b \in \mathbb{Z}^{\ast}, q = \frac{a}{b} \right\rbrace\)</span>.</p>
-<p>On pourrait donc avoir cette formule : <span class="math inline">\(\left\lbrace q, a, b \in \mathbb{Z}, b \neq 0, q = \frac{a}{b} \right\rbrace\)</span>, que l’on n’écrira bien sûr jamais, mais qui montre bien les nombreuses significations possibles de la virgule, et le travail d’interprétation que l’on doit faire à chaque fois pour deviner laquelle est la bonne.</p>
+<p>Ici, on note que le “tel que” est noté avec un <span class="math inline">\(\mid\)</span>. L’utilisation de la virgule dans ce contexte est assez rare. En effet, les expressions sont alors beaucoup moins lisibles : <span class="math inline">\(\lbrace x \in \mathbb{R}, \forall y \in \mathbb{N}, x\cdot y \notin \mathbb{N} \rbrace\)</span> J’ai pourtant déjà vu cette expression : <span class="math inline">\(\{ \overrightarrow{MN}, M, N \in F\}\)</span>.</p>
+<p>Il arrive également que l’on utilise la virgule comme “et” logique : <span class="math inline">\(\left\lbrace \frac{a}{b} \mid a \in \mathbb{Z}, b \in \mathbb{Z}^{\ast} \right\rbrace\)</span> ou même <span class="math inline">\(\left\lbrace q \mid a \in \mathbb{Z}, b \in \mathbb{Z}^{\ast}, q = \frac{a}{b} \right\rbrace\)</span>.</p>
+<p>On pourrait donc avoir cette formule : <span class="math inline">\(\left\lbrace q, a, b \in \mathbb{Z}, b \neq 0, q = \frac{a}{b} \right\rbrace\)</span>, que l’on n’écrira bien sûr jamais, mais qui montre bien les nombreuses significations possibles de la virgule et le travail d’interprétation que l’on doit faire à chaque fois pour deviner laquelle est la bonne.</p>
 </section>
 </section>
 <section id="solutions-possibles" class="level2">
@@ -224,13 +224,13 @@ ul.task-list li input[type="checkbox"] {
 <li>On peut d’ailleurs utiliser le <span class="math inline">\(;\)</span> pour séparer les éléments : <span class="math inline">\((x;y;z)\in \mathbb{R}^{3}\)</span></li>
 </ul></li>
 </ul>
-<p>Ces remplacements ont plusieurs avantages : - ils retirent tout ambiguïté, même celles qui n’en sont pas, mais qui sont des erreurs de lecture - ils sont plus lisibles : avoir un symbole pour chaque signification permet au cerveau de comprendre et d’utiliser plus facilement ces symboles et de mieux les associer à leur signification</p>
+<p>Ces remplacements ont plusieurs avantages : - ils retirent toute ambiguïté, même celles qui n’en sont pas, mais qui sont des erreurs de lecture - ils sont plus lisibles : avoir un symbole pour chaque signification permet au cerveau de comprendre et d’utiliser plus facilement ces symboles et de mieux les associer à leur signification</p>
 <p>Ils ont cependant un problème : ils obligent parfois à être plus formel, et donc à écrire plus de choses. Par exemple, <span class="math inline">\(\left\lbrace \frac{a}{b} \mid a, b \in \mathbb{Z}, b \neq 0 \right\rbrace\)</span> est plus lisible que <span class="math inline">\(\left\lbrace \frac{a}{b} \mid (a;b)\in \mathbb{Z}\times \mathbb{Z}^{\ast} \right\rbrace\)</span>, ou bien <span class="math inline">\(\left\lbrace \frac{a}{b}\mid (a;b)\in\mathbb{Z}^{2} \wedge b\neq 0 \right\rbrace\)</span> ou encore <span class="math inline">\(\left\lbrace \frac{a}{b} \mid a \in \mathbb{Z} \wedge b \in \mathbb{Z}^{\ast} \right\rbrace\)</span> (bien sûr, les 4 ont la même signification, et sont donc tous aussi simples, mais il faut moins d’efforts au cerveau pour comprendre les valeurs possibles de <span class="math inline">\(a\)</span> et <span class="math inline">\(b\)</span> dans le premier cas, car la notation donne sans détour les informations que l’on recherche).</p>
-<p>Il semble donc que, dans certains cas, c’est au contrainre l’utilisation de notation plus abrégées, par exemple avec des virgules, qui est plus lisible.</p>
+<p>Il semble donc que, dans certains cas, c’est au contraire l’utilisation de notation plus abrégée, par exemple avec des virgules, qui est plus lisible.</p>
 </section>
 <section id="exemples" class="level3">
 <h3 class="anchored" data-anchor-id="exemples">Exemples</h3>
-<p>Voici quelques exemples d’expressions écrite en utilisant plus ou moins de virgules</p>
+<p>Voici quelques exemples d’expressions écrites en utilisant plus ou moins de virgules</p>
 <table class="table">
 <colgroup>
 <col style="width: 21%">
@@ -262,7 +262,6 @@ ul.task-list li input[type="checkbox"] {
 </tr>
 </tbody>
 </table>
-<p><em>(des exemples supplémentaire dans les commentaires sont les bienvenus)</em></p>
 </section>
 <section id="quand-utiliser-quoi" class="level3">
 <h3 class="anchored" data-anchor-id="quand-utiliser-quoi">Quand utiliser quoi ?</h3>
@@ -273,17 +272,17 @@ ul.task-list li input[type="checkbox"] {
 <ul>
 <li>notamment, le fait de ne pas utiliser de raccourcis de notation apporte un formalisme supplémentaire</li>
 </ul></li>
-<li>Dans un contexte où le but est simplement de faire comprendre (solution ou correction d’un exercice, cours et énoncés simples de choses connues ou évidentes), utiliser des virgules (et autres abbréviations) peut être avantageux
+<li>Dans un contexte où le but est simplement de faire comprendre (solution ou correction d’un exercice, cours et énoncés simples de choses connues ou évidentes), utiliser des virgules (et autres abréviations) peut être avantageux
 <ul>
 <li>cela allège la rédaction et rend donc la lecture et la compréhension plus rapides</li>
-<li>cela permet d’écrire plus vite (notamment utile losqu’on résout un exercice) J’ajouterai que, avant d’utiliser des notations raccourcies, il est nécessaire de bien comprendre comment les notations formelles fonctionnent. Pour cela, écrire sans aucune abbréviations (de manière rigoureuse) est utile. Il vaut mieux s’habituer d’abord à une utilisation stricte, puis ensuite utiliser des raccourcis quand c’est justifié (ceci ne se limite pas aux raccourcis de notation traités ici, mais est valable pour toutes les abbréviations, comme <span class="math inline">\(2\mathbb{N}\)</span> pour <span class="math inline">\(\{ 2n \mid n \in \mathbb{N} \}\)</span>, ou bien <span class="math inline">\(\sum\limits_{i}v_{i}\)</span> pour <span class="math inline">\(\sum\limits_{i=0}^n v_{i} \text{ où } n \text{ est la dimension du vecteur } v\)</span>)</li>
+<li>cela permet d’écrire plus vite (notamment utile lorsqu’on résout un exercice) J’ajouterai que, avant d’utiliser des notations raccourcies, il est nécessaire de bien comprendre comment les notations formelles fonctionnent. Pour cela, écrire sans aucune abréviation (de manière rigoureuse) est utile. Il vaut mieux s’habituer d’abord à une utilisation stricte, puis utiliser des raccourcis quand c’est justifié (ceci ne se limite pas aux raccourcis de notation traités ici, mais est valable pour toutes les abréviations, comme <span class="math inline">\(2\mathbb{N}\)</span> pour <span class="math inline">\(\{ 2n \mid n \in \mathbb{N} \}\)</span>, ou bien <span class="math inline">\(\sum\limits_{i}v_{i}\)</span> pour <span class="math inline">\(\sum\limits_{i=0}^n v_{i} \text{ où } n \text{ est la dimension du vecteur } v\)</span>)</li>
 </ul></li>
 </ul>
 </section>
 </section>
 <section id="conclusion" class="level2">
 <h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
-<p>L’utilisation de la virgule dans la notation mathématique peut parfois conduire, sinon à des ambiguïtés, à des erreurs de lectures ou d’interprétation. Elle vont aussi rendre la compréhension de certaines expression plus difficile.</p>
+<p>L’utilisation de la virgule dans la notation mathématique peut parfois conduire, sinon à des ambiguïtés, à des erreurs de lectures ou d’interprétation. Elles vont aussi rendre la compréhension de certaines expressions plus difficile.</p>
 <p>Les alternatives disponibles sont meilleures, car elles facilitent la compréhension et l’écriture des mathématiques.</p>
 <p>Et en plus c’est beaucoup plus joli !</p>
 

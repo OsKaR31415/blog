@@ -1,6 +1,6 @@
 ---
 title: "formulaire d'analyse"
-date: 2023-01-02
+date: 2023-01-03
 categories: [ maths ]
 toc: true
 number-sections: true

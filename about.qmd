@@ -24,16 +24,15 @@ Le contenu de ce blog sera principalement :
 
 <div style="text-align: left; margin-left: 5vw;">
  - Des explications de concepts d'informatique et de mathématiques
+
  - Des réflexions sur divers sujets
- - Des présentations de n'importe quoi que j'ai trouvé intéressant
+
+ - Des présentations de ce que je trouve intéressant
 </div>
 
 
 # Le nom du blog
 
-Le Blog s’appelle OSK42, à la fois en référence au nombre 42, la réponse à la “grande question sur la vie, l’univers et le reste”, et car OSK42 est une écriture de OSKAR (mon pseudo) en leet speak
-
-
-
+Le Blog s'appelle `OSK42`, à la fois en référence au nombre 42, la réponse à la "[grande question sur la vie, l'univers et le reste](https://fr.wikipedia.org/wiki/La_grande_question_sur_la_vie,_l%27Univers_et_le_reste)", et car `OSK42` est une écriture de `OSKAR` (mon pseudo) en [leet speak](https://fr.wikipedia.org/wiki/Leet_speak)
 
 
