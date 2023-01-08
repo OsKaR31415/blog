@@ -2,6 +2,16 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/informatique/cours/algo_avancee_TD1.html",
+      "/posts/autres/Le dimanche, il pleut généralement à l'extérieur.html",
+      "/posts/maths/arrangements avec répétitions.html",
+      "/posts/maths/combinaisons_avec_repetitions.html",
+      "/posts/informatique/vim_tips_autocorriger_les_erreurs.html",
+      "/posts/maths/arrangements.html",
+      "/posts/maths/combinaisons.html",
+      "/posts/maths/ensemble_des_parties_dun_ensemble.html",
+      "/posts/maths/sacs.html",
+      "/posts/maths/mathematiques.html",
       "/posts/informatique/vim_tips_leader.html",
       "/posts/maths/formulaire d'analyse.html",
       "/posts/welcome/Pourquoi ce blog.html",

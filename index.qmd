@@ -5,8 +5,8 @@ listing:
   sort: "date desc"
   type: default
   categories: true
-  sort-ui: false  # show a ui element for the user to sort posts by...
-  filter-ui: false  # show a ui element for the user to filter (search) posts
+  sort-ui: false
+  filter-ui: false
   feed: true
 
 page-layout: full

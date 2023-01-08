@@ -1,10 +1,33 @@
 /* css styles */
 
+p, code, code pre, .sourceCode {
+    font-size: calc(.3 * (2vw + 2vh));
+}
+
+/* make titles and banners monospace */
 h1.title {
     font-family: monospace;
 }
-
 .navbar-brand-container {
     font-family: monospace;
 }
+
+
+pre code {
+    font-family: "Fira Code", monospace;
+}
+pre code {
+    background-color: var(--bs-dark);
+}
+
+
+button {
+    border: 2px solid var(--bs-light);
+    border-radius: 4.5px;
+    padding: 5px;
+    color: var(--bs-blue);
+}
+
+
+
 

@@ -1,0 +1,84 @@
+---
+title: "vim tips autocorriger les erreurs"
+description: "Comment corriger rapidement des erreurs d'orthographe"
+date: 2023-01-05
+categories: [ vim, tips ]
+image: "_images/vim.excalidraw.svg"
+---
+
+
+::: {.callout-important}
+## Cet article est une traduction
+
+Cet article est une traduction des deux articles suivants
+
+[https://nanotipsforvim.prose.sh/autofix-misspellings](https://nanotipsforvim.prose.sh/autofix-misspellings)
+
+[https://castel.dev/post/lecture-notes-1/](https://castel.dev/post/lecture-notes-1/)
+:::
+
+Vim possède un correcteur d'orthographe intégré, que l'on peut activer avec `set spell`. On peut ensuite changer la langue avec `set spelllang=fr` (ici pour passer en français).
+
+Pour corriger une erreur, on peut utiliser `z=` sur un mot : cela affiche une liste des remplacements possibles.
+Pour se déplacer d'erreur en erreur, on utilise `]s` (erreur suivante), et `[s` (erreur suivante).
+
+Cela donne quelque chose comme ça :
+
+
+![exemple de corrections d'orthographe avec vim](_images/vim_spell_correction.gif)
+
+C'est assez long, parce que pour chaque mot, il faut faire : `z=1` puis appuyer sur entrée.
+
+# Meilleur raccourci pour remplacer
+
+On peut aussi faire `1z=` : cela sélectionne directement la première correction dans la liste. Mais `1z=` est plutôt long à taper.
+
+Une première solution est de créer un raccourci pour `1z=`, comme `za`, par exemple.
+
+```vim
+nnoremap za 1z=
+```
+
+Cela permet d'accélérer un peu :
+
+![exemple de corrections d'orthographe avec vim](_images/vim_spell_correction_2.gif)
+
+
+# Remplacer depuis le mode insertion
+
+Lorsque l'on rédige des textes avec vim, on est plus souvent en mode insertion (à l'opposé, on est surtout en mode normal quand on édite du code).
+
+Cela rend encore plus long le fait de corriger une faute de frappe, puisqu'il faut aller en mode normal, et revenir en mode insertion ensuite
+
+Pour fluidifier ce mode d'édition (surtout si, comme moi, vous tapez vite mais avec peu de précision), on peut créer un raccourci qui, depuis le mode insertion, va corriger la dernière erreur, et revenir en mode insertion.
+
+Cela donne quelque chose comme ça (le curseur est à droite, en mode insertion) :
+
+![](_images/vim_insert_spell_correct.gif)
+
+Personnellement, j'utilise `<c-z>`, mais `<c-l>` peut être utilisé également.
+
+Le raccourci à ajouter est :
+
+```vim
+inoremap <c-g>u<esc>[s1z=`]a<c-g>u
+```
+ - les `<c-g>u` permettent d'annuler rapidement les remplacements
+ - le <code>`]</code> permet de remettre le curseur à la position de départ
+
+::: {.callout-note collapse=true}
+## Explication détaillée du raccourci
+
+ - `<c-g>u` permet d'annuler le remplacement appart
+     - sinon, il sera considéré comme une partie de l'édition en cours
+ - `<esc>` va en mode normal
+ - `[s` va à la dernière erreur avant le curseur
+ - `1z=` remplace l'erreur par la première correction disponible
+ - <code>`]</code> revient à la dernière position du curseur (au dernier caractère modifié)
+ - `a` revient en mode insertion
+ - `<c-g>u` fait à nouveau en sorte que l'annulation du remplacement soit faîte appart
+     - sinon, il sera considéré comme une partie de l'édition future
+:::
+
+
+

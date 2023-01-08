@@ -1,10 +1,10 @@
 ---
 title: "formulaire d'analyse"
 date: 2023-01-03
-categories: [ maths ]
+categories: [ maths, cours ]
+image: "_images/tableau_a_craie.png"
 toc: true
 number-sections: true
-image: "images/tableau_a_craie.png"
 ---
 
 
@@ -54,7 +54,7 @@ $\displaystyle S' = \sum_{k = n_{1}}^{n_{2}}u_{k} = \frac{(nombre\ de\ termes)(p
 
 Cas particulier :
 
-$1 + 2 + 3\ \cdots + (n - 1) + n = \frac{n(n + 1)}{2}$
+$\displaystyle 1 + 2 + 3\ \cdots + (n - 1) + n = \frac{n(n + 1)}{2}$
 
 
 
@@ -79,7 +79,8 @@ $S_{n} = \sum\limits_{k=0}^{n}u_{k}$
 Cas général avec $n_{1} \leq n_{2}$ :
 $S'_{n} = \sum\limits_{k=0}^{n}u_{k}$
 
- - Si $q \neq 1$ : $S'_{n} = (\text{premier terme}) \times \frac{1- \left( q^{\text{nombre de termes}} \right)}{1-q}$
+ - Si $q \neq 1$ : $\displaystyle S'_{n} = (\text{premier terme}) \times \frac{1- \left( q^{\text{nombre de termes}} \right)}{1-q}$
+ - Si $q \neq 1$ : $\displaystyle S'_{n} = (\text{premier terme}) \times \frac{1- q ^{(\text{nombre de termes})}}{1-q} = u_0 \times \frac{1-q^{n+1}}{1-q}$
  - Si $q = 1$ : $S'_{n} = (\text{nombre de termes}) \times (\text{premier terme})$
 
 

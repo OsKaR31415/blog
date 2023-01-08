@@ -2,26 +2,66 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://quartopub.com/sites/osk42/osk42/posts/informatique/vim_tips_leader.html</loc>
-    <lastmod>2023-01-03T23:25:00.915Z</lastmod>
+    <lastmod>2023-01-08T01:01:58.433Z</lastmod>
+  </url>
+  <url>
+    <loc>https://quartopub.com/sites/osk42/osk42/posts/informatique/cours/algo_avancee_TD1.html</loc>
+    <lastmod>2023-01-08T01:01:59.539Z</lastmod>
+  </url>
+  <url>
+    <loc>https://quartopub.com/sites/osk42/osk42/posts/informatique/vim_tips_autocorriger_les_erreurs.html</loc>
+    <lastmod>2023-01-08T01:02:00.086Z</lastmod>
   </url>
   <url>
     <loc>https://quartopub.com/sites/osk42/osk42/posts/welcome/bienvenue sur mon blog.html</loc>
-    <lastmod>2023-01-03T23:25:02.094Z</lastmod>
+    <lastmod>2023-01-08T01:02:00.679Z</lastmod>
   </url>
   <url>
     <loc>https://quartopub.com/sites/osk42/osk42/posts/welcome/Pourquoi ce blog.html</loc>
-    <lastmod>2023-01-03T23:25:02.636Z</lastmod>
+    <lastmod>2023-01-08T01:02:00.981Z</lastmod>
+  </url>
+  <url>
+    <loc>https://quartopub.com/sites/osk42/osk42/posts/maths/arrangements avec répétitions.html</loc>
+    <lastmod>2023-01-08T01:02:01.274Z</lastmod>
   </url>
   <url>
     <loc>https://quartopub.com/sites/osk42/osk42/posts/maths/formulaire d'analyse.html</loc>
-    <lastmod>2023-01-03T23:25:03.314Z</lastmod>
+    <lastmod>2023-01-08T01:02:01.681Z</lastmod>
+  </url>
+  <url>
+    <loc>https://quartopub.com/sites/osk42/osk42/posts/maths/arrangements.html</loc>
+    <lastmod>2023-01-08T01:02:01.989Z</lastmod>
+  </url>
+  <url>
+    <loc>https://quartopub.com/sites/osk42/osk42/posts/maths/ensemble_des_parties_dun_ensemble.html</loc>
+    <lastmod>2023-01-08T01:02:02.414Z</lastmod>
+  </url>
+  <url>
+    <loc>https://quartopub.com/sites/osk42/osk42/posts/maths/combinaisons_avec_repetitions.html</loc>
+    <lastmod>2023-01-08T01:02:02.717Z</lastmod>
+  </url>
+  <url>
+    <loc>https://quartopub.com/sites/osk42/osk42/posts/maths/combinaisons.html</loc>
+    <lastmod>2023-01-08T01:02:03.411Z</lastmod>
+  </url>
+  <url>
+    <loc>https://quartopub.com/sites/osk42/osk42/posts/maths/sacs.html</loc>
+    <lastmod>2023-01-08T01:02:03.719Z</lastmod>
+  </url>
+  <url>
+    <loc>https://quartopub.com/sites/osk42/osk42/posts/maths/mathematiques.html</loc>
+    <lastmod>2023-01-08T01:02:04.009Z</lastmod>
+  </url>
+  <url>
+    <loc>https://quartopub.com/sites/osk42/osk42/posts/autres/Le dimanche, il pleut généralement à l'extérieur.html</loc>
+    <lastmod>2023-01-08T01:02:04.303Z</lastmod>
   </url>
   <url>
     <loc>https://quartopub.com/sites/osk42/osk42/index.html</loc>
-    <lastmod>2023-01-03T23:25:04.074Z</lastmod>
+    <lastmod>2023-01-08T01:02:04.735Z</lastmod>
   </url>
   <url>
     <loc>https://quartopub.com/sites/osk42/osk42/about.html</loc>
-    <lastmod>2023-01-03T23:25:04.383Z</lastmod>
+    <lastmod>2023-01-08T01:02:05.049Z</lastmod>
   </url>
 </urlset>

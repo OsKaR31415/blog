@@ -6,14 +6,13 @@ kanban-plugin: basic
 
 ## Idées
 
-- [ ] [[_mob_programming]]
 - [ ] [[_vim_tips_exécuter_du_code]]
-- [ ] [[_vim_tips_leader]]
 - [ ] [[_vim_tips_sauvegarder]]
 
 
 ## Développement
 
+- [ ] [[_mob_programming]]
 
 
 ## Rédaction
@@ -30,9 +29,10 @@ kanban-plugin: basic
 
 
 
-## Fin
+## Terminé !
 
 **Complete**
+- [ ] [[_vim_tips_leader]]
 
 
 

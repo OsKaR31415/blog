@@ -10,4 +10,11 @@ categories: [ informatique ]
      - [ ] Retour des autres
      - [ ] Retour personnel
 
+# Notes
 
+ - à-priori : moins efficace que si on distribue le travail
+
+# Retours
+ - Dario
+     - pas terrible
+ - Opinion à-priori

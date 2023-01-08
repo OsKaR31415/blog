@@ -1,6 +1,6 @@
 ---
 title: "vim tips - leader"
-description: "présentation du raccourci <leader> dans vim"
+description: "présentation du raccourci &#60;leader&#62; dans vim"
 date: 2023-01-03
 categories: [ vim, tips  ]
 image: "images/vim.excalidraw.svg"

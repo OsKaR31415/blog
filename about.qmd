@@ -36,3 +36,20 @@ Le contenu de ce blog sera principalement :
 Le Blog s'appelle `OSK42`, à la fois en référence au nombre 42, la réponse à la "[grande question sur la vie, l'univers et le reste](https://fr.wikipedia.org/wiki/La_grande_question_sur_la_vie,_l%27Univers_et_le_reste)", et car `OSK42` est une écriture de `OSKAR` (mon pseudo) en [leet speak](https://fr.wikipedia.org/wiki/Leet_speak)
 
 
+<br/> <br/> <br/>
+<br/> <br/> <br/>
+<br/> <br/> <br/>
+<br/> <br/> <br/>
+
+# Crédits
+
+
+::: {.callout-none collapse=true}
+## Icônes 
+
+ - <a href="https://www.flaticon.com/free-icons/backpack" title="backpack icons">Backpack icons created by max.icons - Flaticon</a>
+ - <a href="https://www.flaticon.com/free-icons/space-suit" title="space suit icons">Space suit icons created by surang - Flaticon</a>
+ - <a href="https://www.flaticon.com/free-icons/algebra" title="algebra icons">Algebra icons created by Freepik - Flaticon</a>
+ - <a href="https://www.flaticon.com/free-icons/maths" title="maths icons">Maths icons created by Freepik - Flaticon</a>
+:::
+
