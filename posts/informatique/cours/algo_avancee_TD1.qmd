@@ -5,6 +5,7 @@ categories: [ maths ]
 toc: true
 jupyter: python3
 freeze: auto
+header-includes: \usepackage[left=2cm, right=2cm, top=1cm, bottom=2cm]{geometry}
 ---
 
 
@@ -12,7 +13,7 @@ freeze: auto
 
 On veut écrire une fonction :
 
-$\begin{align} \texttt{generation :}& (\texttt{int > 0})^3 \to \texttt{list[int > 0]}\\ & \texttt{(nb\_val, nb\_min, nb\_max)} \mapsto [\texttt{x} | \texttt{x}  \in [\![\texttt{nb\_min}, \texttt{nb\_max} ]\!] ] \end{align}$
+$\begin{array}{rl} \texttt{generation :}& (\texttt{int > 0})^3 \to \texttt{list[int > 0]}\\ & \texttt{(nb\_val, nb\_min, nb\_max)} \mapsto [\texttt{x} | \texttt{x}  \in [\![\texttt{nb\_min}, \texttt{nb\_max} ]\!] ] \end{array}$
 
 Qui génère $\texttt{nb\_val}$ nombres aléatoires entiers entre $\texttt{nb\_min}$ et $\texttt{nb\_max}$
 
@@ -249,9 +250,7 @@ Si on répète l'opération de mettre le dernier élément de
 l'ancienne liste à la fin de la nouvelle, retourne bien la
 liste
 
-#TODO: 
-![comment se passe l'inversion de la
-liste](../_images/demo_inverser_liste.gif)_
+![comment se passe l'inversion de la liste](../_images/demo_inverser_liste.gif)
 
 ```{python}
 def reverse_list_pop (liste: list) -> list:
