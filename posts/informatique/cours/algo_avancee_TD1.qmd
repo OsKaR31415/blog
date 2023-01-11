@@ -5,9 +5,10 @@ categories: [ maths ]
 toc: true
 jupyter: python3
 freeze: auto
-header-includes: \usepackage[left=2cm, right=2cm, top=1cm, bottom=2cm]{geometry}
+# header-includes: \usepackage[left=2cm, right=2cm, top=1cm, bottom=2cm]{geometry}
 ---
 
+Correction détaillée du TD1 d'algorithmique avancée.
 
 # 1. Nombres aléatoires
 
@@ -145,6 +146,8 @@ for number_of_elements in LIST_NUMBER_OF_ELEMENTS:
     print(f"générer {number_of_elements} à mis {duration} secondes")
 ```
 
+On remarque que le code avec des _list comprehension_ est
+effectivement plus rapide.
 
 ## Pour aller plus loin
 
@@ -250,7 +253,8 @@ Si on répète l'opération de mettre le dernier élément de
 l'ancienne liste à la fin de la nouvelle, retourne bien la
 liste
 
-![comment se passe l'inversion de la liste](../_images/demo_inverser_liste.gif)
+![comment se passe l'inversion de la
+liste](../_images/demo_inverser_liste.gif)_
 
 ```{python}
 def reverse_list_pop (liste: list) -> list:
@@ -389,5 +393,144 @@ print(un_sur_n_comprehension_range(3, [2, 7, 1, 8, 2, 8, 1, 8]))
 ```
 
 
+# 5. Maximum de nombes dans deux tableaux
+
+On veut écrire une fonction `maxDes2(tab1, tab2)` qui prend
+en argument deux tableaux de nombres `tab1` et `tab2` de même
+longueur et retourne un tableau formé des valeurs maximales
+observées pour chaque indice entre les tableaux tab1 et
+tab2.  Par exemple, `maxDes2([1, 4, 5], [2, 2, 3])` retourne
+le tableau `[2, 4, 5]`.
+
+## En parcourant les indices des deux tableaux
+
+L'approche classique est de parcourir les incides `i` des
+deux tableaux (que l'on suppose de même taille), et de
+calculer le maximum pour chaque indice, que l'on mettra dans
+une nouvelle liste.
+
+```{python}
+def max_des_2_indices(tab1: list[int], tab2: list[int]) -> list[int]:
+    new_list: list[int] = []
+    # on parcoure les indices des deux tableaux en même
+    # temps avec i
+    for i in range(len(tab1)):
+        # la fonction max calcul le maximum de ses arguments
+        # ici, les arguments sont les valeurs des deux
+        # tableaux pour un même indice i
+        new_list.append(max(tab1[i], tab2[i]))
+    return new_list
+
+print(max_des_2_indices([1, 4, 5], [2, 2, 3]))
+```
+
+## En utilisant la fonction `zip`
+
+La fonction `zip` va permettre de regroupper les éléments
+exctement comme on le souhaite. En effet, si on essaie de
+l'appliquer :
+
+```{python}
+z = zip([3, 1, 4, 1, 5, 9, 2, 6], [2, 7, 1, 8, 2, 8, 1, 8])
+print(list(z))  # on utilise list pour que le contenu soit bien affiché
+```
+
+On observe que le résultat contient les paires d'éléments
+dont on veut faire le maxumum : les deux premiers de chaque
+tableau, plus les deux deuixièmes, les deux troisièmes
+etc...
+
+On peut alors proposer la solution suivante :
+
+```{python}
+def max_des_2_zip(tab1: list[int], tab2: list[int]) -> list[int]:
+    new_list: list[int] = []
+    for couple in zip(tab1, tab2):
+        # on note que la fonction `max` peut s'appliquer sur
+        # une liste d'élément (ici `couple`)
+        new_list.append(max(couple))
+    return new_list
+
+print(max_des_2_zip([1, 4, 5], [2, 2, 3]))
+```
 
 
+## Avec `zip` et `map`
+
+On remarque dans cet exercice une structure que l'on a déjà
+vue dans les exercices suivants : on veut appliquer une
+fonction particulière sur chaque élément d'une liste, puis
+récupérer le résultat.
+
+L'approche classique consiste à parcourir la liste, et à
+créer au fur-et-à-mesure une nouvelle liste.
+
+Cependant, une des fonctions de base de python, la fonction
+`map`, permet directement d'appliquer une fonction sur tous
+les éléments d'une liste, et de récupérer le résultat.
+
+On peut donc tout simplement écrire :
+
+```{python}
+def max_des_2_map(tab1: list[int], tab2: list[int]) -> list[int]:
+    # on utilise list pour bien récupérer une liste
+    # on applique la fonction max sur le résultat du zip
+    return list(
+        map(max, zip(tab1, tab2))
+    )
+
+print(max_des_2_map([1, 4, 5], [2, 2, 3]))
+```
+
+Cette approche est une approche _fonctionnelle_ du problème,
+puisque la solution est créée en composant des fonction
+existantes (`map`, `max`, `zip`...) et sant structures de
+contrôles comme des boucles ou des conditions.
+
+
+# 6. Reprogrammer la fonction zip
+
+On veut écrire une fonction `myzip(tab1, tab2)` qui retourne
+une liste dont chaque élément d’indice `i` est lui-même une
+liste possédant deux valeurs issues des listes `tab1` et
+`tab2` à l’indice `i`. Par exemple, `myzip({1, 4, 5}, {2, 2,
+3})` retourne la liste `{{1, 2}, {4, 2}, {5, 3}}` ; comparer
+votre solution à la fonction `zip()` de Python.
+
+
+## En parcourant les indices des deux listes
+
+```{python}
+def myzip_indices(tab1: list[int], tab2: list[int]) -> list[int]:
+    zipped_list: list[int] = []
+    for idx in range(len(tab1)):
+        # on ajoute le couple (tab1[idx], tab2[idx]) à la
+        # liste de résultat. On a bien un couple d'éléments
+        # aux mêmes indices
+        zipped_list.append((tab1[idx], tab2[idx]))
+    return zipped_list
+
+print(myzip_indices([1, 4, 5], [2, 2, 3]))
+```
+
+## Si les deux listes ne font pas la même taille
+
+Si les deux listes ne font pas la même taille, il faut
+s'arrêter quand la première liste est arrivée au bout. On
+peut donc simplement parcourir les indices de `1` à
+`min(len(tab1), len(tab2))`.
+
+
+```{python}
+def myzip_indices(tab1: list[int], tab2: list[int]) -> list[int]:
+    zipped_list: list[int] = []
+    for idx in range(min(len(tab1), len(tab2))):
+        # on ajoute le couple (tab1[idx], tab2[idx]) à la
+        # liste de résultat. On a bien un couple d'éléments
+        # aux mêmes indices
+        zipped_list.append((tab1[idx], tab2[idx]))
+    return zipped_list
+
+print(myzip_indices([1, 4, 5], [2, 2, 3, 99, 0]))
+print(myzip_indices([1, 4, 5, 7, 13, 4], [2, 2, 3, 99]))
+```

@@ -2,6 +2,8 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/maths/maths_congruence.html",
+      "/posts/maths/maths_divisibilité.html",
       "/posts/informatique/cours/algo_avancee_TD1.html",
       "/posts/autres/Le dimanche, il pleut généralement à l'extérieur.html",
       "/posts/maths/arrangements avec répétitions.html",

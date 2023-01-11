@@ -157,7 +157,7 @@ Définition
 </div>
 <div class="callout-body-container callout-body">
 <p><span class="math inline">\(\displaystyle \binom{n}{k} = \frac{n!}{k!(n-k)!}\)</span> Le nombre de façons de choisir <span class="math inline">\(k\)</span> éléments parmi un ensemble de <span class="math inline">\(n\)</span> éléments (sans ordre)</p>
-<p>C’est le nombre d’ensembles à <span class="math inline">\(k\)</span> éléments contenus dans un ensemble à <span class="math inline">\(n\)</span> éléments - on utilise des ensembles car on a pas de répétitions d’un même élément, et que l’ordre n’est pas important</p>
+<p>C’est le nombre d’ensembles à <span class="math inline">\(k\)</span> éléments contenus dans un ensemble à <span class="math inline">\(n\)</span> éléments. Autrement dit, c’est le nombre de sous-ensembles à <span class="math inline">\(k\)</span> éléments d’un ensemble à <span class="math inline">\(n\)</span> éléments - on utilise des ensembles car on a pas de répétitions d’un même élément, et que l’ordre n’est pas important</p>
 </div>
 </div>
 <section id="interprétation" class="level1">
@@ -210,7 +210,7 @@ Exemples
 </section>
 <section id="formule" class="level1">
 <h1>Formule</h1>
-<p>La formule pour les combinaisons vient de celle pour les <a href="../../posts/maths/arrangements.html">arrangements</a>.</p>
+<p>La formule pour les combinaisons vient de celle pour les <a href="../../posts/maths/arrangements.html">arrangements</a> (<span class="math inline">\(A_{n}^{k}\)</span>).</p>
 <p>Par définition, un arrangement considère l’ordre, quand une combinaison ne le considère pas (car l’un compte les <span class="math inline">\(k\)</span>-uplets, quand l’autre compte les ensemble de cardinal <span class="math inline">\(k\)</span>).</p>
 <p>Or, on sait qu’il y à <span class="math inline">\(k!\)</span> façons d’arranger <span class="math inline">\(k\)</span> éléments.</p>
 <p>Donc, on sait qu’il y à <span class="math inline">\(k!\)</span> fois plus d’arrangements que de combinaisons pour des mêmes coefficients : <span class="math inline">\(\displaystyle \binom{n}{k} = k! \times A_{n}^{k}\)</span></p>

@@ -3,7 +3,6 @@ title: "combinaisons"
 date: 2023-01-05
 categories: [ maths ]
 image: "_images/combinaison_spatiale.png"
-draft: false
 ---
 
 ::: {.callout-note icon=false} 
@@ -11,7 +10,8 @@ draft: false
 $\displaystyle \binom{n}{k} = \frac{n!}{k!(n-k)!}$
 Le nombre de façons de choisir $k$ éléments parmi un ensemble de $n$ éléments (sans ordre)
 
-C'est le nombre d'ensembles à $k$ éléments contenus dans un ensemble à $n$ éléments
+C'est le nombre d'ensembles à $k$ éléments contenus dans un ensemble à $n$ éléments.
+Autrement dit, c'est le nombre de sous-ensembles à $k$ éléments d'un ensemble à $n$ éléments
  - on utilise des ensembles car on a pas de répétitions d'un même élément, et que l'ordre n'est pas important
 :::
 
@@ -42,7 +42,7 @@ Voici quelques questions de combinatoire dont la réponse passe par une combinai
 
 # Formule
 
-La formule pour les combinaisons vient de celle pour les [arrangements](arrangements.md).
+La formule pour les combinaisons vient de celle pour les [arrangements](arrangements.md) ($A_{n}^{k}$).
 
 Par définition, un arrangement considère l'ordre, quand une combinaison ne le considère pas (car l'un compte les $k$-uplets, quand l'autre compte les ensemble de cardinal $k$).
 

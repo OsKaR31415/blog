@@ -6,10 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2023-01-04">
-<meta name="description" content="Liste de notions mathématiques importantes">
+<meta name="dcterms.date" content="2023-01-11">
 
-<title>0SK42 - Mathématiques</title>
+<title>0SK42 - Congruence</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -66,7 +65,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="../../styles.css">
 </head>
 
-<body class="nav-fixed">
+<body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -83,7 +82,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="../../posts/maths/mathematiques.html" aria-current="page">
+    <a class="nav-link" href="../../posts/maths/mathematiques.html">
  <span class="menu-text">Mathématiques</span></a>
   </li>  
   <li class="nav-item">
@@ -115,15 +114,9 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Mathématiques</h1>
-                  <div>
-        <div class="description">
-          Liste de notions mathématiques importantes
-        </div>
-      </div>
-                          <div class="quarto-categories">
+      <h1 class="title">Congruence</h1>
+                                <div class="quarto-categories">
                 <div class="quarto-category">maths</div>
-                <div class="quarto-category">cours</div>
               </div>
                   </div>
   </div>
@@ -135,7 +128,7 @@ ul.task-list li input[type="checkbox"] {
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">January 4, 2023</p>
+        <p class="date">January 11, 2023</p>
       </div>
     </div>
     
@@ -146,59 +139,123 @@ ul.task-list li input[type="checkbox"] {
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#analyse" id="toc-analyse" class="nav-link active" data-scroll-target="#analyse">Analyse</a></li>
-  <li><a href="#arithmétique" id="toc-arithmétique" class="nav-link" data-scroll-target="#arithmétique">Arithmétique</a></li>
-  <li><a href="#ensembles-et-combinatoire" id="toc-ensembles-et-combinatoire" class="nav-link" data-scroll-target="#ensembles-et-combinatoire">Ensembles et combinatoire</a>
-  <ul class="collapse">
-  <li><a href="#combinatoire" id="toc-combinatoire" class="nav-link" data-scroll-target="#combinatoire">Combinatoire</a></li>
-  </ul></li>
-  </ul>
-</nav>
-    </div>
+    
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
 
 
-<button>
-<a href="../../index.html#category=maths">Toutes les pages sur les mathématiques</a>
-</button>
-<section id="analyse" class="level1">
-<h1>Analyse</h1>
+<div class="callout-note callout callout-style-default no-icon callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Définition
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Soient <span class="math inline">\(a\)</span> et <span class="math inline">\(b\)</span> deux entiers relatifs <br> Soit <span class="math inline">\(n\)</span> un entier naturel non nul</p>
+<p>On dit que <strong><span class="math inline">\(a\)</span> est congru à <span class="math inline">\(b\)</span> modulo <span class="math inline">\(n\)</span></strong>, et on note <span class="math inline">\(a \equiv b [n]\)</span> si et seulement si <span class="math inline">\(n \mid a - b\)</span></p>
+<p>Cela peut être interprété comme le fait que <span class="math inline">\(a\)</span> et <span class="math inline">\(b\)</span> ont le même reste pour la division euclidienne par <span class="math inline">\(n\)</span> (c’est une autre définition).</p>
+<p>Une dernière définition est que <span class="math inline">\(a \equiv b [n]\)</span> si et seulement si il existe un entier relatif <span class="math inline">\(k\)</span> tel que <span class="math inline">\(a - b = kn\)</span> (si <span class="math inline">\(a-b\)</span> est un multiple de <span class="math inline">\(n\)</span>). Cette définition est équivalente à <span class="math inline">\(a - b \mid n\)</span> (voir la définition de la <a href="../../posts/maths/maths_divisibilité.html">divisibilité</a>)</p>
+<section id="exemples" class="level5">
+<h5 class="anchored" data-anchor-id="exemples">Exemples</h5>
 <ul>
-<li><a href="../../posts/maths/formulaire d'analyse.html">formulaire (liste de formules de base)</a></li>
+<li>on sait que <span class="math inline">\(13 \equiv 28 [5]\)</span> car <span class="math inline">\(13\)</span> et <span class="math inline">\(28\)</span> ont tous les deux un même reste de <span class="math inline">\(3\)</span> dans la division par <span class="math inline">\(5\)</span></li>
+<li>on sait que <span class="math inline">\(15 \equiv 2 [6]\)</span> car <span class="math inline">\(15 - 2 = 12\)</span> et car <span class="math inline">\(12\)</span> est multiple de <span class="math inline">\(6\)</span></li>
 </ul>
 </section>
-<section id="arithmétique" class="level1">
-<h1>Arithmétique</h1>
-<ul>
-<li><span class="math inline">\(a \equiv b \,[n]\)</span> <a href="../../posts/maths/maths_congruence.html">congruence modulo n</a></li>
-<li><span class="math inline">\(a \mid b\)</span> <a href="../../posts/maths/maths_divisibilité.html">divisibilité</a></li>
-</ul>
+</div>
+</div>
+<section id="comprendre-la-congruence" class="level2">
+<h2 class="anchored" data-anchor-id="comprendre-la-congruence">Comprendre la congruence</h2>
+<p>On sait que les nombres de <span class="math inline">\(\mathbb{Z}\)</span> peuvent être représentés sur une droite :</p>
+<p><img src="_images/droite_des_entiers_relatifs.svg" class="img-fluid"></p>
+<p>De la même manière, on peut représenter les entier <strong>modulo <span class="math inline">\(n\)</span></strong>… sur un cercle !</p>
+<p>On va “enrouler” la droite sur elle-même, en mettant au même endroit les nombres qui sont congrus modulo <span class="math inline">\(n\)</span>.</p>
+<p>Par exemple, voici le cercle des entiers modulo <span class="math inline">\(8\)</span> :</p>
+<p><img src="_images/spirale_des_entiers_mod_8.svg" class="img-fluid"></p>
+<p>Les nombres dans chaque groupe en bleu sont ceux qui sont congrus modulo <span class="math inline">\(8\)</span>. En quelque sorte, ce sont les mêmes nombre dans ce système : on peut les utiliser de la même manière dans une addition, multiplication etc., et le résultat sera le même modulo 8.</p>
+<p>Quand on travaille modulo <span class="math inline">\(n\)</span>, la congruence joue le même rôle que l’égalité.</p>
 </section>
-<section id="ensembles-et-combinatoire" class="level1">
-<h1>Ensembles et combinatoire</h1>
+<section id="propriétés" class="level2">
+<h2 class="anchored" data-anchor-id="propriétés">Propriétés</h2>
+<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Congruence à <span class="math inline">\(0\)</span>
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Soit <span class="math inline">\(a \in \mathbb{Z}\)</span></p>
+<p><span class="math inline">\(a \equiv 0 [n]\)</span> si et seulement si <span class="math inline">\(n \mid a\)</span> (<span class="math inline">\(a\)</span> est divisible par <span class="math inline">\(n\)</span>)</p>
+</div>
+</div>
+<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Congruence à lui-même
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Comme avec l’égalité classique,</p>
+</div>
+</div>
+<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Transitivité de la congruence
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Soit <span class="math inline">\(n\)</span> un entier strictement positif <br> Soient <span class="math inline">\(a\)</span>, <span class="math inline">\(b\)</span> et <span class="math inline">\(c\)</span> des entiers relatifs</p>
+<p>Si <span class="math inline">\(a \equiv b [n]\)</span> et <span class="math inline">\(b \equiv c [n]\)</span>, alors : <span class="math inline">\(a \equiv b [n]\)</span></p>
+<p>On connaît cette propriété pour l’égalité : si <span class="math inline">\(a = b\)</span> et <span class="math inline">\(b = c\)</span>, alors <span class="math inline">\(a = c\)</span>.</p>
+</div>
+</div>
+<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Opérations dans des congruences
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Soit <span class="math inline">\(n\)</span> un entier strictement positif <br> Soient <span class="math inline">\(a\)</span>, <span class="math inline">\(A\)</span>, <span class="math inline">\(b\)</span>, <span class="math inline">\(B\)</span> et <span class="math inline">\(k\)</span> des entiers relatifs <br> avec <span class="math inline">\(a \equiv A[n]\)</span> et <span class="math inline">\(b \equiv B[n]\)</span></p>
+<p>On a :</p>
 <ul>
-<li><a href="../../posts/maths/sacs.html">sacs (ensembles avec répétition)</a></li>
-</ul>
-<section id="combinatoire" class="level2">
-<h2 class="anchored" data-anchor-id="combinatoire">Combinatoire</h2>
+<li><span class="math inline">\(a + b \equiv A + B [n]\)</span>
 <ul>
-<li><span class="math inline">\(\mathscr{P}(E)\)</span> <a href="../../posts/maths/ensemble_des_parties_dun_ensemble.html">ensemble des parties d’un ensemble</a></li>
-<li><span class="math inline">\(A_{n}^{k}\)</span> <a href="../../posts/maths/arrangements.html">arrangements</a></li>
-<li><span class="math inline">\(A_{n}^{k}\)</span> <a href="../../posts/maths/arrangements avec répétitions.html">arrangements avec répétitions</a></li>
-<li><span class="math inline">\(\displaystyle \binom{k}{n}\)</span> <a href="../../posts/maths/combinaisons.html">combinaisons</a></li>
-<li><span class="math inline">\(\Gamma _{n}^{k}\)</span> <a href="../../posts/maths/combinaisons_avec_repetitions.html">combinaisons avec répétitions</a></li>
+<li>Donc <span class="math inline">\(a + k \equiv A + k [n]\)</span></li>
+</ul></li>
+<li><span class="math inline">\(a - b \equiv A - B [n]\)</span>
+<ul>
+<li>Donc <span class="math inline">\(a - k \equiv A - k[n]\)</span></li>
+</ul></li>
+<li><span class="math inline">\(ab \equiv AB [n]\)</span>
+<ul>
+<li>Donc <span class="math inline">\(ak \equiv Ak [n]\)</span></li>
+</ul></li>
+<li><span class="math inline">\(a^{p} \equiv A^{p}[n]\)</span> (pour tout <span class="math inline">\(p \in \mathbb{N}\)</span>)</li>
 </ul>
+<p>En fait, si on a commris que la congruence est une sorte d’égalité quand on est modulo <span class="math inline">\(n\)</span>, toutes ces propriétés sont évidentes.</p>
+</div>
+</div>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->

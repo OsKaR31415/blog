@@ -6,10 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2023-01-04">
-<meta name="description" content="Liste de notions mathématiques importantes">
+<meta name="dcterms.date" content="2023-01-10">
 
-<title>0SK42 - Mathématiques</title>
+<title>0SK42 - Dibisibilité</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -66,7 +65,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="../../styles.css">
 </head>
 
-<body class="nav-fixed">
+<body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -83,7 +82,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="../../posts/maths/mathematiques.html" aria-current="page">
+    <a class="nav-link" href="../../posts/maths/mathematiques.html">
  <span class="menu-text">Mathématiques</span></a>
   </li>  
   <li class="nav-item">
@@ -115,15 +114,9 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Mathématiques</h1>
-                  <div>
-        <div class="description">
-          Liste de notions mathématiques importantes
-        </div>
-      </div>
-                          <div class="quarto-categories">
+      <h1 class="title">Dibisibilité</h1>
+                                <div class="quarto-categories">
                 <div class="quarto-category">maths</div>
-                <div class="quarto-category">cours</div>
               </div>
                   </div>
   </div>
@@ -135,7 +128,7 @@ ul.task-list li input[type="checkbox"] {
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">January 4, 2023</p>
+        <p class="date">January 10, 2023</p>
       </div>
     </div>
     
@@ -146,59 +139,134 @@ ul.task-list li input[type="checkbox"] {
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#analyse" id="toc-analyse" class="nav-link active" data-scroll-target="#analyse">Analyse</a></li>
-  <li><a href="#arithmétique" id="toc-arithmétique" class="nav-link" data-scroll-target="#arithmétique">Arithmétique</a></li>
-  <li><a href="#ensembles-et-combinatoire" id="toc-ensembles-et-combinatoire" class="nav-link" data-scroll-target="#ensembles-et-combinatoire">Ensembles et combinatoire</a>
-  <ul class="collapse">
-  <li><a href="#combinatoire" id="toc-combinatoire" class="nav-link" data-scroll-target="#combinatoire">Combinatoire</a></li>
-  </ul></li>
-  </ul>
-</nav>
-    </div>
+    
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
 
 
-<button>
-<a href="../../index.html#category=maths">Toutes les pages sur les mathématiques</a>
-</button>
-<section id="analyse" class="level1">
-<h1>Analyse</h1>
+<div class="callout-note callout callout-style-default no-icon callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Définitions
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Soient <span class="math inline">\(a\)</span> et <span class="math inline">\(b\)</span> deux entiers relatifs (dans <span class="math inline">\(\mathbb{Z}\)</span>) <span class="math inline">\(a\)</span> est un <strong>diviseur</strong> de <span class="math inline">\(b\)</span> s’il existe un entier relatif <span class="math inline">\(k\)</span> tel que <span class="math inline">\(\boxed{b = ka}\)</span></p>
+<p>On dit alors que : - <span class="math inline">\(a\mid b\)</span> soit <em>“<span class="math inline">\(a\)</span> divise <span class="math inline">\(b\)</span>”</em> - <span class="math inline">\(b\)</span> est un multiple de <span class="math inline">\(a\)</span></p>
+</div>
+</div>
+<section id="propriétés" class="level2">
+<h2 class="anchored" data-anchor-id="propriétés">Propriétés</h2>
+<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+avec <span class="math inline">\(0\)</span>
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <ul>
-<li><a href="../../posts/maths/formulaire d'analyse.html">formulaire (liste de formules de base)</a></li>
+<li><span class="math inline">\(0\)</span> ne divise aucun nombre (on ne peut pas diviser par <span class="math inline">\(0\)</span>)</li>
+<li>tous les nombres divisent <span class="math inline">\(0\)</span> (voir la définition, avec <span class="math inline">\(k=0\)</span>)</li>
+</ul>
+</div>
+</div>
+<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Nombres négatifs
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Si <span class="math inline">\(a \mid b\)</span>, on sait que : - <span class="math inline">\(-a \mid b\)</span> - <span class="math inline">\(a \mid -b\)</span> - <span class="math inline">\(-a \mid -b\)</span></p>
+<p>En fait, le signe n’est pas important pour la divisibilité (on le voir en reprenant la définition : <span class="math inline">\(k\)</span> peut être positif ou négatif).</p>
+</div>
+</div>
+<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Diviseur d’un diviseur
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>si <span class="math inline">\(a \mid b\)</span> et <span class="math inline">\(b \mid c\)</span>, alors on sait que <span class="math inline">\(a \mid c\)</span></p>
+<section id="exemples" class="level5">
+<h5 class="anchored" data-anchor-id="exemples">Exemples</h5>
+<ul>
+<li><span class="math inline">\(6 \mid 24\)</span>, or <span class="math inline">\(3 \mid 6\)</span>, donc <span class="math inline">\(3 \mid 24\)</span></li>
+<li><span class="math inline">\(4 \mid 12\)</span>, or <span class="math inline">\(24\)</span> est multiple de <span class="math inline">\(12\)</span>, donc <span class="math inline">\(4 \mid 12\)</span></li>
 </ul>
 </section>
-<section id="arithmétique" class="level1">
-<h1>Arithmétique</h1>
-<ul>
-<li><span class="math inline">\(a \equiv b \,[n]\)</span> <a href="../../posts/maths/maths_congruence.html">congruence modulo n</a></li>
-<li><span class="math inline">\(a \mid b\)</span> <a href="../../posts/maths/maths_divisibilité.html">divisibilité</a></li>
-</ul>
+</div>
+</div>
+<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Propriété des diviseurs
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Tout nombre relatif <span class="math inline">\(b\)</span> possède nombre <strong>fini</strong> de diviseurs.</p>
+<p>Tous les diviseurs de <span class="math inline">\(b\)</span> sont compris entre <span class="math inline">\(-b\)</span> est <span class="math inline">\(b\)</span></p>
+<p><br></p>
+<p>C’est logique, puisqu’un nombre plus grand que <span class="math inline">\(b\)</span> (en valeur absolue) ne peut pas diviser <span class="math inline">\(b\)</span>.</p>
+</div>
+</div>
+<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Combinaison linéaire
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Soient <span class="math inline">\(a\)</span>, <span class="math inline">\(b\)</span> et <span class="math inline">\(d\)</span> des nombres relatifs, avec <span class="math inline">\(d \mid a\)</span> et <span class="math inline">\(d \mid b\)</span> (<span class="math inline">\(d\)</span> divise <span class="math inline">\(a\)</span> et <span class="math inline">\(b\)</span>)</p>
+<p>On sait que, quels que soient les entiers relatifs <span class="math inline">\(u\)</span> et <span class="math inline">\(v\)</span> :</p>
+<p><span class="math inline">\(\boxed{d \mid au + bv}\)</span></p>
+<p>(on appelle <span class="math inline">\(au + bv\)</span> une “combinaison linéaire” de <span class="math inline">\(a\)</span> et de <span class="math inline">\(b\)</span>)</p>
+<section id="explication" class="level5">
+<h5 class="anchored" data-anchor-id="explication">Explication</h5>
+<p>Puisque <span class="math inline">\(d \mid a\)</span>, on sait que <span class="math inline">\(d \mid au\)</span> (car <span class="math inline">\(au\)</span> est évidemment un multiple de <span class="math inline">\(a\)</span>)</p>
+<p>De même, <span class="math inline">\(d \mid b\)</span>, donc <span class="math inline">\(d \mid bv\)</span></p>
+<p>Alors, puisque <span class="math inline">\(d\)</span> divise <span class="math inline">\(au\)</span> et <span class="math inline">\(bv\)</span>, on sait que</p>
 </section>
-<section id="ensembles-et-combinatoire" class="level1">
-<h1>Ensembles et combinatoire</h1>
-<ul>
-<li><a href="../../posts/maths/sacs.html">sacs (ensembles avec répétition)</a></li>
-</ul>
-<section id="combinatoire" class="level2">
-<h2 class="anchored" data-anchor-id="combinatoire">Combinatoire</h2>
-<ul>
-<li><span class="math inline">\(\mathscr{P}(E)\)</span> <a href="../../posts/maths/ensemble_des_parties_dun_ensemble.html">ensemble des parties d’un ensemble</a></li>
-<li><span class="math inline">\(A_{n}^{k}\)</span> <a href="../../posts/maths/arrangements.html">arrangements</a></li>
-<li><span class="math inline">\(A_{n}^{k}\)</span> <a href="../../posts/maths/arrangements avec répétitions.html">arrangements avec répétitions</a></li>
-<li><span class="math inline">\(\displaystyle \binom{k}{n}\)</span> <a href="../../posts/maths/combinaisons.html">combinaisons</a></li>
-<li><span class="math inline">\(\Gamma _{n}^{k}\)</span> <a href="../../posts/maths/combinaisons_avec_repetitions.html">combinaisons avec répétitions</a></li>
-</ul>
+</div>
+</div>
+<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Lien avec la division euclidienne et la congruence
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Soient <span class="math inline">\(a\)</span> et <span class="math inline">\(b\)</span> deux entiers relatifs</p>
+<p><span class="math inline">\(a\)</span> divise <span class="math inline">\(b\)</span> si et seulement si le reste de la division euclidienne de <span class="math inline">\(b\)</span> par <span class="math inline">\(a\)</span> est 0.</p>
+<p><span class="math inline">\(a\)</span> divise <span class="math inline">\(b\)</span> si et seulement si <span class="math inline">\(a \equiv 0 [n]\)</span></p>
+</div>
+</div>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->

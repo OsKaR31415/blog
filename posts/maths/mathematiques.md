@@ -16,8 +16,10 @@ toc: true
 
 
 
-# Algèbre
+# Arithmétique
 
+ - $a \equiv b \,[n]$ [congruence modulo n](maths_congruence.md)
+ - $a \mid b$ [divisibilité](maths_divisibilité.md)
 
 # Ensembles et combinatoire
 

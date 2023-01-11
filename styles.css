@@ -1,7 +1,13 @@
 /* css styles */
 
-p, code, code pre, .sourceCode {
-    font-size: calc(.3 * (2vw + 2vh));
+#quarto-document-content {
+    /* quite good formula apparently */
+    font-size: calc(.5em + .8vw);
+}
+
+
+p, code, pre code, .sourceCode, .callout-caption-container {
+    font-size: inherit;
 }
 
 /* make titles and banners monospace */
