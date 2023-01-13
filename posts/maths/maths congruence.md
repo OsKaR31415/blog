@@ -15,7 +15,7 @@ On dit que **$a$ est congru à $b$ modulo $n$**, et on note $a \equiv b [n]$ si 
 
 Cela peut être interprété comme le fait que $a$ et $b$ ont le même reste pour la division euclidienne par $n$ (c'est une autre définition).
 
-Une dernière définition est que $a \equiv b [n]$ si et seulement si il existe un entier relatif $k$ tel que $a - b = kn$ (si $a-b$ est un multiple de $n$). Cette définition est équivalente à $a - b \mid n$ (voir la définition de la [divisibilité](maths_divisibilité.md))
+Une dernière définition est que $a \equiv b [n]$ si et seulement si il existe un entier relatif $k$ tel que $a - b = kn$ (si $a-b$ est un multiple de $n$). Cette définition est équivalente à $a - b \mid n$ (voir la définition de la [divisibilité](maths%20divisibilité.md))
 
 ##### Exemples
 

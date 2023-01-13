@@ -52,5 +52,6 @@ Le Blog s'appelle `OSK42`, à la fois en référence au nombre 42, la réponse �
  - <a href="https://www.flaticon.com/free-icons/algebra" title="algebra icons">Algebra icons created by Freepik - Flaticon</a>
  - <a href="https://www.flaticon.com/free-icons/maths" title="maths icons">Maths icons created by Freepik - Flaticon</a>
  - <a href="https://www.flaticon.com/free-icons/ui" title="ui icons">Ui icons created by Arafat Uddin - Flaticon</a>
+ - <a href="https://www.flaticon.com/free-icons/loop" title="loop icons">Loop icons created by Pixelmeetup - Flaticon</a>
 :::
 

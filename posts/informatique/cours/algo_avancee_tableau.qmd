@@ -1,0 +1,33 @@
+---
+title: "Structure de données : tableau"
+date: 2023-01-13
+categories: [ informatique ]
+---
+
+ - Structure de données statique
+     - La taille du tableau est fixe
+ - Permet de stocker une liste de données
+
+::: {.callout-note}
+## Avantages des tableaux
+
+ - L'accès aux éléments est très rapide, en $O(1)$
+     - Car on sait directement où est un élément donné dans la mémoire
+         - car la taille des cases est fixe
+ - Un tableau prends peu de place en mémoire
+
+:::
+
+::: {.callout-warning}
+## Désavantages des tableaux
+
+ - Il impossible (ou difficile) de changer la taille d'un tableau
+     - si on veut l'augmenter, il faut créer un nouveau tableau
+ - La supression d'éléments est en $O(n)$ (longue)
+     - il faut "décaler" tous les éléments après la valeur supprimée
+ - L'insertion d'éléments est impossible
+     - il faut augmenter la taille du tableau, donc en créer un nouveau, ou bien supprimer un autre élément
+
+:::
+
+

@@ -6,10 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2023-01-04">
-<meta name="description" content="Liste de notions mathématiques importantes">
+<meta name="dcterms.date" content="2023-01-11">
 
-<title>0SK42 - Mathématiques</title>
+<title>0SK42 - nombre de permutations</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -66,7 +65,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="../../styles.css">
 </head>
 
-<body class="nav-fixed">
+<body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -83,7 +82,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="../../posts/maths/mathematiques.html" aria-current="page">
+    <a class="nav-link" href="../../posts/maths/mathematiques.html">
  <span class="menu-text">Mathématiques</span></a>
   </li>  
   <li class="nav-item">
@@ -115,15 +114,9 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Mathématiques</h1>
-                  <div>
-        <div class="description">
-          Liste de notions mathématiques importantes
-        </div>
-      </div>
-                          <div class="quarto-categories">
+      <h1 class="title">nombre de permutations</h1>
+                                <div class="quarto-categories">
                 <div class="quarto-category">maths</div>
-                <div class="quarto-category">cours</div>
               </div>
                   </div>
   </div>
@@ -135,7 +128,7 @@ ul.task-list li input[type="checkbox"] {
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">January 4, 2023</p>
+        <p class="date">January 11, 2023</p>
       </div>
     </div>
     
@@ -146,59 +139,47 @@ ul.task-list li input[type="checkbox"] {
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#analyse" id="toc-analyse" class="nav-link active" data-scroll-target="#analyse">Analyse</a></li>
-  <li><a href="#arithmétique" id="toc-arithmétique" class="nav-link" data-scroll-target="#arithmétique">Arithmétique</a></li>
-  <li><a href="#ensembles-et-combinatoire" id="toc-ensembles-et-combinatoire" class="nav-link" data-scroll-target="#ensembles-et-combinatoire">Ensembles et combinatoire</a>
-  <ul class="collapse">
-  <li><a href="#combinatoire" id="toc-combinatoire" class="nav-link" data-scroll-target="#combinatoire">Combinatoire</a></li>
-  </ul></li>
-  </ul>
-</nav>
-    </div>
+    
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
 
 
-<button>
-<a href="../../index.html#category=maths">Toutes les pages sur les mathématiques</a>
-</button>
-<section id="analyse" class="level1">
-<h1>Analyse</h1>
-<ul>
-<li><a href="../../posts/maths/formulaire d'analyse.html">formulaire (liste de formules de base)</a></li>
-</ul>
+<div class="callout-note callout callout-style-default no-icon callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Définition
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Le fait de permuter des éléments est le fait de changer leur ordre.</p>
+<p>Donc, le nombre de permutations de <span class="math inline">\(n\)</span> éléments sont le nombre de façons d’arranger <span class="math inline">\(n\)</span> éléments.</p>
+<p>C’est de le nombre de <span class="math inline">\(n\)</span>-uplets dont les éléments sont dans un ensemble à <span class="math inline">\(n\)</span> éléments.</p>
+<p>Le nombre de permutations de <span class="math inline">\(n\)</span> éléments est <span class="math inline">\(n!\)</span></p>
+</div>
+</div>
+<section id="interprétation" class="level1">
+<h1>Interprétation</h1>
+<section id="exemples" class="level2">
+<h2 class="anchored" data-anchor-id="exemples">Exemples</h2>
 </section>
-<section id="arithmétique" class="level1">
-<h1>Arithmétique</h1>
-<ul>
-<li><span class="math inline">\(a \equiv b \,[n]\)</span> <a href="../../posts/maths/maths congruence.html">congruence modulo n</a></li>
-<li><span class="math inline">\(a \mid b\)</span> <a href="../../posts/maths/maths divisibilité.html">divisibilité</a></li>
-</ul>
 </section>
-<section id="ensembles-et-combinatoire" class="level1">
-<h1>Ensembles et combinatoire</h1>
+<section id="formule" class="level1">
+<h1>Formule</h1>
+<p>Si on veut mettre les <span class="math inline">\(n\)</span> élément de notre ensemble dans un <span class="math inline">\(n\)</span> uplet, on doit les placer à un endroit :</p>
 <ul>
-<li><a href="../../posts/maths/sacs.html">sacs (ensembles avec répétition)</a></li>
-</ul>
-<section id="combinatoire" class="level2">
-<h2 class="anchored" data-anchor-id="combinatoire">Combinatoire</h2>
-<ul>
-<li><span class="math inline">\(\mathscr{P}(E)\)</span> <a href="../../posts/maths/ensemble des parties dun ensemble.html">ensemble des parties d’un ensemble</a></li>
-<li><span class="math inline">\(A_{n}^{k}\)</span> <a href="../../posts/maths/arrangements.html">arrangements</a></li>
-<li><span class="math inline">\(A_{n}^{k}\)</span> <a href="../../posts/maths/arrangements avec répétitions.html">arrangements avec répétitions</a></li>
-<li><span class="math inline">\(\displaystyle \binom{k}{n}\)</span> <a href="../../posts/maths/combinaisons.html">combinaisons</a></li>
-<li><span class="math inline">\(\Gamma _{n}^{k}\)</span> <a href="../../posts/maths/combinaisons_avec_repetitions.html">combinaisons avec répétitions</a></li>
+<li>pour le <span class="math inline">\(1^{er}\)</span> élément, il y à <span class="math inline">\(n\)</span> emplacement possibles</li>
+<li>pour le <span class="math inline">\(2^{ème}\)</span>, il y à <span class="math inline">\(n - 1\)</span> emplacements possible</li>
+<li>pour le <span class="math inline">\(3^{ème}\)</span>, il y à <span class="math inline">\(n-2\)</span> possibilités</li>
+<li><span class="math inline">\(\vdots\)</span></li>
+<li>pour le <span class="math inline">\(n-1^{ème}\)</span>, il y à</li>
 </ul>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->

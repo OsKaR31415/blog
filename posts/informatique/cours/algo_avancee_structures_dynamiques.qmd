@@ -1,0 +1,14 @@
+---
+title: "algo_avancee_structures_dynamiques"
+date: 2023-01-13
+categories: [ informatique ]
+---
+
+# Les strucures de données dynamiques
+
+ - on a besoin de représenter des objets de taille inconnue, de taille variable
+
+## Liste de structures de données dynamiques
+
+ - [listes chaînées](algo_avancee_listes_chainees.qmd)
+
