@@ -1,1 +1,1 @@
-Sitemap: https://quartopub.com/sites/osk42/osk42/sitemap.xml
+Sitemap: https://osk42.quarto.pub/osk42/sitemap.xml
