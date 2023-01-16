@@ -1,5 +1,5 @@
 ---
-title: "algo_avancee_structures_dynamiques"
+title: "Algorithmique : Structures dynamiques"
 date: 2023-01-13
 categories: [ informatique ]
 ---

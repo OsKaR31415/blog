@@ -1,0 +1,34 @@
+---
+title: "Informatique"
+date: 2023-01-15
+categories: [ informatique ]
+image: "_images/computer_science.png"
+listing:
+  contents: 
+    - "informatique/*.qmd"
+    - "informatique/*.md"
+  sort: "date desc"
+  type: default
+  categories: true
+  sort-ui: false
+  filter-ui: false
+---
+
+
+# Notions d'informatique
+
+## Structures de donnés
+
+ - [structures de données](structure de donnés.qmd)
+     - [listes chaînées](listes_chainees.qmd)
+
+# Corrections
+
+  - Algorithmique avancée
+      - [activité 1](cours/algo_avancee_activite_1.qmd)
+
+
+
+---
+
+# Liste de tous les posts sur l'informatique

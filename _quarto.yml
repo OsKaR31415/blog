@@ -7,7 +7,8 @@ website:
   description: "0SK42"
   navbar:
     right:
-      - posts/maths/mathematiques.md
+      - posts/maths/>>mathematiques.md
+      - posts/informatique/>>informatique.qmd
       - about.qmd
       - icon: rss
         href: index.xml

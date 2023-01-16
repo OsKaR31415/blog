@@ -127,7 +127,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <link rel="stylesheet" href="../../../styles.css">
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -144,8 +144,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../../posts/maths/mathematiques.html">
+    <a class="nav-link" href="../../../posts/maths/>>mathematiques.html">
  <span class="menu-text">Mathématiques</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../posts/informatique/>>informatique.html">
+ <span class="menu-text">Informatique</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../../../about.html">
@@ -201,7 +205,22 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#implémentation" id="toc-implémentation" class="nav-link active" data-scroll-target="#implémentation">Implémentation</a>
+  <ul class="collapse">
+  <li><a href="#fonctions-sur-des-node" id="toc-fonctions-sur-des-node" class="nav-link" data-scroll-target="#fonctions-sur-des-node">Fonctions sur des <code>Node</code></a>
+  <ul class="collapse">
+  <li><a href="#afficher-les-éléments" id="toc-afficher-les-éléments" class="nav-link" data-scroll-target="#afficher-les-éléments">Afficher les éléments</a></li>
+  <li><a href="#calculer-la-longueur" id="toc-calculer-la-longueur" class="nav-link" data-scroll-target="#calculer-la-longueur">Calculer la longueur</a></li>
+  </ul></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content">
 
@@ -220,15 +239,13 @@ Définition
 <div class="callout-body-container callout-body">
 <p>Représentation d’une liste de façon <a href="../../../posts/informatique/cours/algo_avancee_structures_recursives.html">récursive</a>. - les éléments sont rangés <strong>linéairement</strong> -</p>
 <p>La liste est un bloc, puis un lien vers la suite de la liste (le bloc suivant).</p>
-<p><img src="../_imaglistes_chainees.svg" class="img-fluid"></p>
+<p><img src="../_images/listes_chainees.svg" class="img-fluid"></p>
 <p>Une liste chaînée est donc un bloc contenant : - une valeur - un pointeur vers le premier bloc de la suite - Cette “suite” est aussi une liste chaînée</p>
 </div>
 </div>
 <section id="implémentation" class="level1">
 <h1>Implémentation</h1>
 <p>Deux représentations sont possibles : - un objet <code>Node</code> qui suit la définition <a href="../../../posts/informatique/cours/algo_avancee_structures_recursives.html">récursive</a> - les opérations que l’on fait sur une liste sont alors représentées comme des fonctions (ou procédures) qui prennent un (ou plusieurs) <code>Node</code> en argument - un objet <code>LinkedList</code> qui représente la liste chaînée à plus haut niveau d’abstraction - une liset possède une <strong>tête</strong> de liste qui est un <code>Node</code> - les opérations que l’on fait sur une liste sont alors représentées comme des méthodes de cet objet</p>
-<section id="en-python" class="level2">
-<h2 class="anchored" data-anchor-id="en-python">En python</h2>
 <div class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> Node:</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, value, <span class="bu">next</span><span class="op">=</span><span class="va">None</span>):</span>
@@ -249,10 +266,10 @@ Définition
 <li>ajouter un pointeur vers le dernier élément de la liste pour accélérer les insertions d’éléments à la fin</li>
 </ul></li>
 </ul>
-<section id="fonctions-sur-des-node" class="level3">
-<h3 class="anchored" data-anchor-id="fonctions-sur-des-node">Fonctions sur des <code>Node</code></h3>
-<section id="afficher-des-éléments" class="level4">
-<h4 class="anchored" data-anchor-id="afficher-des-éléments">Afficher des éléments</h4>
+<section id="fonctions-sur-des-node" class="level2">
+<h2 class="anchored" data-anchor-id="fonctions-sur-des-node">Fonctions sur des <code>Node</code></h2>
+<section id="afficher-les-éléments" class="level3">
+<h3 class="anchored" data-anchor-id="afficher-les-éléments">Afficher les éléments</h3>
 <div class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> affichage(L: Node) <span class="op">-&gt;</span> <span class="bu">str</span>:</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    chaine <span class="op">=</span> <span class="st">""</span></span>
@@ -268,35 +285,56 @@ Définition
 </div>
 </div>
 <p>Ou bien, dans une version récursive :</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> affichageRec(L: Node) <span class="op">-&gt;</span> <span class="bu">str</span>:</span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> L <span class="kw">is</span> <span class="va">None</span></span>
+<div class="cell" data-execution_count="3">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> affichageRec(L: Node) <span class="op">-&gt;</span> <span class="bu">str</span>:</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> L <span class="kw">is</span> <span class="va">None</span>:</span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="st">""</span></span>
 <span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="st">"&lt;"</span> <span class="op">+</span> <span class="bu">str</span>(L.valeur) <span class="op">+</span> <span class="st">"&gt; "</span></span>
 <span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>mylist <span class="op">=</span> Node(<span class="dv">3</span>, Node(<span class="dv">1</span>, Node(<span class="dv">4</span>, Node(<span class="dv">1</span>, Node(<span class="dv">5</span>, Node(<span class="dv">9</span>))))))</span>
 <span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(affichage(mylist))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>&lt;3&gt; &lt;1&gt; &lt;4&gt; &lt;1&gt; &lt;5&gt; &lt;9&gt; </code></pre>
+</div>
+</div>
 <p>Et on peut utiliser la méthode magique <code>__str__</code> de la classe <code>LinkedList</code> :</p>
-<div class="cell" data-execution_count="3">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> LinkedList:</span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, head: Node <span class="op">=</span><span class="va">None</span>):</span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>        <span class="co">"""Initialize a linked list"""</span></span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.head : Node <span class="op">=</span> head</span>
-<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> <span class="fu">__str__</span>(<span class="va">self</span>) <span class="op">-&gt;</span> <span class="bu">str</span>:</span>
-<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>        L <span class="op">=</span> <span class="va">self</span>.head</span>
-<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>        res <span class="op">=</span> <span class="st">""</span></span>
-<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>        <span class="cf">while</span> L <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span>:</span>
-<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>            res <span class="op">=</span> <span class="st">"&lt;"</span> <span class="op">+</span> L.valeur <span class="op">+</span> <span class="st">"&gt; "</span></span>
-<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>            L <span class="op">=</span> L.<span class="bu">next</span></span>
-<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> res</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell" data-execution_count="4">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> LinkedList:</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, head: Node <span class="op">=</span><span class="va">None</span>):</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>        <span class="co">"""Initialize a linked list"""</span></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.head : Node <span class="op">=</span> head</span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> <span class="fu">__str__</span>(<span class="va">self</span>) <span class="op">-&gt;</span> <span class="bu">str</span>:</span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>        L <span class="op">=</span> <span class="va">self</span>.head</span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>        res <span class="op">=</span> <span class="st">""</span></span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>        <span class="cf">while</span> L <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span>:</span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>            res <span class="op">+=</span> <span class="st">"&lt;"</span> <span class="op">+</span> <span class="bu">str</span>(L.valeur) <span class="op">+</span> <span class="st">"&gt; "</span></span>
+<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a>            L <span class="op">=</span> L.suivant</span>
+<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> res</span>
+<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a>mylinkedlist <span class="op">=</span> LinkedList(mylist)</span>
+<span id="cb7-15"><a href="#cb7-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-16"><a href="#cb7-16" aria-hidden="true" tabindex="-1"></a><span class="co"># __str__ permet de définir le résultat de str(mylinkedlist)</span></span>
+<span id="cb7-17"><a href="#cb7-17" aria-hidden="true" tabindex="-1"></a><span class="co"># print appelle toujours la fonction str, donc pas beson de l'ajouter</span></span>
+<span id="cb7-18"><a href="#cb7-18" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(mylinkedlist)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>&lt;3&gt; &lt;1&gt; &lt;4&gt; &lt;1&gt; &lt;5&gt; &lt;9&gt; </code></pre>
+</div>
 </div>
 </section>
-<section id="calculer-la-longueur" class="level4">
-<h4 class="anchored" data-anchor-id="calculer-la-longueur">Calculer la longueur</h4>
+<section id="calculer-la-longueur" class="level3">
+<h3 class="anchored" data-anchor-id="calculer-la-longueur">Calculer la longueur</h3>
 <p>On peut à nouveau le faire de plusieurs façons. Pour pouvoir utiliser la fonction <code>len</code> sur l’objet, on ajoute la méthode <code>__len__</code> sur la classe <code>LinkedList</code></p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> LinkedList:</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, head: Node <span class="op">=</span><span class="va">None</span>):</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>        <span class="co">"""Initialize a linked list"""</span></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.head : Node <span class="op">=</span> head</span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> <span class="fu">__len__</span>(<span class="va">self</span>) <span class="op">-&gt;</span> <span class="bu">int</span>:</span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>        L <span class="op">=</span> <span class="va">self</span>.head</span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>        <span class="cf">while</span> L <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span>:</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 
-</section>
 </section>
 </section>
 </section>

@@ -1,0 +1,37 @@
+---
+title: "Informatique"
+description: "Liste des notions d'Informatique"
+date: 2023-01-15
+image: "_images/computer_science.png"
+categories: [ informatique ]
+toc: true
+listing:
+  contents: .
+  sort: "date desc"
+  type: table
+  categories: true
+  sort-ui: true
+  filter-ui: true
+---
+
+
+
+# Notions d'informatique
+
+## Structures de donnés
+
+ - [structures de données](structure de donnés.qmd)
+     - [listes chaînées](listes_chainees.qmd)
+
+# Corrections
+
+  - Algorithmique avancée
+      - [activité 1](cours/algo_avancee_activite_1.qmd)
+
+
+<br/> <br/>
+
+---
+<br/> <br/>
+
+# Liste de tous les posts sur l'informatique

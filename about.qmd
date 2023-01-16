@@ -20,7 +20,7 @@ Je suis étudiant en licence d'informatique et de mathématiques, et passionné 
 
 # Contenu
 
-Le contenu de ce blog sera principalement :
+Le contenu de ce blog est principalement :
 
 <div style="text-align: left; margin-left: 5vw;">
  - Des explications de concepts d'informatique et de mathématiques
@@ -45,13 +45,13 @@ Le Blog s'appelle `OSK42`, à la fois en référence au nombre 42, la réponse �
 
 
 ::: {.callout-none collapse=true}
-## Icônes 
+## Crédits des icônes
 
- - <a href="https://www.flaticon.com/free-icons/backpack" title="backpack icons">Backpack icons created by max.icons - Flaticon</a>
- - <a href="https://www.flaticon.com/free-icons/space-suit" title="space suit icons">Space suit icons created by surang - Flaticon</a>
  - <a href="https://www.flaticon.com/free-icons/algebra" title="algebra icons">Algebra icons created by Freepik - Flaticon</a>
- - <a href="https://www.flaticon.com/free-icons/maths" title="maths icons">Maths icons created by Freepik - Flaticon</a>
- - <a href="https://www.flaticon.com/free-icons/ui" title="ui icons">Ui icons created by Arafat Uddin - Flaticon</a>
+ - <a href="https://www.flaticon.com/free-icons/backpack" title="backpack icons">Backpack icons created by max.icons - Flaticon</a>
  - <a href="https://www.flaticon.com/free-icons/loop" title="loop icons">Loop icons created by Pixelmeetup - Flaticon</a>
+ - <a href="https://www.flaticon.com/free-icons/math" title="math icons">Math icons created by Freepik - Flaticon</a>
+ - <a href="https://www.flaticon.com/free-icons/space-suit" title="space suit icons">Space suit icons created by surang - Flaticon</a>
+ - <a href="https://www.flaticon.com/free-icons/ui" title="ui icons">Ui icons created by Arafat Uddin - Flaticon</a>
 :::
 

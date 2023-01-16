@@ -1,0 +1,1430 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>0SK42</title>
+<link>https://osk42.quarto.pub/osk42/posts/informatique/informatique.html</link>
+<atom:link href="https://osk42.quarto.pub/osk42/posts/informatique/informatique.xml" rel="self" type="application/rss+xml"/>
+<description>0SK42</description>
+<generator>quarto-1.2.280</generator>
+<lastBuildDate>Sat, 14 Jan 2023 23:00:00 GMT</lastBuildDate>
+<item>
+  <title>Algorithmique avancée</title>
+  <link>https://osk42.quarto.pub/osk42/posts/informatique/cours/algo_avancee_activite_1.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Correction détaillée de l’activité 1 d’algorithmique avancée.</p>
+<section id="nombres-aléatoires" class="level1">
+<h1>1. Nombres aléatoires</h1>
+<p>On veut écrire une fonction :</p>
+<p><img src="https://latex.codecogs.com/png.latex?%5Cbegin%7Barray%7D%7Brl%7D%20%5Ctexttt%7Bgeneration%20:%7D&amp;%20(%5Ctexttt%7Bint%20%3E%200%7D)%5E3%20%5Cto%20%5Ctexttt%7Blist%5Bint%20%3E%200%5D%7D%5C%5C%20&amp;%20%5Ctexttt%7B(nb%5C_val,%20nb%5C_min,%20nb%5C_max)%7D%20%5Cmapsto%20%5B%5Ctexttt%7Bx%7D%20%7C%20%5Ctexttt%7Bx%7D%20%5Cin%20%5B%5C!%5B%5Ctexttt%7Bnb%5C_min%7D,%20%5Ctexttt%7Bnb%5C_max%7D%20%5D%5C!%5D%20%5D%20%5Cend%7Barray%7D"></p>
+<p>Qui génère <img src="https://latex.codecogs.com/png.latex?%5Ctexttt%7Bnb%5C_val%7D"> nombres aléatoires entiers entre <img src="https://latex.codecogs.com/png.latex?%5Ctexttt%7Bnb%5C_min%7D"> et <img src="https://latex.codecogs.com/png.latex?%5Ctexttt%7Bnb%5C_max%7D"></p>
+<section id="générer-un-nombre-entier-aléatoire" class="level3">
+<h3 class="anchored" data-anchor-id="générer-un-nombre-entier-aléatoire">Générer un nombre entier aléatoire</h3>
+<p>Avec <code>randon.random</code>, qui renvoie un réel aléatoire dans <img src="https://latex.codecogs.com/png.latex?%5B0;%201%5B"></p>
+<div class="cell" data-execution_count="1">
+<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><span class="im" style="color: #00769E;">from</span> random <span class="im" style="color: #00769E;">import</span> random</span>
+<span id="cb1-2"><span class="im" style="color: #00769E;">from</span> math <span class="im" style="color: #00769E;">import</span> floor</span>
+<span id="cb1-3"></span>
+<span id="cb1-4"><span class="kw" style="color: #003B4F;">def</span> random_gen_with_random (nb_min: <span class="bu" style="color: null;">int</span>, nb_max: <span class="bu" style="color: null;">int</span>) <span class="op" style="color: #5E5E5E;">-&gt;</span> <span class="bu" style="color: null;">int</span>:</span>
+<span id="cb1-5">    <span class="cf" style="color: #003B4F;">return</span> floor(random() <span class="op" style="color: #5E5E5E;">*</span> (nb_max <span class="op" style="color: #5E5E5E;">-</span> nb_min) <span class="op" style="color: #5E5E5E;">+</span> nb_min) <span class="co" style="color: #5E5E5E;"># floor -&gt; arrondi inferieur (int fait la meme chose)</span></span>
+<span id="cb1-6"></span>
+<span id="cb1-7"><span class="bu" style="color: null;">print</span>(random_gen_with_random(<span class="dv" style="color: #AD0000;">5</span>, <span class="dv" style="color: #AD0000;">10</span>))</span></code></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>7</code></pre>
+</div>
+</div>
+<p>Autre version avec la fonction <code>randint</code></p>
+<div class="cell" data-execution_count="2">
+<div class="sourceCode cell-code" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><span class="im" style="color: #00769E;">from</span> random <span class="im" style="color: #00769E;">import</span> randint</span>
+<span id="cb3-2"></span>
+<span id="cb3-3"><span class="kw" style="color: #003B4F;">def</span> random_gen (nb_min: <span class="bu" style="color: null;">int</span>, nb_max: <span class="bu" style="color: null;">int</span>) <span class="op" style="color: #5E5E5E;">-&gt;</span> <span class="bu" style="color: null;">int</span>:</span>
+<span id="cb3-4">    <span class="cf" style="color: #003B4F;">return</span> randint(nb_min, nb_max)</span>
+<span id="cb3-5"></span>
+<span id="cb3-6"><span class="co" style="color: #5E5E5E;"># Note: cette fonction est un peu inutile, car elle est exactement similaire a</span></span>
+<span id="cb3-7"><span class="co" style="color: #5E5E5E;"># randint.</span></span>
+<span id="cb3-8"></span>
+<span id="cb3-9"><span class="bu" style="color: null;">print</span>(random_gen(<span class="dv" style="color: #AD0000;">8</span>, <span class="dv" style="color: #AD0000;">18</span>))</span></code></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>15</code></pre>
+</div>
+</div>
+</section>
+<section id="générer-une-liste-de-nombres-aléatoires" class="level3">
+<h3 class="anchored" data-anchor-id="générer-une-liste-de-nombres-aléatoires">Générer une liste de nombres aléatoires</h3>
+<p>On utilise la fonction <code>random_gen</code> que l’on a définie plus haut.</p>
+<p>Première version, avec une boucle :</p>
+<div class="cell" data-execution_count="3">
+<div class="sourceCode cell-code" id="cb5" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><span class="kw" style="color: #003B4F;">def</span> generation(nb_val: <span class="bu" style="color: null;">int</span>, nb_min: <span class="bu" style="color: null;">int</span>, nb_max: <span class="bu" style="color: null;">int</span>) <span class="op" style="color: #5E5E5E;">-&gt;</span> <span class="bu" style="color: null;">list</span>[<span class="bu" style="color: null;">int</span>]:</span>
+<span id="cb5-2">    <span class="co" style="color: #5E5E5E;">"""Renvoie une liste de *nb_val* nombres entiers aleatoires entre nb_min, </span></span>
+<span id="cb5-3"><span class="co" style="color: #5E5E5E;">    """</span></span>
+<span id="cb5-4">    new_list <span class="op" style="color: #5E5E5E;">=</span> []</span>
+<span id="cb5-5">    <span class="cf" style="color: #003B4F;">for</span> i <span class="kw" style="color: #003B4F;">in</span> <span class="bu" style="color: null;">range</span>(nb_val):</span>
+<span id="cb5-6">        new_list.append(random_gen(nb_min, nb_max))</span>
+<span id="cb5-7">    <span class="cf" style="color: #003B4F;">return</span> new_list</span>
+<span id="cb5-8"></span>
+<span id="cb5-9"><span class="bu" style="color: null;">print</span>(generation(<span class="dv" style="color: #AD0000;">10</span>, <span class="dv" style="color: #AD0000;">5</span>, <span class="dv" style="color: #AD0000;">10</span>))</span></code></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[10, 7, 6, 8, 8, 9, 7, 10, 8, 6]</code></pre>
+</div>
+</div>
+<p>Autre version, avec une <em>list comprehension</em> :</p>
+<div class="cell" data-execution_count="4">
+<div class="sourceCode cell-code" id="cb7" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><span class="kw" style="color: #003B4F;">def</span> generation_comprehension(nb_val: <span class="bu" style="color: null;">int</span>, nb_min: <span class="bu" style="color: null;">int</span>, nb_max: <span class="bu" style="color: null;">int</span>) <span class="op" style="color: #5E5E5E;">-&gt;</span> <span class="bu" style="color: null;">list</span>[<span class="bu" style="color: null;">int</span>]:</span>
+<span id="cb7-2">    <span class="cf" style="color: #003B4F;">return</span> [random_gen(nb_min, nb_max) <span class="cf" style="color: #003B4F;">for</span> i <span class="kw" style="color: #003B4F;">in</span> <span class="bu" style="color: null;">range</span>(nb_val)]</span>
+<span id="cb7-3"></span>
+<span id="cb7-4"><span class="bu" style="color: null;">print</span>(generation_comprehension(<span class="dv" style="color: #AD0000;">10</span>, <span class="dv" style="color: #AD0000;">5</span>, <span class="dv" style="color: #AD0000;">10</span>))</span></code></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[10, 10, 5, 7, 5, 5, 5, 9, 9, 6]</code></pre>
+</div>
+</div>
+</section>
+</section>
+<section id="vitesse-dexécution" class="level1">
+<h1>2. Vitesse d’exécution</h1>
+<p>On veut mesurer (et comparer) le temps d’exécution des fonctions de génération de nombres aléatoires créées précédemment.</p>
+<p>On veut en fait comparer les temps de génération pour des listes contenant entre 10 et 1000 éléments (avec plusieurs valeurs intermédiaires).</p>
+<p>Pour cela, on utilise la fonction <code>time.time()</code>, du module <code>time</code></p>
+<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Fonctionnement de la fonction <code>time</code>
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>La fonction <code>time</code> renvoie le nombre de secondes depuis le début de “l’époque” (Epoch en anglais), c’est-à-dire depuis la “date initiale” définie par votre système d’exploitation. Sur les systèmes UNIX et leurs dérivés, cette date est généralement fixée au 1<img src="https://latex.codecogs.com/png.latex?%5E%7B%5Ctext%7Ber%7D%7D"> janvier 1970.</p>
+<p>Ce qui est à comprendre, c’est que c’est un nombre qui augmente de 1 chaque seconde (les chiffres après la virgule augmentent continuellement pour avoir une mesure plus précise).</p>
+<p>Donc, pour mesurer la durée d’exécution d’une fonction, il suffit de mémoriser dans une variable le résultat de <code>time</code> avant l’exécution, puis celui après, et de faire la différence entre ces deux nombres. On obtient ainsi la durée de l’exécution en secondes.</p>
+</div>
+</div>
+</div>
+<section id="temps-dexécution-de-la-première-méthode-de-génération" class="level2">
+<h2 class="anchored" data-anchor-id="temps-dexécution-de-la-première-méthode-de-génération">Temps d’exécution de la première méthode de génération</h2>
+<p>Voici donc le code :</p>
+<div class="cell" data-execution_count="5">
+<div class="sourceCode cell-code" id="cb9" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><span class="im" style="color: #00769E;">from</span> time <span class="im" style="color: #00769E;">import</span> time</span>
+<span id="cb9-2"></span>
+<span id="cb9-3"><span class="co" style="color: #5E5E5E;"># liste des nombres d'éléments dans la liste que l'on veut tester</span></span>
+<span id="cb9-4"><span class="co" style="color: #5E5E5E;"># on peut aussi utiliser range(10, 10000, 10) par exemple</span></span>
+<span id="cb9-5">LIST_NUMBER_OF_ELEMENTS <span class="op" style="color: #5E5E5E;">=</span> [<span class="dv" style="color: #AD0000;">10</span>, <span class="dv" style="color: #AD0000;">100</span>, <span class="dv" style="color: #AD0000;">1000</span>, <span class="dv" style="color: #AD0000;">10000</span>]</span>
+<span id="cb9-6"></span>
+<span id="cb9-7"><span class="cf" style="color: #003B4F;">for</span> number_of_elements <span class="kw" style="color: #003B4F;">in</span> LIST_NUMBER_OF_ELEMENTS:</span>
+<span id="cb9-8">    <span class="co" style="color: #5E5E5E;"># on stocke le moment de début de la génération</span></span>
+<span id="cb9-9">    start <span class="op" style="color: #5E5E5E;">=</span> time()</span>
+<span id="cb9-10"></span>
+<span id="cb9-11">    <span class="co" style="color: #5E5E5E;"># on génère des nombres aléatoires</span></span>
+<span id="cb9-12">    foo <span class="op" style="color: #5E5E5E;">=</span> generation(number_of_elements, <span class="dv" style="color: #AD0000;">42</span>, <span class="dv" style="color: #AD0000;">73</span>)</span>
+<span id="cb9-13"></span>
+<span id="cb9-14">    <span class="co" style="color: #5E5E5E;"># on stocke le moment de fin de la génération</span></span>
+<span id="cb9-15">    end <span class="op" style="color: #5E5E5E;">=</span> time()</span>
+<span id="cb9-16"></span>
+<span id="cb9-17">    <span class="co" style="color: #5E5E5E;"># la durée d'exécution est la différence entre le moment de début et de fin</span></span>
+<span id="cb9-18">    <span class="co" style="color: #5E5E5E;"># Attention : si on inverse end et start, on obtient un nombre négatif</span></span>
+<span id="cb9-19">    duration <span class="op" style="color: #5E5E5E;">=</span> end <span class="op" style="color: #5E5E5E;">-</span> start</span>
+<span id="cb9-20"></span>
+<span id="cb9-21">    <span class="co" style="color: #5E5E5E;"># on arrondi la durée, pour que le tout soit plus lisible</span></span>
+<span id="cb9-22">    duration <span class="op" style="color: #5E5E5E;">=</span> <span class="bu" style="color: null;">round</span>(duration, <span class="dv" style="color: #AD0000;">5</span>)</span>
+<span id="cb9-23"></span>
+<span id="cb9-24">    <span class="co" style="color: #5E5E5E;"># affichage du résultat</span></span>
+<span id="cb9-25">    <span class="bu" style="color: null;">print</span>(<span class="ss" style="color: #20794D;">f"générer </span><span class="sc" style="color: #5E5E5E;">{</span>number_of_elements<span class="sc" style="color: #5E5E5E;">}</span><span class="ss" style="color: #20794D;"> à mis </span><span class="sc" style="color: #5E5E5E;">{</span>duration<span class="sc" style="color: #5E5E5E;">}</span><span class="ss" style="color: #20794D;"> secondes"</span>)</span></code></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>générer 10 à mis 1e-05 secondes
+générer 100 à mis 4e-05 secondes
+générer 1000 à mis 0.00044 secondes
+générer 10000 à mis 0.00402 secondes</code></pre>
+</div>
+</div>
+</section>
+<section id="temps-dexécution-avec-des-list-comprehension" class="level2">
+<h2 class="anchored" data-anchor-id="temps-dexécution-avec-des-list-comprehension">Temps d’exécution avec des <em>list comprehension</em></h2>
+<p>On utilise exactement le même code, mais avec la fonction <code>generation_comprehension</code> au lieu de <code>generation</code> :</p>
+<div class="cell" data-execution_count="6">
+<div class="sourceCode cell-code" id="cb11" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1">LIST_NUMBER_OF_ELEMENTS <span class="op" style="color: #5E5E5E;">=</span> [<span class="dv" style="color: #AD0000;">10</span>, <span class="dv" style="color: #AD0000;">100</span>, <span class="dv" style="color: #AD0000;">1000</span>, <span class="dv" style="color: #AD0000;">10000</span>]</span>
+<span id="cb11-2"></span>
+<span id="cb11-3"><span class="cf" style="color: #003B4F;">for</span> number_of_elements <span class="kw" style="color: #003B4F;">in</span> LIST_NUMBER_OF_ELEMENTS:</span>
+<span id="cb11-4">    start <span class="op" style="color: #5E5E5E;">=</span> time()</span>
+<span id="cb11-5">    foo <span class="op" style="color: #5E5E5E;">=</span> generation_comprehension(number_of_elements, <span class="dv" style="color: #AD0000;">42</span>, <span class="dv" style="color: #AD0000;">73</span>)</span>
+<span id="cb11-6">    end <span class="op" style="color: #5E5E5E;">=</span> time()</span>
+<span id="cb11-7"></span>
+<span id="cb11-8">    duration <span class="op" style="color: #5E5E5E;">=</span> end <span class="op" style="color: #5E5E5E;">-</span> start</span>
+<span id="cb11-9">    duration <span class="op" style="color: #5E5E5E;">=</span> <span class="bu" style="color: null;">round</span>(duration, <span class="dv" style="color: #AD0000;">5</span>)</span>
+<span id="cb11-10">    <span class="bu" style="color: null;">print</span>(<span class="ss" style="color: #20794D;">f"générer </span><span class="sc" style="color: #5E5E5E;">{</span>number_of_elements<span class="sc" style="color: #5E5E5E;">}</span><span class="ss" style="color: #20794D;"> à mis </span><span class="sc" style="color: #5E5E5E;">{</span>duration<span class="sc" style="color: #5E5E5E;">}</span><span class="ss" style="color: #20794D;"> secondes"</span>)</span></code></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>générer 10 à mis 2e-05 secondes
+générer 100 à mis 4e-05 secondes
+générer 1000 à mis 0.00043 secondes
+générer 10000 à mis 0.00404 secondes</code></pre>
+</div>
+</div>
+<p>On remarque que le code avec des <em>list comprehension</em> est effectivement plus rapide.</p>
+</section>
+<section id="pour-aller-plus-loin" class="level2">
+<h2 class="anchored" data-anchor-id="pour-aller-plus-loin">Pour aller plus loin</h2>
+<div class="callout-warning callout callout-style-default no-icon callout-captioned">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Pour aller plus loin
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>On peut, par exemple, définir une fonction qui mesure le temps d’exécution d’une autre fonction.</p>
+<p>Pour cela, il faut que cette nouvelle fonction (appelons-la <code>temps_execution</code>), prenne en argument la fonction dont on mesure le temps d’exécution.</p>
+<p>On obtient donc quelque chose comme ça :</p>
+<div class="cell" data-execution_count="7">
+<div class="sourceCode cell-code" id="cb13" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><span class="kw" style="color: #003B4F;">def</span> temps_execution(fonction_a_tester, number_of_elements: <span class="bu" style="color: null;">int</span>) <span class="op" style="color: #5E5E5E;">-&gt;</span> <span class="bu" style="color: null;">float</span>:</span>
+<span id="cb13-2">    <span class="co" style="color: #5E5E5E;"># ici, on mesure le temps d'exécution</span></span>
+<span id="cb13-3">    start <span class="op" style="color: #5E5E5E;">=</span> time()</span>
+<span id="cb13-4">    foo <span class="op" style="color: #5E5E5E;">=</span> fonction_a_tester(number_of_elements, <span class="dv" style="color: #AD0000;">42</span>, <span class="dv" style="color: #AD0000;">73</span>)</span>
+<span id="cb13-5">    end <span class="op" style="color: #5E5E5E;">=</span> time()</span>
+<span id="cb13-6">    <span class="co" style="color: #5E5E5E;"># l'idéal est de retourner le temps d'exécution plutôt</span></span>
+<span id="cb13-7">    <span class="co" style="color: #5E5E5E;"># que de mettre un print à l'intérieur d'une fonction</span></span>
+<span id="cb13-8">    <span class="co" style="color: #5E5E5E;"># (ce qui est à # éviter en général)</span></span>
+<span id="cb13-9">    <span class="cf" style="color: #003B4F;">return</span> end <span class="op" style="color: #5E5E5E;">-</span> start</span>
+<span id="cb13-10"></span>
+<span id="cb13-11"><span class="bu" style="color: null;">print</span>(temps_execution(generation,               <span class="dv" style="color: #AD0000;">1000</span>))</span>
+<span id="cb13-12"><span class="bu" style="color: null;">print</span>(temps_execution(generation_comprehension, <span class="dv" style="color: #AD0000;">1000</span>))</span></code></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>0.0004050731658935547
+0.00038504600524902344</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="inverser-une-liste" class="level1">
+<h1>3. Inverser une liste</h1>
+<p>On veut écrire une fonction qui inverse l’ordre des éléments d’une liste</p>
+<p>On note que, puisqu’en python, les listes ne sont pas modifiables, on devra nécessairement créer une nouvelle liste.</p>
+<p>Une première solution fonctionne</p>
+<section id="avec-la-méthode-reverse" class="level3">
+<h3 class="anchored" data-anchor-id="avec-la-méthode-reverse">Avec la méthode reverse</h3>
+<div class="cell" data-execution_count="8">
+<div class="sourceCode cell-code" id="cb15" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><span class="kw" style="color: #003B4F;">def</span> reverse_list (liste: <span class="bu" style="color: null;">list</span>) <span class="op" style="color: #5E5E5E;">-&gt;</span> <span class="bu" style="color: null;">list</span>:</span>
+<span id="cb15-2">    <span class="co" style="color: #5E5E5E;"># retourne la liste (change le contenu de la variable)</span></span>
+<span id="cb15-3">    liste.reverse()</span>
+<span id="cb15-4">    <span class="cf" style="color: #003B4F;">return</span> liste</span>
+<span id="cb15-5"></span>
+<span id="cb15-6"><span class="bu" style="color: null;">print</span>(reverse_list([<span class="dv" style="color: #AD0000;">1</span>, <span class="dv" style="color: #AD0000;">2</span>, <span class="dv" style="color: #AD0000;">3</span>, <span class="dv" style="color: #AD0000;">4</span>, <span class="dv" style="color: #AD0000;">5</span>]))</span></code></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[5, 4, 3, 2, 1]</code></pre>
+</div>
+</div>
+</section>
+<section id="avec-la-fonction-reversed" class="level3">
+<h3 class="anchored" data-anchor-id="avec-la-fonction-reversed">Avec la fonction <code>reversed</code></h3>
+<div class="cell" data-execution_count="9">
+<div class="sourceCode cell-code" id="cb17" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><span class="kw" style="color: #003B4F;">def</span> reverse_list_reversed(liste: <span class="bu" style="color: null;">list</span>) <span class="op" style="color: #5E5E5E;">-&gt;</span> <span class="bu" style="color: null;">list</span>:</span>
+<span id="cb17-2">    <span class="co" style="color: #5E5E5E;"># on est obligé de mettre la fonction list pour que le</span></span>
+<span id="cb17-3">    <span class="co" style="color: #5E5E5E;"># résultat soit bien une liste (voir le "pour aller plus</span></span>
+<span id="cb17-4">    <span class="co" style="color: #5E5E5E;"># loin")</span></span>
+<span id="cb17-5">    <span class="cf" style="color: #003B4F;">return</span> <span class="bu" style="color: null;">list</span>(<span class="bu" style="color: null;">reversed</span>(liste))</span></code></pre></div>
+</div>
+<div class="callout-warning callout callout-style-default no-icon callout-captioned">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Pour aller plus loin - Comprendre la méthode reverse
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Si on exécute ce code :</p>
+<div class="cell" data-execution_count="10">
+<div class="sourceCode cell-code" id="cb18" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1">l <span class="op" style="color: #5E5E5E;">=</span> [<span class="dv" style="color: #AD0000;">1</span>, <span class="dv" style="color: #AD0000;">2</span>, <span class="dv" style="color: #AD0000;">3</span>, <span class="dv" style="color: #AD0000;">5</span>, <span class="dv" style="color: #AD0000;">8</span>, <span class="dv" style="color: #AD0000;">13</span>, <span class="dv" style="color: #AD0000;">21</span>]</span>
+<span id="cb18-2">r <span class="op" style="color: #5E5E5E;">=</span> <span class="bu" style="color: null;">reversed</span>(l)</span>
+<span id="cb18-3"><span class="bu" style="color: null;">print</span>(r)</span></code></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>&lt;list_reverseiterator object at 0x1056cac20&gt;</code></pre>
+</div>
+</div>
+<p>On remarque que <code>r</code> n’est pas une liste, mais un itérateur.</p>
+<p>Un itérateur est un objet que l’on parcourt (tous les itérateurs peuvent donc être mis dans une boucle for).</p>
+<p>Le concept d’itérateur est très utile lorsque l’on crée soi-même un objet qui doit être parcouru, car python permet de créer assez facilement ses propres itérateurs.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="avec-des-slice" class="level3">
+<h3 class="anchored" data-anchor-id="avec-des-slice">Avec des slice</h3>
+<p>En python, on peut indexer des listes de façon assez riche. Cela s’appelle des <em>slices</em> (des parts en anglais, car on prend des “parts” de la liste).</p>
+<div class="cell" data-execution_count="11">
+<div class="sourceCode cell-code" id="cb20" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><span class="kw" style="color: #003B4F;">def</span> reverse_list_slice (liste: <span class="bu" style="color: null;">list</span>) <span class="op" style="color: #5E5E5E;">-&gt;</span> <span class="bu" style="color: null;">list</span>:</span>
+<span id="cb20-2">    <span class="co" style="color: #5E5E5E;"># :: car on prends toute la liste</span></span>
+<span id="cb20-3">    <span class="co" style="color: #5E5E5E;"># -1 car on a un pas de -1 (donc on recule dans la liste)</span></span>
+<span id="cb20-4">    <span class="cf" style="color: #003B4F;">return</span> liste[::<span class="op" style="color: #5E5E5E;">-</span><span class="dv" style="color: #AD0000;">1</span>]</span>
+<span id="cb20-5"></span>
+<span id="cb20-6"><span class="bu" style="color: null;">print</span>(reverse_list_slice([<span class="dv" style="color: #AD0000;">1</span>, <span class="dv" style="color: #AD0000;">2</span>, <span class="dv" style="color: #AD0000;">3</span>, <span class="dv" style="color: #AD0000;">4</span>, <span class="dv" style="color: #AD0000;">5</span>]))</span></code></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[5, 4, 3, 2, 1]</code></pre>
+</div>
+</div>
+</section>
+<section id="avec-la-méthode-pop" class="level3">
+<h3 class="anchored" data-anchor-id="avec-la-méthode-pop">Avec la méthode pop</h3>
+<p>La méthode <code>pop</code> des listes permet de retirer le dernier élément d’une liste. Elle retourne l’élément qu’elle retire, ce qui permet d’utiliser cet élément dans une autre fonction</p>
+<p>Si on répète l’opération de mettre le dernier élément de l’ancienne liste à la fin de la nouvelle, retourne bien la liste</p>
+<p><img src="https://osk42.quarto.pub/osk42/posts/informatique/_images/demo_inverser_liste.gif" class="img-fluid" alt="comment se passe l’inversion de la liste">_</p>
+<div class="cell" data-execution_count="12">
+<div class="sourceCode cell-code" id="cb22" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><span class="kw" style="color: #003B4F;">def</span> reverse_list_pop (liste: <span class="bu" style="color: null;">list</span>) <span class="op" style="color: #5E5E5E;">-&gt;</span> <span class="bu" style="color: null;">list</span>:</span>
+<span id="cb22-2">    new_list <span class="op" style="color: #5E5E5E;">=</span> []</span>
+<span id="cb22-3">    <span class="cf" style="color: #003B4F;">for</span> _ <span class="kw" style="color: #003B4F;">in</span> <span class="bu" style="color: null;">range</span>(<span class="bu" style="color: null;">len</span>(liste)):</span>
+<span id="cb22-4">        new_list.append(liste.pop())</span>
+<span id="cb22-5">    <span class="cf" style="color: #003B4F;">return</span> new_list</span>
+<span id="cb22-6"></span>
+<span id="cb22-7"><span class="bu" style="color: null;">print</span>(reverse_list_pop([<span class="dv" style="color: #AD0000;">1</span>, <span class="dv" style="color: #AD0000;">2</span>, <span class="dv" style="color: #AD0000;">3</span>, <span class="dv" style="color: #AD0000;">4</span>, <span class="dv" style="color: #AD0000;">5</span>]))</span></code></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[5, 4, 3, 2, 1]</code></pre>
+</div>
+</div>
+</section>
+<section id="avec-la-méthode-insert-pop" class="level3">
+<h3 class="anchored" data-anchor-id="avec-la-méthode-insert-pop">Avec la méthode insert + Pop</h3>
+<p>La méthode <code>list.insert</code> permet d’insérer un élément dans une liste, avant l’élément à l’indice précisé.</p>
+<p>Dans ce cas, on insère avant l’indice 0, donc au début de la liste. C’est pourquoi on utilise plus <code>pop()</code>, mais <code>pop(0)</code>, qui va retirer le premier élément au lieu du dernier.</p>
+<div class="cell" data-execution_count="13">
+<div class="sourceCode cell-code" id="cb24" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb24-1"><span class="kw" style="color: #003B4F;">def</span> reverse_list_insert (liste: <span class="bu" style="color: null;">list</span>) <span class="op" style="color: #5E5E5E;">-&gt;</span> <span class="bu" style="color: null;">list</span>:</span>
+<span id="cb24-2">    new_list <span class="op" style="color: #5E5E5E;">=</span> []</span>
+<span id="cb24-3">    <span class="cf" style="color: #003B4F;">for</span> _ <span class="kw" style="color: #003B4F;">in</span> <span class="bu" style="color: null;">range</span>(<span class="bu" style="color: null;">len</span>(liste)):</span>
+<span id="cb24-4">        new_list.insert(<span class="dv" style="color: #AD0000;">0</span>, liste.pop(<span class="dv" style="color: #AD0000;">0</span>))</span>
+<span id="cb24-5">    <span class="cf" style="color: #003B4F;">return</span> new_list</span>
+<span id="cb24-6"></span>
+<span id="cb24-7"><span class="bu" style="color: null;">print</span>(reverse_list_insert([<span class="dv" style="color: #AD0000;">1</span>, <span class="dv" style="color: #AD0000;">2</span>, <span class="dv" style="color: #AD0000;">3</span>, <span class="dv" style="color: #AD0000;">4</span>, <span class="dv" style="color: #AD0000;">5</span>]))</span></code></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[5, 4, 3, 2, 1]</code></pre>
+</div>
+</div>
+</section>
+</section>
+<section id="un-élément-sur-n-dans-une-liste" class="level1">
+<h1>4. Un élément sur <code>n</code> dans une liste</h1>
+<p>On cherche à écrire une fonction qui, à partir d’une liste, sélectionne un élément sur <code>n</code> dans cette liste.</p>
+<p>Par exemple, si <img src="https://latex.codecogs.com/png.latex?n=3">, on veut transformer cette liste : <img src="https://latex.codecogs.com/png.latex?%5B%5Cunderline%7B3%7D,%209,%202,%20%5Cunderline%7B1%7D,%207,%208,%20%5Cunderline%7B4%7D,%203,%200,%20%5Cunderline%7B1%7D,%209,%207,%20%5Cunderline%7B5%7D,%203,%201,%20%5Cunderline%7B9%7D%5D"> en celle-ci : <img src="https://latex.codecogs.com/png.latex?%5B3,%201,%204,%201,%205,%209%5D"></p>
+<p>Voici la liste de test que nous allons utiliser pour la suite :</p>
+<section id="avec-une-boucle-et-une-nouvelle-liste" class="level2">
+<h2 class="anchored" data-anchor-id="avec-une-boucle-et-une-nouvelle-liste">Avec une boucle et une nouvelle liste</h2>
+<p>On peut utiliser une approche classique : créer la nouvelle liste au fur-et-à-mesure, en parcourant la liste de départ.</p>
+<section id="avec-une-condition-sur-les-indices" class="level3">
+<h3 class="anchored" data-anchor-id="avec-une-condition-sur-les-indices">Avec une condition sur les indices</h3>
+<div class="cell" data-execution_count="14">
+<div class="sourceCode cell-code" id="cb26" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb26-1"><span class="kw" style="color: #003B4F;">def</span> un_sur_n_indices(n: <span class="bu" style="color: null;">int</span>, liste: <span class="bu" style="color: null;">list</span>) <span class="op" style="color: #5E5E5E;">-&gt;</span> <span class="bu" style="color: null;">list</span>:</span>
+<span id="cb26-2">    <span class="co" style="color: #5E5E5E;">"""Sélectionne un élément sur `n` dans `liste`"""</span></span>
+<span id="cb26-3">    new_list <span class="op" style="color: #5E5E5E;">=</span> []</span>
+<span id="cb26-4">    <span class="cf" style="color: #003B4F;">for</span> i <span class="kw" style="color: #003B4F;">in</span> <span class="bu" style="color: null;">range</span>(<span class="bu" style="color: null;">len</span>(liste)):</span>
+<span id="cb26-5">        <span class="co" style="color: #5E5E5E;"># si i est divisible par n (une fois sur n)</span></span>
+<span id="cb26-6">        <span class="cf" style="color: #003B4F;">if</span> <span class="dv" style="color: #AD0000;">0</span> <span class="op" style="color: #5E5E5E;">==</span> i <span class="op" style="color: #5E5E5E;">%</span> n:</span>
+<span id="cb26-7">            <span class="co" style="color: #5E5E5E;"># on ajoute l'élément à l'indice actuel dans la</span></span>
+<span id="cb26-8">            <span class="co" style="color: #5E5E5E;"># nouvelle liste</span></span>
+<span id="cb26-9">            new_list.append(liste[i])</span>
+<span id="cb26-10">    <span class="cf" style="color: #003B4F;">return</span> new_list</span>
+<span id="cb26-11"></span>
+<span id="cb26-12"><span class="bu" style="color: null;">print</span>(un_sur_n_indices(<span class="dv" style="color: #AD0000;">3</span>, [<span class="dv" style="color: #AD0000;">2</span>, <span class="dv" style="color: #AD0000;">7</span>, <span class="dv" style="color: #AD0000;">1</span>, <span class="dv" style="color: #AD0000;">8</span>, <span class="dv" style="color: #AD0000;">2</span>, <span class="dv" style="color: #AD0000;">8</span>, <span class="dv" style="color: #AD0000;">1</span>, <span class="dv" style="color: #AD0000;">8</span>]))</span></code></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[2, 8, 1]</code></pre>
+</div>
+</div>
+</section>
+<section id="en-utilisant-un-pas-sur-range" class="level3">
+<h3 class="anchored" data-anchor-id="en-utilisant-un-pas-sur-range">En utilisant un pas sur <code>range</code></h3>
+<p>Une technique plus simple (et plus efficace) est, plutôt que de tester pour tous les indices, d’utiliser un <code>range</code> dans lequel on met un pas de <code>n</code>.</p>
+<p>Cela permet de n’avoir dans la boucle que les indices qui nous intéressent.</p>
+<div class="cell" data-execution_count="15">
+<div class="sourceCode cell-code" id="cb28" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb28-1"><span class="kw" style="color: #003B4F;">def</span> un_sur_n_range(n: <span class="bu" style="color: null;">int</span>, liste: <span class="bu" style="color: null;">list</span>) <span class="op" style="color: #5E5E5E;">-&gt;</span> <span class="bu" style="color: null;">list</span>:</span>
+<span id="cb28-2">    new_list <span class="op" style="color: #5E5E5E;">=</span> []</span>
+<span id="cb28-3">    <span class="co" style="color: #5E5E5E;"># on met un 0 pour que n soit bien le 3ème argument</span></span>
+<span id="cb28-4">    <span class="cf" style="color: #003B4F;">for</span> i <span class="kw" style="color: #003B4F;">in</span> <span class="bu" style="color: null;">range</span>(<span class="dv" style="color: #AD0000;">0</span>, <span class="bu" style="color: null;">len</span>(liste), n):</span>
+<span id="cb28-5">        new_list.append(liste[i])</span>
+<span id="cb28-6">    <span class="cf" style="color: #003B4F;">return</span> new_list</span>
+<span id="cb28-7"></span>
+<span id="cb28-8"><span class="bu" style="color: null;">print</span>(un_sur_n_range(<span class="dv" style="color: #AD0000;">3</span>, [<span class="dv" style="color: #AD0000;">2</span>, <span class="dv" style="color: #AD0000;">7</span>, <span class="dv" style="color: #AD0000;">1</span>, <span class="dv" style="color: #AD0000;">8</span>, <span class="dv" style="color: #AD0000;">2</span>, <span class="dv" style="color: #AD0000;">8</span>, <span class="dv" style="color: #AD0000;">1</span>, <span class="dv" style="color: #AD0000;">8</span>]))</span></code></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[2, 8, 1]</code></pre>
+</div>
+</div>
+</section>
+</section>
+<section id="avec-une-list-comprehension" class="level2">
+<h2 class="anchored" data-anchor-id="avec-une-list-comprehension">Avec une <em>list comprehension</em></h2>
+<p>Pour être encore plus efficace, on peut simplement utiliser un <em>list comprehension</em>, en conjonction avec les techniques citées plus haut.</p>
+<p>Le code est en fait équivalent, mais permet de créer la liste de façon plus efficace.</p>
+<section id="avec-une-condition-sur-les-indices-1" class="level3">
+<h3 class="anchored" data-anchor-id="avec-une-condition-sur-les-indices-1">Avec une condition sur les indices</h3>
+<div class="cell" data-execution_count="16">
+<div class="sourceCode cell-code" id="cb30" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb30-1"><span class="kw" style="color: #003B4F;">def</span> un_sur_n_comprehension_indices(n: <span class="bu" style="color: null;">int</span>, liste: <span class="bu" style="color: null;">list</span>) <span class="op" style="color: #5E5E5E;">-&gt;</span> <span class="bu" style="color: null;">list</span>:</span>
+<span id="cb30-2">    <span class="cf" style="color: #003B4F;">return</span> [liste[i] <span class="cf" style="color: #003B4F;">for</span> i <span class="kw" style="color: #003B4F;">in</span> <span class="bu" style="color: null;">range</span>(<span class="bu" style="color: null;">len</span>(liste)) <span class="cf" style="color: #003B4F;">if</span> <span class="dv" style="color: #AD0000;">0</span> <span class="op" style="color: #5E5E5E;">==</span> i<span class="op" style="color: #5E5E5E;">%</span>n]</span>
+<span id="cb30-3"></span>
+<span id="cb30-4"><span class="bu" style="color: null;">print</span>(un_sur_n_comprehension_indices(<span class="dv" style="color: #AD0000;">3</span>, [<span class="dv" style="color: #AD0000;">2</span>, <span class="dv" style="color: #AD0000;">7</span>, <span class="dv" style="color: #AD0000;">1</span>, <span class="dv" style="color: #AD0000;">8</span>, <span class="dv" style="color: #AD0000;">2</span>, <span class="dv" style="color: #AD0000;">8</span>, <span class="dv" style="color: #AD0000;">1</span>, <span class="dv" style="color: #AD0000;">8</span>]))</span></code></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[2, 8, 1]</code></pre>
+</div>
+</div>
+<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Retours à la ligne pour plus de clarté
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Pour rendre le code plus clair, on peut mettre un retour à la ligne avant le <code>for</code> et le <code>if</code> :</p>
+<div class="cell" data-execution_count="17">
+<div class="sourceCode cell-code" id="cb32" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb32-1"><span class="kw" style="color: #003B4F;">def</span> un_sur_n_comprehension_indices(n: <span class="bu" style="color: null;">int</span>, liste: <span class="bu" style="color: null;">list</span>) <span class="op" style="color: #5E5E5E;">-&gt;</span> <span class="bu" style="color: null;">list</span>:</span>
+<span id="cb32-2">    <span class="cf" style="color: #003B4F;">return</span> [liste[i]</span>
+<span id="cb32-3">            <span class="cf" style="color: #003B4F;">for</span> i <span class="kw" style="color: #003B4F;">in</span> <span class="bu" style="color: null;">range</span>(<span class="bu" style="color: null;">len</span>(liste))</span>
+<span id="cb32-4">            <span class="cf" style="color: #003B4F;">if</span> <span class="dv" style="color: #AD0000;">0</span> <span class="op" style="color: #5E5E5E;">==</span> i<span class="op" style="color: #5E5E5E;">%</span>n]</span></code></pre></div>
+</div>
+<p>Cela est très utile quand on construit des expressions complexes, avec par exemple des <em>list comprehension</em> à l’intérieur de <em>list comprehension</em>.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="en-utilisant-un-pas-sur-range-1" class="level3">
+<h3 class="anchored" data-anchor-id="en-utilisant-un-pas-sur-range-1">En utilisant un pas sur <code>range</code></h3>
+<p>On peut à nouveau utiliser un pas sur le <code>range</code> pour ne pas avoir à tester toutes les itérations.</p>
+<div class="cell" data-execution_count="18">
+<div class="sourceCode cell-code" id="cb33" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb33-1"><span class="kw" style="color: #003B4F;">def</span> un_sur_n_comprehension_range(n: <span class="bu" style="color: null;">int</span>, liste: <span class="bu" style="color: null;">list</span>) <span class="op" style="color: #5E5E5E;">-&gt;</span> <span class="bu" style="color: null;">list</span>:</span>
+<span id="cb33-2">    <span class="cf" style="color: #003B4F;">return</span> [liste[i] <span class="cf" style="color: #003B4F;">for</span> i <span class="kw" style="color: #003B4F;">in</span> <span class="bu" style="color: null;">range</span>(<span class="dv" style="color: #AD0000;">0</span>, <span class="bu" style="color: null;">len</span>(liste), n)]</span>
+<span id="cb33-3"></span>
+<span id="cb33-4"><span class="bu" style="color: null;">print</span>(un_sur_n_comprehension_range(<span class="dv" style="color: #AD0000;">3</span>, [<span class="dv" style="color: #AD0000;">2</span>, <span class="dv" style="color: #AD0000;">7</span>, <span class="dv" style="color: #AD0000;">1</span>, <span class="dv" style="color: #AD0000;">8</span>, <span class="dv" style="color: #AD0000;">2</span>, <span class="dv" style="color: #AD0000;">8</span>, <span class="dv" style="color: #AD0000;">1</span>, <span class="dv" style="color: #AD0000;">8</span>]))</span></code></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[2, 8, 1]</code></pre>
+</div>
+</div>
+</section>
+</section>
+</section>
+<section id="maximum-de-nombes-dans-deux-tableaux" class="level1">
+<h1>5. Maximum de nombes dans deux tableaux</h1>
+<p>On veut écrire une fonction <code>maxDes2(tab1, tab2)</code> qui prend en argument deux tableaux de nombres <code>tab1</code> et <code>tab2</code> de même longueur et retourne un tableau formé des valeurs maximales observées pour chaque indice entre les tableaux tab1 et tab2. Par exemple, <code>maxDes2([1, 4, 5], [2, 2, 3])</code> retourne le tableau <code>[2, 4, 5]</code>.</p>
+<section id="en-parcourant-les-indices-des-deux-tableaux" class="level2">
+<h2 class="anchored" data-anchor-id="en-parcourant-les-indices-des-deux-tableaux">En parcourant les indices des deux tableaux</h2>
+<p>L’approche classique est de parcourir les incides <code>i</code> des deux tableaux (que l’on suppose de même taille), et de calculer le maximum pour chaque indice, que l’on mettra dans une nouvelle liste.</p>
+<div class="cell" data-execution_count="19">
+<div class="sourceCode cell-code" id="cb35" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb35-1"><span class="kw" style="color: #003B4F;">def</span> max_des_2_indices(tab1: <span class="bu" style="color: null;">list</span>[<span class="bu" style="color: null;">int</span>], tab2: <span class="bu" style="color: null;">list</span>[<span class="bu" style="color: null;">int</span>]) <span class="op" style="color: #5E5E5E;">-&gt;</span> <span class="bu" style="color: null;">list</span>[<span class="bu" style="color: null;">int</span>]:</span>
+<span id="cb35-2">    new_list: <span class="bu" style="color: null;">list</span>[<span class="bu" style="color: null;">int</span>] <span class="op" style="color: #5E5E5E;">=</span> []</span>
+<span id="cb35-3">    <span class="co" style="color: #5E5E5E;"># on parcoure les indices des deux tableaux en même</span></span>
+<span id="cb35-4">    <span class="co" style="color: #5E5E5E;"># temps avec i</span></span>
+<span id="cb35-5">    <span class="cf" style="color: #003B4F;">for</span> i <span class="kw" style="color: #003B4F;">in</span> <span class="bu" style="color: null;">range</span>(<span class="bu" style="color: null;">len</span>(tab1)):</span>
+<span id="cb35-6">        <span class="co" style="color: #5E5E5E;"># la fonction max calcul le maximum de ses arguments</span></span>
+<span id="cb35-7">        <span class="co" style="color: #5E5E5E;"># ici, les arguments sont les valeurs des deux</span></span>
+<span id="cb35-8">        <span class="co" style="color: #5E5E5E;"># tableaux pour un même indice i</span></span>
+<span id="cb35-9">        new_list.append(<span class="bu" style="color: null;">max</span>(tab1[i], tab2[i]))</span>
+<span id="cb35-10">    <span class="cf" style="color: #003B4F;">return</span> new_list</span>
+<span id="cb35-11"></span>
+<span id="cb35-12"><span class="bu" style="color: null;">print</span>(max_des_2_indices([<span class="dv" style="color: #AD0000;">1</span>, <span class="dv" style="color: #AD0000;">4</span>, <span class="dv" style="color: #AD0000;">5</span>], [<span class="dv" style="color: #AD0000;">2</span>, <span class="dv" style="color: #AD0000;">2</span>, <span class="dv" style="color: #AD0000;">3</span>]))</span></code></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[2, 4, 5]</code></pre>
+</div>
+</div>
+</section>
+<section id="en-utilisant-la-fonction-zip" class="level2">
+<h2 class="anchored" data-anchor-id="en-utilisant-la-fonction-zip">En utilisant la fonction <code>zip</code></h2>
+<p>La fonction <code>zip</code> va permettre de regroupper les éléments exctement comme on le souhaite. En effet, si on essaie de l’appliquer :</p>
+<div class="cell" data-execution_count="20">
+<div class="sourceCode cell-code" id="cb37" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb37-1">z <span class="op" style="color: #5E5E5E;">=</span> <span class="bu" style="color: null;">zip</span>([<span class="dv" style="color: #AD0000;">3</span>, <span class="dv" style="color: #AD0000;">1</span>, <span class="dv" style="color: #AD0000;">4</span>, <span class="dv" style="color: #AD0000;">1</span>, <span class="dv" style="color: #AD0000;">5</span>, <span class="dv" style="color: #AD0000;">9</span>, <span class="dv" style="color: #AD0000;">2</span>, <span class="dv" style="color: #AD0000;">6</span>], [<span class="dv" style="color: #AD0000;">2</span>, <span class="dv" style="color: #AD0000;">7</span>, <span class="dv" style="color: #AD0000;">1</span>, <span class="dv" style="color: #AD0000;">8</span>, <span class="dv" style="color: #AD0000;">2</span>, <span class="dv" style="color: #AD0000;">8</span>, <span class="dv" style="color: #AD0000;">1</span>, <span class="dv" style="color: #AD0000;">8</span>])</span>
+<span id="cb37-2"><span class="bu" style="color: null;">print</span>(<span class="bu" style="color: null;">list</span>(z))  <span class="co" style="color: #5E5E5E;"># on utilise list pour que le contenu soit bien affiché</span></span></code></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[(3, 2), (1, 7), (4, 1), (1, 8), (5, 2), (9, 8), (2, 1), (6, 8)]</code></pre>
+</div>
+</div>
+<p>On observe que le résultat contient les paires d’éléments dont on veut faire le maxumum : les deux premiers de chaque tableau, plus les deux deuixièmes, les deux troisièmes etc…</p>
+<p>On peut alors proposer la solution suivante :</p>
+<div class="cell" data-execution_count="21">
+<div class="sourceCode cell-code" id="cb39" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb39-1"><span class="kw" style="color: #003B4F;">def</span> max_des_2_zip(tab1: <span class="bu" style="color: null;">list</span>[<span class="bu" style="color: null;">int</span>], tab2: <span class="bu" style="color: null;">list</span>[<span class="bu" style="color: null;">int</span>]) <span class="op" style="color: #5E5E5E;">-&gt;</span> <span class="bu" style="color: null;">list</span>[<span class="bu" style="color: null;">int</span>]:</span>
+<span id="cb39-2">    new_list: <span class="bu" style="color: null;">list</span>[<span class="bu" style="color: null;">int</span>] <span class="op" style="color: #5E5E5E;">=</span> []</span>
+<span id="cb39-3">    <span class="cf" style="color: #003B4F;">for</span> couple <span class="kw" style="color: #003B4F;">in</span> <span class="bu" style="color: null;">zip</span>(tab1, tab2):</span>
+<span id="cb39-4">        <span class="co" style="color: #5E5E5E;"># on note que la fonction `max` peut s'appliquer sur</span></span>
+<span id="cb39-5">        <span class="co" style="color: #5E5E5E;"># une liste d'élément (ici `couple`)</span></span>
+<span id="cb39-6">        new_list.append(<span class="bu" style="color: null;">max</span>(couple))</span>
+<span id="cb39-7">    <span class="cf" style="color: #003B4F;">return</span> new_list</span>
+<span id="cb39-8"></span>
+<span id="cb39-9"><span class="bu" style="color: null;">print</span>(max_des_2_zip([<span class="dv" style="color: #AD0000;">1</span>, <span class="dv" style="color: #AD0000;">4</span>, <span class="dv" style="color: #AD0000;">5</span>], [<span class="dv" style="color: #AD0000;">2</span>, <span class="dv" style="color: #AD0000;">2</span>, <span class="dv" style="color: #AD0000;">3</span>]))</span></code></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[2, 4, 5]</code></pre>
+</div>
+</div>
+</section>
+<section id="avec-zip-et-map" class="level2">
+<h2 class="anchored" data-anchor-id="avec-zip-et-map">Avec <code>zip</code> et <code>map</code></h2>
+<p>On remarque dans cet exercice une structure que l’on a déjà vue dans les exercices suivants : on veut appliquer une fonction particulière sur chaque élément d’une liste, puis récupérer le résultat.</p>
+<p>L’approche classique consiste à parcourir la liste, et à créer au fur-et-à-mesure une nouvelle liste.</p>
+<p>Cependant, une des fonctions de base de python, la fonction <code>map</code>, permet directement d’appliquer une fonction sur tous les éléments d’une liste, et de récupérer le résultat.</p>
+<p>On peut donc tout simplement écrire :</p>
+<div class="cell" data-execution_count="22">
+<div class="sourceCode cell-code" id="cb41" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb41-1"><span class="kw" style="color: #003B4F;">def</span> max_des_2_map(tab1: <span class="bu" style="color: null;">list</span>[<span class="bu" style="color: null;">int</span>], tab2: <span class="bu" style="color: null;">list</span>[<span class="bu" style="color: null;">int</span>]) <span class="op" style="color: #5E5E5E;">-&gt;</span> <span class="bu" style="color: null;">list</span>[<span class="bu" style="color: null;">int</span>]:</span>
+<span id="cb41-2">    <span class="co" style="color: #5E5E5E;"># on utilise list pour bien récupérer une liste</span></span>
+<span id="cb41-3">    <span class="co" style="color: #5E5E5E;"># on applique la fonction max sur le résultat du zip</span></span>
+<span id="cb41-4">    <span class="cf" style="color: #003B4F;">return</span> <span class="bu" style="color: null;">list</span>(</span>
+<span id="cb41-5">        <span class="bu" style="color: null;">map</span>(<span class="bu" style="color: null;">max</span>, <span class="bu" style="color: null;">zip</span>(tab1, tab2))</span>
+<span id="cb41-6">    )</span>
+<span id="cb41-7"></span>
+<span id="cb41-8"><span class="bu" style="color: null;">print</span>(max_des_2_map([<span class="dv" style="color: #AD0000;">1</span>, <span class="dv" style="color: #AD0000;">4</span>, <span class="dv" style="color: #AD0000;">5</span>], [<span class="dv" style="color: #AD0000;">2</span>, <span class="dv" style="color: #AD0000;">2</span>, <span class="dv" style="color: #AD0000;">3</span>]))</span></code></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[2, 4, 5]</code></pre>
+</div>
+</div>
+<p>Cette approche est une approche <em>fonctionnelle</em> du problème, puisque la solution est créée en composant des fonction existantes (<code>map</code>, <code>max</code>, <code>zip</code>…) et sant structures de contrôles comme des boucles ou des conditions.</p>
+</section>
+</section>
+<section id="reprogrammer-la-fonction-zip" class="level1">
+<h1>6. Reprogrammer la fonction zip</h1>
+<p>On veut écrire une fonction <code>myzip(tab1, tab2)</code> qui retourne une liste dont chaque élément d’indice <code>i</code> est lui-même une liste possédant deux valeurs issues des listes <code>tab1</code> et <code>tab2</code> à l’indice <code>i</code>. Par exemple, <code>myzip({1, 4, 5}, {2, 2, 3})</code> retourne la liste <code>{{1, 2}, {4, 2}, {5, 3}}</code> ; comparer votre solution à la fonction <code>zip()</code> de Python.</p>
+<section id="en-parcourant-les-indices-des-deux-listes" class="level2">
+<h2 class="anchored" data-anchor-id="en-parcourant-les-indices-des-deux-listes">En parcourant les indices des deux listes</h2>
+<div class="cell" data-execution_count="23">
+<div class="sourceCode cell-code" id="cb43" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb43-1"><span class="kw" style="color: #003B4F;">def</span> myzip_indices(tab1: <span class="bu" style="color: null;">list</span>[<span class="bu" style="color: null;">int</span>], tab2: <span class="bu" style="color: null;">list</span>[<span class="bu" style="color: null;">int</span>]) <span class="op" style="color: #5E5E5E;">-&gt;</span> <span class="bu" style="color: null;">list</span>[<span class="bu" style="color: null;">int</span>]:</span>
+<span id="cb43-2">    zipped_list: <span class="bu" style="color: null;">list</span>[<span class="bu" style="color: null;">int</span>] <span class="op" style="color: #5E5E5E;">=</span> []</span>
+<span id="cb43-3">    <span class="cf" style="color: #003B4F;">for</span> idx <span class="kw" style="color: #003B4F;">in</span> <span class="bu" style="color: null;">range</span>(<span class="bu" style="color: null;">len</span>(tab1)):</span>
+<span id="cb43-4">        <span class="co" style="color: #5E5E5E;"># on ajoute le couple (tab1[idx], tab2[idx]) à la</span></span>
+<span id="cb43-5">        <span class="co" style="color: #5E5E5E;"># liste de résultat. On a bien un couple d'éléments</span></span>
+<span id="cb43-6">        <span class="co" style="color: #5E5E5E;"># aux mêmes indices</span></span>
+<span id="cb43-7">        zipped_list.append((tab1[idx], tab2[idx]))</span>
+<span id="cb43-8">    <span class="cf" style="color: #003B4F;">return</span> zipped_list</span>
+<span id="cb43-9"></span>
+<span id="cb43-10"><span class="bu" style="color: null;">print</span>(myzip_indices([<span class="dv" style="color: #AD0000;">1</span>, <span class="dv" style="color: #AD0000;">4</span>, <span class="dv" style="color: #AD0000;">5</span>], [<span class="dv" style="color: #AD0000;">2</span>, <span class="dv" style="color: #AD0000;">2</span>, <span class="dv" style="color: #AD0000;">3</span>]))</span></code></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[(1, 2), (4, 2), (5, 3)]</code></pre>
+</div>
+</div>
+</section>
+<section id="si-les-deux-listes-ne-font-pas-la-même-taille" class="level2">
+<h2 class="anchored" data-anchor-id="si-les-deux-listes-ne-font-pas-la-même-taille">Si les deux listes ne font pas la même taille</h2>
+<p>Si les deux listes ne font pas la même taille, il faut s’arrêter quand la première liste est arrivée au bout. On peut donc simplement parcourir les indices de <code>1</code> à <code>min(len(tab1), len(tab2))</code>.</p>
+<div class="cell" data-execution_count="24">
+<div class="sourceCode cell-code" id="cb45" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb45-1"><span class="kw" style="color: #003B4F;">def</span> myzip_indices(tab1: <span class="bu" style="color: null;">list</span>[<span class="bu" style="color: null;">int</span>], tab2: <span class="bu" style="color: null;">list</span>[<span class="bu" style="color: null;">int</span>]) <span class="op" style="color: #5E5E5E;">-&gt;</span> <span class="bu" style="color: null;">list</span>[<span class="bu" style="color: null;">int</span>]:</span>
+<span id="cb45-2">    zipped_list: <span class="bu" style="color: null;">list</span>[<span class="bu" style="color: null;">int</span>] <span class="op" style="color: #5E5E5E;">=</span> []</span>
+<span id="cb45-3">    <span class="cf" style="color: #003B4F;">for</span> idx <span class="kw" style="color: #003B4F;">in</span> <span class="bu" style="color: null;">range</span>(<span class="bu" style="color: null;">min</span>(<span class="bu" style="color: null;">len</span>(tab1), <span class="bu" style="color: null;">len</span>(tab2))):</span>
+<span id="cb45-4">        <span class="co" style="color: #5E5E5E;"># on ajoute le couple (tab1[idx], tab2[idx]) à la</span></span>
+<span id="cb45-5">        <span class="co" style="color: #5E5E5E;"># liste de résultat. On a bien un couple d'éléments</span></span>
+<span id="cb45-6">        <span class="co" style="color: #5E5E5E;"># aux mêmes indices</span></span>
+<span id="cb45-7">        zipped_list.append((tab1[idx], tab2[idx]))</span>
+<span id="cb45-8">    <span class="cf" style="color: #003B4F;">return</span> zipped_list</span>
+<span id="cb45-9"></span>
+<span id="cb45-10"><span class="bu" style="color: null;">print</span>(myzip_indices([<span class="dv" style="color: #AD0000;">1</span>, <span class="dv" style="color: #AD0000;">4</span>, <span class="dv" style="color: #AD0000;">5</span>], [<span class="dv" style="color: #AD0000;">2</span>, <span class="dv" style="color: #AD0000;">2</span>, <span class="dv" style="color: #AD0000;">3</span>, <span class="dv" style="color: #AD0000;">99</span>, <span class="dv" style="color: #AD0000;">0</span>]))</span>
+<span id="cb45-11"><span class="bu" style="color: null;">print</span>(myzip_indices([<span class="dv" style="color: #AD0000;">1</span>, <span class="dv" style="color: #AD0000;">4</span>, <span class="dv" style="color: #AD0000;">5</span>, <span class="dv" style="color: #AD0000;">7</span>, <span class="dv" style="color: #AD0000;">13</span>, <span class="dv" style="color: #AD0000;">4</span>], [<span class="dv" style="color: #AD0000;">2</span>, <span class="dv" style="color: #AD0000;">2</span>, <span class="dv" style="color: #AD0000;">3</span>, <span class="dv" style="color: #AD0000;">99</span>]))</span></code></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[(1, 2), (4, 2), (5, 3)]
+[(1, 2), (4, 2), (5, 3), (7, 99)]</code></pre>
+</div>
+</div>
+</section>
+</section>
+<section id="générer-une-matrice-aléatoire" class="level1">
+<h1>7. Générer une matrice aléatoire</h1>
+<p>On veut écrire une fonction <code>genMat(row, col, mini, maxi)</code> qui construit une liste de liste contenant <code>row</code> lignes et <code>col</code> colonnes et dont les valeurs sont comprises entre <code>mini</code> et <code>maxi</code></p>
+<section id="avec-des-list-comprehension" class="level2">
+<h2 class="anchored" data-anchor-id="avec-des-list-comprehension">Avec des <em>list comprehension</em></h2>
+<div class="cell" data-execution_count="25">
+<div class="sourceCode cell-code" id="cb47" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb47-1"><span class="kw" style="color: #003B4F;">def</span> genMat(row: <span class="bu" style="color: null;">int</span>, col: <span class="bu" style="color: null;">int</span>, mini: <span class="bu" style="color: null;">int</span>, maxi: <span class="bu" style="color: null;">int</span>) <span class="op" style="color: #5E5E5E;">-&gt;</span> <span class="bu" style="color: null;">list</span>[<span class="bu" style="color: null;">list</span>[<span class="bu" style="color: null;">int</span>]]:</span>
+<span id="cb47-2">    <span class="co" style="color: #5E5E5E;">"""Initialiser une matrice aléatoire de taille (row, col), avec des valeurs dans [mini, maxi].</span></span>
+<span id="cb47-3"><span class="co" style="color: #5E5E5E;">    """</span></span>
+<span id="cb47-4">    <span class="cf" style="color: #003B4F;">return</span> [[randint(mini, maxi) <span class="cf" style="color: #003B4F;">for</span> i <span class="kw" style="color: #003B4F;">in</span> <span class="bu" style="color: null;">range</span>(col)] <span class="cf" style="color: #003B4F;">for</span> j <span class="kw" style="color: #003B4F;">in</span> <span class="bu" style="color: null;">range</span>(row)]</span>
+<span id="cb47-5"></span>
+<span id="cb47-6"><span class="bu" style="color: null;">print</span>(genMat(<span class="dv" style="color: #AD0000;">3</span>, <span class="dv" style="color: #AD0000;">3</span>, <span class="dv" style="color: #AD0000;">0</span>, <span class="dv" style="color: #AD0000;">10</span>))</span></code></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[[3, 8, 10], [8, 10, 2], [8, 6, 10]]</code></pre>
+</div>
+</div>
+</section>
+<section id="en-créant-la-liste-au-fur-et-à-mesure" class="level2">
+<h2 class="anchored" data-anchor-id="en-créant-la-liste-au-fur-et-à-mesure">En créant la liste au fur-et-à-mesure</h2>
+<p>Les <em>list comprehension</em> sont plus rapides, plus courtes et beaucoup plus simples à utiliser. Cet exemple est simplement là pour montrer d’autres techniques de programmation.</p>
+<div class="cell" data-execution_count="26">
+<div class="sourceCode cell-code" id="cb49" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb49-1"><span class="kw" style="color: #003B4F;">def</span> genMat(row: <span class="bu" style="color: null;">int</span>, col: <span class="bu" style="color: null;">int</span>, mini: <span class="bu" style="color: null;">int</span>, maxi: <span class="bu" style="color: null;">int</span>) <span class="op" style="color: #5E5E5E;">-&gt;</span> <span class="bu" style="color: null;">list</span>[<span class="bu" style="color: null;">list</span>[<span class="bu" style="color: null;">int</span>]]:</span>
+<span id="cb49-2">    <span class="co" style="color: #5E5E5E;">"""Initialiser une matrice aléatoire de taille (row, col), avec des valeurs dans [mini, maxi].</span></span>
+<span id="cb49-3"><span class="co" style="color: #5E5E5E;">    """</span></span>
+<span id="cb49-4">    mat <span class="op" style="color: #5E5E5E;">=</span> []</span>
+<span id="cb49-5">    <span class="cf" style="color: #003B4F;">for</span> i <span class="kw" style="color: #003B4F;">in</span> <span class="bu" style="color: null;">range</span>(row):</span>
+<span id="cb49-6">        line <span class="op" style="color: #5E5E5E;">=</span> []</span>
+<span id="cb49-7">        <span class="cf" style="color: #003B4F;">for</span> j <span class="kw" style="color: #003B4F;">in</span> <span class="bu" style="color: null;">range</span>(col):</span>
+<span id="cb49-8">            line.append(randint(mini, maxi))</span>
+<span id="cb49-9">        mat.append(line)</span>
+<span id="cb49-10">    <span class="cf" style="color: #003B4F;">return</span> mat</span>
+<span id="cb49-11"></span>
+<span id="cb49-12"></span>
+<span id="cb49-13"><span class="bu" style="color: null;">print</span>(genMat(<span class="dv" style="color: #AD0000;">3</span>, <span class="dv" style="color: #AD0000;">3</span>, <span class="dv" style="color: #AD0000;">0</span>, <span class="dv" style="color: #AD0000;">10</span>))</span></code></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[[10, 4, 3], [8, 9, 10], [0, 2, 3]]</code></pre>
+</div>
+</div>
+</section>
+</section>
+<section id="diagonale-dune-matrice" class="level1">
+<h1>8. Diagonale d’une matrice</h1>
+<p>On veut écrire une fonction diagonale(mat) qui prend en argument une matrice de réels mat et retourne une liste contenant les éléments de sa diagonale.</p>
+<div class="cell" data-execution_count="27">
+<div class="sourceCode cell-code" id="cb51" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb51-1">M <span class="op" style="color: #5E5E5E;">=</span> [[<span class="dv" style="color: #AD0000;">1</span>, <span class="dv" style="color: #AD0000;">6</span>, <span class="dv" style="color: #AD0000;">1</span>],</span>
+<span id="cb51-2">     [<span class="dv" style="color: #AD0000;">8</span>, <span class="dv" style="color: #AD0000;">0</span>, <span class="dv" style="color: #AD0000;">3</span>],</span>
+<span id="cb51-3">     [<span class="dv" style="color: #AD0000;">9</span>, <span class="dv" style="color: #AD0000;">8</span>, <span class="dv" style="color: #AD0000;">8</span>]]</span></code></pre></div>
+</div>
+<section id="avec-des-list-comprehension-1" class="level2">
+<h2 class="anchored" data-anchor-id="avec-des-list-comprehension-1">Avec des <em>list comprehension</em></h2>
+<div class="cell" data-execution_count="28">
+<div class="sourceCode cell-code" id="cb52" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb52-1"><span class="kw" style="color: #003B4F;">def</span> diagonale(mat: <span class="bu" style="color: null;">list</span>[<span class="bu" style="color: null;">list</span>[<span class="bu" style="color: null;">float</span>]]) <span class="op" style="color: #5E5E5E;">-&gt;</span> <span class="bu" style="color: null;">list</span>[<span class="bu" style="color: null;">float</span>]:</span>
+<span id="cb52-2">    <span class="co" style="color: #5E5E5E;">"""Diagonale d'une matrice.</span></span>
+<span id="cb52-3"><span class="co" style="color: #5E5E5E;">    Args:</span></span>
+<span id="cb52-4"><span class="co" style="color: #5E5E5E;">        mat (list[list[float]]): Une matrice qui doit être carrée</span></span>
+<span id="cb52-5"><span class="co" style="color: #5E5E5E;">                                 (sinon la diagonale n'existe pas).</span></span>
+<span id="cb52-6"><span class="co" style="color: #5E5E5E;">    Returns:</span></span>
+<span id="cb52-7"><span class="co" style="color: #5E5E5E;">        list[float]: La liste des coefficients diagonaux de mat.</span></span>
+<span id="cb52-8"><span class="co" style="color: #5E5E5E;">    """</span></span>
+<span id="cb52-9">    <span class="cf" style="color: #003B4F;">return</span> [mat[i][i] <span class="cf" style="color: #003B4F;">for</span> i <span class="kw" style="color: #003B4F;">in</span> <span class="bu" style="color: null;">range</span>(<span class="bu" style="color: null;">len</span>(mat))]</span>
+<span id="cb52-10"></span>
+<span id="cb52-11"><span class="bu" style="color: null;">print</span>(diagonale(M))</span></code></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1, 0, 8]</code></pre>
+</div>
+</div>
+</section>
+<section id="pour-aller-plus-loin-2" class="level2">
+<h2 class="anchored" data-anchor-id="pour-aller-plus-loin-2">Pour aller plus loin</h2>
+<div class="callout-warning callout callout-style-default no-icon callout-captioned">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Lever une erreur si la matrice n’est pas carrée
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-5" class="callout-5-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Pour bien faire, il faudrait lever une erreur si la matrice n’est pas carrée. Pour cela, on utilise le mot clef <code>raise</code>, ainsi qu’une erreur classique de python. Ici, on utilisera <code>ValueError</code> (on pourrait également créer une classe d’erreurs nous-même, puisque les erreurs sont simplement des objets particuliers).</p>
+<div class="cell" data-execution_count="29">
+<div class="sourceCode cell-code" id="cb54" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb54-1"><span class="kw" style="color: #003B4F;">def</span> diagonale(mat: <span class="bu" style="color: null;">list</span>[<span class="bu" style="color: null;">list</span>[<span class="bu" style="color: null;">float</span>]]) <span class="op" style="color: #5E5E5E;">-&gt;</span> <span class="bu" style="color: null;">list</span>[<span class="bu" style="color: null;">float</span>]:</span>
+<span id="cb54-2">    <span class="co" style="color: #5E5E5E;">"""Diagonale d'une matrice.</span></span>
+<span id="cb54-3"><span class="co" style="color: #5E5E5E;">    Args:</span></span>
+<span id="cb54-4"><span class="co" style="color: #5E5E5E;">        mat (list[list[float]]): Une matrice qui doit être carrée</span></span>
+<span id="cb54-5"><span class="co" style="color: #5E5E5E;">                                 (sinon la diagonale n'existe pas).</span></span>
+<span id="cb54-6"><span class="co" style="color: #5E5E5E;">    Returns:</span></span>
+<span id="cb54-7"><span class="co" style="color: #5E5E5E;">        list[float]: La liste des coefficients diagonaux de mat.</span></span>
+<span id="cb54-8"><span class="co" style="color: #5E5E5E;">    Raises:</span></span>
+<span id="cb54-9"><span class="co" style="color: #5E5E5E;">        ValueError: Si la matrice donnêé en entrée n'est pas carrée.</span></span>
+<span id="cb54-10"><span class="co" style="color: #5E5E5E;">    """</span></span>
+<span id="cb54-11">    <span class="co" style="color: #5E5E5E;"># si la matrice n'est pas carrée</span></span>
+<span id="cb54-12">    <span class="cf" style="color: #003B4F;">if</span> <span class="kw" style="color: #003B4F;">not</span> <span class="bu" style="color: null;">all</span>(<span class="bu" style="color: null;">len</span>(mat) <span class="op" style="color: #5E5E5E;">==</span> <span class="bu" style="color: null;">len</span>(ligne) <span class="cf" style="color: #003B4F;">for</span> ligne <span class="kw" style="color: #003B4F;">in</span> mat):</span>
+<span id="cb54-13">        <span class="co" style="color: #5E5E5E;"># on lève une exception.</span></span>
+<span id="cb54-14">        <span class="cf" style="color: #003B4F;">raise</span> <span class="pp" style="color: #AD0000;">ValueError</span>(<span class="st" style="color: #20794D;">"La matrice n'est pas carrée."</span>)</span>
+<span id="cb54-15">    <span class="cf" style="color: #003B4F;">return</span> [mat[i][i] <span class="cf" style="color: #003B4F;">for</span> i <span class="kw" style="color: #003B4F;">in</span> <span class="bu" style="color: null;">range</span>(<span class="bu" style="color: null;">len</span>(mat))]</span>
+<span id="cb54-16"></span>
+<span id="cb54-17"><span class="bu" style="color: null;">print</span>(diagonale(M))</span></code></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1, 0, 8]</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="trace-dune-matrice" class="level1">
+<h1>9. Trace d’une matrice</h1>
+<p>On veut écrire une fonction <code>trace(mat)</code> qui prend en argument une matrice de réels <code>mat</code> et retourne la somme de ses éléments diagonaux.</p>
+<div class="cell" data-execution_count="30">
+<div class="sourceCode cell-code" id="cb56" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb56-1">M <span class="op" style="color: #5E5E5E;">=</span> [[<span class="dv" style="color: #AD0000;">0</span>, <span class="dv" style="color: #AD0000;">1</span>, <span class="dv" style="color: #AD0000;">1</span>],</span>
+<span id="cb56-2">     [<span class="dv" style="color: #AD0000;">2</span>, <span class="dv" style="color: #AD0000;">3</span>, <span class="dv" style="color: #AD0000;">5</span>],</span>
+<span id="cb56-3">     [<span class="dv" style="color: #AD0000;">8</span>, <span class="dv" style="color: #AD0000;">1</span>, <span class="dv" style="color: #AD0000;">3</span>]]</span></code></pre></div>
+</div>
+<section id="avec-une-list-comprehension-et-la-fonction-sum" class="level2">
+<h2 class="anchored" data-anchor-id="avec-une-list-comprehension-et-la-fonction-sum">Avec une <em>list comprehension</em> et la fonction <code>sum</code></h2>
+<div class="cell" data-execution_count="31">
+<div class="sourceCode cell-code" id="cb57" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb57-1"><span class="kw" style="color: #003B4F;">def</span> trace(mat: <span class="bu" style="color: null;">list</span>[<span class="bu" style="color: null;">list</span>[<span class="bu" style="color: null;">float</span>]]) <span class="op" style="color: #5E5E5E;">-&gt;</span> <span class="bu" style="color: null;">float</span>:</span>
+<span id="cb57-2">    <span class="cf" style="color: #003B4F;">return</span> <span class="bu" style="color: null;">sum</span>([mat[i][i] <span class="cf" style="color: #003B4F;">for</span> i <span class="kw" style="color: #003B4F;">in</span> <span class="bu" style="color: null;">range</span>(<span class="bu" style="color: null;">len</span>(mat))])</span>
+<span id="cb57-3"></span>
+<span id="cb57-4"><span class="bu" style="color: null;">print</span>(trace(M))</span></code></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>6</code></pre>
+</div>
+</div>
+</section>
+<section id="en-réutilisant-la-fonction-diagonale" class="level2">
+<h2 class="anchored" data-anchor-id="en-réutilisant-la-fonction-diagonale">En réutilisant la fonction <code>diagonale</code></h2>
+<p>Comme on a déjà programmé la fonction <code>diagonale</code>, on peut l’utiliser, car la trace d’une matrice est la somme de ses coefficients diagonaux.</p>
+<div class="cell" data-execution_count="32">
+<div class="sourceCode cell-code" id="cb59" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb59-1"><span class="kw" style="color: #003B4F;">def</span> trace(mat: <span class="bu" style="color: null;">list</span>[<span class="bu" style="color: null;">list</span>[<span class="bu" style="color: null;">float</span>]]) <span class="op" style="color: #5E5E5E;">-&gt;</span> <span class="bu" style="color: null;">float</span>:</span>
+<span id="cb59-2">    <span class="cf" style="color: #003B4F;">return</span> <span class="bu" style="color: null;">sum</span>(diagonale(mat))</span>
+<span id="cb59-3"></span>
+<span id="cb59-4"><span class="bu" style="color: null;">print</span>(trace(M))</span></code></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>6</code></pre>
+</div>
+</div>
+<p>Cela rend le code moins redondant et plus clair. C’est l’intérêt d’utiliser des fonctions.</p>
+</section>
+</section>
+<section id="somme-de-deux-matrices" class="level1">
+<h1>10. Somme de deux matrices</h1>
+<p>On veut écrire une fonction <code>somme(mat1, mat2)</code> qui prend en argument deux matrices de réels <code>mat1</code> et <code>mat2</code>, et retourne la matrice somme de ces deux matrices.</p>
+<div class="cell" data-execution_count="33">
+<div class="sourceCode cell-code" id="cb61" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb61-1">A <span class="op" style="color: #5E5E5E;">=</span> [[<span class="dv" style="color: #AD0000;">0</span>, <span class="dv" style="color: #AD0000;">1</span>, <span class="dv" style="color: #AD0000;">0</span>, <span class="dv" style="color: #AD0000;">1</span>],</span>
+<span id="cb61-2">     [<span class="dv" style="color: #AD0000;">1</span>, <span class="dv" style="color: #AD0000;">0</span>, <span class="dv" style="color: #AD0000;">1</span>, <span class="dv" style="color: #AD0000;">0</span>],</span>
+<span id="cb61-3">     [<span class="dv" style="color: #AD0000;">0</span>, <span class="dv" style="color: #AD0000;">1</span>, <span class="dv" style="color: #AD0000;">0</span>, <span class="dv" style="color: #AD0000;">1</span>]]</span>
+<span id="cb61-4"></span>
+<span id="cb61-5">B <span class="op" style="color: #5E5E5E;">=</span> [[<span class="dv" style="color: #AD0000;">0</span>, <span class="dv" style="color: #AD0000;">1</span>, <span class="dv" style="color: #AD0000;">2</span>, <span class="dv" style="color: #AD0000;">3</span>],</span>
+<span id="cb61-6">     [<span class="dv" style="color: #AD0000;">0</span>, <span class="dv" style="color: #AD0000;">1</span>, <span class="dv" style="color: #AD0000;">2</span>, <span class="dv" style="color: #AD0000;">3</span>],</span>
+<span id="cb61-7">     [<span class="dv" style="color: #AD0000;">2</span>, <span class="dv" style="color: #AD0000;">4</span>, <span class="dv" style="color: #AD0000;">6</span>, <span class="dv" style="color: #AD0000;">8</span>]]</span></code></pre></div>
+</div>
+<section id="avec-une-list-comprehension-1" class="level2">
+<h2 class="anchored" data-anchor-id="avec-une-list-comprehension-1">Avec une <em>list comprehension</em></h2>
+<div class="cell" data-execution_count="34">
+<div class="sourceCode cell-code" id="cb62" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb62-1"><span class="kw" style="color: #003B4F;">def</span> somme(mat1: <span class="bu" style="color: null;">list</span>[<span class="bu" style="color: null;">list</span>[<span class="bu" style="color: null;">float</span>]], mat2: <span class="bu" style="color: null;">list</span>[<span class="bu" style="color: null;">list</span>[<span class="bu" style="color: null;">float</span>]]) <span class="op" style="color: #5E5E5E;">-&gt;</span> <span class="bu" style="color: null;">list</span>[<span class="bu" style="color: null;">list</span>[<span class="bu" style="color: null;">float</span>]]:</span>
+<span id="cb62-2">    <span class="co" style="color: #5E5E5E;">"""Somme de deux matrices que l'on suppose de même taille.</span></span>
+<span id="cb62-3"><span class="co" style="color: #5E5E5E;">    """</span></span>
+<span id="cb62-4">    <span class="co" style="color: #5E5E5E;"># nombre de lignes et de colonnes de mat1 (on la prends comme référence)</span></span>
+<span id="cb62-5">    rows <span class="op" style="color: #5E5E5E;">=</span> <span class="bu" style="color: null;">len</span>(mat1)</span>
+<span id="cb62-6">    cols <span class="op" style="color: #5E5E5E;">=</span> <span class="bu" style="color: null;">len</span>(mat1[<span class="dv" style="color: #AD0000;">0</span>])</span>
+<span id="cb62-7">    <span class="cf" style="color: #003B4F;">return</span> [[mat1[i][j] <span class="op" style="color: #5E5E5E;">+</span> mat2[i][j] <span class="cf" style="color: #003B4F;">for</span> j <span class="kw" style="color: #003B4F;">in</span> <span class="bu" style="color: null;">range</span>(cols)] <span class="cf" style="color: #003B4F;">for</span> i <span class="kw" style="color: #003B4F;">in</span> <span class="bu" style="color: null;">range</span>(rows)]</span>
+<span id="cb62-8"></span>
+<span id="cb62-9"><span class="bu" style="color: null;">print</span>(somme(A, B))</span></code></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[[0, 2, 2, 4], [1, 1, 3, 3], [2, 5, 6, 9]]</code></pre>
+</div>
+</div>
+</section>
+<section id="avec-des-zip-et-des-map" class="level2">
+<h2 class="anchored" data-anchor-id="avec-des-zip-et-des-map">Avec des <code>zip</code> et des <code>map</code></h2>
+<p>Cette solution est plus complexe, mais elle peut avoir des avantages.</p>
+<p>Par exemple, si on retire les fonctions <code>list</code> du code, la fonction va retourner un objet <code>map</code>, qui est une structure paresseuse (“<em>lazy</em>”). Cela veut dire qu’un élément donné ne sera calculé que lorsque l’on en aura besoin (lorsque l’on parcourera la matrice, par exemple).</p>
+<p>Ce mécanisme est utile si, quand une fonction est longue à calculer, vous ne voulez pas être obligé d’attendre que toutes les valeurs soient passées par cette fonction avant de pouvoir passer à l’étape suivante : la fonction ne sera exécutée que sur les valeurs nécessaires, au fur-et-à-mesure.</p>
+<div class="cell" data-execution_count="35">
+<div class="sourceCode cell-code" id="cb64" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb64-1"><span class="kw" style="color: #003B4F;">def</span> somme(mat1: <span class="bu" style="color: null;">list</span>[<span class="bu" style="color: null;">list</span>[<span class="bu" style="color: null;">float</span>]], mat2: <span class="bu" style="color: null;">list</span>[<span class="bu" style="color: null;">list</span>[<span class="bu" style="color: null;">float</span>]]) <span class="op" style="color: #5E5E5E;">-&gt;</span> <span class="bu" style="color: null;">list</span>[<span class="bu" style="color: null;">list</span>[<span class="bu" style="color: null;">float</span>]]:</span>
+<span id="cb64-2">    <span class="co" style="color: #5E5E5E;">"""Somme de deux matrices que l'on suppose de même taille.</span></span>
+<span id="cb64-3"><span class="co" style="color: #5E5E5E;">    """</span></span>
+<span id="cb64-4">    <span class="cf" style="color: #003B4F;">return</span> <span class="bu" style="color: null;">list</span>(<span class="bu" style="color: null;">map</span>(<span class="kw" style="color: #003B4F;">lambda</span> x: <span class="bu" style="color: null;">list</span>(<span class="bu" style="color: null;">map</span>(<span class="bu" style="color: null;">sum</span>, <span class="bu" style="color: null;">zip</span>(<span class="op" style="color: #5E5E5E;">*</span>x))), <span class="bu" style="color: null;">zip</span>(mat1, mat2)))</span>
+<span id="cb64-5"></span>
+<span id="cb64-6"><span class="bu" style="color: null;">print</span>(somme(A, B))</span></code></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[[0, 2, 2, 4], [1, 1, 3, 3], [2, 5, 6, 9]]</code></pre>
+</div>
+</div>
+</section>
+</section>
+<section id="produit-matriciel" class="level1">
+<h1>11. Produit matriciel</h1>
+<p>On veut écrire une fonction <code>produit(mat1, mat2)</code> qui prend en argument deux matrices de réels <code>mat1</code> de dimension <img src="https://latex.codecogs.com/png.latex?n%5Ctimes%20k"> et <code>mat2</code> de dimension <img src="https://latex.codecogs.com/png.latex?k%20%5Ctimes%20m">, et retourne la matrice produit de ces deux matrices de dimension <img src="https://latex.codecogs.com/png.latex?n%20%5Ctimes%20m">.</p>
+<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Rappel de la formule
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-6" class="callout-6-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Soient <img src="https://latex.codecogs.com/png.latex?mat_1%20%5Cin%20%5Cmathcal%7BM%7D_%7Bn,k%7D(%5Cmathbb%7BR%7D)"> et <img src="https://latex.codecogs.com/png.latex?mat_2%20%5Cin%20%5Cmathcal%7BM%7D_%7Bk,%20m%7D(%5Cmathbb%7BR%7D)"> deux matrices.</p>
+<p>On sait que le produit <img src="https://latex.codecogs.com/png.latex?mat_1%20%5Ctimes%20mat_2"> est une matrice de taille <img src="https://latex.codecogs.com/png.latex?n%20%5Ctimes%20m">.</p>
+<p>Alors :</p>
+<p><img src="https://latex.codecogs.com/png.latex?%5Cdisplaystyle%20%5Cforall%20i%20%5Cin%20%5B%5C!%5B1,%20n%5D%5C!%5D,%20%5Cquad%20%5Cforall%20j%20%5Cin%20%5B%5C!%5B1,%20m%5D%5C!%5D,%20%5Cquad%20(mat_1%20%5Ctimes%20mat_2)_%7Bi,%20j%7D%20=%20%5Csum%5Climits_%7Bl=1%7D%5E%7Bk%7D%20%5CBig(%20mat_1(i,%20l)%20%5Ctimes%20mat_2(l,%20j)%20%5CBig)"></p>
+</div>
+</div>
+</div>
+<div class="cell" data-execution_count="36">
+<div class="sourceCode cell-code" id="cb66" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb66-1">A <span class="op" style="color: #5E5E5E;">=</span> [[<span class="dv" style="color: #AD0000;">1</span>, <span class="dv" style="color: #AD0000;">1</span>, <span class="dv" style="color: #AD0000;">0</span>],</span>
+<span id="cb66-2">     [<span class="dv" style="color: #AD0000;">0</span>, <span class="dv" style="color: #AD0000;">2</span>, <span class="dv" style="color: #AD0000;">1</span>],</span>
+<span id="cb66-3">     [<span class="dv" style="color: #AD0000;">0</span>, <span class="dv" style="color: #AD0000;">1</span>, <span class="dv" style="color: #AD0000;">3</span>],</span>
+<span id="cb66-4">     [<span class="dv" style="color: #AD0000;">0</span>, <span class="dv" style="color: #AD0000;">0</span>, <span class="dv" style="color: #AD0000;">0</span>]]</span>
+<span id="cb66-5"></span>
+<span id="cb66-6">B <span class="op" style="color: #5E5E5E;">=</span> [[<span class="dv" style="color: #AD0000;">1</span>, <span class="dv" style="color: #AD0000;">5</span>, <span class="dv" style="color: #AD0000;">2</span>, <span class="dv" style="color: #AD0000;">5</span>],</span>
+<span id="cb66-7">     [<span class="dv" style="color: #AD0000;">1</span>, <span class="dv" style="color: #AD0000;">1</span>, <span class="dv" style="color: #AD0000;">3</span>, <span class="dv" style="color: #AD0000;">1</span>],</span>
+<span id="cb66-8">     [<span class="dv" style="color: #AD0000;">7</span>, <span class="dv" style="color: #AD0000;">6</span>, <span class="dv" style="color: #AD0000;">2</span>, <span class="dv" style="color: #AD0000;">6</span>]]</span></code></pre></div>
+</div>
+<section id="avec-des-list-comprehension-2" class="level2">
+<h2 class="anchored" data-anchor-id="avec-des-list-comprehension-2">Avec des <em>list comprehension</em></h2>
+<p>En utilisant presque directement la formule de définition du produit de matrices, on obtient cette fonction :</p>
+<div class="cell" data-execution_count="37">
+<div class="sourceCode cell-code" id="cb67" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb67-1"><span class="kw" style="color: #003B4F;">def</span> produit(mat1: <span class="bu" style="color: null;">list</span>[<span class="bu" style="color: null;">list</span>[<span class="bu" style="color: null;">float</span>]], mat2: <span class="bu" style="color: null;">list</span>[<span class="bu" style="color: null;">list</span>[<span class="bu" style="color: null;">float</span>]]) <span class="op" style="color: #5E5E5E;">-&gt;</span> <span class="bu" style="color: null;">list</span>[<span class="bu" style="color: null;">list</span>[<span class="bu" style="color: null;">float</span>]]:</span>
+<span id="cb67-2">    <span class="co" style="color: #5E5E5E;">"""Produit matriciel mat1 * mat2.</span></span>
+<span id="cb67-3"><span class="co" style="color: #5E5E5E;">    On suppose que les matrices sont de la bonne taille, c'est-à-dire que la largeur de mat1 est égale à la longueur de mat2.</span></span>
+<span id="cb67-4"><span class="co" style="color: #5E5E5E;">    """</span></span>
+<span id="cb67-5">    <span class="co" style="color: #5E5E5E;"># largeur et hauteur de la matrice résultat</span></span>
+<span id="cb67-6">    width <span class="op" style="color: #5E5E5E;">=</span> <span class="bu" style="color: null;">len</span>(mat1)</span>
+<span id="cb67-7">    height <span class="op" style="color: #5E5E5E;">=</span> <span class="bu" style="color: null;">len</span>(mat2[<span class="dv" style="color: #AD0000;">0</span>])</span>
+<span id="cb67-8">    common_length <span class="op" style="color: #5E5E5E;">=</span> <span class="bu" style="color: null;">len</span>(mat2)</span>
+<span id="cb67-9">    <span class="co" style="color: #5E5E5E;"># on applique la formule :</span></span>
+<span id="cb67-10">    <span class="cf" style="color: #003B4F;">return</span> [[<span class="bu" style="color: null;">sum</span>(mat1[j][l] <span class="op" style="color: #5E5E5E;">*</span> mat2[l][i] <span class="cf" style="color: #003B4F;">for</span> l <span class="kw" style="color: #003B4F;">in</span> <span class="bu" style="color: null;">range</span>(common_length)) <span class="cf" style="color: #003B4F;">for</span> i <span class="kw" style="color: #003B4F;">in</span> <span class="bu" style="color: null;">range</span>(height)] <span class="cf" style="color: #003B4F;">for</span> j <span class="kw" style="color: #003B4F;">in</span> <span class="bu" style="color: null;">range</span>(width)]</span>
+<span id="cb67-11"></span>
+<span id="cb67-12"><span class="bu" style="color: null;">print</span>(produit(A, B))</span></code></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[[2, 6, 5, 6], [9, 8, 8, 8], [22, 19, 9, 19], [0, 0, 0, 0]]</code></pre>
+</div>
+</div>
+</section>
+<section id="avec-le-module-numpy" class="level2">
+<h2 class="anchored" data-anchor-id="avec-le-module-numpy">Avec le module <code>numpy</code></h2>
+<p>Le module <code>numpy</code> (qui n’est pas un module standard, il faudra donc l’installer avec <code>pip3 --install numpy</code>) possède des fonctions pour l’algèbre linéaire et pour les tableaux en général.</p>
+<p>Un objet <code>matrix</code> est implémenté, et il permet de faire des multiplications de matrices… Avec l’opérateur <code>*</code> ! (Attention : si on utilise l’objet <code>array</code> de numpy plutôt que l’objet <code>matrix</code>, la multiplication sera une multiplication élément-par-élément plutôt qu’une vraie multiplication matricielle).</p>
+<div class="cell" data-execution_count="38">
+<div class="sourceCode cell-code" id="cb69" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb69-1"><span class="im" style="color: #00769E;">import</span> numpy <span class="im" style="color: #00769E;">as</span> np</span>
+<span id="cb69-2"></span>
+<span id="cb69-3">mA <span class="op" style="color: #5E5E5E;">=</span> np.matrix(A)</span>
+<span id="cb69-4">mB <span class="op" style="color: #5E5E5E;">=</span> np.matrix(B)</span>
+<span id="cb69-5"></span>
+<span id="cb69-6"><span class="bu" style="color: null;">print</span>(mA <span class="op" style="color: #5E5E5E;">*</span> mB)</span></code></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[[ 2  6  5  6]
+ [ 9  8  8  8]
+ [22 19  9 19]
+ [ 0  0  0  0]]</code></pre>
+</div>
+</div>
+<p><strong>Note:</strong> Avec cette méthode, le résultat n’est pas une liste de listes, mais une matrice.</p>
+</section>
+</section>
+<section id="divisibilité-par-récursion" class="level1">
+<h1>12. Divisibilité par récursion</h1>
+<p>On veut écrire une fonction <strong>récursive</strong> <code>estDivisible(n, m)</code> qui retourne <code>True</code> si et seulement si <code>m</code> <a href="../../../posts/maths/maths divisibilité.html">divise</a> <code>n</code>, et <code>false</code> sinon.</p>
+<p>La fonction ne doit pas utiliser les opérateurs de division, <code>/</code>, ou le modulo, <code>%</code>.</p>
+<section id="récursion-simple" class="level2">
+<h2 class="anchored" data-anchor-id="récursion-simple">Récursion simple</h2>
+<p>On va simplement utiliser cette propriété : <code>n</code> divise <code>m</code> si et seulement si <code>n</code> divise <code>m - n</code> : <img src="https://latex.codecogs.com/png.latex?%5Cforall%20(m,%20n)%20%5Cin%20%5Cmathbb%7BZ%7D%5E%7B2%7D,%20%5Cquad%20n%20%5Cmid%20n%20%5Ciff%20n%20%5Cmid%20m-n"></p>
+<p>On utilise aussi le fait que <code>n</code> divise <code>m</code> si et seulement si la valeur absolue de <code>n</code> divise la valeur absolue de <code>m</code>.</p>
+<div class="cell" data-execution_count="39">
+<div class="sourceCode cell-code" id="cb71" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb71-1"><span class="kw" style="color: #003B4F;">def</span> estDivisible(n: <span class="bu" style="color: null;">int</span>, m: <span class="bu" style="color: null;">int</span>) <span class="op" style="color: #5E5E5E;">-&gt;</span> <span class="bu" style="color: null;">bool</span>:</span>
+<span id="cb71-2">    <span class="cf" style="color: #003B4F;">if</span> m <span class="op" style="color: #5E5E5E;">==</span> <span class="dv" style="color: #AD0000;">0</span>:</span>
+<span id="cb71-3">        <span class="cf" style="color: #003B4F;">return</span> <span class="va" style="color: #111111;">True</span></span>
+<span id="cb71-4">    <span class="cf" style="color: #003B4F;">if</span> m <span class="op" style="color: #5E5E5E;">&lt;</span> <span class="dv" style="color: #AD0000;">0</span>:</span>
+<span id="cb71-5">        <span class="cf" style="color: #003B4F;">return</span> <span class="va" style="color: #111111;">False</span></span>
+<span id="cb71-6">    <span class="cf" style="color: #003B4F;">return</span> estDivisible(<span class="bu" style="color: null;">abs</span>(n), <span class="bu" style="color: null;">abs</span>(m) <span class="op" style="color: #5E5E5E;">-</span> <span class="bu" style="color: null;">abs</span>(n))</span>
+<span id="cb71-7"></span>
+<span id="cb71-8"><span class="bu" style="color: null;">print</span>(estDivisible(<span class="dv" style="color: #AD0000;">3</span>, <span class="dv" style="color: #AD0000;">6</span>))    <span class="co" style="color: #5E5E5E;"># True</span></span>
+<span id="cb71-9"><span class="bu" style="color: null;">print</span>(estDivisible(<span class="op" style="color: #5E5E5E;">-</span><span class="dv" style="color: #AD0000;">3</span>, <span class="dv" style="color: #AD0000;">12</span>))  <span class="co" style="color: #5E5E5E;"># True</span></span>
+<span id="cb71-10"><span class="bu" style="color: null;">print</span>(estDivisible(<span class="op" style="color: #5E5E5E;">-</span><span class="dv" style="color: #AD0000;">3</span>, <span class="dv" style="color: #AD0000;">11</span>))  <span class="co" style="color: #5E5E5E;"># False</span></span></code></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>True
+True
+False</code></pre>
+</div>
+</div>
+</section>
+</section>
+<section id="palindrome-par-récursion" class="level1">
+<h1>13. Palindrome par récursion</h1>
+<div class="cell" data-execution_count="40">
+<div class="sourceCode cell-code" id="cb73" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb73-1"><span class="kw" style="color: #003B4F;">def</span> palindrome(tab: <span class="bu" style="color: null;">list</span>) <span class="op" style="color: #5E5E5E;">-&gt;</span> <span class="bu" style="color: null;">bool</span>:</span>
+<span id="cb73-2">    <span class="co" style="color: #5E5E5E;"># les listes de longueur 0 ou 1 sont toutes des palindrômes</span></span>
+<span id="cb73-3">    <span class="cf" style="color: #003B4F;">if</span> <span class="bu" style="color: null;">len</span>(tab) <span class="op" style="color: #5E5E5E;">&lt;=</span> <span class="dv" style="color: #AD0000;">1</span>:</span>
+<span id="cb73-4">        <span class="cf" style="color: #003B4F;">return</span> <span class="va" style="color: #111111;">True</span></span>
+<span id="cb73-5">    <span class="co" style="color: #5E5E5E;"># si les deux extrémités sont différentes, ce n'est pas un palindrome</span></span>
+<span id="cb73-6">    <span class="cf" style="color: #003B4F;">if</span> tab[<span class="dv" style="color: #AD0000;">0</span>] <span class="op" style="color: #5E5E5E;">!=</span> tab[<span class="op" style="color: #5E5E5E;">-</span><span class="dv" style="color: #AD0000;">1</span>]:</span>
+<span id="cb73-7">        <span class="cf" style="color: #003B4F;">return</span> <span class="va" style="color: #111111;">False</span></span>
+<span id="cb73-8">    <span class="co" style="color: #5E5E5E;"># récursion en enlevant les deux extrémités, que l'on a déjà vérifiées</span></span>
+<span id="cb73-9">    <span class="cf" style="color: #003B4F;">return</span> palindrome(tab[<span class="dv" style="color: #AD0000;">1</span>:<span class="op" style="color: #5E5E5E;">-</span><span class="dv" style="color: #AD0000;">1</span>])</span>
+<span id="cb73-10"></span>
+<span id="cb73-11"><span class="bu" style="color: null;">print</span>(estDivisible(<span class="dv" style="color: #AD0000;">3</span>, <span class="dv" style="color: #AD0000;">6</span>))    <span class="co" style="color: #5E5E5E;"># True</span></span>
+<span id="cb73-12"><span class="bu" style="color: null;">print</span>(estDivisible(<span class="op" style="color: #5E5E5E;">-</span><span class="dv" style="color: #AD0000;">3</span>, <span class="dv" style="color: #AD0000;">12</span>))  <span class="co" style="color: #5E5E5E;"># True</span></span>
+<span id="cb73-13"><span class="bu" style="color: null;">print</span>(estDivisible(<span class="op" style="color: #5E5E5E;">-</span><span class="dv" style="color: #AD0000;">3</span>, <span class="dv" style="color: #AD0000;">11</span>))  <span class="co" style="color: #5E5E5E;"># False</span></span></code></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>True
+True
+False</code></pre>
+</div>
+</div>
+</section>
+<section id="nombre-de-chiffres-par-récursion" class="level1">
+<h1>14. Nombre de chiffres par récursion</h1>
+<section id="récursion-classique" class="level2">
+<h2 class="anchored" data-anchor-id="récursion-classique">Récursion classique</h2>
+<div class="cell" data-execution_count="41">
+<div class="sourceCode cell-code" id="cb75" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb75-1"><span class="kw" style="color: #003B4F;">def</span> longueur(n: <span class="bu" style="color: null;">int</span>) <span class="op" style="color: #5E5E5E;">-&gt;</span> <span class="bu" style="color: null;">int</span>:</span>
+<span id="cb75-2">    n <span class="op" style="color: #5E5E5E;">=</span> <span class="bu" style="color: null;">abs</span>(n)</span>
+<span id="cb75-3">    <span class="cf" style="color: #003B4F;">if</span> n <span class="op" style="color: #5E5E5E;">&lt;</span> <span class="dv" style="color: #AD0000;">10</span>:</span>
+<span id="cb75-4">        <span class="cf" style="color: #003B4F;">return</span> <span class="dv" style="color: #AD0000;">1</span></span>
+<span id="cb75-5">    <span class="cf" style="color: #003B4F;">return</span> <span class="dv" style="color: #AD0000;">1</span> <span class="op" style="color: #5E5E5E;">+</span> longueur(n <span class="op" style="color: #5E5E5E;">/</span> <span class="dv" style="color: #AD0000;">10</span>)</span>
+<span id="cb75-6"></span>
+<span id="cb75-7"><span class="bu" style="color: null;">print</span>(longueur(<span class="dv" style="color: #AD0000;">314159265358</span>))</span>
+<span id="cb75-8"><span class="bu" style="color: null;">print</span>(longueur(<span class="dv" style="color: #AD0000;">73</span>))</span>
+<span id="cb75-9"><span class="bu" style="color: null;">print</span>(longueur(<span class="dv" style="color: #AD0000;">1732</span>))</span></code></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>12
+2
+4</code></pre>
+</div>
+</div>
+</section>
+<section id="récursion-terminale" class="level2">
+<h2 class="anchored" data-anchor-id="récursion-terminale">Récursion terminale</h2>
+<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Détails sur la récursion terminale
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-7" class="callout-7-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>La récursion terminale est un récursion dans laquelle la dernière opération est l’appel récursif. Cela veut dire que le <code>return</code> qui contient l’appel récursif ne contient pas d’autre opération.</p>
+<p>Par exemple, la définition précédente de <code>longueur</code> n’est pas terminale, car on doit ajouter 1 après l’appel récursif (la ligne de l’appel récursif est <code>return 1 + longueur(n / 10)</code>).</p>
+<p>La récursion terminale à plusieurs avantages :</p>
+<ul>
+<li>dans certains langages, elle est optimisée (l’optimisation de pile d’appel) et rend l’exécution plus rapide et moins coûteuse en mémoire</li>
+<li>Elle peut être très façilement convertie en une boucle (la variable de boucle est l’accumulateur de la récursion terminale)
+<ul>
+<li>Dans certains livres, comme <a href="https://web.mit.edu/6.001/6.037/sicp.pdf">SICP</a>, on voit que la récursion terminale est appelée “itérative”</li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+<p>Ici, on a aussi optimisé le programme en travaillant uniquement sur des entiers, ce qui permet d’éviter des calculs de division de flottants, qui sont inutiles.</p>
+<div class="cell" data-execution_count="42">
+<div class="sourceCode cell-code" id="cb77" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb77-1"><span class="kw" style="color: #003B4F;">def</span> longueur(n: <span class="bu" style="color: null;">int</span>, acc: <span class="bu" style="color: null;">int</span> <span class="op" style="color: #5E5E5E;">=</span><span class="dv" style="color: #AD0000;">0</span>) <span class="op" style="color: #5E5E5E;">-&gt;</span> <span class="bu" style="color: null;">int</span>:</span>
+<span id="cb77-2">    n <span class="op" style="color: #5E5E5E;">=</span> <span class="bu" style="color: null;">int</span>(<span class="bu" style="color: null;">abs</span>(n))</span>
+<span id="cb77-3">    <span class="cf" style="color: #003B4F;">if</span> n <span class="op" style="color: #5E5E5E;">&lt;</span> <span class="dv" style="color: #AD0000;">10</span>:</span>
+<span id="cb77-4">        <span class="cf" style="color: #003B4F;">return</span> acc <span class="op" style="color: #5E5E5E;">+</span> <span class="dv" style="color: #AD0000;">1</span></span>
+<span id="cb77-5">    <span class="cf" style="color: #003B4F;">return</span> longueur(n <span class="op" style="color: #5E5E5E;">//</span> <span class="dv" style="color: #AD0000;">10</span>, acc <span class="op" style="color: #5E5E5E;">+</span> <span class="dv" style="color: #AD0000;">1</span>)</span>
+<span id="cb77-6"></span>
+<span id="cb77-7"><span class="bu" style="color: null;">print</span>(longueur(<span class="dv" style="color: #AD0000;">314159265358</span>))</span>
+<span id="cb77-8"><span class="bu" style="color: null;">print</span>(longueur(<span class="dv" style="color: #AD0000;">73</span>))</span>
+<span id="cb77-9"><span class="bu" style="color: null;">print</span>(longueur(<span class="dv" style="color: #AD0000;">1732</span>))</span></code></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>12
+2
+4</code></pre>
+</div>
+</div>
+</section>
+</section>
+<section id="chiffres-4-par-récursion" class="level1">
+<h1>15. Chiffres <img src="https://latex.codecogs.com/png.latex?%3C4"> par récursion</h1>
+<p>On veut écrire une fonction <strong>récursive</strong> <code>combienInf4(n)</code>, qui prend en argument un entier naturel <code>n</code>, et retourne le nombre de chiffres qui le compose et qui sont strictement inférieurs à 4.</p>
+<p><strong>Méthode :</strong> On va simplement utiliser les opérateurs <code>//</code> et <code>%</code>, qui donnent respectivement le quotient et le reste d’une division euclidienne. En prenant en boucle le reste de la division par 10, on obtient chaque chiffre du nombre de départ.</p>
+<section id="récursion-classique-1" class="level2">
+<h2 class="anchored" data-anchor-id="récursion-classique-1">Récursion classique</h2>
+<div class="cell" data-execution_count="43">
+<div class="sourceCode cell-code" id="cb79" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb79-1"><span class="kw" style="color: #003B4F;">def</span> combienInf4(n: <span class="bu" style="color: null;">int</span>) <span class="op" style="color: #5E5E5E;">-&gt;</span> <span class="bu" style="color: null;">int</span>:</span>
+<span id="cb79-2">    <span class="co" style="color: #5E5E5E;"># si le dernier chiffre de n est un 4</span></span>
+<span id="cb79-3">    <span class="cf" style="color: #003B4F;">if</span> n <span class="op" style="color: #5E5E5E;">%</span> <span class="dv" style="color: #AD0000;">10</span> <span class="op" style="color: #5E5E5E;">&lt;</span> <span class="dv" style="color: #AD0000;">4</span>:</span>
+<span id="cb79-4">        <span class="co" style="color: #5E5E5E;"># si n est un chiffre</span></span>
+<span id="cb79-5">        <span class="cf" style="color: #003B4F;">if</span> n <span class="op" style="color: #5E5E5E;">&lt;</span> <span class="dv" style="color: #AD0000;">10</span>:</span>
+<span id="cb79-6">            <span class="co" style="color: #5E5E5E;"># le résultat est 1</span></span>
+<span id="cb79-7">            <span class="cf" style="color: #003B4F;">return</span> <span class="dv" style="color: #AD0000;">1</span></span>
+<span id="cb79-8">        <span class="co" style="color: #5E5E5E;"># on ajoute 1 à la récursion car n finit par 4</span></span>
+<span id="cb79-9">        <span class="cf" style="color: #003B4F;">return</span> <span class="dv" style="color: #AD0000;">1</span> <span class="op" style="color: #5E5E5E;">+</span> combienInf4(n <span class="op" style="color: #5E5E5E;">//</span> <span class="dv" style="color: #AD0000;">10</span>)</span>
+<span id="cb79-10">    <span class="co" style="color: #5E5E5E;"># si n ne finit pas par 4 :</span></span>
+<span id="cb79-11">    <span class="co" style="color: #5E5E5E;"># si n est un chiffre</span></span>
+<span id="cb79-12">    <span class="cf" style="color: #003B4F;">if</span> n <span class="op" style="color: #5E5E5E;">&lt;</span> <span class="dv" style="color: #AD0000;">10</span>:</span>
+<span id="cb79-13">        <span class="co" style="color: #5E5E5E;"># aucun 4 dans n</span></span>
+<span id="cb79-14">        <span class="cf" style="color: #003B4F;">return</span> <span class="dv" style="color: #AD0000;">0</span></span>
+<span id="cb79-15">    <span class="co" style="color: #5E5E5E;"># on ajoute rien à la récursion car n ne finit pas par 4</span></span>
+<span id="cb79-16">    <span class="cf" style="color: #003B4F;">return</span> combienInf4(n <span class="op" style="color: #5E5E5E;">//</span> <span class="dv" style="color: #AD0000;">10</span>)</span>
+<span id="cb79-17"></span>
+<span id="cb79-18"><span class="bu" style="color: null;">print</span>(combienInf4(<span class="dv" style="color: #AD0000;">123456</span>))</span>
+<span id="cb79-19"><span class="bu" style="color: null;">print</span>(combienInf4(<span class="dv" style="color: #AD0000;">314159265358</span>))</span>
+<span id="cb79-20"><span class="bu" style="color: null;">print</span>(combienInf4(<span class="dv" style="color: #AD0000;">789456</span>))</span></code></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>3
+5
+0</code></pre>
+</div>
+</div>
+</section>
+<section id="avec-des-conversions-de-types" class="level2">
+<h2 class="anchored" data-anchor-id="avec-des-conversions-de-types">Avec des conversions de types</h2>
+<p>Pour rendre le code plus simple (et plus lisible pour un programmeur averti), on utilise le fait que la fonction <code>int</code> puisse convertir des booléens en entiers.</p>
+<div class="cell" data-execution_count="44">
+<div class="sourceCode cell-code" id="cb81" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb81-1"><span class="kw" style="color: #003B4F;">def</span> combienInf4(n: <span class="bu" style="color: null;">int</span>) <span class="op" style="color: #5E5E5E;">-&gt;</span> <span class="bu" style="color: null;">int</span>:</span>
+<span id="cb81-2">    <span class="cf" style="color: #003B4F;">if</span> n <span class="op" style="color: #5E5E5E;">&lt;</span> <span class="dv" style="color: #AD0000;">10</span>:</span>
+<span id="cb81-3">        <span class="co" style="color: #5E5E5E;"># (n &lt; 4) est un booléen</span></span>
+<span id="cb81-4">        <span class="co" style="color: #5E5E5E;"># int(True) vaut 1, et int(False) vaut 0</span></span>
+<span id="cb81-5">        <span class="cf" style="color: #003B4F;">return</span> <span class="bu" style="color: null;">int</span>(n <span class="op" style="color: #5E5E5E;">&lt;</span> <span class="dv" style="color: #AD0000;">4</span>)</span>
+<span id="cb81-6">    <span class="co" style="color: #5E5E5E;"># on ajoute 1 à la récursion si le dernier chiffre de n est 4</span></span>
+<span id="cb81-7">    <span class="cf" style="color: #003B4F;">return</span> <span class="bu" style="color: null;">int</span>(n <span class="op" style="color: #5E5E5E;">%</span> <span class="dv" style="color: #AD0000;">10</span> <span class="op" style="color: #5E5E5E;">&lt;</span> <span class="dv" style="color: #AD0000;">4</span>) <span class="op" style="color: #5E5E5E;">+</span> combienInf4(n <span class="op" style="color: #5E5E5E;">//</span> <span class="dv" style="color: #AD0000;">10</span>)</span>
+<span id="cb81-8"></span>
+<span id="cb81-9"><span class="bu" style="color: null;">print</span>(combienInf4(<span class="dv" style="color: #AD0000;">123456</span>))</span>
+<span id="cb81-10"><span class="bu" style="color: null;">print</span>(combienInf4(<span class="dv" style="color: #AD0000;">314159265358</span>))</span>
+<span id="cb81-11"><span class="bu" style="color: null;">print</span>(combienInf4(<span class="dv" style="color: #AD0000;">789456</span>))</span></code></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>3
+5
+0</code></pre>
+</div>
+</div>
+</section>
+<section id="récursion-terminale-1" class="level2">
+<h2 class="anchored" data-anchor-id="récursion-terminale-1">Récursion terminale</h2>
+<div class="cell" data-execution_count="45">
+<div class="sourceCode cell-code" id="cb83" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb83-1"><span class="kw" style="color: #003B4F;">def</span> combienInf4(n: <span class="bu" style="color: null;">int</span>, acc: <span class="bu" style="color: null;">int</span> <span class="op" style="color: #5E5E5E;">=</span><span class="dv" style="color: #AD0000;">0</span>) <span class="op" style="color: #5E5E5E;">-&gt;</span> <span class="bu" style="color: null;">int</span>:</span>
+<span id="cb83-2">    <span class="cf" style="color: #003B4F;">if</span> n <span class="op" style="color: #5E5E5E;">&lt;</span> <span class="dv" style="color: #AD0000;">10</span>:</span>
+<span id="cb83-3">        <span class="cf" style="color: #003B4F;">return</span> <span class="bu" style="color: null;">int</span>(n <span class="op" style="color: #5E5E5E;">&lt;</span> <span class="dv" style="color: #AD0000;">4</span>) <span class="op" style="color: #5E5E5E;">+</span> acc</span>
+<span id="cb83-4">    <span class="cf" style="color: #003B4F;">return</span> combienInf4(n <span class="op" style="color: #5E5E5E;">//</span> <span class="dv" style="color: #AD0000;">10</span>, acc <span class="op" style="color: #5E5E5E;">+</span> <span class="bu" style="color: null;">int</span>(n <span class="op" style="color: #5E5E5E;">%</span> <span class="dv" style="color: #AD0000;">10</span> <span class="op" style="color: #5E5E5E;">&lt;</span> <span class="dv" style="color: #AD0000;">4</span>))</span>
+<span id="cb83-5"></span>
+<span id="cb83-6"></span>
+<span id="cb83-7"><span class="bu" style="color: null;">print</span>(combienInf4(<span class="dv" style="color: #AD0000;">123456</span>))</span>
+<span id="cb83-8"><span class="bu" style="color: null;">print</span>(combienInf4(<span class="dv" style="color: #AD0000;">314159265358</span>))</span>
+<span id="cb83-9"><span class="bu" style="color: null;">print</span>(combienInf4(<span class="dv" style="color: #AD0000;">789456</span>))</span></code></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>3
+5
+0</code></pre>
+</div>
+</div>
+
+
+</section>
+</section>
+
+ ]]></description>
+  <category>informatique</category>
+  <guid>https://osk42.quarto.pub/osk42/posts/informatique/cours/algo_avancee_activite_1.html</guid>
+  <pubDate>Sat, 14 Jan 2023 23:00:00 GMT</pubDate>
+  <media:content url="https://osk42.quarto.pub/osk42/posts/informatique/_images/demo_inverser_liste.gif" medium="image" type="image/gif"/>
+</item>
+<item>
+  <title>Structure de données : tableau</title>
+  <link>https://osk42.quarto.pub/osk42/posts/informatique/cours/algo_avancee_tableau.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<ul>
+<li>Structure de données statique
+<ul>
+<li>La taille du tableau est fixe</li>
+</ul></li>
+<li>Permet de stocker une liste de données</li>
+</ul>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Avantages des tableaux
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>L’accès aux éléments est très rapide, en <img src="https://latex.codecogs.com/png.latex?O(1)">
+<ul>
+<li>Car on sait directement où est un élément donné dans la mémoire
+<ul>
+<li>car la taille des cases est fixe</li>
+</ul></li>
+</ul></li>
+<li>Un tableau prends peu de place en mémoire</li>
+</ul>
+</div>
+</div>
+<div class="callout-warning callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Désavantages des tableaux
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Il impossible (ou difficile) de changer la taille d’un tableau
+<ul>
+<li>si on veut l’augmenter, il faut créer un nouveau tableau</li>
+</ul></li>
+<li>La supression d’éléments est en <img src="https://latex.codecogs.com/png.latex?O(n)"> (longue)
+<ul>
+<li>il faut “décaler” tous les éléments après la valeur supprimée</li>
+</ul></li>
+<li>L’insertion d’éléments est impossible
+<ul>
+<li>il faut augmenter la taille du tableau, donc en créer un nouveau, ou bien supprimer un autre élément</li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+
+
+ ]]></description>
+  <category>informatique</category>
+  <guid>https://osk42.quarto.pub/osk42/posts/informatique/cours/algo_avancee_tableau.html</guid>
+  <pubDate>Thu, 12 Jan 2023 23:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Algorithmique : Structures dynamiques</title>
+  <link>https://osk42.quarto.pub/osk42/posts/informatique/cours/algo_avancee_structures_dynamiques.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="les-strucures-de-données-dynamiques" class="level1">
+<h1>Les strucures de données dynamiques</h1>
+<ul>
+<li>on a besoin de représenter des objets de taille inconnue, de taille variable</li>
+</ul>
+<section id="liste-de-structures-de-données-dynamiques" class="level2">
+<h2 class="anchored" data-anchor-id="liste-de-structures-de-données-dynamiques">Liste de structures de données dynamiques</h2>
+<ul>
+<li><a href="../../../posts/informatique/cours/algo_avancee_listes_chainees.html">listes chaînées</a></li>
+</ul>
+
+
+</section>
+</section>
+
+ ]]></description>
+  <category>informatique</category>
+  <guid>https://osk42.quarto.pub/osk42/posts/informatique/cours/algo_avancee_structures_dynamiques.html</guid>
+  <pubDate>Thu, 12 Jan 2023 23:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Listes chaînées</title>
+  <link>https://osk42.quarto.pub/osk42/posts/informatique/cours/algo_avancee_listes_chainees.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<div class="callout-note callout callout-style-default no-icon callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Définition
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Représentation d’une liste de façon <a href="../../../posts/informatique/cours/algo_avancee_structures_recursives.html">récursive</a>. - les éléments sont rangés <strong>linéairement</strong> -</p>
+<p>La liste est un bloc, puis un lien vers la suite de la liste (le bloc suivant).</p>
+<p><img src="https://osk42.quarto.pub/osk42/posts/informatique/_images/listes_chainees.svg" class="img-fluid"></p>
+<p>Une liste chaînée est donc un bloc contenant : - une valeur - un pointeur vers le premier bloc de la suite - Cette “suite” est aussi une liste chaînée</p>
+</div>
+</div>
+<section id="implémentation" class="level1">
+<h1>Implémentation</h1>
+<p>Deux représentations sont possibles : - un objet <code>Node</code> qui suit la définition <a href="../../../posts/informatique/cours/algo_avancee_structures_recursives.html">récursive</a> - les opérations que l’on fait sur une liste sont alors représentées comme des fonctions (ou procédures) qui prennent un (ou plusieurs) <code>Node</code> en argument - un objet <code>LinkedList</code> qui représente la liste chaînée à plus haut niveau d’abstraction - une liset possède une <strong>tête</strong> de liste qui est un <code>Node</code> - les opérations que l’on fait sur une liste sont alors représentées comme des méthodes de cet objet</p>
+<div class="cell" data-execution_count="1">
+<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><span class="kw" style="color: #003B4F;">class</span> Node:</span>
+<span id="cb1-2">    <span class="kw" style="color: #003B4F;">def</span> <span class="fu" style="color: #4758AB;">__init__</span>(<span class="va" style="color: #111111;">self</span>, value, <span class="bu" style="color: null;">next</span><span class="op" style="color: #5E5E5E;">=</span><span class="va" style="color: #111111;">None</span>):</span>
+<span id="cb1-3">        <span class="co" style="color: #5E5E5E;">"""Create a new node.</span></span>
+<span id="cb1-4"><span class="co" style="color: #5E5E5E;">        """</span></span>
+<span id="cb1-5">        <span class="va" style="color: #111111;">self</span>.valeur <span class="op" style="color: #5E5E5E;">=</span> value</span>
+<span id="cb1-6">        <span class="va" style="color: #111111;">self</span>.suivant <span class="op" style="color: #5E5E5E;">=</span> <span class="bu" style="color: null;">next</span></span></code></pre></div>
+</div>
+<div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><span class="kw" style="color: #003B4F;">class</span> LinkedList:</span>
+<span id="cb2-2">    <span class="kw" style="color: #003B4F;">def</span> <span class="fu" style="color: #4758AB;">__init__</span>(<span class="va" style="color: #111111;">self</span>, head: Node <span class="op" style="color: #5E5E5E;">=</span><span class="va" style="color: #111111;">None</span>):</span>
+<span id="cb2-3">        <span class="co" style="color: #5E5E5E;">"""Initialize a linked list"""</span></span>
+<span id="cb2-4">        <span class="va" style="color: #111111;">self</span>.head : Node <span class="op" style="color: #5E5E5E;">=</span> head</span></code></pre></div>
+<ul>
+<li>possibilité de l’étendre
+<ul>
+<li>un itérateur</li>
+<li>des attributs pour connaîrte la taille de la liste sans la recalculer</li>
+<li>ajouter un pointeur vers le dernier élément de la liste pour accélérer les insertions d’éléments à la fin</li>
+</ul></li>
+</ul>
+<section id="fonctions-sur-des-node" class="level2">
+<h2 class="anchored" data-anchor-id="fonctions-sur-des-node">Fonctions sur des <code>Node</code></h2>
+<section id="afficher-les-éléments" class="level3">
+<h3 class="anchored" data-anchor-id="afficher-les-éléments">Afficher les éléments</h3>
+<div class="cell" data-execution_count="2">
+<div class="sourceCode cell-code" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><span class="kw" style="color: #003B4F;">def</span> affichage(L: Node) <span class="op" style="color: #5E5E5E;">-&gt;</span> <span class="bu" style="color: null;">str</span>:</span>
+<span id="cb3-2">    chaine <span class="op" style="color: #5E5E5E;">=</span> <span class="st" style="color: #20794D;">""</span></span>
+<span id="cb3-3">    <span class="cf" style="color: #003B4F;">while</span> L <span class="kw" style="color: #003B4F;">is</span> <span class="kw" style="color: #003B4F;">not</span> <span class="va" style="color: #111111;">None</span>:</span>
+<span id="cb3-4">        chaine <span class="op" style="color: #5E5E5E;">+=</span> <span class="st" style="color: #20794D;">"&lt;"</span> <span class="op" style="color: #5E5E5E;">+</span> <span class="bu" style="color: null;">str</span>(L.valeur) <span class="op" style="color: #5E5E5E;">+</span> <span class="st" style="color: #20794D;">"&gt; "</span></span>
+<span id="cb3-5">        L <span class="op" style="color: #5E5E5E;">=</span> L.suivant</span>
+<span id="cb3-6">    <span class="cf" style="color: #003B4F;">return</span> chaine</span>
+<span id="cb3-7"></span>
+<span id="cb3-8">mylist <span class="op" style="color: #5E5E5E;">=</span> Node(<span class="dv" style="color: #AD0000;">3</span>, Node(<span class="dv" style="color: #AD0000;">1</span>, Node(<span class="dv" style="color: #AD0000;">4</span>, Node(<span class="dv" style="color: #AD0000;">1</span>, Node(<span class="dv" style="color: #AD0000;">5</span>, Node(<span class="dv" style="color: #AD0000;">9</span>))))))</span>
+<span id="cb3-9"><span class="bu" style="color: null;">print</span>(affichage(mylist))</span></code></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>&lt;3&gt; &lt;1&gt; &lt;4&gt; &lt;1&gt; &lt;5&gt; &lt;9&gt; </code></pre>
+</div>
+</div>
+<p>Ou bien, dans une version récursive :</p>
+<div class="cell" data-execution_count="3">
+<div class="sourceCode cell-code" id="cb5" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><span class="kw" style="color: #003B4F;">def</span> affichageRec(L: Node) <span class="op" style="color: #5E5E5E;">-&gt;</span> <span class="bu" style="color: null;">str</span>:</span>
+<span id="cb5-2">    <span class="cf" style="color: #003B4F;">if</span> L <span class="kw" style="color: #003B4F;">is</span> <span class="va" style="color: #111111;">None</span>:</span>
+<span id="cb5-3">        <span class="cf" style="color: #003B4F;">return</span> <span class="st" style="color: #20794D;">""</span></span>
+<span id="cb5-4">    <span class="cf" style="color: #003B4F;">return</span> <span class="st" style="color: #20794D;">"&lt;"</span> <span class="op" style="color: #5E5E5E;">+</span> <span class="bu" style="color: null;">str</span>(L.valeur) <span class="op" style="color: #5E5E5E;">+</span> <span class="st" style="color: #20794D;">"&gt; "</span></span>
+<span id="cb5-5"></span>
+<span id="cb5-6">mylist <span class="op" style="color: #5E5E5E;">=</span> Node(<span class="dv" style="color: #AD0000;">3</span>, Node(<span class="dv" style="color: #AD0000;">1</span>, Node(<span class="dv" style="color: #AD0000;">4</span>, Node(<span class="dv" style="color: #AD0000;">1</span>, Node(<span class="dv" style="color: #AD0000;">5</span>, Node(<span class="dv" style="color: #AD0000;">9</span>))))))</span>
+<span id="cb5-7"><span class="bu" style="color: null;">print</span>(affichage(mylist))</span></code></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>&lt;3&gt; &lt;1&gt; &lt;4&gt; &lt;1&gt; &lt;5&gt; &lt;9&gt; </code></pre>
+</div>
+</div>
+<p>Et on peut utiliser la méthode magique <code>__str__</code> de la classe <code>LinkedList</code> :</p>
+<div class="cell" data-execution_count="4">
+<div class="sourceCode cell-code" id="cb7" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><span class="kw" style="color: #003B4F;">class</span> LinkedList:</span>
+<span id="cb7-2">    <span class="kw" style="color: #003B4F;">def</span> <span class="fu" style="color: #4758AB;">__init__</span>(<span class="va" style="color: #111111;">self</span>, head: Node <span class="op" style="color: #5E5E5E;">=</span><span class="va" style="color: #111111;">None</span>):</span>
+<span id="cb7-3">        <span class="co" style="color: #5E5E5E;">"""Initialize a linked list"""</span></span>
+<span id="cb7-4">        <span class="va" style="color: #111111;">self</span>.head : Node <span class="op" style="color: #5E5E5E;">=</span> head</span>
+<span id="cb7-5"></span>
+<span id="cb7-6">    <span class="kw" style="color: #003B4F;">def</span> <span class="fu" style="color: #4758AB;">__str__</span>(<span class="va" style="color: #111111;">self</span>) <span class="op" style="color: #5E5E5E;">-&gt;</span> <span class="bu" style="color: null;">str</span>:</span>
+<span id="cb7-7">        L <span class="op" style="color: #5E5E5E;">=</span> <span class="va" style="color: #111111;">self</span>.head</span>
+<span id="cb7-8">        res <span class="op" style="color: #5E5E5E;">=</span> <span class="st" style="color: #20794D;">""</span></span>
+<span id="cb7-9">        <span class="cf" style="color: #003B4F;">while</span> L <span class="kw" style="color: #003B4F;">is</span> <span class="kw" style="color: #003B4F;">not</span> <span class="va" style="color: #111111;">None</span>:</span>
+<span id="cb7-10">            res <span class="op" style="color: #5E5E5E;">+=</span> <span class="st" style="color: #20794D;">"&lt;"</span> <span class="op" style="color: #5E5E5E;">+</span> <span class="bu" style="color: null;">str</span>(L.valeur) <span class="op" style="color: #5E5E5E;">+</span> <span class="st" style="color: #20794D;">"&gt; "</span></span>
+<span id="cb7-11">            L <span class="op" style="color: #5E5E5E;">=</span> L.suivant</span>
+<span id="cb7-12">        <span class="cf" style="color: #003B4F;">return</span> res</span>
+<span id="cb7-13"></span>
+<span id="cb7-14">mylinkedlist <span class="op" style="color: #5E5E5E;">=</span> LinkedList(mylist)</span>
+<span id="cb7-15"></span>
+<span id="cb7-16"><span class="co" style="color: #5E5E5E;"># __str__ permet de définir le résultat de str(mylinkedlist)</span></span>
+<span id="cb7-17"><span class="co" style="color: #5E5E5E;"># print appelle toujours la fonction str, donc pas beson de l'ajouter</span></span>
+<span id="cb7-18"><span class="bu" style="color: null;">print</span>(mylinkedlist)</span></code></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>&lt;3&gt; &lt;1&gt; &lt;4&gt; &lt;1&gt; &lt;5&gt; &lt;9&gt; </code></pre>
+</div>
+</div>
+</section>
+<section id="calculer-la-longueur" class="level3">
+<h3 class="anchored" data-anchor-id="calculer-la-longueur">Calculer la longueur</h3>
+<p>On peut à nouveau le faire de plusieurs façons. Pour pouvoir utiliser la fonction <code>len</code> sur l’objet, on ajoute la méthode <code>__len__</code> sur la classe <code>LinkedList</code></p>
+<div class="sourceCode" id="cb9" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><span class="kw" style="color: #003B4F;">class</span> LinkedList:</span>
+<span id="cb9-2">    <span class="kw" style="color: #003B4F;">def</span> <span class="fu" style="color: #4758AB;">__init__</span>(<span class="va" style="color: #111111;">self</span>, head: Node <span class="op" style="color: #5E5E5E;">=</span><span class="va" style="color: #111111;">None</span>):</span>
+<span id="cb9-3">        <span class="co" style="color: #5E5E5E;">"""Initialize a linked list"""</span></span>
+<span id="cb9-4">        <span class="va" style="color: #111111;">self</span>.head : Node <span class="op" style="color: #5E5E5E;">=</span> head</span>
+<span id="cb9-5"></span>
+<span id="cb9-6">    <span class="kw" style="color: #003B4F;">def</span> <span class="fu" style="color: #4758AB;">__len__</span>(<span class="va" style="color: #111111;">self</span>) <span class="op" style="color: #5E5E5E;">-&gt;</span> <span class="bu" style="color: null;">int</span>:</span>
+<span id="cb9-7">        L <span class="op" style="color: #5E5E5E;">=</span> <span class="va" style="color: #111111;">self</span>.head</span>
+<span id="cb9-8">        <span class="cf" style="color: #003B4F;">while</span> L <span class="kw" style="color: #003B4F;">is</span> <span class="kw" style="color: #003B4F;">not</span> <span class="va" style="color: #111111;">None</span>:</span></code></pre></div>
+
+
+</section>
+</section>
+</section>
+
+ ]]></description>
+  <category>informatique</category>
+  <guid>https://osk42.quarto.pub/osk42/posts/informatique/cours/algo_avancee_listes_chainees.html</guid>
+  <pubDate>Thu, 12 Jan 2023 23:00:00 GMT</pubDate>
+  <media:content url="https://osk42.quarto.pub/osk42/posts/informatique/_images/listes_chainees.svg" medium="image" type="image/svg+xml"/>
+</item>
+<item>
+  <title>Structures de données récursives</title>
+  <link>https://osk42.quarto.pub/osk42/posts/informatique/cours/algo_avancee_structures_recursives.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<div class="callout-note callout callout-style-default no-icon callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Définition
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Une structure récursive (ou auto-référente) est une structure qui fait référence à une structure du même type dans sa définition.</p>
+</div>
+</div>
+<section id="exemples" class="level2">
+<h2 class="anchored" data-anchor-id="exemples">Exemples</h2>
+<ul>
+<li><a href="../../../posts/informatique/cours/algo_avancee_listes_chainees.html">listes chaînées</a></li>
+</ul>
+
+
+</section>
+
+ ]]></description>
+  <category>informatique</category>
+  <guid>https://osk42.quarto.pub/osk42/posts/informatique/cours/algo_avancee_structures_recursives.html</guid>
+  <pubDate>Thu, 12 Jan 2023 23:00:00 GMT</pubDate>
+  <media:content url="https://osk42.quarto.pub/osk42/posts/informatique/_images/boucle_de_fleches.png" medium="image" type="image/png" height="144" width="144"/>
+</item>
+<item>
+  <title>vim tips autocorriger les erreurs</title>
+  <link>https://osk42.quarto.pub/osk42/posts/informatique/vim_tips_autocorriger_les_erreurs.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<div class="callout-important callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Cet article est une traduction
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Cet article est une traduction des deux articles suivants</p>
+<p><a href="https://nanotipsforvim.prose.sh/autofix-misspellings">https://nanotipsforvim.prose.sh/autofix-misspellings</a></p>
+<p><a href="https://castel.dev/post/lecture-notes-1/">https://castel.dev/post/lecture-notes-1/</a></p>
+</div>
+</div>
+<p>Vim possède un correcteur d’orthographe intégré, que l’on peut activer avec <code>set spell</code>. On peut ensuite changer la langue avec <code>set spelllang=fr</code> (ici pour passer en français).</p>
+<p>Pour corriger une erreur, on peut utiliser <code>z=</code> sur un mot : cela affiche une liste des remplacements possibles. Pour se déplacer d’erreur en erreur, on utilise <code>]s</code> (erreur suivante), et <code>[s</code> (erreur suivante).</p>
+<p>Cela donne quelque chose comme ça :</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://osk42.quarto.pub/osk42/posts/informatique/_images/vim_spell_correction.gif" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">exemple de corrections d’orthographe avec vim</figcaption><p></p>
+</figure>
+</div>
+<p>C’est assez long, parce que pour chaque mot, il faut faire : <code>z=1</code> puis appuyer sur entrée.</p>
+<section id="meilleur-raccourci-pour-remplacer" class="level1">
+<h1>Meilleur raccourci pour remplacer</h1>
+<p>On peut aussi faire <code>1z=</code> : cela sélectionne directement la première correction dans la liste. Mais <code>1z=</code> est plutôt long à taper.</p>
+<p>Une première solution est de créer un raccourci pour <code>1z=</code>, comme <code>za</code>, par exemple.</p>
+<pre class="vim"><code>nnoremap za 1z=</code></pre>
+<p>Cela permet d’accélérer un peu :</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://osk42.quarto.pub/osk42/posts/informatique/_images/vim_spell_correction_2.gif" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">exemple de corrections d’orthographe avec vim</figcaption><p></p>
+</figure>
+</div>
+</section>
+<section id="remplacer-depuis-le-mode-insertion" class="level1">
+<h1>Remplacer depuis le mode insertion</h1>
+<p>Lorsque l’on rédige des textes avec vim, on est plus souvent en mode insertion (à l’opposé, on est surtout en mode normal quand on édite du code).</p>
+<p>Cela rend encore plus long le fait de corriger une faute de frappe, puisqu’il faut aller en mode normal, et revenir en mode insertion ensuite</p>
+<p>Pour fluidifier ce mode d’édition (surtout si, comme moi, vous tapez vite mais avec peu de précision), on peut créer un raccourci qui, depuis le mode insertion, va corriger la dernière erreur, et revenir en mode insertion.</p>
+<p>Cela donne quelque chose comme ça (le curseur est à droite, en mode insertion) :</p>
+<p><img src="https://osk42.quarto.pub/osk42/posts/informatique/_images/vim_insert_spell_correct.gif" class="img-fluid"></p>
+<p>Personnellement, j’utilise <code>&lt;c-z&gt;</code>, mais <code>&lt;c-l&gt;</code> peut être utilisé également.</p>
+<p>Le raccourci à ajouter est :</p>
+<pre class="vim"><code>inoremap &lt;c-g&gt;u&lt;esc&gt;[s1z=`]a&lt;c-g&gt;u</code></pre>
+<ul>
+<li>les <code>&lt;c-g&gt;u</code> permettent d’annuler rapidement les remplacements</li>
+<li>le <code>`]</code> permet de remettre le curseur à la position de départ</li>
+</ul>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Explication détaillée du raccourci
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li><code>&lt;c-g&gt;u</code> permet d’annuler le remplacement appart
+<ul>
+<li>sinon, il sera considéré comme une partie de l’édition en cours</li>
+</ul></li>
+<li><code>&lt;esc&gt;</code> va en mode normal</li>
+<li><code>[s</code> va à la dernière erreur avant le curseur</li>
+<li><code>1z=</code> remplace l’erreur par la première correction disponible</li>
+<li><code>`]</code> revient à la dernière position du curseur (au dernier caractère modifié)</li>
+<li><code>a</code> revient en mode insertion</li>
+<li><code>&lt;c-g&gt;u</code> fait à nouveau en sorte que l’annulation du remplacement soit faîte appart
+<ul>
+<li>sinon, il sera considéré comme une partie de l’édition future</li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+
+
+</section>
+
+ ]]></description>
+  <category>vim</category>
+  <category>tips</category>
+  <guid>https://osk42.quarto.pub/osk42/posts/informatique/vim_tips_autocorriger_les_erreurs.html</guid>
+  <pubDate>Wed, 04 Jan 2023 23:00:00 GMT</pubDate>
+  <media:content url="https://osk42.quarto.pub/osk42/posts/informatique/_images/vim.excalidraw.svg" medium="image" type="image/svg+xml"/>
+</item>
+<item>
+  <title>vim tips - leader</title>
+  <link>https://osk42.quarto.pub/osk42/posts/informatique/vim_tips_leader.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Dans Vim, on peut changer les raccourcis pour absolument toutes les touches.</p>
+<p>Justement, un des raccourcis que l’on peut changer, c’est <code>&lt;leader&gt;</code>.</p>
+<p>Quand il s’agit de <code>&lt;space&gt;</code> (touche espace), <code>&lt;tab&gt;</code>, <code>&lt;cr&gt;</code> (carriage return, pour la touche entrée), on arrive à deviner. Mais pour <code>&lt;leader&gt;</code>, c’est plus difficile.</p>
+<p>En fait, <code>&lt;leader&gt;</code> peut être n’importe quel raccourci que vous choisissez ! Quand vous créez un raccourci, <code>&lt;leader&gt;</code> sera remplacé par la valeur dans la variable <code>g:mapleader</code>.</p>
+<p>Cela peut être intéressant :</p>
+<ul>
+<li>on peut avoir une touche que l’on utilise souvent dans nos raccourcis</li>
+<li>on peut changer cette touche facilement
+<ul>
+<li>si on change de clavier</li>
+<li>si on change de layout (<code>azerty</code>, <code>qwerty</code>…)</li>
+<li>si on veut changer sa position (changer la touche assignée à <code>&lt;leader&gt;</code>)</li>
+</ul></li>
+</ul>
+<section id="comment-utiliser-leader" class="level1">
+<h1>Comment utiliser <code>&lt;leader&gt;</code></h1>
+<p>Par défaut, <code>&lt;leader&gt;</code> est assigné à la touche <code>\</code> (anti-slash). C’est parce que cette touche est facilement accessible sur un clavier <code>qwerty</code>.</p>
+<section id="changer-la-touche-assignée" class="level2">
+<h2 class="anchored" data-anchor-id="changer-la-touche-assignée">Changer la touche assignée</h2>
+<p>Comme je l’ai dit plus haut, <code>&lt;leader&gt;</code> est défini par la variable <code>g:mapleader</code></p>
+<p>Par exemple, si on souhaite utiliser la touche <code>,</code> pour leader :</p>
+<pre class="vimscript"><code>let g:mapleader = ","</code></pre>
+<p>Si on souhaite utiliser une touche qui est représentée entre <code>&lt;...&gt;</code>, comme la touche espace (<code>&lt;space&gt;</code>), il ne faut pas oublier le <code>\</code> avant le nom de la touche :</p>
+<pre class="vim"><code>let g:mapleader = "\&lt;space&gt;"</code></pre>
+<p>Si vous oubliez le <code>\</code>, il faudra taper toutes les touches : <code>&lt;</code>, <code>s</code>, <code>p</code>, <code>a</code>, <code>c</code>, <code>e</code>, <code>&gt;</code> pour déclancher <code>&lt;leader&gt;</code></p>
+</section>
+<section id="cas-dutilisation" class="level2">
+<h2 class="anchored" data-anchor-id="cas-dutilisation">Cas d’utilisation</h2>
+<p>Un des usages principaux de <code>&lt;leader&gt;</code> est comme préfixe (d’où le nom, leader, en anglais).</p>
+<p>Par préfixe, je veux dire une touche qui est au début de plein de raccourcis. C’est utile car Vim assigne déjà beaucoup de raccourcis, et donc ne laisse pas beaucoup de place pour que l’utilisateur définisse les siens. C’est pour cette raison que <code>&lt;leader&gt;</code> est utile : vous pouvez faire commencer plein de vos raccourcis par leader. Par exemple, j’ai défini les raccourcis <code>&lt;leader&gt;j</code>, <code>&lt;leader&gt;k</code>, <code>&lt;leader&gt;m</code>, <code>&lt;leader&gt;ul</code>…</p>
+<section id="exemples-dutilisation" class="level3">
+<h3 class="anchored" data-anchor-id="exemples-dutilisation">Exemples d’utilisation</h3>
+<p>Voici quelques exemples d’utilisation :</p>
+<ul>
+<li><code>&lt;leader&gt;m</code> pour <code>:make&lt;cr&gt;</code>, si vous utilisez des <a href="https://shiftcode.fr/comprendre-les-makefiles/" title="https://shiftcode.fr/comprendre-les-makefiles/">makefiles</a></li>
+<li><code>&lt;leader&gt;k</code> pour sauvegarder (c’est bizarre mais c’est ce que j’utilise)</li>
+<li><code>&lt;leader&gt;w</code> ou bien <code>&lt;leader&gt;q</code> pour <code>&lt;c-w&gt;</code>, afin d’éviter la touche contrôle quand on manipule les fenêtres</li>
+<li><code>&lt;leader&gt;t</code> pour <code>:tabnew&lt;cr&gt;</code> (créer un nouvel onglet)</li>
+<li><code>&lt;leader&gt;!</code> pour <code>:term ++curwin</code> (ouvrir un terminal dans la fenêtre actuelle)</li>
+</ul>
+<p><br> <br> <br> <br> <br> <br></p>
+<hr>
+<p>Mon .vimrc est disponible ici : <a href="https://github.com/OsKaR31415/config/blob/master/.vimrc">github.com/OsKaR31415/config</a> avec le reste de ma configuration.</p>
+
+
+</section>
+</section>
+</section>
+
+ ]]></description>
+  <category>vim</category>
+  <category>tips</category>
+  <guid>https://osk42.quarto.pub/osk42/posts/informatique/vim_tips_leader.html</guid>
+  <pubDate>Mon, 02 Jan 2023 23:00:00 GMT</pubDate>
+  <media:content url="https://osk42.quarto.pub/osk42/posts/informatique/images/vim.excalidraw.svg" medium="image" type="image/svg+xml"/>
+</item>
+</channel>
+</rss>

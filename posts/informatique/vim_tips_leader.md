@@ -5,7 +5,6 @@ date: 2023-01-03
 categories: [ vim, tips  ]
 image: "images/vim.excalidraw.svg"
 toc: true
-draft: false
 ---
 
 Dans Vim, on peut changer les raccourcis pour absolument toutes les touches.

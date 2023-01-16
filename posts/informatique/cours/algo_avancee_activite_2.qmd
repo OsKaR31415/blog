@@ -2,11 +2,13 @@
 title: "Algorithmique avancée : TD2"
 date: 2023-01-13
 categories: [ informatique ]
+jupyter: python3
 draft: true
 ---
 
 
 ```{python}
+
 ```
 
 

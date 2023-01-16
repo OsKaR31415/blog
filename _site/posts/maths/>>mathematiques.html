@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="dcterms.date" content="2023-01-04">
-<meta name="description" content="Liste de notions mathématiques importantes">
+<meta name="description" content="Liste des notions de Mathématiques">
 
 <title>0SK42 - Mathématiques</title>
 <style>
@@ -32,6 +32,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-listing/list.min.js"></script>
+<script src="../../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../../site_libs/quarto-html/quarto.js"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -60,6 +62,35 @@ ul.task-list li input[type="checkbox"] {
     "search-submit-button-title": "Submit"
   }
 }</script>
+<script>
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-date','listing-title','listing-author',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
+      
+      searchColumns: ["listing-date","listing-title","listing-author"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
 
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
@@ -83,11 +114,11 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="../../posts/maths/mathematiques.html" aria-current="page">
+    <a class="nav-link active" href="../../posts/maths/>>mathematiques.html" aria-current="page">
  <span class="menu-text">Mathématiques</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../posts/informatique/informatique.html">
+    <a class="nav-link" href="../../posts/informatique/>>informatique.html">
  <span class="menu-text">Informatique</span></a>
   </li>  
   <li class="nav-item">
@@ -122,7 +153,7 @@ ul.task-list li input[type="checkbox"] {
       <h1 class="title">Mathématiques</h1>
                   <div>
         <div class="description">
-          Liste de notions mathématiques importantes
+          Liste des notions de Mathématiques
         </div>
       </div>
                           <div class="quarto-categories">
@@ -161,18 +192,16 @@ ul.task-list li input[type="checkbox"] {
   <ul class="collapse">
   <li><a href="#combinatoire" id="toc-combinatoire" class="nav-link" data-scroll-target="#combinatoire">Combinatoire</a></li>
   </ul></li>
+  <li><a href="#liste-de-tous-les-posts-sur-les-mathématiques" id="toc-liste-de-tous-les-posts-sur-les-mathématiques" class="nav-link" data-scroll-target="#liste-de-tous-les-posts-sur-les-mathématiques">Liste de tous les posts sur les Mathématiques</a></li>
   </ul>
 </nav>
-    </div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(10)</span></div><div class="category" data-category="cours">cours <span class="quarto-category-count">(1)</span></div><div class="category" data-category="maths">maths <span class="quarto-category-count">(10)</span></div></div></div>
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
 
 
-<button>
-<a href="../../index.html#category=maths">Toutes les pages sur les mathématiques</a>
-</button>
 <section id="analyse" class="level1">
 <h1>Analyse</h1>
 <ul>
@@ -200,12 +229,167 @@ ul.task-list li input[type="checkbox"] {
 <li><span class="math inline">\(\displaystyle \binom{k}{n}\)</span> <a href="../../posts/maths/combinaisons.html">combinaisons</a></li>
 <li><span class="math inline">\(\Gamma _{n}^{k}\)</span> <a href="../../posts/maths/combinaisons_avec_repetitions.html">combinaisons avec répétitions</a></li>
 </ul>
+<p><br> <br></p>
+<hr>
+<p><br> <br></p>
+</section>
+</section>
+<section id="liste-de-tous-les-posts-sur-les-mathématiques" class="level1">
+<h1>Liste de tous les posts sur les Mathématiques</h1>
+
 
 
 </section>
-</section>
 
-</main> <!-- /main -->
+<div class="quarto-listing quarto-listing-container-table" id="listing-listing">
+<div class="listing-actions-group">
+   <div class="input-group input-group-sm quarto-listing-sort">
+     <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
+     <select id="listing-listing-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
+       <option value="" disabled="" selected="" hidden="">Order By</option>
+       <option value="index" data-direction="asc">Default</option>
+         <option value="listing-date-sort" data-direction="asc">
+          Date - Oldest
+        </option>
+         <option value="listing-date-sort" data-direction="desc">
+          Date - Newest
+        </option>
+         <option value="listing-title-sort" data-direction="asc">
+          Title
+        </option>
+         <option value="listing-author" data-direction="asc">
+          Author
+        </option>
+     </select>
+  </div>
+    <div class="input-group input-group-sm quarto-listing-filter">
+      <span class="input-group-text"><i class="bi bi-search"></i></span>
+      <input type="text" class="search form-control" placeholder="Filter">
+    </div>
+</div>
+
+<table class="quarto-listing-table table">
+<thead>
+<tr>
+<th>
+<a class="sort" data-sort="listing-date-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Date</a>
+</th>
+<th>
+<a class="sort" data-sort="listing-title-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Title</a>
+</th>
+<th>
+<a class="sort" data-sort="listing-author" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Author</a>
+</th>
+</tr>
+</thead>
+<tbody class="list">
+<tr data-index="0" data-categories="maths" data-listing-date-sort="1673391600000" data-listing-file-modified-sort="1673442118860" data-listing-reading-time-sort="2.375" data-listing-title-sort="Congruence" data-listing-filename-sort="maths congruence.md">
+<td class="listing-date">
+Jan 11, 2023
+</td>
+<td class="listing-title">
+<a href="../../posts/maths/maths congruence.html" class="title">Congruence</a>
+</td>
+<td class="listing-author">
+</td>
+</tr>
+<tr data-index="1" data-categories="maths" data-listing-date-sort="1673391600000" data-listing-file-modified-sort="1673442104766" data-listing-reading-time-sort="0.595" data-listing-title-sort="nombre de permutations" data-listing-filename-sort="nombre de permutations.md">
+<td class="listing-date">
+Jan 11, 2023
+</td>
+<td class="listing-title">
+<a href="../../posts/maths/nombre de permutations.html" class="title">nombre de permutations</a>
+</td>
+<td class="listing-author">
+</td>
+</tr>
+<tr data-index="2" data-categories="maths" data-listing-date-sort="1673305200000" data-listing-file-modified-sort="1673395787103" data-listing-reading-time-sort="1.65" data-listing-title-sort="Dibisibilité" data-listing-filename-sort="maths divisibilité.md">
+<td class="listing-date">
+Jan 10, 2023
+</td>
+<td class="listing-title">
+<a href="../../posts/maths/maths divisibilité.html" class="title">Dibisibilité</a>
+</td>
+<td class="listing-author">
+</td>
+</tr>
+<tr data-index="3" data-categories="maths" data-listing-date-sort="1672959600000" data-listing-file-modified-sort="1673006298373" data-listing-reading-time-sort="1.11" data-listing-title-sort="arrangements avec répétitions" data-listing-filename-sort="arrangements avec répétitions.md">
+<td class="listing-date">
+Jan 6, 2023
+</td>
+<td class="listing-title">
+<a href="../../posts/maths/arrangements avec répétitions.html" class="title">arrangements avec répétitions</a>
+</td>
+<td class="listing-author">
+</td>
+</tr>
+<tr data-index="4" data-categories="maths" data-listing-date-sort="1672959600000" data-listing-file-modified-sort="1673006319389" data-listing-reading-time-sort="1.395" data-listing-title-sort="combinaisons avec répétitions" data-listing-filename-sort="combinaisons_avec_repetitions.md">
+<td class="listing-date">
+Jan 6, 2023
+</td>
+<td class="listing-title">
+<a href="../../posts/maths/combinaisons_avec_repetitions.html" class="title">combinaisons avec répétitions</a>
+</td>
+<td class="listing-author">
+</td>
+</tr>
+<tr data-index="5" data-categories="maths" data-listing-date-sort="1672873200000" data-listing-file-modified-sort="1672875539929" data-listing-reading-time-sort="1.395" data-listing-title-sort="arrangements" data-listing-filename-sort="arrangements.md">
+<td class="listing-date">
+Jan 5, 2023
+</td>
+<td class="listing-title">
+<a href="../../posts/maths/arrangements.html" class="title">arrangements</a>
+</td>
+<td class="listing-author">
+</td>
+</tr>
+<tr data-index="6" data-categories="maths" data-listing-date-sort="1672873200000" data-listing-file-modified-sort="1673392484355" data-listing-reading-time-sort="1.53" data-listing-title-sort="combinaisons" data-listing-filename-sort="combinaisons.md">
+<td class="listing-date">
+Jan 5, 2023
+</td>
+<td class="listing-title">
+<a href="../../posts/maths/combinaisons.html" class="title">combinaisons</a>
+</td>
+<td class="listing-author">
+</td>
+</tr>
+<tr data-index="7" data-categories="maths" data-listing-date-sort="1672786800000" data-listing-file-modified-sort="1673006277637" data-listing-reading-time-sort="0.345" data-listing-title-sort="Ensemble des parties d'un ensemble" data-listing-filename-sort="ensemble des parties dun ensemble.md">
+<td class="listing-date">
+Jan 4, 2023
+</td>
+<td class="listing-title">
+<a href="../../posts/maths/ensemble des parties dun ensemble.html" class="title">Ensemble des parties d’un ensemble</a>
+</td>
+<td class="listing-author">
+</td>
+</tr>
+<tr data-index="8" data-categories="maths" data-listing-date-sort="1672786800000" data-listing-file-modified-sort="1673006306426" data-listing-reading-time-sort="1.275" data-listing-title-sort="sacs (multi-ensembles)" data-listing-filename-sort="sacs.md">
+<td class="listing-date">
+Jan 4, 2023
+</td>
+<td class="listing-title">
+<a href="../../posts/maths/sacs.html" class="title">sacs (multi-ensembles)</a>
+</td>
+<td class="listing-author">
+</td>
+</tr>
+<tr data-index="9" data-categories="maths,cours" data-listing-date-sort="1672700400000" data-listing-file-modified-sort="1672875191845" data-listing-reading-time-sort="23.655" data-listing-title-sort="formulaire d'analyse" data-listing-filename-sort="formulaire d'analyse.md">
+<td class="listing-date">
+Jan 3, 2023
+</td>
+<td class="listing-title">
+<a href="../../posts/maths/formulaire d'analyse.html" class="title">formulaire d’analyse</a>
+</td>
+<td class="listing-author">
+</td>
+</tr>
+</tbody>
+
+</table>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

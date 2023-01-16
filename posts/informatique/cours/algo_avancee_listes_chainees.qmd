@@ -3,6 +3,7 @@ title: "Listes chaînées"
 date: 2023-01-13
 categories: [ informatique ]
 jupyter: python3
+toc: true
 ---
 
 ::: {.callout-note icon=false}
@@ -34,7 +35,6 @@ Deux représentations sont possibles :
      - une liset possède une **tête** de liste qui est un `Node`
      - les opérations que l'on fait sur une liste sont alors représentées comme des méthodes de cet objet
 
-## En python
 
 ```{python}
 class Node:
@@ -58,9 +58,9 @@ class LinkedList:
      - des attributs pour connaîrte la taille de la liste sans la recalculer
      - ajouter un pointeur vers le dernier élément de la liste pour accélérer les insertions d'éléments à la fin
 
-### Fonctions sur des `Node`
+## Fonctions sur des `Node`
 
-#### Afficher des éléments
+### Afficher les éléments
 
 ```{python}
 def affichage(L: Node) -> str:
@@ -76,9 +76,9 @@ print(affichage(mylist))
 
 Ou bien, dans une version récursive :
 
-```python
+```{python}
 def affichageRec(L: Node) -> str:
-    if L is None
+    if L is None:
         return ""
     return "<" + str(L.valeur) + "> "
 
@@ -98,12 +98,19 @@ class LinkedList:
         L = self.head
         res = ""
         while L is not None:
-            res = "<" + L.valeur + "> "
-            L = L.next
+            res += "<" + str(L.valeur) + "> "
+            L = L.suivant
         return res
+
+mylinkedlist = LinkedList(mylist)
+
+# __str__ permet de définir le résultat de str(mylinkedlist)
+# print appelle toujours la fonction str, donc pas beson de l'ajouter
+print(mylinkedlist)
+
 ```
 
-#### Calculer la longueur
+### Calculer la longueur
 
 On peut à nouveau le faire de plusieurs façons. Pour pouvoir utiliser la fonction `len` sur l'objet, on ajoute la méthode `__len__` sur la classe `LinkedList`
 
