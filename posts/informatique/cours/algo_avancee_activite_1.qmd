@@ -1,6 +1,7 @@
 ---
 title: "Algorithmique avancée - activité 1"
 date: 2023-01-15
+author: "Oscar Plaisant"
 categories: [ informatique ]
 toc: true
 jupyter: python3
