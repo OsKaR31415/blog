@@ -4,7 +4,7 @@ date: 2023-01-15
 categories: [ informatique ]
 toc: true
 jupyter: python3
-header-includes: \usepackage[left=2cm, right=2cm, top=1cm, bottom=2cm]{geometry}
+# header-includes: \usepackage[left=2cm, right=2cm, top=1cm, bottom=2cm]{geometry}
 ---
 
 
