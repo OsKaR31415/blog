@@ -4,7 +4,7 @@ date: 2023-01-15
 categories: [ informatique ]
 toc: true
 jupyter: python3
-# header-includes: \usepackage[left=2cm, right=2cm, top=1cm, bottom=2cm]{geometry}
+header-includes: \usepackage[left=2cm, right=2cm, top=1cm, bottom=2cm]{geometry}
 ---
 
 
@@ -255,8 +255,7 @@ Si on répète l'opération de mettre le dernier élément de
 l'ancienne liste à la fin de la nouvelle, retourne bien la
 liste
 
-![comment se passe l'inversion de la
-liste](../_images/demo_inverser_liste.gif)_
+![comment se passe l'inversion de la liste](../_images/demo_inverser_liste.gif)_
 
 ```{python}
 def reverse_list_pop (liste: list) -> list:
