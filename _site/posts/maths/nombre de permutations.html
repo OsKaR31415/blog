@@ -1,14 +1,13 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr"><head>
 
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.2.280">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2023-01-11">
 
-<title>0SK42 - nombre de permutations</title>
+<title>0SK42 - permutations (combinatoire)</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -48,15 +47,15 @@ ul.task-list li input[type="checkbox"] {
   "type": "overlay",
   "limit": 20,
   "language": {
-    "search-no-results-text": "No results",
-    "search-matching-documents-text": "matching documents",
-    "search-copy-link-title": "Copy link to search",
-    "search-hide-matches-text": "Hide additional matches",
-    "search-more-match-text": "more match in this document",
-    "search-more-matches-text": "more matches in this document",
-    "search-clear-button-title": "Clear",
-    "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit"
+    "search-no-results-text": "Pas de résultats",
+    "search-matching-documents-text": "documents trouvés",
+    "search-copy-link-title": "Copier le lien vers la recherche",
+    "search-hide-matches-text": "Cacher les correspondances additionnelles",
+    "search-more-match-text": "correspondance de plus dans ce document",
+    "search-more-matches-text": "correspondances de plus dans ce document",
+    "search-clear-button-title": "Effacer",
+    "search-detached-cancel-button-title": "Annuler",
+    "search-submit-button-title": "Envoyer"
   }
 }</script>
 
@@ -65,7 +64,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="../../styles.css">
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -117,8 +116,8 @@ ul.task-list li input[type="checkbox"] {
 <!-- content -->
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-body">
-      <h1 class="title">nombre de permutations</h1>
+    <div class="quarto-title column-page">
+      <h1 class="title">permutations (combinatoire)</h1>
                                 <div class="quarto-categories">
                 <div class="quarto-category">maths</div>
               </div>
@@ -130,9 +129,9 @@ ul.task-list li input[type="checkbox"] {
 
       
       <div>
-      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-heading">Date de publication</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">January 11, 2023</p>
+        <p class="date">19 janvier 2023</p>
       </div>
     </div>
     
@@ -140,12 +139,12 @@ ul.task-list li input[type="checkbox"] {
     </div>
     
   
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content quarto-banner-title-block" id="quarto-document-content">
+<main class="content quarto-banner-title-block column-page" id="quarto-document-content">
 
 
 
@@ -160,28 +159,57 @@ Définition
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Le fait de permuter des éléments est le fait de changer leur ordre.</p>
-<p>Donc, le nombre de permutations de <span class="math inline">\(n\)</span> éléments sont le nombre de façons d’arranger <span class="math inline">\(n\)</span> éléments.</p>
-<p>C’est de le nombre de <span class="math inline">\(n\)</span>-uplets dont les éléments sont dans un ensemble à <span class="math inline">\(n\)</span> éléments.</p>
-<p>Le nombre de permutations de <span class="math inline">\(n\)</span> éléments est <span class="math inline">\(n!\)</span></p>
+<p>On définit <span class="math inline">\(P_{n}\)</span> le nombre de permutations de <span class="math inline">\(n\)</span> éléments.</p>
+<p>C’est donc le nombre d’éléments de <span class="math inline">\(\mathfrak{S}_{n}\)</span> : <span class="math inline">\(P_{n} = \text{card} (\mathfrak{S}_{n})\)</span></p>
+<p>Mais surtout, on obtient la formule : <span class="math inline">\(\boxed{P_{n}= n!}\)</span></p>
 </div>
 </div>
 <section id="interprétation" class="level1">
 <h1>Interprétation</h1>
-<section id="exemples" class="level2">
-<h2 class="anchored" data-anchor-id="exemples">Exemples</h2>
-</section>
+<p>L’interprétation du nombre de permutations est immédiate, puisque <span class="math inline">\(P_{n}\)</span> compte le nombre de façons de “mélanger” (permuter) <span class="math inline">\(n\)</span> objets.</p>
+<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Exemples
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Voici quelques questions de combinatoire dont la réponse passe par des permutations :</p>
+<ul>
+<li>Combien y a-t-il de mélanges différents d’un jeu de 54 cartes ?
+<ul>
+<li><span class="math inline">\(P_{54} = 54! \approx 2.3 \cdot 10^{71}\)</span></li>
+</ul></li>
+<li>Combien de phrases peut-on former avec 10 mots différents
+<ul>
+<li>par exemple, avec “madame la marquise, vos beaux yeux me font mourir d’amour”
+<ul>
+<li>qui peut être permuté en “vos beaux yeux d’amour mourir me font, madame la marquise”, ou bien “vos beaux yeux, madame la marquise, me font mourir d’amour” etc…</li>
+</ul></li>
+<li><span class="math inline">\(P_{10} = 10! = 3628800\)</span></li>
+</ul></li>
+</ul>
+</div>
+</div>
 </section>
 <section id="formule" class="level1">
 <h1>Formule</h1>
-<p>Si on veut mettre les <span class="math inline">\(n\)</span> élément de notre ensemble dans un <span class="math inline">\(n\)</span> uplet, on doit les placer à un endroit :</p>
+<p>Faire une permutations de <span class="math inline">\(n\)</span> éléments, c’est placer ces <span class="math inline">\(n\)</span> éléments dans <span class="math inline">\(n\)</span> emplacements.</p>
+<p>On veut donc compter le nombre de façons de choisir ces placements</p>
 <ul>
-<li>pour le <span class="math inline">\(1^{er}\)</span> élément, il y à <span class="math inline">\(n\)</span> emplacement possibles</li>
-<li>pour le <span class="math inline">\(2^{ème}\)</span>, il y à <span class="math inline">\(n - 1\)</span> emplacements possible</li>
-<li>pour le <span class="math inline">\(3^{ème}\)</span>, il y à <span class="math inline">\(n-2\)</span> possibilités</li>
+<li>pour le <span class="math inline">\(1^{\text{er}}\)</span> élément, il y à <span class="math inline">\(n\)</span> emplacements possibles (ils sont tous libres)</li>
+<li>pour le <span class="math inline">\(2^{\text{ème}}\)</span> élément, il y à <span class="math inline">\(n-1\)</span> emplacements possibles (un des emplacements est pris par le <span class="math inline">\(1^{\text{er}}\)</span> élément)</li>
+<li>pour le <span class="math inline">\(3^{\text{ème}}\)</span> élément, il y à <span class="math inline">\(n-2\)</span> emplacements possibles</li>
 <li><span class="math inline">\(\vdots\)</span></li>
-<li>pour le <span class="math inline">\(n-1^{ème}\)</span>, il y à</li>
+<li>pour le <span class="math inline">\(n-2^{\text{ème}}\)</span> élément, <span class="math inline">\(3\)</span> emplacements possibles</li>
+<li>pour le <span class="math inline">\(n-1^{\text{ème}}\)</span>, <span class="math inline">\(2\)</span> emplacements possibles</li>
+<li>pour le <span class="math inline">\(n^{\text{ème}}\)</span> (et dernier), <span class="math inline">\(1\)</span> emplacement possible</li>
 </ul>
+<p>Donc, le nombre de façons de placer ces <span class="math inline">\(n\)</span> éléments (le nombre de permutations de <span class="math inline">\(n\)</span> éléments) est <span class="math inline">\(n\times (n-1)\times(n-2)\times\cdots \times 3 \times2\times 1 = n!\)</span></p>
+<p>D’où la formule : <span class="math inline">\(\boxed{P_{n} = n!}\)</span></p>
 
 
 </section>
@@ -227,12 +255,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // flash "checked"
     button.classList.add('code-copy-button-checked');
     var currentTitle = button.getAttribute("title");
-    button.setAttribute("title", "Copied!");
+    button.setAttribute("title", "Copié");
     let tooltip;
     if (window.bootstrap) {
       button.setAttribute("data-bs-toggle", "tooltip");
       button.setAttribute("data-bs-placement", "left");
-      button.setAttribute("data-bs-title", "Copied!");
+      button.setAttribute("data-bs-title", "Copié");
       tooltip = new bootstrap.Tooltip(button, 
         { trigger: "manual", 
           customClass: "code-copy-button-tooltip",

@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr"><head>
 
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.2.280">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2023-01-06">
 
 <title>0SK42 - combinaisons avec répétitions</title>
 <style>
@@ -48,15 +47,15 @@ ul.task-list li input[type="checkbox"] {
   "type": "overlay",
   "limit": 20,
   "language": {
-    "search-no-results-text": "No results",
-    "search-matching-documents-text": "matching documents",
-    "search-copy-link-title": "Copy link to search",
-    "search-hide-matches-text": "Hide additional matches",
-    "search-more-match-text": "more match in this document",
-    "search-more-matches-text": "more matches in this document",
-    "search-clear-button-title": "Clear",
-    "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit"
+    "search-no-results-text": "Pas de résultats",
+    "search-matching-documents-text": "documents trouvés",
+    "search-copy-link-title": "Copier le lien vers la recherche",
+    "search-hide-matches-text": "Cacher les correspondances additionnelles",
+    "search-more-match-text": "correspondance de plus dans ce document",
+    "search-more-matches-text": "correspondances de plus dans ce document",
+    "search-clear-button-title": "Effacer",
+    "search-detached-cancel-button-title": "Annuler",
+    "search-submit-button-title": "Envoyer"
   }
 }</script>
 
@@ -65,7 +64,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="../../styles.css">
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -117,7 +116,7 @@ ul.task-list li input[type="checkbox"] {
 <!-- content -->
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-body">
+    <div class="quarto-title column-page">
       <h1 class="title">combinaisons avec répétitions</h1>
                                 <div class="quarto-categories">
                 <div class="quarto-category">maths</div>
@@ -130,9 +129,9 @@ ul.task-list li input[type="checkbox"] {
 
       
       <div>
-      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-heading">Date de publication</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">January 6, 2023</p>
+        <p class="date">6 janvier 2023</p>
       </div>
     </div>
     
@@ -140,12 +139,12 @@ ul.task-list li input[type="checkbox"] {
     </div>
     
   
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content quarto-banner-title-block" id="quarto-document-content">
+<main class="content quarto-banner-title-block column-page" id="quarto-document-content">
 
 
 
@@ -160,8 +159,8 @@ Définition
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p><span class="math inline">\(\Gamma _{n}^{k} = \dbinom{n+k-1}{k}\)</span></p>
-<p>On note <span class="math inline">\(\Gamma_{n}^{k}\)</span> les <strong>combinaisons avec répétitions</strong> dans <span class="math inline">\(n\)</span> de <span class="math inline">\(k\)</span>.</p>
+<p><span class="math inline">\(K _{n}^{k} = \dbinom{n+k-1}{k}\)</span></p>
+<p>On note <span class="math inline">\(K{n}^{k}\)</span> les <strong>combinaisons avec répétitions</strong> dans <span class="math inline">\(n\)</span> de <span class="math inline">\(k\)</span>.</p>
 <p>C’est le <strong>nombre de <a href="../../posts/maths/sacs.html">sacs</a> à <span class="math inline">\(k\)</span> éléments inclus dans un ensemble à <span class="math inline">\(n\)</span> éléments</strong> - on utilise des sacs car on autorise la répétition mais que l’ordre n’est pas important</p>
 </div>
 </div>
@@ -171,13 +170,14 @@ Définition
 <i class="callout-icon"></i>
 </div>
 <div class="callout-caption-container flex-fill">
-Autre notation
+Autres notations
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
 <div id="callout-2" class="callout-2-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>On note parfois aussi <span class="math inline">\(\begin{pmatrix}\begin{pmatrix}k\\n\end{pmatrix}\end{pmatrix}\)</span>, car c’est une notion similaire aux <a href="../../posts/maths/combinaisons.html">combinaisons</a>, mais avec des <a href="../../posts/maths/sacs.html">sacs</a> plutôt que des ensembles (et que les sacs sont notés avec des doubles accolades : <span class="math inline">\(\{\!\!\{ a, a, a, b, \dots \}\!\!\}\)</span>)</p>
+<p>Les combinaisons avec répétitions sont aussi notées <span class="math inline">\(\Gamma _{n}^{k}\)</span>.</p>
+<p>Une notation que j’apprécie particulièrement est <span class="math inline">\(\begin{pmatrix}\begin{pmatrix}k\\n\end{pmatrix}\end{pmatrix}\)</span>, car c’est une notion similaire aux <a href="../../posts/maths/combinaisons.html">combinaisons</a>, mais avec des <a href="../../posts/maths/sacs.html">sacs</a> plutôt que des ensembles (et que les sacs sont notés avec des doubles accolades : <span class="math inline">\(\{\!\!\{ a, a, a, b, \dots \}\!\!\}\)</span>)</p>
 </div>
 </div>
 </div>
@@ -194,7 +194,7 @@ Note
 <div id="callout-3" class="callout-3-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>Définition</p>
-<p><span class="math inline">\(\Gamma_{n}^{k}\)</span> est le nombre de <a href="../../posts/maths/sacs.html">sacs</a> de cardinal <span class="math inline">\(k\)</span> distincts dont le support est inclus dans un ensemble de cardinal <span class="math inline">\(n\)</span></p>
+<p><span class="math inline">\(K_{n}^{k}\)</span> est le nombre de <a href="../../posts/maths/sacs.html">sacs</a> de cardinal <span class="math inline">\(k\)</span> distincts dont le support est inclus dans un ensemble de cardinal <span class="math inline">\(n\)</span></p>
 </div>
 </div>
 </div>
@@ -203,8 +203,8 @@ Note
 <p>On peut représenter un <a href="../../posts/maths/sacs.html">sac (ou multi-ensemble)</a> par une liste de points cercles par des barres.</p>
 <p>Par exemple, le <a href="../../posts/maths/sacs.html">sac</a> <span class="math inline">\(\{\!\!\{ a; a; c; c; c; d \}\!\!\}\)</span> avec des éléments pris dans <span class="math inline">\(\{ a; b; c; d \}\)</span> est représenté comme <span class="math inline">\(\bigcirc \bigcirc \mid \; \mid \bigcirc \bigcirc \bigcirc \mid \bigcirc\)</span> (avec un espace vide, car il n’y à aucun <span class="math inline">\(b\)</span>).</p>
 <p>Si on part d’un ensemble avec <span class="math inline">\(n\)</span> éléments, et qu’on forme des <a href="../../posts/maths/sacs.html">sacs</a> de taille <span class="math inline">\(k\)</span>. Dans la liste équivalente, on sait alors qu’il y aura <span class="math inline">\(k + n - 1\)</span> emplacements : <span class="math inline">\(k\)</span> cercles <span class="math inline">\(+\)</span> <span class="math inline">\(n - 1\)</span> barres. Alors, le nombre de <a href="../../posts/maths/sacs.html">sacs</a> que l’on peut former ainsi correspond au nombres de façon de placer les <span class="math inline">\(k\)</span> cercles parmi les <span class="math inline">\(k + n - 1\)</span> emplacements, soit <span class="math inline">\(\dbinom{k+n-1}{k}\)</span>.</p>
-<p>Or, on sait que le nombre de sacs à <span class="math inline">\(k\)</span> éléments pris dans un ensemble à <span class="math inline">\(n\)</span> éléments est justement <span class="math inline">\(\Gamma _{n}^{k}\)</span> (Voir définition). Donc, on a démontré la formule :</p>
-<p><span class="math inline">\(\boxed{\Gamma _{n}^{k} = \dbinom{n + k - 1}{k}}\)</span></p>
+<p>Or, on sait que le nombre de sacs à <span class="math inline">\(k\)</span> éléments pris dans un ensemble à <span class="math inline">\(n\)</span> éléments est justement <span class="math inline">\(K _{n}^{k}\)</span> (Voir définition). Donc, on a démontré la formule :</p>
+<p><span class="math inline">\(\boxed{K _{n}^{k} = \dbinom{n + k - 1}{k}}\)</span></p>
 
 
 </section>
@@ -250,12 +250,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // flash "checked"
     button.classList.add('code-copy-button-checked');
     var currentTitle = button.getAttribute("title");
-    button.setAttribute("title", "Copied!");
+    button.setAttribute("title", "Copié");
     let tooltip;
     if (window.bootstrap) {
       button.setAttribute("data-bs-toggle", "tooltip");
       button.setAttribute("data-bs-placement", "left");
-      button.setAttribute("data-bs-title", "Copied!");
+      button.setAttribute("data-bs-title", "Copié");
       tooltip = new bootstrap.Tooltip(button, 
         { trigger: "manual", 
           customClass: "code-copy-button-tooltip",

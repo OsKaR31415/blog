@@ -3,7 +3,7 @@ title: "Informatique"
 description: "Liste des notions d'Informatique"
 date: 2023-01-15
 image: "_images/computer_science.png"
-categories: [ informatique ]
+categories: [ informatique, index ]
 toc: true
 listing:
   contents: .
@@ -15,18 +15,22 @@ listing:
 ---
 
 
-
 # Notions d'informatique
 
 ## Structures de donnés
 
- - [structures de données](structure de donnés.qmd)
-     - [listes chaînées](listes_chainees.qmd)
+ - [structures de données](algo avancee structures de donnees.qmd)
+     - structures statiques
+         - [tableaux](algo avancee tableau)
+     - [structures dynamiques](algo avancee structures dynamiques.qmd)
+         - [listes chaînées](algo avancee listes chainees.qmd)
+     - [structures récursives](algo avancee structures recursives.qmd)
+         - [listes chaînées](algo avancee listes chainees.qmd)
 
 # Corrections
 
   - Algorithmique avancée
-      - [activité 1](cours/algo_avancee_activite_1.qmd)
+      - [activité 1](algo avancee activite 1.qmd)
 
 
 <br/> <br/>

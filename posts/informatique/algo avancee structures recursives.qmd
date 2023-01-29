@@ -1,0 +1,18 @@
+---
+title: "Structures de données récursives"
+date: 2023-01-13
+categories: [ informatique ]
+image: "_images/boucle_de_fleches.png"
+---
+
+::: {.callout-note icon=false}
+## Définition
+
+Une structure récursive (ou auto-référente) est une structure qui fait référence à une structure du même type dans sa définition.
+:::
+
+
+## Exemples
+
+ - [listes chaînées](algo avancee listes chainees.qmd)
+

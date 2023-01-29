@@ -1,7 +1,7 @@
 ---
 title: "formulaire d'analyse"
 date: 2023-01-03
-categories: [ maths, cours ]
+categories: [ maths, index ]
 image: "_images/tableau_a_craie.png"
 toc: true
 number-sections: true

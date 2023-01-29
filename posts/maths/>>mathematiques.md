@@ -2,7 +2,7 @@
 title: "Mathématiques"
 description: "Liste des notions de Mathématiques"
 date: 2023-01-04
-categories: [ maths, cours ]
+categories: [ maths, index ]
 image: "_images/mathematiques.png"
 toc: true
 listing:

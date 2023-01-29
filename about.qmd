@@ -35,6 +35,8 @@ Le contenu de ce blog est principalement :
 
 Le Blog s'appelle `OSK42`, à la fois en référence au nombre 42, la réponse à la "[grande question sur la vie, l'univers et le reste](https://fr.wikipedia.org/wiki/La_grande_question_sur_la_vie,_l%27Univers_et_le_reste)", et car `OSK42` est une écriture de `OSKAR` (mon pseudo) en [leet speak](https://fr.wikipedia.org/wiki/Leet_speak)
 
+![](_images/OsKaR.gif)
+
 
 <br/> <br/> <br/>
 <br/> <br/> <br/>
@@ -49,6 +51,8 @@ Le Blog s'appelle `OSK42`, à la fois en référence au nombre 42, la réponse �
 
  - <a href="https://www.flaticon.com/free-icons/algebra" title="algebra icons">Algebra icons created by Freepik - Flaticon</a>
  - <a href="https://www.flaticon.com/free-icons/backpack" title="backpack icons">Backpack icons created by max.icons - Flaticon</a>
+ - <a href="https://www.flaticon.com/free-icons/coding" title="coding icons">Coding icons created by juicy_fish - Flaticon</a>
+ - <a href="https://www.flaticon.com/free-icons/hierarchy" title="hierarchy icons">Hierarchy icons created by Becris - Flaticon</a>
  - <a href="https://www.flaticon.com/free-icons/loop" title="loop icons">Loop icons created by Pixelmeetup - Flaticon</a>
  - <a href="https://www.flaticon.com/free-icons/math" title="math icons">Math icons created by Freepik - Flaticon</a>
  - <a href="https://www.flaticon.com/free-icons/space-suit" title="space suit icons">Space suit icons created by surang - Flaticon</a>

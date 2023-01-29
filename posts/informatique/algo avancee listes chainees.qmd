@@ -1,0 +1,135 @@
+---
+title: "Listes chaînées"
+date: 2023-01-13
+categories: [ informatique ]
+jupyter: python3
+format: html
+toc: true
+---
+
+::: {.callout-note icon=false}
+## Définition
+
+Représentation d'une liste de façon [récursive](algo avancee structures recursives.qmd).
+ - les éléments sont rangés **linéairement**
+ - 
+
+
+La liste est un bloc, puis un lien vers la suite de la liste (le bloc suivant).
+
+![](_images/listes_chainees.svg)
+
+Une liste chaînée est donc un bloc contenant :
+ - une valeur
+ - un pointeur vers le premier bloc de la suite
+     - Cette "suite" est aussi une liste chaînée
+
+:::
+
+
+# Implémentation
+
+Deux représentations sont possibles :
+ - un objet `Node` qui suit la définition [récursive](algo avancee structures recursives.qmd)
+     - les opérations que l'on fait sur une liste sont alors représentées comme des fonctions (ou procédures) qui prennent un (ou plusieurs) `Node` en argument
+ - un objet `LinkedList` qui représente la liste chaînée à plus haut niveau d'abstraction
+     - une liset possède une **tête** de liste qui est un `Node`
+     - les opérations que l'on fait sur une liste sont alors représentées comme des méthodes de cet objet
+
+
+```{python}
+class Node:
+    def __init__(self, value, next=None):
+        """Create a new node.
+        """
+        self.valeur = value
+        self.suivant = next
+```
+
+
+```python
+class LinkedList:
+    def __init__(self, head: Node =None):
+        """Initialize a linked list"""
+        self.head : Node = head
+```
+
+ - possibilité de l'étendre 
+     - un itérateur
+     - des attributs pour connaîrte la taille de la liste sans la recalculer
+     - ajouter un pointeur vers le dernier élément de la liste pour accélérer les insertions d'éléments à la fin
+
+## Fonctions sur des `Node`
+
+### Afficher les éléments
+
+```{python}
+def affichage(L: Node) -> str:
+    chaine = ""
+    while L is not None:
+        chaine += "<" + str(L.valeur) + "> "
+        L = L.suivant
+    return chaine
+
+mylist = Node(3, Node(1, Node(4, Node(1, Node(5, Node(9))))))
+print(affichage(mylist))
+```
+
+Ou bien, dans une version récursive :
+
+```{python}
+def affichageRec(L: Node) -> str:
+    if L is None:
+        return ""
+    return "<" + str(L.valeur) + "> "
+
+mylist = Node(3, Node(1, Node(4, Node(1, Node(5, Node(9))))))
+print(affichage(mylist))
+```
+
+Et on peut utiliser la méthode magique `__str__` de la classe `LinkedList` :
+
+```{python}
+class LinkedList:
+    def __init__(self, head: Node =None):
+        """Initialize a linked list"""
+        self.head : Node = head
+
+    def __str__(self) -> str:
+        L = self.head
+        res = ""
+        while L is not None:
+            res += "<" + str(L.valeur) + "> "
+            L = L.suivant
+        return res
+
+mylinkedlist = LinkedList(mylist)
+
+# __str__ permet de définir le résultat de str(mylinkedlist)
+# print appelle toujours la fonction str, donc pas beson de l'ajouter
+print(mylinkedlist)
+
+```
+
+### Calculer la longueur
+
+On peut à nouveau le faire de plusieurs façons. Pour pouvoir utiliser la fonction `len` sur l'objet, on ajoute la méthode `__len__` sur la classe `LinkedList`
+
+```{python}
+class LinkedList:
+    def __init__(self, head: Node =None):
+        """Initialize a linked list"""
+        self.head : Node = head
+
+    def __len__(self) -> int:
+        L = self.head
+        length = 0
+        while L is not None:
+            length += 1
+            L = L.suivant
+        return length
+
+# on re-créée l'objet pour que la nouvelle fonction soit mise à jour
+mylinkedlist = LinkedList(mylist)
+print(len(mylinkedlist))
+```

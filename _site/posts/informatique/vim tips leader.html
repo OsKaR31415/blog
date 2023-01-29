@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.280">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="description" content="présentation du raccourci <leader> dans vim">
+
+<title>0SK42 - vim tips - leader</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "Pas de résultats",
+    "search-matching-documents-text": "documents trouvés",
+    "search-copy-link-title": "Copier le lien vers la recherche",
+    "search-hide-matches-text": "Cacher les correspondances additionnelles",
+    "search-more-match-text": "correspondance de plus dans ce document",
+    "search-more-matches-text": "correspondances de plus dans ce document",
+    "search-clear-button-title": "Effacer",
+    "search-detached-cancel-button-title": "Annuler",
+    "search-submit-button-title": "Envoyer"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">0SK42</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../posts/maths/>>mathematiques.html">
+ <span class="menu-text">Mathématiques</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../posts/informatique/>>informatique.html">
+ <span class="menu-text">Informatique</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../about.html">
+ <span class="menu-text">A propos</span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="../../index.xml"><i class="bi bi-rss" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/OsKaR31415"><i class="bi bi-github" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://youtube.com/@oskar31415"><i class="bi bi-youtube" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+</ul>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-page-left">
+      <h1 class="title">vim tips - leader</h1>
+                  <div>
+        <div class="description">
+          présentation du raccourci &lt;leader&gt; dans vim
+        </div>
+      </div>
+                          <div class="quarto-categories">
+                <div class="quarto-category">vim</div>
+                <div class="quarto-category">tips</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      
+      <div>
+      <div class="quarto-title-meta-heading">Date de publication</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">3 janvier 2023</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Sur cette page</h2>
+   
+  <ul>
+  <li><a href="#comment-utiliser-leader" id="toc-comment-utiliser-leader" class="nav-link active" data-scroll-target="#comment-utiliser-leader">Comment utiliser <code>&lt;leader&gt;</code></a>
+  <ul class="collapse">
+  <li><a href="#changer-la-touche-assignée" id="toc-changer-la-touche-assignée" class="nav-link" data-scroll-target="#changer-la-touche-assignée">Changer la touche assignée</a></li>
+  <li><a href="#cas-dutilisation" id="toc-cas-dutilisation" class="nav-link" data-scroll-target="#cas-dutilisation">Cas d’utilisation</a>
+  <ul class="collapse">
+  <li><a href="#exemples-dutilisation" id="toc-exemples-dutilisation" class="nav-link" data-scroll-target="#exemples-dutilisation">Exemples d’utilisation</a></li>
+  </ul></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
+
+
+
+
+<p>Dans Vim, on peut changer les raccourcis pour absolument toutes les touches.</p>
+<p>Justement, un des raccourcis que l’on peut changer, c’est <code>&lt;leader&gt;</code>.</p>
+<p>Quand il s’agit de <code>&lt;space&gt;</code> (touche espace), <code>&lt;tab&gt;</code>, <code>&lt;cr&gt;</code> (carriage return, pour la touche entrée), on arrive à deviner. Mais pour <code>&lt;leader&gt;</code>, c’est plus difficile.</p>
+<p>En fait, <code>&lt;leader&gt;</code> peut être n’importe quel raccourci que vous choisissez ! Quand vous créez un raccourci, <code>&lt;leader&gt;</code> sera remplacé par la valeur dans la variable <code>g:mapleader</code>.</p>
+<p>Cela peut être intéressant :</p>
+<ul>
+<li>on peut avoir une touche que l’on utilise souvent dans nos raccourcis</li>
+<li>on peut changer cette touche facilement
+<ul>
+<li>si on change de clavier</li>
+<li>si on change de layout (<code>azerty</code>, <code>qwerty</code>…)</li>
+<li>si on veut changer sa position (changer la touche assignée à <code>&lt;leader&gt;</code>)</li>
+</ul></li>
+</ul>
+<section id="comment-utiliser-leader" class="level1">
+<h1>Comment utiliser <code>&lt;leader&gt;</code></h1>
+<p>Par défaut, <code>&lt;leader&gt;</code> est assigné à la touche <code>\</code> (anti-slash). C’est parce que cette touche est facilement accessible sur un clavier <code>qwerty</code>.</p>
+<section id="changer-la-touche-assignée" class="level2">
+<h2 class="anchored" data-anchor-id="changer-la-touche-assignée">Changer la touche assignée</h2>
+<p>Comme je l’ai dit plus haut, <code>&lt;leader&gt;</code> est défini par la variable <code>g:mapleader</code></p>
+<p>Par exemple, si on souhaite utiliser la touche <code>,</code> pour leader :</p>
+<pre class="vimscript"><code>let g:mapleader = ","</code></pre>
+<p>Si on souhaite utiliser une touche qui est représentée entre <code>&lt;...&gt;</code>, comme la touche espace (<code>&lt;space&gt;</code>), il ne faut pas oublier le <code>\</code> avant le nom de la touche :</p>
+<pre class="vim"><code>let g:mapleader = "\&lt;space&gt;"</code></pre>
+<p>Si vous oubliez le <code>\</code>, il faudra taper toutes les touches : <code>&lt;</code>, <code>s</code>, <code>p</code>, <code>a</code>, <code>c</code>, <code>e</code>, <code>&gt;</code> pour déclancher <code>&lt;leader&gt;</code></p>
+</section>
+<section id="cas-dutilisation" class="level2">
+<h2 class="anchored" data-anchor-id="cas-dutilisation">Cas d’utilisation</h2>
+<p>Un des usages principaux de <code>&lt;leader&gt;</code> est comme préfixe (d’où le nom, leader, en anglais).</p>
+<p>Par préfixe, je veux dire une touche qui est au début de plein de raccourcis. C’est utile car Vim assigne déjà beaucoup de raccourcis, et donc ne laisse pas beaucoup de place pour que l’utilisateur définisse les siens. C’est pour cette raison que <code>&lt;leader&gt;</code> est utile : vous pouvez faire commencer plein de vos raccourcis par leader. Par exemple, j’ai défini les raccourcis <code>&lt;leader&gt;j</code>, <code>&lt;leader&gt;k</code>, <code>&lt;leader&gt;m</code>, <code>&lt;leader&gt;ul</code>…</p>
+<section id="exemples-dutilisation" class="level3">
+<h3 class="anchored" data-anchor-id="exemples-dutilisation">Exemples d’utilisation</h3>
+<p>Voici quelques exemples d’utilisation :</p>
+<ul>
+<li><code>&lt;leader&gt;m</code> pour <code>:make&lt;cr&gt;</code>, si vous utilisez des <a href="https://shiftcode.fr/comprendre-les-makefiles/" title="https://shiftcode.fr/comprendre-les-makefiles/">makefiles</a></li>
+<li><code>&lt;leader&gt;k</code> pour sauvegarder (c’est bizarre mais c’est ce que j’utilise)</li>
+<li><code>&lt;leader&gt;w</code> ou bien <code>&lt;leader&gt;q</code> pour <code>&lt;c-w&gt;</code>, afin d’éviter la touche contrôle quand on manipule les fenêtres</li>
+<li><code>&lt;leader&gt;t</code> pour <code>:tabnew&lt;cr&gt;</code> (créer un nouvel onglet)</li>
+<li><code>&lt;leader&gt;!</code> pour <code>:term ++curwin</code> (ouvrir un terminal dans la fenêtre actuelle)</li>
+</ul>
+<p><br> <br> <br> <br> <br> <br></p>
+<hr>
+<p>Mon .vimrc est disponible ici : <a href="https://github.com/OsKaR31415/config/blob/master/.vimrc">github.com/OsKaR31415/config</a> avec le reste de ma configuration.</p>
+
+
+</section>
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copié");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copié");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

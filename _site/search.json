@@ -1,269 +1,276 @@
 [
   {
-    "objectID": "posts/informatique/vim_tips_leader.html",
-    "href": "posts/informatique/vim_tips_leader.html",
-    "title": "vim tips - leader",
-    "section": "",
-    "text": "Dans Vim, on peut changer les raccourcis pour absolument toutes les touches.\nJustement, un des raccourcis que l’on peut changer, c’est <leader>.\nQuand il s’agit de <space> (touche espace), <tab>, <cr> (carriage return, pour la touche entrée), on arrive à deviner. Mais pour <leader>, c’est plus difficile.\nEn fait, <leader> peut être n’importe quel raccourci que vous choisissez ! Quand vous créez un raccourci, <leader> sera remplacé par la valeur dans la variable g:mapleader.\nCela peut être intéressant :"
-  },
-  {
-    "objectID": "posts/informatique/vim_tips_leader.html#changer-la-touche-assignée",
-    "href": "posts/informatique/vim_tips_leader.html#changer-la-touche-assignée",
-    "title": "vim tips - leader",
-    "section": "Changer la touche assignée",
-    "text": "Changer la touche assignée\nComme je l’ai dit plus haut, <leader> est défini par la variable g:mapleader\nPar exemple, si on souhaite utiliser la touche , pour leader :\nlet g:mapleader = \",\"\nSi on souhaite utiliser une touche qui est représentée entre <...>, comme la touche espace (<space>), il ne faut pas oublier le \\ avant le nom de la touche :\nlet g:mapleader = \"\\<space>\"\nSi vous oubliez le \\, il faudra taper toutes les touches : <, s, p, a, c, e, > pour déclancher <leader>"
-  },
-  {
-    "objectID": "posts/informatique/vim_tips_leader.html#cas-dutilisation",
-    "href": "posts/informatique/vim_tips_leader.html#cas-dutilisation",
-    "title": "vim tips - leader",
-    "section": "Cas d’utilisation",
-    "text": "Cas d’utilisation\nUn des usages principaux de <leader> est comme préfixe (d’où le nom, leader, en anglais).\nPar préfixe, je veux dire une touche qui est au début de plein de raccourcis. C’est utile car Vim assigne déjà beaucoup de raccourcis, et donc ne laisse pas beaucoup de place pour que l’utilisateur définisse les siens. C’est pour cette raison que <leader> est utile : vous pouvez faire commencer plein de vos raccourcis par leader. Par exemple, j’ai défini les raccourcis <leader>j, <leader>k, <leader>m, <leader>ul…\n\nExemples d’utilisation\nVoici quelques exemples d’utilisation :\n\n<leader>m pour :make<cr>, si vous utilisez des makefiles\n<leader>k pour sauvegarder (c’est bizarre mais c’est ce que j’utilise)\n<leader>w ou bien <leader>q pour <c-w>, afin d’éviter la touche contrôle quand on manipule les fenêtres\n<leader>t pour :tabnew<cr> (créer un nouvel onglet)\n<leader>! pour :term ++curwin (ouvrir un terminal dans la fenêtre actuelle)\n\n     \n\nMon .vimrc est disponible ici : github.com/OsKaR31415/config avec le reste de ma configuration."
-  },
-  {
-    "objectID": "posts/informatique/cours/algo_avancee_tableau.html",
-    "href": "posts/informatique/cours/algo_avancee_tableau.html",
-    "title": "Structure de données : tableau",
-    "section": "",
-    "text": "Structure de données statique\n\nLa taille du tableau est fixe\n\nPermet de stocker une liste de données\n\n\n\n\n\n\n\nAvantages des tableaux\n\n\n\n\nL’accès aux éléments est très rapide, en \\(O(1)\\)\n\nCar on sait directement où est un élément donné dans la mémoire\n\ncar la taille des cases est fixe\n\n\nUn tableau prends peu de place en mémoire\n\n\n\n\n\n\n\n\n\nDésavantages des tableaux\n\n\n\n\nIl impossible (ou difficile) de changer la taille d’un tableau\n\nsi on veut l’augmenter, il faut créer un nouveau tableau\n\nLa supression d’éléments est en \\(O(n)\\) (longue)\n\nil faut “décaler” tous les éléments après la valeur supprimée\n\nL’insertion d’éléments est impossible\n\nil faut augmenter la taille du tableau, donc en créer un nouveau, ou bien supprimer un autre élément"
-  },
-  {
-    "objectID": "posts/informatique/cours/algo_avancee_structures_dynamiques.html",
-    "href": "posts/informatique/cours/algo_avancee_structures_dynamiques.html",
-    "title": "Algorithmique : Structures dynamiques",
-    "section": "",
-    "text": "on a besoin de représenter des objets de taille inconnue, de taille variable\n\n\n\n\nlistes chaînées"
-  },
-  {
-    "objectID": "posts/informatique/cours/algo_avancee_listes_chainees.html",
-    "href": "posts/informatique/cours/algo_avancee_listes_chainees.html",
-    "title": "Listes chaînées",
-    "section": "",
-    "text": "Définition\n\n\n\nReprésentation d’une liste de façon récursive. - les éléments sont rangés linéairement -\nLa liste est un bloc, puis un lien vers la suite de la liste (le bloc suivant).\n\nUne liste chaînée est donc un bloc contenant : - une valeur - un pointeur vers le premier bloc de la suite - Cette “suite” est aussi une liste chaînée"
-  },
-  {
-    "objectID": "posts/informatique/cours/algo_avancee_listes_chainees.html#fonctions-sur-des-node",
-    "href": "posts/informatique/cours/algo_avancee_listes_chainees.html#fonctions-sur-des-node",
-    "title": "Listes chaînées",
-    "section": "Fonctions sur des Node",
-    "text": "Fonctions sur des Node\n\nAfficher les éléments\n\ndef affichage(L: Node) -> str:\n    chaine = \"\"\n    while L is not None:\n        chaine += \"<\" + str(L.valeur) + \"> \"\n        L = L.suivant\n    return chaine\n\nmylist = Node(3, Node(1, Node(4, Node(1, Node(5, Node(9))))))\nprint(affichage(mylist))\n\n<3> <1> <4> <1> <5> <9> \n\n\nOu bien, dans une version récursive :\n\ndef affichageRec(L: Node) -> str:\n    if L is None:\n        return \"\"\n    return \"<\" + str(L.valeur) + \"> \"\n\nmylist = Node(3, Node(1, Node(4, Node(1, Node(5, Node(9))))))\nprint(affichage(mylist))\n\n<3> <1> <4> <1> <5> <9> \n\n\nEt on peut utiliser la méthode magique __str__ de la classe LinkedList :\n\nclass LinkedList:\n    def __init__(self, head: Node =None):\n        \"\"\"Initialize a linked list\"\"\"\n        self.head : Node = head\n\n    def __str__(self) -> str:\n        L = self.head\n        res = \"\"\n        while L is not None:\n            res += \"<\" + str(L.valeur) + \"> \"\n            L = L.suivant\n        return res\n\nmylinkedlist = LinkedList(mylist)\n\n# __str__ permet de définir le résultat de str(mylinkedlist)\n# print appelle toujours la fonction str, donc pas beson de l'ajouter\nprint(mylinkedlist)\n\n<3> <1> <4> <1> <5> <9> \n\n\n\n\nCalculer la longueur\nOn peut à nouveau le faire de plusieurs façons. Pour pouvoir utiliser la fonction len sur l’objet, on ajoute la méthode __len__ sur la classe LinkedList\nclass LinkedList:\n    def __init__(self, head: Node =None):\n        \"\"\"Initialize a linked list\"\"\"\n        self.head : Node = head\n\n    def __len__(self) -> int:\n        L = self.head\n        while L is not None:"
-  },
-  {
-    "objectID": "posts/informatique/cours/algo_avancee_structures_recursives.html",
-    "href": "posts/informatique/cours/algo_avancee_structures_recursives.html",
-    "title": "Structures de données récursives",
-    "section": "",
-    "text": "Définition\n\n\n\nUne structure récursive (ou auto-référente) est une structure qui fait référence à une structure du même type dans sa définition."
-  },
-  {
-    "objectID": "posts/informatique/cours/algo_avancee_structures_recursives.html#exemples",
-    "href": "posts/informatique/cours/algo_avancee_structures_recursives.html#exemples",
-    "title": "Structures de données récursives",
-    "section": "Exemples",
-    "text": "Exemples\n\nlistes chaînées"
-  },
-  {
-    "objectID": "posts/informatique/cours/algo_avancee_activite_1.html",
-    "href": "posts/informatique/cours/algo_avancee_activite_1.html",
-    "title": "Algorithmique avancée",
-    "section": "",
-    "text": "Correction détaillée de l’activité 1 d’algorithmique avancée."
-  },
-  {
-    "objectID": "posts/informatique/cours/algo_avancee_activite_1.html#temps-dexécution-de-la-première-méthode-de-génération",
-    "href": "posts/informatique/cours/algo_avancee_activite_1.html#temps-dexécution-de-la-première-méthode-de-génération",
-    "title": "Algorithmique avancée",
-    "section": "Temps d’exécution de la première méthode de génération",
-    "text": "Temps d’exécution de la première méthode de génération\nVoici donc le code :\n\nfrom time import time\n\n# liste des nombres d'éléments dans la liste que l'on veut tester\n# on peut aussi utiliser range(10, 10000, 10) par exemple\nLIST_NUMBER_OF_ELEMENTS = [10, 100, 1000, 10000]\n\nfor number_of_elements in LIST_NUMBER_OF_ELEMENTS:\n    # on stocke le moment de début de la génération\n    start = time()\n\n    # on génère des nombres aléatoires\n    foo = generation(number_of_elements, 42, 73)\n\n    # on stocke le moment de fin de la génération\n    end = time()\n\n    # la durée d'exécution est la différence entre le moment de début et de fin\n    # Attention : si on inverse end et start, on obtient un nombre négatif\n    duration = end - start\n\n    # on arrondi la durée, pour que le tout soit plus lisible\n    duration = round(duration, 5)\n\n    # affichage du résultat\n    print(f\"générer {number_of_elements} à mis {duration} secondes\")\n\ngénérer 10 à mis 1e-05 secondes\ngénérer 100 à mis 5e-05 secondes\ngénérer 1000 à mis 0.00043 secondes\ngénérer 10000 à mis 0.0043 secondes"
-  },
-  {
-    "objectID": "posts/informatique/cours/algo_avancee_activite_1.html#temps-dexécution-avec-des-list-comprehension",
-    "href": "posts/informatique/cours/algo_avancee_activite_1.html#temps-dexécution-avec-des-list-comprehension",
-    "title": "Algorithmique avancée",
-    "section": "Temps d’exécution avec des list comprehension",
-    "text": "Temps d’exécution avec des list comprehension\nOn utilise exactement le même code, mais avec la fonction generation_comprehension au lieu de generation :\n\nLIST_NUMBER_OF_ELEMENTS = [10, 100, 1000, 10000]\n\nfor number_of_elements in LIST_NUMBER_OF_ELEMENTS:\n    start = time()\n    foo = generation_comprehension(number_of_elements, 42, 73)\n    end = time()\n\n    duration = end - start\n    duration = round(duration, 5)\n    print(f\"générer {number_of_elements} à mis {duration} secondes\")\n\ngénérer 10 à mis 2e-05 secondes\ngénérer 100 à mis 5e-05 secondes\ngénérer 1000 à mis 0.0004 secondes\ngénérer 10000 à mis 0.00398 secondes\n\n\nOn remarque que le code avec des list comprehension est effectivement plus rapide."
-  },
-  {
-    "objectID": "posts/informatique/cours/algo_avancee_activite_1.html#pour-aller-plus-loin",
-    "href": "posts/informatique/cours/algo_avancee_activite_1.html#pour-aller-plus-loin",
-    "title": "Algorithmique avancée",
-    "section": "Pour aller plus loin",
-    "text": "Pour aller plus loin\n\n\n\n\n\n\nPour aller plus loin\n\n\n\n\n\nOn peut, par exemple, définir une fonction qui mesure le temps d’exécution d’une autre fonction.\nPour cela, il faut que cette nouvelle fonction (appelons-la temps_execution), prenne en argument la fonction dont on mesure le temps d’exécution.\nOn obtient donc quelque chose comme ça :\n\ndef temps_execution(fonction_a_tester, number_of_elements: int) -> float:\n    # ici, on mesure le temps d'exécution\n    start = time()\n    foo = fonction_a_tester(number_of_elements, 42, 73)\n    end = time()\n    # l'idéal est de retourner le temps d'exécution plutôt\n    # que de mettre un print à l'intérieur d'une fonction\n    # (ce qui est à # éviter en général)\n    return end - start\n\nprint(temps_execution(generation,               1000))\nprint(temps_execution(generation_comprehension, 1000))\n\n0.00043487548828125\n0.00041604042053222656"
-  },
-  {
-    "objectID": "posts/informatique/cours/algo_avancee_activite_1.html#avec-une-boucle-et-une-nouvelle-liste",
-    "href": "posts/informatique/cours/algo_avancee_activite_1.html#avec-une-boucle-et-une-nouvelle-liste",
-    "title": "Algorithmique avancée",
-    "section": "Avec une boucle et une nouvelle liste",
-    "text": "Avec une boucle et une nouvelle liste\nOn peut utiliser une approche classique : créer la nouvelle liste au fur-et-à-mesure, en parcourant la liste de départ.\n\nAvec une condition sur les indices\n\ndef un_sur_n_indices(n: int, liste: list) -> list:\n    \"\"\"Sélectionne un élément sur `n` dans `liste`\"\"\"\n    new_list = []\n    for i in range(len(liste)):\n        # si i est divisible par n (une fois sur n)\n        if 0 == i % n:\n            # on ajoute l'élément à l'indice actuel dans la\n            # nouvelle liste\n            new_list.append(liste[i])\n    return new_list\n\nprint(un_sur_n_indices(3, [2, 7, 1, 8, 2, 8, 1, 8]))\n\n[2, 8, 1]\n\n\n\n\nEn utilisant un pas sur range\nUne technique plus simple (et plus efficace) est, plutôt que de tester pour tous les indices, d’utiliser un range dans lequel on met un pas de n.\nCela permet de n’avoir dans la boucle que les indices qui nous intéressent.\n\ndef un_sur_n_range(n: int, liste: list) -> list:\n    new_list = []\n    # on met un 0 pour que n soit bien le 3ème argument\n    for i in range(0, len(liste), n):\n        new_list.append(liste[i])\n    return new_list\n\nprint(un_sur_n_range(3, [2, 7, 1, 8, 2, 8, 1, 8]))\n\n[2, 8, 1]"
-  },
-  {
-    "objectID": "posts/informatique/cours/algo_avancee_activite_1.html#avec-une-list-comprehension",
-    "href": "posts/informatique/cours/algo_avancee_activite_1.html#avec-une-list-comprehension",
-    "title": "Algorithmique avancée",
-    "section": "Avec une list comprehension",
-    "text": "Avec une list comprehension\nPour être encore plus efficace, on peut simplement utiliser un list comprehension, en conjonction avec les techniques citées plus haut.\nLe code est en fait équivalent, mais permet de créer la liste de façon plus efficace.\n\nAvec une condition sur les indices\n\ndef un_sur_n_comprehension_indices(n: int, liste: list) -> list:\n    return [liste[i] for i in range(len(liste)) if 0 == i%n]\n\nprint(un_sur_n_comprehension_indices(3, [2, 7, 1, 8, 2, 8, 1, 8]))\n\n[2, 8, 1]\n\n\n\n\n\n\n\n\nRetours à la ligne pour plus de clarté\n\n\n\n\n\nPour rendre le code plus clair, on peut mettre un retour à la ligne avant le for et le if :\n\ndef un_sur_n_comprehension_indices(n: int, liste: list) -> list:\n    return [liste[i]\n            for i in range(len(liste))\n            if 0 == i%n]\n\nCela est très utile quand on construit des expressions complexes, par exemple avec des list comprehension à l’intérieur de list comprehension.\n\n\n\n\n\nEn utilisant un pas sur range\nOn peut à nouveau utiliser un pas sur le range pour ne pas avoir à tester toutes les itérations.\n\ndef un_sur_n_comprehension_range(n: int, liste: list) -> list:\n    return [liste[i] for i in range(0, len(liste), n)]\n\nprint(un_sur_n_comprehension_range(3, [2, 7, 1, 8, 2, 8, 1, 8]))\n\n[2, 8, 1]"
-  },
-  {
-    "objectID": "posts/informatique/cours/algo_avancee_activite_1.html#en-parcourant-les-indices-des-deux-tableaux",
-    "href": "posts/informatique/cours/algo_avancee_activite_1.html#en-parcourant-les-indices-des-deux-tableaux",
-    "title": "Algorithmique avancée",
-    "section": "En parcourant les indices des deux tableaux",
-    "text": "En parcourant les indices des deux tableaux\nL’approche classique est de parcourir les indices i des deux tableaux (que l’on suppose de même taille), et de calculer le maximum pour chaque indice, que l’on mettra dans une nouvelle liste.\n\ndef max_des_2_indices(tab1: list[int], tab2: list[int]) -> list[int]:\n    new_list: list[int] = []\n    # on parcoure les indices des deux tableaux en même\n    # temps avec i\n    for i in range(len(tab1)):\n        # la fonction max calcul le maximum de ses arguments\n        # ici, les arguments sont les valeurs des deux\n        # tableaux pour un même indice i\n        new_list.append(max(tab1[i], tab2[i]))\n    return new_list\n\nprint(max_des_2_indices([1, 4, 5], [2, 2, 3]))\n\n[2, 4, 5]"
-  },
-  {
-    "objectID": "posts/informatique/cours/algo_avancee_activite_1.html#en-utilisant-la-fonction-zip",
-    "href": "posts/informatique/cours/algo_avancee_activite_1.html#en-utilisant-la-fonction-zip",
-    "title": "Algorithmique avancée",
-    "section": "En utilisant la fonction zip",
-    "text": "En utilisant la fonction zip\nLa fonction zip va permettre de regrouper les éléments exactement comme on le souhaite. En effet, si on essaie de l’appliquer :\n\nz = zip([3, 1, 4, 1, 5, 9, 2, 6], [2, 7, 1, 8, 2, 8, 1, 8])\nprint(list(z))  # on utilise list pour que le contenu soit bien affiché\n\n[(3, 2), (1, 7), (4, 1), (1, 8), (5, 2), (9, 8), (2, 1), (6, 8)]\n\n\nOn observe que le résultat contient les paires d’éléments dont on veut faire le maximum : les deux premiers de chaque tableau, plus les deux deuxièmes, les deux troisièmes etc…\nOn peut alors proposer la solution suivante :\n\ndef max_des_2_zip(tab1: list[int], tab2: list[int]) -> list[int]:\n    new_list: list[int] = []\n    for couple in zip(tab1, tab2):\n        # on note que la fonction `max` peut s'appliquer sur\n        # une liste d'élément (ici `couple`)\n        new_list.append(max(couple))\n    return new_list\n\nprint(max_des_2_zip([1, 4, 5], [2, 2, 3]))\n\n[2, 4, 5]"
-  },
-  {
-    "objectID": "posts/informatique/cours/algo_avancee_activite_1.html#avec-zip-et-map",
-    "href": "posts/informatique/cours/algo_avancee_activite_1.html#avec-zip-et-map",
-    "title": "Algorithmique avancée",
-    "section": "Avec zip et map",
-    "text": "Avec zip et map\nOn remarque dans cet exercice une structure que l’on a déjà vue dans les exercices suivants : on veut appliquer une fonction particulière sur chaque élément d’une liste, puis récupérer le résultat.\nL’approche classique consiste à parcourir la liste, et à créer au fur-et-à-mesure une nouvelle liste.\nCependant, une des fonctions de base de python, la fonction map, permet directement d’appliquer une fonction sur tous les éléments d’une liste, et de récupérer le résultat.\nOn peut donc tout simplement écrire :\n\ndef max_des_2_map(tab1: list[int], tab2: list[int]) -> list[int]:\n    # on utilise list pour bien récupérer une liste\n    # on applique la fonction max sur le résultat du zip\n    return list(\n        map(max, zip(tab1, tab2))\n    )\n\nprint(max_des_2_map([1, 4, 5], [2, 2, 3]))\n\n[2, 4, 5]\n\n\nCette approche est une approche fonctionnelle du problème, puisque la solution est créée en composant des fonctions existantes (map, max, zip…) et sans structures de contrôles comme des boucles ou des conditions."
-  },
-  {
-    "objectID": "posts/informatique/cours/algo_avancee_activite_1.html#en-parcourant-les-indices-des-deux-listes",
-    "href": "posts/informatique/cours/algo_avancee_activite_1.html#en-parcourant-les-indices-des-deux-listes",
-    "title": "Algorithmique avancée",
-    "section": "En parcourant les indices des deux listes",
-    "text": "En parcourant les indices des deux listes\n\ndef myzip_indices(tab1: list[int], tab2: list[int]) -> list[int]:\n    zipped_list: list[int] = []\n    for idx in range(len(tab1)):\n        # on ajoute le couple (tab1[idx], tab2[idx]) à la\n        # liste de résultat. On a bien un couple d'éléments\n        # aux mêmes indices\n        zipped_list.append((tab1[idx], tab2[idx]))\n    return zipped_list\n\nprint(myzip_indices([1, 4, 5], [2, 2, 3]))\n\n[(1, 2), (4, 2), (5, 3)]"
-  },
-  {
-    "objectID": "posts/informatique/cours/algo_avancee_activite_1.html#si-les-deux-listes-ne-font-pas-la-même-taille",
-    "href": "posts/informatique/cours/algo_avancee_activite_1.html#si-les-deux-listes-ne-font-pas-la-même-taille",
-    "title": "Algorithmique avancée",
-    "section": "Si les deux listes ne font pas la même taille",
-    "text": "Si les deux listes ne font pas la même taille\nSi les deux listes ne font pas la même taille, il faut s’arrêter quand la première liste est arrivée au bout. On peut donc simplement parcourir les indices de 1 à min(len(tab1), len(tab2)).\n\ndef myzip_indices(tab1: list[int], tab2: list[int]) -> list[int]:\n    zipped_list: list[int] = []\n    for idx in range(min(len(tab1), len(tab2))):\n        # on ajoute le couple (tab1[idx], tab2[idx]) à la\n        # liste de résultat. On a bien un couple d'éléments\n        # aux mêmes indices\n        zipped_list.append((tab1[idx], tab2[idx]))\n    return zipped_list\n\nprint(myzip_indices([1, 4, 5], [2, 2, 3, 99, 0]))\nprint(myzip_indices([1, 4, 5, 7, 13, 4], [2, 2, 3, 99]))\n\n[(1, 2), (4, 2), (5, 3)]\n[(1, 2), (4, 2), (5, 3), (7, 99)]"
-  },
-  {
-    "objectID": "posts/informatique/cours/algo_avancee_activite_1.html#avec-des-list-comprehension",
-    "href": "posts/informatique/cours/algo_avancee_activite_1.html#avec-des-list-comprehension",
-    "title": "Algorithmique avancée",
-    "section": "Avec des list comprehension",
-    "text": "Avec des list comprehension\n\ndef genMat(row: int, col: int, mini: int, maxi: int) -> list[list[int]]:\n    \"\"\"Initialiser une matrice aléatoire de taille (row, col), avec des valeurs dans [mini, maxi].\n    \"\"\"\n    return [[randint(mini, maxi) for i in range(col)] for j in range(row)]\n\nprint(genMat(3, 3, 0, 10))\n\n[[3, 0, 9], [9, 4, 3], [10, 6, 7]]"
-  },
-  {
-    "objectID": "posts/informatique/cours/algo_avancee_activite_1.html#en-créant-la-liste-au-fur-et-à-mesure",
-    "href": "posts/informatique/cours/algo_avancee_activite_1.html#en-créant-la-liste-au-fur-et-à-mesure",
-    "title": "Algorithmique avancée",
-    "section": "En créant la liste au fur-et-à-mesure",
-    "text": "En créant la liste au fur-et-à-mesure\nLes list comprehension sont plus rapides, plus courtes et beaucoup plus simples à utiliser. Cet exemple est simplement là pour montrer d’autres techniques de programmation.\n\ndef genMat(row: int, col: int, mini: int, maxi: int) -> list[list[int]]:\n    \"\"\"Initialiser une matrice aléatoire de taille (row, col), avec des valeurs dans [mini, maxi].\n    \"\"\"\n    mat = []\n    for i in range(row):\n        line = []\n        for j in range(col):\n            line.append(randint(mini, maxi))\n        mat.append(line)\n    return mat\n\n\nprint(genMat(3, 3, 0, 10))\n\n[[9, 3, 1], [5, 4, 9], [5, 10, 8]]"
-  },
-  {
-    "objectID": "posts/informatique/cours/algo_avancee_activite_1.html#avec-des-list-comprehension-1",
-    "href": "posts/informatique/cours/algo_avancee_activite_1.html#avec-des-list-comprehension-1",
-    "title": "Algorithmique avancée",
-    "section": "Avec des list comprehension",
-    "text": "Avec des list comprehension\n\ndef diagonale(mat: list[list[float]]) -> list[float]:\n    \"\"\"Diagonale d'une matrice.\n    Args:\n        mat (list[list[float]]): Une matrice qui doit être carrée\n                                 (sinon la diagonale n'existe pas).\n    Returns:\n        list[float]: La liste des coefficients diagonaux de mat.\n    \"\"\"\n    return [mat[i][i] for i in range(len(mat))]\n\nprint(diagonale(M))\n\n[1, 0, 8]"
-  },
-  {
-    "objectID": "posts/informatique/cours/algo_avancee_activite_1.html#pour-aller-plus-loin-2",
-    "href": "posts/informatique/cours/algo_avancee_activite_1.html#pour-aller-plus-loin-2",
-    "title": "Algorithmique avancée",
-    "section": "Pour aller plus loin",
-    "text": "Pour aller plus loin\n\n\n\n\n\n\nLever une erreur si la matrice n’est pas carrée\n\n\n\n\n\nPour bien faire, il faudrait lever une erreur si la matrice n’est pas carrée. Pour cela, on utilise le mot clef raise, ainsi qu’une erreur classique de python. Ici, on utilisera ValueError (on pourrait également créer une classe d’erreurs nous-même, puisque les erreurs sont simplement des objets particuliers).\n\ndef diagonale(mat: list[list[float]]) -> list[float]:\n    \"\"\"Diagonale d'une matrice.\n    Args:\n        mat (list[list[float]]): Une matrice qui doit être carrée\n                                 (sinon la diagonale n'existe pas).\n    Returns:\n        list[float]: La liste des coefficients diagonaux de mat.\n    Raises:\n        ValueError: Si la matrice donnêé en entrée n'est pas carrée.\n    \"\"\"\n    # si la matrice n'est pas carrée\n    if not all(len(mat) == len(ligne) for ligne in mat):\n        # on lève une exception.\n        raise ValueError(\"La matrice n'est pas carrée.\")\n    return [mat[i][i] for i in range(len(mat))]\n\nprint(diagonale(M))\n\n[1, 0, 8]"
-  },
-  {
-    "objectID": "posts/informatique/cours/algo_avancee_activite_1.html#avec-une-list-comprehension-et-la-fonction-sum",
-    "href": "posts/informatique/cours/algo_avancee_activite_1.html#avec-une-list-comprehension-et-la-fonction-sum",
-    "title": "Algorithmique avancée",
-    "section": "Avec une list comprehension et la fonction sum",
-    "text": "Avec une list comprehension et la fonction sum\n\ndef trace(mat: list[list[float]]) -> float:\n    return sum([mat[i][i] for i in range(len(mat))])\n\nprint(trace(M))\n\n6"
-  },
-  {
-    "objectID": "posts/informatique/cours/algo_avancee_activite_1.html#en-réutilisant-la-fonction-diagonale",
-    "href": "posts/informatique/cours/algo_avancee_activite_1.html#en-réutilisant-la-fonction-diagonale",
-    "title": "Algorithmique avancée",
-    "section": "En réutilisant la fonction diagonale",
-    "text": "En réutilisant la fonction diagonale\nComme on a déjà programmé la fonction diagonale, on peut l’utiliser, car la trace d’une matrice est la somme de ses coefficients diagonaux.\n\ndef trace(mat: list[list[float]]) -> float:\n    return sum(diagonale(mat))\n\nprint(trace(M))\n\n6\n\n\nCela rend le code moins redondant et plus clair. C’est l’intérêt d’utiliser des fonctions."
-  },
-  {
-    "objectID": "posts/informatique/cours/algo_avancee_activite_1.html#avec-une-list-comprehension-1",
-    "href": "posts/informatique/cours/algo_avancee_activite_1.html#avec-une-list-comprehension-1",
-    "title": "Algorithmique avancée",
-    "section": "Avec une list comprehension",
-    "text": "Avec une list comprehension\n\ndef somme(mat1: list[list[float]], mat2: list[list[float]]) -> list[list[float]]:\n    \"\"\"Somme de deux matrices que l'on suppose de même taille.\n    \"\"\"\n    # nombre de lignes et de colonnes de mat1 (on la prends comme référence)\n    rows = len(mat1)\n    cols = len(mat1[0])\n    return [[mat1[i][j] + mat2[i][j] for j in range(cols)] for i in range(rows)]\n\nprint(somme(A, B))\n\n[[0, 2, 2, 4], [1, 1, 3, 3], [2, 5, 6, 9]]"
-  },
-  {
-    "objectID": "posts/informatique/cours/algo_avancee_activite_1.html#avec-des-zip-et-des-map",
-    "href": "posts/informatique/cours/algo_avancee_activite_1.html#avec-des-zip-et-des-map",
-    "title": "Algorithmique avancée",
-    "section": "Avec des zip et des map",
-    "text": "Avec des zip et des map\nCette solution est plus complexe, mais elle peut avoir des avantages.\nPar exemple, si on retire les fonctions list du code, la fonction va retourner un objet map, qui est une structure paresseuse (“lazy”). Cela veut dire qu’un élément donné ne sera calculé que lorsque l’on en aura besoin (lorsque l’on parcourra la matrice, par exemple).\nCe mécanisme est utile si, quand une fonction est longue à calculer, vous ne voulez pas être obligé d’attendre que toutes les valeurs soient passées par cette fonction avant de pouvoir passer à l’étape suivante : la fonction ne sera exécutée que sur les valeurs nécessaires, au fur-et-à-mesure.\n\ndef somme(mat1: list[list[float]], mat2: list[list[float]]) -> list[list[float]]:\n    \"\"\"Somme de deux matrices que l'on suppose de même taille.\n    \"\"\"\n    return list(map(lambda x: list(map(sum, zip(*x))), zip(mat1, mat2)))\n\nprint(somme(A, B))\n\n[[0, 2, 2, 4], [1, 1, 3, 3], [2, 5, 6, 9]]"
-  },
-  {
-    "objectID": "posts/informatique/cours/algo_avancee_activite_1.html#avec-des-list-comprehension-2",
-    "href": "posts/informatique/cours/algo_avancee_activite_1.html#avec-des-list-comprehension-2",
-    "title": "Algorithmique avancée",
-    "section": "Avec des list comprehension",
-    "text": "Avec des list comprehension\nEn utilisant presque directement la formule de définition du produit de matrices, on obtient cette fonction :\n\ndef produit(mat1: list[list[float]], mat2: list[list[float]]) -> list[list[float]]:\n    \"\"\"Produit matriciel mat1 * mat2.\n    On suppose que les matrices sont de la bonne taille, c'est-à-dire que la largeur de mat1 est égale à la longueur de mat2.\n    \"\"\"\n    # largeur et hauteur de la matrice résultat\n    width = len(mat1)\n    height = len(mat2[0])\n    common_length = len(mat2)\n    # on applique la formule :\n    return [[sum(mat1[j][l] * mat2[l][i] for l in range(common_length)) for i in range(height)] for j in range(width)]\n\nprint(produit(A, B))\n\n[[2, 6, 5, 6], [9, 8, 8, 8], [22, 19, 9, 19], [0, 0, 0, 0]]"
-  },
-  {
-    "objectID": "posts/informatique/cours/algo_avancee_activite_1.html#avec-le-module-numpy",
-    "href": "posts/informatique/cours/algo_avancee_activite_1.html#avec-le-module-numpy",
-    "title": "Algorithmique avancée",
-    "section": "Avec le module numpy",
-    "text": "Avec le module numpy\nLe module numpy (qui n’est pas un module standard, il faudra donc l’installer avec pip3 --install numpy) possède des fonctions pour l’algèbre linéaire et pour les tableaux en général.\nUn objet matrix est implémenté, et il permet de faire des multiplications de matrices… Avec l’opérateur * ! (Attention : si on utilise l’objet array de numpy plutôt que l’objet matrix, la multiplication sera une multiplication élément-par-élément plutôt qu’une vraie multiplication matricielle).\n\nimport numpy as np\n\nmA = np.matrix(A)\nmB = np.matrix(B)\n\nprint(mA * mB)\n\n[[ 2  6  5  6]\n [ 9  8  8  8]\n [22 19  9 19]\n [ 0  0  0  0]]\n\n\nNote : Avec cette méthode, le résultat n’est pas une liste de listes, mais une matrice."
-  },
-  {
-    "objectID": "posts/informatique/cours/algo_avancee_activite_1.html#récursion-simple",
-    "href": "posts/informatique/cours/algo_avancee_activite_1.html#récursion-simple",
-    "title": "Algorithmique avancée",
-    "section": "Récursion simple",
-    "text": "Récursion simple\nOn va simplement utiliser cette propriété : n divise m si et seulement si n divise m - n : \\(\\forall (m, n) \\in \\mathbb{Z}^{2}, \\quad n \\mid n \\iff n \\mid m-n\\)\nOn utilise aussi le fait que n divise m si et seulement si la valeur absolue de n divise la valeur absolue de m.\n\ndef estDivisible(n: int, m: int) -> bool:\n    if m == 0:\n        return True\n    if m < 0:\n        return False\n    return estDivisible(abs(n), abs(m) - abs(n))\n\nprint(estDivisible(3, 6))    # True\nprint(estDivisible(-3, 12))  # True\nprint(estDivisible(-3, 11))  # False\n\nTrue\nTrue\nFalse"
-  },
-  {
-    "objectID": "posts/informatique/cours/algo_avancee_activite_1.html#récursion-classique",
-    "href": "posts/informatique/cours/algo_avancee_activite_1.html#récursion-classique",
-    "title": "Algorithmique avancée",
-    "section": "Récursion classique",
-    "text": "Récursion classique\n\ndef longueur(n: int) -> int:\n    n = abs(n)\n    if n < 10:\n        return 1\n    return 1 + longueur(n / 10)\n\nprint(longueur(314159265358))\nprint(longueur(73))\nprint(longueur(1732))\n\n12\n2\n4"
-  },
-  {
-    "objectID": "posts/informatique/cours/algo_avancee_activite_1.html#récursion-terminale",
-    "href": "posts/informatique/cours/algo_avancee_activite_1.html#récursion-terminale",
-    "title": "Algorithmique avancée",
-    "section": "Récursion terminale",
-    "text": "Récursion terminale\n\n\n\n\n\n\nDétails sur la récursion terminale\n\n\n\n\n\nLa récursion terminale est un récursion dans laquelle la dernière opération est l’appel récursif. Cela veut dire que le return qui contient l’appel récursif ne contient pas d’autre opération.\nPar exemple, la définition précédente de longueur n’est pas terminale, car on doit ajouter 1 après l’appel récursif (la ligne de l’appel récursif est return 1 + longueur(n / 10)).\nLa récursion terminale à plusieurs avantages :\n\ndans certains langages, elle est optimisée (l’optimisation de pile d’appel) et rend l’exécution plus rapide et moins coûteuse en mémoire\nElle peut être très facilement convertie en une boucle (la variable de boucle est l’accumulateur de la récursion terminale)\n\nDans certains livres, comme SICP, on voit que la récursion terminale est appelée “itérative”\n\n\n\n\n\nIci, on a aussi optimisé le programme en travaillant uniquement sur des entiers, ce qui permet d’éviter des calculs de division de flottants, qui sont inutiles.\n\ndef longueur(n: int, acc: int =0) -> int:\n    n = int(abs(n))\n    if n < 10:\n        return acc + 1\n    return longueur(n // 10, acc + 1)\n\nprint(longueur(314159265358))\nprint(longueur(73))\nprint(longueur(1732))\n\n12\n2\n4"
-  },
-  {
-    "objectID": "posts/informatique/cours/algo_avancee_activite_1.html#récursion-classique-1",
-    "href": "posts/informatique/cours/algo_avancee_activite_1.html#récursion-classique-1",
-    "title": "Algorithmique avancée",
-    "section": "Récursion classique",
-    "text": "Récursion classique\n\ndef combienInf4(n: int) -> int:\n    # si le dernier chiffre de n est un 4\n    if n % 10 < 4:\n        # si n est un chiffre\n        if n < 10:\n            # le résultat est 1\n            return 1\n        # on ajoute 1 à la récursion car n finit par 4\n        return 1 + combienInf4(n // 10)\n    # si n ne finit pas par 4 :\n    # si n est un chiffre\n    if n < 10:\n        # aucun 4 dans n\n        return 0\n    # on ajoute rien à la récursion car n ne finit pas par 4\n    return combienInf4(n // 10)\n\nprint(combienInf4(123456))\nprint(combienInf4(314159265358))\nprint(combienInf4(789456))\n\n3\n5\n0"
-  },
-  {
-    "objectID": "posts/informatique/cours/algo_avancee_activite_1.html#avec-des-conversions-de-types",
-    "href": "posts/informatique/cours/algo_avancee_activite_1.html#avec-des-conversions-de-types",
-    "title": "Algorithmique avancée",
-    "section": "Avec des conversions de types",
-    "text": "Avec des conversions de types\nPour rendre le code plus simple (et plus lisible pour un programmeur averti), on utilise le fait que la fonction int puisse convertir des booléens en entiers.\n\ndef combienInf4(n: int) -> int:\n    if n < 10:\n        # (n < 4) est un booléen\n        # int(True) vaut 1, et int(False) vaut 0\n        return int(n < 4)\n    # on ajoute 1 à la récursion si le dernier chiffre de n est 4\n    return int(n % 10 < 4) + combienInf4(n // 10)\n\nprint(combienInf4(123456))\nprint(combienInf4(314159265358))\nprint(combienInf4(789456))\n\n3\n5\n0"
-  },
-  {
-    "objectID": "posts/informatique/cours/algo_avancee_activite_1.html#récursion-terminale-1",
-    "href": "posts/informatique/cours/algo_avancee_activite_1.html#récursion-terminale-1",
-    "title": "Algorithmique avancée",
-    "section": "Récursion terminale",
-    "text": "Récursion terminale\n\ndef combienInf4(n: int, acc: int =0) -> int:\n    if n < 10:\n        return int(n < 4) + acc\n    return combienInf4(n // 10, acc + int(n % 10 < 4))\n\n\nprint(combienInf4(123456))\nprint(combienInf4(314159265358))\nprint(combienInf4(789456))\n\n3\n5\n0"
-  },
-  {
-    "objectID": "posts/informatique/vim_tips_autocorriger_les_erreurs.html",
-    "href": "posts/informatique/vim_tips_autocorriger_les_erreurs.html",
+    "objectID": "posts/informatique/vim tips autocorriger les erreurs.html",
+    "href": "posts/informatique/vim tips autocorriger les erreurs.html",
     "title": "vim tips autocorriger les erreurs",
     "section": "",
     "text": "Cet article est une traduction\n\n\n\nCet article est une traduction des deux articles suivants\nhttps://nanotipsforvim.prose.sh/autofix-misspellings\nhttps://castel.dev/post/lecture-notes-1/\n\n\nVim possède un correcteur d’orthographe intégré, que l’on peut activer avec set spell. On peut ensuite changer la langue avec set spelllang=fr (ici pour passer en français).\nPour corriger une erreur, on peut utiliser z= sur un mot : cela affiche une liste des remplacements possibles. Pour se déplacer d’erreur en erreur, on utilise ]s (erreur suivante), et [s (erreur suivante).\nCela donne quelque chose comme ça :\n\n\n\nexemple de corrections d’orthographe avec vim\n\n\nC’est assez long, parce que pour chaque mot, il faut faire : z=1 puis appuyer sur entrée.\n\nMeilleur raccourci pour remplacer\nOn peut aussi faire 1z= : cela sélectionne directement la première correction dans la liste. Mais 1z= est plutôt long à taper.\nUne première solution est de créer un raccourci pour 1z=, comme za, par exemple.\nnnoremap za 1z=\nCela permet d’accélérer un peu :\n\n\n\nexemple de corrections d’orthographe avec vim\n\n\n\n\nRemplacer depuis le mode insertion\nLorsque l’on rédige des textes avec vim, on est plus souvent en mode insertion (à l’opposé, on est surtout en mode normal quand on édite du code).\nCela rend encore plus long le fait de corriger une faute de frappe, puisqu’il faut aller en mode normal, et revenir en mode insertion ensuite\nPour fluidifier ce mode d’édition (surtout si, comme moi, vous tapez vite mais avec peu de précision), on peut créer un raccourci qui, depuis le mode insertion, va corriger la dernière erreur, et revenir en mode insertion.\nCela donne quelque chose comme ça (le curseur est à droite, en mode insertion) :\n\nPersonnellement, j’utilise <c-z>, mais <c-l> peut être utilisé également.\nLe raccourci à ajouter est :\ninoremap <c-g>u<esc>[s1z=`]a<c-g>u\n\nles <c-g>u permettent d’annuler rapidement les remplacements\nle `] permet de remettre le curseur à la position de départ\n\n\n\n\n\n\n\nExplication détaillée du raccourci\n\n\n\n\n\n\n<c-g>u permet d’annuler le remplacement appart\n\nsinon, il sera considéré comme une partie de l’édition en cours\n\n<esc> va en mode normal\n[s va à la dernière erreur avant le curseur\n1z= remplace l’erreur par la première correction disponible\n`] revient à la dernière position du curseur (au dernier caractère modifié)\na revient en mode insertion\n<c-g>u fait à nouveau en sorte que l’annulation du remplacement soit faîte appart\n\nsinon, il sera considéré comme une partie de l’édition future"
+  },
+  {
+    "objectID": "posts/informatique/algo avancee tableau.html",
+    "href": "posts/informatique/algo avancee tableau.html",
+    "title": "Structure de données : tableau",
+    "section": "",
+    "text": "Structure de données statique\n\nLa taille du tableau est fixe\n\nPermet de stocker une liste de données\n\n\n\n\n\n\n\nAvantages des tableaux\n\n\n\n\nL’accès aux éléments est très rapide, en \\(O(1)\\)\n\nCar on sait directement où est un élément donné dans la mémoire\n\ncar la taille des cases est fixe\n\n\nUn tableau prends peu de place en mémoire\n\n\n\n\n\n\n\n\n\nDésavantages des tableaux\n\n\n\n\nIl impossible (ou difficile) de changer la taille d’un tableau\n\nsi on veut l’augmenter, il faut créer un nouveau tableau\n\nLa supression d’éléments est en \\(O(n)\\) (longue)\n\nil faut “décaler” tous les éléments après la valeur supprimée\n\nL’insertion d’éléments est impossible\n\nil faut augmenter la taille du tableau, donc en créer un nouveau, ou bien supprimer un autre élément"
   },
   {
     "objectID": "posts/informatique/>>informatique.html",
     "href": "posts/informatique/>>informatique.html",
     "title": "Informatique",
     "section": "",
-    "text": "structures de données\n\nlistes chaînées"
+    "text": "structures de données\n\nstructures statiques\n\ntableaux\n\nstructures dynamiques\n\nlistes chaînées\n\nstructures récursives\n\nlistes chaînées"
+  },
+  {
+    "objectID": "posts/informatique/algo avancee listes chainees.html",
+    "href": "posts/informatique/algo avancee listes chainees.html",
+    "title": "Listes chaînées",
+    "section": "",
+    "text": "Définition\n\n\n\nReprésentation d’une liste de façon récursive. - les éléments sont rangés linéairement -\nLa liste est un bloc, puis un lien vers la suite de la liste (le bloc suivant).\n\nUne liste chaînée est donc un bloc contenant : - une valeur - un pointeur vers le premier bloc de la suite - Cette “suite” est aussi une liste chaînée"
+  },
+  {
+    "objectID": "posts/informatique/algo avancee listes chainees.html#fonctions-sur-des-node",
+    "href": "posts/informatique/algo avancee listes chainees.html#fonctions-sur-des-node",
+    "title": "Listes chaînées",
+    "section": "Fonctions sur des Node",
+    "text": "Fonctions sur des Node\n\nAfficher les éléments\n\ndef affichage(L: Node) -> str:\n    chaine = \"\"\n    while L is not None:\n        chaine += \"<\" + str(L.valeur) + \"> \"\n        L = L.suivant\n    return chaine\n\nmylist = Node(3, Node(1, Node(4, Node(1, Node(5, Node(9))))))\nprint(affichage(mylist))\n\n<3> <1> <4> <1> <5> <9> \n\n\nOu bien, dans une version récursive :\n\ndef affichageRec(L: Node) -> str:\n    if L is None:\n        return \"\"\n    return \"<\" + str(L.valeur) + \"> \"\n\nmylist = Node(3, Node(1, Node(4, Node(1, Node(5, Node(9))))))\nprint(affichage(mylist))\n\n<3> <1> <4> <1> <5> <9> \n\n\nEt on peut utiliser la méthode magique __str__ de la classe LinkedList :\n\nclass LinkedList:\n    def __init__(self, head: Node =None):\n        \"\"\"Initialize a linked list\"\"\"\n        self.head : Node = head\n\n    def __str__(self) -> str:\n        L = self.head\n        res = \"\"\n        while L is not None:\n            res += \"<\" + str(L.valeur) + \"> \"\n            L = L.suivant\n        return res\n\nmylinkedlist = LinkedList(mylist)\n\n# __str__ permet de définir le résultat de str(mylinkedlist)\n# print appelle toujours la fonction str, donc pas beson de l'ajouter\nprint(mylinkedlist)\n\n<3> <1> <4> <1> <5> <9> \n\n\n\n\nCalculer la longueur\nOn peut à nouveau le faire de plusieurs façons. Pour pouvoir utiliser la fonction len sur l’objet, on ajoute la méthode __len__ sur la classe LinkedList\n\nclass LinkedList:\n    def __init__(self, head: Node =None):\n        \"\"\"Initialize a linked list\"\"\"\n        self.head : Node = head\n\n    def __len__(self) -> int:\n        L = self.head\n        length = 0\n        while L is not None:\n            length += 1\n            L = L.suivant\n        return length\n\n# on re-créée l'objet pour que la nouvelle fonction soit mise à jour\nmylinkedlist = LinkedList(mylist)\nprint(len(mylinkedlist))\n\n6"
+  },
+  {
+    "objectID": "posts/informatique/algo avancee activite 1.html",
+    "href": "posts/informatique/algo avancee activite 1.html",
+    "title": "Algorithmique avancée - activité 1",
+    "section": "",
+    "text": "Correction détaillée de l’activité 1 d’algorithmique avancée."
+  },
+  {
+    "objectID": "posts/informatique/algo avancee activite 1.html#temps-dexécution-de-la-première-méthode-de-génération",
+    "href": "posts/informatique/algo avancee activite 1.html#temps-dexécution-de-la-première-méthode-de-génération",
+    "title": "Algorithmique avancée - activité 1",
+    "section": "Temps d’exécution de la première méthode de génération",
+    "text": "Temps d’exécution de la première méthode de génération\nVoici donc le code :\n\nfrom time import time\n\n# liste des nombres d'éléments dans la liste que l'on veut tester\n# on peut aussi utiliser range(10, 10000, 10) par exemple\nLIST_NUMBER_OF_ELEMENTS = [10, 100, 1000, 10000]\n\nfor number_of_elements in LIST_NUMBER_OF_ELEMENTS:\n    # on stocke le moment de début de la génération\n    start = time()\n\n    # on génère des nombres aléatoires\n    foo = generation(number_of_elements, 42, 73)\n\n    # on stocke le moment de fin de la génération\n    end = time()\n\n    # la durée d'exécution est la différence entre le moment de début et de fin\n    # Attention : si on inverse end et start, on obtient un nombre négatif\n    duration = end - start\n\n    # on arrondi la durée, pour que le tout soit plus lisible\n    duration = round(duration, 5)\n\n    # affichage du résultat\n    print(f\"générer {number_of_elements} à mis {duration} secondes\")\n\ngénérer 10 à mis 1e-05 secondes\ngénérer 100 à mis 7e-05 secondes\ngénérer 1000 à mis 0.00071 secondes\ngénérer 10000 à mis 0.00661 secondes"
+  },
+  {
+    "objectID": "posts/informatique/algo avancee activite 1.html#temps-dexécution-avec-des-list-comprehension",
+    "href": "posts/informatique/algo avancee activite 1.html#temps-dexécution-avec-des-list-comprehension",
+    "title": "Algorithmique avancée - activité 1",
+    "section": "Temps d’exécution avec des list comprehension",
+    "text": "Temps d’exécution avec des list comprehension\nOn utilise exactement le même code, mais avec la fonction generation_comprehension au lieu de generation :\n\nLIST_NUMBER_OF_ELEMENTS = [10, 100, 1000, 10000]\n\nfor number_of_elements in LIST_NUMBER_OF_ELEMENTS:\n    start = time()\n    foo = generation_comprehension(number_of_elements, 42, 73)\n    end = time()\n\n    duration = end - start\n    duration = round(duration, 5)\n    print(f\"générer {number_of_elements} à mis {duration} secondes\")\n\ngénérer 10 à mis 2e-05 secondes\ngénérer 100 à mis 6e-05 secondes\ngénérer 1000 à mis 0.00065 secondes\ngénérer 10000 à mis 0.00637 secondes\n\n\nOn remarque que le code avec des list comprehension est effectivement plus rapide."
+  },
+  {
+    "objectID": "posts/informatique/algo avancee activite 1.html#pour-aller-plus-loin",
+    "href": "posts/informatique/algo avancee activite 1.html#pour-aller-plus-loin",
+    "title": "Algorithmique avancée - activité 1",
+    "section": "Pour aller plus loin",
+    "text": "Pour aller plus loin\n\n\n\n\n\n\nPour aller plus loin\n\n\n\n\n\nOn peut, par exemple, définir une fonction qui mesure le temps d’exécution d’une autre fonction.\nPour cela, il faut que cette nouvelle fonction (appelons-la temps_execution), prenne en argument la fonction dont on mesure le temps d’exécution.\nOn obtient donc quelque chose comme ça :\n\ndef temps_execution(fonction_a_tester, number_of_elements: int) -> float:\n    # ici, on mesure le temps d'exécution\n    start = time()\n    foo = fonction_a_tester(number_of_elements, 42, 73)\n    end = time()\n    # l'idéal est de retourner le temps d'exécution plutôt\n    # que de mettre un print à l'intérieur d'une fonction\n    # (ce qui est à # éviter en général)\n    return end - start\n\nprint(temps_execution(generation,               1000))\nprint(temps_execution(generation_comprehension, 1000))\n\n0.0006608963012695312\n0.0006499290466308594"
+  },
+  {
+    "objectID": "posts/informatique/algo avancee activite 1.html#avec-une-boucle-et-une-nouvelle-liste",
+    "href": "posts/informatique/algo avancee activite 1.html#avec-une-boucle-et-une-nouvelle-liste",
+    "title": "Algorithmique avancée - activité 1",
+    "section": "Avec une boucle et une nouvelle liste",
+    "text": "Avec une boucle et une nouvelle liste\nOn peut utiliser une approche classique : créer la nouvelle liste au fur-et-à-mesure, en parcourant la liste de départ.\n\nAvec une condition sur les indices\n\ndef un_sur_n_indices(n: int, liste: list) -> list:\n    \"\"\"Sélectionne un élément sur `n` dans `liste`\"\"\"\n    new_list = []\n    for i in range(len(liste)):\n        # si i est divisible par n (une fois sur n)\n        if 0 == i % n:\n            # on ajoute l'élément à l'indice actuel dans la\n            # nouvelle liste\n            new_list.append(liste[i])\n    return new_list\n\nprint(un_sur_n_indices(3, [2, 7, 1, 8, 2, 8, 1, 8]))\n\n[2, 8, 1]\n\n\n\n\nEn utilisant un pas sur range\nUne technique plus simple (et plus efficace) est, plutôt que de tester pour tous les indices, d’utiliser un range dans lequel on met un pas de n.\nCela permet de n’avoir dans la boucle que les indices qui nous intéressent.\n\ndef un_sur_n_range(n: int, liste: list) -> list:\n    new_list = []\n    # on met un 0 pour que n soit bien le 3ème argument\n    for i in range(0, len(liste), n):\n        new_list.append(liste[i])\n    return new_list\n\nprint(un_sur_n_range(3, [2, 7, 1, 8, 2, 8, 1, 8]))\n\n[2, 8, 1]"
+  },
+  {
+    "objectID": "posts/informatique/algo avancee activite 1.html#avec-une-list-comprehension",
+    "href": "posts/informatique/algo avancee activite 1.html#avec-une-list-comprehension",
+    "title": "Algorithmique avancée - activité 1",
+    "section": "Avec une list comprehension",
+    "text": "Avec une list comprehension\nPour être encore plus efficace, on peut simplement utiliser un list comprehension, en conjonction avec les techniques citées plus haut.\nLe code est en fait équivalent, mais permet de créer la liste de façon plus efficace.\n\nAvec une condition sur les indices\n\ndef un_sur_n_comprehension_indices(n: int, liste: list) -> list:\n    return [liste[i] for i in range(len(liste)) if 0 == i%n]\n\nprint(un_sur_n_comprehension_indices(3, [2, 7, 1, 8, 2, 8, 1, 8]))\n\n[2, 8, 1]\n\n\n\n\n\n\n\n\nRetours à la ligne pour plus de clarté\n\n\n\n\n\nPour rendre le code plus clair, on peut mettre un retour à la ligne avant le for et le if :\n\ndef un_sur_n_comprehension_indices(n: int, liste: list) -> list:\n    return [liste[i]\n            for i in range(len(liste))\n            if 0 == i%n]\n\nCela est très utile quand on construit des expressions complexes, par exemple avec des list comprehension à l’intérieur de list comprehension.\n\n\n\n\n\nEn utilisant un pas sur range\nOn peut à nouveau utiliser un pas sur le range pour ne pas avoir à tester toutes les itérations.\n\ndef un_sur_n_comprehension_range(n: int, liste: list) -> list:\n    return [liste[i] for i in range(0, len(liste), n)]\n\nprint(un_sur_n_comprehension_range(3, [2, 7, 1, 8, 2, 8, 1, 8]))\n\n[2, 8, 1]"
+  },
+  {
+    "objectID": "posts/informatique/algo avancee activite 1.html#en-parcourant-les-indices-des-deux-tableaux",
+    "href": "posts/informatique/algo avancee activite 1.html#en-parcourant-les-indices-des-deux-tableaux",
+    "title": "Algorithmique avancée - activité 1",
+    "section": "En parcourant les indices des deux tableaux",
+    "text": "En parcourant les indices des deux tableaux\nL’approche classique est de parcourir les indices i des deux tableaux (que l’on suppose de même taille), et de calculer le maximum pour chaque indice, que l’on mettra dans une nouvelle liste.\n\ndef max_des_2_indices(tab1: list[int], tab2: list[int]) -> list[int]:\n    new_list: list[int] = []\n    # on parcoure les indices des deux tableaux en même\n    # temps avec i\n    for i in range(len(tab1)):\n        # la fonction max calcul le maximum de ses arguments\n        # ici, les arguments sont les valeurs des deux\n        # tableaux pour un même indice i\n        new_list.append(max(tab1[i], tab2[i]))\n    return new_list\n\nprint(max_des_2_indices([1, 4, 5], [2, 2, 3]))\n\n[2, 4, 5]"
+  },
+  {
+    "objectID": "posts/informatique/algo avancee activite 1.html#en-utilisant-la-fonction-zip",
+    "href": "posts/informatique/algo avancee activite 1.html#en-utilisant-la-fonction-zip",
+    "title": "Algorithmique avancée - activité 1",
+    "section": "En utilisant la fonction zip",
+    "text": "En utilisant la fonction zip\nLa fonction zip va permettre de regrouper les éléments exactement comme on le souhaite. En effet, si on essaie de l’appliquer :\n\nz = zip([3, 1, 4, 1, 5, 9, 2, 6], [2, 7, 1, 8, 2, 8, 1, 8])\nprint(list(z))  # on utilise list pour que le contenu soit bien affiché\n\n[(3, 2), (1, 7), (4, 1), (1, 8), (5, 2), (9, 8), (2, 1), (6, 8)]\n\n\nOn observe que le résultat contient les paires d’éléments dont on veut faire le maximum : les deux premiers de chaque tableau, plus les deux deuxièmes, les deux troisièmes etc…\nOn peut alors proposer la solution suivante :\n\ndef max_des_2_zip(tab1: list[int], tab2: list[int]) -> list[int]:\n    new_list: list[int] = []\n    for couple in zip(tab1, tab2):\n        # on note que la fonction `max` peut s'appliquer sur\n        # une liste d'élément (ici `couple`)\n        new_list.append(max(couple))\n    return new_list\n\nprint(max_des_2_zip([1, 4, 5], [2, 2, 3]))\n\n[2, 4, 5]"
+  },
+  {
+    "objectID": "posts/informatique/algo avancee activite 1.html#avec-zip-et-map",
+    "href": "posts/informatique/algo avancee activite 1.html#avec-zip-et-map",
+    "title": "Algorithmique avancée - activité 1",
+    "section": "Avec zip et map",
+    "text": "Avec zip et map\nOn remarque dans cet exercice une structure que l’on a déjà vue dans les exercices suivants : on veut appliquer une fonction particulière sur chaque élément d’une liste, puis récupérer le résultat.\nL’approche classique consiste à parcourir la liste, et à créer au fur-et-à-mesure une nouvelle liste.\nCependant, une des fonctions de base de python, la fonction map, permet directement d’appliquer une fonction sur tous les éléments d’une liste, et de récupérer le résultat.\nOn peut donc tout simplement écrire :\n\ndef max_des_2_map(tab1: list[int], tab2: list[int]) -> list[int]:\n    # on utilise list pour bien récupérer une liste\n    # on applique la fonction max sur le résultat du zip\n    return list(\n        map(max, zip(tab1, tab2))\n    )\n\nprint(max_des_2_map([1, 4, 5], [2, 2, 3]))\n\n[2, 4, 5]\n\n\nCette approche est une approche fonctionnelle du problème, puisque la solution est créée en composant des fonctions existantes (map, max, zip…) et sans structures de contrôles comme des boucles ou des conditions."
+  },
+  {
+    "objectID": "posts/informatique/algo avancee activite 1.html#en-parcourant-les-indices-des-deux-listes",
+    "href": "posts/informatique/algo avancee activite 1.html#en-parcourant-les-indices-des-deux-listes",
+    "title": "Algorithmique avancée - activité 1",
+    "section": "En parcourant les indices des deux listes",
+    "text": "En parcourant les indices des deux listes\n\ndef myzip_indices(tab1: list[int], tab2: list[int]) -> list[int]:\n    zipped_list: list[int] = []\n    for idx in range(len(tab1)):\n        # on ajoute le couple (tab1[idx], tab2[idx]) à la\n        # liste de résultat. On a bien un couple d'éléments\n        # aux mêmes indices\n        zipped_list.append((tab1[idx], tab2[idx]))\n    return zipped_list\n\nprint(myzip_indices([1, 4, 5], [2, 2, 3]))\n\n[(1, 2), (4, 2), (5, 3)]"
+  },
+  {
+    "objectID": "posts/informatique/algo avancee activite 1.html#si-les-deux-listes-ne-font-pas-la-même-taille",
+    "href": "posts/informatique/algo avancee activite 1.html#si-les-deux-listes-ne-font-pas-la-même-taille",
+    "title": "Algorithmique avancée - activité 1",
+    "section": "Si les deux listes ne font pas la même taille",
+    "text": "Si les deux listes ne font pas la même taille\nSi les deux listes ne font pas la même taille, il faut s’arrêter quand la première liste est arrivée au bout. On peut donc simplement parcourir les indices de 1 à min(len(tab1), len(tab2)).\n\ndef myzip_indices(tab1: list[int], tab2: list[int]) -> list[int]:\n    zipped_list: list[int] = []\n    for idx in range(min(len(tab1), len(tab2))):\n        # on ajoute le couple (tab1[idx], tab2[idx]) à la\n        # liste de résultat. On a bien un couple d'éléments\n        # aux mêmes indices\n        zipped_list.append((tab1[idx], tab2[idx]))\n    return zipped_list\n\nprint(myzip_indices([1, 4, 5], [2, 2, 3, 99, 0]))\nprint(myzip_indices([1, 4, 5, 7, 13, 4], [2, 2, 3, 99]))\n\n[(1, 2), (4, 2), (5, 3)]\n[(1, 2), (4, 2), (5, 3), (7, 99)]"
+  },
+  {
+    "objectID": "posts/informatique/algo avancee activite 1.html#avec-des-list-comprehension",
+    "href": "posts/informatique/algo avancee activite 1.html#avec-des-list-comprehension",
+    "title": "Algorithmique avancée - activité 1",
+    "section": "Avec des list comprehension",
+    "text": "Avec des list comprehension\n\ndef genMat(row: int, col: int, mini: int, maxi: int) -> list[list[int]]:\n    \"\"\"Initialiser une matrice aléatoire de taille (row, col), avec des valeurs dans [mini, maxi].\n    \"\"\"\n    return [[randint(mini, maxi) for i in range(col)] for j in range(row)]\n\nprint(genMat(3, 3, 0, 10))\n\n[[7, 2, 1], [2, 1, 4], [2, 0, 0]]"
+  },
+  {
+    "objectID": "posts/informatique/algo avancee activite 1.html#en-créant-la-liste-au-fur-et-à-mesure",
+    "href": "posts/informatique/algo avancee activite 1.html#en-créant-la-liste-au-fur-et-à-mesure",
+    "title": "Algorithmique avancée - activité 1",
+    "section": "En créant la liste au fur-et-à-mesure",
+    "text": "En créant la liste au fur-et-à-mesure\nLes list comprehension sont plus rapides, plus courtes et beaucoup plus simples à utiliser. Cet exemple est simplement là pour montrer d’autres techniques de programmation.\n\ndef genMat(row: int, col: int, mini: int, maxi: int) -> list[list[int]]:\n    \"\"\"Initialiser une matrice aléatoire de taille (row, col), avec des valeurs dans [mini, maxi].\n    \"\"\"\n    mat = []\n    for i in range(row):\n        line = []\n        for j in range(col):\n            line.append(randint(mini, maxi))\n        mat.append(line)\n    return mat\n\n\nprint(genMat(3, 3, 0, 10))\n\n[[1, 6, 10], [7, 0, 2], [1, 9, 10]]"
+  },
+  {
+    "objectID": "posts/informatique/algo avancee activite 1.html#avec-des-list-comprehension-1",
+    "href": "posts/informatique/algo avancee activite 1.html#avec-des-list-comprehension-1",
+    "title": "Algorithmique avancée - activité 1",
+    "section": "Avec des list comprehension",
+    "text": "Avec des list comprehension\n\ndef diagonale(mat: list[list[float]]) -> list[float]:\n    \"\"\"Diagonale d'une matrice.\n    Args:\n        mat (list[list[float]]): Une matrice qui doit être carrée\n                                 (sinon la diagonale n'existe pas).\n    Returns:\n        list[float]: La liste des coefficients diagonaux de mat.\n    \"\"\"\n    return [mat[i][i] for i in range(len(mat))]\n\nprint(diagonale(M))\n\n[1, 0, 8]"
+  },
+  {
+    "objectID": "posts/informatique/algo avancee activite 1.html#pour-aller-plus-loin-2",
+    "href": "posts/informatique/algo avancee activite 1.html#pour-aller-plus-loin-2",
+    "title": "Algorithmique avancée - activité 1",
+    "section": "Pour aller plus loin",
+    "text": "Pour aller plus loin\n\n\n\n\n\n\nLever une erreur si la matrice n’est pas carrée\n\n\n\n\n\nPour bien faire, il faudrait lever une erreur si la matrice n’est pas carrée. Pour cela, on utilise le mot clef raise, ainsi qu’une erreur classique de python. Ici, on utilisera ValueError (on pourrait également créer une classe d’erreurs nous-même, puisque les erreurs sont simplement des objets particuliers).\n\ndef diagonale(mat: list[list[float]]) -> list[float]:\n    \"\"\"Diagonale d'une matrice.\n    Args:\n        mat (list[list[float]]): Une matrice qui doit être carrée\n                                 (sinon la diagonale n'existe pas).\n    Returns:\n        list[float]: La liste des coefficients diagonaux de mat.\n    Raises:\n        ValueError: Si la matrice donnêé en entrée n'est pas carrée.\n    \"\"\"\n    # si la matrice n'est pas carrée\n    if not all(len(mat) == len(ligne) for ligne in mat):\n        # on lève une exception.\n        raise ValueError(\"La matrice n'est pas carrée.\")\n    return [mat[i][i] for i in range(len(mat))]\n\nprint(diagonale(M))\n\n[1, 0, 8]"
+  },
+  {
+    "objectID": "posts/informatique/algo avancee activite 1.html#avec-une-list-comprehension-et-la-fonction-sum",
+    "href": "posts/informatique/algo avancee activite 1.html#avec-une-list-comprehension-et-la-fonction-sum",
+    "title": "Algorithmique avancée - activité 1",
+    "section": "Avec une list comprehension et la fonction sum",
+    "text": "Avec une list comprehension et la fonction sum\n\ndef trace(mat: list[list[float]]) -> float:\n    return sum([mat[i][i] for i in range(len(mat))])\n\nprint(trace(M))\n\n6"
+  },
+  {
+    "objectID": "posts/informatique/algo avancee activite 1.html#en-réutilisant-la-fonction-diagonale",
+    "href": "posts/informatique/algo avancee activite 1.html#en-réutilisant-la-fonction-diagonale",
+    "title": "Algorithmique avancée - activité 1",
+    "section": "En réutilisant la fonction diagonale",
+    "text": "En réutilisant la fonction diagonale\nComme on a déjà programmé la fonction diagonale, on peut l’utiliser, car la trace d’une matrice est la somme de ses coefficients diagonaux.\n\ndef trace(mat: list[list[float]]) -> float:\n    return sum(diagonale(mat))\n\nprint(trace(M))\n\n6\n\n\nCela rend le code moins redondant et plus clair. C’est l’intérêt d’utiliser des fonctions."
+  },
+  {
+    "objectID": "posts/informatique/algo avancee activite 1.html#avec-une-list-comprehension-1",
+    "href": "posts/informatique/algo avancee activite 1.html#avec-une-list-comprehension-1",
+    "title": "Algorithmique avancée - activité 1",
+    "section": "Avec une list comprehension",
+    "text": "Avec une list comprehension\n\ndef somme(mat1: list[list[float]], mat2: list[list[float]]) -> list[list[float]]:\n    \"\"\"Somme de deux matrices que l'on suppose de même taille.\n    \"\"\"\n    # nombre de lignes et de colonnes de mat1 (on la prends comme référence)\n    rows = len(mat1)\n    cols = len(mat1[0])\n    return [[mat1[i][j] + mat2[i][j] for j in range(cols)] for i in range(rows)]\n\nprint(somme(A, B))\n\n[[0, 2, 2, 4], [1, 1, 3, 3], [2, 5, 6, 9]]"
+  },
+  {
+    "objectID": "posts/informatique/algo avancee activite 1.html#avec-des-zip-et-des-map",
+    "href": "posts/informatique/algo avancee activite 1.html#avec-des-zip-et-des-map",
+    "title": "Algorithmique avancée - activité 1",
+    "section": "Avec des zip et des map",
+    "text": "Avec des zip et des map\nCette solution est plus complexe, mais elle peut avoir des avantages.\nPar exemple, si on retire les fonctions list du code, la fonction va retourner un objet map, qui est une structure paresseuse (“lazy”). Cela veut dire qu’un élément donné ne sera calculé que lorsque l’on en aura besoin (lorsque l’on parcourra la matrice, par exemple).\nCe mécanisme est utile si, quand une fonction est longue à calculer, vous ne voulez pas être obligé d’attendre que toutes les valeurs soient passées par cette fonction avant de pouvoir passer à l’étape suivante : la fonction ne sera exécutée que sur les valeurs nécessaires, au fur-et-à-mesure.\n\ndef somme(mat1: list[list[float]], mat2: list[list[float]]) -> list[list[float]]:\n    \"\"\"Somme de deux matrices que l'on suppose de même taille.\n    \"\"\"\n    return list(map(lambda x: list(map(sum, zip(*x))), zip(mat1, mat2)))\n\nprint(somme(A, B))\n\n[[0, 2, 2, 4], [1, 1, 3, 3], [2, 5, 6, 9]]"
+  },
+  {
+    "objectID": "posts/informatique/algo avancee activite 1.html#avec-des-list-comprehension-2",
+    "href": "posts/informatique/algo avancee activite 1.html#avec-des-list-comprehension-2",
+    "title": "Algorithmique avancée - activité 1",
+    "section": "Avec des list comprehension",
+    "text": "Avec des list comprehension\nEn utilisant presque directement la formule de définition du produit de matrices, on obtient cette fonction :\n\ndef produit(mat1: list[list[float]], mat2: list[list[float]]) -> list[list[float]]:\n    \"\"\"Produit matriciel mat1 * mat2.\n    On suppose que les matrices sont de la bonne taille, c'est-à-dire que la largeur de mat1 est égale à la longueur de mat2.\n    \"\"\"\n    # largeur et hauteur de la matrice résultat\n    width = len(mat1)\n    height = len(mat2[0])\n    common_length = len(mat2)\n    # on applique la formule :\n    return [[sum(mat1[j][l] * mat2[l][i] for l in range(common_length)) for i in range(height)] for j in range(width)]\n\nprint(produit(A, B))\n\n[[2, 6, 5, 6], [9, 8, 8, 8], [22, 19, 9, 19], [0, 0, 0, 0]]"
+  },
+  {
+    "objectID": "posts/informatique/algo avancee activite 1.html#avec-le-module-numpy",
+    "href": "posts/informatique/algo avancee activite 1.html#avec-le-module-numpy",
+    "title": "Algorithmique avancée - activité 1",
+    "section": "Avec le module numpy",
+    "text": "Avec le module numpy\nLe module numpy (qui n’est pas un module standard, il faudra donc l’installer avec pip3 --install numpy) possède des fonctions pour l’algèbre linéaire et pour les tableaux en général.\nUn objet matrix est implémenté, et il permet de faire des multiplications de matrices… Avec l’opérateur * ! (Attention : si on utilise l’objet array de numpy plutôt que l’objet matrix, la multiplication sera une multiplication élément-par-élément plutôt qu’une vraie multiplication matricielle).\n\nimport numpy as np\n\nmA = np.matrix(A)\nmB = np.matrix(B)\n\nprint(mA * mB)\n\n[[ 2  6  5  6]\n [ 9  8  8  8]\n [22 19  9 19]\n [ 0  0  0  0]]\n\n\nNote : Avec cette méthode, le résultat n’est pas une liste de listes, mais une matrice."
+  },
+  {
+    "objectID": "posts/informatique/algo avancee activite 1.html#récursion-simple",
+    "href": "posts/informatique/algo avancee activite 1.html#récursion-simple",
+    "title": "Algorithmique avancée - activité 1",
+    "section": "Récursion simple",
+    "text": "Récursion simple\nOn va simplement utiliser cette propriété : n divise m si et seulement si n divise m - n : \\(\\forall (m, n) \\in \\mathbb{Z}^{2}, \\quad n \\mid n \\iff n \\mid m-n\\)\nOn utilise aussi le fait que n divise m si et seulement si la valeur absolue de n divise la valeur absolue de m.\n\ndef estDivisible(n: int, m: int) -> bool:\n    if m == 0:\n        return True\n    if m < 0:\n        return False\n    return estDivisible(abs(n), abs(m) - abs(n))\n\nprint(estDivisible(3, 6))    # True\nprint(estDivisible(-3, 12))  # True\nprint(estDivisible(-3, 11))  # False\n\nTrue\nTrue\nFalse"
+  },
+  {
+    "objectID": "posts/informatique/algo avancee activite 1.html#récursion-classique",
+    "href": "posts/informatique/algo avancee activite 1.html#récursion-classique",
+    "title": "Algorithmique avancée - activité 1",
+    "section": "Récursion classique",
+    "text": "Récursion classique\n\ndef longueur(n: int) -> int:\n    n = abs(n)\n    if n < 10:\n        return 1\n    return 1 + longueur(n / 10)\n\nprint(longueur(314159265358))\nprint(longueur(73))\nprint(longueur(1732))\n\n12\n2\n4"
+  },
+  {
+    "objectID": "posts/informatique/algo avancee activite 1.html#récursion-terminale",
+    "href": "posts/informatique/algo avancee activite 1.html#récursion-terminale",
+    "title": "Algorithmique avancée - activité 1",
+    "section": "Récursion terminale",
+    "text": "Récursion terminale\n\n\n\n\n\n\nDétails sur la récursion terminale\n\n\n\n\n\nLa récursion terminale est un récursion dans laquelle la dernière opération est l’appel récursif. Cela veut dire que le return qui contient l’appel récursif ne contient pas d’autre opération.\nPar exemple, la définition précédente de longueur n’est pas terminale, car on doit ajouter 1 après l’appel récursif (la ligne de l’appel récursif est return 1 + longueur(n / 10)).\nLa récursion terminale à plusieurs avantages :\n\ndans certains langages, elle est optimisée (l’optimisation de pile d’appel) et rend l’exécution plus rapide et moins coûteuse en mémoire\nElle peut être très facilement convertie en une boucle (la variable de boucle est l’accumulateur de la récursion terminale)\n\nDans certains livres, comme SICP, on voit que la récursion terminale est appelée “itérative”\n\n\n\n\n\nIci, on a aussi optimisé le programme en travaillant uniquement sur des entiers, ce qui permet d’éviter des calculs de division de flottants, qui sont inutiles.\n\ndef longueur(n: int, acc: int =0) -> int:\n    n = int(abs(n))\n    if n < 10:\n        return acc + 1\n    return longueur(n // 10, acc + 1)\n\nprint(longueur(314159265358))\nprint(longueur(73))\nprint(longueur(1732))\n\n12\n2\n4"
+  },
+  {
+    "objectID": "posts/informatique/algo avancee activite 1.html#récursion-classique-1",
+    "href": "posts/informatique/algo avancee activite 1.html#récursion-classique-1",
+    "title": "Algorithmique avancée - activité 1",
+    "section": "Récursion classique",
+    "text": "Récursion classique\n\ndef combienInf4(n: int) -> int:\n    # si le dernier chiffre de n est un 4\n    if n % 10 < 4:\n        # si n est un chiffre\n        if n < 10:\n            # le résultat est 1\n            return 1\n        # on ajoute 1 à la récursion car n finit par 4\n        return 1 + combienInf4(n // 10)\n    # si n ne finit pas par 4 :\n    # si n est un chiffre\n    if n < 10:\n        # aucun 4 dans n\n        return 0\n    # on ajoute rien à la récursion car n ne finit pas par 4\n    return combienInf4(n // 10)\n\nprint(combienInf4(123456))\nprint(combienInf4(314159265358))\nprint(combienInf4(789456))\n\n3\n5\n0"
+  },
+  {
+    "objectID": "posts/informatique/algo avancee activite 1.html#avec-des-conversions-de-types",
+    "href": "posts/informatique/algo avancee activite 1.html#avec-des-conversions-de-types",
+    "title": "Algorithmique avancée - activité 1",
+    "section": "Avec des conversions de types",
+    "text": "Avec des conversions de types\nPour rendre le code plus simple (et plus lisible pour un programmeur averti), on utilise le fait que la fonction int puisse convertir des booléens en entiers.\n\ndef combienInf4(n: int) -> int:\n    if n < 10:\n        # (n < 4) est un booléen\n        # int(True) vaut 1, et int(False) vaut 0\n        return int(n < 4)\n    # on ajoute 1 à la récursion si le dernier chiffre de n est 4\n    return int(n % 10 < 4) + combienInf4(n // 10)\n\nprint(combienInf4(123456))\nprint(combienInf4(314159265358))\nprint(combienInf4(789456))\n\n3\n5\n0"
+  },
+  {
+    "objectID": "posts/informatique/algo avancee activite 1.html#récursion-terminale-1",
+    "href": "posts/informatique/algo avancee activite 1.html#récursion-terminale-1",
+    "title": "Algorithmique avancée - activité 1",
+    "section": "Récursion terminale",
+    "text": "Récursion terminale\n\ndef combienInf4(n: int, acc: int =0) -> int:\n    if n < 10:\n        return int(n < 4) + acc\n    return combienInf4(n // 10, acc + int(n % 10 < 4))\n\n\nprint(combienInf4(123456))\nprint(combienInf4(314159265358))\nprint(combienInf4(789456))\n\n3\n5\n0"
+  },
+  {
+    "objectID": "posts/informatique/vim tips leader.html",
+    "href": "posts/informatique/vim tips leader.html",
+    "title": "vim tips - leader",
+    "section": "",
+    "text": "Dans Vim, on peut changer les raccourcis pour absolument toutes les touches.\nJustement, un des raccourcis que l’on peut changer, c’est <leader>.\nQuand il s’agit de <space> (touche espace), <tab>, <cr> (carriage return, pour la touche entrée), on arrive à deviner. Mais pour <leader>, c’est plus difficile.\nEn fait, <leader> peut être n’importe quel raccourci que vous choisissez ! Quand vous créez un raccourci, <leader> sera remplacé par la valeur dans la variable g:mapleader.\nCela peut être intéressant :"
+  },
+  {
+    "objectID": "posts/informatique/vim tips leader.html#changer-la-touche-assignée",
+    "href": "posts/informatique/vim tips leader.html#changer-la-touche-assignée",
+    "title": "vim tips - leader",
+    "section": "Changer la touche assignée",
+    "text": "Changer la touche assignée\nComme je l’ai dit plus haut, <leader> est défini par la variable g:mapleader\nPar exemple, si on souhaite utiliser la touche , pour leader :\nlet g:mapleader = \",\"\nSi on souhaite utiliser une touche qui est représentée entre <...>, comme la touche espace (<space>), il ne faut pas oublier le \\ avant le nom de la touche :\nlet g:mapleader = \"\\<space>\"\nSi vous oubliez le \\, il faudra taper toutes les touches : <, s, p, a, c, e, > pour déclancher <leader>"
+  },
+  {
+    "objectID": "posts/informatique/vim tips leader.html#cas-dutilisation",
+    "href": "posts/informatique/vim tips leader.html#cas-dutilisation",
+    "title": "vim tips - leader",
+    "section": "Cas d’utilisation",
+    "text": "Cas d’utilisation\nUn des usages principaux de <leader> est comme préfixe (d’où le nom, leader, en anglais).\nPar préfixe, je veux dire une touche qui est au début de plein de raccourcis. C’est utile car Vim assigne déjà beaucoup de raccourcis, et donc ne laisse pas beaucoup de place pour que l’utilisateur définisse les siens. C’est pour cette raison que <leader> est utile : vous pouvez faire commencer plein de vos raccourcis par leader. Par exemple, j’ai défini les raccourcis <leader>j, <leader>k, <leader>m, <leader>ul…\n\nExemples d’utilisation\nVoici quelques exemples d’utilisation :\n\n<leader>m pour :make<cr>, si vous utilisez des makefiles\n<leader>k pour sauvegarder (c’est bizarre mais c’est ce que j’utilise)\n<leader>w ou bien <leader>q pour <c-w>, afin d’éviter la touche contrôle quand on manipule les fenêtres\n<leader>t pour :tabnew<cr> (créer un nouvel onglet)\n<leader>! pour :term ++curwin (ouvrir un terminal dans la fenêtre actuelle)\n\n     \n\nMon .vimrc est disponible ici : github.com/OsKaR31415/config avec le reste de ma configuration."
+  },
+  {
+    "objectID": "posts/informatique/algo avancee structures de donnees.html",
+    "href": "posts/informatique/algo avancee structures de donnees.html",
+    "title": "Structures de données",
+    "section": "",
+    "text": "structures dynamiques\nstructures récursives"
+  },
+  {
+    "objectID": "posts/informatique/algo avancee structures recursives.html",
+    "href": "posts/informatique/algo avancee structures recursives.html",
+    "title": "Structures de données récursives",
+    "section": "",
+    "text": "Définition\n\n\n\nUne structure récursive (ou auto-référente) est une structure qui fait référence à une structure du même type dans sa définition."
+  },
+  {
+    "objectID": "posts/informatique/algo avancee structures recursives.html#exemples",
+    "href": "posts/informatique/algo avancee structures recursives.html#exemples",
+    "title": "Structures de données récursives",
+    "section": "Exemples",
+    "text": "Exemples\n\nlistes chaînées"
+  },
+  {
+    "objectID": "posts/informatique/algo avancee structures dynamiques.html",
+    "href": "posts/informatique/algo avancee structures dynamiques.html",
+    "title": "Algorithmique : Structures dynamiques",
+    "section": "",
+    "text": "on a besoin de représenter des objets de taille inconnue, de taille variable\n\n\n\n\nlistes chaînées"
   },
   {
     "objectID": "posts/welcome/bienvenue sur mon blog.html",
@@ -420,6 +427,41 @@
     "text": "Définition\n\n\n\nOn définit \\(A_{n}^{k}\\) (lire “\\(A\\), \\(n\\), \\(k\\)”), les arrangements de \\(k\\) objets d’un ensemble de \\(n\\) objets, comme le nombre de \\(k-uplets\\) d’éléments d’un ensemble à \\(n\\) éléments.\nOn a : \\(\\displaystyle A_{n}^{k} = \\frac{n!}{(n-k)!}\\)\nNote : on dit aussi parfois “arrangements dans \\(n\\) de \\(k\\) éléments” pour \\(A_{n}^{k}\\)\nC’est le nombre de \\(k\\)-uplets d’éléments d’un ensemble à \\(n\\) éléments\n\n\n\nInterprétation\nOn peut interpréter \\(A_{n}^{k}\\) comme le nombre de façons de choisir \\(k\\) éléments dans un ensemble de \\(n\\) éléments, si l’ordre des éléments compte.\n\n\n\n\n\n\nExemples\n\n\n\n\n\nVoici quelques questions de combinatoire dont la réponse passe par des arrangements :\n\nCombien y a-t-il de nombres avec 3 chiffres distincts ?\n\nautrement dit : combien de façons de choisir 3 chiffres parmi les 10 qui existent (si l’ordre est important) ?\n\\(A_{10}^{3} = 720\\)\n\n\n\n\n\n\n\nFormule\nSi on choisit \\(k\\) éléments, et que l’ordre compte, alors :\n\npour le premier élément, on a \\(n\\) possibilités\npour le deuxième élément, on a \\(n - 1\\) possibilités, car on ne peut pas choisir deux fois le premier élément\npour le troisième, \\(n - 2\\) possibilités\npour le \\(4^{\\text{ème}}\\), \\(n-3\\) possibilités\n\\(\\vdots\\)\npour le \\(k-1^{\\text{ème}}\\), \\(n-k + 2\\) possibilités\npour le \\(k^{ème}\\) élément, \\(n - k + 1\\) possibilités\n\nDonc, en tout, on a \\(n \\times (n-1) \\times (n-2) \\times \\cdots \\times (n-k+1)\\) possibilités.\nOn peut exprimer cela comme le produit des nombres de \\(n-k+1\\) jusqu’à \\(n\\) : \\(\\prod\\limits_{i = n-k+1}^{n} i\\).\nPuisqu’on veut le produit jusqu’à \\(n\\) (donc \\(n!\\)), mais sans les nombres de \\(1\\) à \\(n-k\\) inclus (donc \\((n-k)!\\)), comme \\(\\dfrac{n!}{(n-k)!}\\)\nOn a donc bien la formule : \\(\\boxed{A_{n}^{k} = \\frac{n!}{(n-k)!}}\\)"
   },
   {
+    "objectID": "posts/maths/probabilites TD1.html",
+    "href": "posts/maths/probabilites TD1.html",
+    "title": "Correction du TD 1 de probabilités (combinatoire)",
+    "section": "",
+    "text": "Un ascenseur dessert les 12 étages d’un immeuble. Au rez-de-chaussée, l’ascenseur est vide et 10 personnes y entrent. On suppose que personne ne monte dans l’ascenseur aux différents étages atteints. Déterminer de combien de façons les 10 personnes qui ont pris cet ascenseur peuvent s’être réparties entre les étages."
+  },
+  {
+    "objectID": "posts/maths/probabilites TD1.html#un-chiffre-apparaissant-4-fois-les-autres-1-fois",
+    "href": "posts/maths/probabilites TD1.html#un-chiffre-apparaissant-4-fois-les-autres-1-fois",
+    "title": "Correction du TD 1 de probabilités (combinatoire)",
+    "section": "5) un chiffre apparaissant 4 fois, les autres 1 fois",
+    "text": "5) un chiffre apparaissant 4 fois, les autres 1 fois"
+  },
+  {
+    "objectID": "posts/maths/probabilites TD1.html#chiffres-formant-une-suite-strictement-croissante",
+    "href": "posts/maths/probabilites TD1.html#chiffres-formant-une-suite-strictement-croissante",
+    "title": "Correction du TD 1 de probabilités (combinatoire)",
+    "section": "6) 8 chiffres formant une suite strictement croissante",
+    "text": "6) 8 chiffres formant une suite strictement croissante\nPour former une suite strictement croissante de 8 chiffres, il faut prendre la suite \\((0, 1, 2, 3, 4, 5, 6, 7, 9)\\), et sélectionner 8 chiffres dans cette liste (l’ordre étant forcément croissant, on a pas besoin de considérer l’ordre).\nDonc, il y à \\(\\dbinom{10}{8}=45\\) possibilités"
+  },
+  {
+    "objectID": "posts/maths/probabilites TD1.html#chiffres-formant-une-suite-croissante",
+    "href": "posts/maths/probabilites TD1.html#chiffres-formant-une-suite-croissante",
+    "title": "Correction du TD 1 de probabilités (combinatoire)",
+    "section": "7) 8 chiffres formant une suite croissante",
+    "text": "7) 8 chiffres formant une suite croissante\nPour former une suite croissante (non strictement) de 8 chiffres, il faut considérer que l’on peut répéter le même élément. A nouveau, l’ordre est fixé, donc on ne le compte pas.\nDonc, il y à \\(K_{10}^{8} = \\begin{pmatrix}\\!\\!\\dbinom{10}{8}\\!\\!\\end{pmatrix} = \\dbinom{10}{3} = 120\\)"
+  },
+  {
+    "objectID": "posts/maths/transposition.html",
+    "href": "posts/maths/transposition.html",
+    "title": "transposition",
+    "section": "",
+    "text": "Définition\n\n\n\nUne transposition est une permutation qui n’échange que \\(2\\) éléments.\nUne transposition est donc un 2-cycle\nFormellement, une permutation \\(\\sigma \\in\\mathfrak{S}_{n}\\) est une transposition si et seulement si :\n\nil existe \\(2\\) éléments distincts \\(a\\) et \\(b\\) tels que \\(\\sigma(a)=b\\) et \\(\\sigma(b)=a\\)\n\\(\\forall i \\notin \\{ a; b \\}, \\quad \\sigma(i)=i\\) (tous les autres éléments sont invariants par \\(\\sigma\\))\n\n\n\n\n\n\n\n\n\nExemples\n\n\n\n\n\n\\(\\sigma = \\begin{pmatrix}1&2&3\\\\1&3&2\\end{pmatrix}\\) est une transposition\n\\(\\sigma=\\begin{pmatrix}1&2&3&4\\\\3&2&1&4\\end{pmatrix}\\) est une transposition\n\\(\\sigma=\\begin{pmatrix}1&2&3&4&5\\\\2&4&1&5&3\\end{pmatrix}\\) n’est pas une transposition\nVoici la visualisation d’une transposition :\n\n    \n        (\n        \n            \n                1\n                2\n                3\n                4\n                5\n            \n            \n                1\n                2\n                3\n                4\n                5\n            \n        \n        )"
+  },
+  {
     "objectID": "posts/maths/maths divisibilité.html",
     "href": "posts/maths/maths divisibilité.html",
     "title": "Dibisibilité",
@@ -438,7 +480,7 @@
     "href": "posts/maths/combinaisons_avec_repetitions.html",
     "title": "combinaisons avec répétitions",
     "section": "",
-    "text": "Définition\n\n\n\n\\(\\Gamma _{n}^{k} = \\dbinom{n+k-1}{k}\\)\nOn note \\(\\Gamma_{n}^{k}\\) les combinaisons avec répétitions dans \\(n\\) de \\(k\\).\nC’est le nombre de sacs à \\(k\\) éléments inclus dans un ensemble à \\(n\\) éléments - on utilise des sacs car on autorise la répétition mais que l’ordre n’est pas important\n\n\n\n\n\n\n\n\nAutre notation\n\n\n\n\n\nOn note parfois aussi \\(\\begin{pmatrix}\\begin{pmatrix}k\\\\n\\end{pmatrix}\\end{pmatrix}\\), car c’est une notion similaire aux combinaisons, mais avec des sacs plutôt que des ensembles (et que les sacs sont notés avec des doubles accolades : \\(\\{\\!\\!\\{ a, a, a, b, \\dots \\}\\!\\!\\}\\))\n\n\n\n\n\n\n\n\n\nNote\n\n\n\n\n\nDéfinition\n\\(\\Gamma_{n}^{k}\\) est le nombre de sacs de cardinal \\(k\\) distincts dont le support est inclus dans un ensemble de cardinal \\(n\\)\n\n\n\n\nFormule\nOn peut représenter un sac (ou multi-ensemble) par une liste de points cercles par des barres.\nPar exemple, le sac \\(\\{\\!\\!\\{ a; a; c; c; c; d \\}\\!\\!\\}\\) avec des éléments pris dans \\(\\{ a; b; c; d \\}\\) est représenté comme \\(\\bigcirc \\bigcirc \\mid \\; \\mid \\bigcirc \\bigcirc \\bigcirc \\mid \\bigcirc\\) (avec un espace vide, car il n’y à aucun \\(b\\)).\nSi on part d’un ensemble avec \\(n\\) éléments, et qu’on forme des sacs de taille \\(k\\). Dans la liste équivalente, on sait alors qu’il y aura \\(k + n - 1\\) emplacements : \\(k\\) cercles \\(+\\) \\(n - 1\\) barres. Alors, le nombre de sacs que l’on peut former ainsi correspond au nombres de façon de placer les \\(k\\) cercles parmi les \\(k + n - 1\\) emplacements, soit \\(\\dbinom{k+n-1}{k}\\).\nOr, on sait que le nombre de sacs à \\(k\\) éléments pris dans un ensemble à \\(n\\) éléments est justement \\(\\Gamma _{n}^{k}\\) (Voir définition). Donc, on a démontré la formule :\n\\(\\boxed{\\Gamma _{n}^{k} = \\dbinom{n + k - 1}{k}}\\)"
+    "text": "Définition\n\n\n\n\\(K _{n}^{k} = \\dbinom{n+k-1}{k}\\)\nOn note \\(K{n}^{k}\\) les combinaisons avec répétitions dans \\(n\\) de \\(k\\).\nC’est le nombre de sacs à \\(k\\) éléments inclus dans un ensemble à \\(n\\) éléments - on utilise des sacs car on autorise la répétition mais que l’ordre n’est pas important\n\n\n\n\n\n\n\n\nAutres notations\n\n\n\n\n\nLes combinaisons avec répétitions sont aussi notées \\(\\Gamma _{n}^{k}\\).\nUne notation que j’apprécie particulièrement est \\(\\begin{pmatrix}\\begin{pmatrix}k\\\\n\\end{pmatrix}\\end{pmatrix}\\), car c’est une notion similaire aux combinaisons, mais avec des sacs plutôt que des ensembles (et que les sacs sont notés avec des doubles accolades : \\(\\{\\!\\!\\{ a, a, a, b, \\dots \\}\\!\\!\\}\\))\n\n\n\n\n\n\n\n\n\nNote\n\n\n\n\n\nDéfinition\n\\(K_{n}^{k}\\) est le nombre de sacs de cardinal \\(k\\) distincts dont le support est inclus dans un ensemble de cardinal \\(n\\)\n\n\n\n\nFormule\nOn peut représenter un sac (ou multi-ensemble) par une liste de points cercles par des barres.\nPar exemple, le sac \\(\\{\\!\\!\\{ a; a; c; c; c; d \\}\\!\\!\\}\\) avec des éléments pris dans \\(\\{ a; b; c; d \\}\\) est représenté comme \\(\\bigcirc \\bigcirc \\mid \\; \\mid \\bigcirc \\bigcirc \\bigcirc \\mid \\bigcirc\\) (avec un espace vide, car il n’y à aucun \\(b\\)).\nSi on part d’un ensemble avec \\(n\\) éléments, et qu’on forme des sacs de taille \\(k\\). Dans la liste équivalente, on sait alors qu’il y aura \\(k + n - 1\\) emplacements : \\(k\\) cercles \\(+\\) \\(n - 1\\) barres. Alors, le nombre de sacs que l’on peut former ainsi correspond au nombres de façon de placer les \\(k\\) cercles parmi les \\(k + n - 1\\) emplacements, soit \\(\\dbinom{k+n-1}{k}\\).\nOr, on sait que le nombre de sacs à \\(k\\) éléments pris dans un ensemble à \\(n\\) éléments est justement \\(K _{n}^{k}\\) (Voir définition). Donc, on a démontré la formule :\n\\(\\boxed{K _{n}^{k} = \\dbinom{n + k - 1}{k}}\\)"
   },
   {
     "objectID": "posts/maths/maths congruence.html",
@@ -471,16 +513,16 @@
   {
     "objectID": "posts/maths/nombre de permutations.html",
     "href": "posts/maths/nombre de permutations.html",
-    "title": "nombre de permutations",
+    "title": "permutations (combinatoire)",
     "section": "",
-    "text": "Définition\n\n\n\nLe fait de permuter des éléments est le fait de changer leur ordre.\nDonc, le nombre de permutations de \\(n\\) éléments sont le nombre de façons d’arranger \\(n\\) éléments.\nC’est de le nombre de \\(n\\)-uplets dont les éléments sont dans un ensemble à \\(n\\) éléments.\nLe nombre de permutations de \\(n\\) éléments est \\(n!\\)"
+    "text": "Définition\n\n\n\nOn définit \\(P_{n}\\) le nombre de permutations de \\(n\\) éléments.\nC’est donc le nombre d’éléments de \\(\\mathfrak{S}_{n}\\) : \\(P_{n} = \\text{card} (\\mathfrak{S}_{n})\\)\nMais surtout, on obtient la formule : \\(\\boxed{P_{n}= n!}\\)\n\n\n\nInterprétation\nL’interprétation du nombre de permutations est immédiate, puisque \\(P_{n}\\) compte le nombre de façons de “mélanger” (permuter) \\(n\\) objets.\n\n\n\n\n\n\nExemples\n\n\n\nVoici quelques questions de combinatoire dont la réponse passe par des permutations :\n\nCombien y a-t-il de mélanges différents d’un jeu de 54 cartes ?\n\n\\(P_{54} = 54! \\approx 2.3 \\cdot 10^{71}\\)\n\nCombien de phrases peut-on former avec 10 mots différents\n\npar exemple, avec “madame la marquise, vos beaux yeux me font mourir d’amour”\n\nqui peut être permuté en “vos beaux yeux d’amour mourir me font, madame la marquise”, ou bien “vos beaux yeux, madame la marquise, me font mourir d’amour” etc…\n\n\\(P_{10} = 10! = 3628800\\)\n\n\n\n\n\n\nFormule\nFaire une permutations de \\(n\\) éléments, c’est placer ces \\(n\\) éléments dans \\(n\\) emplacements.\nOn veut donc compter le nombre de façons de choisir ces placements\n\npour le \\(1^{\\text{er}}\\) élément, il y à \\(n\\) emplacements possibles (ils sont tous libres)\npour le \\(2^{\\text{ème}}\\) élément, il y à \\(n-1\\) emplacements possibles (un des emplacements est pris par le \\(1^{\\text{er}}\\) élément)\npour le \\(3^{\\text{ème}}\\) élément, il y à \\(n-2\\) emplacements possibles\n\\(\\vdots\\)\npour le \\(n-2^{\\text{ème}}\\) élément, \\(3\\) emplacements possibles\npour le \\(n-1^{\\text{ème}}\\), \\(2\\) emplacements possibles\npour le \\(n^{\\text{ème}}\\) (et dernier), \\(1\\) emplacement possible\n\nDonc, le nombre de façons de placer ces \\(n\\) éléments (le nombre de permutations de \\(n\\) éléments) est \\(n\\times (n-1)\\times(n-2)\\times\\cdots \\times 3 \\times2\\times 1 = n!\\)\nD’où la formule : \\(\\boxed{P_{n} = n!}\\)"
   },
   {
-    "objectID": "posts/maths/nombre de permutations.html#exemples",
-    "href": "posts/maths/nombre de permutations.html#exemples",
-    "title": "nombre de permutations",
-    "section": "Exemples",
-    "text": "Exemples"
+    "objectID": "posts/maths/inversion.html",
+    "href": "posts/maths/inversion.html",
+    "title": "inversion",
+    "section": "",
+    "text": "Définition"
   },
   {
     "objectID": "posts/maths/combinaisons.html",
@@ -494,7 +536,7 @@
     "href": "posts/maths/sacs.html",
     "title": "sacs (multi-ensembles)",
     "section": "",
-    "text": "Définition\n\n\n\nUn sac, ou multi-ensemble, est un ensemble dans lequel on autorise la répétition d’éléments.\nCela signifie que, contrairement aux ensembles, un élément peut être contenu plusieurs fois dans un sac.\nNotation : \\(\\{\\!\\!\\{ a, a, a, b, c, c, d, d, d, d \\}\\!\\!\\}\\)\n\n\n\n\n\n\n\n\nDéfinition formelle\n\n\n\n\n\nOn définit un sac \\(B\\) comme un couple \\((E, f)\\), où : - \\(E\\) est l’ensemble des éléments du sac (sans répétitions) - \\(E\\) est appelé le support de \\(B\\) - \\(f : E \\to \\mathbb{N}\\) est la fonction qui, à un élément de \\(E\\), associe son nombre de répétitions - \\(f\\) est appelée la multiplicité de \\(B\\)\nPar exemple, le sac \\(\\{\\!\\!\\{ a, a, a, b, c, c \\}\\!\\!\\}\\) Se définit avec : - \\(E = \\{ a, b, c \\}\\) - \\(f\\) telle que : - \\(f(a) = 3\\) - \\(f(b)=1\\) - \\(f(c)=2\\)\n\n\n\n\nPropriétés\nSoit \\(B\\) un sac\n\non appelle support de \\(B\\) l’ensemble des éléments de \\(B\\) (donc, sans répétition)\non appelle multiplicité de \\(B\\) la fonction qui, à un élément de \\(B\\), associe le nombre de répétitions de cet élément\n\n Si \\(E\\) et \\(f\\) sont le support et la multiplicité de \\(B\\)\n\n\\(\\text{card}(B) = \\sum\\limits_{x \\in E} f(x)\\)\n\nle cardinal est la somme des multiplicités de chaque valeur de \\(E\\)\n\n\n\n\nUtilité\nEn combinatoire, les sacs permettent d’exprimer la possibilité de répéter un élément un certain nombre de fois."
+    "text": "Définition\n\n\n\nUn sac, ou multi-ensemble, est un ensemble dans lequel on autorise la répétition d’éléments.\nCela signifie que, contrairement aux ensembles, un élément peut être contenu plusieurs fois dans un sac.\nNotation : \\(\\{\\!\\!\\{ a, a, a, b, c, c, d, d, d, d \\}\\!\\!\\}\\)\n\n\n\n\n\n\n\n\nDéfinition formelle\n\n\n\n\n\nOn définit un sac \\(B\\) comme un couple \\((E, f)\\), où : - \\(E\\) est l’ensemble des éléments du sac (sans répétitions) - \\(E\\) est appelé le support de \\(B\\) - \\(f : E \\to \\mathbb{N}\\) est la fonction qui, à un élément de \\(E\\), associe son nombre de répétitions - \\(f\\) est appelée la multiplicité de \\(B\\)\nPar exemple, le sac \\(\\{\\!\\!\\{ a, a, a, b, c, c \\}\\!\\!\\}\\) Se définit avec : - \\(E = \\{ a, b, c \\}\\) - \\(f\\) telle que : - \\(f(a) = 3\\) - \\(f(b)=1\\) - \\(f(c)=2\\)\n\n\n\n\nPropriétés\nSoit \\(B\\) un sac\n\non appelle support de \\(B\\) l’ensemble des éléments de \\(B\\) (donc, sans répétition)\n\nPar exemple, le support de \\(\\{\\!\\!\\{ a, a, a, b, c, c, d, d, d, d \\}\\!\\!\\}\\) est \\(\\{ a, b, c, d \\}\\)\n\non appelle multiplicité de \\(B\\) la fonction qui, à un élément de \\(B\\), associe le nombre de répétitions de cet élément\n\nPar exemple, si \\(f\\) est la multiplicité de \\(\\{\\!\\!\\{ a, a, a, b, c, c, d, d, d, d \\}\\!\\!\\}\\), alors \\(f(a) = 3\\), \\(f(b) = 1\\), \\(f(c) = 2\\) et \\(f(d)=4\\)\n\n\n Si \\(E\\) et \\(f\\) sont le support et la multiplicité de \\(B\\)\n\n\\(\\text{card}(B) = \\sum\\limits_{x \\in E} f(x)\\)\n\nle cardinal est la somme des multiplicités de chaque valeur de \\(E\\)\nc’est évident, puisque la multiplicité est le nombre de répétitions de chaque élément\n\n\n\n\nUtilité\nEn combinatoire, les sacs permettent d’exprimer la possibilité de répéter un élément un certain nombre de fois."
   },
   {
     "objectID": "posts/autres/Le dimanche, il pleut généralement à l'extérieur.html",
@@ -508,13 +550,13 @@
     "href": "index.html",
     "title": "0SK42 - Tous les posts",
     "section": "",
-    "text": "Algorithmique avancée - activité 1\n\n\n\n\n\n\n\ninformatique\n\n\n\n\n\n\n\n\n\n\n\nJan 15, 2023\n\n\nOscar Plaisant\n\n\n\n\n\n\n  \n\n\n\n\nInformatique\n\n\n\n\n\n\n\ninformatique\n\n\n\n\nListe des notions d’Informatique\n\n\n\n\n\n\nJan 15, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nStructure de données : tableau\n\n\n\n\n\n\n\ninformatique\n\n\n\n\n\n\n\n\n\n\n\n\nJan 13, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAlgorithmique : Structures dynamiques\n\n\n\n\n\n\n\ninformatique\n\n\n\n\n\n\n\n\n\n\n\nJan 13, 2023\n\n\n\n\n\n\n  \n\n\n\n\nListes chaînées\n\n\n\n\n\n\n\ninformatique\n\n\n\n\n\n\n\n\n\n\n\nJan 13, 2023\n\n\n\n\n\n\n  \n\n\n\n\nStructures de données récursives\n\n\n\n\n\n\n\ninformatique\n\n\n\n\n\n\n\n\n\n\n\nJan 13, 2023\n\n\n\n\n\n\n  \n\n\n\n\nCongruence\n\n\n\n\n\n\n\nmaths\n\n\n\n\n\n\n\n\n\n\n\nJan 11, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nnombre de permutations\n\n\n\n\n\n\n\nmaths\n\n\n\n\n\n\n\n\n\n\n\nJan 11, 2023\n\n\n\n\n\n\n  \n\n\n\n\nDibisibilité\n\n\n\n\n\n\n\nmaths\n\n\n\n\n\n\n\n\n\n\n\nJan 10, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLe dimanche, il pleut généralement à l’extérieur\n\n\n\n\n\n\n\naphorismes\n\n\nzététique\n\n\n\n\n\n\n\n\n\n\n\nJan 8, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\narrangements avec répétitions\n\n\n\n\n\n\n\nmaths\n\n\n\n\nnombre de sacs à k éléments inclus dans un ensemble à n éléments\n\n\n\n\n\n\nJan 6, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ncombinaisons avec répétitions\n\n\n\n\n\n\n\nmaths\n\n\n\n\n\n\n\n\n\n\n\nJan 6, 2023\n\n\n\n\n\n\n  \n\n\n\n\nvim tips autocorriger les erreurs\n\n\n\n\n\n\n\nvim\n\n\ntips\n\n\n\n\nComment corriger rapidement des erreurs d’orthographe\n\n\n\n\n\n\nJan 5, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\narrangements\n\n\n\n\n\n\n\nmaths\n\n\n\n\n\n\n\n\n\n\n\nJan 5, 2023\n\n\n\n\n\n\n  \n\n\n\n\ncombinaisons\n\n\n\n\n\n\n\nmaths\n\n\n\n\n\n\n\n\n\n\n\nJan 5, 2023\n\n\n\n\n\n\n  \n\n\n\n\nMathématiques\n\n\n\n\n\n\n\nmaths\n\n\ncours\n\n\n\n\nListe des notions de Mathématiques\n\n\n\n\n\n\nJan 4, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEnsemble des parties d’un ensemble\n\n\n\n\n\n\n\nmaths\n\n\n\n\nensemble de tous les sous-ensembles\n\n\n\n\n\n\nJan 4, 2023\n\n\n\n\n\n\n  \n\n\n\n\nsacs (multi-ensembles)\n\n\n\n\n\n\n\nmaths\n\n\n\n\n\n\n\n\n\n\n\nJan 4, 2023\n\n\n\n\n\n\n  \n\n\n\n\nvim tips - leader\n\n\n\n\n\n\n\nvim\n\n\ntips\n\n\n\n\nprésentation du raccourci <leader> dans vim\n\n\n\n\n\n\nJan 3, 2023\n\n\n\n\n\n\n  \n\n\n\n\nformulaire d’analyse\n\n\n\n\n\n\n\nmaths\n\n\ncours\n\n\n\n\n\n\n\n\n\n\n\nJan 3, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPourquoi ce blog ?\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nJan 2, 2023\n\n\n\n\n\n\n  \n\n\n\n\nBienvenue sur mon blog\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nJan 1, 2023\n\n\n\n\n\n\nNo matching items"
+    "text": "Correction du TD 1 de probabilités (combinatoire)\n\n\n\n\n\n\n\nmaths\n\n\n\n\n\n\n\n\n\n\n\nJan 20, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ntransposition\n\n\n\n\n\n\n\nmaths\n\n\n\n\n\n\n\n\n\n\n\nJan 19, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\npermutations (combinatoire)\n\n\n\n\n\n\n\nmaths\n\n\n\n\n\n\n\n\n\n\n\nJan 19, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ninversion\n\n\n\n\n\n\n\nmaths\n\n\n\n\n\n\n\n\n\n\n\nJan 19, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nStructures de données\n\n\n\n\n\n\n\ninformatique\n\n\n\n\n\n\n\n\n\n\n\nJan 17, 2023\n\n\n\n\n\n\n  \n\n\n\n\nInformatique\n\n\n\n\n\n\n\ninformatique\n\n\nindex\n\n\n\n\nListe des notions d’Informatique\n\n\n\n\n\n\nJan 15, 2023\n\n\n\n\n\n\n  \n\n\n\n\nAlgorithmique avancée - activité 1\n\n\n\n\n\n\n\ninformatique\n\n\n\n\n\n\n\n\n\n\n\nJan 15, 2023\n\n\nOscar Plaisant\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nStructure de données : tableau\n\n\n\n\n\n\n\ninformatique\n\n\n\n\n\n\n\n\n\n\n\n\nJan 13, 2023\n\n\n\n\n\n\n  \n\n\n\n\nListes chaînées\n\n\n\n\n\n\n\ninformatique\n\n\n\n\n\n\n\n\n\n\n\nJan 13, 2023\n\n\n\n\n\n\n  \n\n\n\n\nStructures de données récursives\n\n\n\n\n\n\n\ninformatique\n\n\n\n\n\n\n\n\n\n\n\nJan 13, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAlgorithmique : Structures dynamiques\n\n\n\n\n\n\n\ninformatique\n\n\n\n\n\n\n\n\n\n\n\nJan 13, 2023\n\n\n\n\n\n\n  \n\n\n\n\nCongruence\n\n\n\n\n\n\n\nmaths\n\n\n\n\n\n\n\n\n\n\n\nJan 11, 2023\n\n\n\n\n\n\n  \n\n\n\n\nDibisibilité\n\n\n\n\n\n\n\nmaths\n\n\n\n\n\n\n\n\n\n\n\nJan 10, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLe dimanche, il pleut généralement à l’extérieur\n\n\n\n\n\n\n\naphorismes\n\n\nzététique\n\n\n\n\n\n\n\n\n\n\n\nJan 8, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\narrangements avec répétitions\n\n\n\n\n\n\n\nmaths\n\n\n\n\nnombre de sacs à k éléments inclus dans un ensemble à n éléments\n\n\n\n\n\n\nJan 6, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ncombinaisons avec répétitions\n\n\n\n\n\n\n\nmaths\n\n\n\n\n\n\n\n\n\n\n\nJan 6, 2023\n\n\n\n\n\n\n  \n\n\n\n\nvim tips autocorriger les erreurs\n\n\n\n\n\n\n\nvim\n\n\ntips\n\n\n\n\nComment corriger rapidement des erreurs d’orthographe\n\n\n\n\n\n\nJan 5, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\narrangements\n\n\n\n\n\n\n\nmaths\n\n\n\n\n\n\n\n\n\n\n\nJan 5, 2023\n\n\n\n\n\n\n  \n\n\n\n\ncombinaisons\n\n\n\n\n\n\n\nmaths\n\n\n\n\n\n\n\n\n\n\n\nJan 5, 2023\n\n\n\n\n\n\n  \n\n\n\n\nMathématiques\n\n\n\n\n\n\n\nmaths\n\n\nindex\n\n\n\n\nListe des notions de Mathématiques\n\n\n\n\n\n\nJan 4, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEnsemble des parties d’un ensemble\n\n\n\n\n\n\n\nmaths\n\n\n\n\nensemble de tous les sous-ensembles\n\n\n\n\n\n\nJan 4, 2023\n\n\n\n\n\n\n  \n\n\n\n\nsacs (multi-ensembles)\n\n\n\n\n\n\n\nmaths\n\n\n\n\n\n\n\n\n\n\n\nJan 4, 2023\n\n\n\n\n\n\n  \n\n\n\n\nvim tips - leader\n\n\n\n\n\n\n\nvim\n\n\ntips\n\n\n\n\nprésentation du raccourci <leader> dans vim\n\n\n\n\n\n\nJan 3, 2023\n\n\n\n\n\n\n  \n\n\n\n\nformulaire d’analyse\n\n\n\n\n\n\n\nmaths\n\n\nindex\n\n\n\n\n\n\n\n\n\n\n\nJan 3, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPourquoi ce blog ?\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nJan 2, 2023\n\n\n\n\n\n\n  \n\n\n\n\nBienvenue sur mon blog\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nJan 1, 2023\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about.html",
     "href": "about.html",
     "title": "A propos",
     "section": "",
-    "text": "Je suis étudiant en licence d’informatique et de mathématiques, et passionné par ces deux sciences.\n\nContenu\nLe contenu de ce blog est principalement :\n\n\nDes explications de concepts d’informatique et de mathématiques\nDes réflexions sur divers sujets\nDes présentations de ce que je trouve intéressant\n\n\n\n\nLe nom du blog\nLe Blog s’appelle OSK42, à la fois en référence au nombre 42, la réponse à la “grande question sur la vie, l’univers et le reste”, et car OSK42 est une écriture de OSKAR (mon pseudo) en leet speak\n           \n\n\nCrédits\n\n\n\n\n\n\nCrédits des icônes\n\n\n\n\n\n\nAlgebra icons created by Freepik - Flaticon\nBackpack icons created by max.icons - Flaticon\nLoop icons created by Pixelmeetup - Flaticon\nMath icons created by Freepik - Flaticon\nSpace suit icons created by surang - Flaticon\nUi icons created by Arafat Uddin - Flaticon"
+    "text": "Je suis étudiant en licence d’informatique et de mathématiques, et passionné par ces deux sciences.\n\nContenu\nLe contenu de ce blog est principalement :\n\n\nDes explications de concepts d’informatique et de mathématiques\nDes réflexions sur divers sujets\nDes présentations de ce que je trouve intéressant\n\n\n\n\nLe nom du blog\nLe Blog s’appelle OSK42, à la fois en référence au nombre 42, la réponse à la “grande question sur la vie, l’univers et le reste”, et car OSK42 est une écriture de OSKAR (mon pseudo) en leet speak\n\n           \n\n\nCrédits\n\n\n\n\n\n\nCrédits des icônes\n\n\n\n\n\n\nAlgebra icons created by Freepik - Flaticon\nBackpack icons created by max.icons - Flaticon\nCoding icons created by juicy_fish - Flaticon\nHierarchy icons created by Becris - Flaticon\nLoop icons created by Pixelmeetup - Flaticon\nMath icons created by Freepik - Flaticon\nSpace suit icons created by surang - Flaticon\nUi icons created by Arafat Uddin - Flaticon"
   }
 ]
