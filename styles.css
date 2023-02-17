@@ -2,13 +2,11 @@
 
 #quarto-document-content {
     /* quite good formula apparently */
-    font-size: calc(.5em + .8vw);
+    /* not as good as the default one /*
+    /* font-size: calc(.5em + .8vw); */
 }
 
 
-p, code, pre code, .sourceCode, .callout-caption-container {
-    font-size: inherit;
-}
 
 /* make titles and banners monospace */
 h1.title {
@@ -20,7 +18,7 @@ h1.title {
 
 
 pre code {
-    font-family: "Fira Code", monospace;
+    font-family: "JetBrains Pro", "Fira Code", monospace;
 }
 pre code {
     background-color: var(--bs-dark);

@@ -19,7 +19,7 @@ listing:
 
 ## Structures de donnés
 
- - [structures de données](algo avancee structures de donnees.qmd)
+ - [structures de données](algo avancee structures de donnees.md)
      - structures statiques
          - [tableaux](algo avancee tableau)
      - [structures dynamiques](algo avancee structures dynamiques.qmd)
@@ -31,6 +31,7 @@ listing:
 
   - Algorithmique avancée
       - [activité 1](algo avancee activite 1.qmd)
+      - [activité 3](algo avancee activite 3)
 
 
 <br/> <br/>
