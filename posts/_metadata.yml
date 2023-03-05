@@ -12,3 +12,6 @@ page-layout: full
 
 # french blog !
 lang: fr
+
+editor:
+  render-on-save: false

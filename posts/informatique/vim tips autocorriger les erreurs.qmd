@@ -56,12 +56,12 @@ Cela donne quelque chose comme ça (le curseur est à droite, en mode insertion)
 
 ![](_images/vim_insert_spell_correct.gif)
 
-Personnellement, j'utilise `<c-z>`, mais `<c-l>` peut être utilisé également.
+Personnellement, j'utilise `<c-q>`, mais `<c-l>` peut être utilisé également, ou n'importe quel raccourci qui vous convient.
 
 Le raccourci à ajouter est :
 
 ```vim
-inoremap <c-g>u<esc>[s1z=`]a<c-g>u
+inoremap <c-q> <c-g>u<esc>[s1z=`]a<c-g>u
 ```
  - les `<c-g>u` permettent d'annuler rapidement les remplacements
  - le <code>`]</code> permet de remettre le curseur à la position de départ

@@ -236,7 +236,7 @@ Définition
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Représentation d’une liste de façon <a href="algo_avancee_structures_recursives.qmd">récursive</a>. - les éléments sont rangés <strong>linéairement</strong> -</p>
+<p>Représentation d’une liste de façon <a href="../../posts/informatique/algo avancee structures recursives.html">récursive</a>. - les éléments sont rangés <strong>linéairement</strong> -</p>
 <p>La liste est un bloc, puis un lien vers la suite de la liste (le bloc suivant).</p>
 <p><img src="_images/listes_chainees.svg" class="img-fluid"></p>
 <p>Une liste chaînée est donc un bloc contenant : - une valeur - un pointeur vers le premier bloc de la suite - Cette “suite” est aussi une liste chaînée</p>
@@ -244,7 +244,7 @@ Définition
 </div>
 <section id="implémentation" class="level1">
 <h1>Implémentation</h1>
-<p>Deux représentations sont possibles : - un objet <code>Node</code> qui suit la définition <a href="algo_avancee_structures_recursives.qmd">récursive</a> - les opérations que l’on fait sur une liste sont alors représentées comme des fonctions (ou procédures) qui prennent un (ou plusieurs) <code>Node</code> en argument - un objet <code>LinkedList</code> qui représente la liste chaînée à plus haut niveau d’abstraction - une liset possède une <strong>tête</strong> de liste qui est un <code>Node</code> - les opérations que l’on fait sur une liste sont alors représentées comme des méthodes de cet objet</p>
+<p>Deux représentations sont possibles : - un objet <code>Node</code> qui suit la définition <a href="../../posts/informatique/algo avancee structures recursives.html">récursive</a> - les opérations que l’on fait sur une liste sont alors représentées comme des fonctions (ou procédures) qui prennent un (ou plusieurs) <code>Node</code> en argument - un objet <code>LinkedList</code> qui représente la liste chaînée à plus haut niveau d’abstraction - une liset possède une <strong>tête</strong> de liste qui est un <code>Node</code> - les opérations que l’on fait sur une liste sont alors représentées comme des méthodes de cet objet</p>
 <div class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> Node:</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, value, <span class="bu">next</span><span class="op">=</span><span class="va">None</span>):</span>

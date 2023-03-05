@@ -5,7 +5,7 @@ categories: [ informatique ]
 jupyter: python3
 toc: true
 number-sections: true
-draft: true
+draft: false
 ---
 
 ::: {.callout-tip collapse=true}
@@ -260,7 +260,7 @@ print(Liste(zip_rec(L1, L3)))
 ```
 
 
-# Liste croisante
+# Liste croissante
 
 On considère dans cet exercice une liste contenant des valeurs comparables grâce à l’opérateur `<=`.
 

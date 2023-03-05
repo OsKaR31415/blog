@@ -2,8 +2,8 @@
 
 #quarto-document-content {
     /* quite good formula apparently */
-    /* not as good as the default one /*
-    /* font-size: calc(.5em + .8vw); */
+    /* not as good as the default one */
+    font-size: calc(.5em + .8vw);
 }
 
 

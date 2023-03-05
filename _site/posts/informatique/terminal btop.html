@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>0SK42 - transposition</title>
+<title>0SK42 - terminal - btop : statistiques des processus</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -59,10 +59,8 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="../../styles.css">
-<link rel="stylesheet" href="../../css/permutations.css">
 </head>
 
 <body class="nav-fixed">
@@ -118,9 +116,9 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-page">
-      <h1 class="title">transposition</h1>
+      <h1 class="title">terminal - btop : statistiques des processus</h1>
                                 <div class="quarto-categories">
-                <div class="quarto-category">maths</div>
+                <div class="quarto-category">informatique</div>
               </div>
                   </div>
   </div>
@@ -132,7 +130,7 @@ ul.task-list li input[type="checkbox"] {
       <div>
       <div class="quarto-title-meta-heading">Date de publication</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">19 janvier 2023</p>
+        <p class="date">20 février 2023</p>
       </div>
     </div>
     
@@ -150,68 +148,51 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<div class="callout-note callout callout-style-default no-icon callout-captioned">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-caption-container flex-fill">
-Définition
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Une <strong>transposition</strong> est une <a href="../../posts/maths/permutation.html">permutation</a> qui n’échange que <span class="math inline">\(2\)</span> éléments.</p>
-<p>Une transposition est donc un <a href="../../posts/maths/p cycle.html">2-cycle</a></p>
-<p>Formellement, une <a href="../../posts/maths/permutation.html">permutation</a> <span class="math inline">\(\sigma \in\mathfrak{S}_{n}\)</span> est une transposition si et seulement si :</p>
+<p><code>btop</code> est un utilitaire pour visualiser les processus actifs sur votre ordinateur, et les statistiques comme la quantité d’entrée/sortie en mémoire ou réseau.</p>
+<p>Dépôt github de <code>btop</code> : <a href="https://github.com/aristocratos/btop">aristocratos/btop</a></p>
+<section id="pourquoi-btop" class="level1">
+<h1>Pourquoi <code>btop</code> ?</h1>
+<p>Il existe de nombreuses alternatives à <code>btop</code>. Il est lui-même dérivé de <code>bashtop</code> et <code>bpytop</code>.</p>
+<p>L’outil similaire le plus connu est certainement <code>top</code>, qui permet d’afficher la liste des processus en cours sur votre machine, ainsi que des statistiques sur la charge du processeur ou de la mémoire. <code>top</code> à l’avantage d’être présent sur presque toutes les machines Linux.</p>
+<p>Ceci dit, top est très simple dans son interface, et très peu intuitif.</p>
+<section id="htop" class="level2">
+<h2 class="anchored" data-anchor-id="htop"><code>htop</code></h2>
+<p>Un autre utilitaire très connu est <code>htop</code>, qui est une version plus jolie et utilisable de <code>top</code>, qui permet de chercher et filtrer les processus selon leur nom.</p>
+<p><code>htop</code> est beaucoup plus agréable à utiliser que <code>top</code>, avec des raccourcis plus intuitifs, des boutons cliquables (oui, c’est possible sur un terminal), et une interface plus agréable.</p>
+<p>Voici à quoi ressemble <code>htop</code> :</p>
+<p><img src="_images/htop.png" class="img-fluid"></p>
+</section>
+<section id="btop" class="level2">
+<h2 class="anchored" data-anchor-id="btop"><code>btop</code></h2>
+<p><code>btop</code> est un autre utilitaire du même type, mais il a quelques avantages :</p>
 <ul>
-<li>il existe <span class="math inline">\(2\)</span> éléments distincts <span class="math inline">\(a\)</span> et <span class="math inline">\(b\)</span> tels que <span class="math inline">\(\sigma(a)=b\)</span> et <span class="math inline">\(\sigma(b)=a\)</span></li>
-<li><span class="math inline">\(\forall i \notin \{ a; b \}, \quad \sigma(i)=i\)</span> (tous les autres éléments sont invariants par <span class="math inline">\(\sigma\)</span>)</li>
+<li>il est plus intuitif
+<ul>
+<li>les raccourcis clavier sont affichés</li>
+<li>le menu d’options est bien fait (plus simple à utiliser que celui de <code>htop</code>)</li>
+</ul></li>
+<li>il est plus joli</li>
+<li>il permet de voir plus de statistiques</li>
 </ul>
-</div>
-</div>
-<div class="callout-tip callout callout-style-default no-icon callout-captioned">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-caption-container flex-fill">
-Exemples
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-2" class="callout-2-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p><span class="math inline">\(\sigma = \begin{pmatrix}1&amp;2&amp;3\\1&amp;3&amp;2\end{pmatrix}\)</span> est une transposition</p>
-<p><span class="math inline">\(\sigma=\begin{pmatrix}1&amp;2&amp;3&amp;4\\3&amp;2&amp;1&amp;4\end{pmatrix}\)</span> est une transposition</p>
-<p><span class="math inline">\(\sigma=\begin{pmatrix}1&amp;2&amp;3&amp;4&amp;5\\2&amp;4&amp;1&amp;5&amp;3\end{pmatrix}\)</span> n’est <strong>pas une transposition</strong></p>
-<p>Voici la visualisation d’une transposition :</p>
-<div class="container">
-    <div class="permutation">
-        <div class="parenthesis">(</div>
-        <div class="lines">
-            <div class="text">
-                <div>1</div>
-                <div>2</div>
-                <div>3</div>
-                <div>4</div>
-                <div>5</div>
-            </div>
-            <div class="text">
-                <div>1</div>
-                <div class="perm shift-of-3">2</div>
-                <div>3</div>
-                <div>4</div>
-                <div class="perm shift-of-3 reverse">5</div>
-            </div>
-        </div>
-        <div class="parenthesis">)</div>
-    </div>
-</div>
-</div>
-</div>
-</div>
+<p><img src="_images/btop.png" class="img-fluid"></p>
+<p>Les raccourcis claviers sont montrés par la lettre en rouge dans leur nom (comme <code>m</code> pour aller dans le <code style="color: white"><span style="color:darkred">m</span>enu</code>), et chaque fenêtre peut être affichée/masquée en appuyant sur le chiffre qui lui correspond (de 1 à 4).</p>
+</section>
+</section>
+<section id="comparaison" class="level1">
+<h1>Comparaison</h1>
+<p>Voici une comparaison des interfaces des 3 outils dont j’ai parlé : <code>top</code>, <code>htop</code> et <code>btop</code></p>
+<p><img src="_images/comparaison_top_htop_btop.png" class="img-fluid"></p>
+</section>
+<section id="installer-btop" class="level1">
+<h1>Installer <code>btop</code></h1>
+<p><code>btop</code> est disponible sur la plupart des distributions linux et sur macOS. Il est probablement disponible pour votre installeur habituel (et avec <code>homebrew</code> sur macOS).</p>
+<ul>
+<li>macOS : <code>brew install btop</code></li>
+<li>ubuntu : <code>sudo apt-get update &amp;&amp; sudo apt install btop</code></li>
+</ul>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

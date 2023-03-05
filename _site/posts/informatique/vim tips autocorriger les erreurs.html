@@ -200,9 +200,9 @@ Cet article est une traduction
 <p>Pour fluidifier ce mode d’édition (surtout si, comme moi, vous tapez vite mais avec peu de précision), on peut créer un raccourci qui, depuis le mode insertion, va corriger la dernière erreur, et revenir en mode insertion.</p>
 <p>Cela donne quelque chose comme ça (le curseur est à droite, en mode insertion) :</p>
 <p><img src="_images/vim_insert_spell_correct.gif" class="img-fluid"></p>
-<p>Personnellement, j’utilise <code>&lt;c-z&gt;</code>, mais <code>&lt;c-l&gt;</code> peut être utilisé également.</p>
+<p>Personnellement, j’utilise <code>&lt;c-q&gt;</code>, mais <code>&lt;c-l&gt;</code> peut être utilisé également, ou n’importe quel raccourci qui vous convient.</p>
 <p>Le raccourci à ajouter est :</p>
-<pre class="vim"><code>inoremap &lt;c-g&gt;u&lt;esc&gt;[s1z=`]a&lt;c-g&gt;u</code></pre>
+<pre class="vim"><code>inoremap &lt;c-q&gt; &lt;c-g&gt;u&lt;esc&gt;[s1z=`]a&lt;c-g&gt;u</code></pre>
 <ul>
 <li>les <code>&lt;c-g&gt;u</code> permettent d’annuler rapidement les remplacements</li>
 <li>le <code>`]</code> permet de remettre le curseur à la position de départ</li>

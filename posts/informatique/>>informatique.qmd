@@ -6,7 +6,9 @@ image: "_images/computer_science.png"
 categories: [ informatique, index ]
 toc: true
 listing:
-  contents: .
+  contents:
+    - .
+    - informatique
   sort: "date desc"
   type: table
   categories: true
@@ -27,16 +29,27 @@ listing:
      - [structures récursives](algo avancee structures recursives.qmd)
          - [listes chaînées](algo avancee listes chainees.qmd)
 
+## Ligne de commande
+
+ - [btop : voir les processus en cours](terminal btop.md)
+
+### Vim
+ - [la touche leader](vim tips leader.md)
+ - [autocorriger les erreurs d'orthographe](vim tips autocorriger les erreurs.qmd)
+
 # Corrections
 
   - Algorithmique avancée
-      - [activité 1](algo avancee activite 1.qmd)
-      - [activité 3](algo avancee activite 3)
+      - Activités (TD/TP)
+          - [activité 1](algo avancee activite 1.qmd)
+          - [activité 3](algo avancee activite 3)
+      - Contrôles
+          - [contrôle 1](algo avancee correctin controle 1)
 
 
-<br/> <br/>
+<br/>
 
 ---
-<br/> <br/>
+<br/>
 
 # Liste de tous les posts sur l'informatique
