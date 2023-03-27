@@ -2,6 +2,8 @@
   {
     "listing": "/posts/informatique/>>informatique.html",
     "items": [
+      "/posts/informatique/Le langage APL.html",
+      "/posts/informatique/python convertir une liste en table markdown.html",
       "/posts/informatique/algo avancee correction controle 1.html",
       "/posts/informatique/terminal btop.html",
       "/posts/informatique/algo avancee activite 3.html",
@@ -36,6 +38,8 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/informatique/Le langage APL.html",
+      "/posts/informatique/python convertir une liste en table markdown.html",
       "/posts/informatique/algo avancee correction controle 1.html",
       "/posts/informatique/terminal btop.html",
       "/posts/informatique/algo avancee activite 3.html",

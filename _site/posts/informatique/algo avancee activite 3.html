@@ -125,6 +125,18 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="../../styles.css">
+<meta property="og:title" content="0SK42 - Algorithmique avancée : activité 3">
+<meta property="og:description" content="OSK42 - blog de Maths et d'Informatique">
+<meta property="og:image" content="https://quartopub.com/sites/osk42/osk42/_images/OsKaR.png">
+<meta property="og:site-name" content="0SK42">
+<meta property="og:image:height" content="720">
+<meta property="og:image:width" content="1280">
+<meta name="twitter:title" content="0SK42 - Algorithmique avancée : activité 3">
+<meta name="twitter:description" content="OSK42 - blog de Maths et d'Informatique">
+<meta name="twitter:image" content="https://quartopub.com/sites/osk42/osk42/_images/OsKaR.png">
+<meta name="twitter:image-height" content="720">
+<meta name="twitter:image-width" content="1280">
+<meta name="twitter:card" content="summary_large_image">
 </head>
 
 <body class="nav-fixed">
@@ -194,7 +206,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <div>
       <div class="quarto-title-meta-heading">Date de publication</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">13 janvier 2023</p>
+        <p class="date">17 février 2023</p>
       </div>
     </div>
     
@@ -228,7 +240,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   <li><a href="#itérative" id="toc-itérative" class="nav-link" data-scroll-target="#itérative"><span class="toc-section-number">2.1</span>  Itérative</a></li>
   <li><a href="#récursive" id="toc-récursive" class="nav-link" data-scroll-target="#récursive"><span class="toc-section-number">2.2</span>  Récursive</a></li>
   </ul></li>
-  <li><a href="#liste-croisante" id="toc-liste-croisante" class="nav-link" data-scroll-target="#liste-croisante"><span class="toc-section-number">3</span>  Liste croisante</a>
+  <li><a href="#liste-croissante" id="toc-liste-croissante" class="nav-link" data-scroll-target="#liste-croissante"><span class="toc-section-number">3</span>  Liste croissante</a>
   <ul class="collapse">
   <li><a href="#itérative-1" id="toc-itérative-1" class="nav-link" data-scroll-target="#itérative-1"><span class="toc-section-number">3.1</span>  Itérative</a></li>
   <li><a href="#récursive-1" id="toc-récursive-1" class="nav-link" data-scroll-target="#récursive-1"><span class="toc-section-number">3.2</span>  Récursive</a></li>
@@ -540,8 +552,8 @@ Définition d’une liste chaînée
 </div>
 </section>
 </section>
-<section id="liste-croisante" class="level1" data-number="3">
-<h1 data-number="3"><span class="header-section-number">3</span> Liste croisante</h1>
+<section id="liste-croissante" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Liste croissante</h1>
 <p>On considère dans cet exercice une liste contenant des valeurs comparables grâce à l’opérateur <code>&lt;=</code>.</p>
 <section id="itérative-1" class="level2" data-number="3.1">
 <h2 data-number="3.1" class="anchored" data-anchor-id="itérative-1"><span class="header-section-number">3.1</span> Itérative</h2>
@@ -1269,11 +1281,12 @@ False</code></pre>
 <div class="sourceCode cell-code" id="cb67"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb67-1"><a href="#cb67-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> appliquer_unaire(operation, L: Node) <span class="op">-&gt;</span> Node:</span>
 <span id="cb67-2"><a href="#cb67-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> L <span class="kw">is</span> <span class="va">None</span>:</span>
 <span id="cb67-3"><a href="#cb67-3" aria-hidden="true" tabindex="-1"></a>        <span class="cf">raise</span> <span class="pp">ValueError</span>(<span class="st">"cannot apply unary function to an empty stack"</span>)</span>
-<span id="cb67-4"><a href="#cb67-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> Node(operation(L.valeur), L.suivant)</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb67-4"><a href="#cb67-4" aria-hidden="true" tabindex="-1"></a>    val <span class="op">=</span> get(L)</span>
+<span id="cb67-5"><a href="#cb67-5" aria-hidden="true" tabindex="-1"></a>    L <span class="op">=</span> pop(L)</span>
+<span id="cb67-6"><a href="#cb67-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> push(operation(val), L)</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Voici quelques opérations unaires utiles :</p>
-<div class="cell" data-execution_count="37">
-<div class="sourceCode cell-code" id="cb68"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb68-1"><a href="#cb68-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> neg(L: Node) <span class="op">-&gt;</span> Node:</span>
+<div class="sourceCode" id="cb68"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb68-1"><a href="#cb68-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> neg(L: Node) <span class="op">-&gt;</span> Node:</span>
 <span id="cb68-2"><a href="#cb68-2" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""Négation : transformer la première valeur de la pile en son opposé.</span></span>
 <span id="cb68-3"><a href="#cb68-3" aria-hidden="true" tabindex="-1"></a><span class="co">    """</span></span>
 <span id="cb68-4"><a href="#cb68-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> appliquer_unaire(<span class="kw">lambda</span> x: <span class="op">-</span>x, L)</span>
@@ -1288,63 +1301,65 @@ False</code></pre>
 <span id="cb68-13"><a href="#cb68-13" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(Liste(A))</span>
 <span id="cb68-14"><a href="#cb68-14" aria-hidden="true" tabindex="-1"></a>A <span class="op">=</span> inv(A)</span>
 <span id="cb68-15"><a href="#cb68-15" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(Liste(A))</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>(-1.25)
-(1.25)
-(0.8)</code></pre>
-</div>
-</div>
 </section>
 <section id="affichage-dune-pile" class="level4" data-number="7.2.2.3">
 <h4 data-number="7.2.2.3" class="anchored" data-anchor-id="affichage-dune-pile"><span class="header-section-number">7.2.2.3</span> Affichage d’une pile</h4>
 <p>On veut afficher la pile avec la tête en base, pour que les nombres les plus récents soient plus près de l’entrée utilisateur.</p>
-<div class="cell" data-execution_count="38">
-<div class="sourceCode cell-code" id="cb70"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb70-1"><a href="#cb70-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> stack_to_list(L: Node) <span class="op">-&gt;</span> <span class="bu">list</span>:</span>
-<span id="cb70-2"><a href="#cb70-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> L <span class="kw">is</span> <span class="va">None</span>: <span class="cf">return</span> []</span>
-<span id="cb70-3"><a href="#cb70-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> [L.valeur] <span class="op">+</span> stack_to_list(L.suivant)</span>
-<span id="cb70-4"><a href="#cb70-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb70-5"><a href="#cb70-5" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> show_stack(L: Node) <span class="op">-&gt;</span> <span class="va">None</span>:</span>
-<span id="cb70-6"><a href="#cb70-6" aria-hidden="true" tabindex="-1"></a>    <span class="co"># pour afficher la liste la tête en bas, on retourne la liste</span></span>
-<span id="cb70-7"><a href="#cb70-7" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="op">*</span><span class="bu">reversed</span>(stack_to_list(L)), sep<span class="op">=</span><span class="st">'</span><span class="ch">\n</span><span class="st">'</span>)</span>
-<span id="cb70-8"><a href="#cb70-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb70-9"><a href="#cb70-9" aria-hidden="true" tabindex="-1"></a>L <span class="op">=</span> Node(<span class="dv">1</span>, Node(<span class="dv">2</span>, Node(<span class="dv">3</span>, Node(<span class="dv">4</span>, Node(<span class="dv">5</span>)))))</span>
-<span id="cb70-10"><a href="#cb70-10" aria-hidden="true" tabindex="-1"></a>show_stack(L)</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>5
-4
-3
-2
-1</code></pre>
-</div>
-</div>
+<div class="sourceCode" id="cb69"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb69-1"><a href="#cb69-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> stack_to_list(L: Node) <span class="op">-&gt;</span> <span class="bu">list</span>:</span>
+<span id="cb69-2"><a href="#cb69-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> L <span class="kw">is</span> <span class="va">None</span>: <span class="cf">return</span> []</span>
+<span id="cb69-3"><a href="#cb69-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> [L.valeur] <span class="op">+</span> stack_to_list(L.suivant)</span>
+<span id="cb69-4"><a href="#cb69-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb69-5"><a href="#cb69-5" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> show_stack(L: Node) <span class="op">-&gt;</span> <span class="va">None</span>:</span>
+<span id="cb69-6"><a href="#cb69-6" aria-hidden="true" tabindex="-1"></a>    <span class="co"># pour afficher la liste la tête en bas, on retourne la liste</span></span>
+<span id="cb69-7"><a href="#cb69-7" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="op">*</span><span class="bu">reversed</span>(stack_to_list(L)), sep<span class="op">=</span><span class="st">'</span><span class="ch">\n</span><span class="st">'</span>)</span>
+<span id="cb69-8"><a href="#cb69-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb69-9"><a href="#cb69-9" aria-hidden="true" tabindex="-1"></a>L <span class="op">=</span> Node(<span class="dv">1</span>, Node(<span class="dv">2</span>, Node(<span class="dv">3</span>, Node(<span class="dv">4</span>, Node(<span class="dv">5</span>)))))</span>
+<span id="cb69-10"><a href="#cb69-10" aria-hidden="true" tabindex="-1"></a>show_stack(L)</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="traduction-des-commandes" class="level4" data-number="7.2.2.4">
 <h4 data-number="7.2.2.4" class="anchored" data-anchor-id="traduction-des-commandes"><span class="header-section-number">7.2.2.4</span> Traduction des commandes</h4>
 <p>On veut créer une fonction qui transforme une liste selon une chaîne de caractères donnée, qui représente l’opération voulue.</p>
 <p>On pourrait utiliser des structures <code>if ... elif ... elif ... else</code>, ainsi que des clauses <code>or</code> pour tester les différentes commandes, mais la structure <code>match</code> (apparue dans la version 3.10 de python) permet une syntaxe plus claire, et des expressions plus riches.</p>
-<div class="cell" data-execution_count="39">
-<div class="sourceCode cell-code" id="cb72"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb72-1"><a href="#cb72-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> appliquer_str(op_str: <span class="bu">str</span>, L: Node) <span class="op">-&gt;</span> Node:</span>
-<span id="cb72-2"><a href="#cb72-2" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""Appliquer l'opération désignée par `op_str` sur `L`.</span></span>
-<span id="cb72-3"><a href="#cb72-3" aria-hidden="true" tabindex="-1"></a><span class="co">    Exemples :</span></span>
-<span id="cb72-4"><a href="#cb72-4" aria-hidden="true" tabindex="-1"></a><span class="co">    &gt;&gt;&gt; appliquer_str("+", Node(1, Node(2))) # donne Node(3)</span></span>
-<span id="cb72-5"><a href="#cb72-5" aria-hidden="true" tabindex="-1"></a><span class="co">    &gt;&gt;&gt; appliquer_str("/", Node(5, Node(2))) # donne Node(0.4)</span></span>
-<span id="cb72-6"><a href="#cb72-6" aria-hidden="true" tabindex="-1"></a><span class="co">    """</span></span>
-<span id="cb72-7"><a href="#cb72-7" aria-hidden="true" tabindex="-1"></a>    <span class="cf">match</span> op_str:</span>
-<span id="cb72-8"><a href="#cb72-8" aria-hidden="true" tabindex="-1"></a>        <span class="cf">case</span> <span class="st">"+"</span> <span class="op">|</span> <span class="st">"add"</span>:</span>
-<span id="cb72-9"><a href="#cb72-9" aria-hidden="true" tabindex="-1"></a>            <span class="cf">return</span> add(L)</span>
-<span id="cb72-10"><a href="#cb72-10" aria-hidden="true" tabindex="-1"></a>        <span class="cf">case</span> <span class="st">"-"</span> <span class="op">|</span> <span class="st">"sub"</span> <span class="op">|</span> <span class="st">"subs"</span>:</span>
-<span id="cb72-11"><a href="#cb72-11" aria-hidden="true" tabindex="-1"></a>            <span class="cf">return</span> sub(L)</span>
-<span id="cb72-12"><a href="#cb72-12" aria-hidden="true" tabindex="-1"></a>        <span class="cf">case</span> <span class="st">"*"</span> <span class="op">|</span> <span class="st">"mul"</span> <span class="op">|</span> <span class="st">"mult"</span> <span class="op">|</span> <span class="st">"times"</span>:</span>
-<span id="cb72-13"><a href="#cb72-13" aria-hidden="true" tabindex="-1"></a>            <span class="cf">return</span> mult(L)</span>
-<span id="cb72-14"><a href="#cb72-14" aria-hidden="true" tabindex="-1"></a>        <span class="cf">case</span> <span class="st">"/"</span> <span class="op">|</span> <span class="st">"÷"</span> <span class="op">|</span> <span class="st">"div"</span> <span class="op">|</span> <span class="st">"divide"</span>:</span>
-<span id="cb72-15"><a href="#cb72-15" aria-hidden="true" tabindex="-1"></a>            <span class="cf">return</span> div(L)</span>
-<span id="cb72-16"><a href="#cb72-16" aria-hidden="true" tabindex="-1"></a>        <span class="cf">case</span> <span class="st">"-"</span> <span class="op">|</span> <span class="st">"neg"</span> <span class="op">|</span> <span class="st">"negate"</span> <span class="op">|</span> <span class="st">"oppose"</span> <span class="op">|</span> <span class="st">"opposite"</span>:</span>
-<span id="cb72-17"><a href="#cb72-17" aria-hidden="true" tabindex="-1"></a>            <span class="cf">return</span> neg(L)</span>
-<span id="cb72-18"><a href="#cb72-18" aria-hidden="true" tabindex="-1"></a>        <span class="cf">case</span> <span class="st">"inv"</span> <span class="op">|</span> <span class="st">"invs"</span> <span class="op">|</span> <span class="st">"inverse"</span>:</span>
-<span id="cb72-19"><a href="#cb72-19" aria-hidden="true" tabindex="-1"></a>            <span class="cf">return</span> inv(L)</span>
-<span id="cb72-20"><a href="#cb72-20" aria-hidden="true" tabindex="-1"></a>        <span class="cf">case</span> <span class="st">"pop"</span> <span class="op">|</span> <span class="st">"del"</span>:</span>
-<span id="cb72-21"><a href="#cb72-21" aria-hidden="true" tabindex="-1"></a>            <span class="cf">return</span> pop(L)</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
+<div class="sourceCode" id="cb70"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb70-1"><a href="#cb70-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> math <span class="im">import</span> <span class="op">*</span></span>
+<span id="cb70-2"><a href="#cb70-2" aria-hidden="true" tabindex="-1"></a>FUNCS <span class="op">=</span> (<span class="st">"exp"</span> <span class="op">|</span> <span class="st">"log"</span> <span class="op">|</span> <span class="st">"sqrt"</span> <span class="op">|</span> <span class="st">"ceil"</span> <span class="op">|</span> <span class="st">"floor"</span> <span class="op">|</span> <span class="st">"cos"</span> <span class="op">|</span> <span class="st">"sin"</span> <span class="op">|</span> <span class="st">"tan"</span> <span class="op">|</span> <span class="st">"cosh"</span> <span class="op">|</span> <span class="st">"sinh"</span> <span class="op">|</span> <span class="st">"tanh"</span> <span class="op">|</span> <span class="st">"acos"</span> <span class="op">|</span> <span class="st">"asin"</span> <span class="op">|</span> <span class="st">"atan"</span>)</span>
+<span id="cb70-3"><a href="#cb70-3" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> appliquer_str(op_str: <span class="bu">str</span>, L: Node) <span class="op">-&gt;</span> Node:</span>
+<span id="cb70-4"><a href="#cb70-4" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""Appliquer l'opération désignée par `op_str` sur `L`.</span></span>
+<span id="cb70-5"><a href="#cb70-5" aria-hidden="true" tabindex="-1"></a><span class="co">    Exemples :</span></span>
+<span id="cb70-6"><a href="#cb70-6" aria-hidden="true" tabindex="-1"></a><span class="co">    &gt;&gt;&gt; appliquer_str("+", Node(1, Node(2))) # donne Node(3)</span></span>
+<span id="cb70-7"><a href="#cb70-7" aria-hidden="true" tabindex="-1"></a><span class="co">    &gt;&gt;&gt; appliquer_str("/", Node(5, Node(2))) # donne Node(0.4)</span></span>
+<span id="cb70-8"><a href="#cb70-8" aria-hidden="true" tabindex="-1"></a><span class="co">    """</span></span>
+<span id="cb70-9"><a href="#cb70-9" aria-hidden="true" tabindex="-1"></a>    <span class="cf">match</span> op_str:</span>
+<span id="cb70-10"><a href="#cb70-10" aria-hidden="true" tabindex="-1"></a>        <span class="cf">case</span> <span class="st">"+"</span> <span class="op">|</span> <span class="st">"add"</span>:</span>
+<span id="cb70-11"><a href="#cb70-11" aria-hidden="true" tabindex="-1"></a>            <span class="cf">return</span> add(L)</span>
+<span id="cb70-12"><a href="#cb70-12" aria-hidden="true" tabindex="-1"></a>        <span class="cf">case</span> <span class="st">"-"</span> <span class="op">|</span> <span class="st">"sub"</span> <span class="op">|</span> <span class="st">"subs"</span>:</span>
+<span id="cb70-13"><a href="#cb70-13" aria-hidden="true" tabindex="-1"></a>            <span class="cf">return</span> sub(L)</span>
+<span id="cb70-14"><a href="#cb70-14" aria-hidden="true" tabindex="-1"></a>        <span class="cf">case</span> <span class="st">"*"</span> <span class="op">|</span> <span class="st">"mul"</span> <span class="op">|</span> <span class="st">"mult"</span> <span class="op">|</span> <span class="st">"times"</span>:</span>
+<span id="cb70-15"><a href="#cb70-15" aria-hidden="true" tabindex="-1"></a>            <span class="cf">return</span> mult(L)</span>
+<span id="cb70-16"><a href="#cb70-16" aria-hidden="true" tabindex="-1"></a>        <span class="cf">case</span> <span class="st">"/"</span> <span class="op">|</span> <span class="st">"÷"</span> <span class="op">|</span> <span class="st">"div"</span> <span class="op">|</span> <span class="st">"divide"</span>:</span>
+<span id="cb70-17"><a href="#cb70-17" aria-hidden="true" tabindex="-1"></a>            <span class="cf">return</span> div(L)</span>
+<span id="cb70-18"><a href="#cb70-18" aria-hidden="true" tabindex="-1"></a>        <span class="cf">case</span> <span class="st">"-"</span> <span class="op">|</span> <span class="st">"neg"</span> <span class="op">|</span> <span class="st">"negate"</span> <span class="op">|</span> <span class="st">"oppose"</span> <span class="op">|</span> <span class="st">"opposite"</span>:</span>
+<span id="cb70-19"><a href="#cb70-19" aria-hidden="true" tabindex="-1"></a>            <span class="cf">return</span> neg(L)</span>
+<span id="cb70-20"><a href="#cb70-20" aria-hidden="true" tabindex="-1"></a>        <span class="cf">case</span> <span class="st">"inv"</span> <span class="op">|</span> <span class="st">"invs"</span> <span class="op">|</span> <span class="st">"inverse"</span>:</span>
+<span id="cb70-21"><a href="#cb70-21" aria-hidden="true" tabindex="-1"></a>            <span class="cf">return</span> inv(L)</span>
+<span id="cb70-22"><a href="#cb70-22" aria-hidden="true" tabindex="-1"></a>        <span class="cf">case</span> <span class="st">"pop"</span> <span class="op">|</span> <span class="st">"del"</span>:</span>
+<span id="cb70-23"><a href="#cb70-23" aria-hidden="true" tabindex="-1"></a>            <span class="cf">return</span> pop(L)</span>
+<span id="cb70-24"><a href="#cb70-24" aria-hidden="true" tabindex="-1"></a>        case (<span class="st">"pi"</span> <span class="op">|</span> <span class="st">"e"</span>) <span class="im">as</span> constant:</span>
+<span id="cb70-25"><a href="#cb70-25" aria-hidden="true" tabindex="-1"></a>            <span class="co"># eval transforme la chaîne de caractère en la valeur de la variable</span></span>
+<span id="cb70-26"><a href="#cb70-26" aria-hidden="true" tabindex="-1"></a>            <span class="co"># en fait, eval évalue un code python</span></span>
+<span id="cb70-27"><a href="#cb70-27" aria-hidden="true" tabindex="-1"></a>            <span class="cf">return</span> push(<span class="bu">eval</span>(constant), L)</span>
+<span id="cb70-28"><a href="#cb70-28" aria-hidden="true" tabindex="-1"></a>        <span class="cf">case</span> FUNCS <span class="im">as</span> fonction:</span>
+<span id="cb70-29"><a href="#cb70-29" aria-hidden="true" tabindex="-1"></a>            <span class="co"># ici, eval transforme la chaîne de caractère en fonction</span></span>
+<span id="cb70-30"><a href="#cb70-30" aria-hidden="true" tabindex="-1"></a>            <span class="cf">return</span> appliquer_unaire(<span class="bu">eval</span>(fonction), L)</span>
+<span id="cb70-31"><a href="#cb70-31" aria-hidden="true" tabindex="-1"></a>        <span class="cf">case</span> <span class="st">"ln"</span>:</span>
+<span id="cb70-32"><a href="#cb70-32" aria-hidden="true" tabindex="-1"></a>            <span class="cf">return</span> appliquer_unaire(log, L)</span>
+<span id="cb70-33"><a href="#cb70-33" aria-hidden="true" tabindex="-1"></a>        <span class="co"># aucune opération n'est donnée : on ne fait rien</span></span>
+<span id="cb70-34"><a href="#cb70-34" aria-hidden="true" tabindex="-1"></a>        <span class="cf">case</span> <span class="st">""</span>:</span>
+<span id="cb70-35"><a href="#cb70-35" aria-hidden="true" tabindex="-1"></a>            <span class="cf">return</span> L</span>
+<span id="cb70-36"><a href="#cb70-36" aria-hidden="true" tabindex="-1"></a>        <span class="co"># tout autre valeur n'est pas une opération connue</span></span>
+<span id="cb70-37"><a href="#cb70-37" aria-hidden="true" tabindex="-1"></a>        <span class="cf">case</span> _:</span>
+<span id="cb70-38"><a href="#cb70-38" aria-hidden="true" tabindex="-1"></a>            <span class="bu">print</span>(<span class="st">"opération inconnue !"</span>)</span>
+<span id="cb70-39"><a href="#cb70-39" aria-hidden="true" tabindex="-1"></a>            <span class="co"># on ne modifie pas L</span></span>
+<span id="cb70-40"><a href="#cb70-40" aria-hidden="true" tabindex="-1"></a>            <span class="cf">return</span> L</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 
 </section>

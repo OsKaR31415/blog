@@ -3,22 +3,33 @@ project:
 
 website:
   title: "0SK42"
-  description: "0SK42"
+  description: "OSK42 - blog de Maths et d'Informatique"
   site-url: https://osk42.quarto.pub
   navbar:
     right:
-      - posts/maths/>>mathematiques.md
-      - posts/informatique/>>informatique.qmd
-      - about.qmd
-      - icon: rss
-        href: index.xml
       - icon: github
         href: https://github.com/OsKaR31415
       - icon: youtube
         href: https://youtube.com/@oskar31415
+      - posts/maths/>>mathematiques.md
+      - posts/informatique/>>informatique.qmd
+      - about.qmd
+  twitter-card:
+    image: "_images/OsKaR.png"
+    description: "OSK42 - blog de Maths et d'Informatique"
+  open-graph:
+    image: "_images/OsKaR.png"
+    description: "OSK42 - blog de Maths et d'Informatique"
+
+
+
+
 format:
   html:
-    theme: superhero
+    theme:
+      light: flatly
+      dark: darkly
+
     css: styles.css
 
 editor:

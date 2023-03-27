@@ -1,0 +1,102 @@
+---
+title: "convertir des listes python en tables markdown"
+date: 2023-03-10
+categories: [ informatique ]
+image: "_images/logo_markdown.png"
+jupyter: python3
+---
+
+La syntaxe [markdown](https://docs.framasoft.org/fr/grav/markdown.html) est très pratique, car elle est légère, lisible, et qu'elle peut être facilement exportée dans de nombreux autre formats (notamment via [pandoc](https://pandoc.org)).
+
+Certains dialectes du markdown (des _flavours_) intègrent la possibilité de faire des tableaux. Cela permet donc d'intégrer des données dans un document.
+
+Ce script vous permet de transformer des listes python en tables markdown, pour intégrer les résultats d'un calcul dans un document markdown :
+
+```{python}
+def make_markdown_table(table, alignement: str =None):
+    """
+    Args:
+        table: La table python à convertir en table markdown.
+               Elle doit être une liste de listes (rectangulaire).
+        alignement: L'alignement des cesllules ('gauche', 'centre' ou 'droite').
+    """
+    # transformer tous les éléments en str
+    table = [[str(elt) for elt in line] for line in table]
+    # récupérer la largeur de chaque colonne
+    widths = [max(len(line[i]) for line in table) for i in range(len(table[0]))]
+    # faire que la largeur de chaque colonne soit au moins 3
+    widths = [max(w, 3) for w in widths]
+    # centrer le texte dans les colonnes
+    table = [[elt.center(w) for elt, w in zip(line, widths)] for line in table]
+
+    # séparer les titres et le contenu
+    liste_titres, *liste_contenu = table
+
+    # formatter les titres
+    titres = '| ' + ' | '.join(liste_titres) + ' |'
+
+    # mettre l'alignement des cellules
+    alignement = str(alignement).lower()
+    if alignement == 'none':
+        # on modifie uniquement la position des ":"
+        # par défaut il n'y en a aucun
+        bord_gauche =  '| '
+        bord_centre = ' | '
+        bord_droite = ' |'
+    elif alignement == 'centre':
+        bord_gauche =  '|:'
+        bord_centre = ':|:'
+        bord_droite = ':|'
+    elif alignement == 'gauche':
+        bord_gauche =  '|:'
+        bord_centre = ' |:'
+        bord_droite = ' |'
+    elif alignement == 'droite':
+        bord_gauche =  '| '
+        bord_centre = ':| '
+        bord_droite = ':|'
+    else:
+        raise ValueError("l'alignement doit être 'gauche', 'centre' ou 'droite'.")
+    # la ligne de séparation entre les titres et le contenu
+    separateur = bord_gauche + bord_centre.join(['-'*w for w in widths]) + bord_droite
+
+    # le contenu de la table
+    contenu = [None] * len(liste_contenu)  # liste vide qui sera remplie ensuite
+    for idx, ligne in enumerate(liste_contenu):
+        # pour chaque ligne, on modifie le contenu au bon indice
+        contenu[idx] = '| ' + ' | '.join(ligne) + ' |'
+    contenu = '\n'.join(contenu)  # on regroupe les lignes
+
+    return titres + '\n' + separateur + '\n' + contenu
+
+
+```
+
+
+## Exemples
+
+
+
+```{python}
+from math import pi
+
+T = [["colonne", "colonne 2", "colonne avec un nom super long"],
+     [1, 42, "contenu"],
+     ["super", "cool", 73],
+     ["contenu assez long", pi, "valeur"]]
+
+print(make_markdown_table(T))
+
+print("\nAlignée à gauche")
+print(make_markdown_table(T, alignement='gauche'))
+
+print("\nAlignée au centre")
+print(make_markdown_table(T, alignement='centre'))
+
+print("\nAlignée à droite")
+print(make_markdown_table(T, alignement='droite'))
+
+```
+
+
+

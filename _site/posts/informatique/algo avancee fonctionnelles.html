@@ -124,6 +124,18 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 
 <link rel="stylesheet" href="../../styles.css">
+<meta property="og:title" content="0SK42 - fonctionnelles">
+<meta property="og:description" content="OSK42 - blog de Maths et d'Informatique">
+<meta property="og:image" content="https://quartopub.com/sites/osk42/osk42/_images/OsKaR.png">
+<meta property="og:site-name" content="0SK42">
+<meta property="og:image:height" content="720">
+<meta property="og:image:width" content="1280">
+<meta name="twitter:title" content="0SK42 - fonctionnelles">
+<meta name="twitter:description" content="OSK42 - blog de Maths et d'Informatique">
+<meta name="twitter:image" content="https://quartopub.com/sites/osk42/osk42/_images/OsKaR.png">
+<meta name="twitter:image-height" content="720">
+<meta name="twitter:image-width" content="1280">
+<meta name="twitter:card" content="summary_large_image">
 </head>
 
 <body class="nav-fixed">
@@ -555,9 +567,9 @@ Explication détaillée
 <span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>    <span class="co"># on cherche la fin de la liste</span></span>
 <span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a>    p <span class="op">=</span> L</span>
 <span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a>    tail <span class="op">=</span> L</span>
-<span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">while</span> L <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span>:</span>
-<span id="cb21-6"><a href="#cb21-6" aria-hidden="true" tabindex="-1"></a>        tail <span class="op">=</span> L </span>
-<span id="cb21-7"><a href="#cb21-7" aria-hidden="true" tabindex="-1"></a>        L <span class="op">=</span> L.suivant</span>
+<span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">while</span> p <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span>:</span>
+<span id="cb21-6"><a href="#cb21-6" aria-hidden="true" tabindex="-1"></a>        p <span class="op">=</span> p.suivant</span>
+<span id="cb21-7"><a href="#cb21-7" aria-hidden="true" tabindex="-1"></a>    tail <span class="op">=</span> p </span>
 <span id="cb21-8"><a href="#cb21-8" aria-hidden="true" tabindex="-1"></a>    <span class="co"># on fait une réduction en commencant bien par la fin</span></span>
 <span id="cb21-9"><a href="#cb21-9" aria-hidden="true" tabindex="-1"></a>    res <span class="op">=</span> init</span>
 <span id="cb21-10"><a href="#cb21-10" aria-hidden="true" tabindex="-1"></a>    <span class="cf">while</span> L <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span>:</span>
@@ -570,7 +582,12 @@ Explication détaillée
 <span id="cb21-17"><a href="#cb21-17" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"5! ="</span>, reduce_iter(<span class="kw">lambda</span> x, y: x<span class="op">*</span>y, L, <span class="dv">1</span>))</span>
 <span id="cb21-18"><a href="#cb21-18" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(L)</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>5! = 1
+<pre><code>&gt; 1
+&gt; 1
+&gt; 2
+&gt; 6
+&gt; 24
+5! = 120
 (1,2,3,4,5)</code></pre>
 </div>
 </div>

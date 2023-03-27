@@ -5,7 +5,6 @@ categories: [ informatique ]
 jupyter: python3
 toc: true
 number-sections: true
-draft: false
 ---
 
 ::: {.callout-tip collapse=true}
@@ -886,7 +885,7 @@ def appliquer_unaire(operation, L: Node) -> Node:
 
 Voici quelques opérations unaires utiles :
 
-```{python}
+```python
 def neg(L: Node) -> Node:
     """Négation : transformer la première valeur de la pile en son opposé.
     """
@@ -910,7 +909,7 @@ print(Liste(A))
 
 On veut afficher la pile avec la tête en base, pour que les nombres les plus récents soient plus près de l'entrée utilisateur.
 
-```{python}
+```python
 def stack_to_list(L: Node) -> list:
     if L is None: return []
     return [L.valeur] + stack_to_list(L.suivant)
@@ -929,7 +928,7 @@ On veut créer une fonction qui transforme une liste selon une chaîne de caract
 
 On pourrait utiliser des structures `if ... elif ... elif ... else`, ainsi que des clauses `or` pour tester les différentes commandes, mais la structure `match` (apparue dans la version 3.10 de python) permet une syntaxe plus claire, et des expressions plus riches.
 
-```{python}
+```python
 from math import *
 FUNCS = ("exp" | "log" | "sqrt" | "ceil" | "floor" | "cos" | "sin" | "tan" | "cosh" | "sinh" | "tanh" | "acos" | "asin" | "atan")
 def appliquer_str(op_str: str, L: Node) -> Node:

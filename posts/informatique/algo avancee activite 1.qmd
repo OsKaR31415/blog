@@ -1,7 +1,6 @@
 ---
 title: "Algorithmique avancée - activité 1"
 date: 2023-01-15
-author: "Oscar Plaisant"
 categories: [ informatique ]
 toc: true
 jupyter: python3
@@ -779,7 +778,7 @@ print(mA * mB)
 
 # 12. Divisibilité par récursion
 
-On veut écrire une fonction **récursive** `estDivisible(n, m)` qui retourne `True` si et seulement si `m` [divise](../../maths/maths divisibilité.md) `n`, et `false` sinon.
+On veut écrire une fonction **récursive** `estDivisible(n, m)` qui retourne `True` si et seulement si `m` [divise](../maths divisibilité.md) `n`, et `false` sinon.
 
 La fonction ne doit pas utiliser les opérateurs de division, `/`, ou le modulo, `%`.
 
