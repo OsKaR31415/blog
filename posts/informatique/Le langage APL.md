@@ -21,6 +21,7 @@ Les principaux avantages d'APL sont :
  - la programmation avec des [primitives](https://mlochbaum.github.io/BQN/commentary/primitive.html)
     - cela permet de combiner des fonctions de façon très riche, et assez facilement
     - c'est une façon de penser que j'adore : on a beaucoup moins de travail de traduction pour l'ordinateur à faire : pas de boucles, rarement des conditions explicites, et plutôt des opération que l'on applique de différentes manières sur des listes ou tableaux
+        - Encore une fois, commme [Alan Perlis](https://en.wikipedia.org/wiki/Alan_Perlis) l'a dit : "A programming language is low level when its programs require attention to the irrelevant."
  - L'utilisation de symboles
     - chaque primitive est représentée par un symbole, ce qui évite d'avoir du code illisible comme quand on utilise numpy
  - Les Dfns

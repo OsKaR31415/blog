@@ -36,11 +36,11 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -172,7 +172,10 @@ ul.task-list li input[type="checkbox"] {
 <li>la programmation avec des <a href="https://mlochbaum.github.io/BQN/commentary/primitive.html">primitives</a>
 <ul>
 <li>cela permet de combiner des fonctions de façon très riche, et assez facilement</li>
-<li>c’est une façon de penser que j’adore : on a beaucoup moins de travail de traduction pour l’ordinateur à faire : pas de boucles, rarement des conditions explicites, et plutôt des opération que l’on applique de différentes manières sur des listes ou tableaux</li>
+<li>c’est une façon de penser que j’adore : on a beaucoup moins de travail de traduction pour l’ordinateur à faire : pas de boucles, rarement des conditions explicites, et plutôt des opération que l’on applique de différentes manières sur des listes ou tableaux
+<ul>
+<li>Encore une fois, commme <a href="https://en.wikipedia.org/wiki/Alan_Perlis">Alan Perlis</a> l’a dit : “A programming language is low level when its programs require attention to the irrelevant.”</li>
+</ul></li>
 </ul></li>
 <li>L’utilisation de symboles
 <ul>
@@ -362,7 +365,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return localAlternateSentinel;
     }
   }
-  let localAlternateSentinel = 'alternate';
+  let localAlternateSentinel = 'default';
   // Dark / light mode switch
   window.quartoToggleColorScheme = () => {
     // Read the current dark / light value 

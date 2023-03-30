@@ -39,11 +39,11 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -151,6 +151,11 @@ ul.task-list li input[type="checkbox"] {
 </ul>
               <div class="quarto-toggle-container">
                   <a href="" class="quarto-color-scheme-toggle nav-link" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+                  <a href="" class="quarto-reader-toggle nav-link" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
               </div>
               <div id="quarto-search" class="" title="Search"></div>
           </div> <!-- /navcollapse -->
@@ -205,6 +210,7 @@ ul.task-list li input[type="checkbox"] {
   </ul></li>
   <li><a href="#outils" id="toc-outils" class="nav-link" data-scroll-target="#outils">Outils</a>
   <ul class="collapse">
+  <li><a href="#langages-de-programmation" id="toc-langages-de-programmation" class="nav-link" data-scroll-target="#langages-de-programmation">Langages de programmation</a></li>
   <li><a href="#ligne-de-commande" id="toc-ligne-de-commande" class="nav-link" data-scroll-target="#ligne-de-commande">Ligne de commande</a></li>
   </ul></li>
   </ul></li>
@@ -246,12 +252,16 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="outils" class="level2">
 <h2 class="anchored" data-anchor-id="outils">Outils</h2>
+<section id="langages-de-programmation" class="level3">
+<h3 class="anchored" data-anchor-id="langages-de-programmation">Langages de programmation</h3>
 <ul>
 <li>python
 <ul>
 <li><a href="../../posts/informatique/python convertir une liste en table markdown.html">transformer des listes python en tables markdown</a></li>
 </ul></li>
+<li><a href="../../posts/informatique/Le langage APL.html">APL (A Programming Language)</a></li>
 </ul>
+</section>
 <section id="ligne-de-commande" class="level3">
 <h3 class="anchored" data-anchor-id="ligne-de-commande">Ligne de commande</h3>
 <ul>
@@ -334,7 +344,7 @@ ul.task-list li input[type="checkbox"] {
 </tr>
 </thead>
 <tbody class="list">
-<tr data-index="0" data-categories="informatique" data-listing-date-sort="1679526000000" data-listing-file-modified-sort="1679701368863" data-listing-reading-time-sort="6.01" data-listing-title-sort="Le langage APL" data-listing-filename-sort="Le langage APL.md">
+<tr data-index="0" data-categories="informatique" data-listing-date-sort="1679526000000" data-listing-file-modified-sort="1680003395855" data-listing-reading-time-sort="6.165" data-listing-title-sort="Le langage APL" data-listing-filename-sort="Le langage APL.md">
 <td class="listing-date">
 23 mars 2023
 </td>
@@ -395,7 +405,7 @@ ul.task-list li input[type="checkbox"] {
 <td class="listing-author">
 </td>
 </tr>
-<tr data-index="6" data-categories="informatique" data-listing-date-sort="1673737200000" data-listing-file-modified-sort="1679237674583" data-listing-reading-time-sort="24.14" data-listing-title-sort="Algorithmique avancée - activité 1" data-listing-filename-sort="algo avancee activite 1.qmd">
+<tr data-index="6" data-categories="informatique" data-listing-date-sort="1673737200000" data-listing-file-modified-sort="1679877502312" data-listing-reading-time-sort="24.14" data-listing-title-sort="Algorithmique avancée - activité 1" data-listing-filename-sort="algo avancee activite 1.qmd">
 <td class="listing-date">
 15 janv. 2023
 </td>
@@ -403,7 +413,6 @@ ul.task-list li input[type="checkbox"] {
 <a href="../../posts/informatique/algo avancee activite 1.html" class="title">Algorithmique avancée - activité 1</a>
 </td>
 <td class="listing-author">
-Oscar Plaisant
 </td>
 </tr>
 
@@ -583,7 +592,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return localAlternateSentinel;
     }
   }
-  let localAlternateSentinel = 'alternate';
+  let localAlternateSentinel = 'default';
   // Dark / light mode switch
   window.quartoToggleColorScheme = () => {
     // Read the current dark / light value 
