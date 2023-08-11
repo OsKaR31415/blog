@@ -1,0 +1,11 @@
+{
+  "hash": "1b486122d0421f7a097a131e672cd88c",
+  "result": {
+    "markdown": "---\ntitle: algo avancee activite 4\ndescription: correction détaillée\ndate: '2023-03-09'\ncategories:\n  - informatique\ntoc: true\nfreeze: true\n---\n\n:::{.callout-tip collapse=true}\n## Implémentation d'une liste chaînée\n\n::: {.cell execution_count=1}\n``` {.python .cell-code}\nclass Node:\n    def __init__ (self, valeur, suivant=None):\n        self.valeur = valeur\n        self.suivant = suivant\n\n    def __str__ (self):\n        return f\"({', '.join(map(str, self.to_list()))})\"\n\n    def to_list(self) -> list:\n        if self.suivant is None:\n            return [self.valeur]\n        return [self.valeur] + self.suivant.to_list()\n```\n:::\n\n\n:::\n\n\n# elements plus grands\n\n## 1.\n\n> Ecrire une fonction itérative `plusGrands(L, seuil)` qui\n> retourne tous les nombres de `L` dont la valeur est au\n> moins égale au seuil.\n\n::: {.cell execution_count=2}\n``` {.python .cell-code}\ndef plusGrands(L: Node, seuil: int or float) -> Node:\n    liste_plus_grands = Node(None)\n    tail = liste_plus_grands\n    while L is not None:\n        if L.valeur > seuil:\n            tail.suivant = Node(L.valeur)\n            tail = tail.suivant\n        L = L.suivant\n    # ne pas oublier de retirer le premier élément\n    return liste_plus_grands.suivant\n\nL = Node(6, Node(42, Node(73, Node(28, Node(3)))))\n# print(plusGrands(L, 40))\n```\n:::\n\n\n## 2.\n\n> Donner mantenant une solution utilisant une fonctionelle\n> `filter`. Cette fonctionnelle permet de conerver les\n> éléments d'une liste vérifiant un prdivat passé en\n> argument.\n\n",
+    "supporting": [
+      "algo avancee activite 4_files"
+    ],
+    "filters": [],
+    "includes": {}
+  }
+}

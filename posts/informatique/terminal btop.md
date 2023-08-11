@@ -1,5 +1,6 @@
 ---
 title: "terminal - btop : statistiques des processus"
+description: "Utilitaire ligne de commande pour visualiser les processus actifs et les statistiques."
 date: 2023-02-20
 categories: [ informatique ]
 image: "_images/btop.png"

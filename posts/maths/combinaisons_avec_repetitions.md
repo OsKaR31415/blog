@@ -1,5 +1,6 @@
 ---
 title: "combinaisons avec répétitions"
+description: "C'est le nombre de sacs à $k$ éléments inclus dans un ensemble à $n$ éléments."
 date: 2023-01-06
 categories: [ maths ]
 ---

@@ -7,6 +7,7 @@ draft: true
 
 
 
+
 Nous avons récemment repris l'association des étudiants en informatique. Mais comme elle à été abandonnée pendant 2 ans, il faut faire savoir que l'association existe encore !
 
 Dans le bureau, il y à Max, et Max aime **beaucoup** les trains et les bus. Et il à eu une idée incroyable : récupérer un les afficheurs de bus (où sont écrites les destinations) pour pouvoir informer les gens des actualités de l'association.

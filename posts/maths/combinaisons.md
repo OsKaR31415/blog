@@ -1,5 +1,6 @@
 ---
 title: "combinaisons"
+description: "Nombre d'ensembles à $k$ éléments contenus dans un ensemble à $n$ éléments."
 date: 2023-01-05
 categories: [ maths ]
 image: "_images/combinaison_spatiale.png"

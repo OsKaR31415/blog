@@ -167,6 +167,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </i> 
  <span class="menu-text"></span></a>
   </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="mailto:oscar.plaisant@orange.fr"><i class="bi bi-envelope" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
   <li class="nav-item">
     <a class="nav-link" href="../../posts/maths/>>mathematiques.html">
  <span class="menu-text">Mathématiques</span></a>
@@ -333,7 +338,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(random_gen_with_random(<span class="dv">5</span>, <span class="dv">10</span>))</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>7</code></pre>
+<pre><code>9</code></pre>
 </div>
 </div>
 <p>Autre version avec la fonction <code>randint</code></p>
@@ -348,7 +353,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(random_gen(<span class="dv">8</span>, <span class="dv">18</span>))</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>10</code></pre>
+<pre><code>14</code></pre>
 </div>
 </div>
 </section>
@@ -367,7 +372,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(generation(<span class="dv">10</span>, <span class="dv">5</span>, <span class="dv">10</span>))</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[9, 10, 9, 6, 6, 8, 9, 5, 5, 5]</code></pre>
+<pre><code>[8, 9, 10, 6, 5, 5, 7, 9, 6, 6]</code></pre>
 </div>
 </div>
 <p>Autre version, avec une <em>list comprehension</em> :</p>
@@ -377,7 +382,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(generation_comprehension(<span class="dv">10</span>, <span class="dv">5</span>, <span class="dv">10</span>))</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[7, 9, 9, 5, 5, 8, 10, 8, 7, 7]</code></pre>
+<pre><code>[8, 5, 5, 6, 9, 8, 9, 5, 8, 6]</code></pre>
 </div>
 </div>
 </section>
@@ -436,9 +441,9 @@ Fonctionnement de la fonction <code>time</code>
 <span id="cb9-25"><a href="#cb9-25" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"générer </span><span class="sc">{</span>number_of_elements<span class="sc">}</span><span class="ss"> à mis </span><span class="sc">{</span>duration<span class="sc">}</span><span class="ss"> secondes"</span>)</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>générer 10 à mis 1e-05 secondes
-générer 100 à mis 5e-05 secondes
-générer 1000 à mis 0.00043 secondes
-générer 10000 à mis 0.00397 secondes</code></pre>
+générer 100 à mis 7e-05 secondes
+générer 1000 à mis 0.0007 secondes
+générer 10000 à mis 0.00697 secondes</code></pre>
 </div>
 </div>
 </section>
@@ -458,9 +463,9 @@ générer 10000 à mis 0.00397 secondes</code></pre>
 <span id="cb11-10"><a href="#cb11-10" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"générer </span><span class="sc">{</span>number_of_elements<span class="sc">}</span><span class="ss"> à mis </span><span class="sc">{</span>duration<span class="sc">}</span><span class="ss"> secondes"</span>)</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>générer 10 à mis 2e-05 secondes
-générer 100 à mis 5e-05 secondes
-générer 1000 à mis 0.00038 secondes
-générer 10000 à mis 0.0038 secondes</code></pre>
+générer 100 à mis 7e-05 secondes
+générer 1000 à mis 0.00067 secondes
+générer 10000 à mis 0.00677 secondes</code></pre>
 </div>
 </div>
 <p>On remarque que le code avec des <em>list comprehension</em> est effectivement plus rapide.</p>
@@ -496,8 +501,8 @@ Pour aller plus loin
 <span id="cb13-11"><a href="#cb13-11" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(temps_execution(generation,               <span class="dv">1000</span>))</span>
 <span id="cb13-12"><a href="#cb13-12" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(temps_execution(generation_comprehension, <span class="dv">1000</span>))</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>0.0003991127014160156
-0.0003972053527832031</code></pre>
+<pre><code>0.0007450580596923828
+0.0006771087646484375</code></pre>
 </div>
 </div>
 </div>
@@ -551,7 +556,7 @@ Pour aller plus loin - Comprendre la méthode reverse
 <span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>r <span class="op">=</span> <span class="bu">reversed</span>(l)</span>
 <span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(r)</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>&lt;list_reverseiterator object at 0x10554d4e0&gt;</code></pre>
+<pre><code>&lt;list_reverseiterator object at 0x1075479d0&gt;</code></pre>
 </div>
 </div>
 <p>On remarque que <code>r</code> n’est pas une liste, mais un itérateur.</p>
@@ -842,7 +847,7 @@ Retours à la ligne pour plus de clarté
 <span id="cb47-5"><a href="#cb47-5" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb47-6"><a href="#cb47-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(genMat(<span class="dv">3</span>, <span class="dv">3</span>, <span class="dv">0</span>, <span class="dv">10</span>))</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[[5, 3, 8], [1, 1, 0], [1, 6, 2]]</code></pre>
+<pre><code>[[3, 4, 10], [0, 3, 7], [5, 2, 5]]</code></pre>
 </div>
 </div>
 </section>
@@ -864,7 +869,7 @@ Retours à la ligne pour plus de clarté
 <span id="cb49-12"><a href="#cb49-12" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb49-13"><a href="#cb49-13" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(genMat(<span class="dv">3</span>, <span class="dv">3</span>, <span class="dv">0</span>, <span class="dv">10</span>))</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[[10, 10, 8], [6, 8, 4], [8, 3, 3]]</code></pre>
+<pre><code>[[10, 2, 9], [7, 1, 2], [10, 0, 0]]</code></pre>
 </div>
 </div>
 </section>

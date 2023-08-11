@@ -1,0 +1,30 @@
+---
+title: "Réflexions personnelles"
+description: "Liste des notions de Mathématiques"
+categories: [ réflexions, index ]
+image: "_images/logo-reflexion.png"
+toc: false
+listing:
+  contents: /
+  sort: "date desc"
+  type: table
+  categories: true
+  sort-ui: true
+  filter-ui: true
+  fields:
+    - "title"
+    - "description"
+  field-display-names:
+    description: ""
+  include:
+    categories: "réflexion"
+---
+
+
+Les posts de la catégorie `réflexion` sont des posts contenant des réflexions, des opinions ou des idées sur divers sujets. Ils consistent souvent en une opinion personnelle.
+
+
+# Liste des posts
+
+
+

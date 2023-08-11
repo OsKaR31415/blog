@@ -1,10 +1,10 @@
 ---
 title: "Contre, l'usage, abusif, de la virgule, dans la notation, mathématique"
-date: 2023-01-02
+description: "Pourquoi la virgule devrait être moins utilisée dans la notation mathématique."
+date: 2023-07-23
 categories: [ maths ]
-image: "$,$"
+image: "_images/virgule.png"
 toc: true
-draft: true
 ---
 
 

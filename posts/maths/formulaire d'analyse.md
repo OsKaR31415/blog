@@ -1,5 +1,6 @@
 ---
 title: "formulaire d'analyse"
+description: "Liste de formules utiles à connaître."
 date: 2023-01-03
 categories: [ maths, index ]
 image: "_images/tableau_a_craie.png"

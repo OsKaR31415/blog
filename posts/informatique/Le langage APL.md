@@ -1,5 +1,6 @@
 ---
 title: "Le langage APL"
+description: "A propos de mon langage de programmation préféré"
 date: 2023-03-23
 categories: [ informatique ]
 image: "_images/APL_logo.svg.png"

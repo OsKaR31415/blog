@@ -1,0 +1,255 @@
+---
+title: "algo avancee correction controle"
+description: "correction détaillée"
+date: 2023-03-02
+categories: [ informatique ]
+jupyter: python3
+toc: true
+---
+
+
+:::{.callout-tip collapse=true}
+## Implémentation d'une liste chaînée
+
+```{python}
+class Node:
+    def __init__ (self, value, next=None):
+        self.valeur = value
+        self.suivant = next
+
+    def __str__ (self):
+        return f"({', '.join(map(str, self.to_list()))})"
+
+    def to_list(self) -> list:
+        if self.suivant is None:
+            return [self.valeur]
+        return [self.valeur] + self.suivant.to_list()
+```
+:::
+
+# Sujet de 14h45
+
+
+## 1. `genAlea`
+
+```{python}
+from random import randint
+
+def genAlea(nb_val: int) -> Node:
+    """Retourner une liste chaînée de nbVal entiers aléatoires entre 1 et 100.
+    Args:
+        nb_val (int): Le nombre d'entiers à générer
+    Returns:
+        Node: La liste de nb_val
+    """
+    res = None
+    for _ in range(nb_val):
+        res = Node(randint(1, 100), res)
+    return res
+
+print("12 nombres aléatoires :", genAlea(12))
+```
+
+
+## 2. `compteSup`
+
+```{python}
+def compteSup(L: Node, seuil) -> int:
+    """Retourne le nombre de valeurs de L strictement supérieures à seuil.
+    Args:
+        L (Node): La liste chaînée.
+        seuil (comparable): La valeur de seuil (on compte les valeurs strictement supérieures au seuil).
+    Returns:
+        int: Le nombre de valeurs strictement supérieurs au seuil.
+    """
+    nb_vals_sup = 0
+    while L is not None:
+        if L.valeur > seuil:
+            nb_vals_sup += 1
+        L = L.suivant
+    return nb_vals_sup
+
+L = Node(3, Node(1, Node(4, Node(1, Node(5, Node(9, Node(2)))))))
+seuil = 4
+print(L, "contient", compteSup(L, seuil), "valeurs strictement supérieures à", seuil)
+```
+
+
+## 3. `dansIntervalle` récursivement
+
+```{python}
+def dansIntervalle(L: Node, a, b) -> Node:
+    """Créer une nouvelle liste à partir de L en ne gardant que les éléments dans l'intervalle [a, b].
+    Args:
+        L (Node): La liste chaînée de départ.
+        a (comparable): Le minimum de l'intervalle
+        b (comparable): Le maximum de l'intervalle
+    Returns:
+        Node: Une nouvelle liste pour laquelle on a gardé seulement les élément qui sont dans l'intervalle [a, b].
+    """
+    if a > b:
+        raise ValueError("a doit être inférieur ou égal à b.")
+    ##### ajouter/enlever un # devant la ligne suivante pour changer d'implémentation #####
+    if L is None: return None
+    if a <= L.valeur <= b:
+        # on garde le node actuel
+        return Node(L.valeur, dansIntervalle(L.suivant, a, b))
+    return dansIntervalle(L.suivant, a, b)
+
+L = Node(3, Node(1, Node(4, Node(1, Node(5, Node(9, Node(2, Node(6, Node(5, Node(3, Node(5, Node(8, Node(9, Node(7, Node(9, Node(3, Node(2, Node(3))))))))))))))))))
+print(dansIntervalle(L, 2, 4))
+```
+
+## 4. `dansIntervalle` avec un itérateur fonctionnel
+
+
+:::{.callout-info collapse=true}
+## Implémentation de `Lfilter`
+
+```{python}
+def Lfilter(L : Node, f):
+    """Filtrer les valeurs de L selon le prédicat f.
+    On garde seulement les valeurs de les pour lesquelles
+    f(valeur) == True.
+    Args:
+        L (Node): La liste de départ.
+        f (fonction): Le prédicat (fonction qui renvoie True
+                      ou False).
+    Returns:
+        Node: La nouvelle liste contenant seulement les
+              valeurs de L pour lesquelles f(valeur) == True
+              (on conserve l'ordre).
+    """
+    if L is None:
+        return None
+    p = L
+    while p is not None and not f(p.valeur):
+        p = p.suivant
+    if p is None:
+        return None
+
+    res = Node(p.valeur)
+    w = res
+    while p.suivant is not None:
+        p = p.suivant
+        if f(p.valeur):
+            w.suivant = Node(p.valeur)
+            w = w.suivant
+    return res
+```
+:::
+
+
+```{python}
+def dansIntervalle(L: Node, a, b) -> Node:
+    """Créer une nouvelle liste à partir de L en ne gardant que les éléments dans l'intervalle [a, b].
+    Args:
+        L (Node): La liste chaînée de départ.
+        a (comparable): Le minimum de l'intervalle
+        b (comparable): Le maximum de l'intervalle
+    Returns:
+        Node: Une nouvelle liste pour laquelle on a gardé seulement les élément qui sont dans l'intervalle [a, b].
+    """
+    if a > b:
+        raise ValueError("a doit être inférieur ou égal à b.")
+    # avec un itérateur fonctionnel
+    return Lfilter(L, lambda x: a <= x <= b)
+
+
+L = Node(3, Node(1, Node(4, Node(1, Node(5, Node(9, Node(2, Node(6, Node(5, Node(3, Node(5, Node(8, Node(9, Node(7, Node(9, Node(3, Node(2, Node(3))))))))))))))))))
+print(dansIntervalle(L, 2, 4))
+```
+
+
+# Sujet de 15h30
+
+
+## 1. `genRandom`
+
+```{python}
+def genRandom(nbVal: int) -> Node:
+    """Créer une liste de nbVal nombres aléatoires entre 0 et 20
+    Args:
+        nbVal (int): Le nombre de nombres aléatoires à générer.
+    Returns:
+        Node: Une liste chaînée qui contient `nbVal` nombre
+              aléatoires entre 0 et 20.
+    """
+    if nbVal <= 0:
+        return None
+    return Node(randint(0, 20), genRandom(nbVal - 1))
+
+L = genRandom(10)
+print(L)
+```
+
+## 2. `compteInf`
+
+```{python}
+def compteInf(L: Node, seuil) -> int:
+    """Compter le nombre de valeurs strictement inférieures à `seuil` dans L.
+    Args:
+        L (Node): La liste dans laquelle on compte.
+        seuil: La valeur utilisée pour les comparaisons.
+    Returns:
+        int: Le nombre de valeurs dans `L` qui sont
+             strictement inférieures à `seuil`.
+    """
+    res = 0
+    while L is not None:
+        if L.valeur < seuil:
+            res += 1
+        L = L.suivant
+    return res
+
+print(compteInf(L, 10))
+```
+
+
+
+## 3. `horsIntervalle` récursivement
+
+```{python}
+def horsIntervalle(L: Node, a, b) -> Node:
+    """Retirer les éléments de L qui sont dans [a, b].
+    Args:
+        L (Node): La liste que l'on veut filtrer.
+        a: La valeur minimale de l'intervalle exclue.
+        b: La valeur maximale de l'intervalle exclue.
+    Returns:
+        Node: Une nouvelle liste qui est L sans les élément
+              de L qui sont compris entre a et b inclus.
+    """
+    if a > b or L is None:
+        return None
+    # Si la valeur dépasse en dessous de a ou au dessus de b
+    if L.valeur < a or L.valeur > b :
+        # on garde la valeur dan la nouvelle liste
+        return Node(L.valeur, horsIntervalle(L.suivant, a, b))
+    # sinon on no garde pas la valeur
+    return horsIntervalle(L.suivant, a, b)
+
+print(horsIntervalle(L, 5, 10))
+```
+
+## 4. `horsIntervalleFonc` avec un itérateur fonctionnel
+
+```{python}
+def horsIntervalleFonc(L: Node, a, b) -> Node:
+    """Retirer les éléments de L qui sont dans [a, b].
+    Args:
+        L (Node): La liste que l'on veut filtrer.
+        a: La valeur minimale de l'intervalle exclue.
+        b: La valeur maximale de l'intervalle exclue.
+    Returns:
+        Node: Une nouvelle liste qui est L sans les élément
+              de L qui sont compris entre a et b inclus.
+    """
+    if a > b:
+        raise ValueError("a doit être inférieur ou égal à b.")
+    return Lfilter(L, lambda x: x < a or x > b)
+
+print(horsIntervalleFonc(L, 5, 10))
+```
+
+

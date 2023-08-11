@@ -1,5 +1,6 @@
 ---
 title: "sacs (multi-ensembles)"
+description: "ensemble avec répétition"
 date: 2023-01-04
 categories: [ maths ]
 image: "_images/sac_ecole.png"

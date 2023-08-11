@@ -2,10 +2,11 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.2.280">
+<meta name="generator" content="quarto-1.3.450">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="description" content="Liste de formules utiles à connaître.">
 
 <title>0SK42 - formulaire d’analyse</title>
 <style>
@@ -17,7 +18,7 @@ div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
   width: 0.8em;
-  margin: 0 0.8em 0.2em -1.6em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
 </style>
@@ -57,24 +58,23 @@ ul.task-list li input[type="checkbox"] {
     "search-more-matches-text": "correspondances de plus dans ce document",
     "search-clear-button-title": "Effacer",
     "search-detached-cancel-button-title": "Annuler",
-    "search-submit-button-title": "Envoyer"
+    "search-submit-button-title": "Envoyer",
+    "search-label": "Recherche"
   }
 }</script>
+<script data-goatcounter="https://osk42.goatcounter.com/count" async="" src="//gc.zgo.at/count.js"></script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="../../styles.css">
 <meta property="og:title" content="0SK42 - formulaire d’analyse">
-<meta property="og:description" content="OSK42 - blog de Maths et d'Informatique">
-<meta property="og:image" content="https://quartopub.com/sites/osk42/osk42/_images/OsKaR.png">
+<meta property="og:description" content="Liste de formules utiles à connaître.">
+<meta property="og:image" content="https://osk42.quarto.pub/_images/OsKaR.png">
 <meta property="og:site-name" content="0SK42">
-<meta property="og:image:height" content="720">
-<meta property="og:image:width" content="1280">
 <meta name="twitter:title" content="0SK42 - formulaire d’analyse">
-<meta name="twitter:description" content="OSK42 - blog de Maths et d'Informatique">
-<meta name="twitter:image" content="https://quartopub.com/sites/osk42/osk42/_images/OsKaR.png">
-<meta name="twitter:image-height" content="720">
-<meta name="twitter:image-width" content="1280">
+<meta name="twitter:description" content="Liste de formules utiles à connaître.">
+<meta name="twitter:image" content="https://osk42.quarto.pub/_images/OsKaR.png">
 <meta name="twitter:card" content="summary_large_image">
 </head>
 
@@ -89,38 +89,68 @@ ul.task-list li input[type="checkbox"] {
     <span class="navbar-title">0SK42</span>
     </a>
   </div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+            <div id="quarto-search" class="" title="Recherche"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Basculer la navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-bi-share" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+      <i class="bi bi-share" role="img">
+</i> 
+ <span class="menu-text"></span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-bi-share">    
+        <li>
+    <a class="dropdown-item" href="https://github.com/OsKaR31415" rel="" target=""><i class="bi bi-github" role="img">
+</i> 
+ <span class="dropdown-text">github</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://youtube.com/@oskar31415" rel="" target=""><i class="bi bi-youtube" role="img">
+</i> 
+ <span class="dropdown-text">youtube</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="mailto:oscar.plaisant@orange.fr" rel="" target=""><i class="bi bi-envelope" role="img">
+</i> 
+ <span class="dropdown-text">email</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-sujets" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+ <span class="menu-text">Sujets</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-sujets">    
+        <li>
+    <a class="dropdown-item" href="../../posts/maths/>>mathematiques.html" rel="" target="">
+ <span class="dropdown-text">Mathématiques</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../posts/informatique/>>informatique.html" rel="" target="">
+ <span class="dropdown-text">Informatique</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../posts/>>reflexions.html" rel="" target="">
+ <span class="dropdown-text">Réflexions</span></a>
+  </li>  
+    </ul>
+  </li>
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/OsKaR31415"><i class="bi bi-github" role="img">
+    <a class="nav-link" href="../../CV.qmd" rel="" target=""><i class="bi bi-person-vcard" role="img">
 </i> 
  <span class="menu-text"></span></a>
   </li>  
-  <li class="nav-item compact">
-    <a class="nav-link" href="https://youtube.com/@oskar31415"><i class="bi bi-youtube" role="img">
-</i> 
- <span class="menu-text"></span></a>
-  </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../posts/maths/>>mathematiques.html">
- <span class="menu-text">Mathématiques</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../../posts/informatique/>>informatique.html">
- <span class="menu-text">Informatique</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../../about.html">
+    <a class="nav-link" href="../../about.html" rel="" target="">
  <span class="menu-text">A propos</span></a>
   </li>  
 </ul>
-              <div class="quarto-toggle-container">
-                  <a href="" class="quarto-color-scheme-toggle nav-link" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
-              </div>
-              <div id="quarto-search" class="" title="Search"></div>
+            <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Basculer le mode sombre"><i class="bi"></i></a>
+</div>
           </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
@@ -130,7 +160,12 @@ ul.task-list li input[type="checkbox"] {
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-page-left">
       <h1 class="title">formulaire d’analyse</h1>
-                                <div class="quarto-categories">
+                  <div>
+        <div class="description">
+          Liste de formules utiles à connaître.
+        </div>
+      </div>
+                          <div class="quarto-categories">
                 <div class="quarto-category">maths</div>
                 <div class="quarto-category">index</div>
               </div>
@@ -160,39 +195,39 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Sur cette page</h2>
    
   <ul>
-  <li><a href="#identités-remarquables" id="toc-identités-remarquables" class="nav-link active" data-scroll-target="#identités-remarquables"><span class="toc-section-number">0.1</span>  Identités remarquables</a></li>
-  <li><a href="#suites-arithmétiques-et-géométriques" id="toc-suites-arithmétiques-et-géométriques" class="nav-link" data-scroll-target="#suites-arithmétiques-et-géométriques"><span class="toc-section-number">1</span>  Suites arithmétiques et géométriques</a>
+  <li><a href="#identités-remarquables" id="toc-identités-remarquables" class="nav-link active" data-scroll-target="#identités-remarquables"><span class="header-section-number">0.1</span> Identités remarquables</a></li>
+  <li><a href="#suites-arithmétiques-et-géométriques" id="toc-suites-arithmétiques-et-géométriques" class="nav-link" data-scroll-target="#suites-arithmétiques-et-géométriques"><span class="header-section-number">1</span> Suites arithmétiques et géométriques</a>
   <ul class="collapse">
-  <li><a href="#suites-arithmétiques" id="toc-suites-arithmétiques" class="nav-link" data-scroll-target="#suites-arithmétiques"><span class="toc-section-number">1.1</span>  Suites arithmétiques</a></li>
-  <li><a href="#suites-géométriques" id="toc-suites-géométriques" class="nav-link" data-scroll-target="#suites-géométriques"><span class="toc-section-number">1.2</span>  Suites géométriques</a></li>
+  <li><a href="#suites-arithmétiques" id="toc-suites-arithmétiques" class="nav-link" data-scroll-target="#suites-arithmétiques"><span class="header-section-number">1.1</span> Suites arithmétiques</a></li>
+  <li><a href="#suites-géométriques" id="toc-suites-géométriques" class="nav-link" data-scroll-target="#suites-géométriques"><span class="header-section-number">1.2</span> Suites géométriques</a></li>
   </ul></li>
-  <li><a href="#formules-de-dérivation" id="toc-formules-de-dérivation" class="nav-link" data-scroll-target="#formules-de-dérivation"><span class="toc-section-number">2</span>  Formules de dérivation</a>
+  <li><a href="#formules-de-dérivation" id="toc-formules-de-dérivation" class="nav-link" data-scroll-target="#formules-de-dérivation"><span class="header-section-number">2</span> Formules de dérivation</a>
   <ul class="collapse">
-  <li><a href="#formules-générales" id="toc-formules-générales" class="nav-link" data-scroll-target="#formules-générales"><span class="toc-section-number">2.1</span>  Formules générales</a></li>
-  <li><a href="#fonctions-usuelles" id="toc-fonctions-usuelles" class="nav-link" data-scroll-target="#fonctions-usuelles"><span class="toc-section-number">2.2</span>  Fonctions usuelles</a>
+  <li><a href="#formules-générales" id="toc-formules-générales" class="nav-link" data-scroll-target="#formules-générales"><span class="header-section-number">2.1</span> Formules générales</a></li>
+  <li><a href="#fonctions-usuelles" id="toc-fonctions-usuelles" class="nav-link" data-scroll-target="#fonctions-usuelles"><span class="header-section-number">2.2</span> Fonctions usuelles</a>
   <ul class="collapse">
-  <li><a href="#fonctions-non-composées" id="toc-fonctions-non-composées" class="nav-link" data-scroll-target="#fonctions-non-composées"><span class="toc-section-number">2.2.1</span>  fonctions non composées</a></li>
-  <li><a href="#fonctions-composées" id="toc-fonctions-composées" class="nav-link" data-scroll-target="#fonctions-composées"><span class="toc-section-number">2.2.2</span>  Fonctions composées</a></li>
+  <li><a href="#fonctions-non-composées" id="toc-fonctions-non-composées" class="nav-link" data-scroll-target="#fonctions-non-composées"><span class="header-section-number">2.2.1</span> fonctions non composées</a></li>
+  <li><a href="#fonctions-composées" id="toc-fonctions-composées" class="nav-link" data-scroll-target="#fonctions-composées"><span class="header-section-number">2.2.2</span> Fonctions composées</a></li>
   </ul></li>
   </ul></li>
-  <li><a href="#fonctions-trigonométriques-et-hyperboliques" id="toc-fonctions-trigonométriques-et-hyperboliques" class="nav-link" data-scroll-target="#fonctions-trigonométriques-et-hyperboliques"><span class="toc-section-number">3</span>  Fonctions trigonométriques et hyperboliques</a>
+  <li><a href="#fonctions-trigonométriques-et-hyperboliques" id="toc-fonctions-trigonométriques-et-hyperboliques" class="nav-link" data-scroll-target="#fonctions-trigonométriques-et-hyperboliques"><span class="header-section-number">3</span> Fonctions trigonométriques et hyperboliques</a>
   <ul class="collapse">
-  <li><a href="#fonctions-trigonométriques" id="toc-fonctions-trigonométriques" class="nav-link" data-scroll-target="#fonctions-trigonométriques"><span class="toc-section-number">3.1</span>  Fonctions trigonométriques</a></li>
-  <li><a href="#fonctions-hyperboliques" id="toc-fonctions-hyperboliques" class="nav-link" data-scroll-target="#fonctions-hyperboliques"><span class="toc-section-number">3.2</span>  Fonctions hyperboliques</a></li>
-  <li><a href="#points-sur-le-cercle-trigonométrique" id="toc-points-sur-le-cercle-trigonométrique" class="nav-link" data-scroll-target="#points-sur-le-cercle-trigonométrique"><span class="toc-section-number">3.3</span>  Points sur le cercle trigonométrique</a></li>
-  <li><a href="#trigonométrie-réciproque" id="toc-trigonométrie-réciproque" class="nav-link" data-scroll-target="#trigonométrie-réciproque"><span class="toc-section-number">3.4</span>  Trigonométrie réciproque</a></li>
-  <li><a href="#trigonométrie-hyperbolique-réciproque" id="toc-trigonométrie-hyperbolique-réciproque" class="nav-link" data-scroll-target="#trigonométrie-hyperbolique-réciproque"><span class="toc-section-number">3.5</span>  Trigonométrie hyperbolique réciproque</a></li>
+  <li><a href="#fonctions-trigonométriques" id="toc-fonctions-trigonométriques" class="nav-link" data-scroll-target="#fonctions-trigonométriques"><span class="header-section-number">3.1</span> Fonctions trigonométriques</a></li>
+  <li><a href="#fonctions-hyperboliques" id="toc-fonctions-hyperboliques" class="nav-link" data-scroll-target="#fonctions-hyperboliques"><span class="header-section-number">3.2</span> Fonctions hyperboliques</a></li>
+  <li><a href="#points-sur-le-cercle-trigonométrique" id="toc-points-sur-le-cercle-trigonométrique" class="nav-link" data-scroll-target="#points-sur-le-cercle-trigonométrique"><span class="header-section-number">3.3</span> Points sur le cercle trigonométrique</a></li>
+  <li><a href="#trigonométrie-réciproque" id="toc-trigonométrie-réciproque" class="nav-link" data-scroll-target="#trigonométrie-réciproque"><span class="header-section-number">3.4</span> Trigonométrie réciproque</a></li>
+  <li><a href="#trigonométrie-hyperbolique-réciproque" id="toc-trigonométrie-hyperbolique-réciproque" class="nav-link" data-scroll-target="#trigonométrie-hyperbolique-réciproque"><span class="header-section-number">3.5</span> Trigonométrie hyperbolique réciproque</a></li>
   </ul></li>
-  <li><a href="#limites-usuelles" id="toc-limites-usuelles" class="nav-link" data-scroll-target="#limites-usuelles"><span class="toc-section-number">4</span>  Limites usuelles</a>
+  <li><a href="#limites-usuelles" id="toc-limites-usuelles" class="nav-link" data-scroll-target="#limites-usuelles"><span class="header-section-number">4</span> Limites usuelles</a>
   <ul class="collapse">
-  <li><a href="#comportement-à-linfini" id="toc-comportement-à-linfini" class="nav-link" data-scroll-target="#comportement-à-linfini"><span class="toc-section-number">4.1</span>  Comportement à l’infini</a></li>
-  <li><a href="#comportement-à-lorigine" id="toc-comportement-à-lorigine" class="nav-link" data-scroll-target="#comportement-à-lorigine"><span class="toc-section-number">4.2</span>  Comportement à l’origine</a></li>
+  <li><a href="#comportement-à-linfini" id="toc-comportement-à-linfini" class="nav-link" data-scroll-target="#comportement-à-linfini"><span class="header-section-number">4.1</span> Comportement à l’infini</a></li>
+  <li><a href="#comportement-à-lorigine" id="toc-comportement-à-lorigine" class="nav-link" data-scroll-target="#comportement-à-lorigine"><span class="header-section-number">4.2</span> Comportement à l’origine</a></li>
   </ul></li>
-  <li><a href="#formules-dintégration" id="toc-formules-dintégration" class="nav-link" data-scroll-target="#formules-dintégration"><span class="toc-section-number">5</span>  Formules d’intégration</a>
+  <li><a href="#formules-dintégration" id="toc-formules-dintégration" class="nav-link" data-scroll-target="#formules-dintégration"><span class="header-section-number">5</span> Formules d’intégration</a>
   <ul class="collapse">
-  <li><a href="#intégration-par-parties" id="toc-intégration-par-parties" class="nav-link" data-scroll-target="#intégration-par-parties"><span class="toc-section-number">5.1</span>  Intégration par parties</a></li>
-  <li><a href="#primitives-usuelles" id="toc-primitives-usuelles" class="nav-link" data-scroll-target="#primitives-usuelles"><span class="toc-section-number">5.2</span>  Primitives usuelles</a></li>
-  <li><a href="#primitives-de-fonctions-composées" id="toc-primitives-de-fonctions-composées" class="nav-link" data-scroll-target="#primitives-de-fonctions-composées"><span class="toc-section-number">5.3</span>  Primitives de fonctions composées</a></li>
+  <li><a href="#intégration-par-parties" id="toc-intégration-par-parties" class="nav-link" data-scroll-target="#intégration-par-parties"><span class="header-section-number">5.1</span> Intégration par parties</a></li>
+  <li><a href="#primitives-usuelles" id="toc-primitives-usuelles" class="nav-link" data-scroll-target="#primitives-usuelles"><span class="header-section-number">5.2</span> Primitives usuelles</a></li>
+  <li><a href="#primitives-de-fonctions-composées" id="toc-primitives-de-fonctions-composées" class="nav-link" data-scroll-target="#primitives-de-fonctions-composées"><span class="header-section-number">5.3</span> Primitives de fonctions composées</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -778,9 +813,23 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     icon: icon
   };
   anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
   const clipboard = new window.ClipboardJS('.code-copy-button', {
-    target: function(trigger) {
-      return trigger.previousElementSibling;
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
     }
   });
   clipboard.on('success', function(e) {
@@ -845,6 +894,92 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return note.innerHTML;
     });
   }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
   const findCites = (el) => {
     const parentEl = el.parentElement;
     if (parentEl) {

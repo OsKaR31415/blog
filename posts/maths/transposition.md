@@ -1,5 +1,6 @@
 ---
 title: "transposition"
+description: "Permutation qui n'échange que deux éléments."
 date: 2023-01-19
 categories: [ maths ]
 css: "../../css/permutations.css"
@@ -10,7 +11,7 @@ css: "../../css/permutations.css"
 
 Une **transposition** est une [permutation](permutation.md) qui n'échange que $2$ éléments.
 
-Une transposition est donc un [2-cycle](p cycle.md) 
+Une transposition est donc un 2-cycle.
 
 Formellement, une [permutation](permutation.md) $\sigma \in\mathfrak{S}_{n}$ est une transposition si et seulement si :
 

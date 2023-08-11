@@ -1,7 +1,7 @@
 ---
 title: "Le dimanche, il pleut généralement à l'extérieur"
 date: 2023-01-08
-categories: [ aphorismes, zététique ]
+categories: [ aphorisme, zététique, réflexion ]
 ---
 
 > <div style="font-size: 2em; font-family: cursive, serif">Le dimanche, il pleut généralement à l'extérieur</div>

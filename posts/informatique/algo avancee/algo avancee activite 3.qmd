@@ -1,0 +1,967 @@
+---
+title: "Algorithmique avancée : activité 3"
+date: 2023-01-13
+categories: [ informatique ]
+jupyter: python3
+toc: true
+number-sections: true
+draft: true
+---
+
+::: {.callout-tip collapse=true}
+
+## Définition d'une liste chaînée
+
+```{python}
+
+class Node:
+    def __init__(self, valeur, suivant: 'Node' =None):
+        self.valeur = valeur
+        self.suivant = suivant
+
+class Liste:
+    def __init__(self, head: Node):
+        self.head = head
+
+    def __str__(self) -> str:
+        return "(" + ",".join(map(lambda e: str(Liste(e) if isinstance(e, Node) else e),
+                                  self.to_list())) + ")"
+
+    def to_list(self) -> list:
+        if self.head is None:
+            return []
+        return [self.head.valeur] + self.cdr().to_list()
+
+    def __len__(self) -> int:
+        """Longueur de la liste.
+        """
+        if self.head is None:
+            return 0
+        return 1 + len(self.head.suivant)
+
+    def append(self, valeur) -> None:
+        """Ajouter une valeur à la fin de la liste.
+        """
+        # cas de base :
+        # on doit s'arrêter dès que la liste est terminer
+        if self.head.suivant is None:
+            # on créé un nouveau Node
+            self.head.suivant = Node(valeur)
+        # récursion pour atteindre la fin de la liste
+        self.cdr().append(valeur)
+
+    def car(self):
+        """Récupérer la valeur en tête de liste
+        """
+        return self.head.value
+
+    def cdr(self) -> 'Liste':
+        """Récupérer la liste sans son premier élément.
+        """
+        if self.head is None:
+            return None
+        return Liste(self.head.suivant)
+
+    def last(self):
+        """Récupérer le dernier élément de la liste.
+        """
+        if self.head.suivant is None:
+            return self.last(Liste(self.head.suivant))
+        return self.head.valeur
+```
+
+:::
+
+# Bégaie - De bégaie
+
+
+> On dit qu'une liste est “bégayée” lorsque chaque élément y
+> apparaît deux fois de suite. Le but de cet exercice est de
+> transformer une liste en une liste bégayée, et inversement
+> de “dé bégayer” une liste en supprimant un élément sur
+> deux.
+
+## Bégaie
+
+### Fonction itérative
+
+> écrire la fonction itérative `begaie` qui, étant donnée
+> une liste d’éléments, renvoie la liste où chaque élément
+> est répété. Par exemple : `begaie(1,2,3,1,4) =
+> (1,1,2,2,3,3,1,1,4,4)` et `begaie(None) = None`.
+
+```{python}
+def begaie(L: Node) -> Node:
+    p = L
+    while p is not None:
+        # insérer un mode contenant la même valeur
+        tmp = Node(p.valeur, p.suivant)
+        p.suivant = tmp
+        # on passe au pointeur suivant
+        p = p.suivant.suivant
+    return L
+```
+
+On peut tester :
+
+```{python}
+L = Node(3, Node(1, Node(4, Node(1, Node(5, Node(9))))))
+print(Liste(L))
+print(Liste(begaie(L)))
+```
+
+Et on a bien :
+
+```{python}
+print(begaie(None))
+```
+
+
+
+### Fonction récursive
+
+> Donner maintenant une fonction récursive `begaieRec` qui
+> effectue le même traitement que la fonction `begaie`
+> précédente
+
+```{python}
+def begaieRec(L: Node) -> Node:
+    if L is None:
+        return None
+    return Node(L.valeur, Node(L.valeur, begaieRec(L.suivant)))
+```
+
+Elle fonctionne également :
+
+```{python}
+L = Node(3, Node(1, Node(4, Node(1, Node(5, Node(9))))))
+print(Liste(L))
+# La fonction modifie la valeur de L, donc on pourrait
+# simplement appeler la fonction, sans modifier
+# explicitement L (sans mettre le `L = `)
+L = begaie(L)
+```
+
+## Dé bégaie
+
+
+### Fonction itérative
+
+> Écrire maintenant la fonction itérative `debegaie` qui
+> prend en argument une liste bégayée et retourne la liste
+> privée de ses doublons. La fonction de bégaie est telle que
+> `debegaie(begaie(L)) = L`
+
+```{python}
+def debegaie(L: Node) -> Node:
+    if L is None:
+        return None
+    p = L
+    # on est obligé 
+    while p.suivant.suivant is not None:
+        p.suivant = p.suivant.suivant
+        p = p.suivant
+    # on retire le dernier élément
+    # p.suivant = None
+    return L
+
+L = Node(3, Node(1, Node(4, Node(1, Node(5, Node(9))))))
+L = begaie(L)
+print(Liste(L))
+L = debegaie(L)
+print(Liste(L))
+```
+
+
+### Fonction récursive
+
+> Écrire enfin la fonction récursive `debegaieRec` qui
+> réalise le même traitement que la fonction `debegaie`.
+
+
+
+```{python}
+def debegaieRec(L: Node) -> Node:
+    # cas de base
+    if L is None:
+        return None
+    # on doit ajouter ce cas de base car on utilise
+    # L.suivant.suivant, donc L.suivant ne doit pas être None
+    if L.suivant is None:
+        return None
+    # On créée une nouvelle liste qui saute un élément
+    return Node(L.valeur, debegaieRec(L.suivant.suivant))
+
+
+L = Node(3, Node(1, Node(4, Node(1, Node(5, Node(9))))))
+L = begaie(L)
+print(Liste(L))
+L = debegaie(L)
+print(Liste(L))
+```
+
+# Implémentation de la fonction `zip`
+
+De très nombreux langages de programmations permettent de
+travailler sur des structures de listes chaînées. Le langage
+Python notamment permet de travailler nativement avec les
+listes et implémente la fonction `zip(l1, l2)` qui permet, à partir de 2 listes de même longueur de construire une liste contenant les couples de valeurs formés des éléments de même indice issu des 2 listes. Par exemple :
+
+```{python}
+Z = zip((1, 2, 3), ("a", "b", "c" ))
+print(list(Z))
+```
+
+## Itérative
+
+ 1. Écrire la fonction itérative zip(l1, l2) qui permet d’obtenir le résultat désiré en suivant le formalisme des listes chaînées étudiées en cours. On supposera les listes en argument de même taille et non vides.
+
+
+```{python}
+def zip_iter(L1: Node, L2: Node) -> Node:
+    p = L1
+    q = L2
+    res = None
+    last = None
+    while p is not None and q is not None:
+        if res is None:
+            res = Node(Node(p.valeur, Node(q.valeur)))
+            last = res
+        else:
+            last.suivant = Node(Node(p.valeur, Node(q.valeur)))
+            last = last.suivant
+        p = p.suivant
+        q = q.suivant
+    return res
+
+L1 = Node(3, Node(1, Node(4, Node(1, Node(5, Node(9, Node(2)))))))
+L2 = Node(1, Node(6, Node(1, Node(8, Node(0, Node(3, Node(3)))))))
+print(Liste(zip_iter(L1, L2)))
+print(Liste(L1), Liste(L2))
+```
+
+## Récursive
+
+ 2. Produire une solution récursive équivalente.
+
+```{python}
+def zip_rec(L1: Node, L2: Node) -> Node:
+    if L1 is None or L2 is None:
+        return None
+    return Node(Node(L1.valeur, Node(L2.valeur)),
+                zip_rec(L1.suivant, L2.suivant))
+
+
+L1 = Node(3, Node(1, Node(4, Node(1, Node(5, Node(9, Node(2)))))))
+L2 = Node(1, Node(6, Node(1, Node(8, Node(0, Node(3, Node(3)))))))
+L3 = Node(1, Node(2, Node(3)))
+print(Liste(zip_rec(L1, L2)))
+print(Liste(zip_rec(L1, L3)))
+```
+
+
+# Liste croisante
+
+On considère dans cet exercice une liste contenant des valeurs comparables grâce à l’opérateur `<=`.
+
+## Itérative
+
+ 1. Écrire la fonction itérative `croissante(L)` qui prend en argument une telle liste et retourne `True` si et seulement si la liste est triée par ordre croissant au sens large.
+
+On implémentera la fonction en considérant les cas de base suivants :
+ - une liste vide est considérée comme triée par ordre croissant
+ - une liste avec un seul élément est croissante également
+
+```{python}
+def croissante_iter(L: Node) -> bool:
+    if L is None: return True
+    p = L
+    while p.suivant is not None:
+        # si deux éléments sont dans un ordre décroissant
+        if p.valeur > p.suivant.valeur:
+            # on sait que la liste n'est pas croissante
+            return False
+        p = p.suivant
+    # si on a trouvé aucune valeur décroissante dans la liste, on sait qu'elle
+    # est croissante
+    return True
+
+L = Node(1, Node(6, Node(6, Node(42, Node(73)))))
+print(croissante_iter(L))  # True
+L = Node(1, Node(6, Node(0, Node(42))))
+print(croissante_iter(L))  # False
+```
+
+## Récursive
+
+2. Proposer une solution récursive.
+
+```{python}
+def croissante_rec(L: Node) -> bool:
+    if L is None: return True
+    if L.suivant is None: return True
+    # si les valeurs en tête sont décroissantes
+    if L.valeur > L.suivant.valeur:
+        return False
+    return croissante_rec(L.suivant)
+
+L = Node(1, Node(6, Node(6, Node(42, Node(73)))))
+print(croissante_iter(L))  # True
+L = Node(1, Node(6, Node(0, Node(42))))
+print(croissante_iter(L))  # False
+```
+
+# Suppression des occurrences d’un élément
+
+Nous nous intéressons maintenant à la suppression d’un élément quelconque dans une liste chaînée.
+
+## Itérative
+
+ 1. Écrire une fonction itérative `removeAll(L, elem)` qui prend en argument une liste chaînée `L` et une valeur `elem` et retourne la liste privée de ses éléments `elem`.
+
+```{python}
+def remove_all_iter(L: Node, elem) -> Node:
+    if L is None: return None
+    # on cherche la première valeur
+    while L.valeur == elem:
+        L = L.suivant
+        # si on a passé toutes les valeurs, c'est que la liste ne contient que
+        # des valeurs à supprimer :
+        if L is None: return None
+    res = Node(L.valeur)
+    res_tl = res
+    while L is not None:
+        if L.valeur != elem:
+            res_tl.suivant = Node(L.valeur)
+            res_tl = res_tl.suivant
+        L = L.suivant
+    return res
+
+print("Liste vide :", remove_all_iter(None, 9))
+
+L = Node(42, Node(42, Node(42, Node(42, Node(42, Node(42, Node(42)))))))
+print("Liste à supprimer complètement :",
+      Liste(remove_all_iter(L, 42)))
+
+L = Node(73, Node(73, Node(73, Node(42, Node(42)))))
+print("Liste qui commmence par les éléments à supprimer :",
+      Liste(remove_all_iter(L, 73)))
+
+L = Node(1, Node(1, Node(1, Node(8, Node(1, Node(3, Node(3)))))))
+print("Liste mixte :",
+      Liste(remove_all_iter(L, 1)))
+```
+
+
+## Récursive
+
+ 2. Proposer une solution récursive à ce problème.
+Indications : pensez à différencier les cas suivants :
+
+ - la liste est vide initialement,
+ - la liste ne contient que l’élément à supprimer,
+ - la liste commence par les éléments à supprimer,
+ - la liste est mixte : composée pour une part de l’élément à supprimer et pour une autre part d’autres éléments à conserver.
+
+
+```{python}
+def remove_all(L: Node, elem) -> Node:
+    if L is None: return None
+    if L.valeur == elem:
+        return remove_all(L.suivant, elem)
+    return Node(L.valeur, remove_all(L.suivant, elem))
+
+print("Liste vide :", remove_all_iter(None, 9))
+
+L = Node(42, Node(42, Node(42, Node(42, Node(42, Node(42, Node(42)))))))
+print("Liste à supprimer complètement :",
+      Liste(remove_all_iter(L, 42)))
+
+L = Node(73, Node(73, Node(73, Node(42, Node(42)))))
+print("Liste qui commmence par les éléments à supprimer :",
+      Liste(remove_all_iter(L, 73)))
+
+L = Node(1, Node(1, Node(1, Node(8, Node(1, Node(3, Node(3)))))))
+print("Liste mixte :",
+      Liste(remove_all_iter(L, 1)))
+```
+
+
+# Suite de Fibonacci
+
+La suite de Fibonacci est définie comme suit :
+
+ - $f_0 = 1$
+ - $f_1 = 1$
+ - $f_n = f_{n-1} + f_{n-2}$ si $n > 1$
+
+
+## Itérative
+
+ 1. Écrire la définition de la fonction itérative `fibonacci(n)` qui, étant donné un entier naturel `n` renvoie la liste $(f_n, f_{n−1}, f_{n−2}, \ldots, f_1, f_0)$ où les fi sont les termes de la suite de Fibonacci.
+
+Par exemple :
+
+```python
+fibonacci(0) = (1)
+fibonacci(1) = (1, 1)
+fibonacci(4) = (1, 1, 2, 3, 5)
+fibonacci(5) = (1, 1, 2, 3, 5, 8)
+```
+
+```{python}
+def fibonacci(n: int) -> Node:
+    if n == 0:
+        return Node(1)
+    res = Node(1, Node(1))
+    # on a déjà fait la 1ère étape en définissant res, donc on peut diminuer n
+    n -= 1
+    # _ est un nom de variable que l'on utilise quand on sait que l'on ne va
+    # pas utiliser cette variable.
+    for _ in range(n):
+        # somme de la dernière et l'avant dernière valeur
+        res = Node(res.valeur + res.suivant.valeur, res)
+    return res
+
+for n in range(10):
+    print(f"fibonacci({n}) = {Liste(fibonacci(n))}")
+```
+
+::: {.callout-tip collapse=true}
+## Les f-string en python
+
+Les "*f-strings*" sont des chaînes de caractères (*strings*) devant lesquelles on met un `f`.
+
+Cela permet de mettre du code à l'intérieur, qui sera évalué et intégré dans la chaîne.
+
+Par exemple :
+
+```{python}
+for i in range(5):
+    print(f"{i*10}km à pied, ça use les souliers.")
+```
+
+Ici, on voit que c'est l'expression entourée par des accolades `{...}` qui est évaluée. Elle est bien intégrée dans le reste de la chaîne de caractères.
+
+Bien sûr, il est possible de mettre plusieurs expressions dans une même f-string :
+
+```{python}
+for i in range(5):
+    print(f"{i} au carré donne {i**2}")
+```
+
+Et on peut même imaginer ce genre d'exemples :
+
+```{python}
+for i in range(5):
+    print(f"{i} est un nombre {'impair' if i%2 else 'pair'} et {'non'*(0 != i%3)} divisible par 3.")
+```
+
+Les f-strings sont plus rapides et plus lisibles que d'autres techniques pour créer des listes contenant des résultats. Il vaut donc mieux utiliser des f-string plutôt que faire des concaténations de listes avec `+`.
+
+:::
+
+
+## Récursive
+
+ 2. Produire une version récursive de cette fonction
+
+```{python}
+def fibonacci_rec(n: int) -> Node:
+    if n == 0:
+        return Node(1)
+    if n == 1:
+        return Node(1, Node(1))
+    recursion = fibonacci_rec(n - 1)
+    return Node(recursion.valeur + recursion.suivant.valeur,
+                recursion)
+
+for n in range(10):
+    print(f"fibonacci({n}) = {Liste(fibonacci(n))}")
+```
+
+
+# interclassement
+
+On s’intéresse dans cet exercice à deux méthodes d’interclassement de listes. L’interclassement vise à parcourir deux listes en parallèle et, à chaque itération, à insérer un élément venant de l’une ou de l’autre liste, dans la liste résultat. Le critère utilisé pour choisir la liste qui fournit l’élément à insérer suivant définit le type d’interclassement.
+
+
+
+
+## Interclassement strict
+
+ 1. On s’intéresse tout d’abord à un interclassement strict qui insère alternativement un élément de la première liste puis un élément de la seconde liste. Dans le cas où une liste est plus courte que l’autre, les éléments restants de la plus longue sont insérés à la fin de la liste résultat sans interclassement. Plus précisément, si une liste est vide dès le début, la seconde est retournée. Si les deux listes sont vides, alors la liste vide (None) est retournée. Par exemple :
+
+
+On commence par créer une fonction qui permet de copier une liste chaînée (créer une nouvelle liste qui contien les mêmes valeurs).
+```{python}
+def copy(L: Node) -> Node:
+    """Créer une copie d'une liste chaînée."""
+    if L is None: return None
+    return Node(L.valeur, copy(L.suivant))
+```
+
+::: {.callout-tip collapse=true}
+## Version itérative de `copy`
+
+La version itérative nécessite de garder à la fois un pointeur vers la position dans la liste originale et vers la fin de la nouvelle liste.
+
+```{python}
+def copy_iter(L: Node) -> Node:
+    """Créer une copie d'une liste chaînée."""
+    if L is None: return None
+    res = Node(L.valeur)
+    p = res
+    q = L.suivant
+    while q is not None:
+        p.suivant = Node(q.valeur)
+        p = p.suivant
+        q = q.suivant
+    return res
+```
+:::
+
+
+### Itératif
+
+```{python}
+def inter_strict_iter(L1: Node, L2: Node) -> Node:
+    if L1 is None: return copy(L2)
+    if L2 is None: return copy(L1)
+    res = Node(L1.valeur, Node(L2.valeur))
+    L1_p = L1.suivant
+    L2_p = L2.suivant
+    res_tail = res.suivant
+    while L1_p is not None and L2_p is not None:
+        res_tail.suivant = Node(L1_p.valeur, Node(L2_p.valeur))
+        res_tail = res_tail.suivant.suivant
+        L1_p = L1_p.suivant
+        L2_p = L2_p.suivant
+    if L1_p is None: res_tail.suivant = copy(L2_p)
+    if L2_p is None: res_tail.suivant = copy(L1_p)
+    return res
+
+L1 = Node(2, Node(6, Node(42, Node(73, Node(1237)))))
+L2 = Node(0, Node(1, Node(0)))
+print(Liste(inter_strict_iter(L1, L2)))
+```
+
+
+
+
+### Récursif
+
+```{python}
+def inter_strict_rec(L1: Node, L2: Node) -> Node:
+    if L1 is None or L2 is None: return None
+    return Node(L1.valeur, Node(L2.valeur,
+                inter_strict_rec(L1.suivant, L2.suivant)))
+
+L1 = Node('A', Node('B', Node('C', Node('D', Node('E')))))
+L2 = Node(0, Node(1, Node(2)))
+print(Liste(inter_strict_iter(L1, L2)))
+```
+
+
+
+
+::: {.callout-tip collapse=true}
+## Avec `match`
+
+Le mot clef `match` de python permet de faire du "_pattern matching_", un peu comme en ocaml. Cette syntaxe (avec `match` et `case`) peut être plus lisible que des `if` dans certains cas.
+
+Ici, on profite du fait d'avoir deux cas symétrique : si `L1` est `None` et si `L2` est `Non`. Dans chaque cas, il faut retourner une copie de l'autre liste.
+
+L'expression `(L, None) | (None, L)` va _matcher_ tous les cas où l'une des deux listes `(L1, L2)` est vide. Alors, `L` sera l'autre liste, exactement ce qu'il faut pour faire un `return copy(L)` !
+
+
+```{python}
+def inter_strict_rec(L1: Node, L2: Node) -> Node:
+    match (L1, L2):
+        case (L, None) | (None, L): return copy(L)
+    return Node(L1.valeur, Node(L2.valeur,
+                inter_strict_rec(L1.suivant, L2.suivant)))
+
+L1 = Node('A', Node('B', Node('C', Node('D', Node('E')))))
+L2 = Node(0, Node(1, Node(2)))
+print(Liste(inter_strict_iter(L1, L2)))
+```
+
+
+Comme on fait un `return copy(L)`, on a pas besoin de préciser que le `return` récursif ne doit pas être exécuté dans tous les cas. Mais si on ne fait pas de `return`, on peut utiliser le cas `case other:`, qui correspondra à un `else` : il sera atteint seulement si aucun des autres cas ne sont trouvés.
+
+
+```{python}
+for a in range(8):
+    match a:
+        case 0:
+            print(a, "un nombre nul")
+        case 1:
+            print(a, "premier nombre, mais pas un nombre premier")
+        case 2:
+            print(a, "est le premier nombre premier")
+        case 3:
+            print(a, "est un autre nombre premier")
+        case 4:
+            print(a, "est le premier nombre pas premier")
+        case 5:
+            print(a, "est encore un nombre premier")
+        case other:
+            print(a, "est trop grand pour moi")
+    # sera exécuté à chaque fois, quel que soit le match
+    print("--------------------------------------------")
+```
+
+:::
+
+
+## Interclassement croissant
+
+
+ 2. On considère maintenant deux listes de nombres `L1` et `L2` qui sont triées par ordre croissant. Écrire une fonction d’interclassement `interCroissant(L1, L2)` qui insère à chaque itération l’élément le plus petit qui se trouve en tête de liste soit de `L1` soit de `L2`. Un tel interclassement produit une liste fusionnée elle-même triée par ordre croissant. Proposer une solution itérative puis une solution récursive à ce problème.
+
+
+
+
+### Itératif
+
+```{python}
+def inter_croissant_iter(L1: Node, L2: Node) -> Node:
+    if L1 is None: return copy(L2)
+    if L2 is None: return copy(L1)
+    L1_p = L1
+    L2_p = L2
+    # init 1ère valeur
+    res = None
+    if L1_p.valeur < L2_p.valeur:
+        res = Node(L1_p.valeur)
+        L1_p = L1_p.suivant
+    else:
+        res = Node(L2_p.valeur)
+        L2_p = L2_p.suivant
+    res_tail = res
+    while L1_p is not None and L2_p is not None:
+        if L1_p.valeur < L2_p.valeur:
+            res_tail.suivant = Node(L1_p.valeur)
+            res_tail = res_tail.suivant
+            L1_p = L1_p.suivant
+        else:
+            res_tail.suivant = Node(L2_p.valeur)
+            res_tail = res_tail.suivant
+            L2_p = L2_p.suivant
+    if L1_p is None:
+        res_tail.suivant = copy(L2_p)
+    elif L2_p is None:
+        res_tail.suivant = copy(L1_p)
+    return res
+
+L1 = Node(1, Node(6, Node(42, Node(73, Node(1237)))))
+L2 = Node(0, Node(12, Node(37, Node(67, Node(68)))))
+print(Liste(inter_croissant_iter(L1, L2)))
+```
+
+
+### Récursif
+
+
+
+```{python}
+def inter_croissant_rec(L1: Node, L2: Node) -> Node:
+    match (L1, L2):
+        case (L, None) | (None, L): return copy(L)
+        case (L1, L2) if L1.valeur < L2.valeur:
+            return Node(L1.valeur,
+                        inter_croissant_rec(L1.suivant, L2))
+        case other:
+            return Node(L2.valeur,
+                        inter_croissant_rec(L1, L2.suivant))
+
+L1 = Node(1, Node(6, Node(42, Node(73, Node(1237)))))
+L2 = Node(0, Node(12, Node(37, Node(67, Node(68)))))
+print(Liste(inter_croissant_iter(L1, L2)))
+```
+
+
+# Calculatrice
+
+Nous nous intéressons à la conception d’une calculatrice qui repose sur une représentation des opérations à l’aide d’une **pile**. De façon à mener à bien ce programme, il va donc falloir
+ - implémenter les fonctions de la barrière d’abstraction de la structure pile de données (push, pop),
+ - comprendre la notation postfixée pour la saisie des opérations
+
+
+De manière traditionnelle, les opérations sont notées de manière infixée avec, dans le cas d’un opérateur binaire, le placement de l’opérateur entre les 2 opérandes. On obtient la notation suivante :
+De manière traditionnelle, les opérations sont notées de manière infixée avec, dans le cas d’un opérateur binaire, le placement de l’opérateur entre les 2 opérandes. On obtient la notation suivante :
+$$\text{opérande}_1 \text{opérateur} \text{opérande}_2$$
+
+comme par exemple : $3 + 4$, $2.5 / 3.14 \ldots$
+
+En notation postfixée, l’opérateur succède à son (dans le cas d’un opérateur unaire) ou ses (dans le cas d’un opérateur binaire) opérande(s).
+
+Ainsi : “$3+4$” s’écrit en postfixe “$3 4 +$”.
+
+L’intérêt d’une telle représentation est de pouvoir ensuite utiliser une pile pour réaliser les calculs en suivant le schéma de résolution suivant :
+
+ - si la pile ne contient qu’une valeur réelle, il s’agit du résultat du calcul,
+ - sinon on empile les valeurs réelles lorsqu’elles sont lues en entrée,
+ - si on lit un caractère correspondant à un opérateur binaire on dépile les deux dernières valeurs réelles, on effectue le calcul et on empile le résultat,
+ - si on lit un caractère correspondant à un opérateur unaire, comme l’opérateur de négation, on dépile la dernière valeur, on applique l’opérateur et on empile le résultat.
+
+Attention : la division est une loi non commutative, c’est-à-dire que $x/y \neq y/x$. Il faut donc garder à l’esprit qu’en écrivant “$x y /$” en postifixé, l’opération souhaitée est $\frac{x}{y}$ mais que du fait de l’utilisation d’une pile, la valeur de $y$ sera dépilée avant celle de $x$ (pile = dernier arrivé, premier sorti).
+
+Dans le cadre de notre programme, les opérateurs suivants doivent être reconnus :
+
+ - `+` : addition,
+ - `-` : soustraction,
+ - `*` : multiplication,
+ - `/` division
+ - `n` : négation
+
+Similairement, on veillera à bien gérer les erreurs :
+
+• soit de division par 0,
+• soit de dépilement de valeur inexistante : par exemple, essayer de dépiler les deux opérandes d’un opérateur `+` alors qu’il n’y en a qu’un seul dans la pile
+
+## Notation postfixée
+
+Indiquer la traduction en notation postfixée des expressions suivantes exprimées en notation infixée (les parenthèses ne sont là que pour vous aider à comprendre la priorité des opérations) :
+
+ - `(2 + 4) * n 5`
+     - `2 4 + 5 n *` ou bien `5 n 2 4 + *`
+ - `9 / (3.5 + 6)`
+     - `9 3.5 6 + /`
+ - `(3 - 5) / (3 + 5)`
+     - `3 5 - 3 5 + /`
+
+
+
+## Caculatrice
+
+ 2. Implémenter une calculatrice simple en notation postfixée sur la base d’une pile gérée par votre barrière d’abstraction.
+
+### Pile
+
+::: {.callout-note collapse=true}
+## Notes sur l'implémentation
+
+ - Le dessus de la pile (la tête de la pile) sera la tête de liste (le premier élément de la liste), pour minimiser la complexité des opérations de base.
+ - Les opérations sur les piles seront faîtes en-place ("_in place_"), c'est-à-dire que les listes seront modifiées (une nouvelle liste ne sera pas créée à chaque fois)
+ - On peut alors avoir un `push` et un `pop` en $O(1)$
+
+:::
+
+#### Push
+
+```{python}
+def push(L: Node, valeur) -> Node:
+    return Node(valeur, L)
+
+A = Node(1, Node(2))
+A = push(A, 42)
+print(Liste(A))
+```
+
+#### Get
+
+```{python}
+def get(L: Node) -> Node:
+    if L is None:
+        return None
+    return L.valeur
+
+print(Liste(A))
+print(get(A))
+```
+
+#### Del
+
+```{python}
+def delete(L: Node) -> Node:
+    if L is None:
+        return None
+    return L.suivant
+```
+
+#### Pop
+
+```{python}
+def pop(L: Node) -> (Node, object):
+    if L is None:
+        raise ValueError("pop from empty stack.")
+    return delete(L), get(L)
+
+print(Liste(A))
+val, A = pop(A)
+print(val, A)
+```
+
+
+#### Is empty
+
+```{python}
+def is_empty(L: Node) -> bool:
+    return L is None
+
+print(is_empty(None))
+print(is_empty(Node(1, Node(2))))
+```
+
+#### Height
+
+```{python}
+def height(L: Node) -> int:
+    if is_empty(L):
+        return 0
+    return 1 + height(L.suivant)
+
+L = Node(1, Node(2, Node(3, Node(42))))
+print(height(L))
+```
+
+
+
+### Abstraction de la calculatrice
+
+
+On créée d'abord une fonction qui permet d'appliquer un opérateur binaire à une pile (sur les deux premiers éléments).
+
+```{python}
+def appliquer(bin_operator, L: Node) -> Node:
+    """Appliquer `bin_operator` sur les deux premières valeurs de la pile.
+
+    Le premier paramètre donné à `bin_operator` est le dessus de la pile, et le
+    second est le second élément de la pile.
+    """
+    if L is None:
+        raise ValueError("applying operator on empty stack")
+    if L.suivant is None:
+        raise ValueError("applying operator on stack with only one element")
+    return Node(bin_operator(L.valeur, L.suivant.valeur), L.suivant.suivant)
+    L, first = pop(L)
+    L, second = pop(L)
+    result = bin_operator(first, second)
+    return push(result, L)
+
+A = Node(3, Node(2, Node(4, Node(1, Node(5)))))
+add = lambda x, y: x+y
+div = lambda x, y: y / x
+A = appliquer(add, A)
+print(Liste(A))
+A = appliquer(div, A)
+print(Liste(A))
+```
+
+#### Opérateurs de base
+
+```{python}
+def add(L: Node) -> Node:
+    return appliquer(lambda x, y: x+y, L)
+
+def sub(L: Node) -> Node:
+    return appliquer(lambda x, y: y - x, L)
+
+def mult(L: Node) -> Node:
+    return appliquer(lambda x, y: x * y, L)
+
+def div(L: Node) -> Node:
+    return appliquer(lambda x, y: y / x, L)
+
+A = Node(3, Node(2, Node(1, Node(1, Node(5)))))
+print(Liste(A))
+A = add(A)
+print(Liste(A))
+A = sub(A)
+print(Liste(A))
+A = div(A)
+print(Liste(A))
+A = mult(A)
+print(Liste(A))
+```
+
+
+#### Opérations unaires
+
+Les opérations unaires sont des opérations qui modifient uniquement le premier élément de la pile.
+
+```{python}
+def appliquer_unaire(operation, L: Node) -> Node:
+    if L is None:
+        raise ValueError("cannot apply unary function to an empty stack")
+    return Node(operation(L.valeur), L.suivant)
+```
+
+Voici quelques opérations unaires utiles :
+
+```{python}
+def neg(L: Node) -> Node:
+    """Négation : transformer la première valeur de la pile en son opposé.
+    """
+    return appliquer_unaire(lambda x: -x, L)
+
+def inv(L: Node) -> Node:
+    """Inversion : inverser le premier élément de la pile (l'inverse de x est 1/x).
+    """
+    return appliquer_unaire(lambda x: 1/x, L)
+
+print(Liste(A))
+A = neg(A)
+print(Liste(A))
+A = inv(A)
+print(Liste(A))
+```
+
+
+
+#### Affichage d'une pile
+
+On veut afficher la pile avec la tête en base, pour que les nombres les plus récents soient plus près de l'entrée utilisateur.
+
+```{python}
+def stack_to_list(L: Node) -> list:
+    if L is None: return []
+    return [L.valeur] + stack_to_list(L.suivant)
+
+def show_stack(L: Node) -> None:
+    # pour afficher la liste la tête en bas, on retourne la liste
+    print(*reversed(stack_to_list(L)), sep='\n')
+
+L = Node(1, Node(2, Node(3, Node(4, Node(5)))))
+show_stack(L)
+```
+
+#### Traduction des commandes
+
+On veut créer une fonction qui transforme une liste selon une chaîne de caractères donnée, qui représente l'opération voulue.
+
+On pourrait utiliser des structures `if ... elif ... elif ... else`, ainsi que des clauses `or` pour tester les différentes commandes, mais la structure `match` (apparue dans la version 3.10 de python) permet une syntaxe plus claire, et des expressions plus riches.
+
+```{python}
+
+def appliquer_str(op_str: str, L: Node) -> Node:
+    """Appliquer l'opération désignée par `op_str` sur `L`.
+    Exemples :
+    >>> appliquer_str("+", Node(1, Node(2))) # donne Node(3)
+    >>> appliquer_str("/", Node(5, Node(2))) # donne Node(0.4)
+    """
+    match op_str:
+        case "+" | "add":
+            return add(L)
+        case "-" | "sub" | "subs":
+            return sub(L)
+        case "*" | "mul" | "mult" | "times":
+            return mult(L)
+        case "/" | "÷" | "div" | "divide":
+            return div(L)
+        case "-" | "neg" | "negate" | "oppose" | "opposite":
+            return neg(L)
+        case "inv" | "invs" | "inverse":
+            return inv(L)
+        case "pop" | "del":
+            return pop(L)
+
+
+```
+
+
+
+
+

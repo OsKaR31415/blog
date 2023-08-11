@@ -3,7 +3,6 @@ title: "arrangements"
 description: ""
 date: 2023-01-05
 categories: [ maths ]
-draft: false
 ---
 
 ::: {.callout-note icon=false}

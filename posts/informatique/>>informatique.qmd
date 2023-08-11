@@ -1,10 +1,9 @@
 ---
 title: "Informatique"
 description: "Liste des notions d'Informatique"
-date: 2023-01-15
 image: "_images/computer_science.png"
 categories: [ informatique, index ]
-toc: true
+toc: false
 listing:
   contents:
     - .
@@ -14,57 +13,48 @@ listing:
   categories: true
   sort-ui: true
   filter-ui: true
+  fields:
+    - "title"
+    - "description"
+  field-display-names:
+    description: ""
 ---
 
+::: {.callout-note collapse=true}
+# Posts par catégories
 
 # Notions d'informatique
-
-## Algorithmique
-
-### Structures de donnés
-
- - [structures de données](algo avancee structures de donnees.md)
-     - structures statiques
-         - [tableaux](algo avancee tableau)
-     - [structures dynamiques](algo avancee structures dynamiques.qmd)
-         - [listes chaînées](algo avancee listes chainees.qmd)
-     - [structures récursives](algo avancee structures recursives.qmd)
-         - [listes chaînées](algo avancee listes chainees.qmd)
 
 ## Outils
 
 
 ### Langages de programmation
 
- - python
-     - [transformer des listes python en tables
-       markdown](python convertir une liste en table
-       markdown.qmd)
- - [APL (A Programming Language)](Le langage APL.md)
+- python
+    - [transformer des listes python en tables
+      markdown](python convertir une liste en table
+      markdown.qmd)
+- [APL (A Programming Language)](Le langage APL.md)
 
 ### Ligne de commande
 
- - [btop : voir les processus en cours](terminal btop.md)
+- [btop : voir les processus en cours](terminal btop.md)
 
- - **Vim**
-     - [la touche leader](vim tips leader.md)
-     - [autocorriger les erreurs d'orthographe](vim tips autocorriger les erreurs.qmd)
+- **Vim**
+    - [la touche leader](vim tips leader.qmd)
+    - [autocorriger les erreurs d'orthographe](vim tips autocorriger les erreurs.qmd)
 
 # Corrections
 
-  - Algorithmique avancée
-      - Activités (TD/TP)
-          - [activité 1](algo avancee activite 1.qmd)
-          - [activité 3](algo avancee activite 3)
-      - Contrôles
-          - [contrôle 1](algo avancee correction controle 1)
+- Algorithmique avancée
+    - Activités (TD/TP)
+        - [activité 1](algo avancee activite 1.qmd)
+        - [activité 3](algo avancee activite 3)
+    - Contrôles
+        - [contrôle 1](algo avancee correction controle 1)
+:::
 
 
-<br/>
-
------
-
-<br/>
 
 # Liste de tous les posts sur l'informatique
 

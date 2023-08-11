@@ -15,7 +15,11 @@ about:
       href: mailto:oscar.plaisant@orange.fr
 ---
 
-Je suis étudiant en licence d'informatique et de mathématiques, et passionné par ces deux sciences.
+Je suis passionné par l'informatique, les&nbsp;mathématiques, la&nbsp;connaissance en général, les&nbsp;raccourcis&nbsp;clavier, les&nbsp;bandes&nbsp;dessinnées, la&nbsp;musique et les autres arts, l'origami, et le&nbsp;chocolat.
+
+
+J'étudie actuellement en licence de mathématiques et en licence d'informatique.
+
 
 
 # Contenu
@@ -57,5 +61,6 @@ Le Blog s'appelle `OSK42`, à la fois en référence au nombre 42, la réponse �
  - <a href="https://www.flaticon.com/free-icons/math" title="math icons">Math icons created by Freepik - Flaticon</a>
  - <a href="https://www.flaticon.com/free-icons/space-suit" title="space suit icons">Space suit icons created by surang - Flaticon</a>
  - <a href="https://www.flaticon.com/free-icons/ui" title="ui icons">Ui icons created by Arafat Uddin - Flaticon</a>
+ - <a href="https://www.flaticon.com/free-icons/creativity" title="creativity icons">Creativity icons created by Eucalyp - Flaticon</a>
 :::
 

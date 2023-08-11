@@ -1,5 +1,6 @@
 ---
 title: "convertir des listes python en tables markdown"
+description: "Un script python qui convertit une liste de liste en un tableau en syntaxe markdown."
 date: 2023-03-10
 categories: [ informatique ]
 image: "_images/logo_markdown.png"

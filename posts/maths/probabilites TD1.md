@@ -1,5 +1,6 @@
 ---
 title: "Correction du TD 1 de probabilités (combinatoire)"
+description: ""
 date: 2023-01-20
 categories: [ maths ]
 ---

@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.2.280">
+<meta name="generator" content="quarto-1.3.450">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -18,7 +18,7 @@ div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
   width: 0.8em;
-  margin: 0 0.8em 0.2em -1.6em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
 </style>
@@ -60,7 +60,8 @@ ul.task-list li input[type="checkbox"] {
     "search-more-matches-text": "correspondances de plus dans ce document",
     "search-clear-button-title": "Effacer",
     "search-detached-cancel-button-title": "Annuler",
-    "search-submit-button-title": "Envoyer"
+    "search-submit-button-title": "Envoyer",
+    "search-label": "Recherche"
   }
 }</script>
 <script>
@@ -73,7 +74,7 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-date','listing-title','listing-author',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
+      valueNames: ['listing-title','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
       
       searchColumns: ["listing-date","listing-title","listing-author"],
     };
@@ -92,21 +93,19 @@ ul.task-list li input[type="checkbox"] {
     }
   })
   </script>
+<script data-goatcounter="https://osk42.goatcounter.com/count" async="" src="//gc.zgo.at/count.js"></script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="../../styles.css">
 <meta property="og:title" content="0SK42 - Informatique">
-<meta property="og:description" content="OSK42 - blog de Maths et d'Informatique">
-<meta property="og:image" content="https://quartopub.com/sites/osk42/osk42/_images/OsKaR.png">
+<meta property="og:description" content="Liste des notions d’Informatique">
+<meta property="og:image" content="https://osk42.quarto.pub/_images/OsKaR.png">
 <meta property="og:site-name" content="0SK42">
-<meta property="og:image:height" content="720">
-<meta property="og:image:width" content="1280">
 <meta name="twitter:title" content="0SK42 - Informatique">
-<meta name="twitter:description" content="OSK42 - blog de Maths et d'Informatique">
-<meta name="twitter:image" content="https://quartopub.com/sites/osk42/osk42/_images/OsKaR.png">
-<meta name="twitter:image-height" content="720">
-<meta name="twitter:image-width" content="1280">
+<meta name="twitter:description" content="Liste des notions d’Informatique">
+<meta name="twitter:image" content="https://osk42.quarto.pub/_images/OsKaR.png">
 <meta name="twitter:card" content="summary_large_image">
 </head>
 
@@ -121,38 +120,68 @@ ul.task-list li input[type="checkbox"] {
     <span class="navbar-title">0SK42</span>
     </a>
   </div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+            <div id="quarto-search" class="" title="Recherche"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Basculer la navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-bi-share" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+      <i class="bi bi-share" role="img">
+</i> 
+ <span class="menu-text"></span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-bi-share">    
+        <li>
+    <a class="dropdown-item" href="https://github.com/OsKaR31415" rel="" target=""><i class="bi bi-github" role="img">
+</i> 
+ <span class="dropdown-text">github</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://youtube.com/@oskar31415" rel="" target=""><i class="bi bi-youtube" role="img">
+</i> 
+ <span class="dropdown-text">youtube</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="mailto:oscar.plaisant@orange.fr" rel="" target=""><i class="bi bi-envelope" role="img">
+</i> 
+ <span class="dropdown-text">email</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-sujets" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+ <span class="menu-text">Sujets</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-sujets">    
+        <li>
+    <a class="dropdown-item" href="../../posts/maths/>>mathematiques.html" rel="" target="">
+ <span class="dropdown-text">Mathématiques</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../posts/informatique/>>informatique.html" rel="" target="">
+ <span class="dropdown-text">Informatique</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../posts/>>reflexions.html" rel="" target="">
+ <span class="dropdown-text">Réflexions</span></a>
+  </li>  
+    </ul>
+  </li>
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/OsKaR31415"><i class="bi bi-github" role="img">
+    <a class="nav-link" href="../../CV.qmd" rel="" target=""><i class="bi bi-person-vcard" role="img">
 </i> 
  <span class="menu-text"></span></a>
   </li>  
-  <li class="nav-item compact">
-    <a class="nav-link" href="https://youtube.com/@oskar31415"><i class="bi bi-youtube" role="img">
-</i> 
- <span class="menu-text"></span></a>
-  </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../posts/maths/>>mathematiques.html">
- <span class="menu-text">Mathématiques</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link active" href="../../posts/informatique/>>informatique.html" aria-current="page">
- <span class="menu-text">Informatique</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../../about.html">
+    <a class="nav-link" href="../../about.html" rel="" target="">
  <span class="menu-text">A propos</span></a>
   </li>  
 </ul>
-              <div class="quarto-toggle-container">
-                  <a href="" class="quarto-color-scheme-toggle nav-link" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
-              </div>
-              <div id="quarto-search" class="" title="Search"></div>
+            <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Basculer le mode sombre"><i class="bi"></i></a>
+</div>
           </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
@@ -193,58 +222,27 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Sur cette page</h2>
-   
-  <ul>
-  <li><a href="#notions-dinformatique" id="toc-notions-dinformatique" class="nav-link active" data-scroll-target="#notions-dinformatique">Notions d’informatique</a>
-  <ul class="collapse">
-  <li><a href="#algorithmique" id="toc-algorithmique" class="nav-link" data-scroll-target="#algorithmique">Algorithmique</a>
-  <ul class="collapse">
-  <li><a href="#structures-de-donnés" id="toc-structures-de-donnés" class="nav-link" data-scroll-target="#structures-de-donnés">Structures de donnés</a></li>
-  </ul></li>
-  <li><a href="#outils" id="toc-outils" class="nav-link" data-scroll-target="#outils">Outils</a>
-  <ul class="collapse">
-  <li><a href="#langages-de-programmation" id="toc-langages-de-programmation" class="nav-link" data-scroll-target="#langages-de-programmation">Langages de programmation</a></li>
-  <li><a href="#ligne-de-commande" id="toc-ligne-de-commande" class="nav-link" data-scroll-target="#ligne-de-commande">Ligne de commande</a></li>
-  </ul></li>
-  </ul></li>
-  <li><a href="#corrections" id="toc-corrections" class="nav-link" data-scroll-target="#corrections">Corrections</a></li>
-  <li><a href="#liste-de-tous-les-posts-sur-linformatique" id="toc-liste-de-tous-les-posts-sur-linformatique" class="nav-link" data-scroll-target="#liste-de-tous-les-posts-sur-linformatique">Liste de tous les posts sur l’informatique</a></li>
-  </ul>
-</nav>
-    <h5 class="quarto-listing-category-title">Catégories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">Tous <span class="quarto-category-count">(13)</span></div><div class="category" data-category="informatique">informatique <span class="quarto-category-count">(11)</span></div><div class="category" data-category="tips">tips <span class="quarto-category-count">(2)</span></div><div class="category" data-category="vim">vim <span class="quarto-category-count">(2)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Catégories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">Tous <span class="quarto-category-count">(8)</span></div><div class="category" data-category="informatique">informatique <span class="quarto-category-count">(6)</span></div><div class="category" data-category="tips">tips <span class="quarto-category-count">(2)</span></div><div class="category" data-category="vim">vim <span class="quarto-category-count">(2)</span></div></div></div>
 <!-- main -->
 <main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
 
 
 
 
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Posts par catégories
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
 <section id="notions-dinformatique" class="level1">
 <h1>Notions d’informatique</h1>
-<section id="algorithmique" class="level2">
-<h2 class="anchored" data-anchor-id="algorithmique">Algorithmique</h2>
-<section id="structures-de-donnés" class="level3">
-<h3 class="anchored" data-anchor-id="structures-de-donnés">Structures de donnés</h3>
-<ul>
-<li><a href="../../posts/informatique/algo avancee structures de donnees.html">structures de données</a>
-<ul>
-<li>structures statiques
-<ul>
-<li><a href="algo avancee tableau">tableaux</a></li>
-</ul></li>
-<li><a href="../../posts/informatique/algo avancee structures dynamiques.html">structures dynamiques</a>
-<ul>
-<li><a href="../../posts/informatique/algo avancee listes chainees.html">listes chaînées</a></li>
-</ul></li>
-<li><a href="../../posts/informatique/algo avancee structures recursives.html">structures récursives</a>
-<ul>
-<li><a href="../../posts/informatique/algo avancee listes chainees.html">listes chaînées</a></li>
-</ul></li>
-</ul></li>
-</ul>
-</section>
-</section>
 <section id="outils" class="level2">
 <h2 class="anchored" data-anchor-id="outils">Outils</h2>
 <section id="langages-de-programmation" class="level3">
@@ -277,7 +275,7 @@ ul.task-list li input[type="checkbox"] {
 <ul>
 <li>Activités (TD/TP)
 <ul>
-<li><a href="../../posts/informatique/algo avancee activite 1.html">activité 1</a></li>
+<li><a href="algo avancee activite 1.qmd">activité 1</a></li>
 <li><a href="algo avancee activite 3">activité 3</a></li>
 </ul></li>
 <li>Contrôles
@@ -286,10 +284,10 @@ ul.task-list li input[type="checkbox"] {
 </ul></li>
 </ul></li>
 </ul>
-<p><br></p>
-<hr>
-<p><br></p>
 </section>
+</div>
+</div>
+</div>
 <section id="liste-de-tous-les-posts-sur-linformatique" class="level1">
 <h1>Liste de tous les posts sur l’informatique</h1>
 
@@ -304,17 +302,8 @@ ul.task-list li input[type="checkbox"] {
      <select id="listing-listing-sort" class="form-select" aria-label="Trier par" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
        <option value="" disabled="" selected="" hidden="">Trier par</option>
        <option value="index" data-direction="asc">Ordre par défaut</option>
-         <option value="listing-date-sort" data-direction="asc">
-          Date - Le plus ancien
-        </option>
-         <option value="listing-date-sort" data-direction="desc">
-          Date - Le plus récent
-        </option>
          <option value="listing-title-sort" data-direction="asc">
           Titre
-        </option>
-         <option value="listing-author" data-direction="asc">
-          Auteur·rice
         </option>
      </select>
   </div>
@@ -328,147 +317,77 @@ ul.task-list li input[type="checkbox"] {
 <thead>
 <tr>
 <th>
-<a class="sort" data-sort="listing-date-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Date</a>
-</th>
-<th>
 <a class="sort" data-sort="listing-title-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Titre</a>
 </th>
 <th>
-<a class="sort" data-sort="listing-author" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Auteur·rice</a>
+description
 </th>
 </tr>
 </thead>
 <tbody class="list">
-<tr data-index="0" data-categories="informatique" data-listing-date-sort="1679526000000" data-listing-file-modified-sort="1680003395855" data-listing-reading-time-sort="6.165" data-listing-title-sort="Le langage APL" data-listing-filename-sort="Le langage APL.md">
-<td class="listing-date">
-23 mars 2023
+<tr data-index="0" data-categories="informatique" data-listing-date-sort="1679482800000" data-listing-file-modified-sort="1690086045415" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-title-sort="Le langage APL" data-listing-filename-sort="Le langage APL.md">
+<td>
+<a href="../../posts/informatique/Le langage APL.html" class="title listing-title">Le langage APL</a>
 </td>
-<td class="listing-title">
-<a href="../../posts/informatique/Le langage APL.html" class="title">Le langage APL</a>
-</td>
-<td class="listing-author">
+<td>
+<span class="listing-description">A propos de mon langage de programmation préféré</span>
 </td>
 </tr>
 
-<tr data-index="1" data-categories="informatique" data-listing-date-sort="1678402800000" data-listing-file-modified-sort="1679577565773" data-listing-reading-time-sort="3.325" data-listing-title-sort="convertir des listes python en tables markdown" data-listing-filename-sort="python convertir une liste en table markdown.qmd">
-<td class="listing-date">
-10 mars 2023
+<tr data-index="1" data-categories="informatique" data-listing-date-sort="1678359600000" data-listing-file-modified-sort="1690095092145" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-title-sort="convertir des listes python en tables markdown" data-listing-filename-sort="python convertir une liste en table markdown.qmd">
+<td>
+<a href="../../posts/informatique/python convertir une liste en table markdown.html" class="title listing-title">convertir des listes python en tables markdown</a>
 </td>
-<td class="listing-title">
-<a href="../../posts/informatique/python convertir une liste en table markdown.html" class="title">convertir des listes python en tables markdown</a>
-</td>
-<td class="listing-author">
+<td>
+<span class="listing-description">Un script python qui convertit une liste de liste en un tableau en syntaxe markdown.</span>
 </td>
 </tr>
-<tr data-index="2" data-categories="informatique" data-listing-date-sort="1677711600000" data-listing-file-modified-sort="1677924247231" data-listing-reading-time-sort="8.245" data-listing-title-sort="algo avancee correction controle" data-listing-filename-sort="algo avancee correction controle 1.qmd">
-<td class="listing-date">
-2 mars 2023
+<tr data-index="2" data-categories="informatique" data-listing-date-sort="1678273200000" data-listing-file-modified-sort="1691068927391" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-title-sort="algo avancee activite 4" data-listing-filename-sort="algo avancee activite 4.qmd">
+<td>
+<a href="../../posts/informatique/algo avancee/algo avancee activite 4.html" class="title listing-title">algo avancee activite 4</a>
 </td>
-<td class="listing-title">
-<a href="../../posts/informatique/algo avancee correction controle 1.html" class="title">algo avancee correction controle</a>
-</td>
-<td class="listing-author">
+<td>
+<span class="listing-description">correction détaillée</span>
 </td>
 </tr>
-<tr data-index="3" data-categories="informatique" data-listing-date-sort="1676847600000" data-listing-file-modified-sort="1676898412513" data-listing-reading-time-sort="1.585" data-listing-title-sort="terminal - btop : statistiques des processus" data-listing-filename-sort="terminal btop.md">
-<td class="listing-date">
-20 févr. 2023
+<tr data-index="3" data-categories="informatique" data-listing-date-sort="1677668400000" data-listing-file-modified-sort="1690094950687" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="9" data-listing-title-sort="algo avancee correction controle" data-listing-filename-sort="algo avancee correction controle 1.qmd">
+<td>
+<a href="../../posts/informatique/algo avancee/algo avancee correction controle 1.html" class="title listing-title">algo avancee correction controle</a>
 </td>
-<td class="listing-title">
-<a href="../../posts/informatique/terminal btop.html" class="title">terminal - btop : statistiques des processus</a>
-</td>
-<td class="listing-author">
+<td>
+<span class="listing-description">correction détaillée</span>
 </td>
 </tr>
-<tr data-index="4" data-categories="informatique" data-listing-date-sort="1676588400000" data-listing-file-modified-sort="1678479436356" data-listing-reading-time-sort="28.46" data-listing-title-sort="Algorithmique avancée : activité 3" data-listing-filename-sort="algo avancee activite 3.qmd">
-<td class="listing-date">
-17 févr. 2023
+<tr data-index="4" data-categories="informatique" data-listing-date-sort="1676804400000" data-listing-file-modified-sort="1690095137781" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-title-sort="terminal - btop : statistiques des processus" data-listing-filename-sort="terminal btop.md">
+<td>
+<a href="../../posts/informatique/terminal btop.html" class="title listing-title">terminal - btop : statistiques des processus</a>
 </td>
-<td class="listing-title">
-<a href="../../posts/informatique/algo avancee activite 3.html" class="title">Algorithmique avancée : activité 3</a>
-</td>
-<td class="listing-author">
+<td>
+<span class="listing-description">Utilitaire ligne de commande pour visualiser les processus actifs et les statistiques.</span>
 </td>
 </tr>
-<tr data-index="5" data-categories="informatique" data-listing-date-sort="1673910000000" data-listing-file-modified-sort="1674202081832" data-listing-reading-time-sort="0.065" data-listing-title-sort="Structures de données" data-listing-filename-sort="algo avancee structures de donnees.md">
-<td class="listing-date">
-17 janv. 2023
+<tr data-index="5" data-categories="informatique" data-listing-date-sort="1673694000000" data-listing-file-modified-sort="1691068900098" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="25" data-listing-title-sort="Algorithmique avancée - activité 1" data-listing-filename-sort="algo avancee activite 1.qmd">
+<td>
+<a href="../../posts/informatique/algo avancee/algo avancee activite 1.html" class="title listing-title">Algorithmique avancée - activité 1</a>
 </td>
-<td class="listing-title">
-<a href="../../posts/informatique/algo avancee structures de donnees.html" class="title">Structures de données</a>
-</td>
-<td class="listing-author">
+<td>
+<span class="listing-description">Correction détaillée de l’activité 1 d’algorithmique avancée.</span>
 </td>
 </tr>
-<tr data-index="6" data-categories="informatique" data-listing-date-sort="1673737200000" data-listing-file-modified-sort="1679877502312" data-listing-reading-time-sort="24.14" data-listing-title-sort="Algorithmique avancée - activité 1" data-listing-filename-sort="algo avancee activite 1.qmd">
-<td class="listing-date">
-15 janv. 2023
+<tr data-index="6" data-categories="vim,tips" data-listing-date-sort="1672830000000" data-listing-file-modified-sort="1690095207804" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-title-sort="vim tips autocorriger les erreurs" data-listing-filename-sort="vim tips autocorriger les erreurs.qmd">
+<td>
+<a href="../../posts/informatique/vim tips autocorriger les erreurs.html" class="title listing-title">vim tips autocorriger les erreurs</a>
 </td>
-<td class="listing-title">
-<a href="../../posts/informatique/algo avancee activite 1.html" class="title">Algorithmique avancée - activité 1</a>
-</td>
-<td class="listing-author">
+<td>
+<span class="listing-description">Comment corriger rapidement des erreurs d’orthographe</span>
 </td>
 </tr>
-
-<tr data-index="7" data-categories="informatique" data-listing-date-sort="1673564400000" data-listing-file-modified-sort="1673605279369" data-listing-reading-time-sort="0.79" data-listing-title-sort="Structure de données : tableau" data-listing-filename-sort="algo avancee tableau.qmd">
-<td class="listing-date">
-13 janv. 2023
+<tr data-index="7" data-categories="vim,tips" data-listing-date-sort="1672657200000" data-listing-file-modified-sort="1674077108534" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-title-sort="vim tips - leader" data-listing-filename-sort="vim tips leader.qmd">
+<td>
+<a href="../../posts/informatique/vim tips leader.html" class="title listing-title">vim tips - leader</a>
 </td>
-<td class="listing-title">
-<a href="../../posts/informatique/algo avancee tableau.html" class="title">Structure de données : tableau</a>
-</td>
-<td class="listing-author">
-</td>
-</tr>
-<tr data-index="8" data-categories="informatique" data-listing-date-sort="1673564400000" data-listing-file-modified-sort="1676896566674" data-listing-reading-time-sort="3.49" data-listing-title-sort="Listes chaînées" data-listing-filename-sort="algo avancee listes chainees.qmd">
-<td class="listing-date">
-13 janv. 2023
-</td>
-<td class="listing-title">
-<a href="../../posts/informatique/algo avancee listes chainees.html" class="title">Listes chaînées</a>
-</td>
-<td class="listing-author">
-</td>
-</tr>
-<tr data-index="9" data-categories="informatique" data-listing-date-sort="1673564400000" data-listing-file-modified-sort="1674204383107" data-listing-reading-time-sort="0.145" data-listing-title-sort="Structures de données récursives" data-listing-filename-sort="algo avancee structures recursives.qmd">
-<td class="listing-date">
-13 janv. 2023
-</td>
-<td class="listing-title">
-<a href="../../posts/informatique/algo avancee structures recursives.html" class="title">Structures de données récursives</a>
-</td>
-<td class="listing-author">
-</td>
-</tr>
-<tr data-index="10" data-categories="informatique" data-listing-date-sort="1673564400000" data-listing-file-modified-sort="1674204378803" data-listing-reading-time-sort="0.135" data-listing-title-sort="Algorithmique : Structures dynamiques" data-listing-filename-sort="algo avancee structures dynamiques.qmd">
-<td class="listing-date">
-13 janv. 2023
-</td>
-<td class="listing-title">
-<a href="../../posts/informatique/algo avancee structures dynamiques.html" class="title">Algorithmique : Structures dynamiques</a>
-</td>
-<td class="listing-author">
-</td>
-</tr>
-<tr data-index="11" data-categories="vim,tips" data-listing-date-sort="1672873200000" data-listing-file-modified-sort="1676899012285" data-listing-reading-time-sort="1.975" data-listing-title-sort="vim tips autocorriger les erreurs" data-listing-filename-sort="vim tips autocorriger les erreurs.qmd">
-<td class="listing-date">
-5 janv. 2023
-</td>
-<td class="listing-title">
-<a href="../../posts/informatique/vim tips autocorriger les erreurs.html" class="title">vim tips autocorriger les erreurs</a>
-</td>
-<td class="listing-author">
-</td>
-</tr>
-<tr data-index="12" data-categories="vim,tips" data-listing-date-sort="1672700400000" data-listing-file-modified-sort="1674077108534" data-listing-reading-time-sort="1.985" data-listing-title-sort="vim tips - leader" data-listing-filename-sort="vim tips leader.md">
-<td class="listing-date">
-3 janv. 2023
-</td>
-<td class="listing-title">
-<a href="../../posts/informatique/vim tips leader.html" class="title">vim tips - leader</a>
-</td>
-<td class="listing-author">
+<td>
+<span class="listing-description">présentation du raccourci &lt;leader&gt; dans vim</span>
 </td>
 </tr>
 </tbody>
@@ -620,9 +539,23 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     icon: icon
   };
   anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
   const clipboard = new window.ClipboardJS('.code-copy-button', {
-    target: function(trigger) {
-      return trigger.previousElementSibling;
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
     }
   });
   clipboard.on('success', function(e) {
@@ -687,6 +620,92 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return note.innerHTML;
     });
   }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
   const findCites = (el) => {
     const parentEl = el.parentElement;
     if (parentEl) {

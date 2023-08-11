@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.2.280">
+<meta name="generator" content="quarto-1.3.450">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -18,7 +18,7 @@ div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
   width: 0.8em;
-  margin: 0 0.8em 0.2em -1.6em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
 </style>
@@ -60,7 +60,8 @@ ul.task-list li input[type="checkbox"] {
     "search-more-matches-text": "correspondances de plus dans ce document",
     "search-clear-button-title": "Effacer",
     "search-detached-cancel-button-title": "Annuler",
-    "search-submit-button-title": "Envoyer"
+    "search-submit-button-title": "Envoyer",
+    "search-label": "Recherche"
   }
 }</script>
 <script>
@@ -73,7 +74,7 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-date','listing-title','listing-author',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
+      valueNames: ['listing-title','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
       
       searchColumns: ["listing-date","listing-title","listing-author"],
     };
@@ -92,21 +93,19 @@ ul.task-list li input[type="checkbox"] {
     }
   })
   </script>
+<script data-goatcounter="https://osk42.goatcounter.com/count" async="" src="//gc.zgo.at/count.js"></script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="../../styles.css">
 <meta property="og:title" content="0SK42 - Mathématiques">
-<meta property="og:description" content="OSK42 - blog de Maths et d'Informatique">
-<meta property="og:image" content="https://quartopub.com/sites/osk42/osk42/_images/OsKaR.png">
+<meta property="og:description" content="Liste des notions de Mathématiques">
+<meta property="og:image" content="https://osk42.quarto.pub/_images/OsKaR.png">
 <meta property="og:site-name" content="0SK42">
-<meta property="og:image:height" content="720">
-<meta property="og:image:width" content="1280">
 <meta name="twitter:title" content="0SK42 - Mathématiques">
-<meta name="twitter:description" content="OSK42 - blog de Maths et d'Informatique">
-<meta name="twitter:image" content="https://quartopub.com/sites/osk42/osk42/_images/OsKaR.png">
-<meta name="twitter:image-height" content="720">
-<meta name="twitter:image-width" content="1280">
+<meta name="twitter:description" content="Liste des notions de Mathématiques">
+<meta name="twitter:image" content="https://osk42.quarto.pub/_images/OsKaR.png">
 <meta name="twitter:card" content="summary_large_image">
 </head>
 
@@ -121,38 +120,68 @@ ul.task-list li input[type="checkbox"] {
     <span class="navbar-title">0SK42</span>
     </a>
   </div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+            <div id="quarto-search" class="" title="Recherche"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Basculer la navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-bi-share" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+      <i class="bi bi-share" role="img">
+</i> 
+ <span class="menu-text"></span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-bi-share">    
+        <li>
+    <a class="dropdown-item" href="https://github.com/OsKaR31415" rel="" target=""><i class="bi bi-github" role="img">
+</i> 
+ <span class="dropdown-text">github</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://youtube.com/@oskar31415" rel="" target=""><i class="bi bi-youtube" role="img">
+</i> 
+ <span class="dropdown-text">youtube</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="mailto:oscar.plaisant@orange.fr" rel="" target=""><i class="bi bi-envelope" role="img">
+</i> 
+ <span class="dropdown-text">email</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-sujets" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+ <span class="menu-text">Sujets</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-sujets">    
+        <li>
+    <a class="dropdown-item" href="../../posts/maths/>>mathematiques.html" rel="" target="">
+ <span class="dropdown-text">Mathématiques</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../posts/informatique/>>informatique.html" rel="" target="">
+ <span class="dropdown-text">Informatique</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../posts/>>reflexions.html" rel="" target="">
+ <span class="dropdown-text">Réflexions</span></a>
+  </li>  
+    </ul>
+  </li>
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/OsKaR31415"><i class="bi bi-github" role="img">
+    <a class="nav-link" href="../../CV.qmd" rel="" target=""><i class="bi bi-person-vcard" role="img">
 </i> 
  <span class="menu-text"></span></a>
   </li>  
-  <li class="nav-item compact">
-    <a class="nav-link" href="https://youtube.com/@oskar31415"><i class="bi bi-youtube" role="img">
-</i> 
- <span class="menu-text"></span></a>
-  </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="../../posts/maths/>>mathematiques.html" aria-current="page">
- <span class="menu-text">Mathématiques</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../../posts/informatique/>>informatique.html">
- <span class="menu-text">Informatique</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../../about.html">
+    <a class="nav-link" href="../../about.html" rel="" target="">
  <span class="menu-text">A propos</span></a>
   </li>  
 </ul>
-              <div class="quarto-toggle-container">
-                  <a href="" class="quarto-color-scheme-toggle nav-link" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
-              </div>
-              <div id="quarto-search" class="" title="Search"></div>
+            <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Basculer le mode sombre"><i class="bi"></i></a>
+</div>
           </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
@@ -193,37 +222,29 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Sur cette page</h2>
-   
-  <ul>
-  <li><a href="#analyse" id="toc-analyse" class="nav-link active" data-scroll-target="#analyse">Analyse</a></li>
-  <li><a href="#arithmétique" id="toc-arithmétique" class="nav-link" data-scroll-target="#arithmétique">Arithmétique</a></li>
-  <li><a href="#ensembles-et-combinatoire" id="toc-ensembles-et-combinatoire" class="nav-link" data-scroll-target="#ensembles-et-combinatoire">Ensembles et combinatoire</a>
-  <ul class="collapse">
-  <li><a href="#combinatoire" id="toc-combinatoire" class="nav-link" data-scroll-target="#combinatoire">Combinatoire</a></li>
-  </ul></li>
-  <li><a href="#liste-de-tous-les-posts-sur-les-mathématiques" id="toc-liste-de-tous-les-posts-sur-les-mathématiques" class="nav-link" data-scroll-target="#liste-de-tous-les-posts-sur-les-mathématiques">Liste de tous les posts sur les Mathématiques</a></li>
-  </ul>
-</nav>
-    <h5 class="quarto-listing-category-title">Catégories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">Tous <span class="quarto-category-count">(13)</span></div><div class="category" data-category="index">index <span class="quarto-category-count">(1)</span></div><div class="category" data-category="maths">maths <span class="quarto-category-count">(13)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Catégories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">Tous <span class="quarto-category-count">(9)</span></div><div class="category" data-category="index">index <span class="quarto-category-count">(1)</span></div><div class="category" data-category="maths">maths <span class="quarto-category-count">(9)</span></div></div></div>
 <!-- main -->
 <main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
 
 
 
 
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Posts par catégories
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
 <section id="analyse" class="level1">
 <h1>Analyse</h1>
 <ul>
 <li><a href="../../posts/maths/formulaire d'analyse.html">formulaire (liste de formules de base)</a></li>
-</ul>
-</section>
-<section id="arithmétique" class="level1">
-<h1>Arithmétique</h1>
-<ul>
-<li><span class="math inline">\(a \equiv b \,[n]\)</span> <a href="../../posts/maths/maths congruence.html">congruence modulo n</a></li>
-<li><span class="math inline">\(a \mid b\)</span> <a href="../../posts/maths/maths divisibilité.html">divisibilité</a></li>
 </ul>
 </section>
 <section id="ensembles-et-combinatoire" class="level1">
@@ -234,17 +255,16 @@ ul.task-list li input[type="checkbox"] {
 <section id="combinatoire" class="level2">
 <h2 class="anchored" data-anchor-id="combinatoire">Combinatoire</h2>
 <ul>
-<li><span class="math inline">\(\mathscr{P}(E)\)</span> <a href="../../posts/maths/ensemble des parties dun ensemble.html">ensemble des parties d’un ensemble</a></li>
 <li><span class="math inline">\(A_{n}^{k}\)</span> <a href="../../posts/maths/arrangements.html">arrangements</a></li>
 <li><span class="math inline">\(A_{n}^{k}\)</span> <a href="../../posts/maths/arrangements avec répétitions.html">arrangements avec répétitions</a></li>
 <li><span class="math inline">\(\displaystyle \binom{k}{n}\)</span> <a href="../../posts/maths/combinaisons.html">combinaisons</a></li>
 <li><span class="math inline">\(\Gamma _{n}^{k}\)</span> <a href="../../posts/maths/combinaisons_avec_repetitions.html">combinaisons avec répétitions</a></li>
 </ul>
-<p><br> <br></p>
-<hr>
-<p><br> <br></p>
 </section>
 </section>
+</div>
+</div>
+</div>
 <section id="liste-de-tous-les-posts-sur-les-mathématiques" class="level1">
 <h1>Liste de tous les posts sur les Mathématiques</h1>
 
@@ -259,17 +279,8 @@ ul.task-list li input[type="checkbox"] {
      <select id="listing-listing-sort" class="form-select" aria-label="Trier par" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
        <option value="" disabled="" selected="" hidden="">Trier par</option>
        <option value="index" data-direction="asc">Ordre par défaut</option>
-         <option value="listing-date-sort" data-direction="asc">
-          Date - Le plus ancien
-        </option>
-         <option value="listing-date-sort" data-direction="desc">
-          Date - Le plus récent
-        </option>
          <option value="listing-title-sort" data-direction="asc">
           Titre
-        </option>
-         <option value="listing-author" data-direction="asc">
-          Auteur·rice
         </option>
      </select>
   </div>
@@ -283,145 +294,84 @@ ul.task-list li input[type="checkbox"] {
 <thead>
 <tr>
 <th>
-<a class="sort" data-sort="listing-date-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Date</a>
-</th>
-<th>
 <a class="sort" data-sort="listing-title-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Titre</a>
 </th>
 <th>
-<a class="sort" data-sort="listing-author" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Auteur·rice</a>
+description
 </th>
 </tr>
 </thead>
 <tbody class="list">
-<tr data-index="0" data-categories="maths" data-listing-date-sort="1674169200000" data-listing-file-modified-sort="1674220374030" data-listing-reading-time-sort="1.03" data-listing-title-sort="Correction du TD 1 de probabilités (combinatoire)" data-listing-filename-sort="probabilites TD1.md">
-<td class="listing-date">
-20 janv. 2023
+<tr data-index="0" data-categories="maths" data-listing-date-sort="1690027200000" data-listing-file-modified-sort="1690248513020" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="13" data-listing-title-sort="Contre, l'usage, abusif, de la virgule, dans la notation, mathématique" data-listing-filename-sort="Contre, l'usage, abusif, de la virgule, dans la notation, mathématique.qmd">
+<td>
+<a href="../../posts/maths/Contre, l'usage, abusif, de la virgule, dans la notation, mathématique.html" class="title listing-title">Contre, l’usage, abusif, de la virgule, dans la notation, mathématique</a>
 </td>
-<td class="listing-title">
-<a href="../../posts/maths/probabilites TD1.html" class="title">Correction du TD 1 de probabilités (combinatoire)</a>
-</td>
-<td class="listing-author">
+<td>
+<span class="listing-description">Pourquoi la virgule devrait être moins utilisée dans la notation mathématique.</span>
 </td>
 </tr>
-<tr data-index="1" data-categories="maths" data-listing-date-sort="1674082800000" data-listing-file-modified-sort="1676896614664" data-listing-reading-time-sort="1.72" data-listing-title-sort="transposition" data-listing-filename-sort="transposition.md">
-<td class="listing-date">
-19 janv. 2023
+<tr data-index="1" data-categories="maths" data-listing-date-sort="1674126000000" data-listing-file-modified-sort="1690094842649" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-title-sort="Correction du TD 1 de probabilités (combinatoire)" data-listing-filename-sort="probabilites TD1.md">
+<td>
+<a href="../../posts/maths/probabilites TD1.html" class="title listing-title">Correction du TD 1 de probabilités (combinatoire)</a>
 </td>
-<td class="listing-title">
-<a href="../../posts/maths/transposition.html" class="title">transposition</a>
-</td>
-<td class="listing-author">
+<td>
+<span class="listing-description">Un ascenseur dessert les 12 étages d’un immeuble. Au rez-de-chaussée, l’ascenseur est vide et 10 personnes y entrent. On suppose que personne…</span>
 </td>
 </tr>
-<tr data-index="2" data-categories="maths" data-listing-date-sort="1674082800000" data-listing-file-modified-sort="1674091921520" data-listing-reading-time-sort="1.46" data-listing-title-sort="permutations (combinatoire)" data-listing-filename-sort="nombre de permutations.md">
-<td class="listing-date">
-19 janv. 2023
+<tr data-index="2" data-categories="maths" data-listing-date-sort="1674039600000" data-listing-file-modified-sort="1691105437610" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-title-sort="transposition" data-listing-filename-sort="transposition.md">
+<td>
+<a href="../../posts/maths/transposition.html" class="title listing-title">transposition</a>
 </td>
-<td class="listing-title">
-<a href="../../posts/maths/nombre de permutations.html" class="title">permutations (combinatoire)</a>
-</td>
-<td class="listing-author">
+<td>
+<span class="listing-description">Permutation qui n’échange que deux éléments.</span>
 </td>
 </tr>
-<tr data-index="3" data-categories="maths" data-listing-date-sort="1674082800000" data-listing-file-modified-sort="1674138122554" data-listing-reading-time-sort="0.015" data-listing-title-sort="inversion" data-listing-filename-sort="inversion.md">
-<td class="listing-date">
-19 janv. 2023
+<tr data-index="3" data-categories="maths" data-listing-date-sort="1672916400000" data-listing-file-modified-sort="1673006298373" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-title-sort="arrangements avec répétitions" data-listing-filename-sort="arrangements avec répétitions.md">
+<td>
+<a href="../../posts/maths/arrangements avec répétitions.html" class="title listing-title">arrangements avec répétitions</a>
 </td>
-<td class="listing-title">
-<a href="../../posts/maths/inversion.html" class="title">inversion</a>
-</td>
-<td class="listing-author">
+<td>
+<span class="listing-description">nombre de sacs à k éléments inclus dans un ensemble à n éléments</span>
 </td>
 </tr>
-<tr data-index="4" data-categories="maths" data-listing-date-sort="1673391600000" data-listing-file-modified-sort="1673442118860" data-listing-reading-time-sort="2.375" data-listing-title-sort="Congruence" data-listing-filename-sort="maths congruence.md">
-<td class="listing-date">
-11 janv. 2023
+<tr data-index="4" data-categories="maths" data-listing-date-sort="1672916400000" data-listing-file-modified-sort="1690094630952" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-title-sort="combinaisons avec répétitions" data-listing-filename-sort="combinaisons_avec_repetitions.md">
+<td>
+<a href="../../posts/maths/combinaisons_avec_repetitions.html" class="title listing-title">combinaisons avec répétitions</a>
 </td>
-<td class="listing-title">
-<a href="../../posts/maths/maths congruence.html" class="title">Congruence</a>
-</td>
-<td class="listing-author">
+<td>
+<span class="listing-description">C’est le nombre de sacs à <span class="math inline">\(k\)</span> éléments inclus dans un ensemble à <span class="math inline">\(n\)</span> éléments.</span>
 </td>
 </tr>
-<tr data-index="5" data-categories="maths" data-listing-date-sort="1673305200000" data-listing-file-modified-sort="1673395787103" data-listing-reading-time-sort="1.65" data-listing-title-sort="Dibisibilité" data-listing-filename-sort="maths divisibilité.md">
-<td class="listing-date">
-10 janv. 2023
+<tr data-index="5" data-categories="maths" data-listing-date-sort="1672830000000" data-listing-file-modified-sort="1690095256156" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-title-sort="arrangements" data-listing-filename-sort="arrangements.md">
+<td>
+<a href="../../posts/maths/arrangements.html" class="title listing-title">arrangements</a>
 </td>
-<td class="listing-title">
-<a href="../../posts/maths/maths divisibilité.html" class="title">Dibisibilité</a>
-</td>
-<td class="listing-author">
+<td>
+<span class="listing-description">On définit <span class="math inline">\(A_{n}^{k}\)</span> (lire “<span class="math inline">\(A\)</span>, <span class="math inline">\(n\)</span>, <span class="math inline">\(k\)</span>”), les arrangements de <span class="math inline">\(k\)</span> objets d’un ensemble de <span class="math inline">\(n\)</span> objets, comme <strong>le nombre de <span class="math inline">\(k-uplets\)</span> d…<span class="math inline"></span></strong></span>
 </td>
 </tr>
-<tr data-index="6" data-categories="maths" data-listing-date-sort="1672959600000" data-listing-file-modified-sort="1673006298373" data-listing-reading-time-sort="1.11" data-listing-title-sort="arrangements avec répétitions" data-listing-filename-sort="arrangements avec répétitions.md">
-<td class="listing-date">
-6 janv. 2023
+<tr data-index="6" data-categories="maths" data-listing-date-sort="1672830000000" data-listing-file-modified-sort="1690094589114" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-title-sort="combinaisons" data-listing-filename-sort="combinaisons.md">
+<td>
+<a href="../../posts/maths/combinaisons.html" class="title listing-title">combinaisons</a>
 </td>
-<td class="listing-title">
-<a href="../../posts/maths/arrangements avec répétitions.html" class="title">arrangements avec répétitions</a>
-</td>
-<td class="listing-author">
+<td>
+<span class="listing-description">Nombre d’ensembles à <span class="math inline">\(k\)</span> éléments contenus dans un ensemble à <span class="math inline">\(n\)</span> éléments.</span>
 </td>
 </tr>
-<tr data-index="7" data-categories="maths" data-listing-date-sort="1672959600000" data-listing-file-modified-sort="1673961260177" data-listing-reading-time-sort="1.445" data-listing-title-sort="combinaisons avec répétitions" data-listing-filename-sort="combinaisons_avec_repetitions.md">
-<td class="listing-date">
-6 janv. 2023
+<tr data-index="7" data-categories="maths" data-listing-date-sort="1672743600000" data-listing-file-modified-sort="1690094854664" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-title-sort="sacs (multi-ensembles)" data-listing-filename-sort="sacs.md">
+<td>
+<a href="../../posts/maths/sacs.html" class="title listing-title">sacs (multi-ensembles)</a>
 </td>
-<td class="listing-title">
-<a href="../../posts/maths/combinaisons_avec_repetitions.html" class="title">combinaisons avec répétitions</a>
-</td>
-<td class="listing-author">
+<td>
+<span class="listing-description">ensemble avec répétition</span>
 </td>
 </tr>
-<tr data-index="8" data-categories="maths" data-listing-date-sort="1672873200000" data-listing-file-modified-sort="1672875539929" data-listing-reading-time-sort="1.395" data-listing-title-sort="arrangements" data-listing-filename-sort="arrangements.md">
-<td class="listing-date">
-5 janv. 2023
+<tr data-index="8" data-categories="maths,index" data-listing-date-sort="1672657200000" data-listing-file-modified-sort="1690094689555" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="24" data-listing-title-sort="formulaire d'analyse" data-listing-filename-sort="formulaire d'analyse.md">
+<td>
+<a href="../../posts/maths/formulaire d'analyse.html" class="title listing-title">formulaire d’analyse</a>
 </td>
-<td class="listing-title">
-<a href="../../posts/maths/arrangements.html" class="title">arrangements</a>
-</td>
-<td class="listing-author">
-</td>
-</tr>
-<tr data-index="9" data-categories="maths" data-listing-date-sort="1672873200000" data-listing-file-modified-sort="1673392484355" data-listing-reading-time-sort="1.53" data-listing-title-sort="combinaisons" data-listing-filename-sort="combinaisons.md">
-<td class="listing-date">
-5 janv. 2023
-</td>
-<td class="listing-title">
-<a href="../../posts/maths/combinaisons.html" class="title">combinaisons</a>
-</td>
-<td class="listing-author">
-</td>
-</tr>
-<tr data-index="10" data-categories="maths" data-listing-date-sort="1672786800000" data-listing-file-modified-sort="1673006277637" data-listing-reading-time-sort="0.345" data-listing-title-sort="Ensemble des parties d'un ensemble" data-listing-filename-sort="ensemble des parties dun ensemble.md">
-<td class="listing-date">
-4 janv. 2023
-</td>
-<td class="listing-title">
-<a href="../../posts/maths/ensemble des parties dun ensemble.html" class="title">Ensemble des parties d’un ensemble</a>
-</td>
-<td class="listing-author">
-</td>
-</tr>
-<tr data-index="11" data-categories="maths" data-listing-date-sort="1672786800000" data-listing-file-modified-sort="1674199089518" data-listing-reading-time-sort="1.695" data-listing-title-sort="sacs (multi-ensembles)" data-listing-filename-sort="sacs.md">
-<td class="listing-date">
-4 janv. 2023
-</td>
-<td class="listing-title">
-<a href="../../posts/maths/sacs.html" class="title">sacs (multi-ensembles)</a>
-</td>
-<td class="listing-author">
-</td>
-</tr>
-<tr data-index="12" data-categories="maths,index" data-listing-date-sort="1672700400000" data-listing-file-modified-sort="1674199240465" data-listing-reading-time-sort="23.655" data-listing-title-sort="formulaire d'analyse" data-listing-filename-sort="formulaire d'analyse.md">
-<td class="listing-date">
-3 janv. 2023
-</td>
-<td class="listing-title">
-<a href="../../posts/maths/formulaire d'analyse.html" class="title">formulaire d’analyse</a>
-</td>
-<td class="listing-author">
+<td>
+<span class="listing-description">Liste de formules utiles à connaître.</span>
 </td>
 </tr>
 </tbody>
@@ -573,9 +523,23 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     icon: icon
   };
   anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
   const clipboard = new window.ClipboardJS('.code-copy-button', {
-    target: function(trigger) {
-      return trigger.previousElementSibling;
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
     }
   });
   clipboard.on('success', function(e) {
@@ -640,6 +604,92 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return note.innerHTML;
     });
   }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
   const findCites = (el) => {
     const parentEl = el.parentElement;
     if (parentEl) {
