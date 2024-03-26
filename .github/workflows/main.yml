@@ -30,4 +30,6 @@ jobs:
           # Optional. Default value "gh-pages".
           # It specifies the temporary branch which hosts the static website.
           # Each build will OVERWRITE this branch.
-          target-branch: gh-pages
+          target-branch: gh-page
+      - name: "ignore jekyll"
+        run: "touch '.nojekyllfile'"
