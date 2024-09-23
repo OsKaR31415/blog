@@ -1,0 +1,1970 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.555">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>0SK42 - Algorithmique avancée : activité 3</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<script src="../../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "Pas de résultats",
+    "search-matching-documents-text": "documents trouvés",
+    "search-copy-link-title": "Copier le lien vers la recherche",
+    "search-hide-matches-text": "Cacher les correspondances additionnelles",
+    "search-more-match-text": "correspondance de plus dans ce document",
+    "search-more-matches-text": "correspondances de plus dans ce document",
+    "search-clear-button-title": "Effacer",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Annuler",
+    "search-submit-button-title": "Envoyer",
+    "search-label": "Recherche"
+  }
+}</script>
+<script data-goatcounter="https://osk42.goatcounter.com/count" async="" src="//gc.zgo.at/count.js"></script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="styles.css">
+<meta property="og:title" content="0SK42 - Algorithmique avancée : activité 3">
+<meta property="og:description" content="OSK42 - blog de Maths et d’Informatique">
+<meta property="og:image" content="https://osk42.quarto.pub/_images/OsKaR.png">
+<meta property="og:site_name" content="0SK42">
+<meta name="twitter:title" content="0SK42 - Algorithmique avancée : activité 3">
+<meta name="twitter:description" content="OSK42 - blog de Maths et d’Informatique">
+<meta name="twitter:image" content="https://osk42.quarto.pub/_images/OsKaR.png">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../../index.html">
+    <span class="navbar-title">0SK42</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Recherche"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Basculer la navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-sujets" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Sujets</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-sujets">    
+        <li>
+    <a class="dropdown-item" href="../../../posts/maths/>>mathematiques.html">
+ <span class="dropdown-text">Mathématiques</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../posts/informatique/>>informatique.html">
+ <span class="dropdown-text">Informatique</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../posts/>>reflexions.html">
+ <span class="dropdown-text">Réflexions</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-bi-share" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="bi bi-share" role="img">
+</i> 
+ <span class="menu-text"></span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-bi-share">    
+        <li>
+    <a class="dropdown-item" href="https://github.com/OsKaR31415"><i class="bi bi-github" role="img">
+</i> 
+ <span class="dropdown-text">github</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://youtube.com/@oskar31415"><i class="bi bi-youtube" role="img">
+</i> 
+ <span class="dropdown-text">youtube</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="mailto:oscar.plaisant@orange.fr"><i class="bi bi-envelope" role="img">
+</i> 
+ <span class="dropdown-text">email</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="../../../CV.html"> <i class="bi bi-person-vcard" role="img">
+</i> 
+<span class="menu-text">CV</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../about.html"> 
+<span class="menu-text">A propos</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Basculer le mode sombre"><i class="bi"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-page-left">
+      <h1 class="title">Algorithmique avancée : activité 3</h1>
+                                <div class="quarto-categories">
+                <div class="quarto-category">informatique</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta column-page-left">
+
+      
+      <div>
+      <div class="quarto-title-meta-heading">Date de publication</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">13 janvier 2023</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Sur cette page</h2>
+   
+  <ul>
+  <li><a href="#bégaie---de-bégaie" id="toc-bégaie---de-bégaie" class="nav-link active" data-scroll-target="#bégaie---de-bégaie"><span class="header-section-number">1</span> Bégaie - De bégaie</a>
+  <ul class="collapse">
+  <li><a href="#bégaie" id="toc-bégaie" class="nav-link" data-scroll-target="#bégaie"><span class="header-section-number">1.1</span> Bégaie</a>
+  <ul class="collapse">
+  <li><a href="#fonction-itérative" id="toc-fonction-itérative" class="nav-link" data-scroll-target="#fonction-itérative"><span class="header-section-number">1.1.1</span> Fonction itérative</a></li>
+  <li><a href="#fonction-récursive" id="toc-fonction-récursive" class="nav-link" data-scroll-target="#fonction-récursive"><span class="header-section-number">1.1.2</span> Fonction récursive</a></li>
+  </ul></li>
+  <li><a href="#dé-bégaie" id="toc-dé-bégaie" class="nav-link" data-scroll-target="#dé-bégaie"><span class="header-section-number">1.2</span> Dé bégaie</a>
+  <ul class="collapse">
+  <li><a href="#fonction-itérative-1" id="toc-fonction-itérative-1" class="nav-link" data-scroll-target="#fonction-itérative-1"><span class="header-section-number">1.2.1</span> Fonction itérative</a></li>
+  <li><a href="#fonction-récursive-1" id="toc-fonction-récursive-1" class="nav-link" data-scroll-target="#fonction-récursive-1"><span class="header-section-number">1.2.2</span> Fonction récursive</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#implémentation-de-la-fonction-zip" id="toc-implémentation-de-la-fonction-zip" class="nav-link" data-scroll-target="#implémentation-de-la-fonction-zip"><span class="header-section-number">2</span> Implémentation de la fonction <code>zip</code></a>
+  <ul class="collapse">
+  <li><a href="#itérative" id="toc-itérative" class="nav-link" data-scroll-target="#itérative"><span class="header-section-number">2.1</span> Itérative</a></li>
+  <li><a href="#récursive" id="toc-récursive" class="nav-link" data-scroll-target="#récursive"><span class="header-section-number">2.2</span> Récursive</a></li>
+  </ul></li>
+  <li><a href="#liste-croisante" id="toc-liste-croisante" class="nav-link" data-scroll-target="#liste-croisante"><span class="header-section-number">3</span> Liste croisante</a>
+  <ul class="collapse">
+  <li><a href="#itérative-1" id="toc-itérative-1" class="nav-link" data-scroll-target="#itérative-1"><span class="header-section-number">3.1</span> Itérative</a></li>
+  <li><a href="#récursive-1" id="toc-récursive-1" class="nav-link" data-scroll-target="#récursive-1"><span class="header-section-number">3.2</span> Récursive</a></li>
+  </ul></li>
+  <li><a href="#suppression-des-occurrences-dun-élément" id="toc-suppression-des-occurrences-dun-élément" class="nav-link" data-scroll-target="#suppression-des-occurrences-dun-élément"><span class="header-section-number">4</span> Suppression des occurrences d’un élément</a>
+  <ul class="collapse">
+  <li><a href="#itérative-2" id="toc-itérative-2" class="nav-link" data-scroll-target="#itérative-2"><span class="header-section-number">4.1</span> Itérative</a></li>
+  <li><a href="#récursive-2" id="toc-récursive-2" class="nav-link" data-scroll-target="#récursive-2"><span class="header-section-number">4.2</span> Récursive</a></li>
+  </ul></li>
+  <li><a href="#suite-de-fibonacci" id="toc-suite-de-fibonacci" class="nav-link" data-scroll-target="#suite-de-fibonacci"><span class="header-section-number">5</span> Suite de Fibonacci</a>
+  <ul class="collapse">
+  <li><a href="#itérative-3" id="toc-itérative-3" class="nav-link" data-scroll-target="#itérative-3"><span class="header-section-number">5.1</span> Itérative</a></li>
+  <li><a href="#récursive-3" id="toc-récursive-3" class="nav-link" data-scroll-target="#récursive-3"><span class="header-section-number">5.2</span> Récursive</a></li>
+  </ul></li>
+  <li><a href="#interclassement" id="toc-interclassement" class="nav-link" data-scroll-target="#interclassement"><span class="header-section-number">6</span> interclassement</a>
+  <ul class="collapse">
+  <li><a href="#interclassement-strict" id="toc-interclassement-strict" class="nav-link" data-scroll-target="#interclassement-strict"><span class="header-section-number">6.1</span> Interclassement strict</a>
+  <ul class="collapse">
+  <li><a href="#itératif" id="toc-itératif" class="nav-link" data-scroll-target="#itératif"><span class="header-section-number">6.1.1</span> Itératif</a></li>
+  <li><a href="#récursif" id="toc-récursif" class="nav-link" data-scroll-target="#récursif"><span class="header-section-number">6.1.2</span> Récursif</a></li>
+  </ul></li>
+  <li><a href="#interclassement-croissant" id="toc-interclassement-croissant" class="nav-link" data-scroll-target="#interclassement-croissant"><span class="header-section-number">6.2</span> Interclassement croissant</a>
+  <ul class="collapse">
+  <li><a href="#itératif-1" id="toc-itératif-1" class="nav-link" data-scroll-target="#itératif-1"><span class="header-section-number">6.2.1</span> Itératif</a></li>
+  <li><a href="#récursif-1" id="toc-récursif-1" class="nav-link" data-scroll-target="#récursif-1"><span class="header-section-number">6.2.2</span> Récursif</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#calculatrice" id="toc-calculatrice" class="nav-link" data-scroll-target="#calculatrice"><span class="header-section-number">7</span> Calculatrice</a>
+  <ul class="collapse">
+  <li><a href="#notation-postfixée" id="toc-notation-postfixée" class="nav-link" data-scroll-target="#notation-postfixée"><span class="header-section-number">7.1</span> Notation postfixée</a></li>
+  <li><a href="#caculatrice" id="toc-caculatrice" class="nav-link" data-scroll-target="#caculatrice"><span class="header-section-number">7.2</span> Caculatrice</a>
+  <ul class="collapse">
+  <li><a href="#pile" id="toc-pile" class="nav-link" data-scroll-target="#pile"><span class="header-section-number">7.2.1</span> Pile</a></li>
+  <li><a href="#abstraction-de-la-calculatrice" id="toc-abstraction-de-la-calculatrice" class="nav-link" data-scroll-target="#abstraction-de-la-calculatrice"><span class="header-section-number">7.2.2</span> Abstraction de la calculatrice</a></li>
+  </ul></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
+
+
+
+
+
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Définition d’une liste chaînée
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<div id="5b86ab82" class="cell" data-execution_count="1">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> Node:</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, valeur, suivant: <span class="st">'Node'</span> <span class="op">=</span><span class="va">None</span>):</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.valeur <span class="op">=</span> valeur</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.suivant <span class="op">=</span> suivant</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> Liste:</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, head: Node):</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.head <span class="op">=</span> head</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> <span class="fu">__str__</span>(<span class="va">self</span>) <span class="op">-&gt;</span> <span class="bu">str</span>:</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="st">"("</span> <span class="op">+</span> <span class="st">","</span>.join(<span class="bu">map</span>(<span class="kw">lambda</span> e: <span class="bu">str</span>(Liste(e) <span class="cf">if</span> <span class="bu">isinstance</span>(e, Node) <span class="cf">else</span> e),</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>                                  <span class="va">self</span>.to_list())) <span class="op">+</span> <span class="st">")"</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> to_list(<span class="va">self</span>) <span class="op">-&gt;</span> <span class="bu">list</span>:</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> <span class="va">self</span>.head <span class="kw">is</span> <span class="va">None</span>:</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>            <span class="cf">return</span> []</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> [<span class="va">self</span>.head.valeur] <span class="op">+</span> <span class="va">self</span>.cdr().to_list()</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> <span class="fu">__len__</span>(<span class="va">self</span>) <span class="op">-&gt;</span> <span class="bu">int</span>:</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>        <span class="co">"""Longueur de la liste.</span></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="co">        """</span></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> <span class="va">self</span>.head <span class="kw">is</span> <span class="va">None</span>:</span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>            <span class="cf">return</span> <span class="dv">0</span></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="dv">1</span> <span class="op">+</span> <span class="bu">len</span>(<span class="va">self</span>.head.suivant)</span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> append(<span class="va">self</span>, valeur) <span class="op">-&gt;</span> <span class="va">None</span>:</span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>        <span class="co">"""Ajouter une valeur à la fin de la liste.</span></span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a><span class="co">        """</span></span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>        <span class="co"># cas de base :</span></span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>        <span class="co"># on doit s'arrêter dès que la liste est terminer</span></span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> <span class="va">self</span>.head.suivant <span class="kw">is</span> <span class="va">None</span>:</span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>            <span class="co"># on créé un nouveau Node</span></span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>            <span class="va">self</span>.head.suivant <span class="op">=</span> Node(valeur)</span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>        <span class="co"># récursion pour atteindre la fin de la liste</span></span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.cdr().append(valeur)</span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> car(<span class="va">self</span>):</span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>        <span class="co">"""Récupérer la valeur en tête de liste</span></span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a><span class="co">        """</span></span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="va">self</span>.head.value</span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> cdr(<span class="va">self</span>) <span class="op">-&gt;</span> <span class="st">'Liste'</span>:</span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a>        <span class="co">"""Récupérer la liste sans son premier élément.</span></span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a><span class="co">        """</span></span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> <span class="va">self</span>.head <span class="kw">is</span> <span class="va">None</span>:</span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a>            <span class="cf">return</span> <span class="va">None</span></span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> Liste(<span class="va">self</span>.head.suivant)</span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> last(<span class="va">self</span>):</span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a>        <span class="co">"""Récupérer le dernier élément de la liste.</span></span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a><span class="co">        """</span></span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> <span class="va">self</span>.head.suivant <span class="kw">is</span> <span class="va">None</span>:</span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a>            <span class="cf">return</span> <span class="va">self</span>.last(Liste(<span class="va">self</span>.head.suivant))</span>
+<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="va">self</span>.head.valeur</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</div>
+</div>
+<section id="bégaie---de-bégaie" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Bégaie - De bégaie</h1>
+<blockquote class="blockquote">
+<p>On dit qu’une liste est “bégayée” lorsque chaque élément y apparaît deux fois de suite. Le but de cet exercice est de transformer une liste en une liste bégayée, et inversement de “dé bégayer” une liste en supprimant un élément sur deux.</p>
+</blockquote>
+<section id="bégaie" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="bégaie"><span class="header-section-number">1.1</span> Bégaie</h2>
+<section id="fonction-itérative" class="level3" data-number="1.1.1">
+<h3 data-number="1.1.1" class="anchored" data-anchor-id="fonction-itérative"><span class="header-section-number">1.1.1</span> Fonction itérative</h3>
+<blockquote class="blockquote">
+<p>écrire la fonction itérative <code>begaie</code> qui, étant donnée une liste d’éléments, renvoie la liste où chaque élément est répété. Par exemple : <code>begaie(1,2,3,1,4) = (1,1,2,2,3,3,1,1,4,4)</code> et <code>begaie(None) = None</code>.</p>
+</blockquote>
+<div id="4a553726" class="cell" data-execution_count="2">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> begaie(L: Node) <span class="op">-&gt;</span> Node:</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    p <span class="op">=</span> L</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">while</span> p <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span>:</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>        <span class="co"># insérer un mode contenant la même valeur</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>        tmp <span class="op">=</span> Node(p.valeur, p.suivant)</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>        p.suivant <span class="op">=</span> tmp</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>        <span class="co"># on passe au pointeur suivant</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>        p <span class="op">=</span> p.suivant.suivant</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> L</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>On peut tester :</p>
+<div id="5e61a780" class="cell" data-execution_count="3">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>L <span class="op">=</span> Node(<span class="dv">3</span>, Node(<span class="dv">1</span>, Node(<span class="dv">4</span>, Node(<span class="dv">1</span>, Node(<span class="dv">5</span>, Node(<span class="dv">9</span>))))))</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(Liste(L))</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(Liste(begaie(L)))</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>(3,1,4,1,5,9)
+(3,3,1,1,4,4,1,1,5,5,9,9)</code></pre>
+</div>
+</div>
+<p>Et on a bien :</p>
+<div id="cf94e614" class="cell" data-execution_count="4">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(begaie(<span class="va">None</span>))</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>None</code></pre>
+</div>
+</div>
+</section>
+<section id="fonction-récursive" class="level3" data-number="1.1.2">
+<h3 data-number="1.1.2" class="anchored" data-anchor-id="fonction-récursive"><span class="header-section-number">1.1.2</span> Fonction récursive</h3>
+<blockquote class="blockquote">
+<p>Donner maintenant une fonction récursive <code>begaieRec</code> qui effectue le même traitement que la fonction <code>begaie</code> précédente</p>
+</blockquote>
+<div id="ea18b0e7" class="cell" data-execution_count="5">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> begaieRec(L: Node) <span class="op">-&gt;</span> Node:</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> L <span class="kw">is</span> <span class="va">None</span>:</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="va">None</span></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> Node(L.valeur, Node(L.valeur, begaieRec(L.suivant)))</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Elle fonctionne également :</p>
+<div id="df042a37" class="cell" data-execution_count="6">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>L <span class="op">=</span> Node(<span class="dv">3</span>, Node(<span class="dv">1</span>, Node(<span class="dv">4</span>, Node(<span class="dv">1</span>, Node(<span class="dv">5</span>, Node(<span class="dv">9</span>))))))</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(Liste(L))</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="co"># La fonction modifie la valeur de L, donc on pourrait</span></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="co"># simplement appeler la fonction, sans modifier</span></span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a><span class="co"># explicitement L (sans mettre le `L = `)</span></span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>L <span class="op">=</span> begaie(L)</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>(3,1,4,1,5,9)</code></pre>
+</div>
+</div>
+</section>
+</section>
+<section id="dé-bégaie" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="dé-bégaie"><span class="header-section-number">1.2</span> Dé bégaie</h2>
+<section id="fonction-itérative-1" class="level3" data-number="1.2.1">
+<h3 data-number="1.2.1" class="anchored" data-anchor-id="fonction-itérative-1"><span class="header-section-number">1.2.1</span> Fonction itérative</h3>
+<blockquote class="blockquote">
+<p>Écrire maintenant la fonction itérative <code>debegaie</code> qui prend en argument une liste bégayée et retourne la liste privée de ses doublons. La fonction de bégaie est telle que <code>debegaie(begaie(L)) = L</code></p>
+</blockquote>
+<div id="7e1ad3b4" class="cell" data-execution_count="7">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> debegaie(L: Node) <span class="op">-&gt;</span> Node:</span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> L <span class="kw">is</span> <span class="va">None</span>:</span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="va">None</span></span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>    p <span class="op">=</span> L</span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>    <span class="co"># on est obligé </span></span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">while</span> p.suivant.suivant <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span>:</span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a>        p.suivant <span class="op">=</span> p.suivant.suivant</span>
+<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a>        p <span class="op">=</span> p.suivant</span>
+<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a>    <span class="co"># on retire le dernier élément</span></span>
+<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a>    <span class="co"># p.suivant = None</span></span>
+<span id="cb10-11"><a href="#cb10-11" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> L</span>
+<span id="cb10-12"><a href="#cb10-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-13"><a href="#cb10-13" aria-hidden="true" tabindex="-1"></a>L <span class="op">=</span> Node(<span class="dv">3</span>, Node(<span class="dv">1</span>, Node(<span class="dv">4</span>, Node(<span class="dv">1</span>, Node(<span class="dv">5</span>, Node(<span class="dv">9</span>))))))</span>
+<span id="cb10-14"><a href="#cb10-14" aria-hidden="true" tabindex="-1"></a>L <span class="op">=</span> begaie(L)</span>
+<span id="cb10-15"><a href="#cb10-15" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(Liste(L))</span>
+<span id="cb10-16"><a href="#cb10-16" aria-hidden="true" tabindex="-1"></a>L <span class="op">=</span> debegaie(L)</span>
+<span id="cb10-17"><a href="#cb10-17" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(Liste(L))</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>(3,3,1,1,4,4,1,1,5,5,9,9)
+(3,1,4,1,5,9,9)</code></pre>
+</div>
+</div>
+</section>
+<section id="fonction-récursive-1" class="level3" data-number="1.2.2">
+<h3 data-number="1.2.2" class="anchored" data-anchor-id="fonction-récursive-1"><span class="header-section-number">1.2.2</span> Fonction récursive</h3>
+<blockquote class="blockquote">
+<p>Écrire enfin la fonction récursive <code>debegaieRec</code> qui réalise le même traitement que la fonction <code>debegaie</code>.</p>
+</blockquote>
+<div id="2374ce38" class="cell" data-execution_count="8">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> debegaieRec(L: Node) <span class="op">-&gt;</span> Node:</span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>    <span class="co"># cas de base</span></span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> L <span class="kw">is</span> <span class="va">None</span>:</span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="va">None</span></span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>    <span class="co"># on doit ajouter ce cas de base car on utilise</span></span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a>    <span class="co"># L.suivant.suivant, donc L.suivant ne doit pas être None</span></span>
+<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> L.suivant <span class="kw">is</span> <span class="va">None</span>:</span>
+<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="va">None</span></span>
+<span id="cb12-9"><a href="#cb12-9" aria-hidden="true" tabindex="-1"></a>    <span class="co"># On créée une nouvelle liste qui saute un élément</span></span>
+<span id="cb12-10"><a href="#cb12-10" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> Node(L.valeur, debegaieRec(L.suivant.suivant))</span>
+<span id="cb12-11"><a href="#cb12-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-12"><a href="#cb12-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-13"><a href="#cb12-13" aria-hidden="true" tabindex="-1"></a>L <span class="op">=</span> Node(<span class="dv">3</span>, Node(<span class="dv">1</span>, Node(<span class="dv">4</span>, Node(<span class="dv">1</span>, Node(<span class="dv">5</span>, Node(<span class="dv">9</span>))))))</span>
+<span id="cb12-14"><a href="#cb12-14" aria-hidden="true" tabindex="-1"></a>L <span class="op">=</span> begaie(L)</span>
+<span id="cb12-15"><a href="#cb12-15" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(Liste(L))</span>
+<span id="cb12-16"><a href="#cb12-16" aria-hidden="true" tabindex="-1"></a>L <span class="op">=</span> debegaie(L)</span>
+<span id="cb12-17"><a href="#cb12-17" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(Liste(L))</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>(3,3,1,1,4,4,1,1,5,5,9,9)
+(3,1,4,1,5,9,9)</code></pre>
+</div>
+</div>
+</section>
+</section>
+</section>
+<section id="implémentation-de-la-fonction-zip" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Implémentation de la fonction <code>zip</code></h1>
+<p>De très nombreux langages de programmations permettent de travailler sur des structures de listes chaînées. Le langage Python notamment permet de travailler nativement avec les listes et implémente la fonction <code>zip(l1, l2)</code> qui permet, à partir de 2 listes de même longueur de construire une liste contenant les couples de valeurs formés des éléments de même indice issu des 2 listes. Par exemple :</p>
+<div id="848f2dfc" class="cell" data-execution_count="9">
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>Z <span class="op">=</span> <span class="bu">zip</span>((<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>), (<span class="st">"a"</span>, <span class="st">"b"</span>, <span class="st">"c"</span> ))</span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">list</span>(Z))</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[(1, 'a'), (2, 'b'), (3, 'c')]</code></pre>
+</div>
+</div>
+<section id="itérative" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="itérative"><span class="header-section-number">2.1</span> Itérative</h2>
+<ol type="1">
+<li>Écrire la fonction itérative zip(l1, l2) qui permet d’obtenir le résultat désiré en suivant le formalisme des listes chaînées étudiées en cours. On supposera les listes en argument de même taille et non vides.</li>
+</ol>
+<div id="da9b287c" class="cell" data-execution_count="10">
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> zip_iter(L1: Node, L2: Node) <span class="op">-&gt;</span> Node:</span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>    p <span class="op">=</span> L1</span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>    q <span class="op">=</span> L2</span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a>    res <span class="op">=</span> <span class="va">None</span></span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a>    last <span class="op">=</span> <span class="va">None</span></span>
+<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">while</span> p <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span> <span class="kw">and</span> q <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span>:</span>
+<span id="cb16-7"><a href="#cb16-7" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> res <span class="kw">is</span> <span class="va">None</span>:</span>
+<span id="cb16-8"><a href="#cb16-8" aria-hidden="true" tabindex="-1"></a>            res <span class="op">=</span> Node(Node(p.valeur, Node(q.valeur)))</span>
+<span id="cb16-9"><a href="#cb16-9" aria-hidden="true" tabindex="-1"></a>            last <span class="op">=</span> res</span>
+<span id="cb16-10"><a href="#cb16-10" aria-hidden="true" tabindex="-1"></a>        <span class="cf">else</span>:</span>
+<span id="cb16-11"><a href="#cb16-11" aria-hidden="true" tabindex="-1"></a>            last.suivant <span class="op">=</span> Node(Node(p.valeur, Node(q.valeur)))</span>
+<span id="cb16-12"><a href="#cb16-12" aria-hidden="true" tabindex="-1"></a>            last <span class="op">=</span> last.suivant</span>
+<span id="cb16-13"><a href="#cb16-13" aria-hidden="true" tabindex="-1"></a>        p <span class="op">=</span> p.suivant</span>
+<span id="cb16-14"><a href="#cb16-14" aria-hidden="true" tabindex="-1"></a>        q <span class="op">=</span> q.suivant</span>
+<span id="cb16-15"><a href="#cb16-15" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> res</span>
+<span id="cb16-16"><a href="#cb16-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-17"><a href="#cb16-17" aria-hidden="true" tabindex="-1"></a>L1 <span class="op">=</span> Node(<span class="dv">3</span>, Node(<span class="dv">1</span>, Node(<span class="dv">4</span>, Node(<span class="dv">1</span>, Node(<span class="dv">5</span>, Node(<span class="dv">9</span>, Node(<span class="dv">2</span>)))))))</span>
+<span id="cb16-18"><a href="#cb16-18" aria-hidden="true" tabindex="-1"></a>L2 <span class="op">=</span> Node(<span class="dv">1</span>, Node(<span class="dv">6</span>, Node(<span class="dv">1</span>, Node(<span class="dv">8</span>, Node(<span class="dv">0</span>, Node(<span class="dv">3</span>, Node(<span class="dv">3</span>)))))))</span>
+<span id="cb16-19"><a href="#cb16-19" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(Liste(zip_iter(L1, L2)))</span>
+<span id="cb16-20"><a href="#cb16-20" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(Liste(L1), Liste(L2))</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>((3,1),(1,6),(4,1),(1,8),(5,0),(9,3),(2,3))
+(3,1,4,1,5,9,2) (1,6,1,8,0,3,3)</code></pre>
+</div>
+</div>
+</section>
+<section id="récursive" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="récursive"><span class="header-section-number">2.2</span> Récursive</h2>
+<ol start="2" type="1">
+<li>Produire une solution récursive équivalente.</li>
+</ol>
+<div id="fd75a5b9" class="cell" data-execution_count="11">
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> zip_rec(L1: Node, L2: Node) <span class="op">-&gt;</span> Node:</span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> L1 <span class="kw">is</span> <span class="va">None</span> <span class="kw">or</span> L2 <span class="kw">is</span> <span class="va">None</span>:</span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="va">None</span></span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> Node(Node(L1.valeur, Node(L2.valeur)),</span>
+<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a>                zip_rec(L1.suivant, L2.suivant))</span>
+<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-7"><a href="#cb18-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-8"><a href="#cb18-8" aria-hidden="true" tabindex="-1"></a>L1 <span class="op">=</span> Node(<span class="dv">3</span>, Node(<span class="dv">1</span>, Node(<span class="dv">4</span>, Node(<span class="dv">1</span>, Node(<span class="dv">5</span>, Node(<span class="dv">9</span>, Node(<span class="dv">2</span>)))))))</span>
+<span id="cb18-9"><a href="#cb18-9" aria-hidden="true" tabindex="-1"></a>L2 <span class="op">=</span> Node(<span class="dv">1</span>, Node(<span class="dv">6</span>, Node(<span class="dv">1</span>, Node(<span class="dv">8</span>, Node(<span class="dv">0</span>, Node(<span class="dv">3</span>, Node(<span class="dv">3</span>)))))))</span>
+<span id="cb18-10"><a href="#cb18-10" aria-hidden="true" tabindex="-1"></a>L3 <span class="op">=</span> Node(<span class="dv">1</span>, Node(<span class="dv">2</span>, Node(<span class="dv">3</span>)))</span>
+<span id="cb18-11"><a href="#cb18-11" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(Liste(zip_rec(L1, L2)))</span>
+<span id="cb18-12"><a href="#cb18-12" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(Liste(zip_rec(L1, L3)))</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>((3,1),(1,6),(4,1),(1,8),(5,0),(9,3),(2,3))
+((3,1),(1,2),(4,3))</code></pre>
+</div>
+</div>
+</section>
+</section>
+<section id="liste-croisante" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Liste croisante</h1>
+<p>On considère dans cet exercice une liste contenant des valeurs comparables grâce à l’opérateur <code>&lt;=</code>.</p>
+<section id="itérative-1" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="itérative-1"><span class="header-section-number">3.1</span> Itérative</h2>
+<ol type="1">
+<li>Écrire la fonction itérative <code>croissante(L)</code> qui prend en argument une telle liste et retourne <code>True</code> si et seulement si la liste est triée par ordre croissant au sens large.</li>
+</ol>
+<p>On implémentera la fonction en considérant les cas de base suivants : - une liste vide est considérée comme triée par ordre croissant - une liste avec un seul élément est croissante également</p>
+<div id="bc511082" class="cell" data-execution_count="12">
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> croissante_iter(L: Node) <span class="op">-&gt;</span> <span class="bu">bool</span>:</span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> L <span class="kw">is</span> <span class="va">None</span>: <span class="cf">return</span> <span class="va">True</span></span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>    p <span class="op">=</span> L</span>
+<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">while</span> p.suivant <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span>:</span>
+<span id="cb20-5"><a href="#cb20-5" aria-hidden="true" tabindex="-1"></a>        <span class="co"># si deux éléments sont dans un ordre décroissant</span></span>
+<span id="cb20-6"><a href="#cb20-6" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> p.valeur <span class="op">&gt;</span> p.suivant.valeur:</span>
+<span id="cb20-7"><a href="#cb20-7" aria-hidden="true" tabindex="-1"></a>            <span class="co"># on sait que la liste n'est pas croissante</span></span>
+<span id="cb20-8"><a href="#cb20-8" aria-hidden="true" tabindex="-1"></a>            <span class="cf">return</span> <span class="va">False</span></span>
+<span id="cb20-9"><a href="#cb20-9" aria-hidden="true" tabindex="-1"></a>        p <span class="op">=</span> p.suivant</span>
+<span id="cb20-10"><a href="#cb20-10" aria-hidden="true" tabindex="-1"></a>    <span class="co"># si on a trouvé aucune valeur décroissante dans la liste, on sait qu'elle</span></span>
+<span id="cb20-11"><a href="#cb20-11" aria-hidden="true" tabindex="-1"></a>    <span class="co"># est croissante</span></span>
+<span id="cb20-12"><a href="#cb20-12" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="va">True</span></span>
+<span id="cb20-13"><a href="#cb20-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-14"><a href="#cb20-14" aria-hidden="true" tabindex="-1"></a>L <span class="op">=</span> Node(<span class="dv">1</span>, Node(<span class="dv">6</span>, Node(<span class="dv">6</span>, Node(<span class="dv">42</span>, Node(<span class="dv">73</span>)))))</span>
+<span id="cb20-15"><a href="#cb20-15" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(croissante_iter(L))  <span class="co"># True</span></span>
+<span id="cb20-16"><a href="#cb20-16" aria-hidden="true" tabindex="-1"></a>L <span class="op">=</span> Node(<span class="dv">1</span>, Node(<span class="dv">6</span>, Node(<span class="dv">0</span>, Node(<span class="dv">42</span>))))</span>
+<span id="cb20-17"><a href="#cb20-17" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(croissante_iter(L))  <span class="co"># False</span></span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>True
+False</code></pre>
+</div>
+</div>
+</section>
+<section id="récursive-1" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="récursive-1"><span class="header-section-number">3.2</span> Récursive</h2>
+<ol start="2" type="1">
+<li>Proposer une solution récursive.</li>
+</ol>
+<div id="1c0783d7" class="cell" data-execution_count="13">
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> croissante_rec(L: Node) <span class="op">-&gt;</span> <span class="bu">bool</span>:</span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> L <span class="kw">is</span> <span class="va">None</span>: <span class="cf">return</span> <span class="va">True</span></span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> L.suivant <span class="kw">is</span> <span class="va">None</span>: <span class="cf">return</span> <span class="va">True</span></span>
+<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a>    <span class="co"># si les valeurs en tête sont décroissantes</span></span>
+<span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> L.valeur <span class="op">&gt;</span> L.suivant.valeur:</span>
+<span id="cb22-6"><a href="#cb22-6" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="va">False</span></span>
+<span id="cb22-7"><a href="#cb22-7" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> croissante_rec(L.suivant)</span>
+<span id="cb22-8"><a href="#cb22-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-9"><a href="#cb22-9" aria-hidden="true" tabindex="-1"></a>L <span class="op">=</span> Node(<span class="dv">1</span>, Node(<span class="dv">6</span>, Node(<span class="dv">6</span>, Node(<span class="dv">42</span>, Node(<span class="dv">73</span>)))))</span>
+<span id="cb22-10"><a href="#cb22-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(croissante_iter(L))  <span class="co"># True</span></span>
+<span id="cb22-11"><a href="#cb22-11" aria-hidden="true" tabindex="-1"></a>L <span class="op">=</span> Node(<span class="dv">1</span>, Node(<span class="dv">6</span>, Node(<span class="dv">0</span>, Node(<span class="dv">42</span>))))</span>
+<span id="cb22-12"><a href="#cb22-12" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(croissante_iter(L))  <span class="co"># False</span></span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>True
+False</code></pre>
+</div>
+</div>
+</section>
+</section>
+<section id="suppression-des-occurrences-dun-élément" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> Suppression des occurrences d’un élément</h1>
+<p>Nous nous intéressons maintenant à la suppression d’un élément quelconque dans une liste chaînée.</p>
+<section id="itérative-2" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="itérative-2"><span class="header-section-number">4.1</span> Itérative</h2>
+<ol type="1">
+<li>Écrire une fonction itérative <code>removeAll(L, elem)</code> qui prend en argument une liste chaînée <code>L</code> et une valeur <code>elem</code> et retourne la liste privée de ses éléments <code>elem</code>.</li>
+</ol>
+<div id="6faf557c" class="cell" data-execution_count="14">
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> remove_all_iter(L: Node, elem) <span class="op">-&gt;</span> Node:</span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> L <span class="kw">is</span> <span class="va">None</span>: <span class="cf">return</span> <span class="va">None</span></span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a>    <span class="co"># on cherche la première valeur</span></span>
+<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">while</span> L.valeur <span class="op">==</span> elem:</span>
+<span id="cb24-5"><a href="#cb24-5" aria-hidden="true" tabindex="-1"></a>        L <span class="op">=</span> L.suivant</span>
+<span id="cb24-6"><a href="#cb24-6" aria-hidden="true" tabindex="-1"></a>        <span class="co"># si on a passé toutes les valeurs, c'est que la liste ne contient que</span></span>
+<span id="cb24-7"><a href="#cb24-7" aria-hidden="true" tabindex="-1"></a>        <span class="co"># des valeurs à supprimer :</span></span>
+<span id="cb24-8"><a href="#cb24-8" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> L <span class="kw">is</span> <span class="va">None</span>: <span class="cf">return</span> <span class="va">None</span></span>
+<span id="cb24-9"><a href="#cb24-9" aria-hidden="true" tabindex="-1"></a>    res <span class="op">=</span> Node(L.valeur)</span>
+<span id="cb24-10"><a href="#cb24-10" aria-hidden="true" tabindex="-1"></a>    res_tl <span class="op">=</span> res</span>
+<span id="cb24-11"><a href="#cb24-11" aria-hidden="true" tabindex="-1"></a>    <span class="cf">while</span> L <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span>:</span>
+<span id="cb24-12"><a href="#cb24-12" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> L.valeur <span class="op">!=</span> elem:</span>
+<span id="cb24-13"><a href="#cb24-13" aria-hidden="true" tabindex="-1"></a>            res_tl.suivant <span class="op">=</span> Node(L.valeur)</span>
+<span id="cb24-14"><a href="#cb24-14" aria-hidden="true" tabindex="-1"></a>            res_tl <span class="op">=</span> res_tl.suivant</span>
+<span id="cb24-15"><a href="#cb24-15" aria-hidden="true" tabindex="-1"></a>        L <span class="op">=</span> L.suivant</span>
+<span id="cb24-16"><a href="#cb24-16" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> res</span>
+<span id="cb24-17"><a href="#cb24-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-18"><a href="#cb24-18" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Liste vide :"</span>, remove_all_iter(<span class="va">None</span>, <span class="dv">9</span>))</span>
+<span id="cb24-19"><a href="#cb24-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-20"><a href="#cb24-20" aria-hidden="true" tabindex="-1"></a>L <span class="op">=</span> Node(<span class="dv">42</span>, Node(<span class="dv">42</span>, Node(<span class="dv">42</span>, Node(<span class="dv">42</span>, Node(<span class="dv">42</span>, Node(<span class="dv">42</span>, Node(<span class="dv">42</span>)))))))</span>
+<span id="cb24-21"><a href="#cb24-21" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Liste à supprimer complètement :"</span>,</span>
+<span id="cb24-22"><a href="#cb24-22" aria-hidden="true" tabindex="-1"></a>      Liste(remove_all_iter(L, <span class="dv">42</span>)))</span>
+<span id="cb24-23"><a href="#cb24-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-24"><a href="#cb24-24" aria-hidden="true" tabindex="-1"></a>L <span class="op">=</span> Node(<span class="dv">73</span>, Node(<span class="dv">73</span>, Node(<span class="dv">73</span>, Node(<span class="dv">42</span>, Node(<span class="dv">42</span>)))))</span>
+<span id="cb24-25"><a href="#cb24-25" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Liste qui commmence par les éléments à supprimer :"</span>,</span>
+<span id="cb24-26"><a href="#cb24-26" aria-hidden="true" tabindex="-1"></a>      Liste(remove_all_iter(L, <span class="dv">73</span>)))</span>
+<span id="cb24-27"><a href="#cb24-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-28"><a href="#cb24-28" aria-hidden="true" tabindex="-1"></a>L <span class="op">=</span> Node(<span class="dv">1</span>, Node(<span class="dv">1</span>, Node(<span class="dv">1</span>, Node(<span class="dv">8</span>, Node(<span class="dv">1</span>, Node(<span class="dv">3</span>, Node(<span class="dv">3</span>)))))))</span>
+<span id="cb24-29"><a href="#cb24-29" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Liste mixte :"</span>,</span>
+<span id="cb24-30"><a href="#cb24-30" aria-hidden="true" tabindex="-1"></a>      Liste(remove_all_iter(L, <span class="dv">1</span>)))</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Liste vide : None
+Liste à supprimer complètement : ()
+Liste qui commmence par les éléments à supprimer : (42,42,42)
+Liste mixte : (8,8,3,3)</code></pre>
+</div>
+</div>
+</section>
+<section id="récursive-2" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="récursive-2"><span class="header-section-number">4.2</span> Récursive</h2>
+<ol start="2" type="1">
+<li>Proposer une solution récursive à ce problème. Indications : pensez à différencier les cas suivants :</li>
+</ol>
+<ul>
+<li>la liste est vide initialement,</li>
+<li>la liste ne contient que l’élément à supprimer,</li>
+<li>la liste commence par les éléments à supprimer,</li>
+<li>la liste est mixte : composée pour une part de l’élément à supprimer et pour une autre part d’autres éléments à conserver.</li>
+</ul>
+<div id="36bb9b59" class="cell" data-execution_count="15">
+<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> remove_all(L: Node, elem) <span class="op">-&gt;</span> Node:</span>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> L <span class="kw">is</span> <span class="va">None</span>: <span class="cf">return</span> <span class="va">None</span></span>
+<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> L.valeur <span class="op">==</span> elem:</span>
+<span id="cb26-4"><a href="#cb26-4" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> remove_all(L.suivant, elem)</span>
+<span id="cb26-5"><a href="#cb26-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> Node(L.valeur, remove_all(L.suivant, elem))</span>
+<span id="cb26-6"><a href="#cb26-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-7"><a href="#cb26-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Liste vide :"</span>, remove_all_iter(<span class="va">None</span>, <span class="dv">9</span>))</span>
+<span id="cb26-8"><a href="#cb26-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-9"><a href="#cb26-9" aria-hidden="true" tabindex="-1"></a>L <span class="op">=</span> Node(<span class="dv">42</span>, Node(<span class="dv">42</span>, Node(<span class="dv">42</span>, Node(<span class="dv">42</span>, Node(<span class="dv">42</span>, Node(<span class="dv">42</span>, Node(<span class="dv">42</span>)))))))</span>
+<span id="cb26-10"><a href="#cb26-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Liste à supprimer complètement :"</span>,</span>
+<span id="cb26-11"><a href="#cb26-11" aria-hidden="true" tabindex="-1"></a>      Liste(remove_all_iter(L, <span class="dv">42</span>)))</span>
+<span id="cb26-12"><a href="#cb26-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-13"><a href="#cb26-13" aria-hidden="true" tabindex="-1"></a>L <span class="op">=</span> Node(<span class="dv">73</span>, Node(<span class="dv">73</span>, Node(<span class="dv">73</span>, Node(<span class="dv">42</span>, Node(<span class="dv">42</span>)))))</span>
+<span id="cb26-14"><a href="#cb26-14" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Liste qui commmence par les éléments à supprimer :"</span>,</span>
+<span id="cb26-15"><a href="#cb26-15" aria-hidden="true" tabindex="-1"></a>      Liste(remove_all_iter(L, <span class="dv">73</span>)))</span>
+<span id="cb26-16"><a href="#cb26-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-17"><a href="#cb26-17" aria-hidden="true" tabindex="-1"></a>L <span class="op">=</span> Node(<span class="dv">1</span>, Node(<span class="dv">1</span>, Node(<span class="dv">1</span>, Node(<span class="dv">8</span>, Node(<span class="dv">1</span>, Node(<span class="dv">3</span>, Node(<span class="dv">3</span>)))))))</span>
+<span id="cb26-18"><a href="#cb26-18" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Liste mixte :"</span>,</span>
+<span id="cb26-19"><a href="#cb26-19" aria-hidden="true" tabindex="-1"></a>      Liste(remove_all_iter(L, <span class="dv">1</span>)))</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Liste vide : None
+Liste à supprimer complètement : ()
+Liste qui commmence par les éléments à supprimer : (42,42,42)
+Liste mixte : (8,8,3,3)</code></pre>
+</div>
+</div>
+</section>
+</section>
+<section id="suite-de-fibonacci" class="level1" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> Suite de Fibonacci</h1>
+<p>La suite de Fibonacci est définie comme suit :</p>
+<ul>
+<li><span class="math inline">\(f_0 = 1\)</span></li>
+<li><span class="math inline">\(f_1 = 1\)</span></li>
+<li><span class="math inline">\(f_n = f_{n-1} + f_{n-2}\)</span> si <span class="math inline">\(n &gt; 1\)</span></li>
+</ul>
+<section id="itérative-3" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="itérative-3"><span class="header-section-number">5.1</span> Itérative</h2>
+<ol type="1">
+<li>Écrire la définition de la fonction itérative <code>fibonacci(n)</code> qui, étant donné un entier naturel <code>n</code> renvoie la liste <span class="math inline">\((f_n, f_{n−1}, f_{n−2}, \ldots, f_1, f_0)\)</span> où les fi sont les termes de la suite de Fibonacci.</li>
+</ol>
+<p>Par exemple :</p>
+<div class="sourceCode" id="cb28"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>fibonacci(<span class="dv">0</span>) <span class="op">=</span> (<span class="dv">1</span>)</span>
+<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a>fibonacci(<span class="dv">1</span>) <span class="op">=</span> (<span class="dv">1</span>, <span class="dv">1</span>)</span>
+<span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a>fibonacci(<span class="dv">4</span>) <span class="op">=</span> (<span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">5</span>)</span>
+<span id="cb28-4"><a href="#cb28-4" aria-hidden="true" tabindex="-1"></a>fibonacci(<span class="dv">5</span>) <span class="op">=</span> (<span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">5</span>, <span class="dv">8</span>)</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="b7a5c1b8" class="cell" data-execution_count="16">
+<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> fibonacci(n: <span class="bu">int</span>) <span class="op">-&gt;</span> Node:</span>
+<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> n <span class="op">==</span> <span class="dv">0</span>:</span>
+<span id="cb29-3"><a href="#cb29-3" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> Node(<span class="dv">1</span>)</span>
+<span id="cb29-4"><a href="#cb29-4" aria-hidden="true" tabindex="-1"></a>    res <span class="op">=</span> Node(<span class="dv">1</span>, Node(<span class="dv">1</span>))</span>
+<span id="cb29-5"><a href="#cb29-5" aria-hidden="true" tabindex="-1"></a>    <span class="co"># on a déjà fait la 1ère étape en définissant res, donc on peut diminuer n</span></span>
+<span id="cb29-6"><a href="#cb29-6" aria-hidden="true" tabindex="-1"></a>    n <span class="op">-=</span> <span class="dv">1</span></span>
+<span id="cb29-7"><a href="#cb29-7" aria-hidden="true" tabindex="-1"></a>    <span class="co"># _ est un nom de variable que l'on utilise quand on sait que l'on ne va</span></span>
+<span id="cb29-8"><a href="#cb29-8" aria-hidden="true" tabindex="-1"></a>    <span class="co"># pas utiliser cette variable.</span></span>
+<span id="cb29-9"><a href="#cb29-9" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> _ <span class="kw">in</span> <span class="bu">range</span>(n):</span>
+<span id="cb29-10"><a href="#cb29-10" aria-hidden="true" tabindex="-1"></a>        <span class="co"># somme de la dernière et l'avant dernière valeur</span></span>
+<span id="cb29-11"><a href="#cb29-11" aria-hidden="true" tabindex="-1"></a>        res <span class="op">=</span> Node(res.valeur <span class="op">+</span> res.suivant.valeur, res)</span>
+<span id="cb29-12"><a href="#cb29-12" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> res</span>
+<span id="cb29-13"><a href="#cb29-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-14"><a href="#cb29-14" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> n <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">10</span>):</span>
+<span id="cb29-15"><a href="#cb29-15" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"fibonacci(</span><span class="sc">{</span>n<span class="sc">}</span><span class="ss">) = </span><span class="sc">{</span>Liste(fibonacci(n))<span class="sc">}</span><span class="ss">"</span>)</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>fibonacci(0) = (1)
+fibonacci(1) = (1,1)
+fibonacci(2) = (2,1,1)
+fibonacci(3) = (3,2,1,1)
+fibonacci(4) = (5,3,2,1,1)
+fibonacci(5) = (8,5,3,2,1,1)
+fibonacci(6) = (13,8,5,3,2,1,1)
+fibonacci(7) = (21,13,8,5,3,2,1,1)
+fibonacci(8) = (34,21,13,8,5,3,2,1,1)
+fibonacci(9) = (55,34,21,13,8,5,3,2,1,1)</code></pre>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Les f-string en python
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Les “<em>f-strings</em>” sont des chaînes de caractères (<em>strings</em>) devant lesquelles on met un <code>f</code>.</p>
+<p>Cela permet de mettre du code à l’intérieur, qui sera évalué et intégré dans la chaîne.</p>
+<p>Par exemple :</p>
+<div id="0f33e345" class="cell" data-execution_count="17">
+<div class="sourceCode cell-code" id="cb31"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">5</span>):</span>
+<span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"</span><span class="sc">{</span>i<span class="op">*</span><span class="dv">10</span><span class="sc">}</span><span class="ss">km à pied, ça use les souliers."</span>)</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>0km à pied, ça use les souliers.
+10km à pied, ça use les souliers.
+20km à pied, ça use les souliers.
+30km à pied, ça use les souliers.
+40km à pied, ça use les souliers.</code></pre>
+</div>
+</div>
+<p>Ici, on voit que c’est l’expression entourée par des accolades <code>{...}</code> qui est évaluée. Elle est bien intégrée dans le reste de la chaîne de caractères.</p>
+<p>Bien sûr, il est possible de mettre plusieurs expressions dans une même f-string :</p>
+<div id="9e652078" class="cell" data-execution_count="18">
+<div class="sourceCode cell-code" id="cb33"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">5</span>):</span>
+<span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"</span><span class="sc">{</span>i<span class="sc">}</span><span class="ss"> au carré donne </span><span class="sc">{</span>i<span class="op">**</span><span class="dv">2</span><span class="sc">}</span><span class="ss">"</span>)</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>0 au carré donne 0
+1 au carré donne 1
+2 au carré donne 4
+3 au carré donne 9
+4 au carré donne 16</code></pre>
+</div>
+</div>
+<p>Et on peut même imaginer ce genre d’exemples :</p>
+<div id="67507338" class="cell" data-execution_count="19">
+<div class="sourceCode cell-code" id="cb35"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">5</span>):</span>
+<span id="cb35-2"><a href="#cb35-2" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"</span><span class="sc">{</span>i<span class="sc">}</span><span class="ss"> est un nombre </span><span class="sc">{</span><span class="st">'impair'</span> <span class="cf">if</span> i<span class="op">%</span><span class="dv">2</span> <span class="cf">else</span> <span class="st">'pair'</span><span class="sc">}</span><span class="ss"> et </span><span class="sc">{</span><span class="st">'non'</span><span class="op">*</span>(<span class="dv">0</span> <span class="op">!=</span> i<span class="op">%</span><span class="dv">3</span>)<span class="sc">}</span><span class="ss"> divisible par 3."</span>)</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>0 est un nombre pair et  divisible par 3.
+1 est un nombre impair et non divisible par 3.
+2 est un nombre pair et non divisible par 3.
+3 est un nombre impair et  divisible par 3.
+4 est un nombre pair et non divisible par 3.</code></pre>
+</div>
+</div>
+<p>Les f-strings sont plus rapides et plus lisibles que d’autres techniques pour créer des listes contenant des résultats. Il vaut donc mieux utiliser des f-string plutôt que faire des concaténations de listes avec <code>+</code>.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="récursive-3" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="récursive-3"><span class="header-section-number">5.2</span> Récursive</h2>
+<ol start="2" type="1">
+<li>Produire une version récursive de cette fonction</li>
+</ol>
+<div id="2b1e5551" class="cell" data-execution_count="20">
+<div class="sourceCode cell-code" id="cb37"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> fibonacci_rec(n: <span class="bu">int</span>) <span class="op">-&gt;</span> Node:</span>
+<span id="cb37-2"><a href="#cb37-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> n <span class="op">==</span> <span class="dv">0</span>:</span>
+<span id="cb37-3"><a href="#cb37-3" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> Node(<span class="dv">1</span>)</span>
+<span id="cb37-4"><a href="#cb37-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> n <span class="op">==</span> <span class="dv">1</span>:</span>
+<span id="cb37-5"><a href="#cb37-5" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> Node(<span class="dv">1</span>, Node(<span class="dv">1</span>))</span>
+<span id="cb37-6"><a href="#cb37-6" aria-hidden="true" tabindex="-1"></a>    recursion <span class="op">=</span> fibonacci_rec(n <span class="op">-</span> <span class="dv">1</span>)</span>
+<span id="cb37-7"><a href="#cb37-7" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> Node(recursion.valeur <span class="op">+</span> recursion.suivant.valeur,</span>
+<span id="cb37-8"><a href="#cb37-8" aria-hidden="true" tabindex="-1"></a>                recursion)</span>
+<span id="cb37-9"><a href="#cb37-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-10"><a href="#cb37-10" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> n <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">10</span>):</span>
+<span id="cb37-11"><a href="#cb37-11" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"fibonacci(</span><span class="sc">{</span>n<span class="sc">}</span><span class="ss">) = </span><span class="sc">{</span>Liste(fibonacci(n))<span class="sc">}</span><span class="ss">"</span>)</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>fibonacci(0) = (1)
+fibonacci(1) = (1,1)
+fibonacci(2) = (2,1,1)
+fibonacci(3) = (3,2,1,1)
+fibonacci(4) = (5,3,2,1,1)
+fibonacci(5) = (8,5,3,2,1,1)
+fibonacci(6) = (13,8,5,3,2,1,1)
+fibonacci(7) = (21,13,8,5,3,2,1,1)
+fibonacci(8) = (34,21,13,8,5,3,2,1,1)
+fibonacci(9) = (55,34,21,13,8,5,3,2,1,1)</code></pre>
+</div>
+</div>
+</section>
+</section>
+<section id="interclassement" class="level1" data-number="6">
+<h1 data-number="6"><span class="header-section-number">6</span> interclassement</h1>
+<p>On s’intéresse dans cet exercice à deux méthodes d’interclassement de listes. L’interclassement vise à parcourir deux listes en parallèle et, à chaque itération, à insérer un élément venant de l’une ou de l’autre liste, dans la liste résultat. Le critère utilisé pour choisir la liste qui fournit l’élément à insérer suivant définit le type d’interclassement.</p>
+<section id="interclassement-strict" class="level2" data-number="6.1">
+<h2 data-number="6.1" class="anchored" data-anchor-id="interclassement-strict"><span class="header-section-number">6.1</span> Interclassement strict</h2>
+<ol type="1">
+<li>On s’intéresse tout d’abord à un interclassement strict qui insère alternativement un élément de la première liste puis un élément de la seconde liste. Dans le cas où une liste est plus courte que l’autre, les éléments restants de la plus longue sont insérés à la fin de la liste résultat sans interclassement. Plus précisément, si une liste est vide dès le début, la seconde est retournée. Si les deux listes sont vides, alors la liste vide (None) est retournée. Par exemple :</li>
+</ol>
+<p>On commence par créer une fonction qui permet de copier une liste chaînée (créer une nouvelle liste qui contien les mêmes valeurs).</p>
+<div id="6e6b5b98" class="cell" data-execution_count="21">
+<div class="sourceCode cell-code" id="cb39"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> copy(L: Node) <span class="op">-&gt;</span> Node:</span>
+<span id="cb39-2"><a href="#cb39-2" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""Créer une copie d'une liste chaînée."""</span></span>
+<span id="cb39-3"><a href="#cb39-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> L <span class="kw">is</span> <span class="va">None</span>: <span class="cf">return</span> <span class="va">None</span></span>
+<span id="cb39-4"><a href="#cb39-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> Node(L.valeur, copy(L.suivant))</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Version itérative de <code>copy</code>
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>La version itérative nécessite de garder à la fois un pointeur vers la position dans la liste originale et vers la fin de la nouvelle liste.</p>
+<div id="0d192a66" class="cell" data-execution_count="22">
+<div class="sourceCode cell-code" id="cb40"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> copy_iter(L: Node) <span class="op">-&gt;</span> Node:</span>
+<span id="cb40-2"><a href="#cb40-2" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""Créer une copie d'une liste chaînée."""</span></span>
+<span id="cb40-3"><a href="#cb40-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> L <span class="kw">is</span> <span class="va">None</span>: <span class="cf">return</span> <span class="va">None</span></span>
+<span id="cb40-4"><a href="#cb40-4" aria-hidden="true" tabindex="-1"></a>    res <span class="op">=</span> Node(L.valeur)</span>
+<span id="cb40-5"><a href="#cb40-5" aria-hidden="true" tabindex="-1"></a>    p <span class="op">=</span> res</span>
+<span id="cb40-6"><a href="#cb40-6" aria-hidden="true" tabindex="-1"></a>    q <span class="op">=</span> L.suivant</span>
+<span id="cb40-7"><a href="#cb40-7" aria-hidden="true" tabindex="-1"></a>    <span class="cf">while</span> q <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span>:</span>
+<span id="cb40-8"><a href="#cb40-8" aria-hidden="true" tabindex="-1"></a>        p.suivant <span class="op">=</span> Node(q.valeur)</span>
+<span id="cb40-9"><a href="#cb40-9" aria-hidden="true" tabindex="-1"></a>        p <span class="op">=</span> p.suivant</span>
+<span id="cb40-10"><a href="#cb40-10" aria-hidden="true" tabindex="-1"></a>        q <span class="op">=</span> q.suivant</span>
+<span id="cb40-11"><a href="#cb40-11" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> res</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</div>
+</div>
+<section id="itératif" class="level3" data-number="6.1.1">
+<h3 data-number="6.1.1" class="anchored" data-anchor-id="itératif"><span class="header-section-number">6.1.1</span> Itératif</h3>
+<div id="3f9cbe37" class="cell" data-execution_count="23">
+<div class="sourceCode cell-code" id="cb41"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> inter_strict_iter(L1: Node, L2: Node) <span class="op">-&gt;</span> Node:</span>
+<span id="cb41-2"><a href="#cb41-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> L1 <span class="kw">is</span> <span class="va">None</span>: <span class="cf">return</span> copy(L2)</span>
+<span id="cb41-3"><a href="#cb41-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> L2 <span class="kw">is</span> <span class="va">None</span>: <span class="cf">return</span> copy(L1)</span>
+<span id="cb41-4"><a href="#cb41-4" aria-hidden="true" tabindex="-1"></a>    res <span class="op">=</span> Node(L1.valeur, Node(L2.valeur))</span>
+<span id="cb41-5"><a href="#cb41-5" aria-hidden="true" tabindex="-1"></a>    L1_p <span class="op">=</span> L1.suivant</span>
+<span id="cb41-6"><a href="#cb41-6" aria-hidden="true" tabindex="-1"></a>    L2_p <span class="op">=</span> L2.suivant</span>
+<span id="cb41-7"><a href="#cb41-7" aria-hidden="true" tabindex="-1"></a>    res_tail <span class="op">=</span> res.suivant</span>
+<span id="cb41-8"><a href="#cb41-8" aria-hidden="true" tabindex="-1"></a>    <span class="cf">while</span> L1_p <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span> <span class="kw">and</span> L2_p <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span>:</span>
+<span id="cb41-9"><a href="#cb41-9" aria-hidden="true" tabindex="-1"></a>        res_tail.suivant <span class="op">=</span> Node(L1_p.valeur, Node(L2_p.valeur))</span>
+<span id="cb41-10"><a href="#cb41-10" aria-hidden="true" tabindex="-1"></a>        res_tail <span class="op">=</span> res_tail.suivant.suivant</span>
+<span id="cb41-11"><a href="#cb41-11" aria-hidden="true" tabindex="-1"></a>        L1_p <span class="op">=</span> L1_p.suivant</span>
+<span id="cb41-12"><a href="#cb41-12" aria-hidden="true" tabindex="-1"></a>        L2_p <span class="op">=</span> L2_p.suivant</span>
+<span id="cb41-13"><a href="#cb41-13" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> L1_p <span class="kw">is</span> <span class="va">None</span>: res_tail.suivant <span class="op">=</span> copy(L2_p)</span>
+<span id="cb41-14"><a href="#cb41-14" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> L2_p <span class="kw">is</span> <span class="va">None</span>: res_tail.suivant <span class="op">=</span> copy(L1_p)</span>
+<span id="cb41-15"><a href="#cb41-15" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> res</span>
+<span id="cb41-16"><a href="#cb41-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-17"><a href="#cb41-17" aria-hidden="true" tabindex="-1"></a>L1 <span class="op">=</span> Node(<span class="dv">2</span>, Node(<span class="dv">6</span>, Node(<span class="dv">42</span>, Node(<span class="dv">73</span>, Node(<span class="dv">1237</span>)))))</span>
+<span id="cb41-18"><a href="#cb41-18" aria-hidden="true" tabindex="-1"></a>L2 <span class="op">=</span> Node(<span class="dv">0</span>, Node(<span class="dv">1</span>, Node(<span class="dv">0</span>)))</span>
+<span id="cb41-19"><a href="#cb41-19" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(Liste(inter_strict_iter(L1, L2)))</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>(2,0,6,1,42,0,73,1237)</code></pre>
+</div>
+</div>
+</section>
+<section id="récursif" class="level3" data-number="6.1.2">
+<h3 data-number="6.1.2" class="anchored" data-anchor-id="récursif"><span class="header-section-number">6.1.2</span> Récursif</h3>
+<div id="333a240a" class="cell" data-execution_count="24">
+<div class="sourceCode cell-code" id="cb43"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> inter_strict_rec(L1: Node, L2: Node) <span class="op">-&gt;</span> Node:</span>
+<span id="cb43-2"><a href="#cb43-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> L1 <span class="kw">is</span> <span class="va">None</span> <span class="kw">or</span> L2 <span class="kw">is</span> <span class="va">None</span>: <span class="cf">return</span> <span class="va">None</span></span>
+<span id="cb43-3"><a href="#cb43-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> Node(L1.valeur, Node(L2.valeur,</span>
+<span id="cb43-4"><a href="#cb43-4" aria-hidden="true" tabindex="-1"></a>                inter_strict_rec(L1.suivant, L2.suivant)))</span>
+<span id="cb43-5"><a href="#cb43-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-6"><a href="#cb43-6" aria-hidden="true" tabindex="-1"></a>L1 <span class="op">=</span> Node(<span class="st">'A'</span>, Node(<span class="st">'B'</span>, Node(<span class="st">'C'</span>, Node(<span class="st">'D'</span>, Node(<span class="st">'E'</span>)))))</span>
+<span id="cb43-7"><a href="#cb43-7" aria-hidden="true" tabindex="-1"></a>L2 <span class="op">=</span> Node(<span class="dv">0</span>, Node(<span class="dv">1</span>, Node(<span class="dv">2</span>)))</span>
+<span id="cb43-8"><a href="#cb43-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(Liste(inter_strict_iter(L1, L2)))</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>(A,0,B,1,C,2,D,E)</code></pre>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Avec <code>match</code>
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Le mot clef <code>match</code> de python permet de faire du “<em>pattern matching</em>”, un peu comme en ocaml. Cette syntaxe (avec <code>match</code> et <code>case</code>) peut être plus lisible que des <code>if</code> dans certains cas.</p>
+<p>Ici, on profite du fait d’avoir deux cas symétrique : si <code>L1</code> est <code>None</code> et si <code>L2</code> est <code>Non</code>. Dans chaque cas, il faut retourner une copie de l’autre liste.</p>
+<p>L’expression <code>(L, None) | (None, L)</code> va <em>matcher</em> tous les cas où l’une des deux listes <code>(L1, L2)</code> est vide. Alors, <code>L</code> sera l’autre liste, exactement ce qu’il faut pour faire un <code>return copy(L)</code> !</p>
+<div id="4d5a08f4" class="cell" data-execution_count="25">
+<div class="sourceCode cell-code" id="cb45"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb45-1"><a href="#cb45-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> inter_strict_rec(L1: Node, L2: Node) <span class="op">-&gt;</span> Node:</span>
+<span id="cb45-2"><a href="#cb45-2" aria-hidden="true" tabindex="-1"></a>    match (L1, L2):</span>
+<span id="cb45-3"><a href="#cb45-3" aria-hidden="true" tabindex="-1"></a>        case (L, <span class="va">None</span>) <span class="op">|</span> (<span class="va">None</span>, L): <span class="cf">return</span> copy(L)</span>
+<span id="cb45-4"><a href="#cb45-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> Node(L1.valeur, Node(L2.valeur,</span>
+<span id="cb45-5"><a href="#cb45-5" aria-hidden="true" tabindex="-1"></a>                inter_strict_rec(L1.suivant, L2.suivant)))</span>
+<span id="cb45-6"><a href="#cb45-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb45-7"><a href="#cb45-7" aria-hidden="true" tabindex="-1"></a>L1 <span class="op">=</span> Node(<span class="st">'A'</span>, Node(<span class="st">'B'</span>, Node(<span class="st">'C'</span>, Node(<span class="st">'D'</span>, Node(<span class="st">'E'</span>)))))</span>
+<span id="cb45-8"><a href="#cb45-8" aria-hidden="true" tabindex="-1"></a>L2 <span class="op">=</span> Node(<span class="dv">0</span>, Node(<span class="dv">1</span>, Node(<span class="dv">2</span>)))</span>
+<span id="cb45-9"><a href="#cb45-9" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(Liste(inter_strict_iter(L1, L2)))</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>(A,0,B,1,C,2,D,E)</code></pre>
+</div>
+</div>
+<p>Comme on fait un <code>return copy(L)</code>, on a pas besoin de préciser que le <code>return</code> récursif ne doit pas être exécuté dans tous les cas. Mais si on ne fait pas de <code>return</code>, on peut utiliser le cas <code>case other:</code>, qui correspondra à un <code>else</code> : il sera atteint seulement si aucun des autres cas ne sont trouvés.</p>
+<div id="14d6c071" class="cell" data-execution_count="26">
+<div class="sourceCode cell-code" id="cb47"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb47-1"><a href="#cb47-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> a <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">8</span>):</span>
+<span id="cb47-2"><a href="#cb47-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">match</span> a:</span>
+<span id="cb47-3"><a href="#cb47-3" aria-hidden="true" tabindex="-1"></a>        <span class="cf">case</span> <span class="dv">0</span>:</span>
+<span id="cb47-4"><a href="#cb47-4" aria-hidden="true" tabindex="-1"></a>            <span class="bu">print</span>(a, <span class="st">"un nombre nul"</span>)</span>
+<span id="cb47-5"><a href="#cb47-5" aria-hidden="true" tabindex="-1"></a>        <span class="cf">case</span> <span class="dv">1</span>:</span>
+<span id="cb47-6"><a href="#cb47-6" aria-hidden="true" tabindex="-1"></a>            <span class="bu">print</span>(a, <span class="st">"premier nombre, mais pas un nombre premier"</span>)</span>
+<span id="cb47-7"><a href="#cb47-7" aria-hidden="true" tabindex="-1"></a>        <span class="cf">case</span> <span class="dv">2</span>:</span>
+<span id="cb47-8"><a href="#cb47-8" aria-hidden="true" tabindex="-1"></a>            <span class="bu">print</span>(a, <span class="st">"est le premier nombre premier"</span>)</span>
+<span id="cb47-9"><a href="#cb47-9" aria-hidden="true" tabindex="-1"></a>        <span class="cf">case</span> <span class="dv">3</span>:</span>
+<span id="cb47-10"><a href="#cb47-10" aria-hidden="true" tabindex="-1"></a>            <span class="bu">print</span>(a, <span class="st">"est un autre nombre premier"</span>)</span>
+<span id="cb47-11"><a href="#cb47-11" aria-hidden="true" tabindex="-1"></a>        <span class="cf">case</span> <span class="dv">4</span>:</span>
+<span id="cb47-12"><a href="#cb47-12" aria-hidden="true" tabindex="-1"></a>            <span class="bu">print</span>(a, <span class="st">"est le premier nombre pas premier"</span>)</span>
+<span id="cb47-13"><a href="#cb47-13" aria-hidden="true" tabindex="-1"></a>        <span class="cf">case</span> <span class="dv">5</span>:</span>
+<span id="cb47-14"><a href="#cb47-14" aria-hidden="true" tabindex="-1"></a>            <span class="bu">print</span>(a, <span class="st">"est encore un nombre premier"</span>)</span>
+<span id="cb47-15"><a href="#cb47-15" aria-hidden="true" tabindex="-1"></a>        <span class="cf">case</span> other:</span>
+<span id="cb47-16"><a href="#cb47-16" aria-hidden="true" tabindex="-1"></a>            <span class="bu">print</span>(a, <span class="st">"est trop grand pour moi"</span>)</span>
+<span id="cb47-17"><a href="#cb47-17" aria-hidden="true" tabindex="-1"></a>    <span class="co"># sera exécuté à chaque fois, quel que soit le match</span></span>
+<span id="cb47-18"><a href="#cb47-18" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"--------------------------------------------"</span>)</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>0 un nombre nul
+--------------------------------------------
+1 premier nombre, mais pas un nombre premier
+--------------------------------------------
+2 est le premier nombre premier
+--------------------------------------------
+3 est un autre nombre premier
+--------------------------------------------
+4 est le premier nombre pas premier
+--------------------------------------------
+5 est encore un nombre premier
+--------------------------------------------
+6 est trop grand pour moi
+--------------------------------------------
+7 est trop grand pour moi
+--------------------------------------------</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="interclassement-croissant" class="level2" data-number="6.2">
+<h2 data-number="6.2" class="anchored" data-anchor-id="interclassement-croissant"><span class="header-section-number">6.2</span> Interclassement croissant</h2>
+<ol start="2" type="1">
+<li>On considère maintenant deux listes de nombres <code>L1</code> et <code>L2</code> qui sont triées par ordre croissant. Écrire une fonction d’interclassement <code>interCroissant(L1, L2)</code> qui insère à chaque itération l’élément le plus petit qui se trouve en tête de liste soit de <code>L1</code> soit de <code>L2</code>. Un tel interclassement produit une liste fusionnée elle-même triée par ordre croissant. Proposer une solution itérative puis une solution récursive à ce problème.</li>
+</ol>
+<section id="itératif-1" class="level3" data-number="6.2.1">
+<h3 data-number="6.2.1" class="anchored" data-anchor-id="itératif-1"><span class="header-section-number">6.2.1</span> Itératif</h3>
+<div id="98b11218" class="cell" data-execution_count="27">
+<div class="sourceCode cell-code" id="cb49"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb49-1"><a href="#cb49-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> inter_croissant_iter(L1: Node, L2: Node) <span class="op">-&gt;</span> Node:</span>
+<span id="cb49-2"><a href="#cb49-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> L1 <span class="kw">is</span> <span class="va">None</span>: <span class="cf">return</span> copy(L2)</span>
+<span id="cb49-3"><a href="#cb49-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> L2 <span class="kw">is</span> <span class="va">None</span>: <span class="cf">return</span> copy(L1)</span>
+<span id="cb49-4"><a href="#cb49-4" aria-hidden="true" tabindex="-1"></a>    L1_p <span class="op">=</span> L1</span>
+<span id="cb49-5"><a href="#cb49-5" aria-hidden="true" tabindex="-1"></a>    L2_p <span class="op">=</span> L2</span>
+<span id="cb49-6"><a href="#cb49-6" aria-hidden="true" tabindex="-1"></a>    <span class="co"># init 1ère valeur</span></span>
+<span id="cb49-7"><a href="#cb49-7" aria-hidden="true" tabindex="-1"></a>    res <span class="op">=</span> <span class="va">None</span></span>
+<span id="cb49-8"><a href="#cb49-8" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> L1_p.valeur <span class="op">&lt;</span> L2_p.valeur:</span>
+<span id="cb49-9"><a href="#cb49-9" aria-hidden="true" tabindex="-1"></a>        res <span class="op">=</span> Node(L1_p.valeur)</span>
+<span id="cb49-10"><a href="#cb49-10" aria-hidden="true" tabindex="-1"></a>        L1_p <span class="op">=</span> L1_p.suivant</span>
+<span id="cb49-11"><a href="#cb49-11" aria-hidden="true" tabindex="-1"></a>    <span class="cf">else</span>:</span>
+<span id="cb49-12"><a href="#cb49-12" aria-hidden="true" tabindex="-1"></a>        res <span class="op">=</span> Node(L2_p.valeur)</span>
+<span id="cb49-13"><a href="#cb49-13" aria-hidden="true" tabindex="-1"></a>        L2_p <span class="op">=</span> L2_p.suivant</span>
+<span id="cb49-14"><a href="#cb49-14" aria-hidden="true" tabindex="-1"></a>    res_tail <span class="op">=</span> res</span>
+<span id="cb49-15"><a href="#cb49-15" aria-hidden="true" tabindex="-1"></a>    <span class="cf">while</span> L1_p <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span> <span class="kw">and</span> L2_p <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span>:</span>
+<span id="cb49-16"><a href="#cb49-16" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> L1_p.valeur <span class="op">&lt;</span> L2_p.valeur:</span>
+<span id="cb49-17"><a href="#cb49-17" aria-hidden="true" tabindex="-1"></a>            res_tail.suivant <span class="op">=</span> Node(L1_p.valeur)</span>
+<span id="cb49-18"><a href="#cb49-18" aria-hidden="true" tabindex="-1"></a>            res_tail <span class="op">=</span> res_tail.suivant</span>
+<span id="cb49-19"><a href="#cb49-19" aria-hidden="true" tabindex="-1"></a>            L1_p <span class="op">=</span> L1_p.suivant</span>
+<span id="cb49-20"><a href="#cb49-20" aria-hidden="true" tabindex="-1"></a>        <span class="cf">else</span>:</span>
+<span id="cb49-21"><a href="#cb49-21" aria-hidden="true" tabindex="-1"></a>            res_tail.suivant <span class="op">=</span> Node(L2_p.valeur)</span>
+<span id="cb49-22"><a href="#cb49-22" aria-hidden="true" tabindex="-1"></a>            res_tail <span class="op">=</span> res_tail.suivant</span>
+<span id="cb49-23"><a href="#cb49-23" aria-hidden="true" tabindex="-1"></a>            L2_p <span class="op">=</span> L2_p.suivant</span>
+<span id="cb49-24"><a href="#cb49-24" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> L1_p <span class="kw">is</span> <span class="va">None</span>:</span>
+<span id="cb49-25"><a href="#cb49-25" aria-hidden="true" tabindex="-1"></a>        res_tail.suivant <span class="op">=</span> copy(L2_p)</span>
+<span id="cb49-26"><a href="#cb49-26" aria-hidden="true" tabindex="-1"></a>    <span class="cf">elif</span> L2_p <span class="kw">is</span> <span class="va">None</span>:</span>
+<span id="cb49-27"><a href="#cb49-27" aria-hidden="true" tabindex="-1"></a>        res_tail.suivant <span class="op">=</span> copy(L1_p)</span>
+<span id="cb49-28"><a href="#cb49-28" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> res</span>
+<span id="cb49-29"><a href="#cb49-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb49-30"><a href="#cb49-30" aria-hidden="true" tabindex="-1"></a>L1 <span class="op">=</span> Node(<span class="dv">1</span>, Node(<span class="dv">6</span>, Node(<span class="dv">42</span>, Node(<span class="dv">73</span>, Node(<span class="dv">1237</span>)))))</span>
+<span id="cb49-31"><a href="#cb49-31" aria-hidden="true" tabindex="-1"></a>L2 <span class="op">=</span> Node(<span class="dv">0</span>, Node(<span class="dv">12</span>, Node(<span class="dv">37</span>, Node(<span class="dv">67</span>, Node(<span class="dv">68</span>)))))</span>
+<span id="cb49-32"><a href="#cb49-32" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(Liste(inter_croissant_iter(L1, L2)))</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>(0,1,6,12,37,42,67,68,73,1237)</code></pre>
+</div>
+</div>
+</section>
+<section id="récursif-1" class="level3" data-number="6.2.2">
+<h3 data-number="6.2.2" class="anchored" data-anchor-id="récursif-1"><span class="header-section-number">6.2.2</span> Récursif</h3>
+<div id="7feef562" class="cell" data-execution_count="28">
+<div class="sourceCode cell-code" id="cb51"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb51-1"><a href="#cb51-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> inter_croissant_rec(L1: Node, L2: Node) <span class="op">-&gt;</span> Node:</span>
+<span id="cb51-2"><a href="#cb51-2" aria-hidden="true" tabindex="-1"></a>    match (L1, L2):</span>
+<span id="cb51-3"><a href="#cb51-3" aria-hidden="true" tabindex="-1"></a>        case (L, <span class="va">None</span>) <span class="op">|</span> (<span class="va">None</span>, L): <span class="cf">return</span> copy(L)</span>
+<span id="cb51-4"><a href="#cb51-4" aria-hidden="true" tabindex="-1"></a>        case (L1, L2) <span class="cf">if</span> L1.valeur <span class="op">&lt;</span> L2.valeur:</span>
+<span id="cb51-5"><a href="#cb51-5" aria-hidden="true" tabindex="-1"></a>            <span class="cf">return</span> Node(L1.valeur,</span>
+<span id="cb51-6"><a href="#cb51-6" aria-hidden="true" tabindex="-1"></a>                        inter_croissant_rec(L1.suivant, L2))</span>
+<span id="cb51-7"><a href="#cb51-7" aria-hidden="true" tabindex="-1"></a>        <span class="cf">case</span> other:</span>
+<span id="cb51-8"><a href="#cb51-8" aria-hidden="true" tabindex="-1"></a>            <span class="cf">return</span> Node(L2.valeur,</span>
+<span id="cb51-9"><a href="#cb51-9" aria-hidden="true" tabindex="-1"></a>                        inter_croissant_rec(L1, L2.suivant))</span>
+<span id="cb51-10"><a href="#cb51-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb51-11"><a href="#cb51-11" aria-hidden="true" tabindex="-1"></a>L1 <span class="op">=</span> Node(<span class="dv">1</span>, Node(<span class="dv">6</span>, Node(<span class="dv">42</span>, Node(<span class="dv">73</span>, Node(<span class="dv">1237</span>)))))</span>
+<span id="cb51-12"><a href="#cb51-12" aria-hidden="true" tabindex="-1"></a>L2 <span class="op">=</span> Node(<span class="dv">0</span>, Node(<span class="dv">12</span>, Node(<span class="dv">37</span>, Node(<span class="dv">67</span>, Node(<span class="dv">68</span>)))))</span>
+<span id="cb51-13"><a href="#cb51-13" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(Liste(inter_croissant_iter(L1, L2)))</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>(0,1,6,12,37,42,67,68,73,1237)</code></pre>
+</div>
+</div>
+</section>
+</section>
+</section>
+<section id="calculatrice" class="level1" data-number="7">
+<h1 data-number="7"><span class="header-section-number">7</span> Calculatrice</h1>
+<p>Nous nous intéressons à la conception d’une calculatrice qui repose sur une représentation des opérations à l’aide d’une <strong>pile</strong>. De façon à mener à bien ce programme, il va donc falloir - implémenter les fonctions de la barrière d’abstraction de la structure pile de données (push, pop), - comprendre la notation postfixée pour la saisie des opérations</p>
+<p>De manière traditionnelle, les opérations sont notées de manière infixée avec, dans le cas d’un opérateur binaire, le placement de l’opérateur entre les 2 opérandes. On obtient la notation suivante : De manière traditionnelle, les opérations sont notées de manière infixée avec, dans le cas d’un opérateur binaire, le placement de l’opérateur entre les 2 opérandes. On obtient la notation suivante : <span class="math display">\[\text{opérande}_1 \text{opérateur} \text{opérande}_2\]</span></p>
+<p>comme par exemple : <span class="math inline">\(3 + 4\)</span>, <span class="math inline">\(2.5 / 3.14 \ldots\)</span></p>
+<p>En notation postfixée, l’opérateur succède à son (dans le cas d’un opérateur unaire) ou ses (dans le cas d’un opérateur binaire) opérande(s).</p>
+<p>Ainsi : “<span class="math inline">\(3+4\)</span>” s’écrit en postfixe “<span class="math inline">\(3 4 +\)</span>”.</p>
+<p>L’intérêt d’une telle représentation est de pouvoir ensuite utiliser une pile pour réaliser les calculs en suivant le schéma de résolution suivant :</p>
+<ul>
+<li>si la pile ne contient qu’une valeur réelle, il s’agit du résultat du calcul,</li>
+<li>sinon on empile les valeurs réelles lorsqu’elles sont lues en entrée,</li>
+<li>si on lit un caractère correspondant à un opérateur binaire on dépile les deux dernières valeurs réelles, on effectue le calcul et on empile le résultat,</li>
+<li>si on lit un caractère correspondant à un opérateur unaire, comme l’opérateur de négation, on dépile la dernière valeur, on applique l’opérateur et on empile le résultat.</li>
+</ul>
+<p>Attention : la division est une loi non commutative, c’est-à-dire que <span class="math inline">\(x/y \neq y/x\)</span>. Il faut donc garder à l’esprit qu’en écrivant “<span class="math inline">\(x y /\)</span>” en postifixé, l’opération souhaitée est <span class="math inline">\(\frac{x}{y}\)</span> mais que du fait de l’utilisation d’une pile, la valeur de <span class="math inline">\(y\)</span> sera dépilée avant celle de <span class="math inline">\(x\)</span> (pile = dernier arrivé, premier sorti).</p>
+<p>Dans le cadre de notre programme, les opérateurs suivants doivent être reconnus :</p>
+<ul>
+<li><code>+</code> : addition,</li>
+<li><code>-</code> : soustraction,</li>
+<li><code>*</code> : multiplication,</li>
+<li><code>/</code> division</li>
+<li><code>n</code> : négation</li>
+</ul>
+<p>Similairement, on veillera à bien gérer les erreurs :</p>
+<p>• soit de division par 0, • soit de dépilement de valeur inexistante : par exemple, essayer de dépiler les deux opérandes d’un opérateur <code>+</code> alors qu’il n’y en a qu’un seul dans la pile</p>
+<section id="notation-postfixée" class="level2" data-number="7.1">
+<h2 data-number="7.1" class="anchored" data-anchor-id="notation-postfixée"><span class="header-section-number">7.1</span> Notation postfixée</h2>
+<p>Indiquer la traduction en notation postfixée des expressions suivantes exprimées en notation infixée (les parenthèses ne sont là que pour vous aider à comprendre la priorité des opérations) :</p>
+<ul>
+<li><code>(2 + 4) * n 5</code>
+<ul>
+<li><code>2 4 + 5 n *</code> ou bien <code>5 n 2 4 + *</code></li>
+</ul></li>
+<li><code>9 / (3.5 + 6)</code>
+<ul>
+<li><code>9 3.5 6 + /</code></li>
+</ul></li>
+<li><code>(3 - 5) / (3 + 5)</code>
+<ul>
+<li><code>3 5 - 3 5 + /</code></li>
+</ul></li>
+</ul>
+</section>
+<section id="caculatrice" class="level2" data-number="7.2">
+<h2 data-number="7.2" class="anchored" data-anchor-id="caculatrice"><span class="header-section-number">7.2</span> Caculatrice</h2>
+<ol start="2" type="1">
+<li>Implémenter une calculatrice simple en notation postfixée sur la base d’une pile gérée par votre barrière d’abstraction.</li>
+</ol>
+<section id="pile" class="level3" data-number="7.2.1">
+<h3 data-number="7.2.1" class="anchored" data-anchor-id="pile"><span class="header-section-number">7.2.1</span> Pile</h3>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Notes sur l’implémentation
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-5" class="callout-5-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li>Le dessus de la pile (la tête de la pile) sera la tête de liste (le premier élément de la liste), pour minimiser la complexité des opérations de base.</li>
+<li>Les opérations sur les piles seront faîtes en-place (“<em>in place</em>”), c’est-à-dire que les listes seront modifiées (une nouvelle liste ne sera pas créée à chaque fois)</li>
+<li>On peut alors avoir un <code>push</code> et un <code>pop</code> en <span class="math inline">\(O(1)\)</span></li>
+</ul>
+</div>
+</div>
+</div>
+<section id="push" class="level4" data-number="7.2.1.1">
+<h4 data-number="7.2.1.1" class="anchored" data-anchor-id="push"><span class="header-section-number">7.2.1.1</span> Push</h4>
+<div id="ecc69572" class="cell" data-execution_count="29">
+<div class="sourceCode cell-code" id="cb53"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb53-1"><a href="#cb53-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> push(L: Node, valeur) <span class="op">-&gt;</span> Node:</span>
+<span id="cb53-2"><a href="#cb53-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> Node(valeur, L)</span>
+<span id="cb53-3"><a href="#cb53-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-4"><a href="#cb53-4" aria-hidden="true" tabindex="-1"></a>A <span class="op">=</span> Node(<span class="dv">1</span>, Node(<span class="dv">2</span>))</span>
+<span id="cb53-5"><a href="#cb53-5" aria-hidden="true" tabindex="-1"></a>A <span class="op">=</span> push(A, <span class="dv">42</span>)</span>
+<span id="cb53-6"><a href="#cb53-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(Liste(A))</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>(42,1,2)</code></pre>
+</div>
+</div>
+</section>
+<section id="get" class="level4" data-number="7.2.1.2">
+<h4 data-number="7.2.1.2" class="anchored" data-anchor-id="get"><span class="header-section-number">7.2.1.2</span> Get</h4>
+<div id="b7d0df49" class="cell" data-execution_count="30">
+<div class="sourceCode cell-code" id="cb55"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb55-1"><a href="#cb55-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> get(L: Node) <span class="op">-&gt;</span> Node:</span>
+<span id="cb55-2"><a href="#cb55-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> L <span class="kw">is</span> <span class="va">None</span>:</span>
+<span id="cb55-3"><a href="#cb55-3" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="va">None</span></span>
+<span id="cb55-4"><a href="#cb55-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> L.valeur</span>
+<span id="cb55-5"><a href="#cb55-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb55-6"><a href="#cb55-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(Liste(A))</span>
+<span id="cb55-7"><a href="#cb55-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(get(A))</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>(42,1,2)
+42</code></pre>
+</div>
+</div>
+</section>
+<section id="del" class="level4" data-number="7.2.1.3">
+<h4 data-number="7.2.1.3" class="anchored" data-anchor-id="del"><span class="header-section-number">7.2.1.3</span> Del</h4>
+<div id="5f908b7f" class="cell" data-execution_count="31">
+<div class="sourceCode cell-code" id="cb57"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb57-1"><a href="#cb57-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> delete(L: Node) <span class="op">-&gt;</span> Node:</span>
+<span id="cb57-2"><a href="#cb57-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> L <span class="kw">is</span> <span class="va">None</span>:</span>
+<span id="cb57-3"><a href="#cb57-3" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="va">None</span></span>
+<span id="cb57-4"><a href="#cb57-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> L.suivant</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="pop" class="level4" data-number="7.2.1.4">
+<h4 data-number="7.2.1.4" class="anchored" data-anchor-id="pop"><span class="header-section-number">7.2.1.4</span> Pop</h4>
+<div id="65ff7f22" class="cell" data-execution_count="32">
+<div class="sourceCode cell-code" id="cb58"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb58-1"><a href="#cb58-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> pop(L: Node) <span class="op">-&gt;</span> (Node, <span class="bu">object</span>):</span>
+<span id="cb58-2"><a href="#cb58-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> L <span class="kw">is</span> <span class="va">None</span>:</span>
+<span id="cb58-3"><a href="#cb58-3" aria-hidden="true" tabindex="-1"></a>        <span class="cf">raise</span> <span class="pp">ValueError</span>(<span class="st">"pop from empty stack."</span>)</span>
+<span id="cb58-4"><a href="#cb58-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> delete(L), get(L)</span>
+<span id="cb58-5"><a href="#cb58-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb58-6"><a href="#cb58-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(Liste(A))</span>
+<span id="cb58-7"><a href="#cb58-7" aria-hidden="true" tabindex="-1"></a>val, A <span class="op">=</span> pop(A)</span>
+<span id="cb58-8"><a href="#cb58-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(val, A)</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>(42,1,2)
+&lt;__main__.Node object at 0x107ec2450&gt; 42</code></pre>
+</div>
+</div>
+</section>
+<section id="is-empty" class="level4" data-number="7.2.1.5">
+<h4 data-number="7.2.1.5" class="anchored" data-anchor-id="is-empty"><span class="header-section-number">7.2.1.5</span> Is empty</h4>
+<div id="3ebc6a29" class="cell" data-execution_count="33">
+<div class="sourceCode cell-code" id="cb60"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb60-1"><a href="#cb60-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> is_empty(L: Node) <span class="op">-&gt;</span> <span class="bu">bool</span>:</span>
+<span id="cb60-2"><a href="#cb60-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> L <span class="kw">is</span> <span class="va">None</span></span>
+<span id="cb60-3"><a href="#cb60-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb60-4"><a href="#cb60-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(is_empty(<span class="va">None</span>))</span>
+<span id="cb60-5"><a href="#cb60-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(is_empty(Node(<span class="dv">1</span>, Node(<span class="dv">2</span>))))</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>True
+False</code></pre>
+</div>
+</div>
+</section>
+<section id="height" class="level4" data-number="7.2.1.6">
+<h4 data-number="7.2.1.6" class="anchored" data-anchor-id="height"><span class="header-section-number">7.2.1.6</span> Height</h4>
+<div id="75fb4252" class="cell" data-execution_count="34">
+<div class="sourceCode cell-code" id="cb62"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb62-1"><a href="#cb62-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> height(L: Node) <span class="op">-&gt;</span> <span class="bu">int</span>:</span>
+<span id="cb62-2"><a href="#cb62-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> is_empty(L):</span>
+<span id="cb62-3"><a href="#cb62-3" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="dv">0</span></span>
+<span id="cb62-4"><a href="#cb62-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="dv">1</span> <span class="op">+</span> height(L.suivant)</span>
+<span id="cb62-5"><a href="#cb62-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb62-6"><a href="#cb62-6" aria-hidden="true" tabindex="-1"></a>L <span class="op">=</span> Node(<span class="dv">1</span>, Node(<span class="dv">2</span>, Node(<span class="dv">3</span>, Node(<span class="dv">42</span>))))</span>
+<span id="cb62-7"><a href="#cb62-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(height(L))</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>4</code></pre>
+</div>
+</div>
+</section>
+</section>
+<section id="abstraction-de-la-calculatrice" class="level3" data-number="7.2.2">
+<h3 data-number="7.2.2" class="anchored" data-anchor-id="abstraction-de-la-calculatrice"><span class="header-section-number">7.2.2</span> Abstraction de la calculatrice</h3>
+<p>On créée d’abord une fonction qui permet d’appliquer un opérateur binaire à une pile (sur les deux premiers éléments).</p>
+<div id="e74b2c7b" class="cell" data-execution_count="35">
+<div class="sourceCode cell-code" id="cb64"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb64-1"><a href="#cb64-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> appliquer(bin_operator, L: Node) <span class="op">-&gt;</span> Node:</span>
+<span id="cb64-2"><a href="#cb64-2" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""Appliquer `bin_operator` sur les deux premières valeurs de la pile.</span></span>
+<span id="cb64-3"><a href="#cb64-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb64-4"><a href="#cb64-4" aria-hidden="true" tabindex="-1"></a><span class="co">    Le premier paramètre donné à `bin_operator` est le dessus de la pile, et le</span></span>
+<span id="cb64-5"><a href="#cb64-5" aria-hidden="true" tabindex="-1"></a><span class="co">    second est le second élément de la pile.</span></span>
+<span id="cb64-6"><a href="#cb64-6" aria-hidden="true" tabindex="-1"></a><span class="co">    """</span></span>
+<span id="cb64-7"><a href="#cb64-7" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> L <span class="kw">is</span> <span class="va">None</span>:</span>
+<span id="cb64-8"><a href="#cb64-8" aria-hidden="true" tabindex="-1"></a>        <span class="cf">raise</span> <span class="pp">ValueError</span>(<span class="st">"applying operator on empty stack"</span>)</span>
+<span id="cb64-9"><a href="#cb64-9" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> L.suivant <span class="kw">is</span> <span class="va">None</span>:</span>
+<span id="cb64-10"><a href="#cb64-10" aria-hidden="true" tabindex="-1"></a>        <span class="cf">raise</span> <span class="pp">ValueError</span>(<span class="st">"applying operator on stack with only one element"</span>)</span>
+<span id="cb64-11"><a href="#cb64-11" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> Node(bin_operator(L.valeur, L.suivant.valeur), L.suivant.suivant)</span>
+<span id="cb64-12"><a href="#cb64-12" aria-hidden="true" tabindex="-1"></a>    L, first <span class="op">=</span> pop(L)</span>
+<span id="cb64-13"><a href="#cb64-13" aria-hidden="true" tabindex="-1"></a>    L, second <span class="op">=</span> pop(L)</span>
+<span id="cb64-14"><a href="#cb64-14" aria-hidden="true" tabindex="-1"></a>    result <span class="op">=</span> bin_operator(first, second)</span>
+<span id="cb64-15"><a href="#cb64-15" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> push(result, L)</span>
+<span id="cb64-16"><a href="#cb64-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb64-17"><a href="#cb64-17" aria-hidden="true" tabindex="-1"></a>A <span class="op">=</span> Node(<span class="dv">3</span>, Node(<span class="dv">2</span>, Node(<span class="dv">4</span>, Node(<span class="dv">1</span>, Node(<span class="dv">5</span>)))))</span>
+<span id="cb64-18"><a href="#cb64-18" aria-hidden="true" tabindex="-1"></a>add <span class="op">=</span> <span class="kw">lambda</span> x, y: x<span class="op">+</span>y</span>
+<span id="cb64-19"><a href="#cb64-19" aria-hidden="true" tabindex="-1"></a>div <span class="op">=</span> <span class="kw">lambda</span> x, y: y <span class="op">/</span> x</span>
+<span id="cb64-20"><a href="#cb64-20" aria-hidden="true" tabindex="-1"></a>A <span class="op">=</span> appliquer(add, A)</span>
+<span id="cb64-21"><a href="#cb64-21" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(Liste(A))</span>
+<span id="cb64-22"><a href="#cb64-22" aria-hidden="true" tabindex="-1"></a>A <span class="op">=</span> appliquer(div, A)</span>
+<span id="cb64-23"><a href="#cb64-23" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(Liste(A))</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>(5,4,1,5)
+(0.8,1,5)</code></pre>
+</div>
+</div>
+<section id="opérateurs-de-base" class="level4" data-number="7.2.2.1">
+<h4 data-number="7.2.2.1" class="anchored" data-anchor-id="opérateurs-de-base"><span class="header-section-number">7.2.2.1</span> Opérateurs de base</h4>
+<div id="22e2c1f3" class="cell" data-execution_count="36">
+<div class="sourceCode cell-code" id="cb66"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb66-1"><a href="#cb66-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> add(L: Node) <span class="op">-&gt;</span> Node:</span>
+<span id="cb66-2"><a href="#cb66-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> appliquer(<span class="kw">lambda</span> x, y: x<span class="op">+</span>y, L)</span>
+<span id="cb66-3"><a href="#cb66-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb66-4"><a href="#cb66-4" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> sub(L: Node) <span class="op">-&gt;</span> Node:</span>
+<span id="cb66-5"><a href="#cb66-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> appliquer(<span class="kw">lambda</span> x, y: y <span class="op">-</span> x, L)</span>
+<span id="cb66-6"><a href="#cb66-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb66-7"><a href="#cb66-7" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> mult(L: Node) <span class="op">-&gt;</span> Node:</span>
+<span id="cb66-8"><a href="#cb66-8" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> appliquer(<span class="kw">lambda</span> x, y: x <span class="op">*</span> y, L)</span>
+<span id="cb66-9"><a href="#cb66-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb66-10"><a href="#cb66-10" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> div(L: Node) <span class="op">-&gt;</span> Node:</span>
+<span id="cb66-11"><a href="#cb66-11" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> appliquer(<span class="kw">lambda</span> x, y: y <span class="op">/</span> x, L)</span>
+<span id="cb66-12"><a href="#cb66-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb66-13"><a href="#cb66-13" aria-hidden="true" tabindex="-1"></a>A <span class="op">=</span> Node(<span class="dv">3</span>, Node(<span class="dv">2</span>, Node(<span class="dv">1</span>, Node(<span class="dv">1</span>, Node(<span class="dv">5</span>)))))</span>
+<span id="cb66-14"><a href="#cb66-14" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(Liste(A))</span>
+<span id="cb66-15"><a href="#cb66-15" aria-hidden="true" tabindex="-1"></a>A <span class="op">=</span> add(A)</span>
+<span id="cb66-16"><a href="#cb66-16" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(Liste(A))</span>
+<span id="cb66-17"><a href="#cb66-17" aria-hidden="true" tabindex="-1"></a>A <span class="op">=</span> sub(A)</span>
+<span id="cb66-18"><a href="#cb66-18" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(Liste(A))</span>
+<span id="cb66-19"><a href="#cb66-19" aria-hidden="true" tabindex="-1"></a>A <span class="op">=</span> div(A)</span>
+<span id="cb66-20"><a href="#cb66-20" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(Liste(A))</span>
+<span id="cb66-21"><a href="#cb66-21" aria-hidden="true" tabindex="-1"></a>A <span class="op">=</span> mult(A)</span>
+<span id="cb66-22"><a href="#cb66-22" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(Liste(A))</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>(3,2,1,1,5)
+(5,1,1,5)
+(-4,1,5)
+(-0.25,5)
+(-1.25)</code></pre>
+</div>
+</div>
+</section>
+<section id="opérations-unaires" class="level4" data-number="7.2.2.2">
+<h4 data-number="7.2.2.2" class="anchored" data-anchor-id="opérations-unaires"><span class="header-section-number">7.2.2.2</span> Opérations unaires</h4>
+<p>Les opérations unaires sont des opérations qui modifient uniquement le premier élément de la pile.</p>
+<div id="1773a77d" class="cell" data-execution_count="37">
+<div class="sourceCode cell-code" id="cb68"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb68-1"><a href="#cb68-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> appliquer_unaire(operation, L: Node) <span class="op">-&gt;</span> Node:</span>
+<span id="cb68-2"><a href="#cb68-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> L <span class="kw">is</span> <span class="va">None</span>:</span>
+<span id="cb68-3"><a href="#cb68-3" aria-hidden="true" tabindex="-1"></a>        <span class="cf">raise</span> <span class="pp">ValueError</span>(<span class="st">"cannot apply unary function to an empty stack"</span>)</span>
+<span id="cb68-4"><a href="#cb68-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> Node(operation(L.valeur), L.suivant)</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Voici quelques opérations unaires utiles :</p>
+<div id="772af9a0" class="cell" data-execution_count="38">
+<div class="sourceCode cell-code" id="cb69"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb69-1"><a href="#cb69-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> neg(L: Node) <span class="op">-&gt;</span> Node:</span>
+<span id="cb69-2"><a href="#cb69-2" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""Négation : transformer la première valeur de la pile en son opposé.</span></span>
+<span id="cb69-3"><a href="#cb69-3" aria-hidden="true" tabindex="-1"></a><span class="co">    """</span></span>
+<span id="cb69-4"><a href="#cb69-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> appliquer_unaire(<span class="kw">lambda</span> x: <span class="op">-</span>x, L)</span>
+<span id="cb69-5"><a href="#cb69-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb69-6"><a href="#cb69-6" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> inv(L: Node) <span class="op">-&gt;</span> Node:</span>
+<span id="cb69-7"><a href="#cb69-7" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""Inversion : inverser le premier élément de la pile (l'inverse de x est 1/x).</span></span>
+<span id="cb69-8"><a href="#cb69-8" aria-hidden="true" tabindex="-1"></a><span class="co">    """</span></span>
+<span id="cb69-9"><a href="#cb69-9" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> appliquer_unaire(<span class="kw">lambda</span> x: <span class="dv">1</span><span class="op">/</span>x, L)</span>
+<span id="cb69-10"><a href="#cb69-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb69-11"><a href="#cb69-11" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(Liste(A))</span>
+<span id="cb69-12"><a href="#cb69-12" aria-hidden="true" tabindex="-1"></a>A <span class="op">=</span> neg(A)</span>
+<span id="cb69-13"><a href="#cb69-13" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(Liste(A))</span>
+<span id="cb69-14"><a href="#cb69-14" aria-hidden="true" tabindex="-1"></a>A <span class="op">=</span> inv(A)</span>
+<span id="cb69-15"><a href="#cb69-15" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(Liste(A))</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>(-1.25)
+(1.25)
+(0.8)</code></pre>
+</div>
+</div>
+</section>
+<section id="affichage-dune-pile" class="level4" data-number="7.2.2.3">
+<h4 data-number="7.2.2.3" class="anchored" data-anchor-id="affichage-dune-pile"><span class="header-section-number">7.2.2.3</span> Affichage d’une pile</h4>
+<p>On veut afficher la pile avec la tête en base, pour que les nombres les plus récents soient plus près de l’entrée utilisateur.</p>
+<div id="15abda46" class="cell" data-execution_count="39">
+<div class="sourceCode cell-code" id="cb71"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb71-1"><a href="#cb71-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> stack_to_list(L: Node) <span class="op">-&gt;</span> <span class="bu">list</span>:</span>
+<span id="cb71-2"><a href="#cb71-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> L <span class="kw">is</span> <span class="va">None</span>: <span class="cf">return</span> []</span>
+<span id="cb71-3"><a href="#cb71-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> [L.valeur] <span class="op">+</span> stack_to_list(L.suivant)</span>
+<span id="cb71-4"><a href="#cb71-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-5"><a href="#cb71-5" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> show_stack(L: Node) <span class="op">-&gt;</span> <span class="va">None</span>:</span>
+<span id="cb71-6"><a href="#cb71-6" aria-hidden="true" tabindex="-1"></a>    <span class="co"># pour afficher la liste la tête en bas, on retourne la liste</span></span>
+<span id="cb71-7"><a href="#cb71-7" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="op">*</span><span class="bu">reversed</span>(stack_to_list(L)), sep<span class="op">=</span><span class="st">'</span><span class="ch">\n</span><span class="st">'</span>)</span>
+<span id="cb71-8"><a href="#cb71-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-9"><a href="#cb71-9" aria-hidden="true" tabindex="-1"></a>L <span class="op">=</span> Node(<span class="dv">1</span>, Node(<span class="dv">2</span>, Node(<span class="dv">3</span>, Node(<span class="dv">4</span>, Node(<span class="dv">5</span>)))))</span>
+<span id="cb71-10"><a href="#cb71-10" aria-hidden="true" tabindex="-1"></a>show_stack(L)</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>5
+4
+3
+2
+1</code></pre>
+</div>
+</div>
+</section>
+<section id="traduction-des-commandes" class="level4" data-number="7.2.2.4">
+<h4 data-number="7.2.2.4" class="anchored" data-anchor-id="traduction-des-commandes"><span class="header-section-number">7.2.2.4</span> Traduction des commandes</h4>
+<p>On veut créer une fonction qui transforme une liste selon une chaîne de caractères donnée, qui représente l’opération voulue.</p>
+<p>On pourrait utiliser des structures <code>if ... elif ... elif ... else</code>, ainsi que des clauses <code>or</code> pour tester les différentes commandes, mais la structure <code>match</code> (apparue dans la version 3.10 de python) permet une syntaxe plus claire, et des expressions plus riches.</p>
+<div id="ba182f30" class="cell" data-execution_count="40">
+<div class="sourceCode cell-code" id="cb73"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb73-1"><a href="#cb73-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> appliquer_str(op_str: <span class="bu">str</span>, L: Node) <span class="op">-&gt;</span> Node:</span>
+<span id="cb73-2"><a href="#cb73-2" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""Appliquer l'opération désignée par `op_str` sur `L`.</span></span>
+<span id="cb73-3"><a href="#cb73-3" aria-hidden="true" tabindex="-1"></a><span class="co">    Exemples :</span></span>
+<span id="cb73-4"><a href="#cb73-4" aria-hidden="true" tabindex="-1"></a><span class="co">    &gt;&gt;&gt; appliquer_str("+", Node(1, Node(2))) # donne Node(3)</span></span>
+<span id="cb73-5"><a href="#cb73-5" aria-hidden="true" tabindex="-1"></a><span class="co">    &gt;&gt;&gt; appliquer_str("/", Node(5, Node(2))) # donne Node(0.4)</span></span>
+<span id="cb73-6"><a href="#cb73-6" aria-hidden="true" tabindex="-1"></a><span class="co">    """</span></span>
+<span id="cb73-7"><a href="#cb73-7" aria-hidden="true" tabindex="-1"></a>    <span class="cf">match</span> op_str:</span>
+<span id="cb73-8"><a href="#cb73-8" aria-hidden="true" tabindex="-1"></a>        <span class="cf">case</span> <span class="st">"+"</span> <span class="op">|</span> <span class="st">"add"</span>:</span>
+<span id="cb73-9"><a href="#cb73-9" aria-hidden="true" tabindex="-1"></a>            <span class="cf">return</span> add(L)</span>
+<span id="cb73-10"><a href="#cb73-10" aria-hidden="true" tabindex="-1"></a>        <span class="cf">case</span> <span class="st">"-"</span> <span class="op">|</span> <span class="st">"sub"</span> <span class="op">|</span> <span class="st">"subs"</span>:</span>
+<span id="cb73-11"><a href="#cb73-11" aria-hidden="true" tabindex="-1"></a>            <span class="cf">return</span> sub(L)</span>
+<span id="cb73-12"><a href="#cb73-12" aria-hidden="true" tabindex="-1"></a>        <span class="cf">case</span> <span class="st">"*"</span> <span class="op">|</span> <span class="st">"mul"</span> <span class="op">|</span> <span class="st">"mult"</span> <span class="op">|</span> <span class="st">"times"</span>:</span>
+<span id="cb73-13"><a href="#cb73-13" aria-hidden="true" tabindex="-1"></a>            <span class="cf">return</span> mult(L)</span>
+<span id="cb73-14"><a href="#cb73-14" aria-hidden="true" tabindex="-1"></a>        <span class="cf">case</span> <span class="st">"/"</span> <span class="op">|</span> <span class="st">"÷"</span> <span class="op">|</span> <span class="st">"div"</span> <span class="op">|</span> <span class="st">"divide"</span>:</span>
+<span id="cb73-15"><a href="#cb73-15" aria-hidden="true" tabindex="-1"></a>            <span class="cf">return</span> div(L)</span>
+<span id="cb73-16"><a href="#cb73-16" aria-hidden="true" tabindex="-1"></a>        <span class="cf">case</span> <span class="st">"-"</span> <span class="op">|</span> <span class="st">"neg"</span> <span class="op">|</span> <span class="st">"negate"</span> <span class="op">|</span> <span class="st">"oppose"</span> <span class="op">|</span> <span class="st">"opposite"</span>:</span>
+<span id="cb73-17"><a href="#cb73-17" aria-hidden="true" tabindex="-1"></a>            <span class="cf">return</span> neg(L)</span>
+<span id="cb73-18"><a href="#cb73-18" aria-hidden="true" tabindex="-1"></a>        <span class="cf">case</span> <span class="st">"inv"</span> <span class="op">|</span> <span class="st">"invs"</span> <span class="op">|</span> <span class="st">"inverse"</span>:</span>
+<span id="cb73-19"><a href="#cb73-19" aria-hidden="true" tabindex="-1"></a>            <span class="cf">return</span> inv(L)</span>
+<span id="cb73-20"><a href="#cb73-20" aria-hidden="true" tabindex="-1"></a>        <span class="cf">case</span> <span class="st">"pop"</span> <span class="op">|</span> <span class="st">"del"</span>:</span>
+<span id="cb73-21"><a href="#cb73-21" aria-hidden="true" tabindex="-1"></a>            <span class="cf">return</span> pop(L)</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+
+
+</section>
+</section>
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  const darkModeDefault = false;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copié");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copié");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/osk42\.quarto\.pub\/osk42");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+          // default icon
+          link.classList.add("external");
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

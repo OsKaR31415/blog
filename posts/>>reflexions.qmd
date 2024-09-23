@@ -1,6 +1,6 @@
 ---
 title: "Réflexions personnelles"
-description: "Liste des notions de Mathématiques"
+description: "Liste de tous les articles contenant des réflexions personnelles."
 categories: [ réflexions, index ]
 image: "_images/logo-reflexion.png"
 toc: false
@@ -21,10 +21,9 @@ listing:
 ---
 
 
-Les posts de la catégorie `réflexion` sont des posts contenant des réflexions, des opinions ou des idées sur divers sujets. Ils consistent souvent en une opinion personnelle.
+Les billets de la catégorie `réflexion` contiennent des réflexions ou des idées sur divers sujets. Ils consistent souvent en une opinion personnelle.
 
-
-# Liste des posts
+# Liste des billets
 
 
 
