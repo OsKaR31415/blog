@@ -8,16 +8,25 @@ website:
   image: "_images/OsKaR.png"
   navbar:
     left:
+
+      - text: "A propos"
+        href: about.qmd
+
+
       - text: Sujets
         menu:
           - text: Mathématiques
             href: posts/maths/>>mathematiques.md
           - text: Informatique
             href: posts/informatique/>>informatique.qmd
+          - text: Philosophie
+            href: posts/philosophie/>>philosophie.qmd
           - text: Réflexions
             href: posts/>>reflexions.qmd
 
+    right:
       - icon: share
+        text: Ailleurs sur internet
         menu:
         - icon: github
           text: github
@@ -29,17 +38,33 @@ website:
           text: email
           href: mailto:oscar.plaisant@orange.fr
 
+
       - icon: person-vcard
         text: CV
         href: CV.qmd
-      - text: "A propos"
-        href: about.qmd
+
+      - icon: rss
+        href: index.xml
 
   twitter-card:
     image: "https://osk42.quarto.pub/_images/OsKaR.png"
   open-graph:
     image: "https://osk42.quarto.pub/_images/OsKaR.png"
 
+  comments:
+    giscus:
+      repo: OsKaR31415/blog
+      repo-id: "R_kgDOItLnjQ"
+      category: "Announcements"
+      category-id: "DIC_kwDOItLnjc4CYln7"
+      mapping: "url"
+      reactions-enabled: true
+      loading: "lazy"
+      input-position: "bottom"
+      theme:
+        light: "light"
+        dark: "dark"
+      language: "fr"
 
 format:
   html:

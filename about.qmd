@@ -13,6 +13,7 @@ about:
     - icon: envelope
       text: Email
       href: mailto:oscar.plaisant@orange.fr
+comments: false
 ---
 
 Je suis passionné par l'informatique, les&nbsp;mathématiques, la&nbsp;connaissance en général, les&nbsp;raccourcis&nbsp;clavier, les&nbsp;bandes&nbsp;dessinnées, la&nbsp;musique et les autres arts, l'origami, et le&nbsp;chocolat.

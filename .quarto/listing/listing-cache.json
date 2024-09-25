@@ -2,20 +2,6 @@
   "listingMap": {
     "posts/>>reflexions.qmd": [
       "/"
-    ],
-    "posts/informatique/algo_avancee/>>informatique.qmd": [
-      ".",
-      "informatique"
-    ],
-    "posts/informatique/>>informatique.qmd": [
-      ".",
-      "informatique"
-    ],
-    "posts/maths/>>mathematiques.md": [
-      "."
-    ],
-    "index.qmd": [
-      "posts"
     ]
   }
 }

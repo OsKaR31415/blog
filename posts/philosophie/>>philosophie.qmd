@@ -1,0 +1,26 @@
+---
+title: "Philosophie"
+description: "Liste des articles sur la philosphie"
+categories: [ philosophie, index ]
+# image: "_images/mathematiques.png"
+toc: false
+listing:
+  contents: .
+  sort: "date desc"
+  type: table
+  categories: true
+  sort-ui: true
+  filter-ui: true
+  fields:
+    - "title"
+    - "description"
+  field-display-names:
+    description: ""
+---
+
+
+
+# Liste de tous les articles sur la Philosophie
+
+
+

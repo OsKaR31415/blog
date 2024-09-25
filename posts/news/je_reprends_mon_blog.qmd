@@ -1,0 +1,21 @@
+---
+title: "Je reprends mon blog !"
+description: "Après 1 an, j'ai enfin retrouvé mon mot de passe."
+date: "2024-09-25"
+categories: [news]
+# image: 
+---
+
+Je reprends enfin ce blog, après une pause de plus d'un an pour cause de *perte de mot de passe*.
+
+J'avais en fait complètement oublié que je n'avais pas de mot de passe !
+Mon compte quarto (l'outil que j'utilise pour générer ce blog) est en fait lié à mon compte [github](https://github.com/OsKaR31415).
+
+En 13 mois, j'ai pris beaucoup d'intérêt pour la philosophie, la politique et les sujets qui s'en rapprochent (la sociologie, la philosophie politique, en moindre mesure l'économie...).
+J'ai découvert la philosophie de Spinoza, et je me suis lancé dans la lecture de *l'Éthique*, son œuvre majeure, mais assez complexe à lire.
+J'ai également découvert des philosophes actuels, comme Bernard Friot (qui défend notamment le salaire à vie, qui n'est pas le revenu de base) ou bien Frédéric Lordon (qui cherche à allier le matérialisme Marxiste et l'axiologie Spinoziste — c'est par là que j'en suis arrivé à Spinoza).
+
+J'ai donc plutôt en tête des articles de réflexion et d'opinion sur ces sujets, et moins des articles techniques comme ceux que j'ai déjà pu écrire sur l'informatique et les mathématiques.
+
+
+

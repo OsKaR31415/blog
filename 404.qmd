@@ -4,6 +4,7 @@ title-block-banner: true
 include-in-header:
   text: |
     <link href="css/404.css" rel="stylesheet">
+comments: false
 ---
 
 # La page que vous cherchez est introuvable sur ce site.

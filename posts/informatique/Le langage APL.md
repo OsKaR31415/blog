@@ -34,7 +34,7 @@ Les principaux avantages d'APL sont :
     - comme les primitives sont assez simples à apprendre, et pourtant très riches, on arrive rapidement à faire beaucoup de choses
     - il n'y a qu'un nombre assez petit de primitives, plus quelques variables et fonctions système
  - la notation comme outils pour la pensée
-    - Iverson à notamment créé un concept (et écrit un papier pour l'expliciter en APL) : "Notation as a tool of thought" (https://www.eecg.utoronto.ca/~jzhu/csc326/readings/iverson.pdf)
+    - Iverson à notamment créé un concept (et écrit un papier pour l'expliciter en APL) : ["Notation as a tool of thought"](https://www.eecg.utoronto.ca/~jzhu/csc326/readings/iverson.pdf)
     - Cela inclut notamment des "design patterns for a programming language" :
         - Ease of expressing constructs arising in problems.
             - primitives plutôt que boucles ou concepts bas niveau

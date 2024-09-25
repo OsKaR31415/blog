@@ -7,8 +7,12 @@ listing:
   categories: true
   sort-ui: false
   filter-ui: false
+  exclude:
+    categories: [ "index" ]
   feed:
-    title: "OSK42"
+    items: 10
+    language: "fr"
+#    title: "OSK42"
 
 page-layout: full
 title-block-banner: true

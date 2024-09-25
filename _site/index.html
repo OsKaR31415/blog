@@ -81,8 +81,7 @@ ul.task-list li input[type="checkbox"] {
 
     const options = {
       valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      page: 25,
-    pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
+      
       searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
     };
 
@@ -133,7 +132,7 @@ window.Quarto = {
 </script>
 
 <link rel="stylesheet" href="styles.css">
-<link rel="alternate" type="application/rss+xml" title="OSK42" href="index.xml" data-external="1"><meta property="og:title" content="0SK42 - 0SK42 - Tous les posts">
+<link rel="alternate" type="application/rss+xml" title="0SK42" href="index.xml" data-external="1"><meta property="og:title" content="0SK42 - 0SK42 - Tous les posts">
 <meta property="og:image" content="https://osk42.quarto.pub/_images/OsKaR.png">
 <meta property="og:site_name" content="0SK42">
 <meta name="twitter:title" content="0SK42 - 0SK42 - Tous les posts">
@@ -158,6 +157,10 @@ window.Quarto = {
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./about.html"> 
+<span class="menu-text">A propos</span></a>
+  </li>  
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-sujets" role="button" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">Sujets</span>
@@ -172,18 +175,24 @@ window.Quarto = {
  <span class="dropdown-text">Informatique</span></a>
   </li>  
         <li>
+    <a class="dropdown-item" href="./posts/philosophie/>>philosophie.html">
+ <span class="dropdown-text">Philosophie</span></a>
+  </li>  
+        <li>
     <a class="dropdown-item" href="./posts/>>reflexions.html">
  <span class="dropdown-text">Réflexions</span></a>
   </li>  
     </ul>
   </li>
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-bi-share" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-ailleurs-sur-internet" role="button" data-bs-toggle="dropdown" aria-expanded="false">
       <i class="bi bi-share" role="img">
 </i> 
- <span class="menu-text"></span>
+ <span class="menu-text">Ailleurs sur internet</span>
     </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-bi-share">    
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-ailleurs-sur-internet">    
         <li>
     <a class="dropdown-item" href="https://github.com/OsKaR31415"><i class="bi bi-github" role="img">
 </i> 
@@ -206,9 +215,10 @@ window.Quarto = {
 </i> 
 <span class="menu-text">CV</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
-<span class="menu-text">A propos</span></a>
+  <li class="nav-item compact">
+    <a class="nav-link" href="./index.xml"> <i class="bi bi-rss" role="img">
+</i> 
+<span class="menu-text"></span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -240,7 +250,7 @@ window.Quarto = {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(26)</span></div><div class="category" data-category="aphorisme">aphorisme <span class="quarto-category-count">(2)</span></div><div class="category" data-category="apprendre">apprendre <span class="quarto-category-count">(1)</span></div><div class="category" data-category="index">index <span class="quarto-category-count">(5)</span></div><div class="category" data-category="informatique">informatique <span class="quarto-category-count">(8)</span></div><div class="category" data-category="maths">maths <span class="quarto-category-count">(10)</span></div><div class="category" data-category="news">news <span class="quarto-category-count">(2)</span></div><div class="category" data-category="réflexion">réflexion <span class="quarto-category-count">(2)</span></div><div class="category" data-category="réflexions">réflexions <span class="quarto-category-count">(1)</span></div><div class="category" data-category="tips">tips <span class="quarto-category-count">(2)</span></div><div class="category" data-category="vim">vim <span class="quarto-category-count">(2)</span></div><div class="category" data-category="zététique">zététique <span class="quarto-category-count">(1)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(22)</span></div><div class="category" data-category="aphorisme">aphorisme <span class="quarto-category-count">(2)</span></div><div class="category" data-category="apprendre">apprendre <span class="quarto-category-count">(1)</span></div><div class="category" data-category="informatique">informatique <span class="quarto-category-count">(6)</span></div><div class="category" data-category="maths">maths <span class="quarto-category-count">(8)</span></div><div class="category" data-category="news">news <span class="quarto-category-count">(3)</span></div><div class="category" data-category="réflexion">réflexion <span class="quarto-category-count">(2)</span></div><div class="category" data-category="tips">tips <span class="quarto-category-count">(2)</span></div><div class="category" data-category="vim">vim <span class="quarto-category-count">(2)</span></div><div class="category" data-category="zététique">zététique <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
 <main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
 
@@ -254,127 +264,37 @@ window.Quarto = {
 
 <div class="quarto-listing quarto-listing-container-default" id="listing-listing">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="réflexions,index" data-listing-file-modified-sort="1711451494797" data-listing-reading-time-sort="1" data-listing-word-count-sort="27">
+<div class="quarto-post image-right" data-index="0" data-categories="news" data-listing-date-sort="1727215200000" data-listing-file-modified-sort="1727220543768" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="175">
 <div class="thumbnail">
-<p><a href="./posts/>>reflexions.html" class="no-external"></a></p><a href="./posts/>>reflexions.html" class="no-external">
-<p><img src="./posts/_images/logo-reflexion.png" class="thumbnail-image"></p>
-</a><p><a href="./posts/>>reflexions.html" class="no-external"></a></p>
+<p><a href="./posts/news/je_reprends_mon_blog.html" class="no-external"></a></p><a href="./posts/news/je_reprends_mon_blog.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="./posts/news/je_reprends_mon_blog.html" class="no-external"></a></p>
 </div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="./posts/>>reflexions.html" class="no-external">Réflexions personnelles</a>
+<a href="./posts/news/je_reprends_mon_blog.html" class="no-external">Je reprends mon blog !</a>
 </h3>
 <div class="listing-subtitle">
-<a href="./posts/>>reflexions.html" class="no-external"></a>
+<a href="./posts/news/je_reprends_mon_blog.html" class="no-external"></a>
 </div>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('réflexions'); return false;">
-réflexions
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('index'); return false;">
-index
+<div class="listing-category" onclick="window.quartoListingCategory('news'); return false;">
+news
 </div>
 </div>
 <div class="listing-description">
-<a href="./posts/>>reflexions.html" class="no-external">Liste des notions de Mathématiques</a>
+<a href="./posts/news/je_reprends_mon_blog.html" class="no-external">Après 1 an, j’ai enfin retrouvé mon mot de passe.</a>
 </div>
 </div>
 <div class="metadata">
-<p><a href="./posts/>>reflexions.html" class="no-external"></a></p><a href="./posts/>>reflexions.html" class="no-external">
+<a href="./posts/news/je_reprends_mon_blog.html" class="no-external">
+<div class="listing-date">
+Sep 25, 2024
+</div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-categories="informatique,index" data-listing-file-modified-sort="1711451494829" data-listing-reading-time-sort="1" data-listing-word-count-sort="137">
-<div class="thumbnail">
-<p><a href="./posts/informatique/algo_avancee/>>informatique.html" class="no-external"></a></p><a href="./posts/informatique/algo_avancee/>>informatique.html" class="no-external">
-<p><img src="./posts/informatique/algo_avancee/_images/computer_science.png" class="thumbnail-image"></p>
-</a><p><a href="./posts/informatique/algo_avancee/>>informatique.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/informatique/algo_avancee/>>informatique.html" class="no-external">Informatique</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/informatique/algo_avancee/>>informatique.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('informatique'); return false;">
-informatique
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('index'); return false;">
-index
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/informatique/algo_avancee/>>informatique.html" class="no-external">Liste des notions d’Informatique</a>
-</div>
-</div>
-<div class="metadata">
-<p><a href="./posts/informatique/algo_avancee/>>informatique.html" class="no-external"></a></p><a href="./posts/informatique/algo_avancee/>>informatique.html" class="no-external">
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-categories="informatique,index" data-listing-file-modified-sort="1711451494829" data-listing-reading-time-sort="1" data-listing-word-count-sort="137">
-<div class="thumbnail">
-<p><a href="./posts/informatique/>>informatique.html" class="no-external"></a></p><a href="./posts/informatique/>>informatique.html" class="no-external">
-<p><img src="./posts/informatique/_images/computer_science.png" class="thumbnail-image"></p>
-</a><p><a href="./posts/informatique/>>informatique.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/informatique/>>informatique.html" class="no-external">Informatique</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/informatique/>>informatique.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('informatique'); return false;">
-informatique
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('index'); return false;">
-index
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/informatique/>>informatique.html" class="no-external">Liste des notions d’Informatique</a>
-</div>
-</div>
-<div class="metadata">
-<p><a href="./posts/informatique/>>informatique.html" class="no-external"></a></p><a href="./posts/informatique/>>informatique.html" class="no-external">
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="3" data-categories="maths,index" data-listing-file-modified-sort="1711451494835" data-listing-reading-time-sort="1" data-listing-word-count-sort="49">
-<div class="thumbnail">
-<p><a href="./posts/maths/>>mathematiques.html" class="no-external"></a></p><a href="./posts/maths/>>mathematiques.html" class="no-external">
-<p><img src="./posts/maths/_images/mathematiques.png" class="thumbnail-image"></p>
-</a><p><a href="./posts/maths/>>mathematiques.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/maths/>>mathematiques.html" class="no-external">Mathématiques</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/maths/>>mathematiques.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('maths'); return false;">
-maths
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('index'); return false;">
-index
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/maths/>>mathematiques.html" class="no-external">Liste des notions de Mathématiques</a>
-</div>
-</div>
-<div class="metadata">
-<p><a href="./posts/maths/>>mathematiques.html" class="no-external"></a></p><a href="./posts/maths/>>mathematiques.html" class="no-external">
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="4" data-categories="aphorisme,réflexion" data-listing-date-sort="1691618400000" data-listing-file-modified-sort="1711451494829" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="382">
+<div class="quarto-post image-right" data-index="1" data-categories="aphorisme,réflexion" data-listing-date-sort="1691618400000" data-listing-file-modified-sort="1727280281360" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="382">
 <div class="thumbnail">
 <p><a href="./posts/autres/si tout le monde saute dun pont.html" class="no-external"></a></p><a href="./posts/autres/si tout le monde saute dun pont.html" class="no-external">
 <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
@@ -407,7 +327,7 @@ Aug 10, 2023
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="5" data-categories="apprendre" data-listing-date-sort="1691100000000" data-listing-file-modified-sort="1711451494829" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="9" data-listing-word-count-sort="1743">
+<div class="quarto-post image-right" data-index="2" data-categories="apprendre" data-listing-date-sort="1691100000000" data-listing-file-modified-sort="1711451494829" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="9" data-listing-word-count-sort="1743">
 <div class="thumbnail">
 <p><a href="./posts/autres/apprentissage.html" class="no-external"></a></p><a href="./posts/autres/apprentissage.html" class="no-external">
 <p><img src="./posts/autres/_images/apprentissage.png" class="thumbnail-image"></p>
@@ -440,18 +360,18 @@ Oscar Plaisant, bucdany
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="6" data-categories="maths" data-listing-date-sort="1690063200000" data-listing-file-modified-sort="1711451494836" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="13" data-listing-word-count-sort="2537">
+<div class="quarto-post image-right" data-index="3" data-categories="maths" data-listing-date-sort="1690063200000" data-listing-file-modified-sort="1727286445789" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="13" data-listing-word-count-sort="2537">
 <div class="thumbnail">
-<p><a href="./posts/maths/Contre, l'usage, abusif, de la virgule, dans la notation, mathématique.html" class="no-external"></a></p><a href="./posts/maths/Contre, l'usage, abusif, de la virgule, dans la notation, mathématique.html" class="no-external">
+<p><a href="./posts/maths/contre l usage abusif de la virgule dans la notation mathematique.html" class="no-external"></a></p><a href="./posts/maths/contre l usage abusif de la virgule dans la notation mathematique.html" class="no-external">
 <p><img src="./posts/maths/_images/virgule.png" class="thumbnail-image"></p>
-</a><p><a href="./posts/maths/Contre, l'usage, abusif, de la virgule, dans la notation, mathématique.html" class="no-external"></a></p>
+</a><p><a href="./posts/maths/contre l usage abusif de la virgule dans la notation mathematique.html" class="no-external"></a></p>
 </div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="./posts/maths/Contre, l'usage, abusif, de la virgule, dans la notation, mathématique.html" class="no-external">Contre, l’usage, abusif, de la virgule, dans la notation, mathématique</a>
+<a href="./posts/maths/contre l usage abusif de la virgule dans la notation mathematique.html" class="no-external">Contre, l’usage, abusif, de la virgule, dans la notation, mathématique</a>
 </h3>
 <div class="listing-subtitle">
-<a href="./posts/maths/Contre, l'usage, abusif, de la virgule, dans la notation, mathématique.html" class="no-external"></a>
+<a href="./posts/maths/contre l usage abusif de la virgule dans la notation mathematique.html" class="no-external"></a>
 </div>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('maths'); return false;">
@@ -459,18 +379,18 @@ maths
 </div>
 </div>
 <div class="listing-description">
-<a href="./posts/maths/Contre, l'usage, abusif, de la virgule, dans la notation, mathématique.html" class="no-external">Pourquoi la virgule devrait être moins utilisée dans la notation mathématique.</a>
+<a href="./posts/maths/contre l usage abusif de la virgule dans la notation mathematique.html" class="no-external">Pourquoi la virgule devrait être moins utilisée dans la notation mathématique.</a>
 </div>
 </div>
 <div class="metadata">
-<a href="./posts/maths/Contre, l'usage, abusif, de la virgule, dans la notation, mathématique.html" class="no-external">
+<a href="./posts/maths/contre l usage abusif de la virgule dans la notation mathematique.html" class="no-external">
 <div class="listing-date">
 Jul 23, 2023
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="7" data-categories="informatique" data-listing-date-sort="1679526000000" data-listing-file-modified-sort="1711451494829" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1233">
+<div class="quarto-post image-right" data-index="4" data-categories="informatique" data-listing-date-sort="1679526000000" data-listing-file-modified-sort="1727280281372" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1232">
 <div class="thumbnail">
 <p><a href="./posts/informatique/Le langage APL.html" class="no-external"></a></p><a href="./posts/informatique/Le langage APL.html" class="no-external">
 <p><img src="./posts/informatique/_images/APL_logo.svg.png" class="thumbnail-image"></p>
@@ -500,7 +420,7 @@ Mar 23, 2023
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="8" data-categories="informatique" data-listing-date-sort="1678402800000" data-listing-file-modified-sort="1711451494835" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="665">
+<div class="quarto-post image-right" data-index="5" data-categories="informatique" data-listing-date-sort="1678402800000" data-listing-file-modified-sort="1711451494835" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="665">
 <div class="thumbnail">
 <p><a href="./posts/informatique/python convertir une liste en table markdown.html" class="no-external"></a></p><a href="./posts/informatique/python convertir une liste en table markdown.html" class="no-external">
 <p><img src="./posts/informatique/_images/logo_markdown.png" class="thumbnail-image"></p>
@@ -530,7 +450,7 @@ Mar 10, 2023
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="9" data-categories="informatique" data-listing-date-sort="1678316400000" data-listing-file-modified-sort="1711451494835" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="242">
+<div class="quarto-post image-right" data-index="6" data-categories="informatique" data-listing-date-sort="1678316400000" data-listing-file-modified-sort="1711451494835" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="242">
 <div class="thumbnail">
 <p><a href="./posts/informatique/algo_avancee/algo avancee activite 4.html" class="no-external"></a></p><a href="./posts/informatique/algo_avancee/algo avancee activite 4.html" class="no-external">
 <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
@@ -560,7 +480,7 @@ Mar 9, 2023
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="10" data-categories="informatique" data-listing-date-sort="1677711600000" data-listing-file-modified-sort="1711451494835" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="9" data-listing-word-count-sort="1649">
+<div class="quarto-post image-right" data-index="7" data-categories="informatique" data-listing-date-sort="1677711600000" data-listing-file-modified-sort="1711451494835" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="9" data-listing-word-count-sort="1649">
 <div class="thumbnail">
 <p><a href="./posts/informatique/algo_avancee/algo avancee correction controle 1.html" class="no-external"></a></p><a href="./posts/informatique/algo_avancee/algo avancee correction controle 1.html" class="no-external">
 <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
@@ -590,7 +510,7 @@ Mar 2, 2023
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="11" data-categories="informatique" data-listing-date-sort="1676847600000" data-listing-file-modified-sort="1711451494835" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="317">
+<div class="quarto-post image-right" data-index="8" data-categories="informatique" data-listing-date-sort="1676847600000" data-listing-file-modified-sort="1727280281379" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="317">
 <div class="thumbnail">
 <p><a href="./posts/informatique/terminal btop.html" class="no-external"></a></p><a href="./posts/informatique/terminal btop.html" class="no-external">
 <p><img src="./posts/informatique/_images/btop.png" class="thumbnail-image"></p>
@@ -620,7 +540,7 @@ Feb 20, 2023
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="12" data-categories="maths" data-listing-date-sort="1674169200000" data-listing-file-modified-sort="1711451494893" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="206">
+<div class="quarto-post image-right" data-index="9" data-categories="maths" data-listing-date-sort="1674169200000" data-listing-file-modified-sort="1727280281369" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="206">
 <div class="thumbnail">
 <p><a href="./posts/maths/probabilites TD1.html" class="no-external"></a></p><a href="./posts/maths/probabilites TD1.html" class="no-external">
 <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
@@ -650,7 +570,7 @@ Jan 20, 2023
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="13" data-categories="maths" data-listing-date-sort="1674082800000" data-listing-file-modified-sort="1711451494893" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="342">
+<div class="quarto-post image-right" data-index="10" data-categories="maths" data-listing-date-sort="1674082800000" data-listing-file-modified-sort="1727280281370" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="342">
 <div class="thumbnail">
 <p><a href="./posts/maths/transposition.html" class="no-external"></a></p><a href="./posts/maths/transposition.html" class="no-external">
 <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
@@ -680,7 +600,7 @@ Jan 19, 2023
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="14" data-categories="informatique" data-listing-date-sort="1673737200000" data-listing-file-modified-sort="1711451494834" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="25" data-listing-word-count-sort="4828">
+<div class="quarto-post image-right" data-index="11" data-categories="informatique" data-listing-date-sort="1673737200000" data-listing-file-modified-sort="1711451494834" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="25" data-listing-word-count-sort="4828">
 <div class="thumbnail">
 <p><a href="./posts/informatique/algo_avancee/algo avancee activite 1.html" class="no-external"></a></p><a href="./posts/informatique/algo_avancee/algo avancee activite 1.html" class="no-external">
 <p class="card-img-top"><img src="posts/informatique/algo_avancee/_images/demo_inverser_liste.gif" alt="comment se passe l’inversion de la liste"  class="thumbnail-image card-img"/></p>
@@ -710,7 +630,7 @@ Jan 15, 2023
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="15" data-categories="aphorisme,zététique,réflexion" data-listing-date-sort="1673132400000" data-listing-file-modified-sort="1711451494797" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="202">
+<div class="quarto-post image-right" data-index="12" data-categories="aphorisme,zététique,réflexion" data-listing-date-sort="1673132400000" data-listing-file-modified-sort="1727280281358" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="202">
 <div class="thumbnail">
 <p><a href="./posts/autres/Le dimanche, il pleut généralement à l'extérieur.html" class="no-external"></a></p><a href="./posts/autres/Le dimanche, il pleut généralement à l'extérieur.html" class="no-external">
 <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
@@ -746,7 +666,7 @@ Jan 8, 2023
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="16" data-categories="maths" data-listing-date-sort="1672959600000" data-listing-file-modified-sort="1711451494892" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="222">
+<div class="quarto-post image-right" data-index="13" data-categories="maths" data-listing-date-sort="1672959600000" data-listing-file-modified-sort="1727280281363" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="222">
 <div class="thumbnail">
 <p><a href="./posts/maths/arrangements avec répétitions.html" class="no-external"></a></p><a href="./posts/maths/arrangements avec répétitions.html" class="no-external">
 <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
@@ -776,7 +696,7 @@ Jan 6, 2023
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="17" data-categories="maths" data-listing-date-sort="1672959600000" data-listing-file-modified-sort="1711451494893" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="289">
+<div class="quarto-post image-right" data-index="14" data-categories="maths" data-listing-date-sort="1672959600000" data-listing-file-modified-sort="1727280281366" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="289">
 <div class="thumbnail">
 <p><a href="./posts/maths/combinaisons_avec_repetitions.html" class="no-external"></a></p><a href="./posts/maths/combinaisons_avec_repetitions.html" class="no-external">
 <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
@@ -806,7 +726,7 @@ Jan 6, 2023
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="18" data-categories="vim,tips" data-listing-date-sort="1672873200000" data-listing-file-modified-sort="1711451494835" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="395">
+<div class="quarto-post image-right" data-index="15" data-categories="vim,tips" data-listing-date-sort="1672873200000" data-listing-file-modified-sort="1711451494835" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="395">
 <div class="thumbnail">
 <p><a href="./posts/informatique/vim tips autocorriger les erreurs.html" class="no-external"></a></p><a href="./posts/informatique/vim tips autocorriger les erreurs.html" class="no-external">
 <p><img src="./posts/informatique/_images/vim.excalidraw.svg" class="thumbnail-image"></p>
@@ -839,7 +759,7 @@ Jan 5, 2023
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="19" data-categories="maths" data-listing-date-sort="1672873200000" data-listing-file-modified-sort="1711451494892" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="279">
+<div class="quarto-post image-right" data-index="16" data-categories="maths" data-listing-date-sort="1672873200000" data-listing-file-modified-sort="1727280281364" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="279">
 <div class="thumbnail">
 <p><a href="./posts/maths/arrangements.html" class="no-external"></a></p><a href="./posts/maths/arrangements.html" class="no-external">
 <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
@@ -869,7 +789,7 @@ Jan 5, 2023
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="20" data-categories="maths" data-listing-date-sort="1672873200000" data-listing-file-modified-sort="1711451494892" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="306">
+<div class="quarto-post image-right" data-index="17" data-categories="maths" data-listing-date-sort="1672873200000" data-listing-file-modified-sort="1727280281365" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="306">
 <div class="thumbnail">
 <p><a href="./posts/maths/combinaisons.html" class="no-external"></a></p><a href="./posts/maths/combinaisons.html" class="no-external">
 <p><img src="./posts/maths/_images/combinaison_spatiale.png" class="thumbnail-image"></p>
@@ -899,7 +819,7 @@ Jan 5, 2023
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="21" data-categories="maths" data-listing-date-sort="1672786800000" data-listing-file-modified-sort="1711451494893" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="339">
+<div class="quarto-post image-right" data-index="18" data-categories="maths" data-listing-date-sort="1672786800000" data-listing-file-modified-sort="1727280281370" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="339">
 <div class="thumbnail">
 <p><a href="./posts/maths/sacs.html" class="no-external"></a></p><a href="./posts/maths/sacs.html" class="no-external">
 <p><img src="./posts/maths/_images/sac_ecole.png" class="thumbnail-image"></p>
@@ -929,7 +849,7 @@ Jan 4, 2023
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="22" data-categories="vim,tips" data-listing-date-sort="1672700400000" data-listing-file-modified-sort="1711451494835" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="397">
+<div class="quarto-post image-right" data-index="19" data-categories="vim,tips" data-listing-date-sort="1672700400000" data-listing-file-modified-sort="1711451494835" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="397">
 <div class="thumbnail">
 <p><a href="./posts/informatique/vim tips leader.html" class="no-external"></a></p><a href="./posts/informatique/vim tips leader.html" class="no-external">
 <p><img src="./posts/informatique/_images/vim.excalidraw.svg" class="thumbnail-image"></p>
@@ -962,51 +882,18 @@ Jan 3, 2023
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="23" data-categories="maths,index" data-listing-date-sort="1672700400000" data-listing-file-modified-sort="1711451494893" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="24" data-listing-word-count-sort="4731">
+<div class="quarto-post image-right" data-index="20" data-categories="news" data-listing-date-sort="1672614000000" data-listing-file-modified-sort="1711451494893" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="87">
 <div class="thumbnail">
-<p><a href="./posts/maths/formulaire d'analyse.html" class="no-external"></a></p><a href="./posts/maths/formulaire d'analyse.html" class="no-external">
-<p><img src="./posts/maths/_images/tableau_a_craie.png" class="thumbnail-image"></p>
-</a><p><a href="./posts/maths/formulaire d'analyse.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/maths/formulaire d'analyse.html" class="no-external">formulaire d’analyse</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/maths/formulaire d'analyse.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('maths'); return false;">
-maths
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('index'); return false;">
-index
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/maths/formulaire d'analyse.html" class="no-external">Liste de formules utiles à connaître.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/maths/formulaire d'analyse.html" class="no-external">
-<div class="listing-date">
-Jan 3, 2023
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="24" data-categories="news" data-listing-date-sort="1672614000000" data-listing-file-modified-sort="1711451494893" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="87">
-<div class="thumbnail">
-<p><a href="./posts/welcome/Pourquoi ce blog.html" class="no-external"></a></p><a href="./posts/welcome/Pourquoi ce blog.html" class="no-external">
+<p><a href="./posts/news/Pourquoi ce blog.html" class="no-external"></a></p><a href="./posts/news/Pourquoi ce blog.html" class="no-external">
 <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="./posts/welcome/Pourquoi ce blog.html" class="no-external"></a></p>
+</a><p><a href="./posts/news/Pourquoi ce blog.html" class="no-external"></a></p>
 </div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="./posts/welcome/Pourquoi ce blog.html" class="no-external">Pourquoi ce blog ?</a>
+<a href="./posts/news/Pourquoi ce blog.html" class="no-external">Pourquoi ce blog ?</a>
 </h3>
 <div class="listing-subtitle">
-<a href="./posts/welcome/Pourquoi ce blog.html" class="no-external"></a>
+<a href="./posts/news/Pourquoi ce blog.html" class="no-external"></a>
 </div>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('news'); return false;">
@@ -1014,29 +901,29 @@ news
 </div>
 </div>
 <div class="listing-description">
-<a href="./posts/welcome/Pourquoi ce blog.html" class="no-external">Ce blog me permettra de partager des explications sur certains sujets, et des idées personnelles.</a>
+<a href="./posts/news/Pourquoi ce blog.html" class="no-external">Ce blog me permettra de partager des explications sur certains sujets, et des idées personnelles.</a>
 </div>
 </div>
 <div class="metadata">
-<a href="./posts/welcome/Pourquoi ce blog.html" class="no-external">
+<a href="./posts/news/Pourquoi ce blog.html" class="no-external">
 <div class="listing-date">
 Jan 2, 2023
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="25" data-categories="news" data-listing-date-sort="1672527600000" data-listing-file-modified-sort="1711451494896" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="59">
+<div class="quarto-post image-right" data-index="21" data-categories="news" data-listing-date-sort="1672527600000" data-listing-file-modified-sort="1711451494896" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="59">
 <div class="thumbnail">
-<p><a href="./posts/welcome/bienvenue sur mon blog.html" class="no-external"></a></p><a href="./posts/welcome/bienvenue sur mon blog.html" class="no-external">
-<p><img data-src="./posts/welcome/_images/Bienvenue.excalidraw.svg" class="thumbnail-image"></p>
-</a><p><a href="./posts/welcome/bienvenue sur mon blog.html" class="no-external"></a></p>
+<p><a href="./posts/news/bienvenue sur mon blog.html" class="no-external"></a></p><a href="./posts/news/bienvenue sur mon blog.html" class="no-external">
+<p><img src="./posts/news/_images/Bienvenue.excalidraw.svg" class="thumbnail-image"></p>
+</a><p><a href="./posts/news/bienvenue sur mon blog.html" class="no-external"></a></p>
 </div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="./posts/welcome/bienvenue sur mon blog.html" class="no-external">Bienvenue sur mon blog</a>
+<a href="./posts/news/bienvenue sur mon blog.html" class="no-external">Bienvenue sur mon blog</a>
 </h3>
 <div class="listing-subtitle">
-<a href="./posts/welcome/bienvenue sur mon blog.html" class="no-external"></a>
+<a href="./posts/news/bienvenue sur mon blog.html" class="no-external"></a>
 </div>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('news'); return false;">
@@ -1044,11 +931,11 @@ news
 </div>
 </div>
 <div class="listing-description">
-<a href="./posts/welcome/bienvenue sur mon blog.html" class="no-external">J’ai enfin pris le temps de créer mon blog !</a>
+<a href="./posts/news/bienvenue sur mon blog.html" class="no-external">J’ai enfin pris le temps de créer mon blog !</a>
 </div>
 </div>
 <div class="metadata">
-<a href="./posts/welcome/bienvenue sur mon blog.html" class="no-external">
+<a href="./posts/news/bienvenue sur mon blog.html" class="no-external">
 <div class="listing-date">
 Jan 1, 2023
 </div>
@@ -1059,9 +946,6 @@ Jan 1, 2023
 <div class="listing-no-matching d-none">
 No matching items
 </div>
-<nav id="listing-pagination" class="listing-pagination" aria-label="Page Navigation">
-  <ul class="pagination"></ul>
-</nav>
 </div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
@@ -1618,6 +1502,10 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
+<script src="https://giscus.app/client.js" data-repo="OsKaR31415/blog" data-repo-id="R_kgDOItLnjQ" data-category="Announcements" data-category-id="DIC_kwDOItLnjc4CYln7" data-mapping="url" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="light" data-lang="fr" crossorigin="anonymous" data-loading="lazy" async="">
+</script>
+<input type="hidden" id="giscus-base-theme" value="light">
+<input type="hidden" id="giscus-alt-theme" value="dark">
 </div> <!-- /content -->
 
 

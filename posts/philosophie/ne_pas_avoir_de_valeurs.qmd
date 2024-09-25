@@ -1,0 +1,113 @@
+---
+title: "Ne pas avoir de valeurs"
+description: "Une argumentations à l'encontre des valeurs (morales)."
+date: 2024-09-27
+categories: [ philosophie ]
+# image: "_images/virgule.png"
+toc: true
+number-sections: true
+draft: true
+---
+
+Dans cet article, je vais essayer d'expliquer pourquoi je pense qu'en politique, il ne faut pas avoir de valeurs.
+Bien sûr, je ne veux pas dire qu'il faut être une mauvaise personne, sans scrupules ni considération pour autrui ! Cela, c'est être une personne sans valeur : je parle bien de ne pas avoir de valeurs, c'est-à-dire de rejeter toutes les valeurs comme la justice, l'égalité, la famille, le travail ou le libre marché...
+
+# Qu'est-ce qu'une valeur ?
+
+Quand je parle de "valeur", je veux dire "valeur morale", ou bien "valeur universelle". Je considère que les valeurs ont trois caractéristiques importantes : elles sont moralement obligatoires, elles sont dogmatiques, et elle se forment et s'organisent dans un ordre moral.
+J'explique ensuite ce que je veux dire par là, mais il est important de comprendre que c'est en ce sens que j'utiliserai le mot "valeur" dans le reste de l'article, et non dans les autres sens qu'il peut avoir dans le langage courant.
+
+## Les valeurs sont moralement obligatoires
+
+Les valeurs impliquent une obligation morale, c'est-à-dire qu'admettre une valeur, c'est admettre qu'on a l'obligation morale de la respecter. Par exemple, si on considère que l'égalité est une valeur importante, on a l'obligation de respecter l'égalité : faire autrement serait immoral, serait mal.
+Cela est plus évident quand on considère que les valeurs sont, presque par définition, bonnes : il y à une certaine obligation morale à faire ce qui est bon, et surtout à ne pas faire le contraire (ce qui est mal). Cela transparaît notamment dans des valeurs comme l'amour, l'honnêteté, le respect ou la tolérance.
+
+## Les valeurs sont dogmatiques {#sec-valeurs-dogmatiques}
+
+Les valeurs sont dogmatiques, c'est-à-dire qu'elles doivent être admises comme bonnes, sans raisonnement, sans justification. En effet, pourquoi l'égalité serait-elle meilleure que l'inégalité ? Pourquoi la justice serait-elle meilleure que l'injustice ? Les valeurs sont ce qui sert à légitimer, ce qui permet de justifier que quelque chose est bon ou mauvais.
+On a bien sûr en tête des arguments pour défendre ces valeurs; par exemple la justice est nécessaire pour vivre en société et l'inégalité génère du malheur. Mais si on peut justifier ces valeurs à l'aide d'autre chose, alors ce ne sont plus des valeurs, ce sont des principes qui découlent de notre idéologie.
+Par exemple, on ne dirait pas que le droit d'avoir un avocat est une valeur, parce que l'on peut déduire ce droit de la "valeur justice".
+
+En fait, plus simplement : si une valeur peut être justifiée par autre chose, alors elle n'est plus qu'une étape du raisonnement : ce n'est plus un valeur *en soi* et *par soi*, mais simplement un principe que l'on a conclu être bon *par autre chose*. Si on pense qu'il faut argumenter pour une valeur, c'est bien qu'on accepte de la remettre en question, de lui faire perdre son statut de postulat, d'axiome, de chose bonne *par elle-même*. Si vous vous sentez obligé d'argumenter pour l'égalité, c'est que vous acceptez l'idée que l'égalité pourrait bien ne pas être bonne, et alors bien loin d'être une valeur, l'égalité perd tout statut particulier et n'est plus qu'un principe, une conclusion de votre raisonnement.
+
+En cela, je m'éloigne d'autres utilisations du terme "valeur", comme lorsque l'on dit "il a transmis de bonnes valeurs à son enfant" (pour dire une bonne éducation), ou bien "elle a des valeurs" (pour dire que c'est une bonne personne). Je réserve réellement le terme "valeur" à ce qui est bon en soi. 
+
+## L'ordre moral {#sec-ordre-moral}
+
+Une dernière caractéristique importante des valeurs est qu'elles sont modelées dans un ordre moral. Par là, je veux dire que les valeurs ne sont pas adoptées par hasard ou bien par décision philosophique : la plupart du temps, elles sont transmises d'une personne à une autre.
+
+Ce que j'appelle "ordre moral", c'est l'ensemble des valeurs communément acceptées dans une société. Il peut tout à fait changer avec le temps, simplement parce qu'une société peut changer de considérations sur ce qui est bon ou mauvais. Par exemple, il y à quelques siècles, la noblesse dirigeait la France, et tout le champ de valeurs qui va avec (la noblesse en tant que valeur, le droit divin, l'hérédité du pouvoir, le christianisme...) faisaient partie de l'ordre moral; mais aujourd'hui, les royalistes sont minoritaires, et ils vont contre l'ordre moral établi, en affirmant que leur ordre moral plus ancien est meilleur. Il y à moins de 50 ans (avant 1981), l'homosexualité était un crime, et c'est en partie un changement des valeurs, un changement de l'ordre moral, qui à permis cela. On pourrait dire la même chose de la peine de mort, mais je reviendrai sur ce sujet plus tard.
+
+Je veux vraiment insister sur ce point : les valeurs sont construites avec et par la morale d'une société, elles en sont l'expression. En cela, je ne considère par l'insurrection, la résistance, ou l'opposition à l'ordre moral, comme des valeurs (précisément parce qu'elles sont construites en opposition à des valeurs morales).
+
+# Refuser la hiérarchie des valeurs #sec-nihilisme
+
+Les valeurs se veulent évidemment comme objectives, ou au moins substantielles. Adopter une valeur, c'est adopter l'idée que cette valeur est bonne, que l'on devrait conduire sa vie (ou celle de la société) en suivant cette valeur, parce que c'est mieux du point de vue de la morale, du point de vue du bien et du mal.
+
+Dans son œuvre principale — l'Éthique — Spinoza parle, entre autres, du bien et du mal. Et c'est par un retournement de ces concept de bien et de mal qu'il finit par détruire toute hiérarchie, toute supériorité des valeurs : *"Nous ne poursuivons pas, nous ne désirons pas un objet parce qu'il est un bien, mais au contraire nous ne disons qu'un objet est un bien que parce que nous le poursuivons et le désirons."* (Éthique III, prop. 9, scolie).
+Cette position, qu'on appelle relativisme moral (l'idée que le bien et le mal ne sont pas des caractérisiques d'une choses, mais qu'ils dépendent de l'individu en question) est très problématique pour les valeurs, car on voit bien que les valeurs ne sont plus alors bonne que *pour quelqu'un*. Elles perdent complètement leur universalité, et on ne peut plus dire "l'égalité est bonne" ou "il faut de la justice", mais seulement "l'égalité est bonne *pour cet individu*" ou "il faut de l'égalité *pour cet individu*". On comprends donc que cette position philosophique nous empêche de construire une morale : on ne peut plus parler du bien et du mal au sens de la morale, mais seulement au sens relativiste (le bien devient presque "ce qui est utile", et on voit bien qu'une chose n'est pas utile en elle-même, mais seulement utile pour faire quelque chose, utile pour quelqu'un). 
+
+On a donc aucun moyen de distinguer les valeurs entre elles : puisqu'une chose n'est bonne que parce que nous la désirons, alors nous ne pouvons pas la désirer *parce qu'elle est bonne* ! 
+Finalement, on se trouve obligé de rejeter toute hiérarchie des valeurs (la liberté n'est pas meilleure que l'absence de liberté), tout idée qu'une chose soit meilleure qu'une autre, bref, on ne peut plus donner de valeur à rien. On pourrait résumer cela par l'aphorisme *"il n'y a pas de valeur des valeurs"*. Cette position de refus de la hiérarchie des valeurs, de refus des notions de bien et de mal, s'appelle le nihilisme.
+Si on accepte le nihilisme, on ne peut plus baser ses décisions sur la recherche du bien et l'évitement du mal : il faut trouver d'autres ressorts par exemple la raison (comme le fait Spinoza), le dépassement vers le surhomme (comme le fait Nietzsche) ou la recherche de son intérêt personnel.
+
+# Les valeurs comme base pour la pensée
+
+Comme je l'ai dit (voir @sec-ordre-moral) les valeurs s'inscrivent dans un ordre moral et sont dogmatiques (voir @sec-valeurs-dogmatiques). Par cela, je veux dire que les valeurs se placent comme le fondement d'une pensée politique : on commence par accepter les valeurs (par exemple, l'égalité) et on en déduit des décisions à prendre (par exemple, mettre en place des taxes pour redistribuer les richesses). Les valeurs sont donc nos postulats, nos axiomes politiques (je trouve le terme axiome particulièrement adapté, car il rappelle l'*axiologie*, qui est l'étude des valeurs morales — et surtout car la racine grecque ἀξία, *axia*, signifie "valeur"). 
+
+Je vois deux problèmes à cette position des valeurs comme axiomes :
+
+ - si les valeurs sont des axiomes, c'est qu'on accepte qu'elles ne sont pas justifiées
+ - les valeurs peuvent être contradictoires entre elles
+
+## Les valeurs ne sont pas justifiées
+
+Comme je l'ai dit, les valeurs sont axiomatiques : elles servent de fondement à une pensée politique.
+Si elle sont axiomatiques, c'est parce que l'on choisit d'admettre qu'elles n'ont pas besoin de justification, qu'elles sont bonnes *en elles-mêmes* (voir @sec-valeurs-dogmatiques).
+Mais alors, penser par valeurs, c'est admettre que l'on s'arrête de penser à un moment donné. C'est accepter des principes sans arguments, sans démonstration, sans rationalité.
+J'aime résumer cela par l'aphorisme "*Les valeurs sont la mort de la pensée*". Il est un peu excessif, mais je trouve qu'il exprime bien l'idée que, dès qu'on accepte une valeur, on admet quelque chose sans preuve, et donc on fait s'arrêter sa pensée à un endroit où elle devrait continuer.
+
+Bien sûr, cela rejoint tout les arguments que j'ai donné contre l'idée que les valeurs sont bonnes (voir @sec-nihilisme), puisque la conclusion est la même : on ne devrait rien baser sur les valeurs. Mais je trouve cette démonstration plus simple que les arguments pour le nihilisme (et plus acceptable en cela qu'elle ne nécessite pas d'abandonner le concept même de bien).
+
+## Les valeurs peuvent être contradictoires
+
+Les valeurs peuvent être contradictoires entre elles. Cela est évident, par exemple, entre des valeurs comme liberté et égalité, ou liberté et justice. Plus on s'assure d'avoir de l'égalité et de la justice, moins on laisse de libertés. Cela est vrai pour beaucoup d'autres valeurs, et c'est d'ailleurs bien normal : la non-liberté est autant une valeur que la liberté. Dans notre système politique actuel, on accepte très bien des restrictions de liberté comme l'interdiction de tuer ou de voler, parce que l'on considère que d'autres valeurs comme la vie humaine ou le respect de la propriété privée sont plus importantes. Mais ces contradictions, même si elles sembles aisées à résoudre en premier lieu (il semble évident que la vie humaine est plus important que la liberté de tuer), sont en fait source de beaucoup de problèmes idéologiques.
+
+Par exemple, comment faire la balance entre sécurité et liberté ? Le débat public regorge de cas où les uns prônent l'abandon de quelques libertés au nom de la sécurité, tandis que les autres défendent l'importance des libertés fondamentales contre cette "*valeur sécurité*".
+Un exemple encore plus flagrant se trouve dans certaines critiques du communisme qui mettent en avant l'idée que ce système serait "trop égalitaire", et détruirait toute liberté. On voit bien ici que liberté et égalité sont mises en opposition.
+On voit là à quelles absurdités nous mènent les valeurs : on en vient à un débat complètement stérile, puisqu'il se résume à défendre soit que la valeur A est plus importante que la valeur B, soit le contraire; or si les valeurs sont des axiomes, alors rien ne peut faire pencher d'un côté ou de l'autre.
+
+Cette possibilité pour des valeurs d'être contradictoires montre que l'on doit faire des choix très subjectifs pour former une hiérarchie des valeurs.
+Et je crois que cela suffit déjà à montrer que les valeurs ne devraient pas être utilisées pour fonder une idéologie politique.
+
+
+# Valeurs et politique
+
+Je m'en voudrais de ne pas aborder plus en profondeur le lien entre les valeurs qu'on adopte et l'idéologie politique que l'on défend.
+Dans une première analyse, on pourrait considérer que ce sont les différences de valeurs qui font les différences d'idéologies. Une analyse simpliste pourrait par exemple dire que la droite politique défend plutôt les libertés individuelles, quand la gauche défend plutôt l'égalité. Cette définition est bien sûr complètement fausse, parce que les concepts de gauche et de droite politique sont bien plus complexes. Mais surtout, l'idée même que la gauche et la droit puissent être expliqué à partir de différences de valeurs me semble mauvaise. On entends pourtant souvent parler des "valeurs de gauche" ou des "valeurs de droite".
+
+Je m'amuse de remarquer que la sociologie vient prêter main forte à Spinoza, puisqu'elle nous apprends que les valeurs de l'ordre moral ne sont pas à l'origine de notre système politique, mais au contraire, que c'est *a posteriori*, dans un but de justification du système en place, que les valeurs sont choisies. Autrement dit, et pour reprendre la tournure de Spinoza : ce n'est pas parce que nous poursuivons ou désirons des valeurs que notre système politique s'organise autour d'elles, mais c'est parce que notre système politique est organisé d'une certaine manière que l'ordre moral s'emplit de valeurs qui servent à justifier le système en place. Les valeurs permettent donc la stabilité politique en rendant le système actuel *moralement nécessaire* : changer le système serait immoral.
+
+
+<!-- Or, un projet idéologique ou politique est ce qui dicte ce qui devrait changer ou bien être conservé. Il doit donc nécessairement se placer *par rapport* à l'ordre moral établi : une idéologie doit affirmer quelles valeurs [TODO] -->
+
+
+# TODO
+
+- la non-hiérarchie (nihilisme)
+- les valeurs comme base pour la pensée / comme fin de la pensée
+    - on peut considérer les valeurs comme le minimum sur quoi on doit être d'accord pour faire de la politique
+    - cependant cela n'est pas viable :
+        - on ne peut pas toujours être d'accord sur nos valeurs
+        - si on accepte les valeurs comme base pour la pensée, on ne peut / ne veut pas les justifier
+        - exemples :
+            - la "valeur travail"
+            - l'"égalitarisme fou" de Bernard Friot / du communisme
+- l'opposition gauche / droite sur les valeurs en politique
+    - opposition (progressisme) ou défense (conservatisme) de l'ordre moral
+    - exemple de mai 68
+        - libération et la pédophilie
+        - mauvaise anarchie : imposer l'absence de morale, plutôt qu'empêcher l'imposition d'une morale
+    - exemple de la peine de mort
+
+
