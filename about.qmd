@@ -16,7 +16,7 @@ about:
 comments: false
 ---
 
-Je suis passionné par l'informatique, les&nbsp;mathématiques, la&nbsp;connaissance en général, les&nbsp;raccourcis&nbsp;clavier, les&nbsp;bandes&nbsp;dessinnées, la&nbsp;musique et les autres arts, l'origami, et le&nbsp;chocolat.
+Je suis passionné par l'informatique, les&nbsp;mathématiques, la&nbsp;philosophie, la&nbsp;politique, la&nbsp;connaissance en général, les&nbsp;raccourcis&nbsp;clavier, les&nbsp;bandes&nbsp;dessinées, la&nbsp;musique et les autres arts, l'origami, et le&nbsp;chocolat.
 
 
 J'étudie actuellement en licence de mathématiques et en licence d'informatique.
@@ -28,9 +28,9 @@ J'étudie actuellement en licence de mathématiques et en licence d'informatique
 Le contenu de ce blog est principalement :
 
 <div style="text-align: left; margin-left: 5vw;">
- - Des explications de concepts d'informatique et de mathématiques
+ - Des réflexions sur divers sujets (philosophie, politique, science...)
 
- - Des réflexions sur divers sujets
+ - Des explications de concepts d'informatique et de mathématiques
 
  - Des présentations de ce que je trouve intéressant
 </div>
@@ -39,6 +39,8 @@ Le contenu de ce blog est principalement :
 # Le nom du blog
 
 Le Blog s'appelle `OSK42`, à la fois en référence au nombre 42, la réponse à la "[grande question sur la vie, l'univers et le reste](https://fr.wikipedia.org/wiki/La_grande_question_sur_la_vie,_l%27Univers_et_le_reste)", et car `OSK42` est une écriture de `OSKAR` (mon pseudo) en [leet speak](https://fr.wikipedia.org/wiki/Leet_speak)
+
+<br/>
 
 ![](_images/OsKaR.gif)
 

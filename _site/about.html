@@ -35,11 +35,11 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -127,13 +127,18 @@ ul.task-list li input[type="checkbox"] {
   </li>
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./CV.html"> <i class="bi bi-person-vcard" role="img">
+</i> 
+<span class="menu-text">CV</span></a>
+  </li>  
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-ailleurs-sur-internet" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-bi-share" role="button" data-bs-toggle="dropdown" aria-expanded="false">
       <i class="bi bi-share" role="img">
 </i> 
- <span class="menu-text">Ailleurs sur internet</span>
+ <span class="menu-text"></span>
     </a>
-    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-ailleurs-sur-internet">    
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-bi-share">    
         <li>
     <a class="dropdown-item" href="https://github.com/OsKaR31415"><i class="bi bi-github" role="img">
 </i> 
@@ -149,13 +154,13 @@ ul.task-list li input[type="checkbox"] {
 </i> 
  <span class="dropdown-text">email</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="./index.xml"><i class="bi bi-rss" role="img">
+</i> 
+ <span class="dropdown-text">flux RSS du blog</span></a>
+  </li>  
     </ul>
   </li>
-  <li class="nav-item">
-    <a class="nav-link" href="./CV.html"> <i class="bi bi-person-vcard" role="img">
-</i> 
-<span class="menu-text">CV</span></a>
-  </li>  
   <li class="nav-item compact">
     <a class="nav-link" href="./index.xml"> <i class="bi bi-rss" role="img">
 </i> 
@@ -185,15 +190,15 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-title-meta">
   </div>
 </header><main class="content" id="quarto-document-content">
-<p>Je suis passionné par l’informatique, les&nbsp;mathématiques, la&nbsp;connaissance en général, les&nbsp;raccourcis&nbsp;clavier, les&nbsp;bandes&nbsp;dessinnées, la&nbsp;musique et les autres arts, l’origami, et le&nbsp;chocolat.</p>
+<p>Je suis passionné par l’informatique, les&nbsp;mathématiques, la&nbsp;philosophie, la&nbsp;politique, la&nbsp;connaissance en général, les&nbsp;raccourcis&nbsp;clavier, les&nbsp;bandes&nbsp;dessinées, la&nbsp;musique et les autres arts, l’origami, et le&nbsp;chocolat.</p>
 <p>J’étudie actuellement en licence de mathématiques et en licence d’informatique.</p>
 <section id="contenu" class="level1">
 <h1>Contenu</h1>
 <p>Le contenu de ce blog est principalement :</p>
 <div style="text-align: left; margin-left: 5vw;">
 <ul>
+<li><p>Des réflexions sur divers sujets (philosophie, politique, science…)</p></li>
 <li><p>Des explications de concepts d’informatique et de mathématiques</p></li>
-<li><p>Des réflexions sur divers sujets</p></li>
 <li><p>Des présentations de ce que je trouve intéressant</p></li>
 </ul>
 </div>
@@ -201,6 +206,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="le-nom-du-blog" class="level1">
 <h1>Le nom du blog</h1>
 <p>Le Blog s’appelle <code>OSK42</code>, à la fois en référence au nombre 42, la réponse à la “<a href="https://fr.wikipedia.org/wiki/La_grande_question_sur_la_vie,_l%27Univers_et_le_reste">grande question sur la vie, l’univers et le reste</a>”, et car <code>OSK42</code> est une écriture de <code>OSKAR</code> (mon pseudo) en <a href="https://fr.wikipedia.org/wiki/Leet_speak">leet speak</a></p>
+<p><br></p>
 <p><img src="_images/OsKaR.gif" class="img-fluid"></p>
 <p><br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br></p>
 </section>
@@ -377,7 +383,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return localAlternateSentinel;
     }
   }
-  const darkModeDefault = false;
+  const darkModeDefault = true;
   let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
   // Dark / light mode switch
   window.quartoToggleColorScheme = () => {

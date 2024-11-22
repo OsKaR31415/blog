@@ -25,24 +25,24 @@ website:
             href: posts/>>reflexions.qmd
 
     right:
-      - icon: share
-        text: Ailleurs sur internet
-        menu:
-        - icon: github
-          text: github
-          href: https://github.com/OsKaR31415
-        - icon: youtube
-          text: youtube
-          href: https://youtube.com/@oskar31415
-        - icon: envelope
-          text: email
-          href: mailto:oscar.plaisant@orange.fr
-
-
       - icon: person-vcard
         text: CV
         href: CV.qmd
 
+      - icon: share
+        menu:
+          - icon: github
+            text: github
+            href: https://github.com/OsKaR31415
+          - icon: youtube
+            text: youtube
+            href: https://youtube.com/@oskar31415
+          - icon: envelope
+            text: email
+            href: mailto:oscar.plaisant@orange.fr
+          - icon: rss
+            href: index.xml
+            text: flux RSS du blog
       - icon: rss
         href: index.xml
 
@@ -62,21 +62,24 @@ website:
       loading: "lazy"
       input-position: "bottom"
       theme:
-        light: "light"
-        dark: "dark"
+        dark: "noborder_dark"
+        light: "noborder_light"
       language: "fr"
+
 
 format:
   html:
     theme:
-      light: flatly
       dark: darkly
+      light: flatly
     css: styles.css
     include-in-header:
       text: |
         <script data-goatcounter="https://osk42.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
     link-external-icon: true # show an icon after every external link
 
+execute:
+  freeze: auto
 
 editor:
   render-on-save: false

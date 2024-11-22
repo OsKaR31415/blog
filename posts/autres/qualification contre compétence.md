@@ -1,10 +1,9 @@
 ---
 title: "qualification contre compétence"
-date: 2023-08-04
+date: 2024-09-26
 categories: [ politique, réflexion ]
 draft: true
 ---
-
 
 
 
@@ -64,7 +63,7 @@ Le problème est que cela rend l'opposition face aux décideurs impossible : non
 
 Le management par projets est en fait un recul du statut du travailleur : un travailleur employé pour son métier peut avoir une certaine liberté dans les moyens mis en œuvre (car c'est son métier, c'est lui qui sait comment les choses doivent être faite); mais un travailleur qui exécute un projet doit suivre le plan décidé par le projet (sous peine de non-renouvellement ou de fin des financements du projet).
 
-## pedagogie par competences
+## pédagogie par competences
 
 La pédagogie par compétences est l'application du management par compétence pour l'enseignement.
 Elle consiste donc à diviser les élèves (ou étudiant·es) en compétences qu'ils valident ou non.
