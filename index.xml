@@ -1,0 +1,2479 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>0SK42</title>
+<link>https://osk42.quarto.pub/</link>
+<atom:link href="https://osk42.quarto.pub/index.xml" rel="self" type="application/rss+xml"/>
+<description>OSK42 - blog de Maths et d&#39;Informatique</description>
+<language>fr</language>
+<image>
+<url>https://osk42.quarto.pub/_images/OsKaR.png</url>
+<title>0SK42</title>
+<link>https://osk42.quarto.pub/</link>
+<height>81</height>
+<width>144</width>
+</image>
+<generator>quarto-1.4.555</generator>
+<lastBuildDate>Wed, 25 Sep 2024 22:00:00 GMT</lastBuildDate>
+<item>
+  <title>Ne pas avoir de valeurs</title>
+  <link>https://osk42.quarto.pub/posts/philosophie/ne_pas_avoir_de_valeurs.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>Dans cet article, je vais essayer d’expliquer pourquoi je pense qu’en politique, il ne faut pas avoir de valeurs. Bien sûr, je ne veux pas dire qu’il faut être une mauvaise personne, sans scrupules ni considération pour autrui ! Cela, c’est être une personne sans valeur : je parle bien de ne pas avoir de valeurs, c’est-à-dire de rejeter toutes les valeurs comme la justice, l’égalité, la famille, le travail ou le libre marché…</p>
+<section id="sec-definition-valeur" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Qu’est-ce qu’une valeur ?</h1>
+<p>Quand je parle de “valeur”, je veux dire “valeur morale”, ou bien “valeur universelle”. Je considère que les valeurs ont trois caractéristiques importantes : elles sont moralement obligatoires, elles sont dogmatiques, et elles se forment et s’organisent dans un ordre moral. J’explique ensuite ce que je veux dire par là, mais il est important de comprendre que c’est en ce sens que j’utiliserai le mot “valeur” dans le reste de l’article, et non dans les autres sens qu’il peut avoir dans le langage courant.</p>
+<section id="les-valeurs-sont-moralement-obligatoires" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="les-valeurs-sont-moralement-obligatoires"><span class="header-section-number">1.1</span> Les valeurs sont moralement obligatoires</h2>
+<p>Les valeurs impliquent une obligation morale, c’est-à-dire qu’admettre une valeur, c’est admettre qu’on a l’obligation morale de la respecter. Par exemple, si on considère que l’égalité est une valeur importante, on a l’obligation de respecter l’égalité : faire autrement serait immoral, serait mal. Cela est plus évident quand on considère que les valeurs sont, presque par définition, bonnes : il y a une certaine obligation morale à faire ce qui est bon, et surtout à ne pas faire le contraire (ce qui est mal). Cela transparaît notamment dans des valeurs comme l’amour, l’honnêteté, le respect ou la tolérance.</p>
+</section>
+<section id="sec-valeurs-dogmatiques" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="sec-valeurs-dogmatiques"><span class="header-section-number">1.2</span> Les valeurs sont dogmatiques</h2>
+<p>Les valeurs sont dogmatiques, c’est-à-dire qu’elles doivent être admises comme bonnes, sans raisonnement, sans justification. En effet, pourquoi l’égalité serait-elle meilleure que l’inégalité ? Pourquoi la justice serait-elle meilleure que l’injustice ? Les valeurs sont ce qui sert à légitimer, ce qui permet de justifier que quelque chose est bon ou mauvais. On a bien sûr en tête des arguments pour défendre ces valeurs ; par exemple la justice est nécessaire pour vivre en société et l’inégalité génère du malheur. Mais si on peut justifier ces valeurs à l’aide d’autre chose, alors ce ne sont plus des valeurs, ce sont des principes qui découlent de notre idéologie. Par exemple, on ne dirait pas que le droit d’avoir un avocat est une valeur, parce que l’on peut déduire ce droit de la “valeur justice”.</p>
+<p>En fait, plus simplement : si une valeur peut être justifiée par autre chose, alors elle n’est plus qu’une étape du raisonnement : ce n’est plus une valeur <em>en soi</em> et <em>par soi</em>, mais simplement un principe que l’on a conclu être bon <em>par autre chose</em>. Si on pense qu’il faut argumenter pour une valeur, c’est bien qu’on accepte de la remettre en question, de lui faire perdre son statut de postulat, d’axiome, de chose bonne <em>par elle-même</em>. Si vous vous sentez obligé d’argumenter pour l’égalité, c’est que vous acceptez l’idée que l’égalité pourrait bien ne pas être bonne, et alors bien loin d’être une valeur, l’égalité perd tout statut particulier et n’est plus qu’un principe, une conclusion de votre raisonnement.</p>
+<p>En cela, je m’éloigne d’autres utilisations du terme “valeur”, comme lorsque l’on dit “il a transmis de bonnes valeurs à son enfant” (pour dire une bonne éducation), ou bien “elle a des valeurs” (pour dire que c’est une bonne personne). Je réserve réellement le terme “valeur” à ce qui est bon en soi.</p>
+</section>
+<section id="sec-ordre-moral" class="level2" data-number="1.3">
+<h2 data-number="1.3" class="anchored" data-anchor-id="sec-ordre-moral"><span class="header-section-number">1.3</span> L’ordre moral</h2>
+<p>Une dernière caractéristique importante des valeurs est qu’elles sont modelées dans un ordre moral. Par là, je veux dire que les valeurs ne sont pas adoptées par hasard ou bien par décision philosophique : la plupart du temps, elles sont transmises d’une personne à une autre.</p>
+<p>Ce que j’appelle “ordre moral”, c’est l’ensemble des valeurs communément acceptées dans une société. Il peut tout à fait changer avec le temps, simplement parce qu’une société peut changer de considérations sur ce qui est bon ou mauvais. Par exemple, il y a quelques siècles, la noblesse dirigeait la France, et tout le champ de valeurs qui va avec (la noblesse en tant que valeur, le droit divin, l’hérédité du pouvoir, le christianisme…) faisaient partie de l’ordre moral ; mais aujourd’hui, les royalistes sont minoritaires, et ils vont contre l’ordre moral établi, en affirmant que leur ordre moral plus ancien est meilleur. Il y a moins de 50 ans (avant 1981), l’homosexualité était un crime, et c’est en partie un changement des valeurs, un changement de l’ordre moral, qui a permis cela. On pourrait dire la même chose de la peine de mort, mais je reviendrai sur ce sujet plus tard.</p>
+<p>Je veux vraiment insister sur ce point : les valeurs sont construites avec et par la morale d’une société, elles en sont l’expression. En cela, je ne considère pas l’insurrection, la résistance ou l’opposition à l’ordre moral comme des valeurs (précisément parce qu’elles sont construites en opposition à des valeurs morales).</p>
+</section>
+</section>
+<section id="sec-nihilisme" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Refuser la hiérarchie des valeurs</h1>
+<p>Les valeurs se veulent évidemment comme objectives, ou au moins substantielles. Adopter une valeur, c’est adopter l’idée que cette valeur est bonne, que l’on devrait conduire sa vie (ou celle de la société) en suivant cette valeur, parce que c’est mieux du point de vue de la morale, du point de vue du bien et du mal.</p>
+<p>Dans son œuvre principale — l’Éthique — Spinoza parle, entre autres, du bien et du mal. Et c’est par un retournement de ces concepts de bien et de mal qu’il finit par détruire toute hiérarchie, toute supériorité des valeurs : <em>“Nous ne poursuivons pas, nous ne désirons pas un objet parce qu’il est un bien, mais au contraire, nous ne disons qu’un objet est un bien que parce que nous le poursuivons et le désirons.”</em> (Éthique III, prop. 9, scolie). Cette position, qu’on appelle relativisme moral (l’idée que le bien et le mal ne sont pas des caractéristiques d’une chose, mais qu’ils dépendent de l’individu en question) est très problématique pour les valeurs, car on voit bien que les valeurs ne sont plus alors bonnes que <em>pour quelqu’un</em>. Elles perdent complètement leur universalité, et on ne peut plus dire “l’égalité est bonne” ou “il faut de la justice”, mais seulement “l’égalité est bonne <em>pour cet individu</em>” ou “il faut de l’égalité <em>pour cet individu</em>”. On comprend donc que cette position philosophique nous empêche de construire une morale : on ne peut plus parler du bien et du mal au sens de la morale, mais seulement au sens relativiste (le bien devient presque “ce qui est utile”, et on voit bien qu’une chose n’est pas utile en elle-même, mais seulement utile pour faire quelque chose, utile pour quelqu’un).</p>
+<p>On n’a donc aucun moyen de distinguer les valeurs entre elles : puisqu’une chose n’est bonne que parce que nous la désirons, alors nous ne pouvons pas la désirer <em>parce qu’elle est bonne</em> ! Finalement, on se trouve obligé de rejeter toute hiérarchie des valeurs (la liberté n’est pas meilleure que l’absence de liberté), toute idée qu’une chose soit meilleure qu’une autre, bref, on ne peut plus donner de valeur à rien. On pourrait résumer cela par l’aphorisme <em>“il n’y a pas de valeur des valeurs”</em>. Cette position de refus de la hiérarchie des valeurs, de refus des notions de bien et de mal, s’appelle le nihilisme. Si on accepte le nihilisme, on ne peut plus baser ses décisions sur la recherche du bien et l’évitement du mal : il faut trouver d’autres ressorts, par exemple la raison (comme le fait Spinoza), le dépassement vers le surhomme (comme le fait Nietzsche) ou la recherche de son intérêt personnel.</p>
+</section>
+<section id="sec-valeurs-base-de-la-pensee" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Les valeurs comme base pour la pensée</h1>
+<p>Comme je l’ai dit (voir Section&nbsp;1.3) les valeurs s’inscrivent dans un ordre moral et sont dogmatiques (voir Section&nbsp;1.2). Par cela, je veux dire que les valeurs se placent comme le fondement d’une pensée politique : on commence par accepter les valeurs (par exemple, l’égalité) et on en déduit des décisions à prendre (par exemple, mettre en place des taxes pour redistribuer les richesses). Les valeurs sont donc nos postulats, nos axiomes politiques (je trouve le terme axiome particulièrement adapté, car il rappelle l’<em>axiologie</em>, qui est l’étude des valeurs morales — et surtout car la racine grecque ἀξία, <em>axia</em>, signifie “valeur”).</p>
+<p>Je vois deux problèmes à cette position des valeurs comme axiomes :</p>
+<ul>
+<li>si les valeurs sont des axiomes, c’est qu’on accepte qu’elles ne sont pas justifiées</li>
+<li>les valeurs peuvent être contradictoires entre elles</li>
+</ul>
+<section id="les-valeurs-ne-sont-pas-justifiées" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="les-valeurs-ne-sont-pas-justifiées"><span class="header-section-number">3.1</span> Les valeurs ne sont pas justifiées</h2>
+<p>Comme je l’ai dit, les valeurs sont axiomatiques : elles servent de fondement à une pensée politique. Si elles sont axiomatiques, c’est parce que l’on choisit d’admettre qu’elles n’ont pas besoin de justification, qu’elles sont bonnes <em>en elles-mêmes</em> (voir Section&nbsp;1.2). Mais alors, penser par valeurs, c’est admettre que l’on s’arrête de penser à un moment donné. C’est accepter des principes sans arguments, sans démonstration, sans rationalité. J’aime résumer cela par l’aphorisme “<em>Les valeurs sont la mort de la pensée</em>”. Il est un peu excessif, mais je trouve qu’il exprime bien l’idée que, dès qu’on accepte une valeur, on admet quelque chose sans preuve, et donc on fait s’arrêter sa pensée à un endroit où elle devrait continuer.</p>
+<p>Bien sûr, cela rejoint tous les arguments que j’ai donnés contre l’idée que les valeurs sont bonnes (voir Section&nbsp;2), puisque la conclusion est la même : on ne devrait rien baser sur les valeurs. Mais je trouve cette démonstration plus simple que les arguments pour le nihilisme (et plus acceptable en cela qu’elle ne nécessite pas d’abandonner le concept même de bien).</p>
+</section>
+<section id="les-valeurs-peuvent-être-contradictoires" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="les-valeurs-peuvent-être-contradictoires"><span class="header-section-number">3.2</span> Les valeurs peuvent être contradictoires</h2>
+<p>Les valeurs peuvent être contradictoires entre elles. Cela est évident, par exemple, entre des valeurs comme liberté et égalité, ou liberté et justice. Plus on s’assure d’avoir de l’égalité et de la justice, moins on laisse de libertés. Cela est vrai pour beaucoup d’autres valeurs, et c’est d’ailleurs bien normal : la non-liberté est autant une valeur que la liberté. Dans notre système politique actuel, on accepte très bien des restrictions de liberté comme l’interdiction de tuer ou de voler, parce que l’on considère que d’autres valeurs comme la vie humaine ou le respect de la propriété privée sont plus importantes. Mais ces contradictions, même si elles semblent aisées à résoudre en premier lieu (il semble évident que la vie humaine est plus importante que la liberté de tuer), sont en fait source de beaucoup de problèmes idéologiques.</p>
+<p>Par exemple, comment faire la balance entre sécurité et liberté ? Le débat public regorge de cas où les uns prônent l’abandon de quelques libertés au nom de la sécurité, tandis que les autres défendent l’importance des libertés fondamentales contre cette “<em>valeur sécurité</em>”. Un exemple encore plus flagrant se trouve dans certaines critiques du communisme qui mettent en avant l’idée que ce système serait “trop égalitaire”, et détruirait toute liberté. On voit bien ici que liberté et égalité sont mises en opposition. On voit là à quelles absurdités nous mènent les valeurs : on en vient à un débat complètement stérile, puisqu’il se résume à défendre soit que la valeur A est plus importante que la valeur B, soit le contraire ; or si les valeurs sont des axiomes, alors rien ne peut faire pencher d’un côté ou de l’autre.</p>
+<p>Cette possibilité pour des valeurs d’être contradictoires montre que l’on doit faire des choix très subjectifs pour former une hiérarchie des valeurs. Et je crois que cela suffit déjà à montrer que les valeurs ne devraient pas être utilisées pour fonder une idéologie politique.</p>
+</section>
+</section>
+<section id="sec-valeurs-et-politique" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> Valeurs et politique</h1>
+<p>Je m’en voudrais de ne pas aborder plus en profondeur le lien entre les valeurs qu’on adopte et l’idéologie politique que l’on défend. Dans une première analyse, on pourrait considérer que ce sont les différences de valeurs qui font les différences d’idéologies. On entend souvent parler des “valeurs de gauche” ou des “valeurs de droite”. Cependant, je pense que l’on ne peut pas expliquer la différence entre la gauche et la droite à partir de différences de valeurs.</p>
+<p>Bien sûr, un projet politique doit se placer par rapport à des valeurs, puisqu’il doit nécessairement se placer par rapport à l’ordre moral établi. Mais cela ne signifie pas qu’un projet politique doit nécessairement inclure et défendre des valeurs ! Je voudrais défendre l’idée que la gauche politique n’a pas de valeurs.</p>
+<p>D’abord, d’un point de vue historique, la gauche a toujours été contre l’ordre moral : c’est la gauche qui a fait opposition aux valeurs établies pour obtenir le droit de vote des femmes, le droit à l’avortement, la dépénalisation de l’homosexualité… On peut analyser de la même manière des réformes “sociales” comme les 35 heures (qui s’opposent à la “valeur travail”), ou bien l’abolition de la peine de mort (voir Note&nbsp;1). Je défends donc l’idée que la gauche est fondamentalement en opposition avec l’ordre moral, donc avec des valeurs.</p>
+<p>Par là, je ne veux pas simplement dire que la gauche est anti-conservatrice, qu’elle est progressiste. Bien sûr, le progressisme est une part importante de l’idéologie de gauche, mais plus qu’un simple progressisme de principe, je considère que l’idéologie politique de gauche inclus la critique du système en place, la critique du cadre (institutionnel, idéologique, moral…). Comme le dit Frédéric Lordon : “<em>Pour moi, la différence de la gauche et de la droite, elle est là : elle est dans ce rapport au cadre. Est de droite ce qui reste dans le cadre. Est de gauche ce qui veut sortir du cadre et refaire le cadre.</em>” (<a href="https://www.youtube.com/watch?v=Hy7LJ4FHBQM">Les économistes atterrés aux mardis de l’ESSEC</a>). Je considère vraiment que cette posture critique est au cœur de ce qui fait l’idéologie politique de gauche.</p>
+<p>Comme toujours, on peut pousser un concept pour en tirer des choses mauvaises. Ainsi, suite aux grèves de mai 68, la gauche Française s’est imprégnée d’un esprit de refus totale de toute hiérarchie, de toute morale. Toute privation de libertés pouvait être vue comme un abus de pouvoir et donc comme illégitime (“Il est interdit d’interdire”, ou bien “contestons toute forme d’autorité”). Ainsi, le journal Libération à pu défendre la pédophilie, sous le prétexte qu’aucune violence n’avait été commise sur les enfants, et donc qu’une condamnation ne serait que l’expression d’un ordre moral conservateur. A cette époque, dans la rédaction, toute interdiction est vue comme une censure, comme une oppression, et comme un stigmate de conservatisme que le progressisme convient d’éliminer. Pour plus d’information sur ce sujet, je vous recommende l’article de Libération qui revient sur son propre passé peu glorieux : <a href="https://www.liberation.fr/checknews/2017/09/24/liberation-a-t-il-soutenu-la-pedophilie-en-1974_1652441/">Libération a-t-il soutenu la pédophilie en 1974 ?</a></p>
+<div id="nte-abolition" class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note&nbsp;1: L’abolition de la peine de mort
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>L’abolition de la peine de mort me paraît être un excellent exemple pour illustrer cette différence entre les idéologies de droite et de gauche.</p>
+<p>Le 17 septembre 1981, <a href="https://www.wikiwand.com/fr/articles/Robert_Badinter">Robert Badinter</a>, alors ministre de la Justice, prononce devant l’Assemblée nationale son discours pour faire voter l’abolition de la peine de mort.</p>
+<p>Dans toute une première partie de son discours, il utilise des valeurs pour défendre l’abolition. Il fait appel aux valeurs de la révolution, notamment avec la citation de la phrase de Jean Jaurès : “La peine de mort est contraire à ce que l’humanité depuis deux mille ans a pensé de plus haut et rêvé de plus noble. Elle est contraire à la fois à l’esprit du christianisme et à l’esprit de la Révolution.”. Par là, il fait également appel à un ordre moral traditionnel : celui du christianisme. Il rappelle quels grands hommes se sont opposés à la peine de mort (Lepeletier de Saint Fargeau, Victor Hugo, Camus…)</p>
+<p>Mais la plupart des arguments de son discours sont beaucoup plus empirique, et non basés sur des valeurs. Il expose que la peine de mort est sans effet (voire contre-productive) sur la criminalité (“<em>[…] le seul résultat auquel ont conduit toutes les recherches menées par les criminologues est la constatation de l’absence de lien entre la peine de mort et l’évolution de la criminalité sanglante.</em>”). Il parle du fait que le peuple a voté, sur référendum et par son élection du parti socialiste, pour l’abolition (“<em>Le pays a élu une majorité de gauche ; ce faisant, en connaissance de cause, il savait qu’il approuvait un programme législatif dans lequel se trouvait inscrite, au premier rang des obligations morales, l’abolition de la peine de mort.</em>”). Il parle du racisme qui vient avec la justice d’élimination. Il présente l’acte de tuer comme une passion que la peur de la mort ne saurait réprimer (“<em>[…] ceux qui croient à la valeur dissuasive de la peine de mort méconnaissent la vérité humaine. La passion criminelle n’est pas plus arrêtée par la peur de la mort que d’autres passions ne le sont […].</em>” ainsi que “<em>C’est seulement pour la peine de mort qu’on invente l’idée que la peur de la mort retient l’homme dans ses passions extrêmes. Ce n’est pas exact.</em>”). Il met en lien démocratie et abolition, dictatures et peine de mort (“<em>Voici la première évidence : dans les pays de liberté, l’abolition est presque partout la règle ; dans les pays où règne la dictature, la peine de mort est partout pratiquée.</em>”) pour montrer que c’est un choix politique. Il explique en quoi la peine de mort est problématique, car la justice ne peut pas être certaine de ses décisions (“<em>Notre justice, et c’est son honneur, ne tue pas les déments. Mais elle ne sait pas les identifier à coup sûr […]</em>”, mais aussi “<em>Ceux qui veulent une justice qui tue, ceux-là sont animés par une double conviction : qu’il existe des hommes totalement coupables, c’est-à-dire des hommes totalement responsables de leurs actes, et qu’il peut y avoir une justice sûre de son infaillibilité au point de dire que celui-là peut vivre et que celui-là doit mourir.</em>”).</p>
+<p>Badinter donne donc ici un argumentaire qui n’est pas basé sur des valeurs, ou très peu ! La seule valeur qu’il utilise réellement, c’est celle de la vie humaine. Mais si ses opposants n’avaient pas de considération pour la vie humaine, ils ne considèreraient pas la peine de mort comme une sentence suffisante, et c’est pourquoi cette base, l’importance de la vie humaine, peut être utilisée.</p>
+<p>J’apprécie beaucoup ce discours, à la fois pour les argumentations qu’il développe, pour l’impact qu’il a eu dans l’histoire de France, et pour sa grande qualité rhétorique. Son texte est disponible ici : <a href="https://ww2.ac-poitiers.fr/lettres/sites/lettres/IMG/pdf/discours_de_m.badinter_contre_la_peine_de_mort.pdf">Discours de Badinter contre la peine de mort</a>.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="sec-valeurs-justification-a-posteriori" class="level1" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> Les valeurs sont une justification <em>a posteriori</em></h1>
+<p>Je m’amuse de remarquer que la sociologie vient prêter main forte à Spinoza, puisqu’elle nous apprend que les valeurs de l’ordre moral ne sont pas à l’origine de notre système politique, mais au contraire, que c’est <em>a posteriori</em>, dans un but de justification du système en place, que les valeurs sont choisies. Autrement dit, et pour reprendre la tournure de Spinoza : ce n’est pas parce que nous poursuivons ou désirons des valeurs que notre système politique s’organise autour d’elles, mais c’est parce que notre système politique est organisé d’une certaine manière que l’ordre moral s’emplit de valeurs qui servent à justifier le système en place. Les valeurs permettent donc la stabilité politique en rendant le système actuel <em>moralement nécessaire</em> : changer le système serait immoral.</p>
+<p>C’est bien pour justifier le système en place que l’on met en avant des valeurs, et pas le contraire.</p>
+</section>
+<section id="sec-systeme-politique-sans-valeurs" class="level1" data-number="6">
+<h1 data-number="6"><span class="header-section-number">6</span> Construire un système politique sans valeurs</h1>
+<p>J’espère vous avoir convaincu que les valeurs ne sont pas une base acceptable pour une idéologie politique. Mais une fois privés de tout appel à l’égalité, à la justice, au respect où au concept même de bien et de mal, comment faire pour construire une idéologie cohérente ? Je voudrais proposer ici la justification de quelques éléments d’une idéologie à partir d’axiomes qui me semblent plus raisonnables que des valeurs.</p>
+<section id="sec-axiomes" class="level2" data-number="6.1">
+<h2 data-number="6.1" class="anchored" data-anchor-id="sec-axiomes"><span class="header-section-number">6.1</span> Axiomes</h2>
+<ol type="1">
+<li>Les décisions politiques doivent être prises le plus rationnellement possible.</li>
+<li>Il n’y a aucun moyen <em>a priori</em> de savoir si une idée (politique) est correcte ou non.</li>
+<li>Un individu n’a pas raison en tant qu’il est lui-même, mais seulement en tant que l’idée qu’il défend est adéquate (soit qu’il ait des arguments, soit que l’expérience lui donne raison).</li>
+</ol>
+</section>
+<section id="déductions" class="level2" data-number="6.2">
+<h2 data-number="6.2" class="anchored" data-anchor-id="déductions"><span class="header-section-number">6.2</span> Déductions</h2>
+<section id="les-décisions-nécessitent-justification" class="level3" data-number="6.2.1">
+<h3 data-number="6.2.1" class="anchored" data-anchor-id="les-décisions-nécessitent-justification"><span class="header-section-number">6.2.1</span> Les décisions nécessitent justification</h3>
+<p>Comme on ne peut pas savoir <em>a priori</em> si une idée est correcte (axiome 2), on admet qu’une décision ne devrait pas être prise sans justification.</p>
+</section>
+<section id="il-faut-exclure-tout-pouvoir-individuel" class="level3" data-number="6.2.2">
+<h3 data-number="6.2.2" class="anchored" data-anchor-id="il-faut-exclure-tout-pouvoir-individuel"><span class="header-section-number">6.2.2</span> Il faut exclure tout pouvoir individuel</h3>
+<p>Maintenant, par l’axiome 3, on comprend qu’il n’y a pas de raison de donner de pouvoir à une personne en particulier. En effet, son pouvoir serait justifié soit par sa personne, soit par ses idées, soit par autre chose. Mais pas par sa personne, car l’axiome 3 nous montre que ce n’est pas en lui-même qu’un individu a raison, mais seulement par ses idées. Et pas non plus par autre chose que ses idées, car on ne devrait pas justifier une décision sur des bases irrationnelles (axiome 1). Le pouvoir accordé à une personne doit donc entièrement découler des idées politiques qu’elle défend. On comprend alors que ce n’est pas à la personne qu’on accorde du pouvoir, mais aux idées. En effet, même si on décide, à cause de ses idées, de donner des responsabilités à un individu, le mandat devra être impératif : le pouvoir sera délégué à un individu seulement dans le but d’exécuter une action politique précise (sans possibilité de dérogation). Le mandat représentatif, dans lequel le représentant est libre de prendre des décisions indépendamment des idées qui ont fait qu’il a été choisi, n’est pas acceptable selon nos axiomes, car il s’oppose à la fois à l’axiome 1 et à l’axiome 3.</p>
+</section>
+<section id="il-faut-décider-par-délibération-collective" class="level3" data-number="6.2.3">
+<h3 data-number="6.2.3" class="anchored" data-anchor-id="il-faut-décider-par-délibération-collective"><span class="header-section-number">6.2.3</span> Il faut décider par délibération collective</h3>
+<p>Ayant exclu toute possibilité de donner le pouvoir à une personne, on comprend que la seule possibilité restante est la décision par délibération collective : aucun individu n’ayant <em>a priori</em> raison, et une décision devant pourtant être prise, mais pas par des individus en particulier (car on a exclu les situations de pouvoir), il faut bien que les décisions soient prises par le collectif. Mais cela n’est pas suffisant : faire participer des citoyens mal éduqués à la politique ou mal informés, cela s’oppose à l’axiome 1. Il faut donc, que les idées circulent suffisamment librement dans le débat public, que les citoyens soient suffisamment éduqués aux questions politiques, et qu’ils soient suffisamment bien informés. Il faut donc à la fois s’assurer d’une éducation politique des citoyens, et d’un espace de débat public le moins biaisé possible, dans lequel les idées peuvent être présentées et choisies rationnellement.</p>
+</section>
+<section id="léducation-politique-des-citoyens" class="level3" data-number="6.2.4">
+<h3 data-number="6.2.4" class="anchored" data-anchor-id="léducation-politique-des-citoyens"><span class="header-section-number">6.2.4</span> L’éducation politique des citoyens</h3>
+<p>L’éducation politique des citoyens est un sujet à part entière. Je voudrais simplement présenter ici quelques éléments à ce sujet</p>
+<p>D’abord, il me semble important qu’elle soit dispensée à des personnes dont l’individualité et l’esprit critique est suffisamment constituée pour qu’elles soient capables d’avoir une posture critique face à cet enseignement lui-même. Cela implique d’abord que l’éducation politique des citoyens ne soit pas donnée à des enfants. Mais il est aussi impératif qu’elle soit précédée d’une éducation à l’esprit critique et à la philosophie, pour que les individus soient capables de repérer les biais cognitifs, de se défendre contre la rhétorique et les sophismes, et de construire ou critiquer par eux-mêmes des argumentations complexes. Une éducation politique qui ne respecterait pas ces critères aurait de grandes chances de se transformer en endoctrinement généraliser, et donc d’aller à l’encontre des axiomes 1 et 2.</p>
+</section>
+<section id="un-espace-circulation-des-idées" class="level3" data-number="6.2.5">
+<h3 data-number="6.2.5" class="anchored" data-anchor-id="un-espace-circulation-des-idées"><span class="header-section-number">6.2.5</span> Un espace circulation des idées</h3>
+<p>Comme je l’ai dit, il est nécessaire que le débat public soit un espace dans lequel les idées circulent librement et avec le moins de biais possibles.</p>
+<p>La première conclusion que j’en tire est qu’il faut empêcher des acteurs privés d’avoir une trop grande influence idéologique. Par exemple, aujourd’hui, les médias privés constituent une source de biais dans la diffusion des idées (à l’avantage des propriétaires de ces médias). De la même manière, les médias étatiques constituent une source de biais à l’avantage de l’état. Dans le cas des médias, il me semble que la solution est à trouver dans un modèle public non étatique : les médias ne devraient pas être privés, ni possédés par l’état, mais simplement missionnés par l’état d’une mission de service public (et financés en conséquence) — cela est similaire au modèle d’institutions comme l’assurance maladie ou les universités. Je n’exclus pas d’autres possibilités, mais celle-ci me semble être fonctionnelle est simple à mettre en place.</p>
+<p>Une autre conclusion importante est que les idées intolérantes ne doivent pas être acceptées. C’est le “paradoxe de la tolérance” (notamment formulé par Karl Popper quoique déjà présent chez d’autres auteurs) : si une société est complètement tolérante à toutes les idées, alors elle ne peut pas se protéger contre les idées intolérantes. En effet, les idéologies intolérantes deviennent facilement dogmatiques (en refusant — par leur intolérance — d’écouter les contre-arguments), et peuvent aisément justifier l’usage de la violence par leur intolérance. On comprend donc que le refus de l’intolérance est nécessaire pour s’assurer d’un minimum de rationalité dans les décisions.</p>
+<p>Enfin, je soutiens que le débat public doit être organisé. En effet, l’auto-organisation de la diffusion des idées possède des problèmes intrinsèques. D’abord, sans organisation, la propagation des idées dépend des fréquentations de chaque personne, et on risque donc d’obtenir une ségrégation des idées entre les différents groupes d’individus. Ensuite, une circulation absolument libre des idées ne peut pas réellement s’opposer aux idées intolérantes (il faut bien une certaine organisation, même minimale, pour créer une force d’opposition suffisante). Enfin, sans organisation du débat public, il est un grand risque de contredire l’axiome 3 : on ne peut pas garantir que certaines personnes n’auront pas une place particulière dans le débat public, qui fera que leurs idées sont acceptées en tant qu’elles émanent de ces personnes, et non seulement pour les idées elles-mêmes. On pourrait résumer cela avec l’aphorisme : “sans modération, le pouvoir est à celui qui crie le plus fort” — chose que l’on observe fréquemment dans les débats télévisés, sur les réseaux sociaux, ou dans les discussions informelles.</p>
+</section>
+</section>
+<section id="conclusions-sur-lorganisation-politique" class="level2" data-number="6.3">
+<h2 data-number="6.3" class="anchored" data-anchor-id="conclusions-sur-lorganisation-politique"><span class="header-section-number">6.3</span> Conclusions sur l’organisation politique</h2>
+<p>Je crois avoir réussi à montrer qu’il est possible de construire une idéologie politique sans valeurs, à partir d’axiomes raisonnables.</p>
+<p>L’organisation que je défends peut être résumée comme une démocratie stricte, sans pouvoir individuel (soit il n’y a pas de représentants, soit les représentants sont soumis aux décisions collectives), et dans laquelle on s’assure que les citoyens sont en mesure de prendre des décisions politiques éclairées (d’où la nécessité d’une éducation politique, ainsi que d’un espace de débat public réellement démocratique).</p>
+<p>Pour réellement construire un système politique, il me semble qu’il faudrait ajouter deux axiomes :</p>
+<ol start="4" type="1">
+<li>Chaque individu cherche son propre bonheur.</li>
+<li>Les individus ont de l’empathie, c’est-à-dire qu’ils sont heureux quand ils voient d’autres personnes heureuses (à plus forte mesure quand ils pensent être la cause de ce bonheur chez autrui).</li>
+</ol>
+<p>Je ne détaillerai pas leurs conséquences ici, mais je considère qu’ils sont plus raisonnables encore que les trois premiers.</p>
+</section>
+<section id="objections-possibles" class="level2" data-number="6.4">
+<h2 data-number="6.4" class="anchored" data-anchor-id="objections-possibles"><span class="header-section-number">6.4</span> Objections possibles</h2>
+<section id="la-rationalité-serait-une-valeur" class="level3" data-number="6.4.1">
+<h3 data-number="6.4.1" class="anchored" data-anchor-id="la-rationalité-serait-une-valeur"><span class="header-section-number">6.4.1</span> La rationalité serait une valeur</h3>
+<p>La plus importante objection que je conçoive à cette construction idéologique est le fait que j’utilise la rationalité comme une valeur fondatrice. Il est vrai que l’on peut dire que, dans ce système, la rationalité est “bonne” axiomatiquement. Cependant, j’entends démontrer premièrement que cela est nécessaire à toute construction politique, et surtout que la rationalité n’est pas une valeur au sens où je l’entends dans cet article.</p>
+<p>La rationalité est nécessaire à toute construction politique, car si on refuse la rationalité, alors on pose des décisions sans justification, sans raison. Mais cela implique que les citoyens n’ont aucune raison d’accepter ces décisions. Le refus de décisions rationnelles implique donc une coercition des citoyens (soit par leur maintien dans l’ignorance, soit par une opposition directe et violente aux citoyens réfractaires). Mais plus fondamentalement, la rationalité est nécessaire pour penser une construction politique : sans rationalité, on ne peut même pas penser la construction politique ! En effet, même une dictature, qui choisit l’intérêt et le pouvoir d’un petit nombre au détriment du plus grand nombre, est basée sur des règles rationnelles : il faut une certaine organisation pour éviter les putschs, il faut faire en sorte que la caste des personnes qui détiennent du pouvoir soit avantagée, pour qu’elle accepte que la dictature continue de cette manière… (à ce sujet, cet essai vidéo est intéressant : <a href="https://www.youtube.com/watch?v=rStL7niR7gs">CGP Grey - The Rules for Rulers (en)</a>). Le seul système dans lequel on puisse véritablement dire qu’il n’y a pas de rationalité est l’anomie : l’absence totale de règles. Outre le fait que ce système est probablement impossible (les humains ont une tendance naturelle à se regrouper en communautés), il n’est pas réellement un système : il désigne plutôt l’absence de système. Pour apporter un dernier argument, au niveau individuel, les personnes cherchent toujours à être rationnelles. Si elles échouent parfois, ce n’est jamais en cherchant activement à faire une décision irrationnelle. En effet, si on veut arriver à un but, on ne peut pas chercher à faire l’opposé des décisions rationnelles : si on prend une décision, c’est qu’elle nous semble être la bonne du point de vue de la raison. Dire qu’une personne agit irrationnellement nécessite toujours un point de vue extérieur.</p>
+<p>La rationalité n’est pas une valeur, en tout cas pas dans le sens que j’ai utilisé dans cet article. En effet, j’ai donné trois critères (voir Section&nbsp;1) caractéristiques de ce que j’appelle une valeur : leur aspect moralement obligatoire, leur aspect dogmatique, et leur inscription dans un certain ordre moral. Or, la rationalité ne respecte aucun de ces critères.</p>
+<section id="la-rationalité-nest-pas-moralement-obligatoire" class="level4" data-number="6.4.1.1">
+<h4 data-number="6.4.1.1" class="anchored" data-anchor-id="la-rationalité-nest-pas-moralement-obligatoire"><span class="header-section-number">6.4.1.1</span> La rationalité n’est pas moralement obligatoire</h4>
+<p>La rationalité n’est pas moralement obligatoire. En effet, on ne peut pas rendre moralement responsable une personne qui n’aurait pas pris une décision rationnelle, puisque cela arrive à tous les êtres humains, en cela qu’ils sont des êtres traversés par des émotions, par des affects, que la raison est incapable de réprimer. Cela se traduit d’ailleurs par la formulation de l’axiome 1 : il ne dit pas que les décisions devraient être prises <em>absolument rationnellement</em>, mais plutôt qu’elles devraient être prises “<em>le plus rationnellement possible</em>”. Cela vient du fait qu’on ne peut jamais garantir la rationalité totale, absolue, d’un raisonnement. On ne peut donc pas considérer la rationalité comme moralement obligatoire.</p>
+</section>
+<section id="la-rationalité-nest-pas-dogmatique" class="level4" data-number="6.4.1.2">
+<h4 data-number="6.4.1.2" class="anchored" data-anchor-id="la-rationalité-nest-pas-dogmatique"><span class="header-section-number">6.4.1.2</span> La rationalité n’est pas dogmatique</h4>
+<p>La rationalité n’est pas dogmatique. En effet, elle est même presque opposée au dogme : la réflexion critique, le scepticisme, l’usage de la raison, bref, la rationalité, sont précisément les outils qui peuvent nous protéger contre le dogme. Développer la rationalité ne peut que faire diminuer les croyances dogmatiques (en tout cas si la rationalité est enseignée avec une posture critique et sceptique, et non comme un outil de rhétorique). Quant à la rationalité en elle-même, elle n’est pas réellement dogmatique, puisqu’on a des raisons de la mobiliser : c’est un outil qui permet de faire moins d’erreurs dans nos prédictions. Une des meilleures preuves de cela se situe dans la méthode scientifique, qui permet de modéliser la réalité avec une fidélité étonnante. Autrement, on a des raisons empiriques de vouloir utiliser la raison. Mais surtout, on voit que la définition même de dogme nécessite le concept de rationalité : est dogmatique ce qui est admis sans preuve, sans raison, sans arguments, bref, ce qui ne passe pas par la rationalité pour être considéré comme vrai. Il semble donc difficile de qualifier la rationalité elle-même de dogmatique.</p>
+</section>
+<section id="la-rationalité-ne-fait-pas-partie-dun-ordre-moral" class="level4" data-number="6.4.1.3">
+<h4 data-number="6.4.1.3" class="anchored" data-anchor-id="la-rationalité-ne-fait-pas-partie-dun-ordre-moral"><span class="header-section-number">6.4.1.3</span> La rationalité ne fait pas partie d’un ordre moral</h4>
+<p>Enfin, la rationalité ne fait pas partie d’un ordre moral. Cela est évident à partir de ce que j’ai dit plus tôt : tous les humains cherchent à être rationnels. La rationalité (ou plutôt le désir de rationalité) semble suivre nécessairement de la nature de l’esprit humain. Si elle n’est pas innée, elle est tellement nécessaire à la formation des sociétés humaines qu’elle devient universelle. Elle n’est donc pas transmise par la société au même titre que les valeurs constituant un ordre moral. Dans un mouvement similaire à l’opposition entre rationalité et dogmatisme, on peut également ajouter que la rationalité est précisément ce qui nous permet de prendre du recul avec l’ordre moral.</p>
+</section>
+</section>
+<section id="les-valeurs-seraient-un-type-daxiome" class="level3" data-number="6.4.2">
+<h3 data-number="6.4.2" class="anchored" data-anchor-id="les-valeurs-seraient-un-type-daxiome"><span class="header-section-number">6.4.2</span> Les valeurs seraient un type d’axiome</h3>
+<p>Une autre objection, presque symétrique à la première, consisterait à défendre l’idée que les valeurs sont, en politique, des axiomes, et donc que les axiomes que j’ai utilisés ne sont pas différents des valeurs usuelles. Cela vient du fait qu’ils ne sont pas réellement des axiomes. En réalité, ils ne sont des axiomes que dans le cadre de mon développement d’un système politique. Mais le terme “postulat” serait plus adapté. Un axiome est normalement ce qui ne peut pas être justifié. Par exemple, en mathématiques, un axiome commun est que “zéro est un nombre entier”. Il n’y a pas de moyens de <em>démontrer</em>, mais personne n’irait mettre en doute ce fait. Il sert en fait de définition à ce que sont les nombres entiers. Au contraire, les axiomes que j’ai présentés ne sont pas <em>évidemment irréfutables</em>. Ils sont des postulats, car ils servent de base à mon argumentation. On ne peut pas les démontrer, mais il serait possible de les réfuter. Ils ne sont des axiomes que dans le cadre restreint de ma construction idéologique, mais pas dans le cadre de toute la philosophie politique. On pourrait donc objecter à mes axiomes qu’ils sont tout aussi dogmatiques que des valeurs.</p>
+<p>Pourtant, même s’ils sont dogmatiques, mes axiomes (ou postulats) ne peuvent pas être considérés comme des valeurs au sens que j’ai donné (voir Section&nbsp;1). En effet, ils ne sont pas moralement obligatoires (j’ai déjà expliqué cela pour l’axiome 1, et il me semble que c’est évident pour les axiomes 2 et 3). Quant à savoir s’ils constituent un ordre moral, on peut répondre oui en tant qu’ils forment un système de dogmes, et non en tant qu’ils ne sont pas des valeurs <em>morales</em>.</p>
+<p>Pour réfuter plus encore cette objection, je voudrais expliquer en quoi ces axiomes ne sont pas dogmatiques. J’ai déjà expliqué cela pour l’axiome 1, mais en réalité, il est une chose commune à tous ces axiomes, et qui fait qu’ils ne sont pas dogmatiques : ils ont un certain encrage empirique. Contrairement à des valeurs, ils sont aisément vérifiables par l’expérience. On peut aisément concevoir une expérience qui vérifie que :</p>
+<ul>
+<li>ne pas suivre la rationalité conduit à faire de mauvaises décisions.</li>
+<li>les idées ne sont pas vraies <em>a priori</em>, avant examen.</li>
+<li>la vérité des idées ne dépend pas de l’individu qui les défend.</li>
+</ul>
+<p>Ces axiomes (voir Section&nbsp;6.1) pourraient en fait être résumés à une simple posture sceptique face aux idées politiques : ne pas admettre sans preuves, ne pas juger sans arguments, et ne pas considérer que la manière de présenter une idée impacte sa véracité. Je pense que ces axiomes sont très raisonnables et empiriques pour qu’on les accepte comme vrais, et qu’on les utilise comme base d’une idéologie.</p>
+</section>
+</section>
+</section>
+<section id="conclusion" class="level1" data-number="7">
+<h1 data-number="7"><span class="header-section-number">7</span> Conclusion</h1>
+<p>J’ai essayé dans cet article de défendre les idées suivantes :</p>
+<ul>
+<li><p>Il ne faut pas utiliser les valeurs comme justification d’une idéologie politique (sans pour autant refuser leurs conclusions) (voir Section&nbsp;2 et Section&nbsp;3).</p></li>
+<li><p>L’idéologie politique de gauche est critique de l’ordre moral établi, et donc des valeurs. Elle se construit fondamentalement (d’un point de vue idéologique et historique) dans l’opposition à des valeurs dogmatiques (voir Section&nbsp;4).</p></li>
+<li><p>C’est pour justifier le système politique actuel que l’on choisit de mettre en avant certaines valeurs, et pas le contraire (voir Section&nbsp;5).</p></li>
+<li><p>Il est possible de justifier un système politique cohérent sans faire appel à des valeurs, mais simplement à des axiomes raisonnables (voir Section&nbsp;6).</p></li>
+</ul>
+
+
+</section>
+
+ ]]></description>
+  <category>philosophie</category>
+  <guid>https://osk42.quarto.pub/posts/philosophie/ne_pas_avoir_de_valeurs.html</guid>
+  <pubDate>Wed, 25 Sep 2024 22:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Je reprends mon blog !</title>
+  <link>https://osk42.quarto.pub/posts/news/je_reprends_mon_blog.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>Je reprends enfin ce blog, après une pause de plus d’un an pour cause de <em>perte de mot de passe</em>.</p>
+<p>J’avais en fait complètement oublié que je n’avais pas de mot de passe ! Mon compte quarto (l’outil que j’utilise pour générer ce blog) est en fait lié à mon compte <a href="https://github.com/OsKaR31415">github</a>.</p>
+<p>En 13 mois, j’ai pris beaucoup d’intérêt pour la philosophie, la politique et les sujets qui s’en rapprochent (la sociologie, la philosophie politique, en moindre mesure l’économie…). J’ai découvert la philosophie de Spinoza, et je me suis lancé dans la lecture de <em>l’Éthique</em>, son œuvre majeure, mais assez complexe à lire. J’ai également découvert des philosophes actuels, comme Bernard Friot (qui défend notamment le salaire à vie, qui n’est pas le revenu de base) ou bien Frédéric Lordon (qui cherche à allier le matérialisme Marxiste et l’axiologie Spinoziste — c’est par là que j’en suis arrivé à Spinoza).</p>
+<p>J’ai donc plutôt en tête des articles de réflexion et d’opinion sur ces sujets, et moins des articles techniques comme ceux que j’ai déjà pu écrire sur l’informatique et les mathématiques.</p>
+
+
+
+ ]]></description>
+  <category>news</category>
+  <guid>https://osk42.quarto.pub/posts/news/je_reprends_mon_blog.html</guid>
+  <pubDate>Tue, 24 Sep 2024 22:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Et si tout le monde saute d’un pont, tu le fais aussi ?</title>
+  <link>https://osk42.quarto.pub/posts/autres/si tout le monde saute dun pont.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<blockquote class="blockquote">
+<p>Et si tout le monde saute d’un pont, tu le fais aussi ?</p>
+</blockquote>
+<p>Il existe deux types de personnes : ceux qui utilisent cette phrase, et ceux qui ne l’utilisent pas. Et les premiers ont tendance à être pénibles. Voici donc ma réponse à tous ceux qui au cours d’un débat ont brandi fièrement ce fleuron de bon sens.</p>
+<p>Si on suppose que la question est de savoir si l’on est prêts à sauter d’un pont simplement parce que d’autres gens le font, la réponse est sûrement, en l’absence de variables cachée, non. Cependant, il semble important de noter que si “<em>tout le monde saute d’un pont</em>”, il y a peut-être une raison, et en tout cas certainement une conséquence moindre, car loin d’être des êtres uniquement capables de dupliquer par grégarisme les comportements de leurs camarades, les êtres humains ont une pensée qui tente à chaque instant de prévoir au mieux le futur. Ainsi, si tant de gens souhaitent volontairement sauter de ce pont, c’est qu’ils doivent en être arrivés à la conclusion que cela était bénéfique.</p>
+<p>Cependant, le lecteur éclairé aura remarqué l’analogie qui se cache derrière ce proverbe. La question est donc plutôt “le nombre de prédécesseurs légitime-t-il ?”. Il paraît alors important de remarquer que — et ce peut être justifié par l’explication précédemment donnée de la tendance de tous à faire des choix qui leur sont bénéfiques — les situations dans lesquelles la question rhétorique qui nous intéresse est utilisée sont bien souvent sans conséquences immédiatement grave, puisque personne ne voudrait prendre intentionnellement de mauvaises décisions. La plupart du temps, l’action dont le fait de sauter du pont est une analogie n’est pas réellement si grave. Le parallèle entre une action aux conséquences temporellement décalées et une action probablement mortelle, ou en tout cas dangereuse pour l’intégrité physique, parais peu soutenable, étant donné le contexte d’une discussion sur la suffisance de la reproduction sociale pour justifier ce premier type d’action. On peut également ajouter que, par sa nature condescendante et son fort appui sur le bon sens comme argument logique, “<em>Et si tout le monde saute d’un pont, tu le fais aussi</em>” est une phrase dont les locuteurs sont sûrement les mêmes qui sautent effectivement dans la rivière du sens commun lors d’une promenade sur le pont de l’argumentation.</p>
+
+
+
+ ]]></description>
+  <category>aphorisme</category>
+  <category>réflexion</category>
+  <guid>https://osk42.quarto.pub/posts/autres/si tout le monde saute dun pont.html</guid>
+  <pubDate>Wed, 09 Aug 2023 22:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>comment mieux apprendre</title>
+  <dc:creator>Oscar Plaisant</dc:creator>
+  <dc:creator>bucdany </dc:creator>
+  <link>https://osk42.quarto.pub/posts/autres/apprentissage.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<section id="techniques-pour-mieux-apprendre" class="level1">
+<h1>:techniques pour mieux apprendre</h1>
+<p>Lorsqu’on apprend quelque chose de nouveau, il faut choisir les bonnes :ressources pour apprendre, mais aussi trouver une :méthode de travail efficace.</p>
+<p>Il faut aussi garder une bonne :hygiène de vie et un bon :environnement de travail</p>
+<p><strong>:résumé visuel de l’article</strong></p>
+</section>
+<section id="x-ressources-pour-apprendre" class="level1">
+<h1>:x-ressources-pour-apprendre</h1>
+<p>Utilisez des livres, des articles, des sites internet, des :formations en ligne, des :formations académiques (université, BTS…)… choisissez <strong>le média qui vous correspond</strong>, et une :pédagogie adaptée.</p>
+<p>Apprenez à :filtrer les sources.</p>
+<p>Des ressources pertinentes, bien ciblées, évitent de perdre du temps.</p>
+<p>I est également utile de :trouver des compagnons de travail, voire une :communauté de passionnés. Ceci dit, :travailler seul est aussi possible</p>
+</section>
+<section id="x-filtrer-les-sources" class="level1">
+<h1>:x-filtrer-les-sources</h1>
+<p>Internet est très vaste, ce qui peut être décourageant. <strong>Tout n’est pas bon à prendre</strong>, il faut savoir se méfier (y compris de l’article que vous êtes en train de lire).</p>
+</section>
+<section id="x-formations-en-ligne" class="level1">
+<h1>:x-formations-en-ligne</h1>
+<p>Beaucoup de formations en ligne sont très bien faites, avec des exercices, une pédagogie réfléchie…</p>
+<p>Il existe beaucoup de formations gratuites, mais le fait de payer est une motivation pour aller jusqu’au bout d’une formation.</p>
+<p>Cela est en partie dû au :biais du coût irrécupérable</p>
+</section>
+<section id="x-biais-du-cout-irrecuperable" class="level1">
+<h1>:x-biais-du-cout-irrecuperable</h1>
+<p>Le <em>biais du coût irrécupérable</em> est la tendance qu’ont les individus à être influencés par des investissements (financiers par exemple) faits dans le passé, de façon irrationnelle.</p>
+<p><img src="https://osk42.quarto.pub/posts/autres/_images/biais_cout_irrecuperable.png" class="img-fluid"></p>
+<p>Par exemple, si vous êtes au cinéma et que vous n’aimez pas le film, la décision rationnelle serait de sortir de la salle. Mais la plupart des gens resteront, car ils ont dépensé de l’argent pour le ticket. Pourtant, <strong>cet argent est dépensé quoi que l’on fasse</strong>, on a le choix entre avoir acheté un ticket et voir un mauvais film, ou bien avoir acheté un ticket et s’amuser dehors !</p>
+<p>Ce biais, qui fait que nous ne prenons pas la décision la plus rationnelle, est le <em>biais du coût irrécupérable</em>.</p>
+</section>
+<section id="x-formations-academiques" class="level1">
+<h1>:x-formations-academiques</h1>
+<p>Les formations académiques ont plusieurs avantages :</p>
+<ul>
+<li>un cadre qui peut être plus confortable</li>
+<li>un diplôme (qui a plus ou mois de valeur selon les domaines)</li>
+<li>des :camarades, ce qui est motivant</li>
+<li>des professeurs
+<ul>
+<li>ils ont une connaissance profonde du sujet</li>
+<li>ils peuvent vous aider, répondre à vos questions</li>
+<li>ils ont de l’expérience sur le sujet qu’ils enseignent</li>
+</ul></li>
+</ul>
+</section>
+<section id="x-aimer-son-professeur-et-son-enseignement" class="level1">
+<h1>:x-aimer-son-professeur-et-son-enseignement</h1>
+<p>La pédagogie doit vous corresponde pour que l’apprentissage soit agréable.</p>
+<p>Il faut “apprendre à aimer” un enseignement, en analysant correctement et en :prenant des notes intelligentes</p>
+</section>
+<section id="x-trouver-des-compagnons-de-travail" class="level1">
+<h1>:x-trouver-des-compagnons-de-travail</h1>
+<p>L’entraide est une manière <strong>agréable</strong> d’apprendre. S’aider mutuellement permet de garder la motivation et est très gratifiant.</p>
+<p>:Expliquer et formuler des concepts aux autres permet de bien intégrer son apprentissage.</p>
+</section>
+<section id="x-methode-feynman" class="level1">
+<h1>:x-methode-feynman</h1>
+<p>C’est une partie de la méthode Feynman : <em><strong>le meilleur moyen de comprendre quelque chose est de l’expliquer</strong>, car si vous n’arrivez pas à l’expliquer simplement, c’est que vous ne le comprenez pas assez bien</em></p>
+<p>Une des idées de cette méthode est d’expliquer (de façon imaginaire) à un enfant de 12 ans ce qu’on cherche à bien apprendre. Cela permet d’identifier ce qu’on a pas bien compris : il faut retravailler les éléments que l’on n’arrive pas à expliquer.</p>
+<p><img src="https://osk42.quarto.pub/posts/autres/_images/apprentissage_et_motivation_methode_feynman.png" class="img-fluid"></p>
+</section>
+<section id="x-trouver-une-communaute" class="level1">
+<h1>:x-trouver-une-communaute</h1>
+<p>Il est très utile de trouver des communautés de gens intéressés par le sujet que vous apprenez, par exemple des forums internet, des groupes Reddit, des serveurs Discord…</p>
+<p>Une communauté de passionnés permet :</p>
+<ul>
+<li>d’avoir des réponses rapides et des conseils efficaces sur des questions particulières</li>
+<li>d’avoir des conseils efficaces pour mieux apprendre</li>
+<li>de partager des concepts et des idées
+<ul>
+<li>élaborer de nouvelles idées</li>
+<li>vous donner un éclairage sur des parties floues de votre apprentissage</li>
+</ul></li>
+<li>discuter avec des passionnés, ce qui est très motivant</li>
+</ul>
+</section>
+<section id="x-travailler-seul-est-aussi-possible" class="level1">
+<h1>:x-travailler-seul-est-aussi-possible</h1>
+<p>Être seul n’est pas la fin du monde. Il faut simplement avoir de l’<strong>autonomie</strong> (étymologiquement : <em>se fixer ses propres règles</em>), avoir une bonne :méthode de travail</p>
+</section>
+<section id="x-hygiene-de-vie" class="level1">
+<h1>:x-hygiene-de-vie</h1>
+<p>Avoir une bonne <strong>hygiène de vie</strong> est important pour être efficace. Bien <strong>dormir</strong>, faire de l’exercice physique et ne pas rester enfermé chez soi sont des choses simples qui ont beaucoup d’impact.</p>
+<p>Faire des :pauses régulières permet aussi de travailler plus longtemps sans se déconcentrer.</p>
+</section>
+<section id="x-pomodoro" class="level1">
+<h1>:x-pomodoro</h1>
+<p>La méthode <strong><em><a href="https://fr.wikipedia.org/wiki/Technique_Pomodoro">pomodoro</a></em></strong> consiste à diviser son travail en cycles de 25 minutes séparés par de courtes pauses : travail 25 min, pause 5 min, travail 25 min, pause 5 min…</p>
+<p>Cette technique permet de travailler plus longtemps et efficacement, en restant concentré.</p>
+<p>Pendant les pauses, vous pouvez faire des étirements (pour ne pas rester statique trop longtemps), lire un livre qui vous plaît, boire un café…</p>
+</section>
+<section id="x-environnement-de-travail" class="level1">
+<h1>:x-environnement-de-travail</h1>
+<p>Faites attention à votre environnement de travail, il est aussi important que les :ressources que vous utilisez.</p>
+<p>Vous devez garder un environnement :sain. Il faut aussi :séparer les environnements de travail et de divertissement</p>
+</section>
+<section id="x-environnement-sain" class="level1">
+<h1>:x-environnement-sain</h1>
+<ul>
+<li>une pièce aérée</li>
+<li>une bonne luminosité</li>
+<li>faire attention à l’ergonomie, notamment si vous travaillez sur un ordinateur</li>
+</ul>
+</section>
+<section id="x-separer-travail-et-divertissement" class="level1">
+<h1>:x-separer-travail-et-divertissement</h1>
+<ul>
+<li><strong>séparer les environnements</strong> de travail et de divertissement
+<ul>
+<li>vidéo sur la séparation des environnements (en anglais) : <a href="https://www.youtube.com/watch?v=snAhsXyO3Ck">CGP Grey - Spaceship you</a></li>
+<li>avoir un bureau bien rangé
+<ul>
+<li>éloigner la nourriture, le téléphone, les objets distrayants…
+<ul>
+<li>boire de l’eau est une alternative au grignotage</li>
+</ul></li>
+</ul></li>
+<li>rester concentré en évitant toute distraction durant les phases de travail
+<ul>
+<li>fermer les pages du navigateur et les applications qui n’ont rien à voir avec votre projet</li>
+<li>des logiciels permettent de faire cela (bloquer certaines applications pendant le travail, avoir plusieurs environnements de navigateur, un pour le travail, un pour le divertissement)
+<ul>
+<li>==TODO : liste de logiciels==</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+</section>
+<section id="x-methode-d-apprentissage" class="level1">
+<h1>:x-methode-d-apprentissage</h1>
+<p>Avoir de bonnes méthodes permet d’apprendre mieux et plus vite.</p>
+<p>Définissez-vous un :emploi du temps. Fixez-vous :de bons objectifs. Commencez par :apprendre ce que vous aimez. Faites des :projets (surtout pour apprendre la programmation).</p>
+<p>Prenez des :notes.</p>
+</section>
+<section id="x-emploi-du-temps" class="level1">
+<h1>:x-emploi-du-temps</h1>
+<ul>
+<li>se fixer un emploi du temps pour apprendre (choisir des moments dédiés à notre apprentissage)</li>
+<li>la régularité aide à rester motivé et à garder une cadence efficace</li>
+<li>espacer son apprentissage dans le temps
+<ul>
+<li>essayer de tout apprendre d’un coup est vain et décourageant</li>
+<li>cela permet de mieux mémoriser, c’est la <strong><a href="https://ncase.me/remember/fr.html">répétition espacée</a></strong></li>
+<li>essayer d’apprendre trop vite peut être décourageant, il faut du temps à votre cerveau pour intégrer les choses
+<ul>
+<li>il ne faut pas être trop impatient</li>
+</ul></li>
+</ul></li>
+</ul>
+</section>
+<section id="x-se-fixer-de-bons-objectifs" class="level1">
+<h1>:x-se-fixer-de-bons-objectifs</h1>
+<ul>
+<li><p>des objectifs <strong>SMART</strong> :</p>
+<ul>
+<li><strong>S</strong>pécifique (clairement défini)
+<ul>
+<li>il doit être clairement défini</li>
+</ul></li>
+<li><strong>M</strong>esurable
+<ul>
+<li>il doit être facile de savoir quant l’objectif est atteint</li>
+</ul></li>
+<li><strong>A</strong>tteignable
+<ul>
+<li>des objectifs trop difficiles brisent la motivation (on ne pense pas pouvoir y arriver)</li>
+</ul></li>
+<li><strong>R</strong>elevant (comprendre pertinent, vient de l’anglais <em>relevant</em>)
+<ul>
+<li>il faut que l’objectif soit utile</li>
+<li>des objectifs trop simples ne sont pas gratifiants (on a l’impression de ne pas avancer)</li>
+</ul></li>
+<li><strong>T</strong>emporel
+<ul>
+<li>doit avoir une date buttoir, pour éviter la procrastination</li>
+<li>attention à fixer une date atteignable !</li>
+</ul></li>
+</ul></li>
+<li><p>des formations (livres, :formations en lignes, écoles) donnent des objectifs bien pensés</p></li>
+<li><p>une pensée :stoïque peut aider</p></li>
+</ul>
+</section>
+<section id="x-stoicisme" class="level1">
+<h1>:x-stoicisme</h1>
+<p>La pensée stoïque peut être résumée à :</p>
+<ul>
+<li>ne pas essayer d’agir contre ce qu’on ne contrôle pas</li>
+<li>faire son possible pour changer ce que l’on peut</li>
+<li>agir sur les causes directement, et non sur les conséquences</li>
+</ul>
+</section>
+<section id="x-commencer-par-ce-quon-aime" class="level1">
+<h1>:x-commencer-par-ce-quon-aime</h1>
+<p>Il faut commencer par travailler sur ce qu’on aime, ce que l’on connaît déjà</p>
+<ul>
+<li>il est beaucoup plus facile et motivant de travailler dans une direction qu’on aime (par exemple : apprendre la programmation en fabriquant un petit jeu vidéo)</li>
+<li>utiliser ce qu’on a déjà appris, ce qu’on maîtrise déjà, pour ne pas repartir de zéro</li>
+<li>mélanger les apprentissages</li>
+</ul>
+</section>
+<section id="x-faire-des-projets" class="level1">
+<h1>:x-faire-des-projets</h1>
+<ul>
+<li>les projets sont très formateurs, ils permettent de mettre en applications vos connaissances</li>
+<li>faire des miniprojets : de petits projets qui permettent de s’entrainer</li>
+<li>bien se préparer avant de se lancer dans un projet
+<ul>
+<li>bon cahier des charges (bien définir ce qu’on veut faire)</li>
+<li>vérifier qu’on maîtrise les outils nécessaires</li>
+<li>demander à une communauté si notre idée est pertinente
+<ul>
+<li>peut-être que quelqu’un l’a déjà fait</li>
+<li>peut-être que quelqu’un a déjà essayé, et peut vous dire ce qui est à éviter, ce qui est le plus difficile</li>
+<li>peut-être qu’un aspect qui vous paraît évident ne l’est pas</li>
+<li>multiplier les points de vue est toujours bon</li>
+</ul></li>
+</ul></li>
+</ul>
+</section>
+<section id="x-prise-de-notes" class="level1">
+<h1>:x-prise-de-notes</h1>
+<p>Bien prendre des notes permet de préserver notre apprentissage.</p>
+<ul>
+<li>apprendre par cœur n’aide pas. Il faut :
+<ul>
+<li>analyser (comprendre entièrement)</li>
+<li>découper (séparer les concepts)</li>
+<li>trouver les liens entre les concepts</li>
+<li>reprendre les idées avec ses propres mots</li>
+<li>développer ses propres idées autours des concepts appris</li>
+</ul></li>
+<li>les buts de vos notes sont :
+<ul>
+<li>garder les informations importantes</li>
+<li>retrouver rapidement un concept</li>
+<li>pouvoir créer quelque chose (comme écrire un article)</li>
+</ul></li>
+<li>j’utilise :la méthode <em>zettelkasten</em> et les <em>notes liées</em> avec l’application <strong><a href="https://obsidian.md">obsidian</a></strong></li>
+</ul>
+</section>
+<section id="x-zettelkasten" class="level1">
+<h1>:x-zettelkasten</h1>
+<p>La méthode zettelkasten est un système de prise de notes qui consiste à créer des notes <strong>atomiques</strong>, et <strong>liées</strong>.</p>
+<ul>
+<li><strong>atomiques</strong> : les notes doivent parler d’un seul concept (les atomes sont indivisibles, vos notes doivent l’être aussi). Si une note parle de 2 sujets, on doit la séparer en plusieurs notes</li>
+<li><strong>liées</strong> : les concepts reliés doivent être reliés dans vos notes (avec des liens cliquables)
+<ul>
+<li>les liens peuvent créer une hiérarchie</li>
+<li>les liens peuvent rapprocher des concepts similaires</li>
+<li>les liens améliorent la navigation (on saute de note en note en cliquant)</li>
+<li>les liens ont du sens : les concepts ont plus d’intérêt si ils sont reliés</li>
+</ul></li>
+</ul>
+<p>Voici un article sur la méthode Zettelkasten : <em><a href="https://everlaab.com/methode-zettelkasten-comment-prendre-des-notes-utiles/">Méthode Zettelkasten : Comment prendre des notes utiles ?</a></em></p>
+</section>
+<section id="x-carte-mentale" class="level1">
+<h1>:x-carte-mentale</h1>
+<p><img src="https://osk42.quarto.pub/posts/autres/_images/apprentissage.png" class="img-fluid"></p>
+
+
+</section>
+
+ ]]></description>
+  <category>apprendre</category>
+  <guid>https://osk42.quarto.pub/posts/autres/apprentissage.html</guid>
+  <pubDate>Thu, 03 Aug 2023 22:00:00 GMT</pubDate>
+  <media:content url="https://osk42.quarto.pub/posts/autres/_images/apprentissage.png" medium="image" type="image/png" height="140" width="144"/>
+</item>
+<item>
+  <title>Contre, l’usage, abusif, de la virgule, dans la notation, mathématique</title>
+  <link>https://osk42.quarto.pub/posts/maths/contre l usage abusif de la virgule dans la notation mathematique.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>La notation mathématique traditionnelle cherche à traduire des phrases et des calculs en symboles.</p>
+<p>Par exemple, on peut dire “tous les nombres entiers sont pairs ou impairs”, mais on peut également écrire <img src="https://latex.codecogs.com/png.latex?%5Cforall%20n%20%5Cin%20%5Cmathbb%7BN%7D,%20%5Cquad%20(2%5Cmid%20n)%20%5Cvee%20(2%20%5Cnmid%20n)">, ce qui veut dire la même chose.</p>
+<p>La notation mathématique intéressante principalement pour deux choses :</p>
+<ul>
+<li>elle est plus lisible : on préfère <img src="https://latex.codecogs.com/png.latex?%5Cforall%20x%20%5Cin%20N,%20%5Cforall%20i,%20j%20%5Cin%20%5Cmathbb%7BN%7D,%20%5Cquad%20i%5Ctimes%20j%7Cn%20%5Cimplies%20(i%5Cmid%20n)%20%5Cwedge%20(j%5Cmid%20n)"> plutôt que “<em>si un entier est divisible par le produit de deux entiers, alors il est divisible par chacun des deux entiers</em>”</li>
+<li>elle est plus rigoureuse : écrire des théorèmes ou expressions mathématiques en français peut être ambigu et sujet à interprétation</li>
+</ul>
+<p>C’est pour cette deuxième raison que la virgule pose un problème : elle rend la notation mathématique moins rigoureuse, et parfois même ambigüe.</p>
+<section id="les-différentes-significations-de-la-virgule" class="level2">
+<h2 class="anchored" data-anchor-id="les-différentes-significations-de-la-virgule">Les différentes significations de la virgule</h2>
+<p>Pour comprendre les problèmes de la virgule, listons les significations possibles de ce symbole :</p>
+<ul>
+<li>pour des vecteurs, elle sépare les valeurs : <img src="https://latex.codecogs.com/png.latex?(x,%20y,%20z)"></li>
+<li>Elle sépare les quantificateurs : <img src="https://latex.codecogs.com/png.latex?%5Cforall%20x%20%5Cin%20%5Cmathbb%7BR%7D,%20%5Cexists%20y%20%5Cin%20%5Cmathbb%7BR%7D%20%5Cdots"></li>
+<li>Elle signifie “tel que” : <img src="https://latex.codecogs.com/png.latex?%5Cexists%20x%20%5Cin%20%5Cmathbb%7BR%7D,%20x%5E%7B2%7D%20%3C%2042"></li>
+<li>Elle “distribue” un <img src="https://latex.codecogs.com/png.latex?%5Cin"> sur plusieurs valeurs : <img src="https://latex.codecogs.com/png.latex?%5Cforall%20x,%20y%20%5Cin%20%5Cmathbb%7BR%7D%5Cdots"></li>
+</ul>
+</section>
+<section id="ambiguïtés-créées-par-la-virgule" class="level2">
+<h2 class="anchored" data-anchor-id="ambiguïtés-créées-par-la-virgule">Ambiguïtés créées par la virgule</h2>
+<p>Nous avons vu que la virgule possède plusieurs utilisations différentes. En fait, on peut aisément construire un exemple qui utilise toutes ces significations :</p>
+<p><img src="https://latex.codecogs.com/png.latex?%5Cforall%20x,%20y%20%5Cin%20%5Cmathbb%7BR%7D,%20%5Cexists%20y%20%5Cin%20%5Cmathbb%7BR%7D,%20y%20%5Cin%20(x,%20y)"></p>
+<p>Ici, on a le même problème qu’avec l’écriture en français : le même mot (symbole) peut avoir beaucoup de significations selon le contexte. On peut tout de même donner des règles qui permettent de reconnaître quelle interprétation est la bonne : - dans un vecteur (une valeur entre parenthèses), c’est un séparateur des coefficients du vecteur - avant un <img src="https://latex.codecogs.com/png.latex?%5Cin">, c’est un raccourci pour dire que toutes les variables listées appartiennent à l’ensemble désigné - Après / entre des quantificateurs - c’est un “tel que” s’il est suivi par une expression ou bien par un “il existe” - c’est un séparateur s’il est suivi par un quantificateur “pour tout” ( <img src="https://latex.codecogs.com/png.latex?%5Cforall"> )</p>
+<section id="cas-où-la-notation-est-vraiment-ambiguë" class="level3">
+<h3 class="anchored" data-anchor-id="cas-où-la-notation-est-vraiment-ambiguë">Cas où la notation est vraiment ambiguë</h3>
+<p>On a vu que, si les interprétations possibles de la virgule, on peut dire <span class="citation" data-cites="de">@de</span> façon certaine laquelle est la bonne en fonction du contexte.</p>
+<p>Mais il arrive que, quand on sait que l’on travaille sur un ensemble particulier (par exemple en arithmétique, on travaille très souvent sur <img src="https://latex.codecogs.com/png.latex?%5Cmathbb%7BZ%7D">, ou bien en analyse sur <img src="https://latex.codecogs.com/png.latex?%5Cmathbb%7BR%7D">) on note <img src="https://latex.codecogs.com/png.latex?%5Cforall%20x,%20%5Cdots"> pour dire <img src="https://latex.codecogs.com/png.latex?%5Cforall%20x%20%5Cin%20%5Ctext%7Bensemble%20concern%C3%A9%7D,%20%5Cdots">. C’est un raccourci de notation qui est pratique, mais on peut alors écrire :</p>
+<p><img src="https://latex.codecogs.com/png.latex?%5Cforall%20x,y%20%5Cin%20%5Cmathbb%7BR%7D"></p>
+<p>Le problème est le suivant : si <img src="https://latex.codecogs.com/png.latex?y"> est une variable qui dépend de <img src="https://latex.codecogs.com/png.latex?x"> (par exemple, si on a posé avant <img src="https://latex.codecogs.com/png.latex?y%20=%20x+1">), on peut interpréter l’expression comme <img src="https://latex.codecogs.com/png.latex?%5Cforall%20x%20%5Cin%20%5Cmathbb%7BR%7D,%20x+1%20%5Cin%20%5Cmathbb%7BR%7D">. L’interprétation est logique, mais on a bien sûr d’abord pensé à ceci : <img src="https://latex.codecogs.com/png.latex?%5Cforall%20x%20%5Cin%20%5Cmathbb%7BR%7D,%20%5Cforall%20y%20%5Cin%20%5Cmathbb%7BR%7D"> (ou <img src="https://latex.codecogs.com/png.latex?%5Cforall%20(x,%20y)%5Cin%20%5Cmathbb%7BR%7D%5E%7B2%7D">, ce qui est équivalent).</p>
+<p>On voit donc que quelques cas (rares, il faut l’admettre) sont réellement sujets à interprétation</p>
+</section>
+<section id="description-des-ensembles" class="level3">
+<h3 class="anchored" data-anchor-id="description-des-ensembles">Description des ensembles</h3>
+<p>Une autre notation intéressante est celle que l’on utilise pour décrire les ensembles.</p>
+<p>La notation générale est : <img src="https://latex.codecogs.com/png.latex?%5Clbrace%20x%20%5Cin%20E%20%5Cmid%20%5Cmathscr%7BP%7D(x)%20%5Crbrace"> où <img src="https://latex.codecogs.com/png.latex?%5Cmathscr%7BP%7D"> est une propriété qui dépend de <img src="https://latex.codecogs.com/png.latex?x">. On voit parfois aussi <img src="https://latex.codecogs.com/png.latex?%5Clbrace%20x%20%5Cin%20E%20:%20%5Cmathscr%7BP%7D(x)%20%5Crbrace">.</p>
+<p>Bien sûr, la propriété <img src="https://latex.codecogs.com/png.latex?%5Cmathscr%7BP%7D"> peut contenir des quantificateurs. Par exemple, on peut noter <img src="https://latex.codecogs.com/png.latex?%5Clbrace%20x%20%5Cin%20%5Cmathbb%7BR%7D%20%5Cmid%20%5Cnot%20%5Cexists%20y%20%5Cin%20%5Cmathbb%7BQ%7D,%20x%20%5Ccdot%20y%20%5Cin%20%5Cmathbb%7BZ%7D%20%5Crbrace"></p>
+<p>Ici, on note que le “tel que” est noté avec un <img src="https://latex.codecogs.com/png.latex?%5Cmid">. L’utilisation de la virgule dans ce contexte est assez rare. En effet, les expressions sont alors beaucoup moins lisibles : <img src="https://latex.codecogs.com/png.latex?%5Clbrace%20x%20%5Cin%20%5Cmathbb%7BR%7D,%20%5Cforall%20y%20%5Cin%20%5Cmathbb%7BN%7D,%20x%5Ccdot%20y%20%5Cnotin%20%5Cmathbb%7BN%7D%20%5Crbrace"> J’ai pourtant déjà vu cette expression : <img src="https://latex.codecogs.com/png.latex?%5C%7B%20%5Coverrightarrow%7BMN%7D,%20M,%20N%20%5Cin%20F%5C%7D">.</p>
+<p>Il arrive également que l’on utilise la virgule comme “et” logique : <img src="https://latex.codecogs.com/png.latex?%5Cleft%5Clbrace%20%20%5Cfrac%7Ba%7D%7Bb%7D%20%5Cmid%20a%20%5Cin%20%5Cmathbb%7BZ%7D,%20b%20%5Cin%20%5Cmathbb%7BZ%7D%5E%7B%5Cast%7D%20%20%5Cright%5Crbrace"> ou même <img src="https://latex.codecogs.com/png.latex?%5Cleft%5Clbrace%20q%20%5Cmid%20a%20%5Cin%20%5Cmathbb%7BZ%7D,%20b%20%5Cin%20%5Cmathbb%7BZ%7D%5E%7B%5Cast%7D,%20q%20=%20%5Cfrac%7Ba%7D%7Bb%7D%20%5Cright%5Crbrace">.</p>
+<p>On pourrait donc avoir cette formule : <img src="https://latex.codecogs.com/png.latex?%5Cleft%5Clbrace%20q,%20a,%20b%20%5Cin%20%5Cmathbb%7BZ%7D,%20b%20%5Cneq%200,%20q%20=%20%5Cfrac%7Ba%7D%7Bb%7D%20%5Cright%5Crbrace">, que l’on n’écrira bien sûr jamais, mais qui montre bien les nombreuses significations possibles de la virgule et le travail d’interprétation que l’on doit faire à chaque fois pour deviner laquelle est la bonne.</p>
+</section>
+</section>
+<section id="solutions-possibles" class="level2">
+<h2 class="anchored" data-anchor-id="solutions-possibles">Solutions possibles</h2>
+<section id="solution-de-la-logique-formelle" class="level3">
+<h3 class="anchored" data-anchor-id="solution-de-la-logique-formelle">Solution de la logique formelle</h3>
+<p>En logique formelle, quand on utilise les quantificateurs, on ne met jamais de virgules, ni pour les séparer, ni pour mettre plusieurs variables à la fois. Par exemple, on ne noterait pas <img src="https://latex.codecogs.com/png.latex?%5Cforall%20x,%20y%20%5Cin%20%5Cmathbb%7BR%7D,%20%5Cexists%20z%20%5Cin%20%5Cmathbb%7BR%7D,%20z%20=%20x+y">, mais plutôt <img src="https://latex.codecogs.com/png.latex?%5Cforall%20x%20%5Cin%20%5Cmathbb%7BR%7D%20%5Cleft(%20%5Cforall%20y%20%5Cin%20%5Cmathbb%7BR%7D%20%5Cleft(%20%5Cexists%20z%20%5Cin%20%5Cmathbb%7BR%7D%20%5Cleft(%20z%20=%20x+y%20%5Cright)%20%5Cright)%20%5Cright)"></p>
+<p>La solution consiste donc à : - ne jamais mettre deux variables ensemble (utiliser plusieurs quantificateurs, un par variable) - on peut aussi écrire <img src="https://latex.codecogs.com/png.latex?(x,%20y)%20%5Cin%20%5Cmathbb%7BR%7D%5E%7B2%7D"> (on a en fait qu’une seule variable : le vecteur <img src="https://latex.codecogs.com/png.latex?(x,%20y)"> ) - mettre des parenthèses plutôt que des virgules (élimine toutes les ambiguïtés)</p>
+</section>
+<section id="utiliser-de-meilleurs-symboles" class="level3">
+<h3 class="anchored" data-anchor-id="utiliser-de-meilleurs-symboles">Utiliser de meilleurs symboles</h3>
+<p>La solution proposée par la logique formelle est plutôt lourde (longue à écrire et moins lisible).</p>
+<p>On peut, plus simplement, utiliser des symboles spécialisés pour chacune des significations</p>
+<ul>
+<li>Le <img src="https://latex.codecogs.com/png.latex?;"> est un meilleur symbole pour séparer les éléments d’un vecteur
+<ul>
+<li>Dans les langues où c’est la virgule qui est l’indicateur pour les nombres décimaux, on préfère le ” <img src="https://latex.codecogs.com/png.latex?;"> ” dans les vecteurs</li>
+</ul></li>
+<li>Pour “tel que”, on préfère ” <img src="https://latex.codecogs.com/png.latex?%5Cmid"> “,” <img src="https://latex.codecogs.com/png.latex?/"> ” ou bien quelquefois ” <img src="https://latex.codecogs.com/png.latex?:"> ”
+<ul>
+<li><strong>Exemple :</strong> <img src="https://latex.codecogs.com/png.latex?%5Cforall%20x%20%5Cin%20%5Cmathbb%7BR%7D,%20%5Cexists%20y%20%5Cin%20%5Cmathbb%7BR%7D%20%5Cmid%20y%20=%20x+1"> ou bien <img src="https://latex.codecogs.com/png.latex?%5Clbrace%20x%20%5Cin%20%5Cmathbb%7BR%7D%20:%20%5Ccos(x)%20=%200%20%5Crbrace"></li>
+</ul></li>
+<li>Pour décrire que plusieurs variables sont dans un ensemble, on utilise <img src="https://latex.codecogs.com/png.latex?(x,%20y)%20%5Cin%20%5Cmathbb%7BR%7D%5E%7B2%7D"> ou bien <img src="https://latex.codecogs.com/png.latex?(x,%20y,%20z)%20%5Cin%20%5Cmathbb%7BR%7D%5E%7B3%7D"> etc.
+<ul>
+<li>On peut d’ailleurs utiliser le <img src="https://latex.codecogs.com/png.latex?;"> pour séparer les éléments : <img src="https://latex.codecogs.com/png.latex?(x;y;z)%5Cin%20%5Cmathbb%7BR%7D%5E%7B3%7D"></li>
+</ul></li>
+</ul>
+<p>Ces remplacements ont plusieurs avantages : - ils retirent toute ambiguïté, même celles qui n’en sont pas, mais qui sont des erreurs de lecture - ils sont plus lisibles : avoir un symbole pour chaque signification permet au cerveau de comprendre et d’utiliser plus facilement ces symboles et de mieux les associer à leur signification</p>
+<p>Ils ont cependant un problème : ils obligent parfois à être plus formel, et donc à écrire plus de choses. Par exemple, <img src="https://latex.codecogs.com/png.latex?%5Cleft%5Clbrace%20%5Cfrac%7Ba%7D%7Bb%7D%20%5Cmid%20a,%20b%20%5Cin%20%5Cmathbb%7BZ%7D,%20b%20%5Cneq%200%20%20%5Cright%5Crbrace"> est plus lisible que <img src="https://latex.codecogs.com/png.latex?%5Cleft%5Clbrace%20%5Cfrac%7Ba%7D%7Bb%7D%20%5Cmid%20(a;b)%5Cin%20%5Cmathbb%7BZ%7D%5Ctimes%20%5Cmathbb%7BZ%7D%5E%7B%5Cast%7D%20%20%5Cright%5Crbrace">, ou bien <img src="https://latex.codecogs.com/png.latex?%5Cleft%5Clbrace%20%5Cfrac%7Ba%7D%7Bb%7D%5Cmid%20(a;b)%5Cin%5Cmathbb%7BZ%7D%5E%7B2%7D%20%5Cwedge%20b%5Cneq%200%20%20%5Cright%5Crbrace"> ou encore <img src="https://latex.codecogs.com/png.latex?%5Cleft%5Clbrace%20%5Cfrac%7Ba%7D%7Bb%7D%20%5Cmid%20a%20%5Cin%20%5Cmathbb%7BZ%7D%20%5Cwedge%20b%20%5Cin%20%5Cmathbb%7BZ%7D%5E%7B%5Cast%7D%20%20%5Cright%5Crbrace"> (bien sûr, les 4 ont la même signification, et sont donc tous aussi simples, mais il faut moins d’efforts au cerveau pour comprendre les valeurs possibles de <img src="https://latex.codecogs.com/png.latex?a"> et <img src="https://latex.codecogs.com/png.latex?b"> dans le premier cas, car la notation donne sans détour les informations que l’on recherche).</p>
+<p>Il semble donc que, dans certains cas, c’est au contraire l’utilisation de notation plus abrégée, par exemple avec des virgules, qui est plus lisible.</p>
+</section>
+<section id="exemples" class="level3">
+<h3 class="anchored" data-anchor-id="exemples">Exemples</h3>
+<p>Voici quelques exemples d’expressions écrites en utilisant plus ou moins de virgules</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 21%">
+<col style="width: 27%">
+<col style="width: 51%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>maximum de virgules</th>
+<th>intermédiaire</th>
+<th>minimum de virgules</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><img src="https://latex.codecogs.com/png.latex?%5Cforall%20x,%20y%20%5Cin%20%5Cmathbb%7BR%7D,%20%5Cexists%20a,%20b%20%5Cin%20%5Cmathbb%7BR%7D,%20x+y%20=%20a+b,%20x%5Cneq%20a,%20y%20%5Cneq%20b"></td>
+<td><img src="https://latex.codecogs.com/png.latex?%5Cforall%20(x,%20y)%20%5Cin%20%5Cmathbb%7BR%7D%5E%7B2%7D,%20%5Cexists%20(a,%20b)%20%5Cin%20%5Cmathbb%7BR%7D%5E%7B2%7D,%20x+y%20=%20a+b%20%5Cwedge%20x%5Cneq%20a%20%5Cwedge%20y%20%5Cneq%20b"></td>
+<td><img src="https://latex.codecogs.com/png.latex?%5Cforall%20(x;y)%5Cin%5Cmathbb%7BR%7D%5E%7B2%7D,%20%5Cexists%20(a;b)%5Cin%5Cmathbb%7BR%7D%5E%7B2%7D,%20x+y=a+b%20%5Cwedge%20x%5Cneq%20a%20%5Cwedge%20y%20%5Cneq%20b"></td>
+</tr>
+<tr class="even">
+<td><img src="https://latex.codecogs.com/png.latex?%5Cleft%5Clbrace%20q,a,b%5Cin%5Cmathbb%7BZ%7D,%20b%20%5Cneq%200,%20q=%5Cfrac%7Ba%7D%7Bb%7D%20%5Cright%5Crbrace"></td>
+<td><img src="https://latex.codecogs.com/png.latex?%5Cleft%5Clbrace%20q%20%5Cmid%20a%20%5Cin%20%5Cmathbb%7BZ%7D,%20b%20%5Cin%20%5Cmathbb%7BZ%7D%5E%7B%5Cast%7D,%20q%20=%20%5Cfrac%7Ba%7D%7Bb%7D%20%5Cright%5Crbrace"></td>
+<td><img src="https://latex.codecogs.com/png.latex?%5Cleft%5Clbrace%20q%20%5Cmid%20(a;%20b)%20%5Cin%20%5Cmathbb%7BZ%7D%5E%7B2%7D%20%5Cwedge%20b%20%5Cneq%200%20%5Cwedge%20q%20=%20%5Cfrac%7Ba%7D%7Bb%7D%20%5Cright%5Crbrace"> ou bien <img src="https://latex.codecogs.com/png.latex?%5Cleft%5Clbrace%20q%20%5Cmid%20(a;%20b)%20%5Cin%20%5Cmathbb%7BZ%7D%20%5Ctimes%20%5Cmathbb%7BZ%7D%5E%7B%5Cast%7D%20%5Cwedge%20q%20=%20%5Cfrac%7Ba%7D%7Bb%7D%20%5Cright%5Crbrace"></td>
+</tr>
+<tr class="odd">
+<td><img src="https://latex.codecogs.com/png.latex?%5C%7B%20%5Coverrightarrow%7BMN%7D,M,N%20%5Cin%20F%20%5C%7D"></td>
+<td><img src="https://latex.codecogs.com/png.latex?%5C%7B%20%5Coverrightarrow%7BMN%7D%20%5Cmid%20M,%20N%20%5Cin%20F%20%5C%7D"></td>
+<td><img src="https://latex.codecogs.com/png.latex?%5C%7B%20%5Coverrightarrow%7BMN%7D%20%5Cmid%20(M,%20N)%20%5Cin%20F%5E%7B2%7D%20%5C%7D"></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="quand-utiliser-quoi" class="level3">
+<h3 class="anchored" data-anchor-id="quand-utiliser-quoi">Quand utiliser quoi ?</h3>
+<p>Nous avons vu que, dans certains cas, la virgule est plus lisible car elle abrège les notations, et nous évite des réflexions inutiles sur le sens qu’apporte un symbole donné.</p>
+<p>Mon avis personnel est donc :</p>
+<ul>
+<li>Dans un contexte où il est nécessaire d’être précis (articles, cours, énoncés, définitions…), utiliser des symboles adaptés pour chaque signification
+<ul>
+<li>notamment, le fait de ne pas utiliser de raccourcis de notation apporte un formalisme supplémentaire</li>
+</ul></li>
+<li>Dans un contexte où le but est simplement de faire comprendre (solution ou correction d’un exercice, cours et énoncés simples de choses connues ou évidentes), utiliser des virgules (et autres abréviations) peut être avantageux
+<ul>
+<li>cela allège la rédaction et rend donc la lecture et la compréhension plus rapides</li>
+<li>cela permet d’écrire plus vite (notamment utile lorsqu’on résout un exercice) J’ajouterai que, avant d’utiliser des notations raccourcies, il est nécessaire de bien comprendre comment les notations formelles fonctionnent. Pour cela, écrire sans aucune abréviation (de manière rigoureuse) est utile. Il vaut mieux s’habituer d’abord à une utilisation stricte, puis utiliser des raccourcis quand c’est justifié (ceci ne se limite pas aux raccourcis de notation traités ici, mais est valable pour toutes les abréviations, comme <img src="https://latex.codecogs.com/png.latex?2%5Cmathbb%7BN%7D"> pour <img src="https://latex.codecogs.com/png.latex?%5C%7B%202n%20%5Cmid%20n%20%5Cin%20%5Cmathbb%7BN%7D%20%5C%7D">, ou bien <img src="https://latex.codecogs.com/png.latex?%5Csum%5Climits_%7Bi%7Dv_%7Bi%7D"> pour <img src="https://latex.codecogs.com/png.latex?%5Csum%5Climits_%7Bi=0%7D%5En%20v_%7Bi%7D%20%5Ctext%7B%20o%C3%B9%20%7D%20n%20%5Ctext%7B%20est%20la%20dimension%20du%20vecteur%20%7D%20v">)</li>
+</ul></li>
+</ul>
+</section>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<p>L’utilisation de la virgule dans la notation mathématique peut parfois conduire, sinon à des ambiguïtés, à des erreurs de lectures ou d’interprétation. Elles vont aussi rendre la compréhension de certaines expressions plus difficile.</p>
+<p>Les alternatives disponibles sont meilleures, car elles facilitent la compréhension et l’écriture des mathématiques.</p>
+<p>Et en plus c’est beaucoup plus joli !</p>
+
+
+</section>
+
+ ]]></description>
+  <category>maths</category>
+  <guid>https://osk42.quarto.pub/posts/maths/contre l usage abusif de la virgule dans la notation mathematique.html</guid>
+  <pubDate>Sat, 22 Jul 2023 22:00:00 GMT</pubDate>
+  <media:content url="https://osk42.quarto.pub/posts/maths/_images/virgule.png" medium="image" type="image/png" height="52" width="71"/>
+</item>
+<item>
+  <title>Le langage APL</title>
+  <link>https://osk42.quarto.pub/posts/informatique/Le langage APL.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>APL est mon langage de programmation préféré, parce qu’il est assez mathématique, très agréable à utiliser, et qu’il change vraiment votre façon d’approcher les problèmes (comme <a href="https://en.wikipedia.org/wiki/Alan_Perlis">Alan Perlis</a> l’a dit : <a href="https://cpsc.yale.edu/epigrams-programming">“A language that doesn’t affect the way you think about programming, is not worth knowing.”</a>). Ce langage à apporté beaucoup de concepts en programmation qui sont très intéressants. Notamment, son créateur, Kenneth Iverson, à obtenu le prix Turing en 1979, pour ses travaux sur la notation mathématique, qui ont mené a la création du langage APL, pour l’utilisation éducative d’APL, et pour sa recherche sur la théorie et la pratique des langages.</p>
+<p>APL signifie “A Programming Language”, et il à été créé en 1962 (ou un peu plus tard selon comment on compte), c’est-à-dire avant le C, et 4 ans après le LISP. Pourtant, même les premières versions intègrent des concepts qui sont toujours novateurs et très intéressants (et, bien sûr, de nombreux dialectes et dérivés ont émergés depuis).</p>
+<p>La plupart des langages ou librairies qui manipulent des tableaux généralisés sont très inspirés par APL (on les appelle parfois des “Iverson ghosts”), notamment numpy (on retrouve par exemple <code>iota</code> dans beaucoup de langages, pour générer les nombres de <code>1</code> à <code>n</code>).</p>
+<p>Les principaux avantages d’APL sont :</p>
+<ul>
+<li>le paradigme “<a href="https://en.wikipedia.org/wiki/Array_programming">programmation array</a>”
+<ul>
+<li>les opérations sont généralisées le plus possible sur les tableaux (donc faire une addition de tableaux est comme faire une addition de nombres)</li>
+</ul></li>
+<li>la programmation avec des <a href="https://mlochbaum.github.io/BQN/commentary/primitive.html">primitives</a>
+<ul>
+<li>cela permet de combiner des fonctions de façon très riche, et assez facilement</li>
+<li>c’est une façon de penser que j’adore : on a beaucoup moins de travail de traduction pour l’ordinateur à faire : pas de boucles, rarement des conditions explicites, et plutôt des opération que l’on applique de différentes manières sur des listes ou tableaux
+<ul>
+<li>Encore une fois, commme <a href="https://en.wikipedia.org/wiki/Alan_Perlis">Alan Perlis</a> l’a dit : “A programming language is low level when its programs require attention to the irrelevant.”</li>
+</ul></li>
+</ul></li>
+<li>L’utilisation de symboles
+<ul>
+<li>chaque primitive est représentée par un symbole, ce qui évite d’avoir du code illisible comme quand on utilise numpy</li>
+</ul></li>
+<li>Les Dfns
+<ul>
+<li>APL permet de définir des fonction anonymes assez puissantes</li>
+<li>elles incluent la possibilité de faire de la récursion anonyme, ce qui est incroyable</li>
+</ul></li>
+<li>La concision
+<ul>
+<li>APL est très concis (par exemple, voici le code pour le jeu de la vie : <code>life ← {⊃1 ⍵ ∨.∧ 3 4 = +/ +/ ¯1 0 1 ∘.⊖ ¯1 0 1 ⌽¨ ⊂⍵}</code>)</li>
+</ul></li>
+<li>la facilité d’apprentissage
+<ul>
+<li>comme les primitives sont assez simples à apprendre, et pourtant très riches, on arrive rapidement à faire beaucoup de choses</li>
+<li>il n’y a qu’un nombre assez petit de primitives, plus quelques variables et fonctions système</li>
+</ul></li>
+<li>la notation comme outils pour la pensée
+<ul>
+<li>Iverson à notamment créé un concept (et écrit un papier pour l’expliciter en APL) : <a href="https://www.eecg.utoronto.ca/~jzhu/csc326/readings/iverson.pdf">“Notation as a tool of thought”</a></li>
+<li>Cela inclut notamment des “design patterns for a programming language” :
+<ul>
+<li>Ease of expressing constructs arising in problems.
+<ul>
+<li>primitives plutôt que boucles ou concepts bas niveau</li>
+<li>symboles pour les écrire facilement</li>
+</ul></li>
+<li>Suggestivity
+<ul>
+<li>comme “serendipity”, le fait de permettre la découverte de nouvelles choses en les suggérant</li>
+<li>les symboles et les façons riches de les combiner permettent des manipulations symboliques qui font que l’on découvre de nouvelles façons d’exprimer la même chose assez facilement</li>
+<li>cela fait que golfer un code APL (le rendre le plus court possible) revient souvent à le simplifier (contrairement à beaucoup d’autres langages où il est très facile de <em>trop</em> golfer, et que tout devienne illisible).</li>
+</ul></li>
+<li>Ability to subordinate detail
+<ul>
+<li>ne surtout pas confondre avec “ability to hide detail” : les fonctions font cela dans tous les langages</li>
+<li>plutôt que de cacher les détails dans une fonction à un autre endroit, il est plus pratique de mettre les détails à un endroit du programme où on les voit mais où on comprends qu’ils sont subordonnés</li>
+<li>La syntaxe APL (qui fonctionne de droite à gauche) permet de faire cela très facilement</li>
+<li>par exemple, le calcul de la moyenne d’une liste est <code>+/÷≢</code>. Il est plus pratique d’intégrer ce morceau de code directement dans notre code plus grand, plutôt que de définir une fonction <code>mean</code> ou <code>average</code>, qu’il faudra de toute façon consulter pour connaître les détails de son fonctionnement</li>
+</ul></li>
+<li>Economy
+<ul>
+<li>les primitives sont représentées par un seul symbole, et les symboles sont même souvent polysémiques selon leur nombre d’arguments</li>
+<li>par exemple, <code>⌈</code> est le plafond quand ses arguments sont seulement à droite, et le maximum de ses deux arguments quand l’un est à droite, l’autre à gauche (ce qui fait que la réduction par <code>⌈</code>, notée <code>⌈/</code> donne le maximum d’une liste)</li>
+</ul></li>
+<li>Amenability to formal proofs
+<ul>
+<li>aujourd’hui, on je cherche plus nécessairement à avoir des programmes dont on démontre formellement qu’ils fonctionnent (on utilise plutôt une approche empirique, avec des tests), mais le fait qu’APL soit proche de la notation mathématique fait que les démonstrations se font assez bien.</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+<p>De nombreux dialectes d’APL sont apparus depuis sa création, notamment le J, qui n’utilise que des symboles ASCII (mais parfois deux symboles pour une seule primitive), et qui à apporté les combinateurs (des fonctions qui combine des fonctions de façon assez riches) et les trains (ce qui permet d’écrire la moyenne littéralement comme “somme divisée par longueur” : <code>+/ ÷ ≢</code>). Plus récemment, le BQN est apparu, qui est plus fonctionnel, et qui apporte des primitives différentes, ainsi que des symboles parfois un peu mieux choisis.</p>
+<p>APL est vraiment un langage très particulier, la quasi totalité des gens qui l’apprennent adorent programmer avec, car il est très agréable à utiliser, mais il faut vraiment sortir de la façon “habituelle” de coder : il faut accepter que les symboles sont plus lisibles que des noms, que faire une longue ligne est plus lisible que de séparer le code en fonctions etc…</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Introduction au langage APL
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>J’ai filmé 4 vidéos qui présentent quelques bases du langage APL sur un exemple simple : comment calculer des <a href="https://fr.wikipedia.org/wiki/Triplet_pythagoricien">triplets pythagoriciens</a>.</p>
+<p><a href="https://www.youtube.com/playlist?list=PL5ZGZlm-yp_xQfzsBtD66HIMW1M97wCsE">Voir a playlist complète</a></p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=6J0Au6AKGWw&amp;list=PL5ZGZlm-yp_xQfzsBtD66HIMW1M97wCsE&amp;index=2">Vidéo 1</a></li>
+<li><a href="https://www.youtube.com/watch?v=tax604gMJvA&amp;list=PL5ZGZlm-yp_xQfzsBtD66HIMW1M97wCsE&amp;index=3">Vidéo 2</a></li>
+<li><a href="https://www.youtube.com/watch?v=iS26PGxl_oI&amp;list=PL5ZGZlm-yp_xQfzsBtD66HIMW1M97wCsE&amp;index=4">Vidéo 3</a></li>
+<li><a href="https://www.youtube.com/watch?v=yTMfEhadmyg&amp;list=PL5ZGZlm-yp_xQfzsBtD66HIMW1M97wCsE&amp;index=5">Vidéo 4</a></li>
+</ul>
+</div>
+</div>
+
+
+
+ ]]></description>
+  <category>informatique</category>
+  <guid>https://osk42.quarto.pub/posts/informatique/Le langage APL.html</guid>
+  <pubDate>Wed, 22 Mar 2023 23:00:00 GMT</pubDate>
+  <media:content url="https://osk42.quarto.pub/posts/informatique/_images/APL_logo.svg.png" medium="image" type="image/png" height="144" width="144"/>
+</item>
+<item>
+  <title>convertir des listes python en tables markdown</title>
+  <link>https://osk42.quarto.pub/posts/informatique/python convertir une liste en table markdown.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>La syntaxe <a href="https://docs.framasoft.org/fr/grav/markdown.html">markdown</a> est très pratique, car elle est légère, lisible, et qu’elle peut être facilement exportée dans de nombreux autre formats (notamment via <a href="https://pandoc.org">pandoc</a>).</p>
+<p>Certains dialectes du markdown (des <em>flavours</em>) intègrent la possibilité de faire des tableaux. Cela permet donc d’intégrer des données dans un document.</p>
+<p>Ce script vous permet de transformer des listes python en tables markdown, pour intégrer les résultats d’un calcul dans un document markdown :</p>
+<div id="7b6c45df" class="cell" data-execution_count="1">
+<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><span class="kw" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">def</span> make_markdown_table(table, alignement: <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">str</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">None</span>):</span>
+<span id="cb1-2">    <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">"""</span></span>
+<span id="cb1-3"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">    Args:</span></span>
+<span id="cb1-4"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">        table: La table python à convertir en table markdown.</span></span>
+<span id="cb1-5"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">               Elle doit être une liste de listes (rectangulaire).</span></span>
+<span id="cb1-6"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">        alignement: L'alignement des cesllules ('gauche', 'centre' ou 'droite').</span></span>
+<span id="cb1-7"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">    """</span></span>
+<span id="cb1-8">    <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># transformer tous les éléments en str</span></span>
+<span id="cb1-9">    table <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> [[<span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">str</span>(elt) <span class="cf" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">for</span> elt <span class="kw" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">in</span> line] <span class="cf" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">for</span> line <span class="kw" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">in</span> table]</span>
+<span id="cb1-10">    <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># récupérer la largeur de chaque colonne</span></span>
+<span id="cb1-11">    widths <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> [<span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">max</span>(<span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">len</span>(line[i]) <span class="cf" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">for</span> line <span class="kw" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">in</span> table) <span class="cf" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">for</span> i <span class="kw" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">in</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">range</span>(<span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">len</span>(table[<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span>]))]</span>
+<span id="cb1-12">    <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># faire que la largeur de chaque colonne soit au moins 3</span></span>
+<span id="cb1-13">    widths <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> [<span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">max</span>(w, <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">3</span>) <span class="cf" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">for</span> w <span class="kw" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">in</span> widths]</span>
+<span id="cb1-14">    <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># centrer le texte dans les colonnes</span></span>
+<span id="cb1-15">    table <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> [[elt.center(w) <span class="cf" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">for</span> elt, w <span class="kw" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">in</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">zip</span>(line, widths)] <span class="cf" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">for</span> line <span class="kw" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">in</span> table]</span>
+<span id="cb1-16"></span>
+<span id="cb1-17">    <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># séparer les titres et le contenu</span></span>
+<span id="cb1-18">    liste_titres, <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">*</span>liste_contenu <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> table</span>
+<span id="cb1-19"></span>
+<span id="cb1-20">    <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># formatter les titres</span></span>
+<span id="cb1-21">    titres <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'| '</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">' | '</span>.join(liste_titres) <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">' |'</span></span>
+<span id="cb1-22"></span>
+<span id="cb1-23">    <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># mettre l'alignement des cellules</span></span>
+<span id="cb1-24">    alignement <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">str</span>(alignement).lower()</span>
+<span id="cb1-25">    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">if</span> alignement <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">==</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'none'</span>:</span>
+<span id="cb1-26">        <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># on modifie uniquement la position des ":"</span></span>
+<span id="cb1-27">        <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># par défaut il n'y en a aucun</span></span>
+<span id="cb1-28">        bord_gauche <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>  <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'| '</span></span>
+<span id="cb1-29">        bord_centre <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">' | '</span></span>
+<span id="cb1-30">        bord_droite <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">' |'</span></span>
+<span id="cb1-31">    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">elif</span> alignement <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">==</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'centre'</span>:</span>
+<span id="cb1-32">        bord_gauche <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>  <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'|:'</span></span>
+<span id="cb1-33">        bord_centre <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">':|:'</span></span>
+<span id="cb1-34">        bord_droite <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">':|'</span></span>
+<span id="cb1-35">    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">elif</span> alignement <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">==</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'gauche'</span>:</span>
+<span id="cb1-36">        bord_gauche <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>  <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'|:'</span></span>
+<span id="cb1-37">        bord_centre <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">' |:'</span></span>
+<span id="cb1-38">        bord_droite <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">' |'</span></span>
+<span id="cb1-39">    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">elif</span> alignement <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">==</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'droite'</span>:</span>
+<span id="cb1-40">        bord_gauche <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>  <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'| '</span></span>
+<span id="cb1-41">        bord_centre <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">':| '</span></span>
+<span id="cb1-42">        bord_droite <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">':|'</span></span>
+<span id="cb1-43">    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">else</span>:</span>
+<span id="cb1-44">        <span class="cf" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">raise</span> <span class="pp" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">ValueError</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"l'alignement doit être 'gauche', 'centre' ou 'droite'."</span>)</span>
+<span id="cb1-45">    <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># la ligne de séparation entre les titres et le contenu</span></span>
+<span id="cb1-46">    separateur <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> bord_gauche <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span> bord_centre.join([<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'-'</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">*</span>w <span class="cf" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">for</span> w <span class="kw" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">in</span> widths]) <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span> bord_droite</span>
+<span id="cb1-47"></span>
+<span id="cb1-48">    <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># le contenu de la table</span></span>
+<span id="cb1-49">    contenu <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> [<span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">None</span>] <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">*</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">len</span>(liste_contenu)  <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># liste vide qui sera remplie ensuite</span></span>
+<span id="cb1-50">    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">for</span> idx, ligne <span class="kw" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">in</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">enumerate</span>(liste_contenu):</span>
+<span id="cb1-51">        <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># pour chaque ligne, on modifie le contenu au bon indice</span></span>
+<span id="cb1-52">        contenu[idx] <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'| '</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">' | '</span>.join(ligne) <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">' |'</span></span>
+<span id="cb1-53">    contenu <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'</span><span class="ch" style="color: #20794D;
+background-color: null;
+font-style: inherit;">\n</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'</span>.join(contenu)  <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># on regroupe les lignes</span></span>
+<span id="cb1-54"></span>
+<span id="cb1-55">    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">return</span> titres <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'</span><span class="ch" style="color: #20794D;
+background-color: null;
+font-style: inherit;">\n</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span> separateur <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'</span><span class="ch" style="color: #20794D;
+background-color: null;
+font-style: inherit;">\n</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span> contenu</span></code></pre></div>
+</div>
+<section id="exemples" class="level2">
+<h2 class="anchored" data-anchor-id="exemples">Exemples</h2>
+<div id="17dd4394" class="cell" data-execution_count="2">
+<div class="sourceCode cell-code" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">from</span> math <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> pi</span>
+<span id="cb2-2"></span>
+<span id="cb2-3">T <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> [[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"colonne"</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"colonne 2"</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"colonne avec un nom super long"</span>],</span>
+<span id="cb2-4">     [<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>, <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">42</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"contenu"</span>],</span>
+<span id="cb2-5">     [<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"super"</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"cool"</span>, <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">73</span>],</span>
+<span id="cb2-6">     [<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"contenu assez long"</span>, pi, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"valeur"</span>]]</span>
+<span id="cb2-7"></span>
+<span id="cb2-8"><span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">print</span>(make_markdown_table(T))</span>
+<span id="cb2-9"></span>
+<span id="cb2-10"><span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">print</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"</span><span class="ch" style="color: #20794D;
+background-color: null;
+font-style: inherit;">\n</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">Alignée à gauche"</span>)</span>
+<span id="cb2-11"><span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">print</span>(make_markdown_table(T, alignement<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'gauche'</span>))</span>
+<span id="cb2-12"></span>
+<span id="cb2-13"><span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">print</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"</span><span class="ch" style="color: #20794D;
+background-color: null;
+font-style: inherit;">\n</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">Alignée au centre"</span>)</span>
+<span id="cb2-14"><span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">print</span>(make_markdown_table(T, alignement<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'centre'</span>))</span>
+<span id="cb2-15"></span>
+<span id="cb2-16"><span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">print</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"</span><span class="ch" style="color: #20794D;
+background-color: null;
+font-style: inherit;">\n</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">Alignée à droite"</span>)</span>
+<span id="cb2-17"><span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">print</span>(make_markdown_table(T, alignement<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'droite'</span>))</span></code></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>|      colonne       |     colonne 2     | colonne avec un nom super long |
+| ------------------ | ----------------- | ------------------------------ |
+|         1          |         42        |            contenu             |
+|       super        |        cool       |               73               |
+| contenu assez long | 3.141592653589793 |             valeur             |
+
+Alignée à gauche
+|      colonne       |     colonne 2     | colonne avec un nom super long |
+|:------------------ |:----------------- |:------------------------------ |
+|         1          |         42        |            contenu             |
+|       super        |        cool       |               73               |
+| contenu assez long | 3.141592653589793 |             valeur             |
+
+Alignée au centre
+|      colonne       |     colonne 2     | colonne avec un nom super long |
+|:------------------:|:-----------------:|:------------------------------:|
+|         1          |         42        |            contenu             |
+|       super        |        cool       |               73               |
+| contenu assez long | 3.141592653589793 |             valeur             |
+
+Alignée à droite
+|      colonne       |     colonne 2     | colonne avec un nom super long |
+| ------------------:| -----------------:| ------------------------------:|
+|         1          |         42        |            contenu             |
+|       super        |        cool       |               73               |
+| contenu assez long | 3.141592653589793 |             valeur             |</code></pre>
+</div>
+</div>
+
+
+</section>
+
+ ]]></description>
+  <category>informatique</category>
+  <guid>https://osk42.quarto.pub/posts/informatique/python convertir une liste en table markdown.html</guid>
+  <pubDate>Thu, 09 Mar 2023 23:00:00 GMT</pubDate>
+  <media:content url="https://osk42.quarto.pub/posts/informatique/_images/logo_markdown.png" medium="image" type="image/png" height="89" width="144"/>
+</item>
+<item>
+  <title>algo avancee activite 4</title>
+  <link>https://osk42.quarto.pub/posts/informatique/algo_avancee/algo avancee activite 4.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Implémentation d’une liste chaînée
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<div id="3119a88c" class="cell" data-execution_count="1">
+<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><span class="kw" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">class</span> Node:</span>
+<span id="cb1-2">    <span class="kw" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">def</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">__init__</span> (<span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">self</span>, valeur, suivant<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">None</span>):</span>
+<span id="cb1-3">        <span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">self</span>.valeur <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> valeur</span>
+<span id="cb1-4">        <span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">self</span>.suivant <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> suivant</span>
+<span id="cb1-5"></span>
+<span id="cb1-6">    <span class="kw" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">def</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">__str__</span> (<span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">self</span>):</span>
+<span id="cb1-7">        <span class="cf" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">return</span> <span class="ss" style="color: #20794D;
+background-color: null;
+font-style: inherit;">f"(</span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">{</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">', '</span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">.</span>join(<span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">map</span>(<span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">str</span>, <span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">self</span>.to_list()))<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">}</span><span class="ss" style="color: #20794D;
+background-color: null;
+font-style: inherit;">)"</span></span>
+<span id="cb1-8"></span>
+<span id="cb1-9">    <span class="kw" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">def</span> to_list(<span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">self</span>) <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-&gt;</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">list</span>:</span>
+<span id="cb1-10">        <span class="cf" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">if</span> <span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">self</span>.suivant <span class="kw" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">is</span> <span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">None</span>:</span>
+<span id="cb1-11">            <span class="cf" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">return</span> [<span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">self</span>.valeur]</span>
+<span id="cb1-12">        <span class="cf" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">return</span> [<span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">self</span>.valeur] <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span> <span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">self</span>.suivant.to_list()</span></code></pre></div>
+</div>
+</div>
+</div>
+</div>
+<section id="elements-plus-grands" class="level1">
+<h1>elements plus grands</h1>
+<section id="section" class="level2">
+<h2 class="anchored" data-anchor-id="section">1.</h2>
+<blockquote class="blockquote">
+<p>Ecrire une fonction itérative <code>plusGrands(L, seuil)</code> qui retourne tous les nombres de <code>L</code> dont la valeur est au moins égale au seuil.</p>
+</blockquote>
+<div id="50d52640" class="cell" data-execution_count="2">
+<div class="sourceCode cell-code" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><span class="kw" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">def</span> plusGrands(L: Node, seuil: <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">int</span> <span class="kw" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">or</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">float</span>) <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-&gt;</span> Node:</span>
+<span id="cb2-2">    liste_plus_grands <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> Node(<span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">None</span>)</span>
+<span id="cb2-3">    tail <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> liste_plus_grands</span>
+<span id="cb2-4">    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">while</span> L <span class="kw" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">is</span> <span class="kw" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">not</span> <span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">None</span>:</span>
+<span id="cb2-5">        <span class="cf" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">if</span> L.valeur <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&gt;</span> seuil:</span>
+<span id="cb2-6">            tail.suivant <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> Node(L.valeur)</span>
+<span id="cb2-7">            tail <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> tail.suivant</span>
+<span id="cb2-8">        L <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> L.suivant</span>
+<span id="cb2-9">    <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># ne pas oublier de retirer le premier élément</span></span>
+<span id="cb2-10">    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">return</span> liste_plus_grands.suivant</span>
+<span id="cb2-11"></span>
+<span id="cb2-12">L <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> Node(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">6</span>, Node(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">42</span>, Node(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">73</span>, Node(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">28</span>, Node(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">3</span>)))))</span>
+<span id="cb2-13"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># print(plusGrands(L, 40))</span></span></code></pre></div>
+</div>
+</section>
+<section id="section-1" class="level2">
+<h2 class="anchored" data-anchor-id="section-1">2.</h2>
+<blockquote class="blockquote">
+<p>Donner mantenant une solution utilisant une fonctionelle <code>filter</code>. Cette fonctionnelle permet de conerver les éléments d’une liste vérifiant un prdivat passé en argument.</p>
+</blockquote>
+
+
+</section>
+</section>
+
+ ]]></description>
+  <category>informatique</category>
+  <guid>https://osk42.quarto.pub/posts/informatique/algo_avancee/algo avancee activite 4.html</guid>
+  <pubDate>Wed, 08 Mar 2023 23:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>algo avancee correction controle</title>
+  <link>https://osk42.quarto.pub/posts/informatique/algo_avancee/algo avancee correction controle 1.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Implémentation d’une liste chaînée
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<div id="14047c6d" class="cell" data-execution_count="1">
+<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><span class="kw" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">class</span> Node:</span>
+<span id="cb1-2">    <span class="kw" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">def</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">__init__</span> (<span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">self</span>, value, <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">next</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">None</span>):</span>
+<span id="cb1-3">        <span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">self</span>.valeur <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> value</span>
+<span id="cb1-4">        <span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">self</span>.suivant <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">next</span></span>
+<span id="cb1-5"></span>
+<span id="cb1-6">    <span class="kw" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">def</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">__str__</span> (<span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">self</span>):</span>
+<span id="cb1-7">        <span class="cf" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">return</span> <span class="ss" style="color: #20794D;
+background-color: null;
+font-style: inherit;">f"(</span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">{</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">', '</span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">.</span>join(<span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">map</span>(<span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">str</span>, <span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">self</span>.to_list()))<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">}</span><span class="ss" style="color: #20794D;
+background-color: null;
+font-style: inherit;">)"</span></span>
+<span id="cb1-8"></span>
+<span id="cb1-9">    <span class="kw" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">def</span> to_list(<span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">self</span>) <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-&gt;</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">list</span>:</span>
+<span id="cb1-10">        <span class="cf" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">if</span> <span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">self</span>.suivant <span class="kw" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">is</span> <span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">None</span>:</span>
+<span id="cb1-11">            <span class="cf" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">return</span> [<span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">self</span>.valeur]</span>
+<span id="cb1-12">        <span class="cf" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">return</span> [<span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">self</span>.valeur] <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span> <span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">self</span>.suivant.to_list()</span></code></pre></div>
+</div>
+</div>
+</div>
+</div>
+<section id="sujet-de-14h45" class="level1">
+<h1>Sujet de 14h45</h1>
+<section id="genalea" class="level2">
+<h2 class="anchored" data-anchor-id="genalea">1. <code>genAlea</code></h2>
+<div id="65f695c5" class="cell" data-execution_count="2">
+<div class="sourceCode cell-code" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">from</span> random <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> randint</span>
+<span id="cb2-2"></span>
+<span id="cb2-3"><span class="kw" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">def</span> genAlea(nb_val: <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">int</span>) <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-&gt;</span> Node:</span>
+<span id="cb2-4">    <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">"""Retourner une liste chaînée de nbVal entiers aléatoires entre 1 et 100.</span></span>
+<span id="cb2-5"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">    Args:</span></span>
+<span id="cb2-6"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">        nb_val (int): Le nombre d'entiers à générer</span></span>
+<span id="cb2-7"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">    Returns:</span></span>
+<span id="cb2-8"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">        Node: La liste de nb_val</span></span>
+<span id="cb2-9"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">    """</span></span>
+<span id="cb2-10">    res <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">None</span></span>
+<span id="cb2-11">    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">for</span> _ <span class="kw" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">in</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">range</span>(nb_val):</span>
+<span id="cb2-12">        res <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> Node(randint(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>, <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">100</span>), res)</span>
+<span id="cb2-13">    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">return</span> res</span>
+<span id="cb2-14"></span>
+<span id="cb2-15"><span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">print</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"12 nombres aléatoires :"</span>, genAlea(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">12</span>))</span></code></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>12 nombres aléatoires : (8, 83, 83, 59, 93, 1, 3, 69, 51, 57, 74, 97)</code></pre>
+</div>
+</div>
+</section>
+<section id="comptesup" class="level2">
+<h2 class="anchored" data-anchor-id="comptesup">2. <code>compteSup</code></h2>
+<div id="db1260e9" class="cell" data-execution_count="3">
+<div class="sourceCode cell-code" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><span class="kw" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">def</span> compteSup(L: Node, seuil) <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-&gt;</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">int</span>:</span>
+<span id="cb4-2">    <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">"""Retourne le nombre de valeurs de L strictement supérieures à seuil.</span></span>
+<span id="cb4-3"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">    Args:</span></span>
+<span id="cb4-4"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">        L (Node): La liste chaînée.</span></span>
+<span id="cb4-5"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">        seuil (comparable): La valeur de seuil (on compte les valeurs strictement supérieures au seuil).</span></span>
+<span id="cb4-6"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">    Returns:</span></span>
+<span id="cb4-7"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">        int: Le nombre de valeurs strictement supérieurs au seuil.</span></span>
+<span id="cb4-8"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">    """</span></span>
+<span id="cb4-9">    nb_vals_sup <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span></span>
+<span id="cb4-10">    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">while</span> L <span class="kw" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">is</span> <span class="kw" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">not</span> <span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">None</span>:</span>
+<span id="cb4-11">        <span class="cf" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">if</span> L.valeur <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&gt;</span> seuil:</span>
+<span id="cb4-12">            nb_vals_sup <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+=</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span></span>
+<span id="cb4-13">        L <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> L.suivant</span>
+<span id="cb4-14">    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">return</span> nb_vals_sup</span>
+<span id="cb4-15"></span>
+<span id="cb4-16">L <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> Node(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">3</span>, Node(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>, Node(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">4</span>, Node(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>, Node(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">5</span>, Node(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">9</span>, Node(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2</span>)))))))</span>
+<span id="cb4-17">seuil <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">4</span></span>
+<span id="cb4-18"><span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">print</span>(L, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"contient"</span>, compteSup(L, seuil), <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"valeurs strictement supérieures à"</span>, seuil)</span></code></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>(3, 1, 4, 1, 5, 9, 2) contient 2 valeurs strictement supérieures à 4</code></pre>
+</div>
+</div>
+</section>
+<section id="dansintervalle-récursivement" class="level2">
+<h2 class="anchored" data-anchor-id="dansintervalle-récursivement">3. <code>dansIntervalle</code> récursivement</h2>
+<div id="17d32165" class="cell" data-execution_count="4">
+<div class="sourceCode cell-code" id="cb6" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><span class="kw" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">def</span> dansIntervalle(L: Node, a, b) <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-&gt;</span> Node:</span>
+<span id="cb6-2">    <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">"""Créer une nouvelle liste à partir de L en ne gardant que les éléments dans l'intervalle [a, b].</span></span>
+<span id="cb6-3"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">    Args:</span></span>
+<span id="cb6-4"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">        L (Node): La liste chaînée de départ.</span></span>
+<span id="cb6-5"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">        a (comparable): Le minimum de l'intervalle</span></span>
+<span id="cb6-6"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">        b (comparable): Le maximum de l'intervalle</span></span>
+<span id="cb6-7"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">    Returns:</span></span>
+<span id="cb6-8"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">        Node: Une nouvelle liste pour laquelle on a gardé seulement les élément qui sont dans l'intervalle [a, b].</span></span>
+<span id="cb6-9"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">    """</span></span>
+<span id="cb6-10">    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">if</span> a <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&gt;</span> b:</span>
+<span id="cb6-11">        <span class="cf" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">raise</span> <span class="pp" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">ValueError</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"a doit être inférieur ou égal à b."</span>)</span>
+<span id="cb6-12">    <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">##### ajouter/enlever un # devant la ligne suivante pour changer d'implémentation #####</span></span>
+<span id="cb6-13">    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">if</span> L <span class="kw" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">is</span> <span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">None</span>: <span class="cf" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">return</span> <span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">None</span></span>
+<span id="cb6-14">    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">if</span> a <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&lt;=</span> L.valeur <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&lt;=</span> b:</span>
+<span id="cb6-15">        <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># on garde le node actuel</span></span>
+<span id="cb6-16">        <span class="cf" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">return</span> Node(L.valeur, dansIntervalle(L.suivant, a, b))</span>
+<span id="cb6-17">    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">return</span> dansIntervalle(L.suivant, a, b)</span>
+<span id="cb6-18"></span>
+<span id="cb6-19">L <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> Node(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">3</span>, Node(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>, Node(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">4</span>, Node(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>, Node(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">5</span>, Node(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">9</span>, Node(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2</span>, Node(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">6</span>, Node(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">5</span>, Node(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">3</span>, Node(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">5</span>, Node(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">8</span>, Node(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">9</span>, Node(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">7</span>, Node(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">9</span>, Node(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">3</span>, Node(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2</span>, Node(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">3</span>))))))))))))))))))</span>
+<span id="cb6-20"><span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">print</span>(dansIntervalle(L, <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2</span>, <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">4</span>))</span></code></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>(3, 4, 2, 3, 3, 2, 3)</code></pre>
+</div>
+</div>
+</section>
+<section id="dansintervalle-avec-un-itérateur-fonctionnel" class="level2">
+<h2 class="anchored" data-anchor-id="dansintervalle-avec-un-itérateur-fonctionnel">4. <code>dansIntervalle</code> avec un itérateur fonctionnel</h2>
+</section>
+<section id="implémentation-de-lfilter" class="level2 callout-info" data-collapse="true">
+<h2 class="anchored" data-anchor-id="implémentation-de-lfilter">Implémentation de <code>Lfilter</code></h2>
+<div id="9852c9de" class="cell" data-execution_count="5">
+<div class="sourceCode cell-code" id="cb8" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><span class="kw" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">def</span> Lfilter(L : Node, f):</span>
+<span id="cb8-2">    <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">"""Filtrer les valeurs de L selon le prédicat f.</span></span>
+<span id="cb8-3"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">    On garde seulement les valeurs de les pour lesquelles</span></span>
+<span id="cb8-4"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">    f(valeur) == True.</span></span>
+<span id="cb8-5"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">    Args:</span></span>
+<span id="cb8-6"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">        L (Node): La liste de départ.</span></span>
+<span id="cb8-7"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">        f (fonction): Le prédicat (fonction qui renvoie True</span></span>
+<span id="cb8-8"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">                      ou False).</span></span>
+<span id="cb8-9"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">    Returns:</span></span>
+<span id="cb8-10"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">        Node: La nouvelle liste contenant seulement les</span></span>
+<span id="cb8-11"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">              valeurs de L pour lesquelles f(valeur) == True</span></span>
+<span id="cb8-12"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">              (on conserve l'ordre).</span></span>
+<span id="cb8-13"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">    """</span></span>
+<span id="cb8-14">    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">if</span> L <span class="kw" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">is</span> <span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">None</span>:</span>
+<span id="cb8-15">        <span class="cf" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">return</span> <span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">None</span></span>
+<span id="cb8-16">    p <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> L</span>
+<span id="cb8-17">    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">while</span> p <span class="kw" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">is</span> <span class="kw" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">not</span> <span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">None</span> <span class="kw" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">and</span> <span class="kw" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">not</span> f(p.valeur):</span>
+<span id="cb8-18">        p <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> p.suivant</span>
+<span id="cb8-19">    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">if</span> p <span class="kw" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">is</span> <span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">None</span>:</span>
+<span id="cb8-20">        <span class="cf" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">return</span> <span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">None</span></span>
+<span id="cb8-21"></span>
+<span id="cb8-22">    res <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> Node(p.valeur)</span>
+<span id="cb8-23">    w <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> res</span>
+<span id="cb8-24">    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">while</span> p.suivant <span class="kw" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">is</span> <span class="kw" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">not</span> <span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">None</span>:</span>
+<span id="cb8-25">        p <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> p.suivant</span>
+<span id="cb8-26">        <span class="cf" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">if</span> f(p.valeur):</span>
+<span id="cb8-27">            w.suivant <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> Node(p.valeur)</span>
+<span id="cb8-28">            w <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> w.suivant</span>
+<span id="cb8-29">    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">return</span> res</span></code></pre></div>
+</div>
+</section>
+<div id="3507881d" class="cell" data-execution_count="6">
+<div class="sourceCode cell-code" id="cb9" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><span class="kw" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">def</span> dansIntervalle(L: Node, a, b) <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-&gt;</span> Node:</span>
+<span id="cb9-2">    <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">"""Créer une nouvelle liste à partir de L en ne gardant que les éléments dans l'intervalle [a, b].</span></span>
+<span id="cb9-3"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">    Args:</span></span>
+<span id="cb9-4"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">        L (Node): La liste chaînée de départ.</span></span>
+<span id="cb9-5"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">        a (comparable): Le minimum de l'intervalle</span></span>
+<span id="cb9-6"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">        b (comparable): Le maximum de l'intervalle</span></span>
+<span id="cb9-7"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">    Returns:</span></span>
+<span id="cb9-8"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">        Node: Une nouvelle liste pour laquelle on a gardé seulement les élément qui sont dans l'intervalle [a, b].</span></span>
+<span id="cb9-9"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">    """</span></span>
+<span id="cb9-10">    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">if</span> a <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&gt;</span> b:</span>
+<span id="cb9-11">        <span class="cf" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">raise</span> <span class="pp" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">ValueError</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"a doit être inférieur ou égal à b."</span>)</span>
+<span id="cb9-12">    <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># avec un itérateur fonctionnel</span></span>
+<span id="cb9-13">    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">return</span> Lfilter(L, <span class="kw" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">lambda</span> x: a <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&lt;=</span> x <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&lt;=</span> b)</span>
+<span id="cb9-14"></span>
+<span id="cb9-15"></span>
+<span id="cb9-16">L <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> Node(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">3</span>, Node(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>, Node(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">4</span>, Node(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>, Node(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">5</span>, Node(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">9</span>, Node(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2</span>, Node(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">6</span>, Node(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">5</span>, Node(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">3</span>, Node(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">5</span>, Node(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">8</span>, Node(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">9</span>, Node(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">7</span>, Node(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">9</span>, Node(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">3</span>, Node(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2</span>, Node(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">3</span>))))))))))))))))))</span>
+<span id="cb9-17"><span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">print</span>(dansIntervalle(L, <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2</span>, <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">4</span>))</span></code></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>(3, 4, 2, 3, 3, 2, 3)</code></pre>
+</div>
+</div>
+</section>
+<section id="sujet-de-15h30" class="level1">
+<h1>Sujet de 15h30</h1>
+<section id="genrandom" class="level2">
+<h2 class="anchored" data-anchor-id="genrandom">1. <code>genRandom</code></h2>
+<div id="697655af" class="cell" data-execution_count="7">
+<div class="sourceCode cell-code" id="cb11" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><span class="kw" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">def</span> genRandom(nbVal: <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">int</span>) <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-&gt;</span> Node:</span>
+<span id="cb11-2">    <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">"""Créer une liste de nbVal nombres aléatoires entre 0 et 20</span></span>
+<span id="cb11-3"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">    Args:</span></span>
+<span id="cb11-4"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">        nbVal (int): Le nombre de nombres aléatoires à générer.</span></span>
+<span id="cb11-5"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">    Returns:</span></span>
+<span id="cb11-6"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">        Node: Une liste chaînée qui contient `nbVal` nombre</span></span>
+<span id="cb11-7"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">              aléatoires entre 0 et 20.</span></span>
+<span id="cb11-8"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">    """</span></span>
+<span id="cb11-9">    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">if</span> nbVal <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&lt;=</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span>:</span>
+<span id="cb11-10">        <span class="cf" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">return</span> <span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">None</span></span>
+<span id="cb11-11">    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">return</span> Node(randint(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span>, <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">20</span>), genRandom(nbVal <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>))</span>
+<span id="cb11-12"></span>
+<span id="cb11-13">L <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> genRandom(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">10</span>)</span>
+<span id="cb11-14"><span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">print</span>(L)</span></code></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>(15, 6, 1, 1, 5, 16, 8, 7, 11, 20)</code></pre>
+</div>
+</div>
+</section>
+<section id="compteinf" class="level2">
+<h2 class="anchored" data-anchor-id="compteinf">2. <code>compteInf</code></h2>
+<div id="dddbd87d" class="cell" data-execution_count="8">
+<div class="sourceCode cell-code" id="cb13" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><span class="kw" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">def</span> compteInf(L: Node, seuil) <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-&gt;</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">int</span>:</span>
+<span id="cb13-2">    <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">"""Compter le nombre de valeurs strictement inférieures à `seuil` dans L.</span></span>
+<span id="cb13-3"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">    Args:</span></span>
+<span id="cb13-4"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">        L (Node): La liste dans laquelle on compte.</span></span>
+<span id="cb13-5"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">        seuil: La valeur utilisée pour les comparaisons.</span></span>
+<span id="cb13-6"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">    Returns:</span></span>
+<span id="cb13-7"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">        int: Le nombre de valeurs dans `L` qui sont</span></span>
+<span id="cb13-8"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">             strictement inférieures à `seuil`.</span></span>
+<span id="cb13-9"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">    """</span></span>
+<span id="cb13-10">    res <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span></span>
+<span id="cb13-11">    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">while</span> L <span class="kw" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">is</span> <span class="kw" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">not</span> <span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">None</span>:</span>
+<span id="cb13-12">        <span class="cf" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">if</span> L.valeur <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&lt;</span> seuil:</span>
+<span id="cb13-13">            res <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+=</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span></span>
+<span id="cb13-14">        L <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> L.suivant</span>
+<span id="cb13-15">    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">return</span> res</span>
+<span id="cb13-16"></span>
+<span id="cb13-17"><span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">print</span>(compteInf(L, <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">10</span>))</span></code></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>6</code></pre>
+</div>
+</div>
+</section>
+<section id="horsintervalle-récursivement" class="level2">
+<h2 class="anchored" data-anchor-id="horsintervalle-récursivement">3. <code>horsIntervalle</code> récursivement</h2>
+<div id="bc98f2ce" class="cell" data-execution_count="9">
+<div class="sourceCode cell-code" id="cb15" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><span class="kw" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">def</span> horsIntervalle(L: Node, a, b) <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-&gt;</span> Node:</span>
+<span id="cb15-2">    <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">"""Retirer les éléments de L qui sont dans [a, b].</span></span>
+<span id="cb15-3"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">    Args:</span></span>
+<span id="cb15-4"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">        L (Node): La liste que l'on veut filtrer.</span></span>
+<span id="cb15-5"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">        a: La valeur minimale de l'intervalle exclue.</span></span>
+<span id="cb15-6"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">        b: La valeur maximale de l'intervalle exclue.</span></span>
+<span id="cb15-7"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">    Returns:</span></span>
+<span id="cb15-8"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">        Node: Une nouvelle liste qui est L sans les élément</span></span>
+<span id="cb15-9"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">              de L qui sont compris entre a et b inclus.</span></span>
+<span id="cb15-10"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">    """</span></span>
+<span id="cb15-11">    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">if</span> a <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&gt;</span> b <span class="kw" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">or</span> L <span class="kw" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">is</span> <span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">None</span>:</span>
+<span id="cb15-12">        <span class="cf" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">return</span> <span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">None</span></span>
+<span id="cb15-13">    <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Si la valeur dépasse en dessous de a ou au dessus de b</span></span>
+<span id="cb15-14">    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">if</span> L.valeur <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&lt;</span> a <span class="kw" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">or</span> L.valeur <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&gt;</span> b :</span>
+<span id="cb15-15">        <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># on garde la valeur dan la nouvelle liste</span></span>
+<span id="cb15-16">        <span class="cf" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">return</span> Node(L.valeur, horsIntervalle(L.suivant, a, b))</span>
+<span id="cb15-17">    <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># sinon on no garde pas la valeur</span></span>
+<span id="cb15-18">    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">return</span> horsIntervalle(L.suivant, a, b)</span>
+<span id="cb15-19"></span>
+<span id="cb15-20"><span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">print</span>(horsIntervalle(L, <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">5</span>, <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">10</span>))</span></code></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>(15, 1, 1, 16, 11, 20)</code></pre>
+</div>
+</div>
+</section>
+<section id="horsintervallefonc-avec-un-itérateur-fonctionnel" class="level2">
+<h2 class="anchored" data-anchor-id="horsintervallefonc-avec-un-itérateur-fonctionnel">4. <code>horsIntervalleFonc</code> avec un itérateur fonctionnel</h2>
+<div id="80837a1c" class="cell" data-execution_count="10">
+<div class="sourceCode cell-code" id="cb17" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><span class="kw" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">def</span> horsIntervalleFonc(L: Node, a, b) <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-&gt;</span> Node:</span>
+<span id="cb17-2">    <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">"""Retirer les éléments de L qui sont dans [a, b].</span></span>
+<span id="cb17-3"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">    Args:</span></span>
+<span id="cb17-4"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">        L (Node): La liste que l'on veut filtrer.</span></span>
+<span id="cb17-5"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">        a: La valeur minimale de l'intervalle exclue.</span></span>
+<span id="cb17-6"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">        b: La valeur maximale de l'intervalle exclue.</span></span>
+<span id="cb17-7"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">    Returns:</span></span>
+<span id="cb17-8"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">        Node: Une nouvelle liste qui est L sans les élément</span></span>
+<span id="cb17-9"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">              de L qui sont compris entre a et b inclus.</span></span>
+<span id="cb17-10"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">    """</span></span>
+<span id="cb17-11">    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">if</span> a <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&gt;</span> b:</span>
+<span id="cb17-12">        <span class="cf" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">raise</span> <span class="pp" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">ValueError</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"a doit être inférieur ou égal à b."</span>)</span>
+<span id="cb17-13">    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">return</span> Lfilter(L, <span class="kw" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">lambda</span> x: x <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&lt;</span> a <span class="kw" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">or</span> x <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&gt;</span> b)</span>
+<span id="cb17-14"></span>
+<span id="cb17-15"><span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">print</span>(horsIntervalleFonc(L, <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">5</span>, <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">10</span>))</span></code></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>(15, 1, 1, 16, 11, 20)</code></pre>
+</div>
+</div>
+
+
+</section>
+</section>
+
+ ]]></description>
+  <category>informatique</category>
+  <guid>https://osk42.quarto.pub/posts/informatique/algo_avancee/algo avancee correction controle 1.html</guid>
+  <pubDate>Wed, 01 Mar 2023 23:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>terminal - btop : statistiques des processus</title>
+  <link>https://osk42.quarto.pub/posts/informatique/terminal btop.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p><code>btop</code> est un utilitaire pour visualiser les processus actifs sur votre ordinateur, et les statistiques comme la quantité d’entrée/sortie en mémoire ou réseau.</p>
+<p>Dépôt github de <code>btop</code> : <a href="https://github.com/aristocratos/btop">aristocratos/btop</a></p>
+<section id="pourquoi-btop" class="level1">
+<h1>Pourquoi <code>btop</code> ?</h1>
+<p>Il existe de nombreuses alternatives à <code>btop</code>. Il est lui-même dérivé de <code>bashtop</code> et <code>bpytop</code>.</p>
+<p>L’outil similaire le plus connu est certainement <code>top</code>, qui permet d’afficher la liste des processus en cours sur votre machine, ainsi que des statistiques sur la charge du processeur ou de la mémoire. <code>top</code> à l’avantage d’être présent sur presque toutes les machines Linux.</p>
+<p>Ceci dit, top est très simple dans son interface, et très peu intuitif.</p>
+<section id="htop" class="level2">
+<h2 class="anchored" data-anchor-id="htop"><code>htop</code></h2>
+<p>Un autre utilitaire très connu est <code>htop</code>, qui est une version plus jolie et utilisable de <code>top</code>, qui permet de chercher et filtrer les processus selon leur nom.</p>
+<p><code>htop</code> est beaucoup plus agréable à utiliser que <code>top</code>, avec des raccourcis plus intuitifs, des boutons cliquables (oui, c’est possible sur un terminal), et une interface plus agréable.</p>
+<p>Voici à quoi ressemble <code>htop</code> :</p>
+<p><img src="https://osk42.quarto.pub/posts/informatique/_images/htop.png" class="img-fluid"></p>
+</section>
+<section id="btop" class="level2">
+<h2 class="anchored" data-anchor-id="btop"><code>btop</code></h2>
+<p><code>btop</code> est un autre utilitaire du même type, mais il a quelques avantages :</p>
+<ul>
+<li>il est plus intuitif
+<ul>
+<li>les raccourcis clavier sont affichés</li>
+<li>le menu d’options est bien fait (plus simple à utiliser que celui de <code>htop</code>)</li>
+</ul></li>
+<li>il est plus joli</li>
+<li>il permet de voir plus de statistiques</li>
+</ul>
+<p><img src="https://osk42.quarto.pub/posts/informatique/_images/btop.png" class="img-fluid"></p>
+<p>Les raccourcis claviers sont montrés par la lettre en rouge dans leur nom (comme <code>m</code> pour aller dans le <code style="color: white"><span style="color:darkred">m</span>enu</code>), et chaque fenêtre peut être affichée/masquée en appuyant sur le chiffre qui lui correspond (de 1 à 4).</p>
+</section>
+</section>
+<section id="comparaison" class="level1">
+<h1>Comparaison</h1>
+<p>Voici une comparaison des interfaces des 3 outils dont j’ai parlé : <code>top</code>, <code>htop</code> et <code>btop</code></p>
+<p><img src="https://osk42.quarto.pub/posts/informatique/_images/comparaison_top_htop_btop.png" class="img-fluid"></p>
+</section>
+<section id="installer-btop" class="level1">
+<h1>Installer <code>btop</code></h1>
+<p><code>btop</code> est disponible sur la plupart des distributions linux et sur macOS. Il est probablement disponible pour votre installeur habituel (et avec <code>homebrew</code> sur macOS).</p>
+<ul>
+<li>macOS : <code>brew install btop</code></li>
+<li>ubuntu : <code>sudo apt-get update &amp;&amp; sudo apt install btop</code></li>
+</ul>
+
+
+</section>
+
+ ]]></description>
+  <category>informatique</category>
+  <guid>https://osk42.quarto.pub/posts/informatique/terminal btop.html</guid>
+  <pubDate>Sun, 19 Feb 2023 23:00:00 GMT</pubDate>
+  <media:content url="https://osk42.quarto.pub/posts/informatique/_images/btop.png" medium="image" type="image/png" height="79" width="144"/>
+</item>
+</channel>
+</rss>
