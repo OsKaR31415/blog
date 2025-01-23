@@ -8,7 +8,7 @@ title:
 ---
 link:: [[vim tips tmux]]
 
-#blog/vim-tips 
+#s/blog/vim-tips 
 
 
  - pourquoi tmux 

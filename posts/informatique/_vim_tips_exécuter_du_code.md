@@ -3,7 +3,7 @@ title:
  - make -> makefile de tommy
  - Make
 ---
-#blog/vim-tips 
+#s/blog/vim-tips 
 
 
  - make -> makefile de tommy

@@ -6,6 +6,6 @@ title:
   - `nnoremap <esc>`, `autocommand` pros/cons
 ---
 
-#blog/vim-tips
+#s/blog/vim-tips
 
  - nécessite d'expliquer d'abord [[_vim_tips_leader]]

@@ -4,3 +4,52 @@ comments: false
 ---
 
 
+::: {.callout-note icon=false}
+### Livres
+Titre - Auteur
+ - La horde du contrevent - Alain Damasio
+:::
+
+::: {.callout-note icon=false}
+### Vinyles
+Groupe - Album (année) [genre]
+
+ - Des albums de Casiopea en général (plutôt avant 1990), en particulier :
+     - Casiopea - Casiopea (1979) [jazz fusion]
+     - Casiopea - Superflight (1979) [jazz fusion]
+     - Casiopea - Cross Point (1981) [jazz fusion]
+     - Casiopea - Mint Jams (1982) [jazz fusion]
+     - Casiopea - Casiopea Live (1985) [jazz fusion]
+ - Yes - Yes songs (1973) [rock progressif]
+ - Yes - Union (1991) [rock progressif]
+ - Yes - Time and a word (1070) [rock progressif]
+ - Greenslade - Bedside Manners Are Extra (1973) [rock progressif]
+ - Genesis - Nursery Cryme (1971) [rock progressif]
+ - Pink Floyd - Dark Side of the Moon (1973)
+ - Chick Corea - The Leprechaun (1976) [jazz fusion]
+ - Sixun - L'eau de Là (1990) [jazz fusion]
+ - Steve Fai - Flex-Able (1984) [rock]
+ - Al Jarreau - Best of Al Jarreau (1996) [jazz]
+ - Al Jarreau - L is For Lover (1986) [jazz]
+ - Al Jarreau - Tenderness (1994) [jazz]
+:::
+
+
+
+::: {.callout-note icon=false}
+## Informatique, objets technologiques
+ - Disque SSD [SanDisk Extreme 1To](https://www.amazon.fr/SanDisk-Extreme-d%C3%A9criture-r%C3%A9sistant-poussi%C3%A8re/dp/B08GTYFC37)
+ - Souris [Logitech Mx master 3S](https://www.logitech.com/fr-fr/products/mice/mx-master-3s.910-006559.html) (couleur noire)
+ - clavier [zsa voyager](https://www.zsa.io/voyager/buy) (couleur noire, blank keycaps)
+ - ["moonlander platform"](https://www.zsa.io/moonlander/platform)
+ - pochette d'ordinateur ["grid-it wrap 13"](https://www.cocooninnovations.com/product_info.php?cat_id=59&product_id=230) (pour les ordinateurs 13')
+:::
+
+
+
+::: {.callout-note icon=false}
+## Autres objets
+ - 
+:::
+
+

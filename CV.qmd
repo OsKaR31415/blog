@@ -1,7 +1,246 @@
 ---
 title: "CV - Oscar Plaisant"
 comments: false
+styles: CV.css
+toc: true
 ---
 
 
+
+
+
+```{=html}
+<link rel="stylesheet" href="CV.css">
+
+<h2>Formations</h2>
+<div class="timeline">
+    <div class="outer">
+        <div class="card">
+            <div class="info">
+                <h3 class="title">
+                    <!--<span class="date">202_</span>-->
+                    Licence d'informatique
+                    <span class="right">2021-2024</span>
+                </h3>
+                <p><em>Université de Tours</em></p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="info">
+                <h3 class="title">
+                    <!--<span class="date"></span>-->
+                    Licence de mathématiques
+                    <span class="right">2023-2025</span>
+                </h3>
+                <p><em>Université de Tours</em></p>
+                <p>Actuellement en troisième année.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<h2>Postes à responsabilités</h2>
+<div class="timeline">
+    <div class="outer">
+        <div class="card">
+            <div class="info">
+                <h3 class="title">
+                    <span class="date">2025</span>
+                    Étudiant représentant élu
+                    <span class="right">au conseil de la formation et de la vie universitaire (CFVU)</span>
+                </h3>
+                <p>Décisions sur l'organisation de la formation et de la vie universitaire à l'université de Tours.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="info">
+                <h3 class="title">
+                    <span class="date">2024</span>
+                    Trésorier
+                    <span class="right">de la fédération des étudiant·e·s de l'université de Tours pour la représentation et l'égalité (FEUTRE)</span>
+                </h3>
+                <p>Association de représentation étudiante</p>
+                <p>Création de l'association, soutient de listes d'étudiant·e·s candidat·e·s </p>
+            </div>
+        </div>
+        <!--<div class="card">-->
+        <!--    <div class="info">-->
+        <!--        <h3 class="title">-->
+        <!--            <span class="date">2024</span>-->
+        <!--            Délégué Syndical-->
+        <!--            <span class="right">du syndical étudiant de Tours (SET)</span>-->
+        <!--        </h3>-->
+        <!--        <p>Représentant pour les étudiant·e·s en sciences et techniques à l'Université de Tours.</p>-->
+        <!--        <p>Organisation d'une campagne pour l'élection de représentant·e·s étudiant·e·s dans les conseils d'administration de l'université de Tours.</p>-->
+        <!--    </div>-->
+        <!--</div>-->
+<!--        <div class="card">-->
+<!--            <div class="info">-->
+<!--                <h3 class="title">-->
+<!--                    <span class="date">2023 <br/> 2024</span>-->
+<!--                    Secrétaire-->
+<!--                    <span class="right">du syndicat étudiant de Blois (SEB)</span>-->
+<!--                </h3>-->
+<!--                <p>Création de l’association, présentation et soutient d’une liste d’étudiant·e·s représen--->
+<!--tant·e·s CROUS.</p>-->
+<!--            </div>-->
+<!--        </div>-->
+        <div class="card">
+            <div class="info">
+                <h3 class="title">
+                    <span class="date">2023 <br/> 2024</span>
+                    Étudiant repésentant élu
+                    <span class="right">Assesseur de la faculté de Sciences et Techniques</span>
+                </h3>
+                <p>Délibérations sur l’organisation des études, la pédagogie, la vie étudiante, les finance-
+ments...</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="info">
+                <h3 class="title">
+                    <span class="date">2022 <br/> 2024</span>
+                    Vice-Président 
+                    <span class="right">de l'association blésoise des étudiants en informatique (ABEI)</span>
+                </h3>
+                <p>Reprise de l’association après un abandon, communication, organisation de soirée jeux.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<h2>Expériences</h2>
+<div class="timeline">
+    <div class="outer">
+        <div class="card">
+            <div class="info">
+                <h3 class="title">
+                    <!--<span class="date"></span>-->
+                    Cours particuliers
+                    <span class="right">de Mathématiques et d'Informatique</span>
+                </h3>
+                <p>Donnés à des élèves de collège, de lycée et de licence.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="info">
+                <h3 class="title">
+                    <!--<span class="date">202_</span>-->
+                    Animateur bénévole
+                    <span class="right">colonie de vacances du Kangourou des Mathématiques</span>
+                </h3>
+                <p>Durant les étés 2022 et 2024</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="info">
+                <h3 class="title">
+                    <!--<span class="date"></span>-->
+                    Échange en Nouvelle-Zélande
+                    <span class="right">juillet et août 2023</span>
+                </h3>
+                <p>Immersion dans un pays anglophone, sans entourage francophone.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="info">
+                <h3 class="title">
+                    <span class="date"></span>
+                    Conférences
+                    <span class="right">de Mathématiques et d'Informatique</span>
+                </h3>
+                <p>Données pour le festival "la nuit des maths", pour l’université d’Orléans, et en ligne.</p>
+                <p>
+                    <ul>
+                        <li>"Le fascinant jeu de la vie" (informatique et mathématiques)</li>
+                        <li>Présentation de Obsidian (outil de prise de notes et de gestion)</li>
+                        <li>"Les mémoires à cœur de ferrite" (informatique, physique)</li>
+                        <li>Rediffusions disponibles : <a href="https://youtube.com/@oskar31415">youtube.com/@oskar31415</a></li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="info">
+                <h3 class="title">
+                    <!--<span class="date">2023</span>-->
+                    Création d'un groupe de discussion
+                    <span class="right">Autour de sujets scientifiques, philosophiques, artistiques...</span>
+                </h3>
+                <p>
+                    <ul>
+                        <li>réunions mensuelles</li>
+                        <li>présentations mutuelles</li>
+                        <li>discussions et débats sur les sujets présentés</li>
+                        <li>étudiant·e·s de tout niveaux</li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<h2>Compétences et qualifications</h2>
+<div class="timeline">
+    <div class="outer">
+        <div class="card">
+            <div class="info">
+                <h3 class="title">
+                    <!--<span class="date">202_</span>-->
+                    Compétences
+                    <!--<span class="right">sous-titre</span>-->
+                </h3>
+                <p>
+                    <ul>
+                        <li>communication orale</li>
+                        <li>relations humaines</li>
+                        <li>s'approprier rapidement un nouveau sujet (rechercher et compiler des connaissances, prendre des notes)</li>
+                        <li>mémoriser des informations</li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="info">
+                <h3 class="title">
+                    <!--<span class="date">202_</span>-->
+                    Centres d'intérêt
+                    <!--<span class="right">sous-titre</span>-->
+                </h3>
+                <p>Mathématiques, Informatique, Sciences politiques, Philosophie.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="info">
+                <h3 class="title">
+                    <!--<span class="date">202_</span>-->
+                    Loisirs
+                    <!--<span class="right">sous-titre</span>-->
+                </h3>
+                <p>Musique (batterie jazz), origami, sport, cinéma, bande-dessinée, littérature.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="info">
+                <h3 class="title">
+                    <!--<span class="date">202_</span>-->
+                    Autres
+                    <span class="right">sous-titre</span>
+                </h3>
+                <p>
+                    <ul>
+                        <li>magicien professionnel (membre de la FFAP)</li>
+                        <li>professeur de kung-fu (bénévole dans un club)</li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--.timeline>.outer>.card*3>.info>h3.title>span.date{202_}+{Titre}+span.right{sous-titre}^p{corps du texte}-->
+
+```
 

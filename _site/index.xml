@@ -17,7 +17,7 @@
 <height>81</height>
 <width>144</width>
 </image>
-<generator>quarto-1.4.555</generator>
+<generator>quarto-1.6.39</generator>
 <lastBuildDate>Wed, 25 Sep 2024 22:00:00 GMT</lastBuildDate>
 <item>
   <title>Ne pas avoir de valeurs</title>
@@ -190,6 +190,10 @@ Note&nbsp;1: L’abolition de la peine de mort
 </ul>
 <p>Ces axiomes (voir Section&nbsp;6.1) pourraient en fait être résumés à une simple posture sceptique face aux idées politiques : ne pas admettre sans preuves, ne pas juger sans arguments, et ne pas considérer que la manière de présenter une idée impacte sa véracité. Je pense que ces axiomes sont très raisonnables et empiriques pour qu’on les accepte comme vrais, et qu’on les utilise comme base d’une idéologie.</p>
 </section>
+<section id="le-collectif-ne-serait-pas-impliqué-par-ces-axiomes" class="level3" data-number="6.4.3">
+<h3 data-number="6.4.3" class="anchored" data-anchor-id="le-collectif-ne-serait-pas-impliqué-par-ces-axiomes"><span class="header-section-number">6.4.3</span> Le collectif ne serait pas impliqué par ces axiomes</h3>
+<p>En discutant</p>
+</section>
 </section>
 </section>
 <section id="conclusion" class="level1" data-number="7">
@@ -208,6 +212,129 @@ Note&nbsp;1: L’abolition de la peine de mort
  ]]></description>
   <category>philosophie</category>
   <guid>https://osk42.quarto.pub/posts/philosophie/ne_pas_avoir_de_valeurs.html</guid>
+  <pubDate>Wed, 25 Sep 2024 22:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>qualification contre compétence</title>
+  <link>https://osk42.quarto.pub/posts/autres/qualification contre compétence.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<section id="définitions" class="level1">
+<h1>définitions</h1>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Qualification
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Une qualification est un <strong>savoir-faire</strong> : c’est le fait d’être capable de réaliser une mission donnée. On peut également faire rentrer les savoir théoriques dans la qualification.</p>
+<p>On associe souvent la qualification au diplôme, mais le diplôme n’est qu’un moyen d’attester d’une qualification.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Compétence
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Une compétence est un <strong>savoir-vivre</strong> : ce n’est <strong>pas une qualification</strong>, mais la capacité à s’adapter à une situation (dans une hiérarchie).</p>
+<p>Les compétences ne portent pas sur le fait de maitriser les savoirs en question, mais simplement sur la capacité à les <strong>mobiliser</strong> dans un contexte inhabituel (car si le contexte est habituel et précis, c’est alors une qualification).</p>
+</div>
+</div>
+</section>
+<section id="implications" class="level1">
+<h1>implications</h1>
+<section id="diviser" class="level2">
+<h2 class="anchored" data-anchor-id="diviser">diviser</h2>
+<p>Évaluer les gens par leurs compétences permet de les diviser : ils ont des qualités <strong>individuelles</strong>. En effet, contrairement à la compétence qui à attrait à des missions particulières, et donc à un métier, les compétences ne sont que des capacités personnelles.</p>
+<p>Cela détruit l’idée de métier, et surtout l’idée d’un <strong>corps de métier</strong>, ce qui empêche les travailleurs de se réunir, par exemple autour d’un syndicat. En effet, on ne peut pas construire de corps de métier autour de compétences. Cela se voit bien, car il n’y à pas de syndicat des personnes “capables de travailler en équipe”, “aptes à gérer un projet”, ou bien “douées en relations clients” : ce ne sont pas réellement des missions, et donc elles ne constituent pas un métier.</p>
+</section>
+<section id="ignorer-les-qualifications" class="level2">
+<h2 class="anchored" data-anchor-id="ignorer-les-qualifications">ignorer les qualifications</h2>
+<p>Si on choisit les gens en fonctions de leurs compétences plutôt que leurs qualifications, cela veut dire qu’on les évalue en fonction de leur capacité à s’adapter face à une nouvelle situation, mais pas en fonction de la qualité réelle de leur travail</p>
+<p>Cela pose plusieurs problèmes.</p>
+<p>D’abord, une compétence est encore plus subjective qu’une qualification. Par exemple, il est très difficile de mesurer “la capacité à comprendre une consigne”, car il faudrait d’abord mesurer si la consigne est compréhensible. Plus généralement, il est difficile de mesurer une “capacité à s’adapter à des situations nouvelles”.</p>
+<p>Ensuite, si on choisit les personnes en fonction de leurs compétences, on ne choisit pas les gens qui feront le meilleur travail, puisqu’on ne choisit pas les gens qui ont les meilleurs qualifications.</p>
+</section>
+<section id="organisation-par-projets" class="level2">
+<h2 class="anchored" data-anchor-id="organisation-par-projets">organisation par projets</h2>
+<p>L’organisation par projet peut être résumée à “décider de donner de l’argent et du temps en fonction seulement des compétences”.</p>
+<p>Lorsqu’une municipalité, une entreprise etc. choisit parmi des projets lequel sera financé, elle ne mesure pas les <strong>compétences</strong> des gens, mais leur <strong>qualifications</strong> : le projet est choisi parce qu’il convient à ce que les décideurs veulent faire, parce qu’il est adapté aux contraintes… Mais pas parce que les gens qui le propose sont qualifiés pour le faire.</p>
+<p>On peut faire une opposition entre le fonctionnement par projets, et le fonctionnement par <strong>emploi</strong> (on créée un poste, avec quelqu’un qui se charge de réaliser la tâche) :</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 48%">
+<col style="width: 51%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: right;">management par projet</th>
+<th>emploi d’une personne qualifiée</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">on choisit un projet seulement selon des <strong>compétences</strong></td>
+<td>on choisit un employé pour ses <strong>qualifications</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">un projet est limité dans le temps (même si l’objectif n’est pas atteint, le projet s’arrête)</td>
+<td>un employé est embauché jusqu’à ce qu’il aie atteint l’objectif fixé</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">les moyens de mise en œuvre sont choisis avec le projet (car les travailleurs sont simplement aptes à exécuter le projet)</td>
+<td>c’est l’employé qui choisit les moyens qu’il veut utilise (car il est reconnu comme qualifié, et donc apte à exercer son métier)</td>
+</tr>
+</tbody>
+</table>
+<p>Le problème est que cela rend l’opposition face aux décideurs impossible : non seulement il faut régulièrement leur présenter un projet pour avoir des finances (il faut donc un consensus sur le but du projet, même si les décideurs ne sont pas compétents sur le sujet en question), mais en plus, les appels à projets mettent en <strong>compétition</strong> les candidats, qui ne sont alors plus unis comme une <strong>profession</strong>, mais qui sont maintenant concurrents.</p>
+<p>Le management par projets est en fait un recul du statut du travailleur : un travailleur employé pour son métier peut avoir une certaine liberté dans les moyens mis en œuvre (car c’est son métier, c’est lui qui sait comment les choses doivent être faite); mais un travailleur qui exécute un projet doit suivre le plan décidé par le projet (sous peine de non-renouvellement ou de fin des financements du projet).</p>
+</section>
+<section id="pédagogie-par-competences" class="level2">
+<h2 class="anchored" data-anchor-id="pédagogie-par-competences">pédagogie par competences</h2>
+<p>La pédagogie par compétences est l’application du management par compétence pour l’enseignement. Elle consiste donc à diviser les élèves (ou étudiant·es) en compétences qu’ils valident ou non.</p>
+<p>Cela est très problématique. D’abord, si on transforme un diplôme en un ensemble de compétences individuelles, on commence à diviser et à individualiser les parcours avant même de commencer à travailler. On ne valide plus un diplôme, mais des compétences séparées. Cela ne fait qu’accentuer la division entre les travailleurs dont j’ai déjà parlé.</p>
+<p>En plus de cette division extérieure à l’enseignement, la division en compétences à un effet à l’intérieur de l’enseignement : il divise les élèves dans leur progression. Cela n’est pas réellement un problème si on considère que l’école et l’enseignement ont pour but de faire augmenter le plus vite possible le niveau des élèves. Mais si on considère que l’école à pour but de transmettre à tous les mêmes savoirs, si on pense qu’elle ne doit pas créer artificiellement des inégalités, alors la pédagogie par compétences est problématique. En effet, plus que la note ne le fait déjà (et la note est critiquée par de nombreux sociologues et pédagogues), la compétence met l’accent sur les différences entre les élèves, et encourage une hiérarchie entre les élèves. A cela s’ajoutent les prophéties auto réalisatrices : si un enseignant est convaincu qu’un élève à des lacunes dans la compétences X, cela aura une influence important sur le rapport que l’enseignant entretient avec cet élève. Une pédagogie qui veut créer de l’égalité ne devrait pas se fixer pour but d’évaluer les élèves. Au contraire, elle devrait faire en sorte de faire augmenter le niveau de tous les élèves en même temps.</p>
+<p>Enfin, comme je l’ai dit, la compétence n’est pas une qualification. L’idée d’évaluer à l’aide de compétence permet surtout une chose : poser des questions sur ce qui n’a pas été vu durant les cours. En effet, si une compétence peut être apprise, notre système éducatif les enseigne très rarement.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+L’exemple de la prise de parole en public
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Un exemple notable est le fait que le collège et le lycée demandent régulièrement aux élèves de présenter oralement leur travail. Pourtant aucun cours n’est donné sur la rhétorique, sur la manière de parler, sur la communication. Bien sûr certains enseignants présentent quelques éléments, mais cela est largement insuffisant pour permettre réellement aux élèves de maîtriser la communication orale. Actuellement, 75% des Français n’ont pas eu ou ne se souviennent pas avoir eu de formation sur la prise de parole en public. Bien sûr, certains élèves ont des parents qui peuvent leur expliquer comment faire (et même, certains élèves parlent avec leurs parents de la “bonne manière”, ce qui fait qu’ils maitrisent bien mieux le registre soutenu pour la prise de parole). Ces inégalités scolaires ne s’arrêtent pas à la fin des études. 68% des Français ressentent de la peur ou du stress lorsqu’ils doivent prendre la parole en public. Cela constitue un grand désavantage, car il est évident que l’aisance à l’oral donne un certain pouvoir (pensez à un bon orateur durant des réunions, à quelqu’un qui “sait bien se vendre”…).</p>
+<p>C’est bien la communication orale comme compétence qui pose problème : tant qu’on considère que les élèves doivent “savoir restituer oralement des éléments du cours”, on reste dans le piège de la compétence. On peut en sortir en transformant cela en qualification. On peut évaluer les élèves sur la qualité de leur rhétorique, sur la présence et la cohérence de leur plan, sur leur diction… Mais on voit que, si on évalue ces qualifications, on est obligés de les enseigner. On aurait pas idée de demander aux élèves de faire une division sans leur enseigner “parce qu’ils peuvent le déduire de la multiplication”. Ou bien, pour faire une analogie plus fidèle, on ne demande pas aux élèves de résoudre une équation simplement en leur ayant appris l’algèbre : il faut également leur apprendre les méthodes de résolution. Et pourtant, on leur demande de savoir s’exprimer à l’oral sans avoir travaillé la rhétorique, la structuration d’un discours, ou bien les registres de langage.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="conclusion" class="level1">
+<h1>Conclusion</h1>
+<p>J’espère avoir exposé assez clairement ce que je pense de l’opposition entre qualification et compétence. Pour résu</p>
+
+
+</section>
+
+ ]]></description>
+  <category>politique</category>
+  <category>réflexion</category>
+  <guid>https://osk42.quarto.pub/posts/autres/qualification contre compétence.html</guid>
   <pubDate>Wed, 25 Sep 2024 22:00:00 GMT</pubDate>
 </item>
 <item>
@@ -254,6 +381,50 @@ Note&nbsp;1: L’abolition de la peine de mort
   <category>réflexion</category>
   <guid>https://osk42.quarto.pub/posts/autres/si tout le monde saute dun pont.html</guid>
   <pubDate>Wed, 09 Aug 2023 22:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>texte étirable</title>
+  <link>https://osk42.quarto.pub/posts/autres/texte étirable.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<ul>
+<li>permet de garder le contexte
+<ul>
+<li>on ne se perds pas dans l’article</li>
+<li>on ne passe pas à une autre page comme dans un lien classique : on peut avoir des détails supplémentaires en restant dans la même page.
+<ul>
+<li>Note : tree style tabs pour garder du contexte dans les liens classiques</li>
+</ul></li>
+</ul></li>
+<li>permet d’explorer les concepts comme on le souhaite
+<ul>
+<li>on laisse le choix au lecteur sur ce qu’il va lire ou non</li>
+<li>il est plus rapide de retrouver une information, puisque l’article est une sorte de table des matières de plus en plus précise
+<ul>
+<li>le concepts est, en cela, similaire aux outlines
+<ul>
+<li>outlines (listes hiérarchiques) : une liste (comme une liste à points), organisée pour représenter une hiérarchie (une arborescence). Par exemple, une table des matières ou un plan sont des bons exemples. Un exemple d’article écrit comme outline est mon post sur <em>[[Le langage APL]]</em> - lien vers wikipedia : https://en.wikipedia.org/wiki/Outline_(list)</li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li>utilise la pensée divergente
+<ul>
+<li>similaire au mythe de la pensée arborescente</li>
+<li>pensée</li>
+</ul></li>
+</ul>
+
+
+
+ ]]></description>
+  <category>réflexion</category>
+  <category>informatique</category>
+  <guid>https://osk42.quarto.pub/posts/autres/texte étirable.html</guid>
+  <pubDate>Mon, 07 Aug 2023 22:00:00 GMT</pubDate>
 </item>
 <item>
   <title>comment mieux apprendre</title>
@@ -791,6 +962,60 @@ Introduction au langage APL
   <media:content url="https://osk42.quarto.pub/posts/informatique/_images/APL_logo.svg.png" medium="image" type="image/png" height="144" width="144"/>
 </item>
 <item>
+  <title>Pourquoi le Markdown est cool</title>
+  <link>https://osk42.quarto.pub/posts/informatique/Pourquoi le Markdown est cool.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>Le <a href="https://docs.framasoft.org/fr/grav/markdown.html">markdown</a> est une syntaxe qui permet de formatter du texte.</p>
+<p>Par exemple, ce texte :</p>
+<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1">du **Gras** et de l'*italique*.</span>
+<span id="cb1-2"></span>
+<span id="cb1-3">une liste de trucs</span>
+<span id="cb1-4"><span class="ss" style="color: #20794D;
+background-color: null;
+font-style: inherit;"> - </span>a</span>
+<span id="cb1-5"><span class="ss" style="color: #20794D;
+background-color: null;
+font-style: inherit;"> - </span>b</span>
+<span id="cb1-6"><span class="ss" style="color: #20794D;
+background-color: null;
+font-style: inherit;"> - </span>c</span>
+<span id="cb1-7"><span class="ss" style="color: #20794D;
+background-color: null;
+font-style: inherit;">     - </span>c.1</span>
+<span id="cb1-8"><span class="ss" style="color: #20794D;
+background-color: null;
+font-style: inherit;">     - </span>c.2</span></code></pre></div>
+<ul>
+<li>intégré dans de nombreuses applications
+<ul>
+<li>obsidian</li>
+<li>discord</li>
+<li>framapad</li>
+</ul></li>
+<li>code source lisible</li>
+<li>exportable</li>
+<li>compatible
+<ul>
+<li>latex</li>
+<li>html</li>
+</ul></li>
+<li>pas de distraction</li>
+</ul>
+
+
+
+ ]]></description>
+  <category>informatique</category>
+  <guid>https://osk42.quarto.pub/posts/informatique/Pourquoi le Markdown est cool.html</guid>
+  <pubDate>Thu, 09 Mar 2023 23:00:00 GMT</pubDate>
+  <media:content url="https://osk42.quarto.pub/posts/informatique/_images/logo_markdown.png" medium="image" type="image/png" height="89" width="144"/>
+</item>
+<item>
   <title>convertir des listes python en tables markdown</title>
   <link>https://osk42.quarto.pub/posts/informatique/python convertir une liste en table markdown.html</link>
   <description><![CDATA[ 
@@ -805,6 +1030,7 @@ Introduction au langage APL
 <div id="7b6c45df" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><span class="kw" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">def</span> make_markdown_table(table, alignement: <span class="bu" style="color: null;
 background-color: null;
 font-style: inherit;">str</span> <span class="op" style="color: #5E5E5E;
@@ -839,12 +1065,16 @@ font-style: inherit;">=</span> [[<span class="bu" style="color: null;
 background-color: null;
 font-style: inherit;">str</span>(elt) <span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">for</span> elt <span class="kw" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">in</span> line] <span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">for</span> line <span class="kw" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">in</span> table]</span>
 <span id="cb1-10">    <span class="co" style="color: #5E5E5E;
 background-color: null;
@@ -857,12 +1087,16 @@ font-style: inherit;">max</span>(<span class="bu" style="color: null;
 background-color: null;
 font-style: inherit;">len</span>(line[i]) <span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">for</span> line <span class="kw" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">in</span> table) <span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">for</span> i <span class="kw" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">in</span> <span class="bu" style="color: null;
 background-color: null;
 font-style: inherit;">range</span>(<span class="bu" style="color: null;
@@ -881,8 +1115,10 @@ font-style: inherit;">max</span>(w, <span class="dv" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">3</span>) <span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">for</span> w <span class="kw" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">in</span> widths]</span>
 <span id="cb1-14">    <span class="co" style="color: #5E5E5E;
 background-color: null;
@@ -891,14 +1127,18 @@ font-style: inherit;"># centrer le texte dans les colonnes</span></span>
 background-color: null;
 font-style: inherit;">=</span> [[elt.center(w) <span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">for</span> elt, w <span class="kw" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">in</span> <span class="bu" style="color: null;
 background-color: null;
 font-style: inherit;">zip</span>(line, widths)] <span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">for</span> line <span class="kw" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">in</span> table]</span>
 <span id="cb1-16"></span>
 <span id="cb1-17">    <span class="co" style="color: #5E5E5E;
@@ -937,6 +1177,7 @@ background-color: null;
 font-style: inherit;">str</span>(alignement).lower()</span>
 <span id="cb1-25">    <span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">if</span> alignement <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">==</span> <span class="st" style="color: #20794D;
@@ -965,6 +1206,7 @@ background-color: null;
 font-style: inherit;">' |'</span></span>
 <span id="cb1-31">    <span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">elif</span> alignement <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">==</span> <span class="st" style="color: #20794D;
@@ -987,6 +1229,7 @@ background-color: null;
 font-style: inherit;">':|'</span></span>
 <span id="cb1-35">    <span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">elif</span> alignement <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">==</span> <span class="st" style="color: #20794D;
@@ -1009,6 +1252,7 @@ background-color: null;
 font-style: inherit;">' |'</span></span>
 <span id="cb1-39">    <span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">elif</span> alignement <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">==</span> <span class="st" style="color: #20794D;
@@ -1031,9 +1275,11 @@ background-color: null;
 font-style: inherit;">':|'</span></span>
 <span id="cb1-43">    <span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">else</span>:</span>
 <span id="cb1-44">        <span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">raise</span> <span class="pp" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">ValueError</span>(<span class="st" style="color: #20794D;
@@ -1052,8 +1298,10 @@ font-style: inherit;">'-'</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">*</span>w <span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">for</span> w <span class="kw" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">in</span> widths]) <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">+</span> bord_droite</span>
@@ -1074,8 +1322,10 @@ background-color: null;
 font-style: inherit;"># liste vide qui sera remplie ensuite</span></span>
 <span id="cb1-50">    <span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">for</span> idx, ligne <span class="kw" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">in</span> <span class="bu" style="color: null;
 background-color: null;
 font-style: inherit;">enumerate</span>(liste_contenu):</span>
@@ -1109,6 +1359,7 @@ font-style: inherit;"># on regroupe les lignes</span></span>
 <span id="cb1-54"></span>
 <span id="cb1-55">    <span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">return</span> titres <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">+</span> <span class="st" style="color: #20794D;
@@ -1261,1219 +1512,6 @@ Alignée à droite
   <guid>https://osk42.quarto.pub/posts/informatique/python convertir une liste en table markdown.html</guid>
   <pubDate>Thu, 09 Mar 2023 23:00:00 GMT</pubDate>
   <media:content url="https://osk42.quarto.pub/posts/informatique/_images/logo_markdown.png" medium="image" type="image/png" height="89" width="144"/>
-</item>
-<item>
-  <title>algo avancee activite 4</title>
-  <link>https://osk42.quarto.pub/posts/informatique/algo_avancee/algo avancee activite 4.html</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Implémentation d’une liste chaînée
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-1" class="callout-1-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<div id="3119a88c" class="cell" data-execution_count="1">
-<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><span class="kw" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">class</span> Node:</span>
-<span id="cb1-2">    <span class="kw" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">def</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">__init__</span> (<span class="va" style="color: #111111;
-background-color: null;
-font-style: inherit;">self</span>, valeur, suivant<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span><span class="va" style="color: #111111;
-background-color: null;
-font-style: inherit;">None</span>):</span>
-<span id="cb1-3">        <span class="va" style="color: #111111;
-background-color: null;
-font-style: inherit;">self</span>.valeur <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> valeur</span>
-<span id="cb1-4">        <span class="va" style="color: #111111;
-background-color: null;
-font-style: inherit;">self</span>.suivant <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> suivant</span>
-<span id="cb1-5"></span>
-<span id="cb1-6">    <span class="kw" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">def</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">__str__</span> (<span class="va" style="color: #111111;
-background-color: null;
-font-style: inherit;">self</span>):</span>
-<span id="cb1-7">        <span class="cf" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">return</span> <span class="ss" style="color: #20794D;
-background-color: null;
-font-style: inherit;">f"(</span><span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">{</span><span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">', '</span><span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">.</span>join(<span class="bu" style="color: null;
-background-color: null;
-font-style: inherit;">map</span>(<span class="bu" style="color: null;
-background-color: null;
-font-style: inherit;">str</span>, <span class="va" style="color: #111111;
-background-color: null;
-font-style: inherit;">self</span>.to_list()))<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">}</span><span class="ss" style="color: #20794D;
-background-color: null;
-font-style: inherit;">)"</span></span>
-<span id="cb1-8"></span>
-<span id="cb1-9">    <span class="kw" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">def</span> to_list(<span class="va" style="color: #111111;
-background-color: null;
-font-style: inherit;">self</span>) <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">-&gt;</span> <span class="bu" style="color: null;
-background-color: null;
-font-style: inherit;">list</span>:</span>
-<span id="cb1-10">        <span class="cf" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">if</span> <span class="va" style="color: #111111;
-background-color: null;
-font-style: inherit;">self</span>.suivant <span class="kw" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">is</span> <span class="va" style="color: #111111;
-background-color: null;
-font-style: inherit;">None</span>:</span>
-<span id="cb1-11">            <span class="cf" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">return</span> [<span class="va" style="color: #111111;
-background-color: null;
-font-style: inherit;">self</span>.valeur]</span>
-<span id="cb1-12">        <span class="cf" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">return</span> [<span class="va" style="color: #111111;
-background-color: null;
-font-style: inherit;">self</span>.valeur] <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">+</span> <span class="va" style="color: #111111;
-background-color: null;
-font-style: inherit;">self</span>.suivant.to_list()</span></code></pre></div>
-</div>
-</div>
-</div>
-</div>
-<section id="elements-plus-grands" class="level1">
-<h1>elements plus grands</h1>
-<section id="section" class="level2">
-<h2 class="anchored" data-anchor-id="section">1.</h2>
-<blockquote class="blockquote">
-<p>Ecrire une fonction itérative <code>plusGrands(L, seuil)</code> qui retourne tous les nombres de <code>L</code> dont la valeur est au moins égale au seuil.</p>
-</blockquote>
-<div id="50d52640" class="cell" data-execution_count="2">
-<div class="sourceCode cell-code" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><span class="kw" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">def</span> plusGrands(L: Node, seuil: <span class="bu" style="color: null;
-background-color: null;
-font-style: inherit;">int</span> <span class="kw" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">or</span> <span class="bu" style="color: null;
-background-color: null;
-font-style: inherit;">float</span>) <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">-&gt;</span> Node:</span>
-<span id="cb2-2">    liste_plus_grands <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> Node(<span class="va" style="color: #111111;
-background-color: null;
-font-style: inherit;">None</span>)</span>
-<span id="cb2-3">    tail <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> liste_plus_grands</span>
-<span id="cb2-4">    <span class="cf" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">while</span> L <span class="kw" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">is</span> <span class="kw" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">not</span> <span class="va" style="color: #111111;
-background-color: null;
-font-style: inherit;">None</span>:</span>
-<span id="cb2-5">        <span class="cf" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">if</span> L.valeur <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">&gt;</span> seuil:</span>
-<span id="cb2-6">            tail.suivant <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> Node(L.valeur)</span>
-<span id="cb2-7">            tail <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> tail.suivant</span>
-<span id="cb2-8">        L <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> L.suivant</span>
-<span id="cb2-9">    <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># ne pas oublier de retirer le premier élément</span></span>
-<span id="cb2-10">    <span class="cf" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">return</span> liste_plus_grands.suivant</span>
-<span id="cb2-11"></span>
-<span id="cb2-12">L <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> Node(<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">6</span>, Node(<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">42</span>, Node(<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">73</span>, Node(<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">28</span>, Node(<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">3</span>)))))</span>
-<span id="cb2-13"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># print(plusGrands(L, 40))</span></span></code></pre></div>
-</div>
-</section>
-<section id="section-1" class="level2">
-<h2 class="anchored" data-anchor-id="section-1">2.</h2>
-<blockquote class="blockquote">
-<p>Donner mantenant une solution utilisant une fonctionelle <code>filter</code>. Cette fonctionnelle permet de conerver les éléments d’une liste vérifiant un prdivat passé en argument.</p>
-</blockquote>
-
-
-</section>
-</section>
-
- ]]></description>
-  <category>informatique</category>
-  <guid>https://osk42.quarto.pub/posts/informatique/algo_avancee/algo avancee activite 4.html</guid>
-  <pubDate>Wed, 08 Mar 2023 23:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>algo avancee correction controle</title>
-  <link>https://osk42.quarto.pub/posts/informatique/algo_avancee/algo avancee correction controle 1.html</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Implémentation d’une liste chaînée
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-1" class="callout-1-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<div id="14047c6d" class="cell" data-execution_count="1">
-<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><span class="kw" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">class</span> Node:</span>
-<span id="cb1-2">    <span class="kw" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">def</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">__init__</span> (<span class="va" style="color: #111111;
-background-color: null;
-font-style: inherit;">self</span>, value, <span class="bu" style="color: null;
-background-color: null;
-font-style: inherit;">next</span><span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span><span class="va" style="color: #111111;
-background-color: null;
-font-style: inherit;">None</span>):</span>
-<span id="cb1-3">        <span class="va" style="color: #111111;
-background-color: null;
-font-style: inherit;">self</span>.valeur <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> value</span>
-<span id="cb1-4">        <span class="va" style="color: #111111;
-background-color: null;
-font-style: inherit;">self</span>.suivant <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> <span class="bu" style="color: null;
-background-color: null;
-font-style: inherit;">next</span></span>
-<span id="cb1-5"></span>
-<span id="cb1-6">    <span class="kw" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">def</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">__str__</span> (<span class="va" style="color: #111111;
-background-color: null;
-font-style: inherit;">self</span>):</span>
-<span id="cb1-7">        <span class="cf" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">return</span> <span class="ss" style="color: #20794D;
-background-color: null;
-font-style: inherit;">f"(</span><span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">{</span><span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">', '</span><span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">.</span>join(<span class="bu" style="color: null;
-background-color: null;
-font-style: inherit;">map</span>(<span class="bu" style="color: null;
-background-color: null;
-font-style: inherit;">str</span>, <span class="va" style="color: #111111;
-background-color: null;
-font-style: inherit;">self</span>.to_list()))<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">}</span><span class="ss" style="color: #20794D;
-background-color: null;
-font-style: inherit;">)"</span></span>
-<span id="cb1-8"></span>
-<span id="cb1-9">    <span class="kw" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">def</span> to_list(<span class="va" style="color: #111111;
-background-color: null;
-font-style: inherit;">self</span>) <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">-&gt;</span> <span class="bu" style="color: null;
-background-color: null;
-font-style: inherit;">list</span>:</span>
-<span id="cb1-10">        <span class="cf" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">if</span> <span class="va" style="color: #111111;
-background-color: null;
-font-style: inherit;">self</span>.suivant <span class="kw" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">is</span> <span class="va" style="color: #111111;
-background-color: null;
-font-style: inherit;">None</span>:</span>
-<span id="cb1-11">            <span class="cf" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">return</span> [<span class="va" style="color: #111111;
-background-color: null;
-font-style: inherit;">self</span>.valeur]</span>
-<span id="cb1-12">        <span class="cf" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">return</span> [<span class="va" style="color: #111111;
-background-color: null;
-font-style: inherit;">self</span>.valeur] <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">+</span> <span class="va" style="color: #111111;
-background-color: null;
-font-style: inherit;">self</span>.suivant.to_list()</span></code></pre></div>
-</div>
-</div>
-</div>
-</div>
-<section id="sujet-de-14h45" class="level1">
-<h1>Sujet de 14h45</h1>
-<section id="genalea" class="level2">
-<h2 class="anchored" data-anchor-id="genalea">1. <code>genAlea</code></h2>
-<div id="65f695c5" class="cell" data-execution_count="2">
-<div class="sourceCode cell-code" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><span class="im" style="color: #00769E;
-background-color: null;
-font-style: inherit;">from</span> random <span class="im" style="color: #00769E;
-background-color: null;
-font-style: inherit;">import</span> randint</span>
-<span id="cb2-2"></span>
-<span id="cb2-3"><span class="kw" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">def</span> genAlea(nb_val: <span class="bu" style="color: null;
-background-color: null;
-font-style: inherit;">int</span>) <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">-&gt;</span> Node:</span>
-<span id="cb2-4">    <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">"""Retourner une liste chaînée de nbVal entiers aléatoires entre 1 et 100.</span></span>
-<span id="cb2-5"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">    Args:</span></span>
-<span id="cb2-6"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">        nb_val (int): Le nombre d'entiers à générer</span></span>
-<span id="cb2-7"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">    Returns:</span></span>
-<span id="cb2-8"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">        Node: La liste de nb_val</span></span>
-<span id="cb2-9"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">    """</span></span>
-<span id="cb2-10">    res <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> <span class="va" style="color: #111111;
-background-color: null;
-font-style: inherit;">None</span></span>
-<span id="cb2-11">    <span class="cf" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">for</span> _ <span class="kw" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">in</span> <span class="bu" style="color: null;
-background-color: null;
-font-style: inherit;">range</span>(nb_val):</span>
-<span id="cb2-12">        res <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> Node(randint(<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">1</span>, <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">100</span>), res)</span>
-<span id="cb2-13">    <span class="cf" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">return</span> res</span>
-<span id="cb2-14"></span>
-<span id="cb2-15"><span class="bu" style="color: null;
-background-color: null;
-font-style: inherit;">print</span>(<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"12 nombres aléatoires :"</span>, genAlea(<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">12</span>))</span></code></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>12 nombres aléatoires : (8, 83, 83, 59, 93, 1, 3, 69, 51, 57, 74, 97)</code></pre>
-</div>
-</div>
-</section>
-<section id="comptesup" class="level2">
-<h2 class="anchored" data-anchor-id="comptesup">2. <code>compteSup</code></h2>
-<div id="db1260e9" class="cell" data-execution_count="3">
-<div class="sourceCode cell-code" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><span class="kw" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">def</span> compteSup(L: Node, seuil) <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">-&gt;</span> <span class="bu" style="color: null;
-background-color: null;
-font-style: inherit;">int</span>:</span>
-<span id="cb4-2">    <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">"""Retourne le nombre de valeurs de L strictement supérieures à seuil.</span></span>
-<span id="cb4-3"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">    Args:</span></span>
-<span id="cb4-4"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">        L (Node): La liste chaînée.</span></span>
-<span id="cb4-5"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">        seuil (comparable): La valeur de seuil (on compte les valeurs strictement supérieures au seuil).</span></span>
-<span id="cb4-6"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">    Returns:</span></span>
-<span id="cb4-7"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">        int: Le nombre de valeurs strictement supérieurs au seuil.</span></span>
-<span id="cb4-8"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">    """</span></span>
-<span id="cb4-9">    nb_vals_sup <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">0</span></span>
-<span id="cb4-10">    <span class="cf" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">while</span> L <span class="kw" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">is</span> <span class="kw" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">not</span> <span class="va" style="color: #111111;
-background-color: null;
-font-style: inherit;">None</span>:</span>
-<span id="cb4-11">        <span class="cf" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">if</span> L.valeur <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">&gt;</span> seuil:</span>
-<span id="cb4-12">            nb_vals_sup <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">+=</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">1</span></span>
-<span id="cb4-13">        L <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> L.suivant</span>
-<span id="cb4-14">    <span class="cf" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">return</span> nb_vals_sup</span>
-<span id="cb4-15"></span>
-<span id="cb4-16">L <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> Node(<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">3</span>, Node(<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">1</span>, Node(<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">4</span>, Node(<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">1</span>, Node(<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">5</span>, Node(<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">9</span>, Node(<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">2</span>)))))))</span>
-<span id="cb4-17">seuil <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">4</span></span>
-<span id="cb4-18"><span class="bu" style="color: null;
-background-color: null;
-font-style: inherit;">print</span>(L, <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"contient"</span>, compteSup(L, seuil), <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"valeurs strictement supérieures à"</span>, seuil)</span></code></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>(3, 1, 4, 1, 5, 9, 2) contient 2 valeurs strictement supérieures à 4</code></pre>
-</div>
-</div>
-</section>
-<section id="dansintervalle-récursivement" class="level2">
-<h2 class="anchored" data-anchor-id="dansintervalle-récursivement">3. <code>dansIntervalle</code> récursivement</h2>
-<div id="17d32165" class="cell" data-execution_count="4">
-<div class="sourceCode cell-code" id="cb6" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><span class="kw" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">def</span> dansIntervalle(L: Node, a, b) <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">-&gt;</span> Node:</span>
-<span id="cb6-2">    <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">"""Créer une nouvelle liste à partir de L en ne gardant que les éléments dans l'intervalle [a, b].</span></span>
-<span id="cb6-3"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">    Args:</span></span>
-<span id="cb6-4"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">        L (Node): La liste chaînée de départ.</span></span>
-<span id="cb6-5"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">        a (comparable): Le minimum de l'intervalle</span></span>
-<span id="cb6-6"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">        b (comparable): Le maximum de l'intervalle</span></span>
-<span id="cb6-7"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">    Returns:</span></span>
-<span id="cb6-8"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">        Node: Une nouvelle liste pour laquelle on a gardé seulement les élément qui sont dans l'intervalle [a, b].</span></span>
-<span id="cb6-9"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">    """</span></span>
-<span id="cb6-10">    <span class="cf" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">if</span> a <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">&gt;</span> b:</span>
-<span id="cb6-11">        <span class="cf" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">raise</span> <span class="pp" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">ValueError</span>(<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"a doit être inférieur ou égal à b."</span>)</span>
-<span id="cb6-12">    <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">##### ajouter/enlever un # devant la ligne suivante pour changer d'implémentation #####</span></span>
-<span id="cb6-13">    <span class="cf" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">if</span> L <span class="kw" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">is</span> <span class="va" style="color: #111111;
-background-color: null;
-font-style: inherit;">None</span>: <span class="cf" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">return</span> <span class="va" style="color: #111111;
-background-color: null;
-font-style: inherit;">None</span></span>
-<span id="cb6-14">    <span class="cf" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">if</span> a <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">&lt;=</span> L.valeur <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">&lt;=</span> b:</span>
-<span id="cb6-15">        <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># on garde le node actuel</span></span>
-<span id="cb6-16">        <span class="cf" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">return</span> Node(L.valeur, dansIntervalle(L.suivant, a, b))</span>
-<span id="cb6-17">    <span class="cf" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">return</span> dansIntervalle(L.suivant, a, b)</span>
-<span id="cb6-18"></span>
-<span id="cb6-19">L <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> Node(<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">3</span>, Node(<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">1</span>, Node(<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">4</span>, Node(<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">1</span>, Node(<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">5</span>, Node(<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">9</span>, Node(<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">2</span>, Node(<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">6</span>, Node(<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">5</span>, Node(<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">3</span>, Node(<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">5</span>, Node(<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">8</span>, Node(<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">9</span>, Node(<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">7</span>, Node(<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">9</span>, Node(<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">3</span>, Node(<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">2</span>, Node(<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">3</span>))))))))))))))))))</span>
-<span id="cb6-20"><span class="bu" style="color: null;
-background-color: null;
-font-style: inherit;">print</span>(dansIntervalle(L, <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">2</span>, <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">4</span>))</span></code></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>(3, 4, 2, 3, 3, 2, 3)</code></pre>
-</div>
-</div>
-</section>
-<section id="dansintervalle-avec-un-itérateur-fonctionnel" class="level2">
-<h2 class="anchored" data-anchor-id="dansintervalle-avec-un-itérateur-fonctionnel">4. <code>dansIntervalle</code> avec un itérateur fonctionnel</h2>
-</section>
-<section id="implémentation-de-lfilter" class="level2 callout-info" data-collapse="true">
-<h2 class="anchored" data-anchor-id="implémentation-de-lfilter">Implémentation de <code>Lfilter</code></h2>
-<div id="9852c9de" class="cell" data-execution_count="5">
-<div class="sourceCode cell-code" id="cb8" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><span class="kw" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">def</span> Lfilter(L : Node, f):</span>
-<span id="cb8-2">    <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">"""Filtrer les valeurs de L selon le prédicat f.</span></span>
-<span id="cb8-3"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">    On garde seulement les valeurs de les pour lesquelles</span></span>
-<span id="cb8-4"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">    f(valeur) == True.</span></span>
-<span id="cb8-5"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">    Args:</span></span>
-<span id="cb8-6"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">        L (Node): La liste de départ.</span></span>
-<span id="cb8-7"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">        f (fonction): Le prédicat (fonction qui renvoie True</span></span>
-<span id="cb8-8"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">                      ou False).</span></span>
-<span id="cb8-9"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">    Returns:</span></span>
-<span id="cb8-10"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">        Node: La nouvelle liste contenant seulement les</span></span>
-<span id="cb8-11"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">              valeurs de L pour lesquelles f(valeur) == True</span></span>
-<span id="cb8-12"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">              (on conserve l'ordre).</span></span>
-<span id="cb8-13"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">    """</span></span>
-<span id="cb8-14">    <span class="cf" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">if</span> L <span class="kw" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">is</span> <span class="va" style="color: #111111;
-background-color: null;
-font-style: inherit;">None</span>:</span>
-<span id="cb8-15">        <span class="cf" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">return</span> <span class="va" style="color: #111111;
-background-color: null;
-font-style: inherit;">None</span></span>
-<span id="cb8-16">    p <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> L</span>
-<span id="cb8-17">    <span class="cf" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">while</span> p <span class="kw" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">is</span> <span class="kw" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">not</span> <span class="va" style="color: #111111;
-background-color: null;
-font-style: inherit;">None</span> <span class="kw" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">and</span> <span class="kw" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">not</span> f(p.valeur):</span>
-<span id="cb8-18">        p <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> p.suivant</span>
-<span id="cb8-19">    <span class="cf" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">if</span> p <span class="kw" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">is</span> <span class="va" style="color: #111111;
-background-color: null;
-font-style: inherit;">None</span>:</span>
-<span id="cb8-20">        <span class="cf" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">return</span> <span class="va" style="color: #111111;
-background-color: null;
-font-style: inherit;">None</span></span>
-<span id="cb8-21"></span>
-<span id="cb8-22">    res <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> Node(p.valeur)</span>
-<span id="cb8-23">    w <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> res</span>
-<span id="cb8-24">    <span class="cf" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">while</span> p.suivant <span class="kw" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">is</span> <span class="kw" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">not</span> <span class="va" style="color: #111111;
-background-color: null;
-font-style: inherit;">None</span>:</span>
-<span id="cb8-25">        p <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> p.suivant</span>
-<span id="cb8-26">        <span class="cf" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">if</span> f(p.valeur):</span>
-<span id="cb8-27">            w.suivant <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> Node(p.valeur)</span>
-<span id="cb8-28">            w <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> w.suivant</span>
-<span id="cb8-29">    <span class="cf" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">return</span> res</span></code></pre></div>
-</div>
-</section>
-<div id="3507881d" class="cell" data-execution_count="6">
-<div class="sourceCode cell-code" id="cb9" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><span class="kw" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">def</span> dansIntervalle(L: Node, a, b) <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">-&gt;</span> Node:</span>
-<span id="cb9-2">    <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">"""Créer une nouvelle liste à partir de L en ne gardant que les éléments dans l'intervalle [a, b].</span></span>
-<span id="cb9-3"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">    Args:</span></span>
-<span id="cb9-4"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">        L (Node): La liste chaînée de départ.</span></span>
-<span id="cb9-5"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">        a (comparable): Le minimum de l'intervalle</span></span>
-<span id="cb9-6"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">        b (comparable): Le maximum de l'intervalle</span></span>
-<span id="cb9-7"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">    Returns:</span></span>
-<span id="cb9-8"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">        Node: Une nouvelle liste pour laquelle on a gardé seulement les élément qui sont dans l'intervalle [a, b].</span></span>
-<span id="cb9-9"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">    """</span></span>
-<span id="cb9-10">    <span class="cf" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">if</span> a <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">&gt;</span> b:</span>
-<span id="cb9-11">        <span class="cf" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">raise</span> <span class="pp" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">ValueError</span>(<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"a doit être inférieur ou égal à b."</span>)</span>
-<span id="cb9-12">    <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># avec un itérateur fonctionnel</span></span>
-<span id="cb9-13">    <span class="cf" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">return</span> Lfilter(L, <span class="kw" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">lambda</span> x: a <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">&lt;=</span> x <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">&lt;=</span> b)</span>
-<span id="cb9-14"></span>
-<span id="cb9-15"></span>
-<span id="cb9-16">L <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> Node(<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">3</span>, Node(<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">1</span>, Node(<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">4</span>, Node(<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">1</span>, Node(<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">5</span>, Node(<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">9</span>, Node(<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">2</span>, Node(<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">6</span>, Node(<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">5</span>, Node(<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">3</span>, Node(<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">5</span>, Node(<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">8</span>, Node(<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">9</span>, Node(<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">7</span>, Node(<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">9</span>, Node(<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">3</span>, Node(<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">2</span>, Node(<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">3</span>))))))))))))))))))</span>
-<span id="cb9-17"><span class="bu" style="color: null;
-background-color: null;
-font-style: inherit;">print</span>(dansIntervalle(L, <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">2</span>, <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">4</span>))</span></code></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>(3, 4, 2, 3, 3, 2, 3)</code></pre>
-</div>
-</div>
-</section>
-<section id="sujet-de-15h30" class="level1">
-<h1>Sujet de 15h30</h1>
-<section id="genrandom" class="level2">
-<h2 class="anchored" data-anchor-id="genrandom">1. <code>genRandom</code></h2>
-<div id="697655af" class="cell" data-execution_count="7">
-<div class="sourceCode cell-code" id="cb11" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><span class="kw" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">def</span> genRandom(nbVal: <span class="bu" style="color: null;
-background-color: null;
-font-style: inherit;">int</span>) <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">-&gt;</span> Node:</span>
-<span id="cb11-2">    <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">"""Créer une liste de nbVal nombres aléatoires entre 0 et 20</span></span>
-<span id="cb11-3"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">    Args:</span></span>
-<span id="cb11-4"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">        nbVal (int): Le nombre de nombres aléatoires à générer.</span></span>
-<span id="cb11-5"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">    Returns:</span></span>
-<span id="cb11-6"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">        Node: Une liste chaînée qui contient `nbVal` nombre</span></span>
-<span id="cb11-7"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">              aléatoires entre 0 et 20.</span></span>
-<span id="cb11-8"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">    """</span></span>
-<span id="cb11-9">    <span class="cf" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">if</span> nbVal <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">&lt;=</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">0</span>:</span>
-<span id="cb11-10">        <span class="cf" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">return</span> <span class="va" style="color: #111111;
-background-color: null;
-font-style: inherit;">None</span></span>
-<span id="cb11-11">    <span class="cf" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">return</span> Node(randint(<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">0</span>, <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">20</span>), genRandom(nbVal <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">-</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">1</span>))</span>
-<span id="cb11-12"></span>
-<span id="cb11-13">L <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> genRandom(<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">10</span>)</span>
-<span id="cb11-14"><span class="bu" style="color: null;
-background-color: null;
-font-style: inherit;">print</span>(L)</span></code></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>(15, 6, 1, 1, 5, 16, 8, 7, 11, 20)</code></pre>
-</div>
-</div>
-</section>
-<section id="compteinf" class="level2">
-<h2 class="anchored" data-anchor-id="compteinf">2. <code>compteInf</code></h2>
-<div id="dddbd87d" class="cell" data-execution_count="8">
-<div class="sourceCode cell-code" id="cb13" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><span class="kw" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">def</span> compteInf(L: Node, seuil) <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">-&gt;</span> <span class="bu" style="color: null;
-background-color: null;
-font-style: inherit;">int</span>:</span>
-<span id="cb13-2">    <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">"""Compter le nombre de valeurs strictement inférieures à `seuil` dans L.</span></span>
-<span id="cb13-3"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">    Args:</span></span>
-<span id="cb13-4"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">        L (Node): La liste dans laquelle on compte.</span></span>
-<span id="cb13-5"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">        seuil: La valeur utilisée pour les comparaisons.</span></span>
-<span id="cb13-6"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">    Returns:</span></span>
-<span id="cb13-7"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">        int: Le nombre de valeurs dans `L` qui sont</span></span>
-<span id="cb13-8"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">             strictement inférieures à `seuil`.</span></span>
-<span id="cb13-9"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">    """</span></span>
-<span id="cb13-10">    res <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">0</span></span>
-<span id="cb13-11">    <span class="cf" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">while</span> L <span class="kw" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">is</span> <span class="kw" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">not</span> <span class="va" style="color: #111111;
-background-color: null;
-font-style: inherit;">None</span>:</span>
-<span id="cb13-12">        <span class="cf" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">if</span> L.valeur <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">&lt;</span> seuil:</span>
-<span id="cb13-13">            res <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">+=</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">1</span></span>
-<span id="cb13-14">        L <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> L.suivant</span>
-<span id="cb13-15">    <span class="cf" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">return</span> res</span>
-<span id="cb13-16"></span>
-<span id="cb13-17"><span class="bu" style="color: null;
-background-color: null;
-font-style: inherit;">print</span>(compteInf(L, <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">10</span>))</span></code></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>6</code></pre>
-</div>
-</div>
-</section>
-<section id="horsintervalle-récursivement" class="level2">
-<h2 class="anchored" data-anchor-id="horsintervalle-récursivement">3. <code>horsIntervalle</code> récursivement</h2>
-<div id="bc98f2ce" class="cell" data-execution_count="9">
-<div class="sourceCode cell-code" id="cb15" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><span class="kw" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">def</span> horsIntervalle(L: Node, a, b) <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">-&gt;</span> Node:</span>
-<span id="cb15-2">    <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">"""Retirer les éléments de L qui sont dans [a, b].</span></span>
-<span id="cb15-3"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">    Args:</span></span>
-<span id="cb15-4"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">        L (Node): La liste que l'on veut filtrer.</span></span>
-<span id="cb15-5"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">        a: La valeur minimale de l'intervalle exclue.</span></span>
-<span id="cb15-6"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">        b: La valeur maximale de l'intervalle exclue.</span></span>
-<span id="cb15-7"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">    Returns:</span></span>
-<span id="cb15-8"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">        Node: Une nouvelle liste qui est L sans les élément</span></span>
-<span id="cb15-9"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">              de L qui sont compris entre a et b inclus.</span></span>
-<span id="cb15-10"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">    """</span></span>
-<span id="cb15-11">    <span class="cf" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">if</span> a <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">&gt;</span> b <span class="kw" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">or</span> L <span class="kw" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">is</span> <span class="va" style="color: #111111;
-background-color: null;
-font-style: inherit;">None</span>:</span>
-<span id="cb15-12">        <span class="cf" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">return</span> <span class="va" style="color: #111111;
-background-color: null;
-font-style: inherit;">None</span></span>
-<span id="cb15-13">    <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># Si la valeur dépasse en dessous de a ou au dessus de b</span></span>
-<span id="cb15-14">    <span class="cf" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">if</span> L.valeur <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">&lt;</span> a <span class="kw" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">or</span> L.valeur <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">&gt;</span> b :</span>
-<span id="cb15-15">        <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># on garde la valeur dan la nouvelle liste</span></span>
-<span id="cb15-16">        <span class="cf" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">return</span> Node(L.valeur, horsIntervalle(L.suivant, a, b))</span>
-<span id="cb15-17">    <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># sinon on no garde pas la valeur</span></span>
-<span id="cb15-18">    <span class="cf" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">return</span> horsIntervalle(L.suivant, a, b)</span>
-<span id="cb15-19"></span>
-<span id="cb15-20"><span class="bu" style="color: null;
-background-color: null;
-font-style: inherit;">print</span>(horsIntervalle(L, <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">5</span>, <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">10</span>))</span></code></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>(15, 1, 1, 16, 11, 20)</code></pre>
-</div>
-</div>
-</section>
-<section id="horsintervallefonc-avec-un-itérateur-fonctionnel" class="level2">
-<h2 class="anchored" data-anchor-id="horsintervallefonc-avec-un-itérateur-fonctionnel">4. <code>horsIntervalleFonc</code> avec un itérateur fonctionnel</h2>
-<div id="80837a1c" class="cell" data-execution_count="10">
-<div class="sourceCode cell-code" id="cb17" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><span class="kw" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">def</span> horsIntervalleFonc(L: Node, a, b) <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">-&gt;</span> Node:</span>
-<span id="cb17-2">    <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">"""Retirer les éléments de L qui sont dans [a, b].</span></span>
-<span id="cb17-3"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">    Args:</span></span>
-<span id="cb17-4"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">        L (Node): La liste que l'on veut filtrer.</span></span>
-<span id="cb17-5"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">        a: La valeur minimale de l'intervalle exclue.</span></span>
-<span id="cb17-6"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">        b: La valeur maximale de l'intervalle exclue.</span></span>
-<span id="cb17-7"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">    Returns:</span></span>
-<span id="cb17-8"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">        Node: Une nouvelle liste qui est L sans les élément</span></span>
-<span id="cb17-9"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">              de L qui sont compris entre a et b inclus.</span></span>
-<span id="cb17-10"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">    """</span></span>
-<span id="cb17-11">    <span class="cf" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">if</span> a <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">&gt;</span> b:</span>
-<span id="cb17-12">        <span class="cf" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">raise</span> <span class="pp" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">ValueError</span>(<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"a doit être inférieur ou égal à b."</span>)</span>
-<span id="cb17-13">    <span class="cf" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">return</span> Lfilter(L, <span class="kw" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">lambda</span> x: x <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">&lt;</span> a <span class="kw" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">or</span> x <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">&gt;</span> b)</span>
-<span id="cb17-14"></span>
-<span id="cb17-15"><span class="bu" style="color: null;
-background-color: null;
-font-style: inherit;">print</span>(horsIntervalleFonc(L, <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">5</span>, <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">10</span>))</span></code></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>(15, 1, 1, 16, 11, 20)</code></pre>
-</div>
-</div>
-
-
-</section>
-</section>
-
- ]]></description>
-  <category>informatique</category>
-  <guid>https://osk42.quarto.pub/posts/informatique/algo_avancee/algo avancee correction controle 1.html</guid>
-  <pubDate>Wed, 01 Mar 2023 23:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>terminal - btop : statistiques des processus</title>
-  <link>https://osk42.quarto.pub/posts/informatique/terminal btop.html</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<p><code>btop</code> est un utilitaire pour visualiser les processus actifs sur votre ordinateur, et les statistiques comme la quantité d’entrée/sortie en mémoire ou réseau.</p>
-<p>Dépôt github de <code>btop</code> : <a href="https://github.com/aristocratos/btop">aristocratos/btop</a></p>
-<section id="pourquoi-btop" class="level1">
-<h1>Pourquoi <code>btop</code> ?</h1>
-<p>Il existe de nombreuses alternatives à <code>btop</code>. Il est lui-même dérivé de <code>bashtop</code> et <code>bpytop</code>.</p>
-<p>L’outil similaire le plus connu est certainement <code>top</code>, qui permet d’afficher la liste des processus en cours sur votre machine, ainsi que des statistiques sur la charge du processeur ou de la mémoire. <code>top</code> à l’avantage d’être présent sur presque toutes les machines Linux.</p>
-<p>Ceci dit, top est très simple dans son interface, et très peu intuitif.</p>
-<section id="htop" class="level2">
-<h2 class="anchored" data-anchor-id="htop"><code>htop</code></h2>
-<p>Un autre utilitaire très connu est <code>htop</code>, qui est une version plus jolie et utilisable de <code>top</code>, qui permet de chercher et filtrer les processus selon leur nom.</p>
-<p><code>htop</code> est beaucoup plus agréable à utiliser que <code>top</code>, avec des raccourcis plus intuitifs, des boutons cliquables (oui, c’est possible sur un terminal), et une interface plus agréable.</p>
-<p>Voici à quoi ressemble <code>htop</code> :</p>
-<p><img src="https://osk42.quarto.pub/posts/informatique/_images/htop.png" class="img-fluid"></p>
-</section>
-<section id="btop" class="level2">
-<h2 class="anchored" data-anchor-id="btop"><code>btop</code></h2>
-<p><code>btop</code> est un autre utilitaire du même type, mais il a quelques avantages :</p>
-<ul>
-<li>il est plus intuitif
-<ul>
-<li>les raccourcis clavier sont affichés</li>
-<li>le menu d’options est bien fait (plus simple à utiliser que celui de <code>htop</code>)</li>
-</ul></li>
-<li>il est plus joli</li>
-<li>il permet de voir plus de statistiques</li>
-</ul>
-<p><img src="https://osk42.quarto.pub/posts/informatique/_images/btop.png" class="img-fluid"></p>
-<p>Les raccourcis claviers sont montrés par la lettre en rouge dans leur nom (comme <code>m</code> pour aller dans le <code style="color: white"><span style="color:darkred">m</span>enu</code>), et chaque fenêtre peut être affichée/masquée en appuyant sur le chiffre qui lui correspond (de 1 à 4).</p>
-</section>
-</section>
-<section id="comparaison" class="level1">
-<h1>Comparaison</h1>
-<p>Voici une comparaison des interfaces des 3 outils dont j’ai parlé : <code>top</code>, <code>htop</code> et <code>btop</code></p>
-<p><img src="https://osk42.quarto.pub/posts/informatique/_images/comparaison_top_htop_btop.png" class="img-fluid"></p>
-</section>
-<section id="installer-btop" class="level1">
-<h1>Installer <code>btop</code></h1>
-<p><code>btop</code> est disponible sur la plupart des distributions linux et sur macOS. Il est probablement disponible pour votre installeur habituel (et avec <code>homebrew</code> sur macOS).</p>
-<ul>
-<li>macOS : <code>brew install btop</code></li>
-<li>ubuntu : <code>sudo apt-get update &amp;&amp; sudo apt install btop</code></li>
-</ul>
-
-
-</section>
-
- ]]></description>
-  <category>informatique</category>
-  <guid>https://osk42.quarto.pub/posts/informatique/terminal btop.html</guid>
-  <pubDate>Sun, 19 Feb 2023 23:00:00 GMT</pubDate>
-  <media:content url="https://osk42.quarto.pub/posts/informatique/_images/btop.png" medium="image" type="image/png" height="79" width="144"/>
 </item>
 </channel>
 </rss>

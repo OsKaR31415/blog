@@ -7,7 +7,7 @@ title:
 up:: [[_vim_tips]]
 link:: [[vim tips leader]]
 
-#blog/vim-tips 
+#s/blog/vim-tips 
 
 
  - `<leader>m`

@@ -31,7 +31,7 @@ h1.title {
 .navbar, .navbar-title,
 .navbar-nav>.nav-item>.nav-link,
 h1.title {
-    filter: drop-shadow(2px 2px 2px black);
+    filter: drop-shadow(2px 2px 2px #000000bb);
 }
 
 
