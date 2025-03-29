@@ -1,4 +1,4 @@
 - source: project
   quarto-pub:
     - id: 9abb28b0-8e5a-4f78-99d0-c15b7bb4de3f
-      url: 'https://osk42.quarto.pub/osk42'
+      url: https://osk42.quarto.pub/osk42
