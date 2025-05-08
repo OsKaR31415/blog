@@ -21,6 +21,8 @@ website:
             href: posts/informatique/>>informatique.qmd
           - text: Philosophie
             href: posts/philosophie/>>philosophie.qmd
+          - text: Poésie
+            href: posts/poesie/>>poesie.qmd
           - text: Réflexions
             href: posts/>>reflexions.qmd
 

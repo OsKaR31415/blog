@@ -16,10 +16,10 @@ about:
 comments: false
 ---
 
-Je suis passionné par l'informatique, les&nbsp;mathématiques, la&nbsp;philosophie, la&nbsp;politique, la&nbsp;connaissance en général, les&nbsp;raccourcis&nbsp;clavier, les&nbsp;bandes&nbsp;dessinées, la&nbsp;musique et les autres arts, l'origami, et le&nbsp;chocolat.
+Je suis passionné par l'informatique, les&nbsp;mathématiques, la&nbsp;philosophie, la&nbsp;politique, la&nbsp;connaissance en général, les&nbsp;raccourcis&nbsp;clavier, les&nbsp;bandes&nbsp;dessinées, la&nbsp;musique et les autres arts, l'origami...
 
 
-J'étudie actuellement en licence de mathématiques et en licence d'informatique.
+J'étudie actuellement en licence de mathématiques et j'ai une licence d'informatique.
 
 
 
@@ -33,6 +33,8 @@ Le contenu de ce blog est principalement :
  - Des explications de concepts d'informatique et de mathématiques
 
  - Des présentations de ce que je trouve intéressant
+
+ - des poèmes que j'ai écrits
 </div>
 
 

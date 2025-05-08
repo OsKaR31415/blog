@@ -13,6 +13,9 @@
     "posts/maths/>>mathematiques.md": [
       "."
     ],
+    "posts/poesie/>>poesie.qmd": [
+      "."
+    ],
     "index.qmd": [
       "posts"
     ]

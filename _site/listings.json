@@ -2,6 +2,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/poesie/ma_memoire.html",
       "/posts/philosophie/Le cool.html",
       "/posts/philosophie/ne_pas_avoir_de_valeurs.html",
       "/posts/news/je_reprends_mon_blog.html",
@@ -29,17 +30,17 @@
     ]
   },
   {
-    "listing": "/posts/philosophie/>>philosophie.html",
+    "listing": "/posts/maths/>>mathematiques.html",
     "items": [
-      "/posts/philosophie/Le cool.html",
-      "/posts/philosophie/ne_pas_avoir_de_valeurs.html"
-    ]
-  },
-  {
-    "listing": "/posts/>>reflexions.html",
-    "items": [
-      "/posts/autres/si tout le monde saute dun pont.html",
-      "/posts/autres/Le dimanche, il pleut généralement à l'extérieur.html"
+      "/posts/maths/contre l usage abusif de la virgule dans la notation mathematique.html",
+      "/posts/maths/probabilites TD1.html",
+      "/posts/maths/transposition.html",
+      "/posts/maths/arrangements avec répétitions.html",
+      "/posts/maths/combinaisons_avec_repetitions.html",
+      "/posts/maths/arrangements.html",
+      "/posts/maths/combinaisons.html",
+      "/posts/maths/sacs.html",
+      "/posts/maths/formulaire d'analyse.html"
     ]
   },
   {
@@ -56,17 +57,23 @@
     ]
   },
   {
-    "listing": "/posts/maths/>>mathematiques.html",
+    "listing": "/posts/>>reflexions.html",
     "items": [
-      "/posts/maths/contre l usage abusif de la virgule dans la notation mathematique.html",
-      "/posts/maths/probabilites TD1.html",
-      "/posts/maths/transposition.html",
-      "/posts/maths/arrangements avec répétitions.html",
-      "/posts/maths/combinaisons_avec_repetitions.html",
-      "/posts/maths/arrangements.html",
-      "/posts/maths/combinaisons.html",
-      "/posts/maths/sacs.html",
-      "/posts/maths/formulaire d'analyse.html"
+      "/posts/autres/si tout le monde saute dun pont.html",
+      "/posts/autres/Le dimanche, il pleut généralement à l'extérieur.html"
+    ]
+  },
+  {
+    "listing": "/posts/philosophie/>>philosophie.html",
+    "items": [
+      "/posts/philosophie/Le cool.html",
+      "/posts/philosophie/ne_pas_avoir_de_valeurs.html"
+    ]
+  },
+  {
+    "listing": "/posts/poesie/>>poesie.html",
+    "items": [
+      "/posts/poesie/ma_memoire.html"
     ]
   }
 ]

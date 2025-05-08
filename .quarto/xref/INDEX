@@ -163,5 +163,17 @@
   },
   "posts/philosophie/Le cool.qmd": {
     "Le cool.html": "7ac6f6d3"
+  },
+  "posts/poesie/Le cool.qmd": {
+    "Le cool.html": "d3895823"
+  },
+  "posts/poesie/>>poesie.qmd": {
+    ">>poesie.html": "a6a8a7b1"
+  },
+  "posts/poesie/ma_memoire.qmd": {
+    "ma_memoire.html": "d805875f"
+  },
+  "poesie.qmd": {
+    "poesie.html": "c8d81c84"
   }
 }
