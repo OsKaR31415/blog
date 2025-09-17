@@ -2,9 +2,11 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/autres/disques_vinyles_et_rapport_a_la_musique.html",
+      "/posts/philosophie/Sur le désir, le manque et la frustration amoureuse.html",
+      "/posts/poesie/face_aux_feux_du_soleil.html",
       "/posts/poesie/ma_memoire.html",
       "/posts/philosophie/Le cool.html",
-      "/posts/philosophie/ne_pas_avoir_de_valeurs.html",
       "/posts/news/je_reprends_mon_blog.html",
       "/posts/autres/si tout le monde saute dun pont.html",
       "/posts/autres/apprentissage.html",
@@ -27,6 +29,13 @@
       "/posts/informatique/vim tips leader.html",
       "/posts/news/Pourquoi ce blog.html",
       "/posts/news/bienvenue sur mon blog.html"
+    ]
+  },
+  {
+    "listing": "/posts/poesie/>>poesie.html",
+    "items": [
+      "/posts/poesie/face_aux_feux_du_soleil.html",
+      "/posts/poesie/ma_memoire.html"
     ]
   },
   {
@@ -59,6 +68,7 @@
   {
     "listing": "/posts/>>reflexions.html",
     "items": [
+      "/posts/autres/disques_vinyles_et_rapport_a_la_musique.html",
       "/posts/autres/si tout le monde saute dun pont.html",
       "/posts/autres/Le dimanche, il pleut généralement à l'extérieur.html"
     ]
@@ -66,14 +76,8 @@
   {
     "listing": "/posts/philosophie/>>philosophie.html",
     "items": [
-      "/posts/philosophie/Le cool.html",
-      "/posts/philosophie/ne_pas_avoir_de_valeurs.html"
-    ]
-  },
-  {
-    "listing": "/posts/poesie/>>poesie.html",
-    "items": [
-      "/posts/poesie/ma_memoire.html"
+      "/posts/philosophie/Sur le désir, le manque et la frustration amoureuse.html",
+      "/posts/philosophie/Le cool.html"
     ]
   }
 ]

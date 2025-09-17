@@ -19,21 +19,21 @@ toc: true
             <div class="info">
                 <h3 class="title">
                     <!--<span class="date">202_</span>-->
-                    Licence d'informatique
-                    <span class="right">2021-2024</span>
+                    Master LOGOS
+                    <span class="right">2025-2027</span>
                 </h3>
-                <p><em>Université de Tours</em></p>
+                <p>Master de linguistique, logique, informatique et philosophie des sciences</p>
+                <p><em>Université Paris Cité - P7</em></p>
             </div>
         </div>
         <div class="card">
             <div class="info">
                 <h3 class="title">
-                    <!--<span class="date"></span>-->
-                    Licence de mathématiques
-                    <span class="right">2023-2025</span>
+                    <span class="date">2024</span>
+                    Licence d'informatique
+                    <span class="right">2021-2024</span>
                 </h3>
                 <p><em>Université de Tours</em></p>
-                <p>Actuellement en troisième année.</p>
             </div>
         </div>
     </div>
@@ -131,7 +131,7 @@ ments...</p>
                     Animateur bénévole
                     <span class="right">colonie de vacances du Kangourou des Mathématiques</span>
                 </h3>
-                <p>Durant les étés 2022 et 2024</p>
+                <p>Durant les étés 2022, 2024 et 2025</p>
             </div>
         </div>
         <div class="card">

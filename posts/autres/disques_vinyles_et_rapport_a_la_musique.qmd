@@ -1,11 +1,9 @@
 ---
-title: "Les disques vinyles"
-subtitle: "Comment l'objet physique change notre rapport à la musique"
-date: 2025-05-05
-# image: "_images/"
-
-category: réflexions
-draft: true
+title: Les disques vinyles
+subtitle: Comment l'objet physique change notre rapport à la musique
+date: 2025-08-17
+categories: [ réflexion ]
+draft: false
 ---
 
 
@@ -21,14 +19,25 @@ Un des avantages évident des vinyles est que — leur taille étant assez grand
 C'est toujours très agréable, pendant que l'on joue un album, de voir la pochette exposée.
 
 
-En plus des incroyables illustration, parfois sur 4 pages (pour les pochettes pliées en 2), les paroles des chansons sont souvent écrites quelque part, ainsi que les noms des musicien·es et compositeur·ices. Ces informations sont accessibles sur internet, mais il est toujours agréable
-
-
+En plus des incroyables illustrations, parfois sur 4 pages (pour les pochettes pliées en 2), les paroles des chansons sont souvent écrites quelque part, ainsi que les noms des musicien·es et compositeur·ices. Ces informations sont accessibles sur internet, mais il est toujours agréable de les avoir à portée de main.
 
 
 # L'écoute
 
+L'effort de mettre un disque, l'action réfléchie qui prend du temps, crée un engagement à écouter plus attentivement la musique, à profiter du disque que l'on a mis. Cet effet est un biais bien connu : le biais des coûts irrécupérables. Mais il est intéressant d'utiliser à notre avantage ce fonctionnement irrationnel de notre pensée.
+
+Par ailleurs, le son des chaînes hifi est en général meilleur que celui des enceintes bluetooth que l'on utilise pour diffuser le son des téléphones ou des ordinateurs.
+
 # L'album
+
+Il est long et difficile de passer un seul morceau spécifique sur un disque vinyle. Certaines platines haut de gamme détectent automatiquement les débuts de morceaux, mais pour la plupart, il faut viser le morceau à l'œil, et être assez précis. Comme l'action de ranger un disque dans sa pochette et d'en sortir un nouveau est également longue, le support du vinyle incite à écouter des albums entiers plutôt que des morceaux indépendants. Cela est plutôt un avantage puisque l'on sait que beaucoup d'albums sont pensés comme une construction globale plutôt que comme une liste de morceaux indépendants, et qu'il est donc plus pertinent de les écouter entièrement.
+
+# le support physique
+
+Je crois qu'il y a une certaine magie à voir des objets physiques exécuter une fonction plutôt que des systèmes numériques.
+Il me semble que cela vient notamment du fait que l'on comprend plus le fonctionnement des objets physiques que celui des objets numériques. Lorsque l'on joue un disque vinyle, on voit comment le sillon fait vibrer le stylus, qui entraine un aimant à côté d'une bobine, qui génère un courant électrique ensuite amplifié, puis transformé en son par des bobines qui font vibrer un aimant qui entraîne la membrane des enceintes. Mais il est bien plus complexe de comprendre les mécaniques en jeu lorsque l'on met de la musique sur notre téléphone : le fonctionnement d'un ordinateur, le fonctionnement des programmes sur celui-ci, la gestion du son et des graphiques sur un système d'exploitation, les circuits d'entrée/sortie pour transformer les données numériques en courant lisible pour une enceinte, ou bien en signal Bluetooth etc. sont autant de briques chacune complexes. Lorsque l'on utilise un téléphone, on est face à une boite noire qui ne laisse pas vraiment voir son fonctionnement. Au contraire, les objets physiques nous laissent voir plus aisément leurs mécaniques, leurs principes de fonctionnement. C'est sûrement aussi cela qui est à l'origine de cet énervement lorsqu'un appareil électronique ne fonctionne pas : si notre ouvre-boite ne fonctionne plus, on sait immédiatement pourquoi, mais si notre téléphone nous lâche, il faut être un expert du sujet pour régler le problème. C'est cette opacité du fonctionnement interne qui, à mon avis, rend moins jouissive l'utilisation de systèmes numérisés plutôt que physiques. J'ai déjà pu observer cette sensation dans au moins un autre cas : les machines à calculer. Avant que les calculatrices électroniques ne se développent, de nombreuses machines mécaniques ont existé. Du boulier jusqu'à des machines complexes pleines d'engrenages en passant par les règles à calculer. En utilisant ces machines, on ressent une sorte de jouissance particulière que j'attribue au fait que c'est un système simple qui nous permet de faire tous ces calculs complexes. Certes, cela demande un peu plus d'efforts que de taper sur une machine à calculer, mais cela est également un peu plus "magique". Et c'est cette sensation que je retrouve avec les vinyles, mais aussi avec d'autres supports physiques (notamment avec l'écriture sur papier, sujet qui mériterait un article à part entière) et qui leur donne, à mon avis, une partie de leur avantage sur les supports numériques.
+
+
 
 
 
