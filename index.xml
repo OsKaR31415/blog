@@ -1,0 +1,810 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>0SK42</title>
+<link>https://osk42.quarto.pub/osk42/</link>
+<atom:link href="https://osk42.quarto.pub/osk42/index.xml" rel="self" type="application/rss+xml"/>
+<description>OSK42 - blog de Maths et d&#39;Informatique</description>
+<language>fr</language>
+<image>
+<url>https://osk42.quarto.pub/osk42/_images/OsKaR.png</url>
+<title>0SK42</title>
+<link>https://osk42.quarto.pub/osk42/</link>
+</image>
+<generator>quarto-1.7.33</generator>
+<lastBuildDate>Sat, 16 Aug 2025 22:00:00 GMT</lastBuildDate>
+<item>
+  <title>Les disques vinyles</title>
+  <link>https://osk42.quarto.pub/osk42/posts/autres/disques_vinyles_et_rapport_a_la_musique.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+
+<p>Récemment, j’ai récupéré la platine vinyle de mes parents, ainsi que leur chaîne hifi.</p>
+<!-- TODO: insérer image platine -->
+<p>Depuis quelques mois que je joue des disques pour écouter de la musique, j’ai remarqué à quel point le support physique (plutôt que le numérique dématérialisé) change beaucoup notre rapport à la musique.</p>
+<section id="les-pochettes-dalbums" class="level1">
+<h1>Les pochettes d’albums</h1>
+<p>Un des avantages évident des vinyles est que — leur taille étant assez grande — l’on peut mieux apprécier les pochettes d’albums. C’est toujours très agréable, pendant que l’on joue un album, de voir la pochette exposée.</p>
+<p>En plus des incroyables illustrations, parfois sur 4 pages (pour les pochettes pliées en 2), les paroles des chansons sont souvent écrites quelque part, ainsi que les noms des musicien·es et compositeur·ices. Ces informations sont accessibles sur internet, mais il est toujours agréable de les avoir à portée de main.</p>
+</section>
+<section id="lécoute" class="level1">
+<h1>L’écoute</h1>
+<p>L’effort de mettre un disque, l’action réfléchie qui prend du temps, crée un engagement à écouter plus attentivement la musique, à profiter du disque que l’on a mis. Cet effet est un biais bien connu : le biais des coûts irrécupérables. Mais il est intéressant d’utiliser à notre avantage ce fonctionnement irrationnel de notre pensée.</p>
+<p>Par ailleurs, le son des chaînes hifi est en général meilleur que celui des enceintes bluetooth que l’on utilise pour diffuser le son des téléphones ou des ordinateurs.</p>
+</section>
+<section id="lalbum" class="level1">
+<h1>L’album</h1>
+<p>Il est long et difficile de passer un seul morceau spécifique sur un disque vinyle. Certaines platines haut de gamme détectent automatiquement les débuts de morceaux, mais pour la plupart, il faut viser le morceau à l’œil, et être assez précis. Comme l’action de ranger un disque dans sa pochette et d’en sortir un nouveau est également longue, le support du vinyle incite à écouter des albums entiers plutôt que des morceaux indépendants. Cela est plutôt un avantage puisque l’on sait que beaucoup d’albums sont pensés comme une construction globale plutôt que comme une liste de morceaux indépendants, et qu’il est donc plus pertinent de les écouter entièrement.</p>
+</section>
+<section id="le-support-physique" class="level1">
+<h1>le support physique</h1>
+<p>Je crois qu’il y a une certaine magie à voir des objets physiques exécuter une fonction plutôt que des systèmes numériques. Il me semble que cela vient notamment du fait que l’on comprend plus le fonctionnement des objets physiques que celui des objets numériques. Lorsque l’on joue un disque vinyle, on voit comment le sillon fait vibrer le stylus, qui entraine un aimant à côté d’une bobine, qui génère un courant électrique ensuite amplifié, puis transformé en son par des bobines qui font vibrer un aimant qui entraîne la membrane des enceintes. Mais il est bien plus complexe de comprendre les mécaniques en jeu lorsque l’on met de la musique sur notre téléphone : le fonctionnement d’un ordinateur, le fonctionnement des programmes sur celui-ci, la gestion du son et des graphiques sur un système d’exploitation, les circuits d’entrée/sortie pour transformer les données numériques en courant lisible pour une enceinte, ou bien en signal Bluetooth etc. sont autant de briques chacune complexes. Lorsque l’on utilise un téléphone, on est face à une boite noire qui ne laisse pas vraiment voir son fonctionnement. Au contraire, les objets physiques nous laissent voir plus aisément leurs mécaniques, leurs principes de fonctionnement. C’est sûrement aussi cela qui est à l’origine de cet énervement lorsqu’un appareil électronique ne fonctionne pas : si notre ouvre-boite ne fonctionne plus, on sait immédiatement pourquoi, mais si notre téléphone nous lâche, il faut être un expert du sujet pour régler le problème. C’est cette opacité du fonctionnement interne qui, à mon avis, rend moins jouissive l’utilisation de systèmes numérisés plutôt que physiques. J’ai déjà pu observer cette sensation dans au moins un autre cas : les machines à calculer. Avant que les calculatrices électroniques ne se développent, de nombreuses machines mécaniques ont existé. Du boulier jusqu’à des machines complexes pleines d’engrenages en passant par les règles à calculer. En utilisant ces machines, on ressent une sorte de jouissance particulière que j’attribue au fait que c’est un système simple qui nous permet de faire tous ces calculs complexes. Certes, cela demande un peu plus d’efforts que de taper sur une machine à calculer, mais cela est également un peu plus “magique”. Et c’est cette sensation que je retrouve avec les vinyles, mais aussi avec d’autres supports physiques (notamment avec l’écriture sur papier, sujet qui mériterait un article à part entière) et qui leur donne, à mon avis, une partie de leur avantage sur les supports numériques.</p>
+
+
+</section>
+
+ ]]></description>
+  <category>réflexion</category>
+  <guid>https://osk42.quarto.pub/osk42/posts/autres/disques_vinyles_et_rapport_a_la_musique.html</guid>
+  <pubDate>Sat, 16 Aug 2025 22:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Sur le désir, le manque et le frustration amoureuse</title>
+  <link>https://osk42.quarto.pub/osk42/posts/philosophie/Sur le désir, le manque et la frustration amoureuse.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+
+<section id="introduction-contexte" class="level1">
+<h1>Introduction : contexte</h1>
+<p>Je voudrais ici parler de la sensation que l’on ressent lorsque l’on est éloigné par la force des circonstances d’une personne que l’on aime (avec en tête principalement des relations romantiques, même si j’ai la conviction que ce qui est dit ensuite peut se dire également des relations amicales). Par “éloignement” j’entends un éloignement physique et relationnel ; plus généralement des circonstances qui rendent plus rares les interactions (physiques ou non). Il me semble simplement que les constatations faites plus loin s’appliquent surtout à l’affection romantique ou amicale, et moins à l’attirance purement physique, bien qu’on y puisse trouver des sentiments similaires.</p>
+</section>
+<section id="premières-intuitions" class="level1">
+<h1>Premières intuitions</h1>
+<p>Pour penser cette situation, la compréhension du désir amoureux est centrale. Une première approche consiste à assimiler cette sensation à un manque : le désir en question ne serait que la conséquence de ce que la personne aimée manque à notre entourage.</p>
+<p>Cette manière de penser le désir — et en particulier le désir amoureux — est assez commune. On dit d’ailleurs qu’une personne “nous manque” et on penserait presque que, lorsqu’une personne aimée n’est pas là, “il nous manque une partie de nous-même”.</p>
+</section>
+<section id="une-meilleure-conception-du-désir" class="level1">
+<h1>Une meilleure conception du désir</h1>
+<section id="problèmes-du-désir-comme-manque" class="level2">
+<h2 class="anchored" data-anchor-id="problèmes-du-désir-comme-manque">Problèmes du désir comme manque</h2>
+<p>Penser le désir comme un manque pose plusieurs problèmes philosophiques. D’abord, cette approche implique que s’il n’y a plus de manque, il n’y a plus de désir, autrement dit, elle affirme que l’on ne peut pas désirer ce qu’on a déjà. Ainsi, voir le désir comme un manque semble contradictoire, car on peut désirer une personne même si elle est déjà à côté de nous. Cette grille de lecture fonctionne très bien pour le désir de consommer (au sens de la société de consommation, et au sens de consommer des aliments), puisque le désir de posséder un objet disparait largement une fois que cet objet devient commun par habitude.</p>
+</section>
+<section id="le-désir-comme-mouvement" class="level2">
+<h2 class="anchored" data-anchor-id="le-désir-comme-mouvement">Le désir comme mouvement</h2>
+<p>Une conception plus adéquate du désir serait de voir le désir comme un mouvement. Désirer une chose, c’est faire un mouvement vers cette chose, qu’il soit physique — corporel — ou bien mental — avoir une pensée pour, une pensée vers cette chose. Cette manière de penser le désir parais mieux rendre compte du désir amoureux, en effet, on peut désirer la personne aimée même si elle est déjà auprès de nous, et on comprend également ces pensées que cause l’amour, et qui sont des pensées qui rapprochent mentalement de la personne aimée, qui font des “mouvements intellectuels” vers la personne aimée.</p>
+<p>On peut appliquer cette idée pour d’autres types de désirs, comme le désir de posséder un objet. Désirer un objet, c’est faire un mouvement vers cet objet : soit le mouvement de l’acheter, soit le mouvement de l’utiliser, soit simplement le mouvement intellectuel de s’imaginer l’utiliser, de s’imaginer la joie qu’il procurerait. Cela fait apparaître assez naturellement la notion de frustration : lorsqu’un désir (un mouvement) est contrarié (empêché), il suit une tristesse que l’on appelle frustration. On est frustré de ne pas pouvoir acheter ou utiliser un objet. Serait-il alors pertinent de recatégoriser le “manque amoureux” comme une frustration ?</p>
+</section>
+<section id="la-frustration-plutôt-que-le-manque" class="level2">
+<h2 class="anchored" data-anchor-id="la-frustration-plutôt-que-le-manque">La frustration plutôt que le manque</h2>
+<p>Une fois admise cette approche du désir comme un mouvement concret, il semble en effet logique de penser que cette sensation lorsque la personne aimée est absente n’est pas tant un manque qu’une frustration. C’est tout le but de cet article d’en arriver à une telle recatégorisation qui m’apparaît plus adéquate — j’ai déjà fait apparaitre les problèmes de la conception du désir comme manque.</p>
+<p>Ainsi, je crois qu’une caractérisation correcte du manque amoureux passe plutôt par l’idée de frustration que l’idée de manque. De mon point de vie subjectif, cette description correspond mieux au sentiment en plus d’être une description plus correcte philosophiquement.</p>
+<p>On pourrait également argumenter qu’une relation suffisamment sécurisée ne crée pas de tristesse, de peur ou de douleur lorsque l’on est séparés. Je ne partage pas ce point de vue, d’abord à cause de ma conception du désir — explicitée plus haut — mais également par des expériences de vie qui m’amènent à croire que ce sentiment de frustration par l’absence peut exister même dans une relation sécurisée (et je pense pouvoir notamment tenir pour preuve certaines relations amicales, qui bien que sécurisées, peuvent nous attrister dans l’éloignement).</p>
+
+
+</section>
+</section>
+
+ ]]></description>
+  <category>philosophie</category>
+  <guid>https://osk42.quarto.pub/osk42/posts/philosophie/Sur le désir, le manque et la frustration amoureuse.html</guid>
+  <pubDate>Sat, 02 Aug 2025 22:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Face aux feux du soleil</title>
+  <dc:creator>Oscar Plaisant</dc:creator>
+  <link>https://osk42.quarto.pub/osk42/posts/poesie/face_aux_feux_du_soleil.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+
+<p>Face aux feux du soleil<br> Brûlant de tes regards<br> Me perdant dans ton œuil<br> Je sens comme un départ</p>
+<p>De bûcher dans la nuit<br> Qui fait rougir mes joues<br> Et mon courage s’enfuit<br> À chaque rendez-vous</p>
+<p>Les bancs du bord de Loire<br> Parenthèses de calme<br> Dans nos ballades le soir<br> Douce assise où j’empalme</p>
+<p>Tes mains comme des perles<br> Fondues par mon orfèvre<br> Dont la grâce déferle<br> Sur ma peau puis tes lèvres</p>
+<p>Qui livrent le foyer<br> Enfanteur de ma fièvre<br> Œuvre d’un joaillier<br> Les reflets qu’elles me servent</p>
+<p>Attisent mon ardeur<br> Et font vibrer mon cœur<br> D’une nouvelle couleur<br> Maintenant j’ai si peur<br></p>
+
+
+
+ ]]></description>
+  <category>poesie</category>
+  <guid>https://osk42.quarto.pub/osk42/posts/poesie/face_aux_feux_du_soleil.html</guid>
+  <pubDate>Sun, 22 Jun 2025 22:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Ma mémoire</title>
+  <dc:creator>Oscar Plaisant</dc:creator>
+  <link>https://osk42.quarto.pub/osk42/posts/poesie/ma_memoire.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+
+<p>Quelquefois, le soir, dans le tram, sous la lumière blanche qui s’attache aux couleurs insomniaques, le vent siffle soufflant un son sérieux d’introspection; et le trop plein d’air me ramène ma mémoire.</p>
+<p>Mémoire mordue d’un amour murmuré. <br> Le décor romantique du tram, ses murs verts et myrtille, ravivent le souvenir de cette ravissante soirée et ramène ma mémoire.</p>
+<p>Mémoire d’un amour de mars qu’un vent d’avril à vu revivre en vain. <br> Voie lactée, tes yeux sont ceux des amoureux perdus et je rame sans répit pour suivre ton cours gris d’argent, comme le tram brillant dont les reflets saillants ramènent ma mémoire.</p>
+<p>Mémoire remplie de souvenirs tranchants. <br> La lame du temps, de son fil bleu, élague l’espoir. <br> Et puis les pleurs, la pluie de l’âme dont les flaques luisent sur le sol pâle. <br> Et les reflets ruisselant sur les rails, glissant sans répit pour mon cœur vers l’arrêt suivant. <br> Les portes coulissantes laissent rentrer une poignée d’air morose, une bouffée de personnes froides. <br> Les secousses caressent mon corps et ramènent ma mémoire.</p>
+<p>Mémoire corrompue des instants que l’on voudrait garder, mais qui ne sont plus. <br> Leur image rémanante torture mon esprit et ramène ma mémoire.</p>
+<p>Mémoire remplie de regrets et d’instants heureux morts.</p>
+<p>. . .</p>
+<p>Puis l’amour pars un jour écrasé par le tram. <br> Il suffit que plus rien ne ramène ma mémoire. <br> Mémoire …</p>
+<p>Quand l’amour meurt, c’est l’oubli qui le tue.</p>
+
+
+
+ ]]></description>
+  <category>poesie</category>
+  <guid>https://osk42.quarto.pub/osk42/posts/poesie/ma_memoire.html</guid>
+  <pubDate>Tue, 08 Apr 2025 22:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Le cool</title>
+  <link>https://osk42.quarto.pub/osk42/posts/philosophie/Le cool.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+
+<p>Durant une soirée nous avons pris un temps pour réfléchir sur le cool, en nous demendant notamment qu’est-ce qui fait que l’on dit qu’une personne est cool.</p>
+<section id="premières-caractétistiques-du-cool" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Premières caractétistiques du cool</h1>
+<p>Dans un premier temps, il apparaît que le cool est dépendant du milieu. Les qualités qui rendent cool dépendent de la classe sociale, et on peut trouver des éléments cools pour un certain milieu qui ne le sont pas pour d’autres. Un des exemples qui fait voir cela nettement, c’est l’absence du concept de cool dans la bourgeoisie (notamment intellectuelle) — qui est remplacé par des concepts similaires mais différents, comme la fascination, le génie…</p>
+<p>Il apparaît également que le cool dépend aussi de la modes, et donc de l’époque. Le cool d’hier n’est pas celui d’aujourdhui.</p>
+<p>Une des caractéristiques d’une personne cool semble être sa nécessaire spontanéité. Le cool ne peut pas être calculé : essayer d’être cool, c’est déjà ne plus l’être. Au contraire, il faut un certain naturel dans le cool. La personne cool l’est sans effort, et par opposition à la personne qui fait des efforts (pour s’intégrer dans le groupe, pour se faire remarquer). Par exemple, l’attitude d’indifférence (s’en foutre de tout) est plutôt du côté du cool.</p>
+<p>On voit apparaître une chose centrale dans le cool : il sert à distinguer, à discriminer. Il se crée évidemment une hiérarchie sociale du cool, dans laquelle les personnes cool sont vénérées.</p>
+</section>
+<section id="concepts-proches-du-cool" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Concepts proches du cool</h1>
+<p>On pourrait traiter le cool comme un jugement de goût, mais cette approche ne semble pas réellement capturer tous les aspects du cool. Bien sûr, le cool contient une part de goût, mais il n’a pas toutes les propriétés du jugement du goût. Notamment, il n’existe pas réellement d’antonyme à “cool”. Bien sûr, chaque caractéristique du cool possède son antonyme, mais on ne trouve pas d’antonyme satisfaisant sur tous les points de vue (“ringard” s’en rapproche, mais ne capture pas la spontanéité, “désagréable” est trop large, “coincé” trop spécifique…). On peut supposer que cela vient justement de la multimodalité du cool. Puisque le cool est constitué de plusieurs éléments importants, il suffit d’en manquer un pour n’être pas cool, et donc on a simplement besoin d’un antonyme à chacun de ces éléments constituants du cool. Or si le cool n’a pas de réel antonyme, on ne peut pas le réduire à un simple jugement de goût, car comme on le sait grâce à Bourdieu, nos goûts sont en grande partie construits sur les dégoûts des autres.</p>
+<p>Un concept parallèle et similaire au cool est celui du “softpower”. Pour une puissance (souvent un pays), l’équivalent du cool est le softpower. Par exemple, on peut trouver le japon plus cool que les états-unis, parce que celui-ci à un meilleur soft power.</p>
+<p>On pourrait également rapprocher le cool de la mode, qui existe depuis plus longtemps. Comme dit plus haut, le cool dépend de la mode (on pourrait même le considérer comme une forme de mode). Cependant, la mode avant l’apparition du cool n’avait pas les mêmes propriétés. Elle était plus étanche entre les classes sociales, principalement réservées aux bourgeois, et n’était pas constituée ou constituante d’une communauté au même titre que le cool peut fédérer aujourd’hui. Un bon exemple de cela semble être l’orientalisme. Le fantasme de l’orient et l’achat d’objets orientaux interdits issus du trafic constitue une sorte d’avant-garde du cool.</p>
+<p>De là apparaissent plusieurs questions :</p>
+<ul>
+<li>le cool est-il nécessairement bourgeois, c’est-à-dire faut-t-il être bourgeois pour être cool ?</li>
+<li>le cool est-il complètement relatif (dépendant du milieu et de l’époque), ou bien existe-t-il un absolu du cool ?</li>
+<li>quel est le rapport entre le cool et la transgression ?</li>
+</ul>
+</section>
+<section id="le-cool-est-il-toujours-bourgeois" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Le cool est-il toujours bourgeois ?</h1>
+<p>Bien qu’abordée dans notre discussion, cette question s’est rapidement essouflée. La diversité des points de vue exposés semble exposer la partie relative du cool plutôt que d’attacher spécialement le cool à la bourgeoisie.</p>
+</section>
+<section id="labsolu-du-cool" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> L’absolu du cool</h1>
+<p>Y a-t-il un absolu du cool ? Des personnes ou archétypes que tout le monde trouveraient cools ?</p>
+<p>Si il est évident qu’une partie du cool est dépendante du milieu social et de l’époque, certains exemples très consensuels de cool semblent faire apparaître une part absolue au cool. On pense notamment aux deux personnages des films Start Wars : Luke Skywalker et Han Solo, dont le plus cool semble assez universellement être Han Solo.</p>
+<p>L’existence d’un absolu du cool suppose éviemment l’existance d’un absolu, ce que l’on peut contester par relativisme : rien n’est absolu, ne serait-ce que parce que les pensées de chaque humain sont issues de cerveaux tous différents, qu’elles sont construites par des perceptions, et donc déterminées par notre milieu. Cependant, on trouve des absolus dans les sociétés humaines. Le meutre, le cannibalisme et l’inceste sont connus pour être des tabous, des interdits moraux, communs à toutes les sociétés.</p>
+</section>
+<section id="le-cool-la-transgression-et-la-subversion" class="level1" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> Le cool, la transgression et la subversion</h1>
+<p>Une de nos conclusions sur le cool est la définition suivante : <em>être cool, c’est transgresser autant que possible, tout en respectant les normes de son groupe</em>. Cette définition semble assez satisfaisante, puisque nous y sommes revenus plusieurs fois au cours du débat, et qu’elle explique plusieurs aspects du cool.</p>
+<p>Dans cette définition, on comprends aisément pourquoi les <em>bad boys</em> sont considérés comme cools. On explique également pourquoi les vilains des films de super-héros sont souvent plus cools que les héros, et pourquoi batman est certainement le plus cool des héros (puisqu’il est celui qui transgresse le plus les lois).</p>
+<section id="le-cool-et-la-désobéissance" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="le-cool-et-la-désobéissance"><span class="header-section-number">5.1</span> Le cool et la désobéissance</h2>
+<p>Ce lien entre le cool et la désobéissance (puisqu’être cool, c’est obéir le moins possible) révèle un nouvel opposé du cool. Nous avions déjà opposé le cool avec le ringard (qui va contre la mode), avec le réfléchi (qui va contre le spontané), mais on peut maintenant aussi opposer le cool avec la servitude, entendue comme “obéir plus que nécessaire”. En effet, on conçoit aisément qu’une personne asservie, aliénée (dans le cadre de son travail, ou bien à des normes sociales) n’est pas cool.</p>
+<p>On pourrait emprunter le concept de l’angle <img src="https://latex.codecogs.com/png.latex?%5Calpha">, introduit par Frédéric Lordon <span class="citation" data-cites="lordon2010">(Lordon 2010)</span>, et qui pourrait être résumé comme suit. Si le désir maître (c’est-à-dire le désir du maître, du patron, du directeur…) et le désir d’un individu ont chacun une direction, alors ils ont un angle. Si ils sont parfaitement alignés (c’est-à-dire si ils travaillent à obtenir la même chose), alors l’angle est <img src="https://latex.codecogs.com/png.latex?%5Calpha=0%5Cdegree">. Au contraire, si le désir maître échoue à enrôler, à convaicre, alors l’angle sera plus grand, jusqu’à arriver à <img src="https://latex.codecogs.com/png.latex?%5Calpha=90%5Cdegree">, situation dans laquelle le désir enrôlé n’a plus rien à voir avec le désir maître : ils sont perpendiculaire.</p>
+<p>Être cool, ça serait donc augmenter son angle <img src="https://latex.codecogs.com/png.latex?%5Calpha"> au maximum sans pour autant sortir de la société (ou plutôt, sans briser les normes de son propre groupe, de sa propre classe sociale). Pour certains groupes, être totalement marginal est acceptable, et un angle <img src="https://latex.codecogs.com/png.latex?%5Calpha"> maximum (c’est-à-dire une rupture totale d’avec la société) est cool. Dans d’autres classes sociales, il est certaines normes à respecter. Être cool, alors, c’est marcher sur un fil, d’un côté on tombe dans le banal, de l’autre c’est l’inacceptable et donc l’exclusion du groupe.</p>
+</section>
+</section>
+<section id="références" class="level1" data-number="6">
+<h1 data-number="6"><span class="header-section-number">6</span> Références</h1>
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0">
+<div id="ref-lordon2010" class="csl-entry">
+Lordon, Frederic. 2010. <em>Capital, désir et servitude: Marx et Spinoza</em>. Paris: La Fabrique.
+</div>
+</div>
+
+
+</section>
+
+ ]]></description>
+  <category>philosophie</category>
+  <guid>https://osk42.quarto.pub/osk42/posts/philosophie/Le cool.html</guid>
+  <pubDate>Thu, 30 Jan 2025 23:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Je reprends mon blog !</title>
+  <link>https://osk42.quarto.pub/osk42/posts/news/je_reprends_mon_blog.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+
+<p>Je reprends enfin ce blog, après une pause de plus d’un an pour cause de <em>perte de mot de passe</em>.</p>
+<p>J’avais en fait complètement oublié que je n’avais pas de mot de passe ! Mon compte quarto (l’outil que j’utilise pour générer ce blog) est en fait lié à mon compte <a href="https://github.com/OsKaR31415">github</a>.</p>
+<p>En 13 mois, j’ai pris beaucoup d’intérêt pour la philosophie, la politique et les sujets qui s’en rapprochent (la sociologie, la philosophie politique, en moindre mesure l’économie…). J’ai découvert la philosophie de Spinoza, et je me suis lancé dans la lecture de <em>l’Éthique</em>, son œuvre majeure, mais assez complexe à lire. J’ai également découvert des philosophes actuels, comme Bernard Friot (qui défend notamment le salaire à vie, qui n’est pas le revenu de base) ou bien Frédéric Lordon (qui cherche à allier le matérialisme Marxiste et l’axiologie Spinoziste — c’est par là que j’en suis arrivé à Spinoza).</p>
+<p>J’ai donc plutôt en tête des articles de réflexion et d’opinion sur ces sujets, et moins des articles techniques comme ceux que j’ai déjà pu écrire sur l’informatique et les mathématiques.</p>
+
+
+
+ ]]></description>
+  <category>news</category>
+  <guid>https://osk42.quarto.pub/osk42/posts/news/je_reprends_mon_blog.html</guid>
+  <pubDate>Tue, 24 Sep 2024 22:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Et si tout le monde saute d’un pont, tu le fais aussi ?</title>
+  <link>https://osk42.quarto.pub/osk42/posts/autres/si tout le monde saute dun pont.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+
+<blockquote class="blockquote">
+<p>Et si tout le monde saute d’un pont, tu le fais aussi ?</p>
+</blockquote>
+<p>Il existe deux types de personnes : ceux qui utilisent cette phrase, et ceux qui ne l’utilisent pas. Et les premiers ont tendance à être pénibles. Voici donc ma réponse à tous ceux qui au cours d’un débat ont brandi fièrement ce fleuron de bon sens.</p>
+<p>Si on suppose que la question est de savoir si l’on est prêts à sauter d’un pont simplement parce que d’autres gens le font, la réponse est sûrement, en l’absence de variables cachée, non. Cependant, il semble important de noter que si “<em>tout le monde saute d’un pont</em>”, il y a peut-être une raison, et en tout cas certainement une conséquence moindre, car loin d’être des êtres uniquement capables de dupliquer par grégarisme les comportements de leurs camarades, les êtres humains ont une pensée qui tente à chaque instant de prévoir au mieux le futur. Ainsi, si tant de gens souhaitent volontairement sauter de ce pont, c’est qu’ils doivent en être arrivés à la conclusion que cela était bénéfique.</p>
+<p>Cependant, le lecteur éclairé aura remarqué l’analogie qui se cache derrière ce proverbe. La question est donc plutôt “le nombre de prédécesseurs légitime-t-il ?”. Il paraît alors important de remarquer que — et ce peut être justifié par l’explication précédemment donnée de la tendance de tous à faire des choix qui leur sont bénéfiques — les situations dans lesquelles la question rhétorique qui nous intéresse est utilisée sont bien souvent sans conséquences immédiatement grave, puisque personne ne voudrait prendre intentionnellement de mauvaises décisions. La plupart du temps, l’action dont le fait de sauter du pont est une analogie n’est pas réellement si grave. Le parallèle entre une action aux conséquences temporellement décalées et une action probablement mortelle, ou en tout cas dangereuse pour l’intégrité physique, parais peu soutenable, étant donné le contexte d’une discussion sur la suffisance de la reproduction sociale pour justifier ce premier type d’action. On peut également ajouter que, par sa nature condescendante et son fort appui sur le bon sens comme argument logique, “<em>Et si tout le monde saute d’un pont, tu le fais aussi</em>” est une phrase dont les locuteurs sont sûrement les mêmes qui sautent effectivement dans la rivière du sens commun lors d’une promenade sur le pont de l’argumentation.</p>
+
+
+
+ ]]></description>
+  <category>aphorisme</category>
+  <category>réflexion</category>
+  <guid>https://osk42.quarto.pub/osk42/posts/autres/si tout le monde saute dun pont.html</guid>
+  <pubDate>Wed, 09 Aug 2023 22:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>comment mieux apprendre</title>
+  <dc:creator>Oscar Plaisant</dc:creator>
+  <dc:creator>bucdany </dc:creator>
+  <link>https://osk42.quarto.pub/osk42/posts/autres/apprentissage.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+
+<section id="techniques-pour-mieux-apprendre" class="level1">
+<h1>:techniques pour mieux apprendre</h1>
+<p>Lorsqu’on apprend quelque chose de nouveau, il faut choisir les bonnes :ressources pour apprendre, mais aussi trouver une :méthode de travail efficace.</p>
+<p>Il faut aussi garder une bonne :hygiène de vie et un bon :environnement de travail</p>
+<p><strong>:résumé visuel de l’article</strong></p>
+</section>
+<section id="x-ressources-pour-apprendre" class="level1">
+<h1>:x-ressources-pour-apprendre</h1>
+<p>Utilisez des livres, des articles, des sites internet, des :formations en ligne, des :formations académiques (université, BTS…)… choisissez <strong>le média qui vous correspond</strong>, et une :pédagogie adaptée.</p>
+<p>Apprenez à :filtrer les sources.</p>
+<p>Des ressources pertinentes, bien ciblées, évitent de perdre du temps.</p>
+<p>I est également utile de :trouver des compagnons de travail, voire une :communauté de passionnés. Ceci dit, :travailler seul est aussi possible</p>
+</section>
+<section id="x-filtrer-les-sources" class="level1">
+<h1>:x-filtrer-les-sources</h1>
+<p>Internet est très vaste, ce qui peut être décourageant. <strong>Tout n’est pas bon à prendre</strong>, il faut savoir se méfier (y compris de l’article que vous êtes en train de lire).</p>
+</section>
+<section id="x-formations-en-ligne" class="level1">
+<h1>:x-formations-en-ligne</h1>
+<p>Beaucoup de formations en ligne sont très bien faites, avec des exercices, une pédagogie réfléchie…</p>
+<p>Il existe beaucoup de formations gratuites, mais le fait de payer est une motivation pour aller jusqu’au bout d’une formation.</p>
+<p>Cela est en partie dû au :biais du coût irrécupérable</p>
+</section>
+<section id="x-biais-du-cout-irrecuperable" class="level1">
+<h1>:x-biais-du-cout-irrecuperable</h1>
+<p>Le <em>biais du coût irrécupérable</em> est la tendance qu’ont les individus à être influencés par des investissements (financiers par exemple) faits dans le passé, de façon irrationnelle.</p>
+<p><img src="https://osk42.quarto.pub/osk42/posts/autres/_images/biais_cout_irrecuperable.png" class="img-fluid"></p>
+<p>Par exemple, si vous êtes au cinéma et que vous n’aimez pas le film, la décision rationnelle serait de sortir de la salle. Mais la plupart des gens resteront, car ils ont dépensé de l’argent pour le ticket. Pourtant, <strong>cet argent est dépensé quoi que l’on fasse</strong>, on a le choix entre avoir acheté un ticket et voir un mauvais film, ou bien avoir acheté un ticket et s’amuser dehors !</p>
+<p>Ce biais, qui fait que nous ne prenons pas la décision la plus rationnelle, est le <em>biais du coût irrécupérable</em>.</p>
+</section>
+<section id="x-formations-academiques" class="level1">
+<h1>:x-formations-academiques</h1>
+<p>Les formations académiques ont plusieurs avantages :</p>
+<ul>
+<li>un cadre qui peut être plus confortable</li>
+<li>un diplôme (qui a plus ou mois de valeur selon les domaines)</li>
+<li>des :camarades, ce qui est motivant</li>
+<li>des professeurs
+<ul>
+<li>ils ont une connaissance profonde du sujet</li>
+<li>ils peuvent vous aider, répondre à vos questions</li>
+<li>ils ont de l’expérience sur le sujet qu’ils enseignent</li>
+</ul></li>
+</ul>
+</section>
+<section id="x-aimer-son-professeur-et-son-enseignement" class="level1">
+<h1>:x-aimer-son-professeur-et-son-enseignement</h1>
+<p>La pédagogie doit vous corresponde pour que l’apprentissage soit agréable.</p>
+<p>Il faut “apprendre à aimer” un enseignement, en analysant correctement et en :prenant des notes intelligentes</p>
+</section>
+<section id="x-trouver-des-compagnons-de-travail" class="level1">
+<h1>:x-trouver-des-compagnons-de-travail</h1>
+<p>L’entraide est une manière <strong>agréable</strong> d’apprendre. S’aider mutuellement permet de garder la motivation et est très gratifiant.</p>
+<p>:Expliquer et formuler des concepts aux autres permet de bien intégrer son apprentissage.</p>
+</section>
+<section id="x-methode-feynman" class="level1">
+<h1>:x-methode-feynman</h1>
+<p>C’est une partie de la méthode Feynman : <em><strong>le meilleur moyen de comprendre quelque chose est de l’expliquer</strong>, car si vous n’arrivez pas à l’expliquer simplement, c’est que vous ne le comprenez pas assez bien</em></p>
+<p>Une des idées de cette méthode est d’expliquer (de façon imaginaire) à un enfant de 12 ans ce qu’on cherche à bien apprendre. Cela permet d’identifier ce qu’on a pas bien compris : il faut retravailler les éléments que l’on n’arrive pas à expliquer.</p>
+<p><img src="https://osk42.quarto.pub/osk42/posts/autres/_images/apprentissage_et_motivation_methode_feynman.png" class="img-fluid"></p>
+</section>
+<section id="x-trouver-une-communaute" class="level1">
+<h1>:x-trouver-une-communaute</h1>
+<p>Il est très utile de trouver des communautés de gens intéressés par le sujet que vous apprenez, par exemple des forums internet, des groupes Reddit, des serveurs Discord…</p>
+<p>Une communauté de passionnés permet :</p>
+<ul>
+<li>d’avoir des réponses rapides et des conseils efficaces sur des questions particulières</li>
+<li>d’avoir des conseils efficaces pour mieux apprendre</li>
+<li>de partager des concepts et des idées
+<ul>
+<li>élaborer de nouvelles idées</li>
+<li>vous donner un éclairage sur des parties floues de votre apprentissage</li>
+</ul></li>
+<li>discuter avec des passionnés, ce qui est très motivant</li>
+</ul>
+</section>
+<section id="x-travailler-seul-est-aussi-possible" class="level1">
+<h1>:x-travailler-seul-est-aussi-possible</h1>
+<p>Être seul n’est pas la fin du monde. Il faut simplement avoir de l’<strong>autonomie</strong> (étymologiquement : <em>se fixer ses propres règles</em>), avoir une bonne :méthode de travail</p>
+</section>
+<section id="x-hygiene-de-vie" class="level1">
+<h1>:x-hygiene-de-vie</h1>
+<p>Avoir une bonne <strong>hygiène de vie</strong> est important pour être efficace. Bien <strong>dormir</strong>, faire de l’exercice physique et ne pas rester enfermé chez soi sont des choses simples qui ont beaucoup d’impact.</p>
+<p>Faire des :pauses régulières permet aussi de travailler plus longtemps sans se déconcentrer.</p>
+</section>
+<section id="x-pomodoro" class="level1">
+<h1>:x-pomodoro</h1>
+<p>La méthode <strong><em><a href="https://fr.wikipedia.org/wiki/Technique_Pomodoro">pomodoro</a></em></strong> consiste à diviser son travail en cycles de 25 minutes séparés par de courtes pauses : travail 25 min, pause 5 min, travail 25 min, pause 5 min…</p>
+<p>Cette technique permet de travailler plus longtemps et efficacement, en restant concentré.</p>
+<p>Pendant les pauses, vous pouvez faire des étirements (pour ne pas rester statique trop longtemps), lire un livre qui vous plaît, boire un café…</p>
+</section>
+<section id="x-environnement-de-travail" class="level1">
+<h1>:x-environnement-de-travail</h1>
+<p>Faites attention à votre environnement de travail, il est aussi important que les :ressources que vous utilisez.</p>
+<p>Vous devez garder un environnement :sain. Il faut aussi :séparer les environnements de travail et de divertissement</p>
+</section>
+<section id="x-environnement-sain" class="level1">
+<h1>:x-environnement-sain</h1>
+<ul>
+<li>une pièce aérée</li>
+<li>une bonne luminosité</li>
+<li>faire attention à l’ergonomie, notamment si vous travaillez sur un ordinateur</li>
+</ul>
+</section>
+<section id="x-separer-travail-et-divertissement" class="level1">
+<h1>:x-separer-travail-et-divertissement</h1>
+<ul>
+<li><strong>séparer les environnements</strong> de travail et de divertissement
+<ul>
+<li>vidéo sur la séparation des environnements (en anglais) : <a href="https://www.youtube.com/watch?v=snAhsXyO3Ck">CGP Grey - Spaceship you</a></li>
+<li>avoir un bureau bien rangé
+<ul>
+<li>éloigner la nourriture, le téléphone, les objets distrayants…
+<ul>
+<li>boire de l’eau est une alternative au grignotage</li>
+</ul></li>
+</ul></li>
+<li>rester concentré en évitant toute distraction durant les phases de travail
+<ul>
+<li>fermer les pages du navigateur et les applications qui n’ont rien à voir avec votre projet</li>
+<li>des logiciels permettent de faire cela (bloquer certaines applications pendant le travail, avoir plusieurs environnements de navigateur, un pour le travail, un pour le divertissement)
+<ul>
+<li>==TODO : liste de logiciels==</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+</section>
+<section id="x-methode-d-apprentissage" class="level1">
+<h1>:x-methode-d-apprentissage</h1>
+<p>Avoir de bonnes méthodes permet d’apprendre mieux et plus vite.</p>
+<p>Définissez-vous un :emploi du temps. Fixez-vous :de bons objectifs. Commencez par :apprendre ce que vous aimez. Faites des :projets (surtout pour apprendre la programmation).</p>
+<p>Prenez des :notes.</p>
+</section>
+<section id="x-emploi-du-temps" class="level1">
+<h1>:x-emploi-du-temps</h1>
+<ul>
+<li>se fixer un emploi du temps pour apprendre (choisir des moments dédiés à notre apprentissage)</li>
+<li>la régularité aide à rester motivé et à garder une cadence efficace</li>
+<li>espacer son apprentissage dans le temps
+<ul>
+<li>essayer de tout apprendre d’un coup est vain et décourageant</li>
+<li>cela permet de mieux mémoriser, c’est la <strong><a href="https://ncase.me/remember/fr.html">répétition espacée</a></strong></li>
+<li>essayer d’apprendre trop vite peut être décourageant, il faut du temps à votre cerveau pour intégrer les choses
+<ul>
+<li>il ne faut pas être trop impatient</li>
+</ul></li>
+</ul></li>
+</ul>
+</section>
+<section id="x-se-fixer-de-bons-objectifs" class="level1">
+<h1>:x-se-fixer-de-bons-objectifs</h1>
+<ul>
+<li><p>des objectifs <strong>SMART</strong> :</p>
+<ul>
+<li><strong>S</strong>pécifique (clairement défini)
+<ul>
+<li>il doit être clairement défini</li>
+</ul></li>
+<li><strong>M</strong>esurable
+<ul>
+<li>il doit être facile de savoir quant l’objectif est atteint</li>
+</ul></li>
+<li><strong>A</strong>tteignable
+<ul>
+<li>des objectifs trop difficiles brisent la motivation (on ne pense pas pouvoir y arriver)</li>
+</ul></li>
+<li><strong>R</strong>elevant (comprendre pertinent, vient de l’anglais <em>relevant</em>)
+<ul>
+<li>il faut que l’objectif soit utile</li>
+<li>des objectifs trop simples ne sont pas gratifiants (on a l’impression de ne pas avancer)</li>
+</ul></li>
+<li><strong>T</strong>emporel
+<ul>
+<li>doit avoir une date buttoir, pour éviter la procrastination</li>
+<li>attention à fixer une date atteignable !</li>
+</ul></li>
+</ul></li>
+<li><p>des formations (livres, :formations en lignes, écoles) donnent des objectifs bien pensés</p></li>
+<li><p>une pensée :stoïque peut aider</p></li>
+</ul>
+</section>
+<section id="x-stoicisme" class="level1">
+<h1>:x-stoicisme</h1>
+<p>La pensée stoïque peut être résumée à :</p>
+<ul>
+<li>ne pas essayer d’agir contre ce qu’on ne contrôle pas</li>
+<li>faire son possible pour changer ce que l’on peut</li>
+<li>agir sur les causes directement, et non sur les conséquences</li>
+</ul>
+</section>
+<section id="x-commencer-par-ce-quon-aime" class="level1">
+<h1>:x-commencer-par-ce-quon-aime</h1>
+<p>Il faut commencer par travailler sur ce qu’on aime, ce que l’on connaît déjà</p>
+<ul>
+<li>il est beaucoup plus facile et motivant de travailler dans une direction qu’on aime (par exemple : apprendre la programmation en fabriquant un petit jeu vidéo)</li>
+<li>utiliser ce qu’on a déjà appris, ce qu’on maîtrise déjà, pour ne pas repartir de zéro</li>
+<li>mélanger les apprentissages</li>
+</ul>
+</section>
+<section id="x-faire-des-projets" class="level1">
+<h1>:x-faire-des-projets</h1>
+<ul>
+<li>les projets sont très formateurs, ils permettent de mettre en applications vos connaissances</li>
+<li>faire des miniprojets : de petits projets qui permettent de s’entrainer</li>
+<li>bien se préparer avant de se lancer dans un projet
+<ul>
+<li>bon cahier des charges (bien définir ce qu’on veut faire)</li>
+<li>vérifier qu’on maîtrise les outils nécessaires</li>
+<li>demander à une communauté si notre idée est pertinente
+<ul>
+<li>peut-être que quelqu’un l’a déjà fait</li>
+<li>peut-être que quelqu’un a déjà essayé, et peut vous dire ce qui est à éviter, ce qui est le plus difficile</li>
+<li>peut-être qu’un aspect qui vous paraît évident ne l’est pas</li>
+<li>multiplier les points de vue est toujours bon</li>
+</ul></li>
+</ul></li>
+</ul>
+</section>
+<section id="x-prise-de-notes" class="level1">
+<h1>:x-prise-de-notes</h1>
+<p>Bien prendre des notes permet de préserver notre apprentissage.</p>
+<ul>
+<li>apprendre par cœur n’aide pas. Il faut :
+<ul>
+<li>analyser (comprendre entièrement)</li>
+<li>découper (séparer les concepts)</li>
+<li>trouver les liens entre les concepts</li>
+<li>reprendre les idées avec ses propres mots</li>
+<li>développer ses propres idées autours des concepts appris</li>
+</ul></li>
+<li>les buts de vos notes sont :
+<ul>
+<li>garder les informations importantes</li>
+<li>retrouver rapidement un concept</li>
+<li>pouvoir créer quelque chose (comme écrire un article)</li>
+</ul></li>
+<li>j’utilise :la méthode <em>zettelkasten</em> et les <em>notes liées</em> avec l’application <strong><a href="https://obsidian.md">obsidian</a></strong></li>
+</ul>
+</section>
+<section id="x-zettelkasten" class="level1">
+<h1>:x-zettelkasten</h1>
+<p>La méthode zettelkasten est un système de prise de notes qui consiste à créer des notes <strong>atomiques</strong>, et <strong>liées</strong>.</p>
+<ul>
+<li><strong>atomiques</strong> : les notes doivent parler d’un seul concept (les atomes sont indivisibles, vos notes doivent l’être aussi). Si une note parle de 2 sujets, on doit la séparer en plusieurs notes</li>
+<li><strong>liées</strong> : les concepts reliés doivent être reliés dans vos notes (avec des liens cliquables)
+<ul>
+<li>les liens peuvent créer une hiérarchie</li>
+<li>les liens peuvent rapprocher des concepts similaires</li>
+<li>les liens améliorent la navigation (on saute de note en note en cliquant)</li>
+<li>les liens ont du sens : les concepts ont plus d’intérêt si ils sont reliés</li>
+</ul></li>
+</ul>
+<p>Voici un article sur la méthode Zettelkasten : <em><a href="https://everlaab.com/methode-zettelkasten-comment-prendre-des-notes-utiles/">Méthode Zettelkasten : Comment prendre des notes utiles ?</a></em></p>
+</section>
+<section id="x-carte-mentale" class="level1">
+<h1>:x-carte-mentale</h1>
+<p><img src="https://osk42.quarto.pub/osk42/posts/autres/_images/apprentissage.png" class="img-fluid"></p>
+
+
+</section>
+
+ ]]></description>
+  <category>apprendre</category>
+  <guid>https://osk42.quarto.pub/osk42/posts/autres/apprentissage.html</guid>
+  <pubDate>Thu, 03 Aug 2023 22:00:00 GMT</pubDate>
+  <media:content url="https://osk42.quarto.pub/osk42/posts/autres/_images/apprentissage.png" medium="image" type="image/png" height="140" width="144"/>
+</item>
+<item>
+  <title>Contre, l’usage, abusif, de la virgule, dans la notation, mathématique</title>
+  <link>https://osk42.quarto.pub/osk42/posts/maths/contre l usage abusif de la virgule dans la notation mathematique.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+
+<p>La notation mathématique traditionnelle cherche à traduire des phrases et des calculs en symboles.</p>
+<p>Par exemple, on peut dire “tous les nombres entiers sont pairs ou impairs”, mais on peut également écrire <img src="https://latex.codecogs.com/png.latex?%5Cforall%20n%20%5Cin%20%5Cmathbb%7BN%7D,%20%5Cquad%20(2%5Cmid%20n)%20%5Cvee%20(2%20%5Cnmid%20n)">, ce qui veut dire la même chose.</p>
+<p>La notation mathématique intéressante principalement pour deux choses :</p>
+<ul>
+<li>elle est plus lisible : on préfère <img src="https://latex.codecogs.com/png.latex?%5Cforall%20x%20%5Cin%20N,%20%5Cforall%20i,%20j%20%5Cin%20%5Cmathbb%7BN%7D,%20%5Cquad%20i%5Ctimes%20j%7Cn%20%5Cimplies%20(i%5Cmid%20n)%20%5Cwedge%20(j%5Cmid%20n)"> plutôt que “<em>si un entier est divisible par le produit de deux entiers, alors il est divisible par chacun des deux entiers</em>”</li>
+<li>elle est plus rigoureuse : écrire des théorèmes ou expressions mathématiques en français peut être ambigu et sujet à interprétation</li>
+</ul>
+<p>C’est pour cette deuxième raison que la virgule pose un problème : elle rend la notation mathématique moins rigoureuse, et parfois même ambigüe.</p>
+<section id="les-différentes-significations-de-la-virgule" class="level2">
+<h2 class="anchored" data-anchor-id="les-différentes-significations-de-la-virgule">Les différentes significations de la virgule</h2>
+<p>Pour comprendre les problèmes de la virgule, listons les significations possibles de ce symbole :</p>
+<ul>
+<li>pour des vecteurs, elle sépare les valeurs : <img src="https://latex.codecogs.com/png.latex?(x,%20y,%20z)"></li>
+<li>Elle sépare les quantificateurs : <img src="https://latex.codecogs.com/png.latex?%5Cforall%20x%20%5Cin%20%5Cmathbb%7BR%7D,%20%5Cexists%20y%20%5Cin%20%5Cmathbb%7BR%7D%20%5Cdots"></li>
+<li>Elle signifie “tel que” : <img src="https://latex.codecogs.com/png.latex?%5Cexists%20x%20%5Cin%20%5Cmathbb%7BR%7D,%20x%5E%7B2%7D%20%3C%2042"></li>
+<li>Elle “distribue” un <img src="https://latex.codecogs.com/png.latex?%5Cin"> sur plusieurs valeurs : <img src="https://latex.codecogs.com/png.latex?%5Cforall%20x,%20y%20%5Cin%20%5Cmathbb%7BR%7D%5Cdots"></li>
+</ul>
+</section>
+<section id="ambiguïtés-créées-par-la-virgule" class="level2">
+<h2 class="anchored" data-anchor-id="ambiguïtés-créées-par-la-virgule">Ambiguïtés créées par la virgule</h2>
+<p>Nous avons vu que la virgule possède plusieurs utilisations différentes. En fait, on peut aisément construire un exemple qui utilise toutes ces significations :</p>
+<p><img src="https://latex.codecogs.com/png.latex?%5Cforall%20x,%20y%20%5Cin%20%5Cmathbb%7BR%7D,%20%5Cexists%20y%20%5Cin%20%5Cmathbb%7BR%7D,%20y%20%5Cin%20(x,%20y)"></p>
+<p>Ici, on a le même problème qu’avec l’écriture en français : le même mot (symbole) peut avoir beaucoup de significations selon le contexte. On peut tout de même donner des règles qui permettent de reconnaître quelle interprétation est la bonne : - dans un vecteur (une valeur entre parenthèses), c’est un séparateur des coefficients du vecteur - avant un <img src="https://latex.codecogs.com/png.latex?%5Cin">, c’est un raccourci pour dire que toutes les variables listées appartiennent à l’ensemble désigné - Après / entre des quantificateurs - c’est un “tel que” s’il est suivi par une expression ou bien par un “il existe” - c’est un séparateur s’il est suivi par un quantificateur “pour tout” ( <img src="https://latex.codecogs.com/png.latex?%5Cforall"> )</p>
+<section id="cas-où-la-notation-est-vraiment-ambiguë" class="level3">
+<h3 class="anchored" data-anchor-id="cas-où-la-notation-est-vraiment-ambiguë">Cas où la notation est vraiment ambiguë</h3>
+<p>On a vu que, si les interprétations possibles de la virgule, on peut dire <span class="citation" data-cites="de">@de</span> façon certaine laquelle est la bonne en fonction du contexte.</p>
+<p>Mais il arrive que, quand on sait que l’on travaille sur un ensemble particulier (par exemple en arithmétique, on travaille très souvent sur <img src="https://latex.codecogs.com/png.latex?%5Cmathbb%7BZ%7D">, ou bien en analyse sur <img src="https://latex.codecogs.com/png.latex?%5Cmathbb%7BR%7D">) on note <img src="https://latex.codecogs.com/png.latex?%5Cforall%20x,%20%5Cdots"> pour dire <img src="https://latex.codecogs.com/png.latex?%5Cforall%20x%20%5Cin%20%5Ctext%7Bensemble%20concern%C3%A9%7D,%20%5Cdots">. C’est un raccourci de notation qui est pratique, mais on peut alors écrire :</p>
+<p><img src="https://latex.codecogs.com/png.latex?%5Cforall%20x,y%20%5Cin%20%5Cmathbb%7BR%7D"></p>
+<p>Le problème est le suivant : si <img src="https://latex.codecogs.com/png.latex?y"> est une variable qui dépend de <img src="https://latex.codecogs.com/png.latex?x"> (par exemple, si on a posé avant <img src="https://latex.codecogs.com/png.latex?y%20=%20x+1">), on peut interpréter l’expression comme <img src="https://latex.codecogs.com/png.latex?%5Cforall%20x%20%5Cin%20%5Cmathbb%7BR%7D,%20x+1%20%5Cin%20%5Cmathbb%7BR%7D">. L’interprétation est logique, mais on a bien sûr d’abord pensé à ceci : <img src="https://latex.codecogs.com/png.latex?%5Cforall%20x%20%5Cin%20%5Cmathbb%7BR%7D,%20%5Cforall%20y%20%5Cin%20%5Cmathbb%7BR%7D"> (ou <img src="https://latex.codecogs.com/png.latex?%5Cforall%20(x,%20y)%5Cin%20%5Cmathbb%7BR%7D%5E%7B2%7D">, ce qui est équivalent).</p>
+<p>On voit donc que quelques cas (rares, il faut l’admettre) sont réellement sujets à interprétation</p>
+</section>
+<section id="description-des-ensembles" class="level3">
+<h3 class="anchored" data-anchor-id="description-des-ensembles">Description des ensembles</h3>
+<p>Une autre notation intéressante est celle que l’on utilise pour décrire les ensembles.</p>
+<p>La notation générale est : <img src="https://latex.codecogs.com/png.latex?%5Clbrace%20x%20%5Cin%20E%20%5Cmid%20%5Cmathscr%7BP%7D(x)%20%5Crbrace"> où <img src="https://latex.codecogs.com/png.latex?%5Cmathscr%7BP%7D"> est une propriété qui dépend de <img src="https://latex.codecogs.com/png.latex?x">. On voit parfois aussi <img src="https://latex.codecogs.com/png.latex?%5Clbrace%20x%20%5Cin%20E%20:%20%5Cmathscr%7BP%7D(x)%20%5Crbrace">.</p>
+<p>Bien sûr, la propriété <img src="https://latex.codecogs.com/png.latex?%5Cmathscr%7BP%7D"> peut contenir des quantificateurs. Par exemple, on peut noter <img src="https://latex.codecogs.com/png.latex?%5Clbrace%20x%20%5Cin%20%5Cmathbb%7BR%7D%20%5Cmid%20%5Cnot%20%5Cexists%20y%20%5Cin%20%5Cmathbb%7BQ%7D,%20x%20%5Ccdot%20y%20%5Cin%20%5Cmathbb%7BZ%7D%20%5Crbrace"></p>
+<p>Ici, on note que le “tel que” est noté avec un <img src="https://latex.codecogs.com/png.latex?%5Cmid">. L’utilisation de la virgule dans ce contexte est assez rare. En effet, les expressions sont alors beaucoup moins lisibles : <img src="https://latex.codecogs.com/png.latex?%5Clbrace%20x%20%5Cin%20%5Cmathbb%7BR%7D,%20%5Cforall%20y%20%5Cin%20%5Cmathbb%7BN%7D,%20x%5Ccdot%20y%20%5Cnotin%20%5Cmathbb%7BN%7D%20%5Crbrace"> J’ai pourtant déjà vu cette expression : <img src="https://latex.codecogs.com/png.latex?%5C%7B%20%5Coverrightarrow%7BMN%7D,%20M,%20N%20%5Cin%20F%5C%7D">.</p>
+<p>Il arrive également que l’on utilise la virgule comme “et” logique : <img src="https://latex.codecogs.com/png.latex?%5Cleft%5Clbrace%20%20%5Cfrac%7Ba%7D%7Bb%7D%20%5Cmid%20a%20%5Cin%20%5Cmathbb%7BZ%7D,%20b%20%5Cin%20%5Cmathbb%7BZ%7D%5E%7B%5Cast%7D%20%20%5Cright%5Crbrace"> ou même <img src="https://latex.codecogs.com/png.latex?%5Cleft%5Clbrace%20q%20%5Cmid%20a%20%5Cin%20%5Cmathbb%7BZ%7D,%20b%20%5Cin%20%5Cmathbb%7BZ%7D%5E%7B%5Cast%7D,%20q%20=%20%5Cfrac%7Ba%7D%7Bb%7D%20%5Cright%5Crbrace">.</p>
+<p>On pourrait donc avoir cette formule : <img src="https://latex.codecogs.com/png.latex?%5Cleft%5Clbrace%20q,%20a,%20b%20%5Cin%20%5Cmathbb%7BZ%7D,%20b%20%5Cneq%200,%20q%20=%20%5Cfrac%7Ba%7D%7Bb%7D%20%5Cright%5Crbrace">, que l’on n’écrira bien sûr jamais, mais qui montre bien les nombreuses significations possibles de la virgule et le travail d’interprétation que l’on doit faire à chaque fois pour deviner laquelle est la bonne.</p>
+</section>
+</section>
+<section id="solutions-possibles" class="level2">
+<h2 class="anchored" data-anchor-id="solutions-possibles">Solutions possibles</h2>
+<section id="solution-de-la-logique-formelle" class="level3">
+<h3 class="anchored" data-anchor-id="solution-de-la-logique-formelle">Solution de la logique formelle</h3>
+<p>En logique formelle, quand on utilise les quantificateurs, on ne met jamais de virgules, ni pour les séparer, ni pour mettre plusieurs variables à la fois. Par exemple, on ne noterait pas <img src="https://latex.codecogs.com/png.latex?%5Cforall%20x,%20y%20%5Cin%20%5Cmathbb%7BR%7D,%20%5Cexists%20z%20%5Cin%20%5Cmathbb%7BR%7D,%20z%20=%20x+y">, mais plutôt <img src="https://latex.codecogs.com/png.latex?%5Cforall%20x%20%5Cin%20%5Cmathbb%7BR%7D%20%5Cleft(%20%5Cforall%20y%20%5Cin%20%5Cmathbb%7BR%7D%20%5Cleft(%20%5Cexists%20z%20%5Cin%20%5Cmathbb%7BR%7D%20%5Cleft(%20z%20=%20x+y%20%5Cright)%20%5Cright)%20%5Cright)"></p>
+<p>La solution consiste donc à : - ne jamais mettre deux variables ensemble (utiliser plusieurs quantificateurs, un par variable) - on peut aussi écrire <img src="https://latex.codecogs.com/png.latex?(x,%20y)%20%5Cin%20%5Cmathbb%7BR%7D%5E%7B2%7D"> (on a en fait qu’une seule variable : le vecteur <img src="https://latex.codecogs.com/png.latex?(x,%20y)"> ) - mettre des parenthèses plutôt que des virgules (élimine toutes les ambiguïtés)</p>
+</section>
+<section id="utiliser-de-meilleurs-symboles" class="level3">
+<h3 class="anchored" data-anchor-id="utiliser-de-meilleurs-symboles">Utiliser de meilleurs symboles</h3>
+<p>La solution proposée par la logique formelle est plutôt lourde (longue à écrire et moins lisible).</p>
+<p>On peut, plus simplement, utiliser des symboles spécialisés pour chacune des significations</p>
+<ul>
+<li>Le <img src="https://latex.codecogs.com/png.latex?;"> est un meilleur symbole pour séparer les éléments d’un vecteur
+<ul>
+<li>Dans les langues où c’est la virgule qui est l’indicateur pour les nombres décimaux, on préfère le ” <img src="https://latex.codecogs.com/png.latex?;"> ” dans les vecteurs</li>
+</ul></li>
+<li>Pour “tel que”, on préfère ” <img src="https://latex.codecogs.com/png.latex?%5Cmid"> “,” <img src="https://latex.codecogs.com/png.latex?/"> ” ou bien quelquefois ” <img src="https://latex.codecogs.com/png.latex?:"> ”
+<ul>
+<li><strong>Exemple :</strong> <img src="https://latex.codecogs.com/png.latex?%5Cforall%20x%20%5Cin%20%5Cmathbb%7BR%7D,%20%5Cexists%20y%20%5Cin%20%5Cmathbb%7BR%7D%20%5Cmid%20y%20=%20x+1"> ou bien <img src="https://latex.codecogs.com/png.latex?%5Clbrace%20x%20%5Cin%20%5Cmathbb%7BR%7D%20:%20%5Ccos(x)%20=%200%20%5Crbrace"></li>
+</ul></li>
+<li>Pour décrire que plusieurs variables sont dans un ensemble, on utilise <img src="https://latex.codecogs.com/png.latex?(x,%20y)%20%5Cin%20%5Cmathbb%7BR%7D%5E%7B2%7D"> ou bien <img src="https://latex.codecogs.com/png.latex?(x,%20y,%20z)%20%5Cin%20%5Cmathbb%7BR%7D%5E%7B3%7D"> etc.
+<ul>
+<li>On peut d’ailleurs utiliser le <img src="https://latex.codecogs.com/png.latex?;"> pour séparer les éléments : <img src="https://latex.codecogs.com/png.latex?(x;y;z)%5Cin%20%5Cmathbb%7BR%7D%5E%7B3%7D"></li>
+</ul></li>
+</ul>
+<p>Ces remplacements ont plusieurs avantages : - ils retirent toute ambiguïté, même celles qui n’en sont pas, mais qui sont des erreurs de lecture - ils sont plus lisibles : avoir un symbole pour chaque signification permet au cerveau de comprendre et d’utiliser plus facilement ces symboles et de mieux les associer à leur signification</p>
+<p>Ils ont cependant un problème : ils obligent parfois à être plus formel, et donc à écrire plus de choses. Par exemple, <img src="https://latex.codecogs.com/png.latex?%5Cleft%5Clbrace%20%5Cfrac%7Ba%7D%7Bb%7D%20%5Cmid%20a,%20b%20%5Cin%20%5Cmathbb%7BZ%7D,%20b%20%5Cneq%200%20%20%5Cright%5Crbrace"> est plus lisible que <img src="https://latex.codecogs.com/png.latex?%5Cleft%5Clbrace%20%5Cfrac%7Ba%7D%7Bb%7D%20%5Cmid%20(a;b)%5Cin%20%5Cmathbb%7BZ%7D%5Ctimes%20%5Cmathbb%7BZ%7D%5E%7B%5Cast%7D%20%20%5Cright%5Crbrace">, ou bien <img src="https://latex.codecogs.com/png.latex?%5Cleft%5Clbrace%20%5Cfrac%7Ba%7D%7Bb%7D%5Cmid%20(a;b)%5Cin%5Cmathbb%7BZ%7D%5E%7B2%7D%20%5Cwedge%20b%5Cneq%200%20%20%5Cright%5Crbrace"> ou encore <img src="https://latex.codecogs.com/png.latex?%5Cleft%5Clbrace%20%5Cfrac%7Ba%7D%7Bb%7D%20%5Cmid%20a%20%5Cin%20%5Cmathbb%7BZ%7D%20%5Cwedge%20b%20%5Cin%20%5Cmathbb%7BZ%7D%5E%7B%5Cast%7D%20%20%5Cright%5Crbrace"> (bien sûr, les 4 ont la même signification, et sont donc tous aussi simples, mais il faut moins d’efforts au cerveau pour comprendre les valeurs possibles de <img src="https://latex.codecogs.com/png.latex?a"> et <img src="https://latex.codecogs.com/png.latex?b"> dans le premier cas, car la notation donne sans détour les informations que l’on recherche).</p>
+<p>Il semble donc que, dans certains cas, c’est au contraire l’utilisation de notation plus abrégée, par exemple avec des virgules, qui est plus lisible.</p>
+</section>
+<section id="exemples" class="level3">
+<h3 class="anchored" data-anchor-id="exemples">Exemples</h3>
+<p>Voici quelques exemples d’expressions écrites en utilisant plus ou moins de virgules</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 21%">
+<col style="width: 27%">
+<col style="width: 51%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>maximum de virgules</th>
+<th>intermédiaire</th>
+<th>minimum de virgules</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><img src="https://latex.codecogs.com/png.latex?%5Cforall%20x,%20y%20%5Cin%20%5Cmathbb%7BR%7D,%20%5Cexists%20a,%20b%20%5Cin%20%5Cmathbb%7BR%7D,%20x+y%20=%20a+b,%20x%5Cneq%20a,%20y%20%5Cneq%20b"></td>
+<td><img src="https://latex.codecogs.com/png.latex?%5Cforall%20(x,%20y)%20%5Cin%20%5Cmathbb%7BR%7D%5E%7B2%7D,%20%5Cexists%20(a,%20b)%20%5Cin%20%5Cmathbb%7BR%7D%5E%7B2%7D,%20x+y%20=%20a+b%20%5Cwedge%20x%5Cneq%20a%20%5Cwedge%20y%20%5Cneq%20b"></td>
+<td><img src="https://latex.codecogs.com/png.latex?%5Cforall%20(x;y)%5Cin%5Cmathbb%7BR%7D%5E%7B2%7D,%20%5Cexists%20(a;b)%5Cin%5Cmathbb%7BR%7D%5E%7B2%7D,%20x+y=a+b%20%5Cwedge%20x%5Cneq%20a%20%5Cwedge%20y%20%5Cneq%20b"></td>
+</tr>
+<tr class="even">
+<td><img src="https://latex.codecogs.com/png.latex?%5Cleft%5Clbrace%20q,a,b%5Cin%5Cmathbb%7BZ%7D,%20b%20%5Cneq%200,%20q=%5Cfrac%7Ba%7D%7Bb%7D%20%5Cright%5Crbrace"></td>
+<td><img src="https://latex.codecogs.com/png.latex?%5Cleft%5Clbrace%20q%20%5Cmid%20a%20%5Cin%20%5Cmathbb%7BZ%7D,%20b%20%5Cin%20%5Cmathbb%7BZ%7D%5E%7B%5Cast%7D,%20q%20=%20%5Cfrac%7Ba%7D%7Bb%7D%20%5Cright%5Crbrace"></td>
+<td><img src="https://latex.codecogs.com/png.latex?%5Cleft%5Clbrace%20q%20%5Cmid%20(a;%20b)%20%5Cin%20%5Cmathbb%7BZ%7D%5E%7B2%7D%20%5Cwedge%20b%20%5Cneq%200%20%5Cwedge%20q%20=%20%5Cfrac%7Ba%7D%7Bb%7D%20%5Cright%5Crbrace"> ou bien <img src="https://latex.codecogs.com/png.latex?%5Cleft%5Clbrace%20q%20%5Cmid%20(a;%20b)%20%5Cin%20%5Cmathbb%7BZ%7D%20%5Ctimes%20%5Cmathbb%7BZ%7D%5E%7B%5Cast%7D%20%5Cwedge%20q%20=%20%5Cfrac%7Ba%7D%7Bb%7D%20%5Cright%5Crbrace"></td>
+</tr>
+<tr class="odd">
+<td><img src="https://latex.codecogs.com/png.latex?%5C%7B%20%5Coverrightarrow%7BMN%7D,M,N%20%5Cin%20F%20%5C%7D"></td>
+<td><img src="https://latex.codecogs.com/png.latex?%5C%7B%20%5Coverrightarrow%7BMN%7D%20%5Cmid%20M,%20N%20%5Cin%20F%20%5C%7D"></td>
+<td><img src="https://latex.codecogs.com/png.latex?%5C%7B%20%5Coverrightarrow%7BMN%7D%20%5Cmid%20(M,%20N)%20%5Cin%20F%5E%7B2%7D%20%5C%7D"></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="quand-utiliser-quoi" class="level3">
+<h3 class="anchored" data-anchor-id="quand-utiliser-quoi">Quand utiliser quoi ?</h3>
+<p>Nous avons vu que, dans certains cas, la virgule est plus lisible car elle abrège les notations, et nous évite des réflexions inutiles sur le sens qu’apporte un symbole donné.</p>
+<p>Mon avis personnel est donc :</p>
+<ul>
+<li>Dans un contexte où il est nécessaire d’être précis (articles, cours, énoncés, définitions…), utiliser des symboles adaptés pour chaque signification
+<ul>
+<li>notamment, le fait de ne pas utiliser de raccourcis de notation apporte un formalisme supplémentaire</li>
+</ul></li>
+<li>Dans un contexte où le but est simplement de faire comprendre (solution ou correction d’un exercice, cours et énoncés simples de choses connues ou évidentes), utiliser des virgules (et autres abréviations) peut être avantageux
+<ul>
+<li>cela allège la rédaction et rend donc la lecture et la compréhension plus rapides</li>
+<li>cela permet d’écrire plus vite (notamment utile lorsqu’on résout un exercice) J’ajouterai que, avant d’utiliser des notations raccourcies, il est nécessaire de bien comprendre comment les notations formelles fonctionnent. Pour cela, écrire sans aucune abréviation (de manière rigoureuse) est utile. Il vaut mieux s’habituer d’abord à une utilisation stricte, puis utiliser des raccourcis quand c’est justifié (ceci ne se limite pas aux raccourcis de notation traités ici, mais est valable pour toutes les abréviations, comme <img src="https://latex.codecogs.com/png.latex?2%5Cmathbb%7BN%7D"> pour <img src="https://latex.codecogs.com/png.latex?%5C%7B%202n%20%5Cmid%20n%20%5Cin%20%5Cmathbb%7BN%7D%20%5C%7D">, ou bien <img src="https://latex.codecogs.com/png.latex?%5Csum%5Climits_%7Bi%7Dv_%7Bi%7D"> pour <img src="https://latex.codecogs.com/png.latex?%5Csum%5Climits_%7Bi=0%7D%5En%20v_%7Bi%7D%20%5Ctext%7B%20o%C3%B9%20%7D%20n%20%5Ctext%7B%20est%20la%20dimension%20du%20vecteur%20%7D%20v">)</li>
+</ul></li>
+</ul>
+</section>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<p>L’utilisation de la virgule dans la notation mathématique peut parfois conduire, sinon à des ambiguïtés, à des erreurs de lectures ou d’interprétation. Elles vont aussi rendre la compréhension de certaines expressions plus difficile.</p>
+<p>Les alternatives disponibles sont meilleures, car elles facilitent la compréhension et l’écriture des mathématiques.</p>
+<p>Et en plus c’est beaucoup plus joli !</p>
+
+
+</section>
+
+ ]]></description>
+  <category>maths</category>
+  <guid>https://osk42.quarto.pub/osk42/posts/maths/contre l usage abusif de la virgule dans la notation mathematique.html</guid>
+  <pubDate>Sat, 22 Jul 2023 22:00:00 GMT</pubDate>
+  <media:content url="https://osk42.quarto.pub/osk42/posts/maths/_images/virgule.png" medium="image" type="image/png" height="52" width="71"/>
+</item>
+<item>
+  <title>Le langage APL</title>
+  <link>https://osk42.quarto.pub/osk42/posts/informatique/Le langage APL.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+
+<p>APL est mon langage de programmation préféré, parce qu’il est assez mathématique, très agréable à utiliser, et qu’il change vraiment votre façon d’approcher les problèmes (comme <a href="https://en.wikipedia.org/wiki/Alan_Perlis">Alan Perlis</a> l’a dit : <a href="https://cpsc.yale.edu/epigrams-programming">“A language that doesn’t affect the way you think about programming, is not worth knowing.”</a>). Ce langage à apporté beaucoup de concepts en programmation qui sont très intéressants. Notamment, son créateur, Kenneth Iverson, à obtenu le prix Turing en 1979, pour ses travaux sur la notation mathématique, qui ont mené a la création du langage APL, pour l’utilisation éducative d’APL, et pour sa recherche sur la théorie et la pratique des langages.</p>
+<p>APL signifie “A Programming Language”, et il à été créé en 1962 (ou un peu plus tard selon comment on compte), c’est-à-dire avant le C, et 4 ans après le LISP. Pourtant, même les premières versions intègrent des concepts qui sont toujours novateurs et très intéressants (et, bien sûr, de nombreux dialectes et dérivés ont émergés depuis).</p>
+<p>La plupart des langages ou librairies qui manipulent des tableaux généralisés sont très inspirés par APL (on les appelle parfois des “Iverson ghosts”), notamment numpy (on retrouve par exemple <code>iota</code> dans beaucoup de langages, pour générer les nombres de <code>1</code> à <code>n</code>).</p>
+<p>Les principaux avantages d’APL sont :</p>
+<ul>
+<li>le paradigme “<a href="https://en.wikipedia.org/wiki/Array_programming">programmation array</a>”
+<ul>
+<li>les opérations sont généralisées le plus possible sur les tableaux (donc faire une addition de tableaux est comme faire une addition de nombres)</li>
+</ul></li>
+<li>la programmation avec des <a href="https://mlochbaum.github.io/BQN/commentary/primitive.html">primitives</a>
+<ul>
+<li>cela permet de combiner des fonctions de façon très riche, et assez facilement</li>
+<li>c’est une façon de penser que j’adore : on a beaucoup moins de travail de traduction pour l’ordinateur à faire : pas de boucles, rarement des conditions explicites, et plutôt des opération que l’on applique de différentes manières sur des listes ou tableaux
+<ul>
+<li>Encore une fois, commme <a href="https://en.wikipedia.org/wiki/Alan_Perlis">Alan Perlis</a> l’a dit : “A programming language is low level when its programs require attention to the irrelevant.”</li>
+</ul></li>
+</ul></li>
+<li>L’utilisation de symboles
+<ul>
+<li>chaque primitive est représentée par un symbole, ce qui évite d’avoir du code illisible comme quand on utilise numpy</li>
+</ul></li>
+<li>Les Dfns
+<ul>
+<li>APL permet de définir des fonction anonymes assez puissantes</li>
+<li>elles incluent la possibilité de faire de la récursion anonyme, ce qui est incroyable</li>
+</ul></li>
+<li>La concision
+<ul>
+<li>APL est très concis (par exemple, voici le code pour le jeu de la vie : <code>life ← {⊃1 ⍵ ∨.∧ 3 4 = +/ +/ ¯1 0 1 ∘.⊖ ¯1 0 1 ⌽¨ ⊂⍵}</code>)</li>
+</ul></li>
+<li>la facilité d’apprentissage
+<ul>
+<li>comme les primitives sont assez simples à apprendre, et pourtant très riches, on arrive rapidement à faire beaucoup de choses</li>
+<li>il n’y a qu’un nombre assez petit de primitives, plus quelques variables et fonctions système</li>
+</ul></li>
+<li>la notation comme outils pour la pensée
+<ul>
+<li>Iverson à notamment créé un concept (et écrit un papier pour l’expliciter en APL) : <a href="https://www.eecg.utoronto.ca/~jzhu/csc326/readings/iverson.pdf">“Notation as a tool of thought”</a></li>
+<li>Cela inclut notamment des “design patterns for a programming language” :
+<ul>
+<li>Ease of expressing constructs arising in problems.
+<ul>
+<li>primitives plutôt que boucles ou concepts bas niveau</li>
+<li>symboles pour les écrire facilement</li>
+</ul></li>
+<li>Suggestivity
+<ul>
+<li>comme “serendipity”, le fait de permettre la découverte de nouvelles choses en les suggérant</li>
+<li>les symboles et les façons riches de les combiner permettent des manipulations symboliques qui font que l’on découvre de nouvelles façons d’exprimer la même chose assez facilement</li>
+<li>cela fait que golfer un code APL (le rendre le plus court possible) revient souvent à le simplifier (contrairement à beaucoup d’autres langages où il est très facile de <em>trop</em> golfer, et que tout devienne illisible).</li>
+</ul></li>
+<li>Ability to subordinate detail
+<ul>
+<li>ne surtout pas confondre avec “ability to hide detail” : les fonctions font cela dans tous les langages</li>
+<li>plutôt que de cacher les détails dans une fonction à un autre endroit, il est plus pratique de mettre les détails à un endroit du programme où on les voit mais où on comprends qu’ils sont subordonnés</li>
+<li>La syntaxe APL (qui fonctionne de droite à gauche) permet de faire cela très facilement</li>
+<li>par exemple, le calcul de la moyenne d’une liste est <code>+/÷≢</code>. Il est plus pratique d’intégrer ce morceau de code directement dans notre code plus grand, plutôt que de définir une fonction <code>mean</code> ou <code>average</code>, qu’il faudra de toute façon consulter pour connaître les détails de son fonctionnement</li>
+</ul></li>
+<li>Economy
+<ul>
+<li>les primitives sont représentées par un seul symbole, et les symboles sont même souvent polysémiques selon leur nombre d’arguments</li>
+<li>par exemple, <code>⌈</code> est le plafond quand ses arguments sont seulement à droite, et le maximum de ses deux arguments quand l’un est à droite, l’autre à gauche (ce qui fait que la réduction par <code>⌈</code>, notée <code>⌈/</code> donne le maximum d’une liste)</li>
+</ul></li>
+<li>Amenability to formal proofs
+<ul>
+<li>aujourd’hui, on je cherche plus nécessairement à avoir des programmes dont on démontre formellement qu’ils fonctionnent (on utilise plutôt une approche empirique, avec des tests), mais le fait qu’APL soit proche de la notation mathématique fait que les démonstrations se font assez bien.</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+<p>De nombreux dialectes d’APL sont apparus depuis sa création, notamment le J, qui n’utilise que des symboles ASCII (mais parfois deux symboles pour une seule primitive), et qui à apporté les combinateurs (des fonctions qui combine des fonctions de façon assez riches) et les trains (ce qui permet d’écrire la moyenne littéralement comme “somme divisée par longueur” : <code>+/ ÷ ≢</code>). Plus récemment, le BQN est apparu, qui est plus fonctionnel, et qui apporte des primitives différentes, ainsi que des symboles parfois un peu mieux choisis.</p>
+<p>APL est vraiment un langage très particulier, la quasi totalité des gens qui l’apprennent adorent programmer avec, car il est très agréable à utiliser, mais il faut vraiment sortir de la façon “habituelle” de coder : il faut accepter que les symboles sont plus lisibles que des noms, que faire une longue ligne est plus lisible que de séparer le code en fonctions etc…</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Introduction au langage APL
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>J’ai filmé 4 vidéos qui présentent quelques bases du langage APL sur un exemple simple : comment calculer des <a href="https://fr.wikipedia.org/wiki/Triplet_pythagoricien">triplets pythagoriciens</a>.</p>
+<p><a href="https://www.youtube.com/playlist?list=PL5ZGZlm-yp_xQfzsBtD66HIMW1M97wCsE">Voir a playlist complète</a></p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=6J0Au6AKGWw&amp;list=PL5ZGZlm-yp_xQfzsBtD66HIMW1M97wCsE&amp;index=2">Vidéo 1</a></li>
+<li><a href="https://www.youtube.com/watch?v=tax604gMJvA&amp;list=PL5ZGZlm-yp_xQfzsBtD66HIMW1M97wCsE&amp;index=3">Vidéo 2</a></li>
+<li><a href="https://www.youtube.com/watch?v=iS26PGxl_oI&amp;list=PL5ZGZlm-yp_xQfzsBtD66HIMW1M97wCsE&amp;index=4">Vidéo 3</a></li>
+<li><a href="https://www.youtube.com/watch?v=yTMfEhadmyg&amp;list=PL5ZGZlm-yp_xQfzsBtD66HIMW1M97wCsE&amp;index=5">Vidéo 4</a></li>
+</ul>
+</div>
+</div>
+
+
+
+ ]]></description>
+  <category>informatique</category>
+  <guid>https://osk42.quarto.pub/osk42/posts/informatique/Le langage APL.html</guid>
+  <pubDate>Wed, 22 Mar 2023 23:00:00 GMT</pubDate>
+  <media:content url="https://osk42.quarto.pub/osk42/posts/informatique/_images/APL_logo.svg.png" medium="image" type="image/png" height="144" width="144"/>
+</item>
+</channel>
+</rss>
