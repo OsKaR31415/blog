@@ -3,7 +3,7 @@ title: "permutations avec répétitions"
 description: "Nombre de façons de placer tous les éléments d'un ensemble dans un $n$-uplet."
 date: 2023-01-21
 categories: [ maths ]
-draft: true
+draft: false
 ---
 
 

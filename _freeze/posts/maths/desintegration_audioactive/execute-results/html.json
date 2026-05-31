@@ -1,0 +1,12 @@
+{
+  "hash": "7e07368a35389ea344fc3ddb3554be88",
+  "result": {
+    "engine": "jupyter",
+    "markdown": "---\ntitle: \"Désintégration audioactive\"\ndescription: \"\"\ndate: 2026-05-31\ncategories: [ maths ]\n---\n\n```{html}\n<object data=\"_docs/desintegration_audioactive_Oscar_Plaisant.pdf\" type=\"application/pdf\"style=\"min-height:100vh;width:100%\"></object>\n```\n\n",
+    "supporting": [
+      "desintegration_audioactive_files"
+    ],
+    "filters": [],
+    "includes": {}
+  }
+}

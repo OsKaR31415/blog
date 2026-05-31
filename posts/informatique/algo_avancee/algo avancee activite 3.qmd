@@ -5,7 +5,7 @@ categories: [ informatique ]
 jupyter: python3
 toc: true
 number-sections: true
-draft: true
+draft: false
 ---
 
 ::: {.callout-tip collapse=true}

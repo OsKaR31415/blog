@@ -81,7 +81,9 @@ format:
     link-external-icon: true # show an icon after every external link
 
 execute:
-  freeze: auto
+  freeze: auto  # re-render only when source changes
+  cache: true  # cache using jupyter-cache
+  daemon: 600  # put the kernel in a daemon so it doesn't restart at each render (the value is the timout after which the daemon is killed, i.e. the kernel is restarted upon render)
 
 editor:
   render-on-save: false

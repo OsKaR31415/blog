@@ -1,8 +1,9 @@
 ---
 title: Sur les divers avantages de groupes de lecture pour la philosophie
-description:
+description: ""
 categories: philosophie
 date: 2025-09-15
+draft: true
 ---
 
 # Contexte
@@ -15,18 +16,25 @@ Ensuite, en philosophie, la compréhension est un obstacle difficile à surmonte
 
 # Les lectures collectives
 
-J'ai récemment commencer à "organiser" (plutôt proposer) des lectures de textes de philosophie, dans un groupe discord de philosophie ([le serveur discord de MrPhi](discord.gg/8Wa6dcnSFx) pour le nommer).
+J'ai récemment commencer à "organiser" (plutôt proposer) des lectures de textes de philosophie, dans un groupe discord de philosophie ([le serveur discord de MrPhi](discord.gg/8Wa6dcnSFx)).
 
 Les choses se passent ainsi : un texte est choisi (parmi ceux que je propose, car il faut que je possède le livre : je préfère lire sur papier) par les personnes présentes. Je lis alors le texte à voix haute. Régulièrement, la lecture est interrompue par des remarques qui font tout l'intérêt de ces lectures.
 
+Nous nous sommes également lancés dans une lecture plus longue : l'éthique de Spinoza. Le procédé est similaire, nos sessions durent 2h30 ou 3h, quelquefois un peu plus, ce après quoi nous laissons les discussions dériver pour finir la soirée.
+
 ## Un autre rapport à la lecture
 
-Le fait de lire publiquement un texte donne une certaine motivation à lire, et entraine également à articulier et à moins bégayer (ce que j'ai tendance à faire) (sans parler de ma tendance à remplacer certains mots quand j'en un autre qui marche aussi).
+Le fait de lire publiquement un texte donne une certaine motivation à lire, et entraine également à articuler et à moins bégayer (ce que j'ai tendance à faire) (sans parler de ma tendance à remplacer certains mots quand j'en un autre qui marche aussi).
 
 Plus encore, le fait de donner un rendez-vous à d'autres personnes, de s'engager et de savoir qu'on a libéré une soirée à cet effet, tout cela règle le problème de la motivation à lire (certes, en le déplaçant vers celui de la motivation à organiser l'événement, qui s'avère être moins un problème pour moi).
 
 ## Les remarques et discussions
 
 Ce sont les discussions qui ont lieu entre les moment de lecture qui apportent encore plus d'intérêt à ces lectures.
+
+On pourrait catégoriser deux types de discussions : les explicitations et les détails supplémentaires.
+
+Durant les phases d'explicitations, nous reformulons ce que nous venons de lire, nous le connectons à ce que nous avons lu plus tôt, et nous vérifions que nous avons bien tous compris la même chose.
+
 
  

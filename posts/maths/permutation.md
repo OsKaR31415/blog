@@ -3,7 +3,7 @@ title: "permutation"
 description: ""
 date: 2023-01-19
 categories: [ maths ]
-draft: true
+draft: false
 css: "../../css/permutations.css"
 ---
 

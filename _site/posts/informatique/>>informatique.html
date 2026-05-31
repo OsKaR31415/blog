@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.33">
+<meta name="generator" content="quarto-1.8.27">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -35,18 +35,19 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-bc185b5c5bdbcb35c2eb49d8a876ef70.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-4d9afe2b8d18ee9fa5d0d57b5ed4214d.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-6bdd2aebeb936dcddaa5f935a5de481c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark-ccd81253fefb92e9cd3f9eb5b5d87b54.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../../site_libs/bootstrap/bootstrap-6bdd2aebeb936dcddaa5f935a5de481c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-f93c2b1f3f0577f377aefa4848a86a36.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-0d4a9d19931feb4fee1ddab4b2489000.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-f93c2b1f3f0577f377aefa4848a86a36.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -119,7 +120,7 @@ const typesetMath = (el) => {
     var macros = [];
     for (var i = 0; i < mathElements.length; i++) {
       var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
         window.katex.render(texText.data, mathElements[i], {
           displayMode: mathElements[i].classList.contains('display'),
           throwOnError: false,
@@ -439,7 +440,7 @@ window.Quarto = {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-    <h5 class="quarto-listing-category-title">Catégories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">Tous <span class="quarto-category-count">(8)</span></div><div class="category" data-category="aW5mb3JtYXRpcXVl">informatique <span class="quarto-category-count">(6)</span></div><div class="category" data-category="dGlwcw==">tips <span class="quarto-category-count">(2)</span></div><div class="category" data-category="dmlt">vim <span class="quarto-category-count">(2)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Catégories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">Tous <span class="quarto-category-count">(9)</span></div><div class="category" data-category="aW5mb3JtYXRpcXVl">informatique <span class="quarto-category-count">(7)</span></div><div class="category" data-category="dGlwcw==">tips <span class="quarto-category-count">(2)</span></div><div class="category" data-category="dmlt">vim <span class="quarto-category-count">(2)</span></div></div></div>
 <!-- main -->
 <main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
 
@@ -449,12 +450,12 @@ window.Quarto = {
 
 
 <div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Posts par catégories
+<span class="screen-reader-only">Note</span>Posts par catégories
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
@@ -494,8 +495,8 @@ Posts par catégories
 <ul>
 <li>Activités (TD/TP)
 <ul>
-<li><a href="algo avancee activite 1.qmd">activité 1</a></li>
-<li><a href="algo avancee activite 3">activité 3</a></li>
+<li><a href="../../posts/informatique/algo_avancee/algo avancee activite 1.html">activité 1</a></li>
+<li><a href="algo_avancee/algo avancee activite 3">activité 3</a></li>
 </ul></li>
 <li>Contrôles
 <ul>
@@ -567,7 +568,7 @@ description
 
 </tr>
 
-<tr data-index="2" data-categories="aW5mb3JtYXRpcXVl" data-listing-date-sort="1678316400000" data-listing-file-modified-sort="1711451494835" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="242" data-listing-title-sort="algo avancee activite 4" data-listing-filename-sort="algo avancee activite 4.qmd">
+<tr data-index="2" data-categories="aW5mb3JtYXRpcXVl" data-listing-date-sort="1678316400000" data-listing-file-modified-sort="1771982245114" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="242" data-listing-title-sort="algo avancee activite 4" data-listing-filename-sort="algo avancee activite 4.qmd">
 <td>
 <a href="../../posts/informatique/algo_avancee/algo avancee activite 4.html" class="title listing-title">algo avancee activite 4</a>
 </td>
@@ -597,7 +598,7 @@ description
 
 </tr>
 
-<tr data-index="5" data-categories="aW5mb3JtYXRpcXVl" data-listing-date-sort="1673737200000" data-listing-file-modified-sort="1727427579596" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="25" data-listing-word-count-sort="4827" data-listing-title-sort="Algorithmique avancée - activité 1" data-listing-filename-sort="algo avancee activite 1.qmd">
+<tr data-index="5" data-categories="aW5mb3JtYXRpcXVl" data-listing-date-sort="1673737200000" data-listing-file-modified-sort="1776771154460" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="25" data-listing-word-count-sort="4827" data-listing-title-sort="Algorithmique avancée - activité 1" data-listing-filename-sort="algo avancee activite 1.qmd">
 <td>
 <a href="../../posts/informatique/algo_avancee/algo avancee activite 1.html" class="title listing-title">Algorithmique avancée - activité 1</a>
 </td>
@@ -607,7 +608,17 @@ description
 
 </tr>
 
-<tr data-index="6" data-categories="dmltJTJDdGlwcw==" data-listing-date-sort="1672873200000" data-listing-file-modified-sort="1711451494835" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="395" data-listing-title-sort="vim tips autocorriger les erreurs" data-listing-filename-sort="vim tips autocorriger les erreurs.qmd">
+<tr data-index="6" data-categories="aW5mb3JtYXRpcXVl" data-listing-date-sort="1673564400000" data-listing-file-modified-sort="1771982003799" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="28" data-listing-word-count-sort="5422" data-listing-title-sort="Algorithmique avancée : activité 3" data-listing-filename-sort="algo avancee activite 3.qmd">
+<td>
+<a href="../../posts/informatique/algo_avancee/algo avancee activite 3.html" class="title listing-title">Algorithmique avancée : activité 3</a>
+</td>
+<td>
+<span class="listing-description">On dit qu’une liste est “bégayée” lorsque chaque élément y apparaît deux fois de suite. Le but de cet exercice est de transformer une liste en une liste bégayée, et…</span>
+</td>
+
+</tr>
+
+<tr data-index="7" data-categories="dmltJTJDdGlwcw==" data-listing-date-sort="1672873200000" data-listing-file-modified-sort="1711451494835" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="395" data-listing-title-sort="vim tips autocorriger les erreurs" data-listing-filename-sort="vim tips autocorriger les erreurs.qmd">
 <td>
 <a href="../../posts/informatique/vim tips autocorriger les erreurs.html" class="title listing-title">vim tips autocorriger les erreurs</a>
 </td>
@@ -617,7 +628,7 @@ description
 
 </tr>
 
-<tr data-index="7" data-categories="dmltJTJDdGlwcw==" data-listing-date-sort="1672700400000" data-listing-file-modified-sort="1711451494835" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="397" data-listing-title-sort="vim tips - leader" data-listing-filename-sort="vim tips leader.qmd">
+<tr data-index="8" data-categories="dmltJTJDdGlwcw==" data-listing-date-sort="1672700400000" data-listing-file-modified-sort="1711451494835" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="397" data-listing-title-sort="vim tips - leader" data-listing-filename-sort="vim tips leader.qmd">
 <td>
 <a href="../../posts/informatique/vim tips leader.html" class="title listing-title">vim tips - leader</a>
 </td>
@@ -695,13 +706,14 @@ description
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
