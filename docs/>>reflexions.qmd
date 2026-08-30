@@ -1,0 +1,29 @@
+---
+title: "Réflexions personnelles"
+description: "Liste de tous les articles contenant des réflexions personnelles."
+categories: [ réflexions, index ]
+image: "_images/logo-reflexion.png"
+toc: false
+listing:
+  contents: /
+  sort: "date desc"
+  type: table
+  categories: true
+  sort-ui: true
+  filter-ui: true
+  fields:
+    - "title"
+    - "description"
+  field-display-names:
+    description: ""
+  include:
+    categories: "réflexion"
+---
+
+
+Les billets de la catégorie `réflexion` contiennent des réflexions ou des idées sur divers sujets. Ils consistent souvent en une opinion personnelle.
+
+# Liste des billets
+
+
+
