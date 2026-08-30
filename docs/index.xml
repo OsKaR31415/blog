@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>0SK42</title>
+<link>https://osk42.quarto.pub/</link>
+<atom:link href="https://osk42.quarto.pub/index.xml" rel="self" type="application/rss+xml"/>
+<description>OSK42 - blog de Maths et d&#39;Informatique</description>
+<language>fr</language>
+<image>
+<url>https://osk42.quarto.pub/_images/OsKaR.png</url>
+<title>0SK42</title>
+<link>https://osk42.quarto.pub/</link>
+<height>81</height>
+<width>144</width>
+</image>
+<generator>quarto-1.10.18</generator>
+<lastBuildDate>Sun, 30 Aug 2026 19:41:54 GMT</lastBuildDate>
+</channel>
+</rss>
