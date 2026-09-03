@@ -96,3 +96,9 @@
 
 
 
+
+.invert-in-dark-mode {
+    filter: invert(1) hue-rotate(180deg) saturate(0.7) contrast(0.7);
+
+}
+
