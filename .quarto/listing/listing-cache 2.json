@@ -1,0 +1,20 @@
+{
+  "listingMap": {
+    "posts/>>reflexions.qmd": [
+      "/"
+    ],
+    "posts/informatique/>>informatique.qmd": [
+      ".",
+      "informatique"
+    ],
+    "posts/philosophie/>>philosophie.qmd": [
+      "."
+    ],
+    "posts/maths/>>mathematiques.md": [
+      "."
+    ],
+    "index.qmd": [
+      "posts"
+    ]
+  }
+}
