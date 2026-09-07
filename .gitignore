@@ -1,0 +1,6 @@
+/env/
+/.quarto/
+*.html
+**/.*.icloud
+
+**/*.quarto_ipynb

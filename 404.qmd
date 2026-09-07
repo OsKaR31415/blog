@@ -1,0 +1,29 @@
+---
+title: "Page non trouvée"
+title-block-banner: true
+include-in-header:
+  text: |
+    <link href="css/404.css" rel="stylesheet">
+comments: false
+---
+
+# La page que vous cherchez est introuvable sur ce site.
+
+Vous pouvez retourner à la [page d'accueil](index.qmd).
+
+
+<div class="scene">
+  <div class="digit left">4</div>
+  <div class="digit center">0</div>
+  <div class="digit right">4</div>
+  <div class="sep"></div>
+  <div class="squish left"></div>
+  <div class="squish center"></div>
+  <div class="squish right"></div>
+</div>
+
+<br/><br/>
+
+
+
+

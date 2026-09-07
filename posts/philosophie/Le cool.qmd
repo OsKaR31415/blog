@@ -1,0 +1,69 @@
+---
+title: Le cool
+description: Réflexions philosophiques sur le cool
+date: 2025-01-31
+categories: philosophie
+toc: true
+number-sections: true
+bibliography: references.bib
+---
+
+Durant une soirée nous avons pris un temps pour réfléchir sur le cool, en nous demendant notamment qu'est-ce qui fait que l'on dit qu'une personne est cool.
+
+# Premières caractétistiques du cool
+
+Dans un premier temps, il apparaît que le cool est dépendant du milieu. Les qualités qui rendent cool dépendent de la classe sociale, et on peut trouver des éléments cools pour un certain milieu qui ne le sont pas pour d'autres. Un des exemples qui fait voir cela nettement, c'est l'absence du concept de cool dans la bourgeoisie (notamment intellectuelle) — qui est remplacé par des concepts similaires mais différents, comme la fascination, le génie...
+
+Il apparaît également que le cool dépend aussi de la modes, et donc de l'époque. Le cool d'hier n'est pas celui d'aujourdhui.
+
+Une des caractéristiques d'une personne cool semble être sa nécessaire spontanéité. Le cool ne peut pas être calculé : essayer d'être cool, c'est déjà ne plus l'être. Au contraire, il faut un certain naturel dans le cool. La personne cool l'est sans effort, et par opposition à la personne qui fait des efforts (pour s'intégrer dans le groupe, pour se faire remarquer). Par exemple, l'attitude d'indifférence (s'en foutre de tout) est plutôt du côté du cool.
+
+On voit apparaître une chose centrale dans le cool : il sert à distinguer, à discriminer. Il se crée évidemment une hiérarchie sociale du cool, dans laquelle les personnes cool sont vénérées.
+
+# Concepts proches du cool
+
+On pourrait traiter le cool comme un jugement de goût, mais cette approche ne semble pas réellement capturer tous les aspects du cool. Bien sûr, le cool contient une part de goût, mais il n'a pas toutes les propriétés du jugement du goût. Notamment, il n'existe pas réellement d'antonyme à "cool". Bien sûr, chaque caractéristique du cool possède son antonyme, mais on ne trouve pas d'antonyme satisfaisant sur tous les points de vue ("ringard" s'en rapproche, mais ne capture pas la spontanéité, "désagréable" est trop large, "coincé" trop spécifique...). On peut supposer que cela vient justement de la multimodalité du cool. Puisque le cool est constitué de plusieurs éléments importants, il suffit d'en manquer un pour n'être pas cool, et donc on a simplement besoin d'un antonyme à chacun de ces éléments constituants du cool. Or si le cool n'a pas de réel antonyme, on ne peut pas le réduire à un simple jugement de goût, car comme on le sait grâce à Bourdieu, nos goûts sont en grande partie construits sur les dégoûts des autres. 
+
+Un concept parallèle et similaire au cool est celui du "softpower". Pour une puissance (souvent un pays), l'équivalent du cool est le softpower. Par exemple, on peut trouver le japon plus cool que les états-unis, parce que celui-ci à un meilleur soft power.
+
+On pourrait également rapprocher le cool de la mode, qui existe depuis plus longtemps. Comme dit plus haut, le cool dépend de la mode (on pourrait même le considérer comme une forme de mode). Cependant, la mode avant l'apparition du cool n'avait pas les mêmes propriétés. Elle était plus étanche entre les classes sociales, principalement réservées aux bourgeois, et n'était pas constituée ou constituante d'une communauté au même titre que le cool peut fédérer aujourd'hui.
+Un bon exemple de cela semble être l'orientalisme. Le fantasme de l'orient et l'achat d'objets orientaux interdits issus du trafic constitue une sorte d'avant-garde du cool. 
+
+De là apparaissent plusieurs questions :
+
+ - le cool est-il nécessairement bourgeois, c'est-à-dire faut-t-il être bourgeois pour être cool ?
+ - le cool est-il complètement relatif (dépendant du milieu et de l'époque), ou bien existe-t-il un absolu du cool ?
+ - quel est le rapport entre le cool et la transgression ?
+
+# Le cool est-il toujours bourgeois ?
+
+Bien qu'abordée dans notre discussion, cette question s'est rapidement essouflée. La diversité des points de vue exposés semble exposer la partie relative du cool plutôt que d'attacher spécialement le cool à la bourgeoisie.
+
+# L'absolu du cool
+
+Y a-t-il un absolu du cool ? Des personnes ou archétypes que tout le monde trouveraient cools ?
+
+Si il est évident qu'une partie du cool est dépendante du milieu social et de l'époque, certains exemples très consensuels de cool semblent faire apparaître une part absolue au cool. On pense notamment aux deux personnages des films Start Wars : Luke Skywalker et Han Solo, dont le plus cool semble assez universellement être Han Solo.
+
+L'existence d'un absolu du cool suppose éviemment l'existance d'un absolu, ce que l'on peut contester par relativisme : rien n'est absolu, ne serait-ce que parce que les pensées de chaque humain sont issues de cerveaux tous différents, qu'elles sont construites par des perceptions, et donc déterminées par notre milieu. Cependant, on trouve des absolus dans les sociétés humaines. Le meutre, le cannibalisme et l'inceste sont connus pour être des tabous, des interdits moraux, communs à toutes les sociétés.
+
+# Le cool, la transgression et la subversion
+
+Une de nos conclusions sur le cool est la définition suivante : *être cool, c'est transgresser autant que possible, tout en respectant les normes de son groupe*.
+Cette définition semble assez satisfaisante, puisque nous y sommes revenus plusieurs fois au cours du débat, et qu'elle explique plusieurs aspects du cool.
+
+Dans cette définition, on comprends aisément pourquoi les *bad boys* sont considérés comme cools. On explique également pourquoi les vilains des films de super-héros sont souvent plus cools que les héros, et pourquoi batman est certainement le plus cool des héros (puisqu'il est celui qui transgresse le plus les lois).
+
+## Le cool et la désobéissance
+
+Ce lien entre le cool et la désobéissance (puisqu'être cool, c'est obéir le moins possible) révèle un nouvel opposé du cool. Nous avions déjà opposé le cool avec le ringard (qui va contre la mode), avec le réfléchi (qui va contre le spontané), mais on peut maintenant aussi opposer le cool avec la servitude, entendue comme "obéir plus que nécessaire". En effet, on conçoit aisément qu'une personne asservie, aliénée (dans le cadre de son travail, ou bien à des normes sociales) n'est pas cool. 
+
+On pourrait emprunter le concept de l'angle $\alpha$, introduit par Frédéric Lordon [@lordon2010], et qui pourrait être résumé comme suit.
+Si le désir maître (c'est-à-dire le désir du maître, du patron, du directeur...) et le désir d'un individu ont chacun une direction, alors ils ont un angle. Si ils sont parfaitement alignés (c'est-à-dire si ils travaillent à obtenir la même chose), alors l'angle est $\alpha=0\degree$. Au contraire, si le désir maître échoue à enrôler, à convaicre, alors l'angle sera plus grand, jusqu'à arriver à $\alpha=90\degree$, situation dans laquelle le désir enrôlé n'a plus rien à voir avec le désir maître : ils sont perpendiculaire. 
+
+Être cool, ça serait donc augmenter son angle $\alpha$ au maximum sans pour autant sortir de la société (ou plutôt, sans briser les normes de son propre groupe, de sa propre classe sociale). Pour certains groupes, être totalement marginal est acceptable, et un angle $\alpha$ maximum (c'est-à-dire une rupture totale d'avec la société) est cool. Dans d'autres classes sociales, il est certaines normes à respecter. Être cool, alors, c'est marcher sur un fil, d'un côté on tombe dans le banal, de l'autre c'est l'inacceptable et donc l'exclusion du groupe.
+
+# Références
+
+:::{#refs}
+:::

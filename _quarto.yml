@@ -1,0 +1,91 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "0SK42"
+  description: "OSK42 - blog de Maths et d'Informatique"
+  site-url: https://osk42.quarto.pub
+  image: "_images/OsKaR.png"
+  navbar:
+    left:
+
+      - text: "A propos"
+        href: about.qmd
+
+
+      - text: Sujets
+        menu:
+          - text: Mathématiques
+            href: posts/maths/>>mathematiques.md
+          - text: Informatique
+            href: posts/informatique/>>informatique.qmd
+          - text: Philosophie
+            href: posts/philosophie/>>philosophie.qmd
+          - text: Poésie
+            href: posts/poesie/>>poesie.qmd
+          - text: Réflexions
+            href: posts/>>reflexions.qmd
+
+    right:
+      - icon: person-vcard
+        text: CV
+        href: CV.qmd
+
+      - icon: share
+        menu:
+          - icon: github
+            text: github
+            href: https://github.com/OsKaR31415
+          - icon: youtube
+            text: youtube
+            href: https://youtube.com/@oskar31415
+          - icon: envelope
+            text: email
+            href: mailto:oscar.plaisant@orange.fr
+          - icon: rss
+            href: index.xml
+            text: flux RSS du blog
+      - icon: rss
+        href: index.xml
+
+  twitter-card:
+    image: "https://osk42.quarto.pub/_images/OsKaR.png"
+  open-graph:
+    image: "https://osk42.quarto.pub/_images/OsKaR.png"
+
+  comments:
+    giscus:
+      repo: OsKaR31415/blog
+      repo-id: "R_kgDOItLnjQ"
+      category: "Announcements"
+      category-id: "DIC_kwDOItLnjc4CYln7"
+      mapping: "url"
+      reactions-enabled: true
+      loading: "lazy"
+      input-position: "bottom"
+      theme:
+        light: "noborder_light"
+        dark: "noborder_dark"
+      language: "fr"
+
+
+format:
+  html:
+    theme:
+      light: flatly
+      dark: darkly
+    css: styles.css
+    include-in-header:
+      text: |
+        <script data-goatcounter="https://osk42.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+    link-external-icon: true # show an icon after every external link
+
+execute:
+  freeze: auto  # re-render only when source changes
+  cache: true  # cache using jupyter-cache
+  daemon: 600  # put the kernel in a daemon so it doesn't restart at each render (the value is the timout after which the daemon is killed, i.e. the kernel is restarted upon render)
+
+editor:
+  render-on-save: false
+

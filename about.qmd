@@ -1,0 +1,71 @@
+---
+title: "A propos"
+image: profile.jpg
+about:
+  template: jolla
+  links:
+    - icon: youtube
+      text: YouTube
+      href: https://youtube.com/@oskar31415
+    - icon: github
+      text: GitHub
+      href: https://github.com/OsKaR31415
+    - icon: envelope
+      text: Email
+      href: mailto:oscar.plaisant@orange.fr
+comments: false
+---
+
+Je suis passionné par l'informatique, les&nbsp;mathématiques, la&nbsp;philosophie, la&nbsp;politique, la&nbsp;connaissance en général, les&nbsp;raccourcis&nbsp;clavier, les&nbsp;bandes&nbsp;dessinées, la&nbsp;musique et les autres arts, l'origami...
+
+
+J'étudie actuellement en licence de mathématiques et j'ai une licence d'informatique.
+
+
+
+# Contenu
+
+Le contenu de ce blog est principalement :
+
+<div style="text-align: left; margin-left: 5vw;">
+ - Des réflexions sur divers sujets (philosophie, politique, science...)
+
+ - Des explications de concepts d'informatique et de mathématiques
+
+ - Des présentations de ce que je trouve intéressant
+
+ - des poèmes que j'ai écrits
+</div>
+
+
+# Le nom du blog
+
+Le Blog s'appelle `OSK42`, à la fois en référence au nombre 42, la réponse à la "[grande question sur la vie, l'univers et le reste](https://fr.wikipedia.org/wiki/La_grande_question_sur_la_vie,_l%27Univers_et_le_reste)", et car `OSK42` est une écriture de `OSKAR` (mon pseudo) en [leet speak](https://fr.wikipedia.org/wiki/Leet_speak)
+
+<br/>
+
+![](_images/OsKaR.gif)
+
+
+<br/> <br/> <br/>
+<br/> <br/> <br/>
+<br/> <br/> <br/>
+<br/> <br/> <br/>
+
+# Crédits
+
+
+::: {.callout-none collapse=true}
+## Crédits des icônes
+
+ - <a href="https://www.flaticon.com/free-icons/algebra" title="algebra icons">Algebra icons created by Freepik - Flaticon</a>
+ - <a href="https://www.flaticon.com/free-icons/backpack" title="backpack icons">Backpack icons created by max.icons - Flaticon</a>
+ - <a href="https://www.flaticon.com/free-icons/coding" title="coding icons">Coding icons created by juicy_fish - Flaticon</a>
+ - <a href="https://www.flaticon.com/free-icons/hierarchy" title="hierarchy icons">Hierarchy icons created by Becris - Flaticon</a>
+ - <a href="https://www.flaticon.com/free-icons/loop" title="loop icons">Loop icons created by Pixelmeetup - Flaticon</a>
+ - <a href="https://www.flaticon.com/free-icons/math" title="math icons">Math icons created by Freepik - Flaticon</a>
+ - <a href="https://www.flaticon.com/free-icons/space-suit" title="space suit icons">Space suit icons created by surang - Flaticon</a>
+ - <a href="https://www.flaticon.com/free-icons/ui" title="ui icons">Ui icons created by Arafat Uddin - Flaticon</a>
+ - <a href="https://www.flaticon.com/free-icons/creativity" title="creativity icons">Creativity icons created by Eucalyp - Flaticon</a>
+:::
+

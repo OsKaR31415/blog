@@ -1,0 +1,26 @@
+---
+title: "Poésie"
+description: "Liste des poèmes"
+categories: [ poesie, index ]
+# image: "_images/mathematiques.png"
+toc: false
+listing:
+  contents: .
+  sort: "date desc"
+  type: table
+  categories: true
+  sort-ui: true
+  filter-ui: true
+  fields:
+    - "title"
+    - "description"
+  field-display-names:
+    description: ""
+---
+
+
+
+# Liste des poèmes
+
+
+

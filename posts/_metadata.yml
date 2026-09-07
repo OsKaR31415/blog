@@ -1,0 +1,16 @@
+# options specified here will apply to all posts in this folder
+
+execute:
+  freeze: auto
+
+# Enable banner style title blocks
+title-block-banner: true
+
+# reduce the size of margins
+page-layout: full
+
+# french blog !
+lang: fr
+
+editor:
+  render-on-save: false

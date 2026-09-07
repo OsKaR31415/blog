@@ -1,0 +1,14 @@
+---
+title: "Les trois métamorphoses"
+description: "Résumé visuel de l'épisode raconté par Zarathoustra."
+date: 2026-04-14
+categories: [ philosophie ]
+author: "Claire Plaisant"
+---
+
+Dessiné par Claire Plaisant.
+
+<div class="invert-in-dark-mode">
+![sketchnote : les 3 métamorphoses](_images/sketchnote_les_3_metamorphoses.JPG)
+</div>
+

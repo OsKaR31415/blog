@@ -1,0 +1,75 @@
+---
+title: "Wishlist"
+comments: false
+---
+
+
+ - pied à coulisse
+
+::: {.calout-note icon=false}
+### Papetterie
+ - critérium [Pentel GraphGear 1000](https://www.pentel.fr/catalogue/pg1015/) en 0.5 (PG1015) ou en 0.7 (PG1017)
+ - critérium [drehgriffel n°2](https://www.leuchtturm1917.fr/drehgriffel-nr-2-forest-green-crayon.html)
+ - Convertisseur LAMY Z28
+ <!-- - [reliure automatique Leuchtturm](https://www.leuchtturm1917.fr/reliure-automatique-peka-a4150-pages-pgr.html) -->
+:::
+
+::: {.callout-note icon=false}
+### Livres
+Titre - Auteur
+
+ - La horde du contrevent - Alain Damasio
+:::
+
+::: {.callout-note icon=false}
+### Instruments de musique
+
+ - chick (schlagwerk) [TC22](https://www.schlagwerk.com/en/product/the-chick/)
+ - buzzboard (schlagwerk) [BB50](https://www.schlagwerk.com/en/product/buzz-board/)
+ - rim shaker (schlagwerk) [SKR](https://www.schlagwerk.com/en/product/rim-shaker/)
+ - pocket bongos (schlagwerk) [WB14](https://www.schlagwerk.com/en/product/pocket-bongo-high-1/), [WB15](https://www.schlagwerk.com/en/product/pocket-bongo-low-1/)
+:::
+
+::: {.callout-note icon=false}
+### Vinyles
+Groupe - Album (année) [genre]
+
+ - Des albums de Casiopea en général (plutôt avant 1990), en particulier :
+     - Casiopea - Casiopea (1979) [jazz fusion]
+     - Casiopea - Superflight (1979) [jazz fusion]
+     - Casiopea - Cross Point (1981) [jazz fusion]
+     - Casiopea - Mint Jams (1982) [jazz fusion]
+     - Casiopea - Casiopea Live (1985) [jazz fusion]
+ - Yes - Yes songs (1973) [rock progressif]
+ - Yes - Union (1991) [rock progressif]
+ - Yes - Time and a word (1070) [rock progressif]
+ - Greenslade - Bedside Manners Are Extra (1973) [rock progressif]
+ - Genesis - Nursery Cryme (1971) [rock progressif]
+ - Pink Floyd - Dark Side of the Moon (1973)
+ - Chick Corea - The Leprechaun (1976) [jazz fusion]
+ - Sixun - L'eau de Là (1990) [jazz fusion]
+ - Steve Fai - Flex-Able (1984) [rock]
+ - Al Jarreau - Best of Al Jarreau (1996) [jazz]
+ - Al Jarreau - L is For Lover (1986) [jazz]
+ - Al Jarreau - Tenderness (1994) [jazz]
+:::
+
+
+
+::: {.callout-note icon=false}
+## Informatique, objets technologiques
+
+ - Souris [Logitech Mx master 3S](https://www.logitech.com/fr-fr/products/mice/mx-master-3s.910-006559.html) (couleur noire)
+ - clavier [zsa voyager](https://www.zsa.io/voyager/buy) (couleur noire, blank keycaps)
+ - ["moonlander platform"](https://www.zsa.io/moonlander/platform)
+ - pochette d'ordinateur ["grid-it wrap 13"](https://www.cocooninnovations.com/product_info.php?cat_id=59&product_id=230) (pour les ordinateurs 13')
+:::
+
+
+
+::: {.callout-note icon=false}
+## Autres objets
+ - 
+:::
+
+
