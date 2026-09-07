@@ -15,6 +15,7 @@ jobs:
 
       - name: Generate your content
         run: echo "Optional placeholder. Put your project's static website generator command here."
+        # run: apt install quarto && source env/bin/activate && quarto render
 
       - name: Publish current workdir (which contains generated content) to GitHub Pages
         uses: rayluo/github-pages-overwriter@v1.3
@@ -25,7 +26,7 @@ jobs:
           # You can use whatever directory your project uses, for example "wwwroot".
           # Such a directory does *not* have to already exist in your repo,
           # it could be an output directory created dynamically by your static website builder.
-          source-directory: _site
+          source-directory: docs
 
           # Optional. Default value "gh-pages".
           # It specifies the temporary branch which hosts the static website.
