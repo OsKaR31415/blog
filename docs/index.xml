@@ -18,7 +18,28 @@
 <width>144</width>
 </image>
 <generator>quarto-1.10.18</generator>
-<lastBuildDate>Sat, 30 May 2026 22:00:00 GMT</lastBuildDate>
+<lastBuildDate>Sun, 06 Sep 2026 22:00:00 GMT</lastBuildDate>
+<item>
+  <title>Le blog change d’adresse</title>
+  <link>https://osk42.quarto.pub/posts/news/migration_du_blog.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+
+<p>Quarto à décidé de fermer son service d’hébergement gratuit de sites statiques. Or, ce blog y était hébergé (sur l’ancienne adresse <a href="https://osk42.quarto.pub">osk42.quarto.pub</a>).</p>
+<p>Cela fait déjà quelque temps que je ne pouvais plus mettre en ligne aucune modification.</p>
+<p>J’ai donc décidé de migrer vers l’hébergement proposé par GitHub (GitHub pages). La nouvelle adresse est donc : <a href="https://oskar31415.github.io/blog">oskar31415.github.io/blog</a>. Il me semble que GitHub ne devrait pas cesser ses services d’hébergement dans un avenir proche.</p>
+
+
+
+ ]]></description>
+  <category>news</category>
+  <guid>https://osk42.quarto.pub/posts/news/migration_du_blog.html</guid>
+  <pubDate>Sun, 06 Sep 2026 22:00:00 GMT</pubDate>
+</item>
 <item>
   <title>Désintégration audioactive</title>
   <link>https://osk42.quarto.pub/posts/maths/desintegration_audioactive.html</link>
@@ -29,8 +50,8 @@
 
 
 
-<object data="_docs/desintegration_audioactive_Oscar_Plaisant.pdf" type="application/pdf" style="min-height:100vh;width:100%">
-</object>
+<!-- <object data="_docs/desintegration_audioactive_Oscar_Plaisant.pdf" type="application/pdf"style="min-height:100vh;width:100%"></object> -->
+<embed src="_docs/desintegration_audioactive_Oscar_Plaisant.pdf" width="800px" height="2100px">
 
 
 
@@ -290,31 +311,6 @@
   <category>philosophie</category>
   <guid>https://osk42.quarto.pub/posts/philosophie/Sur le désir, le manque et la frustration amoureuse.html</guid>
   <pubDate>Sat, 02 Aug 2025 22:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>Face aux feux du soleil</title>
-  <dc:creator>Oscar Plaisant</dc:creator>
-  <link>https://osk42.quarto.pub/posts/poesie/face_aux_feux_du_soleil.html</link>
-  <description><![CDATA[ 
-
-
-
-
-
-
-<p>Face aux feux du soleil<br> Brûlant de tes regards<br> Me perdant dans ton œil<br> Je sens comme un départ</p>
-<p>De bûcher dans la nuit<br> Qui fait rougir mes joues<br> Et mon courage s’enfuit<br> À chaque rendez-vous</p>
-<p>Les bancs du bord de Loire<br> Parenthèses de calme<br> Dans nos ballades le soir<br> Douce assise où j’empalme</p>
-<p>Tes mains comme des perles<br> Façonnées par l’orfèvre<br> Dont la grâce déferle<br> Sur ma peau puis tes lèvres</p>
-<p>Qui livrent le foyer<br> Enfanteur de ma fièvre<br> Œuvre d’un joaillier<br> Les reflets qu’elles me servent</p>
-<p>Attisent mon ardeur<br> Et font vibrer mon cœur<br> D’une nouvelle couleur<br> Maintenant j’ai si peur<br></p>
-
-
-
- ]]></description>
-  <category>poesie</category>
-  <guid>https://osk42.quarto.pub/posts/poesie/face_aux_feux_du_soleil.html</guid>
-  <pubDate>Sun, 22 Jun 2025 22:00:00 GMT</pubDate>
 </item>
 </channel>
 </rss>

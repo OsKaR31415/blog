@@ -3,7 +3,6 @@ title: "Je reprends mon blog !"
 description: "Après 1 an, j'ai enfin retrouvé mon mot de passe."
 date: "2024-09-25"
 categories: [news]
-# image: 
 ---
 
 Je reprends enfin ce blog, après une pause de plus d'un an pour cause de *perte de mot de passe*.

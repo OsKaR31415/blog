@@ -1,0 +1,15 @@
+---
+title: "Le blog change d'adresse"
+description: "L'hébergement gratuit de quarto va cesser. Je passe sur github pages."
+date: "2026-09-07"
+categories: [news]
+---
+
+Quarto à décidé de fermer son service d'hébergement gratuit de sites statiques. Or, ce blog y était hébergé (sur l'ancienne adresse [osk42.quarto.pub](https://osk42.quarto.pub)).
+
+Cela fait déjà quelque temps que je ne pouvais plus mettre en ligne aucune modification.
+
+J'ai donc décidé de migrer vers l'hébergement proposé par GitHub (GitHub pages).
+La nouvelle adresse est donc : [oskar31415.github.io/blog](https://oskar31415.github.io/blog).
+Il me semble que GitHub ne devrait pas cesser ses services d'hébergement dans un avenir proche.
+
