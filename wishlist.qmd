@@ -8,9 +8,10 @@ comments: false
 
 ::: {.calout-note icon=false}
 ### Papetterie
- - critérium [Pentel GraphGear 1000](https://www.pentel.fr/catalogue/pg1015/) en 0.5 (PG1015) ou en 0.7 (PG1017)
- - critérium [drehgriffel n°2](https://www.leuchtturm1917.fr/drehgriffel-nr-2-forest-green-crayon.html)
- - Convertisseur LAMY Z28
+ - critérium [Pentel GraphGear 1000](https://www.pentel.fr/catalogue/pg1015/) en 0.4 (PG1014)
+ <!-- - critérium [drehgriffel n°2](https://www.leuchtturm1917.fr/drehgriffel-nr-2-forest-green-crayon.html) -->
+ - Convertisseur pour stylo plume LAMY (Z28)
+ - Mines de stylo plume LAMY taille EF
  <!-- - [reliure automatique Leuchtturm](https://www.leuchtturm1917.fr/reliure-automatique-peka-a4150-pages-pgr.html) -->
 :::
 
@@ -24,7 +25,7 @@ Titre - Auteur
 ::: {.callout-note icon=false}
 ### Instruments de musique
 
- - chick (schlagwerk) [TC22](https://www.schlagwerk.com/en/product/the-chick/)
+ <!-- - chick (schlagwerk) [TC22](https://www.schlagwerk.com/en/product/the-chick/) -->
  - buzzboard (schlagwerk) [BB50](https://www.schlagwerk.com/en/product/buzz-board/)
  - rim shaker (schlagwerk) [SKR](https://www.schlagwerk.com/en/product/rim-shaker/)
  - pocket bongos (schlagwerk) [WB14](https://www.schlagwerk.com/en/product/pocket-bongo-high-1/), [WB15](https://www.schlagwerk.com/en/product/pocket-bongo-low-1/)
@@ -62,14 +63,14 @@ Groupe - Album (année) [genre]
  - Souris [Logitech Mx master 3S](https://www.logitech.com/fr-fr/products/mice/mx-master-3s.910-006559.html) (couleur noire)
  - clavier [zsa voyager](https://www.zsa.io/voyager/buy) (couleur noire, blank keycaps)
  - ["moonlander platform"](https://www.zsa.io/moonlander/platform)
- - pochette d'ordinateur ["grid-it wrap 13"](https://www.cocooninnovations.com/product_info.php?cat_id=59&product_id=230) (pour les ordinateurs 13')
+ <!-- - pochette d'ordinateur ["grid-it wrap 13"](https://www.cocooninnovations.com/product_info.php?cat_id=59&product_id=230) (pour les ordinateurs 13') -->
 :::
 
 
 
-::: {.callout-note icon=false}
-## Autres objets
- - 
-:::
+<!-- ::: {.callout-note icon=false} -->
+<!-- ## Autres objets -->
+<!--  - --> 
+<!-- ::: -->
 
 
