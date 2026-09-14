@@ -1,0 +1,12 @@
+{
+  "hash": "cdc170d7eba65557baef4c02d354af03",
+  "result": {
+    "engine": "jupyter",
+    "markdown": "```{html}\n<style>\n.anniv_heart {\n    width: 1em;\n    height: 1em;\n    background-color: red;\n}\n</style>\n\n<span class=\"anniv_heart\"></span>\n<span class=\"anniv_heart\"></span>\n<span class=\"anniv_heart\"></span>\n<span class=\"anniv_heart\"></span>\n<span class=\"anniv_heart\"></span>\n<span class=\"anniv_heart\"></span>\n<span class=\"anniv_heart\"></span>\n<span class=\"anniv_heart\"></span>\n<span class=\"anniv_heart\"></span>\n<span class=\"anniv_heart\"></span>\n<span class=\"anniv_heart\"></span>\n<span class=\"anniv_heart\"></span>\n<span class=\"anniv_heart\"></span>\n<span class=\"anniv_heart\"></span>\n<span class=\"anniv_heart\"></span>\n<span class=\"anniv_heart\"></span>\n<span class=\"anniv_heart\"></span>\n<span class=\"anniv_heart\"></span>\n<span class=\"anniv_heart\"></span>\n<span class=\"anniv_heart\"></span>\n<span class=\"anniv_heart\"></span>\n<span class=\"anniv_heart\"></span>\n<span class=\"anniv_heart\"></span>\n<span class=\"anniv_heart\"></span>\n<span class=\"anniv_heart\"></span>\n<span class=\"anniv_heart\"></span>\n<span class=\"anniv_heart\"></span>\n<span class=\"anniv_heart\"></span>\n<span class=\"anniv_heart\"></span>\n<span class=\"anniv_heart\"></span>\n<span class=\"anniv_heart\"></span>\n<span class=\"anniv_heart\"></span>\n<span class=\"anniv_heart\"></span>\n<span class=\"anniv_heart\"></span>\n<span class=\"anniv_heart\"></span>\n<span class=\"anniv_heart\"></span>\n<span class=\"anniv_heart\"></span>\n<span class=\"anniv_heart\"></span>\n<span class=\"anniv_heart\"></span>\n<span class=\"anniv_heart\"></span>\n<span class=\"anniv_heart\"></span>\n<span class=\"anniv_heart\"></span>\n<span class=\"anniv_heart\"></span>\n<span class=\"anniv_heart\"></span>\n<span class=\"anniv_heart\"></span>\n<span class=\"anniv_heart\"></span>\n<span class=\"anniv_heart\"></span>\n<span class=\"anniv_heart\"></span>\n<span class=\"anniv_heart\"></span>\n<span class=\"anniv_heart\"></span>\n<span class=\"anniv_heart\"></span>\n```\n```\n\n",
+    "supporting": [
+      "anniv_clara_2026_files"
+    ],
+    "filters": [],
+    "includes": {}
+  }
+}

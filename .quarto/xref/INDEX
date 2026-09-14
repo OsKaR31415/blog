@@ -220,5 +220,11 @@
   },
   "posts/news/migration_du_blog.qmd": {
     "migration_du_blog.html": "9871d37c"
+  },
+  "posts/hidden/anniv_clara_2026.qmd": {
+    "anniv_clara_2026.html": "1db3cb8a"
+  },
+  "anniv_clara_2026.qmd": {
+    "anniv_clara_2026.html": "6e48d689"
   }
 }

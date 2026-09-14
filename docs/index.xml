@@ -50,7 +50,8 @@
 
 
 
-<!-- <object data="_docs/desintegration_audioactive_Oscar_Plaisant.pdf" type="application/pdf"style="min-height:100vh;width:100%"></object> -->
+<p>Ce document présente quelques théorèmes importants au sujet de la suite de Conway (désintégration audioactive, <em>audioactive decay</em>, <em>look-and-say sequence</em>).</p>
+<p>Je l’ai rédigé dans le cadre d’un cours de master. Il est principalement inspiré d’un article de Conway qui présentait ses découvertes au sujet de cette suite.</p>
 <embed src="_docs/desintegration_audioactive_Oscar_Plaisant.pdf" width="800px" height="2100px">
 
 
