@@ -1,0 +1,57 @@
+---
+title: "Débat sur l'IA à la fête de l'humanité 2026"
+categories: [ informatique, réflexions ]
+draft: true
+---
+
+Le week-end dernier, je suis allé à la fête de l'humanité, notamment avec le collectif [IA : Réveillons nous](https://reveillons-nous.org) (qui cherche à lancer une convention citoyenne sur l'intelligence artificielle, notamment par une pétition sur le site du CESE).
+
+Je suis notamment allé à une table ronde / débat autour du sujet de l'Intelligence artificielle (IA).
+Voici ce que j'en ai retenu.
+
+En plus d'une dame distribuant la parole, 4 personnes étaient présentes sur scène :
+
+ - un enseignant en école d'ingénieurs, présenté comme le plus spécialiste sur les aspects techniques
+ - une représentante de la CGT (syndicat)
+ - un représentant du PCF (parti communiste français), notamment du groupe de travail sur le numérique
+ - un sénateur du nord, affilié au PCF (Alexandre Basquin)
+
+# Le technophile
+
+Notre spécialiste des questions techniques était technophile (malheureusement ? évidemment ?).
+Il a présenté les avancées en IA comme utiles :
+
+ - pour la recherche scientifique (trouver de nouvelles molécules pour des médicaments, analyser des données astrophysiques)
+ - pour filtrer la « surcharge informationnelle », c'est-à-dire nous aider à résumer et trier le flot trop important d'information qui nous atteignent
+ - pour augmenter la productivité
+
+Le plus prévisible : la vision de « course à l'IA » (comme une course à l'armement technologique), dans laquelle les États-Unis et la Chine vont lancer des « armées de doctorants armés d'IA » (notre technophile étant tout joyeux d'annoncer que les modèles actuels sont aussi bons et plus rapides que ses doctorants). La remarque aurait appelé à pointer du doigt l'aspect très productiviste de beaucoup de sciences actuellement, où la quantité d'articles publiés devient un but (pour attirer les financements, finir par être publié dans une revue prestigieuse, ou enfin obtenir un résultat spectaculaire qui forgera une réputation). Cette tendance pourrait même explique en partie une « [crise de la reproducibilité](https://fr.wikipedia.org/wiki/Crise_de_la_reproductibilit%C3%A9#Causes) » observée dans certains champs scientifiques.
+
+Il a également resservi le poncif habituel : l'IA « ni intelligente, ni artificielle » :
+
+ - pas intelligente car l'IA ne serait « que des calculs de probabilités qui veulent faire plaisir aux utilisateurs ». Comment peut on dire en même temps que les IA sont au niveau de doctorant·es et qu'elles ne sont pas intelligentes ? Sûrement en posant des définitions de l'intelligence qui nous arrangent — un mouvement intellectuel qui à servi à disqualifier les femmes (en incluant des traits masculins dans l'intelligence), les colonisé·es (en définissant l'intelligence sur les standards de la société colonisatrice), les handicapés etc. — pour préserver à tout prix sa supériorité. A la fin, qu'elle soit intelligente ou non, elle peut réaliser des tâches qui, pour les humains, requièrent un grand niveau de savoir, d'expertise, de réflexion... Bref, l'IA est très forte, pourquoi vouloir minimiser ?
+ - pas artificielle car elle est matérielle : serveurs dans des datacenters, puces (et leurs usines de production)... Tout cela n'est pas virtuel, et des conflits d'usage se produisent déjà : utilisation de l'eau, implantation des datacenters, usage énergétique... Autant d'impacts sur notre monde. Je suis d'accord avec cette constatation que les autres intervenant·es ont complétée (je remarque simplement qu'il ne s'agit pas de dire que l'IA n'est pas artificielle, mais qu'elle n'est pas immatérielle, mais acceptons, par charité, de tordre le sens du mot pour la beauté de la formule).
+
+
+# La syndicaliste
+*Le MEDEF affirme que l'IA signe peut être la fin du « diplôme à vie », s'inscrivant dans la politique plus large de sape des diplômes par le MEDEF*. Une très bonne critique !
+Quelles sont, alors, les propositions de la CGT ?
+
+ - Un encadrement de l'IA. La formule est lancée plusieurs fois mais sans jamais dire précisément ce qu'il faudrait encadrer, comment décider de ce cadre, et comment l'appliquer. L'expression finit par sonner comme une phrase qui ne dit rien mais qui sonne bien et ne coûte rien à dire.
+ - des droits pour les travailleur·euses, à savoir :
+     - un droit à l'information sur la fabrication des IAs (données utilisées, méthodologies...). J'abonde en ce sens, même si c'est une mesure faible.
+     - un droit à être consulté et à décider des modalités d'usage des IAs. La proposition est intéressante (je suis, de manière générale, toujours pour que les travailleur·euses puissent décider un maximum), je note tout de même une difficulté d'application lorsque le résultat d'une IA est indistinguable de celui d'un humain (ce qui est déjà principalement le cas pour le texte et la musique, et en passe d'être le cas pour l'image et la vidéo).
+
+# Le communiste
+J'étais fort déçu de voir l'état des réflexions de la commission numérique du PCF. Plus encore par le développement de ce représentant en particulier. D'une manière général, son discours mêlait des appels à ne pas considérer les choses indivuduellement ou localement, suivies de propositions locales ou individuelles — j'y vois une instance de ces éléments rituels des prises de paroles à l'extrême gauche, où l'appel à penser les choses structurellement et non individuellement n'est plus une ligne directrice mais une litanie qui sert à se donner une image de gauche, et à s'attirer les faveurs du public.
+Son analyse du travail : « ce ne sont pas les IA qui suppriment des emplois, ce sont les patrons qui suppriment des emplois au nom de l'IA ». Je tiens à souligner à quel point cette phrase qui semble revendicative (et prononcée comme telle) est vide, en la transposant par analogie : « Ce n'est pas l'industrialisation qui à supprimé des emplois, ce sont les patrons qui ont supprimé des emplois au nom de l'industrialisation. ». L'analogie n'est pas parfaite mais je trouve qu'elle fait apparaître le trou dans cette pensée.
+
+Outre la mention de l'IA comme outil de créativité, qui pourrait permettre 
+
+
+
+# Le vrai communiste (enfin)
+C'est M. Alexandre Basquin qui, même s'il était minoritaire dans cette discussion, à su apporter une réflexion à mon avis plus digne, plus ancrée dans la réalité et n'ignorant pas les problèmes dans une fuite en avant techno-solutionniste.
+
+
+
