@@ -50,9 +50,9 @@ website:
         href: index.xml
 
   twitter-card:
-    image: "https://osk42.quarto.pub/_images/OsKaR.png"
+    image: "https://OsKaR31415.github.io/blog/_images/OsKaR.png"
   open-graph:
-    image: "https://osk42.quarto.pub/_images/OsKaR.png"
+    image: "https://OsKaR31415.github.io/blog/_images/OsKaR.png"
 
   comments:
     giscus:
