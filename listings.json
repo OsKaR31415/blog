@@ -16,12 +16,12 @@
     ]
   },
   {
-    "listing": "/posts/>>reflexions.html",
+    "listing": "/posts/philosophie/>>philosophie.html",
     "items": [
-      "/posts/autres/aphorismes_1.html",
-      "/posts/autres/disques_vinyles_et_rapport_a_la_musique.html",
-      "/posts/autres/si tout le monde saute dun pont.html",
-      "/posts/autres/Le dimanche, il pleut généralement à l'extérieur.html"
+      "/posts/philosophie/les_trois_metamorphoses.html",
+      "/posts/philosophie/Sur le désir, le manque et la frustration amoureuse.html",
+      "/posts/philosophie/Le cool.html",
+      "/posts/philosophie/ne_pas_avoir_de_valeurs.html"
     ]
   },
   {
@@ -39,12 +39,12 @@
     ]
   },
   {
-    "listing": "/posts/philosophie/>>philosophie.html",
+    "listing": "/posts/>>reflexions.html",
     "items": [
-      "/posts/philosophie/les_trois_metamorphoses.html",
-      "/posts/philosophie/Sur le désir, le manque et la frustration amoureuse.html",
-      "/posts/philosophie/Le cool.html",
-      "/posts/philosophie/ne_pas_avoir_de_valeurs.html"
+      "/posts/autres/aphorismes_1.html",
+      "/posts/autres/disques_vinyles_et_rapport_a_la_musique.html",
+      "/posts/autres/si tout le monde saute dun pont.html",
+      "/posts/autres/Le dimanche, il pleut généralement à l'extérieur.html"
     ]
   },
   {
@@ -61,6 +61,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/news/migration_du_blog.html",
       "/posts/maths/desintegration_audioactive.html",
       "/posts/poesie/souvenir_revenir_venir.html",
       "/posts/philosophie/les_trois_metamorphoses.html",
