@@ -5,7 +5,7 @@ project:
 website:
   title: "0SK42"
   description: "OSK42 - blog de Maths et d'Informatique"
-  site-url: https://osk42.quarto.pub
+  site-url: https://OsKaR31415.github.io/blog
   image: "_images/OsKaR.png"
   navbar:
     left:

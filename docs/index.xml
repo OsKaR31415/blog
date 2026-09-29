@@ -6,14 +6,14 @@
       version="2.0">
 <channel>
 <title>0SK42</title>
-<link>https://osk42.quarto.pub/</link>
-<atom:link href="https://osk42.quarto.pub/index.xml" rel="self" type="application/rss+xml"/>
+<link>https://OsKaR31415.github.io/blog/</link>
+<atom:link href="https://OsKaR31415.github.io/blog/index.xml" rel="self" type="application/rss+xml"/>
 <description>OSK42 - blog de Maths et d&#39;Informatique</description>
 <language>fr</language>
 <image>
-<url>https://osk42.quarto.pub/_images/OsKaR.png</url>
+<url>https://OsKaR31415.github.io/blog/_images/OsKaR.png</url>
 <title>0SK42</title>
-<link>https://osk42.quarto.pub/</link>
+<link>https://OsKaR31415.github.io/blog/</link>
 <height>81</height>
 <width>144</width>
 </image>
@@ -21,7 +21,7 @@
 <lastBuildDate>Sun, 06 Sep 2026 22:00:00 GMT</lastBuildDate>
 <item>
   <title>Le blog change d’adresse</title>
-  <link>https://osk42.quarto.pub/posts/news/migration_du_blog.html</link>
+  <link>https://OsKaR31415.github.io/blog/posts/news/migration_du_blog.html</link>
   <description><![CDATA[ 
 
 
@@ -37,12 +37,12 @@
 
  ]]></description>
   <category>news</category>
-  <guid>https://osk42.quarto.pub/posts/news/migration_du_blog.html</guid>
+  <guid>https://OsKaR31415.github.io/blog/posts/news/migration_du_blog.html</guid>
   <pubDate>Sun, 06 Sep 2026 22:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Désintégration audioactive</title>
-  <link>https://osk42.quarto.pub/posts/maths/desintegration_audioactive.html</link>
+  <link>https://OsKaR31415.github.io/blog/posts/maths/desintegration_audioactive.html</link>
   <description><![CDATA[ 
 
 
@@ -58,13 +58,13 @@
 
  ]]></description>
   <category>maths</category>
-  <guid>https://osk42.quarto.pub/posts/maths/desintegration_audioactive.html</guid>
+  <guid>https://OsKaR31415.github.io/blog/posts/maths/desintegration_audioactive.html</guid>
   <pubDate>Sat, 30 May 2026 22:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Souvenir, revenir, venir</title>
   <dc:creator>Oscar Plaisant</dc:creator>
-  <link>https://osk42.quarto.pub/posts/poesie/souvenir_revenir_venir.html</link>
+  <link>https://OsKaR31415.github.io/blog/posts/poesie/souvenir_revenir_venir.html</link>
   <description><![CDATA[ 
 
 
@@ -81,13 +81,13 @@
 
  ]]></description>
   <category>poesie</category>
-  <guid>https://osk42.quarto.pub/posts/poesie/souvenir_revenir_venir.html</guid>
+  <guid>https://OsKaR31415.github.io/blog/posts/poesie/souvenir_revenir_venir.html</guid>
   <pubDate>Sun, 19 Apr 2026 22:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Les trois métamorphoses</title>
   <dc:creator>Claire Plaisant</dc:creator>
-  <link>https://osk42.quarto.pub/posts/philosophie/les_trois_metamorphoses.html</link>
+  <link>https://OsKaR31415.github.io/blog/posts/philosophie/les_trois_metamorphoses.html</link>
   <description><![CDATA[ 
 
 
@@ -99,7 +99,7 @@
 <div class="invert-in-dark-mode">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://osk42.quarto.pub/posts/philosophie/_images/sketchnote_les_3_metamorphoses.JPG" class="img-fluid figure-img"></p>
+<p><img src="https://OsKaR31415.github.io/blog/posts/philosophie/_images/sketchnote_les_3_metamorphoses.JPG" class="img-fluid figure-img"></p>
 <figcaption>sketchnote : les 3 métamorphoses</figcaption>
 </figure>
 </div>
@@ -109,13 +109,13 @@
 
  ]]></description>
   <category>philosophie</category>
-  <guid>https://osk42.quarto.pub/posts/philosophie/les_trois_metamorphoses.html</guid>
+  <guid>https://OsKaR31415.github.io/blog/posts/philosophie/les_trois_metamorphoses.html</guid>
   <pubDate>Mon, 13 Apr 2026 22:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Quel jeu joues-je ?</title>
   <dc:creator>Oscar Plaisant</dc:creator>
-  <link>https://osk42.quarto.pub/posts/poesie/quel_jeu_joues-je.html</link>
+  <link>https://OsKaR31415.github.io/blog/posts/poesie/quel_jeu_joues-je.html</link>
   <description><![CDATA[ 
 
 
@@ -143,13 +143,13 @@
 
  ]]></description>
   <category>poesie</category>
-  <guid>https://osk42.quarto.pub/posts/poesie/quel_jeu_joues-je.html</guid>
+  <guid>https://OsKaR31415.github.io/blog/posts/poesie/quel_jeu_joues-je.html</guid>
   <pubDate>Mon, 01 Dec 2025 23:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Un soir d’hiver</title>
   <dc:creator>Oscar Plaisant</dc:creator>
-  <link>https://osk42.quarto.pub/posts/poesie/un_soir_d_hiver.html</link>
+  <link>https://OsKaR31415.github.io/blog/posts/poesie/un_soir_d_hiver.html</link>
   <description><![CDATA[ 
 
 
@@ -170,12 +170,12 @@
 
  ]]></description>
   <category>poesie</category>
-  <guid>https://osk42.quarto.pub/posts/poesie/un_soir_d_hiver.html</guid>
+  <guid>https://OsKaR31415.github.io/blog/posts/poesie/un_soir_d_hiver.html</guid>
   <pubDate>Sat, 04 Oct 2025 22:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Aphorismes et textes courts — hiver 2025</title>
-  <link>https://osk42.quarto.pub/posts/autres/aphorismes_1.html</link>
+  <link>https://OsKaR31415.github.io/blog/posts/autres/aphorismes_1.html</link>
   <description><![CDATA[ 
 
 
@@ -205,13 +205,13 @@
  ]]></description>
   <category>aphorisme</category>
   <category>réflexion</category>
-  <guid>https://osk42.quarto.pub/posts/autres/aphorismes_1.html</guid>
+  <guid>https://OsKaR31415.github.io/blog/posts/autres/aphorismes_1.html</guid>
   <pubDate>Tue, 30 Sep 2025 22:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Poème de rentrée</title>
   <dc:creator>Oscar Plaisant</dc:creator>
-  <link>https://osk42.quarto.pub/posts/poesie/Poeme_de_rentree.html</link>
+  <link>https://OsKaR31415.github.io/blog/posts/poesie/Poeme_de_rentree.html</link>
   <description><![CDATA[ 
 
 
@@ -226,12 +226,12 @@
 
  ]]></description>
   <category>poesie</category>
-  <guid>https://osk42.quarto.pub/posts/poesie/Poeme_de_rentree.html</guid>
+  <guid>https://OsKaR31415.github.io/blog/posts/poesie/Poeme_de_rentree.html</guid>
   <pubDate>Sun, 31 Aug 2025 22:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Les disques vinyles</title>
-  <link>https://osk42.quarto.pub/posts/autres/disques_vinyles_et_rapport_a_la_musique.html</link>
+  <link>https://OsKaR31415.github.io/blog/posts/autres/disques_vinyles_et_rapport_a_la_musique.html</link>
   <description><![CDATA[ 
 
 
@@ -265,12 +265,12 @@
 
  ]]></description>
   <category>réflexion</category>
-  <guid>https://osk42.quarto.pub/posts/autres/disques_vinyles_et_rapport_a_la_musique.html</guid>
+  <guid>https://OsKaR31415.github.io/blog/posts/autres/disques_vinyles_et_rapport_a_la_musique.html</guid>
   <pubDate>Sat, 16 Aug 2025 22:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Sur le désir, le manque et le frustration amoureuse</title>
-  <link>https://osk42.quarto.pub/posts/philosophie/Sur le désir, le manque et la frustration amoureuse.html</link>
+  <link>https://OsKaR31415.github.io/blog/posts/philosophie/Sur le désir, le manque et la frustration amoureuse.html</link>
   <description><![CDATA[ 
 
 
@@ -310,7 +310,7 @@
 
  ]]></description>
   <category>philosophie</category>
-  <guid>https://osk42.quarto.pub/posts/philosophie/Sur le désir, le manque et la frustration amoureuse.html</guid>
+  <guid>https://OsKaR31415.github.io/blog/posts/philosophie/Sur le désir, le manque et la frustration amoureuse.html</guid>
   <pubDate>Sat, 02 Aug 2025 22:00:00 GMT</pubDate>
 </item>
 </channel>
