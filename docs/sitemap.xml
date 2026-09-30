@@ -10,7 +10,7 @@
   </url>
   <url>
     <loc>https://OsKaR31415.github.io/blog/wishlist.html</loc>
-    <lastmod>2026-09-14T22:58:01.014Z</lastmod>
+    <lastmod>2026-09-29T07:21:07.177Z</lastmod>
   </url>
   <url>
     <loc>https://OsKaR31415.github.io/blog/posts/poesie/quel_jeu_joues-je.html</loc>
@@ -19,6 +19,10 @@
   <url>
     <loc>https://OsKaR31415.github.io/blog/posts/poesie/face_aux_feux_du_soleil.html</loc>
     <lastmod>2026-09-07T21:37:29.088Z</lastmod>
+  </url>
+  <url>
+    <loc>https://OsKaR31415.github.io/blog/posts/poesie/&gt;&gt;poesie.html</loc>
+    <lastmod>2026-09-07T21:37:29.087Z</lastmod>
   </url>
   <url>
     <loc>https://OsKaR31415.github.io/blog/posts/poesie/un_soir_d_hiver.html</loc>
@@ -42,7 +46,7 @@
   </url>
   <url>
     <loc>https://OsKaR31415.github.io/blog/posts/maths/desintegration_audioactive.html</loc>
-    <lastmod>2026-09-14T22:58:01.006Z</lastmod>
+    <lastmod>2026-09-29T07:21:07.173Z</lastmod>
   </url>
   <url>
     <loc>https://OsKaR31415.github.io/blog/posts/maths/combinaisons_avec_repetitions.html</loc>
@@ -62,7 +66,11 @@
   </url>
   <url>
     <loc>https://OsKaR31415.github.io/blog/posts/news/migration_du_blog.html</loc>
-    <lastmod>2026-09-14T22:58:01.007Z</lastmod>
+    <lastmod>2026-09-29T07:21:07.174Z</lastmod>
+  </url>
+  <url>
+    <loc>https://OsKaR31415.github.io/blog/posts/politique/doomers_et_antidoomers.html</loc>
+    <lastmod>2026-09-30T23:47:07.906Z</lastmod>
   </url>
   <url>
     <loc>https://OsKaR31415.github.io/blog/posts/philosophie/&gt;&gt;philosophie.html</loc>
@@ -97,12 +105,12 @@
     <lastmod>2026-09-07T21:37:28.985Z</lastmod>
   </url>
   <url>
-    <loc>https://OsKaR31415.github.io/blog/posts/&gt;&gt;reflexions.html</loc>
-    <lastmod>2026-09-07T21:37:28.907Z</lastmod>
-  </url>
-  <url>
     <loc>https://OsKaR31415.github.io/blog/posts/informatique/vim tips autocorriger les erreurs.html</loc>
     <lastmod>2026-09-07T21:37:28.987Z</lastmod>
+  </url>
+  <url>
+    <loc>https://OsKaR31415.github.io/blog/posts/&gt;&gt;reflexions.html</loc>
+    <lastmod>2026-09-07T21:37:28.907Z</lastmod>
   </url>
   <url>
     <loc>https://OsKaR31415.github.io/blog/posts/informatique/algo_avancee/algo avancee activite 4.html</loc>
@@ -110,7 +118,7 @@
   </url>
   <url>
     <loc>https://OsKaR31415.github.io/blog/posts/informatique/algo_avancee/algo avancee activite 1.html</loc>
-    <lastmod>2026-09-14T22:58:01.005Z</lastmod>
+    <lastmod>2026-09-29T07:21:07.173Z</lastmod>
   </url>
   <url>
     <loc>https://OsKaR31415.github.io/blog/posts/informatique/terminal btop.html</loc>
@@ -122,7 +130,7 @@
   </url>
   <url>
     <loc>https://OsKaR31415.github.io/blog/posts/philosophie/Le cool.html</loc>
-    <lastmod>2026-09-14T22:58:01.007Z</lastmod>
+    <lastmod>2026-09-29T07:21:07.174Z</lastmod>
   </url>
   <url>
     <loc>https://OsKaR31415.github.io/blog/posts/philosophie/les_trois_metamorphoses.html</loc>
@@ -134,7 +142,7 @@
   </url>
   <url>
     <loc>https://OsKaR31415.github.io/blog/posts/news/je_reprends_mon_blog.html</loc>
-    <lastmod>2026-09-14T22:58:01.006Z</lastmod>
+    <lastmod>2026-09-29T07:21:07.174Z</lastmod>
   </url>
   <url>
     <loc>https://OsKaR31415.github.io/blog/posts/maths/arrangements avec répétitions.html</loc>
@@ -175,10 +183,6 @@
   <url>
     <loc>https://OsKaR31415.github.io/blog/posts/poesie/Poeme_de_rentree.html</loc>
     <lastmod>2026-09-07T21:37:29.088Z</lastmod>
-  </url>
-  <url>
-    <loc>https://OsKaR31415.github.io/blog/posts/poesie/&gt;&gt;poesie.html</loc>
-    <lastmod>2026-09-07T21:37:29.087Z</lastmod>
   </url>
   <url>
     <loc>https://OsKaR31415.github.io/blog/posts/poesie/ma_memoire.html</loc>

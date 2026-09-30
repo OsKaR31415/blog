@@ -4,6 +4,7 @@ categories: [ informatique, réflexions ]
 draft: true
 ---
 
+
 Le week-end dernier, je suis allé à la fête de l'humanité, notamment avec le collectif [IA : Réveillons nous](https://reveillons-nous.org) (qui cherche à lancer une convention citoyenne sur l'intelligence artificielle, notamment par une pétition sur le site du CESE).
 
 Je suis notamment allé à une table ronde / débat autour du sujet de l'Intelligence artificielle (IA).

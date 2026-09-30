@@ -1,5 +1,16 @@
 [
   {
+    "listing": "/posts/poesie/>>poesie.html",
+    "items": [
+      "/posts/poesie/souvenir_revenir_venir.html",
+      "/posts/poesie/quel_jeu_joues-je.html",
+      "/posts/poesie/un_soir_d_hiver.html",
+      "/posts/poesie/Poeme_de_rentree.html",
+      "/posts/poesie/face_aux_feux_du_soleil.html",
+      "/posts/poesie/ma_memoire.html"
+    ]
+  },
+  {
     "listing": "/posts/maths/>>mathematiques.html",
     "items": [
       "/posts/maths/desintegration_audioactive.html",
@@ -48,19 +59,9 @@
     ]
   },
   {
-    "listing": "/posts/poesie/>>poesie.html",
-    "items": [
-      "/posts/poesie/souvenir_revenir_venir.html",
-      "/posts/poesie/quel_jeu_joues-je.html",
-      "/posts/poesie/un_soir_d_hiver.html",
-      "/posts/poesie/Poeme_de_rentree.html",
-      "/posts/poesie/face_aux_feux_du_soleil.html",
-      "/posts/poesie/ma_memoire.html"
-    ]
-  },
-  {
     "listing": "/index.html",
     "items": [
+      "/posts/politique/doomers_et_antidoomers.html",
       "/posts/news/migration_du_blog.html",
       "/posts/maths/desintegration_audioactive.html",
       "/posts/poesie/souvenir_revenir_venir.html",
