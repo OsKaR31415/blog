@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="Liste des poèmes">
+<meta name="author" content="Oscar Plaisant">
 
-<title>Poésie – 0SK42</title>
+<title>Face aux feux du soleil – 0SK42</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -37,8 +37,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<script src="../../site_libs/quarto-listing/list.min.js"></script>
-<script src="../../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
@@ -80,74 +78,16 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Recherche"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 <script data-goatcounter="https://osk42.goatcounter.com/count" async="" src="//gc.zgo.at/count.js"></script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="../../styles.css">
-<meta property="og:title" content="Poésie – 0SK42">
-<meta property="og:description" content="Liste des poèmes">
+<meta property="og:title" content="Face aux feux du soleil – 0SK42">
+<meta property="og:description" content="OSK42 - blog de Maths et d’Informatique">
 <meta property="og:image" content="https://OsKaR31415.github.io/blog/_images/OsKaR.png">
 <meta property="og:site_name" content="0SK42">
-<meta name="twitter:title" content="Poésie – 0SK42">
-<meta name="twitter:description" content="Liste des poèmes">
+<meta name="twitter:title" content="Face aux feux du soleil – 0SK42">
+<meta name="twitter:description" content="OSK42 - blog de Maths et d’Informatique">
 <meta name="twitter:image" content="https://OsKaR31415.github.io/blog/_images/OsKaR.png">
 <meta name="twitter:card" content="summary_large_image">
 </head>
@@ -414,24 +354,30 @@ window.Quarto = {
 <!-- content -->
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page-left">
-      <h1 class="title">Poésie</h1>
-                  <div>
-        <div class="description">
-          Liste des poèmes
-        </div>
-      </div>
-                          <div class="quarto-categories">
+    <div class="quarto-title column-page">
+      <h1 class="title">Face aux feux du soleil</h1>
+                                <div class="quarto-categories">
                 <div class="quarto-category">poesie</div>
-                <div class="quarto-category">index</div>
               </div>
                   </div>
   </div>
     
   
-  <div class="quarto-title-meta column-page-left">
+  <div class="quarto-title-meta column-page">
 
+      <div>
+      <div class="quarto-title-meta-heading">Auteur·rice</div>
+      <div class="quarto-title-meta-contents">
+               <p>Oscar Plaisant </p>
+            </div>
+    </div>
       
+      <div>
+      <div class="quarto-title-meta-heading">Date de publication</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">23 juin 2025</p>
+      </div>
+    </div>
     
       
     </div>
@@ -440,130 +386,25 @@ window.Quarto = {
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-    <h5 class="quarto-listing-category-title">Catégories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">Toutes <span class="quarto-category-count">(7)</span></div><div class="category" data-category="cG9lc2ll">poesie <span class="quarto-category-count">(7)</span></div></div></div>
+    
 <!-- main -->
-<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
+<main class="content quarto-banner-title-block column-page" id="quarto-document-content">
 
 
 
 
 
 
-<section id="liste-des-poèmes" class="level1">
-<h1>Liste des poèmes</h1>
+<p>Face aux feux du soleil<br> Brûlant de tes regards<br> Me perdant dans ton œil<br> Je sens comme un départ</p>
+<p>De bûcher dans la nuit<br> Qui fait rougir mes joues<br> Et mon courage s’enfuit<br> À chaque rendez-vous</p>
+<p>Les bancs du bord de Loire<br> Parenthèses de calme<br> Dans nos ballades le soir<br> Douce assise où j’empalme</p>
+<p>Tes mains comme des perles<br> Façonnées par l’orfèvre<br> Dont la grâce déferle<br> Sur ma peau puis tes lèvres</p>
+<p>Qui livrent le foyer<br> Enfanteur de ma fièvre<br> Œuvre d’un joaillier<br> Les reflets qu’elles me servent</p>
+<p>Attisent mon ardeur<br> Et font vibrer mon cœur<br> D’une nouvelle couleur<br> Maintenant j’ai si peur<br></p>
 
 
 
-</section>
-
-<div class="quarto-listing quarto-listing-container-table" id="listing-listing">
-<div class="listing-actions-group">
-   <div class="input-group input-group-sm quarto-listing-sort">
-    <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
-    <select id="listing-listing-sort" class="form-select" aria-label="Trier par" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
-      <option value="" disabled="" selected="" hidden="">Trier par</option>
-      <option value="index" data-direction="asc">Ordre par défaut</option>
-      <option value="listing-title-sort" data-direction="asc">
-        Titre
-      </option>
-    </select>
-  </div>
-    <div class="input-group input-group-sm quarto-listing-filter">
-      <span class="input-group-text"><i class="bi bi-search"></i></span>
-      <input type="text" class="search form-control" placeholder="Filtre">
-    </div>
-</div>
-<table class="quarto-listing-table table">
-<thead>
-<tr>
-
-<th>
-<a class="sort" data-sort="listing-title-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Titre</a>
-</th>
-
-<th>
-description
-</th>
-
-</tr>
-</thead>
-<tbody class="list">
-
-<tr data-index="0" data-categories="cG9lc2ll" data-listing-date-sort="1776636000000" data-listing-file-modified-sort="1790815393310" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="55" data-listing-title-sort="Souvenir, revenir, venir" data-listing-filename-sort="souvenir_revenir_venir.qmd">
-<td>
-<a href="../../posts/poesie/souvenir_revenir_venir.html" class="title listing-title">Souvenir, revenir, venir</a>
-</td>
-<td>
-<span class="listing-description">Souvenir, revenir venir<br> Virée verra reverra rivière<br> Rivière revue, rêverie ravie<br></span>
-</td>
-
-</tr>
-
-<tr data-index="1" data-categories="cG9lc2ll" data-listing-date-sort="1764630000000" data-listing-file-modified-sort="1790815393310" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="146" data-listing-title-sort="Quel jeu joues-je ?" data-listing-filename-sort="quel_jeu_joues-je.qmd">
-<td>
-<a href="../../posts/poesie/quel_jeu_joues-je.html" class="title listing-title">Quel jeu joues-je ?</a>
-</td>
-<td>
-<span class="listing-description">– suis moi</span>
-</td>
-
-</tr>
-
-<tr data-index="2" data-categories="cG9lc2ll" data-listing-date-sort="1759615200000" data-listing-file-modified-sort="1790815393312" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="94" data-listing-title-sort="Un soir d'hiver" data-listing-filename-sort="un_soir_d_hiver.qmd">
-<td>
-<a href="../../posts/poesie/un_soir_d_hiver.html" class="title listing-title">Un soir d’hiver</a>
-</td>
-<td>
-<span class="listing-description">Un soir<br> D’hiver<br> Un bar<br> Couvert<br></span>
-</td>
-
-</tr>
-
-<tr data-index="3" data-categories="cG9lc2ll" data-listing-date-sort="1756677600000" data-listing-file-modified-sort="1790815393309" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="54" data-listing-title-sort="Poème de rentrée" data-listing-filename-sort="Poeme_de_rentree.qmd">
-<td>
-<a href="../../posts/poesie/Poeme_de_rentree.html" class="title listing-title">Poème de rentrée</a>
-</td>
-<td>
-<span class="listing-description">Les yeux coulants sur l’altérité diverse<br> Le regard fuyant sur cette petite foule qui disperse<br> Des tappotements<br> Sur des écrans luisants<br> Dans la douce peinombre des néons…<br><br><br></span>
-</td>
-
-</tr>
-
-<tr data-index="4" data-categories="cG9lc2ll" data-listing-date-sort="1750629600000" data-listing-file-modified-sort="1790815393309" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="80" data-listing-title-sort="Face aux feux du soleil" data-listing-filename-sort="poeme_cadeau_balle.qmd">
-<td>
-<a href="../../posts/poesie/poeme_cadeau_balle.html" class="title listing-title">Face aux feux du soleil</a>
-</td>
-<td>
-<span class="listing-description">Face aux feux du soleil<br> Brûlant de tes regards<br> Me perdant dans ton œil<br> Je sens comme un départ</span>
-</td>
-
-</tr>
-
-<tr data-index="5" data-categories="cG9lc2ll" data-listing-date-sort="1750629600000" data-listing-file-modified-sort="1790823849659" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="81" data-listing-title-sort="Face aux feux du soleil" data-listing-filename-sort="face_aux_feux_du_soleil.qmd">
-<td>
-<a href="../../posts/poesie/face_aux_feux_du_soleil.html" class="title listing-title">Face aux feux du soleil</a>
-</td>
-<td>
-<span class="listing-description">Face aux feux du soleil<br> Brûlant de tes regards<br> Me perdant dans ton œil<br> Je sens comme un départ</span>
-</td>
-
-</tr>
-
-<tr data-index="6" data-categories="cG9lc2ll" data-listing-date-sort="1744149600000" data-listing-file-modified-sort="1790815393310" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="224" data-listing-title-sort="Ma mémoire" data-listing-filename-sort="ma_memoire.qmd">
-<td>
-<a href="../../posts/poesie/ma_memoire.html" class="title listing-title">Ma mémoire</a>
-</td>
-<td>
-<span class="listing-description">Quelquefois, le soir, dans le tram, sous la lumière blanche qui s’attache aux couleurs insomniaques, le vent siffle soufflant un son sérieux d’introspection; et le trop…</span>
-</td>
-
-</tr>
-
-</tbody>
-</table>
-<div class="listing-no-matching d-none">Aucun article correspondant</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     // Ensure there is a toggle, if there isn't float one in the top right
