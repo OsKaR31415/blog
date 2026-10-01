@@ -3,3 +3,6 @@ env/
 **/.*.icloud
 
 **/*.quarto_ipynb
+
+/env/
+/.quarto/

@@ -4,6 +4,7 @@ subtitle: ""
 author: "Oscar Plaisant"
 date: 2026-10-01
 categories: [réflexions, politique]
+draft: true
 ---
 
 test
