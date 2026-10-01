@@ -1,13 +1,13 @@
 ---
 title: "Débat sur l'IA à la fête de l'humanité 2026"
 categories: [ informatique, réflexions ]
-draft: true
+date: 2026-09-15
 ---
 
 
 Le week-end dernier, je suis allé à la fête de l'humanité, notamment avec le collectif [IA : Réveillons nous](https://reveillons-nous.org) (qui cherche à lancer une convention citoyenne sur l'intelligence artificielle, notamment par une pétition sur le site du CESE).
 
-Je suis notamment allé à une table ronde / débat autour du sujet de l'Intelligence artificielle (IA).
+Je suis notamment allé à une table ronde / débat autour du sujet de l'intelligence artificielle (IA).
 Voici ce que j'en ai retenu.
 
 En plus d'une dame distribuant la parole, 4 personnes étaient présentes sur scène :
@@ -16,6 +16,15 @@ En plus d'une dame distribuant la parole, 4 personnes étaient présentes sur sc
  - une représentante de la CGT (syndicat)
  - un représentant du PCF (parti communiste français), notamment du groupe de travail sur le numérique
  - un sénateur du nord, affilié au PCF (Alexandre Basquin)
+
+::: {.callout-note collapse=true}
+# usage du terme « IA »
+
+Lorsque, ici, j'utilise le terme « IA », pour dire « intelligence artificielle », je veux la plupart du temps parler des technologies d'intelligence artificielle générative (IAg). J'utilise ce terme et cette signification du terme à la fois car c'est l'usage qui me semble répandu, et car c'est aussi l'usage qui était fait par les intervenant·es dont je parle.
+
+Je connais et comprends les distinctions et recoupements entre IA symbolique/système expert, IA connectiviste, IA générative, grands modèles de langage... Je choisis ici de simplifier le vocabulaire à la fois pour faire apparaître la faiblesse des connaissances techniques des intervenant·es, et pour garder l'article accessible.
+:::
+
 
 # Le technophile
 
@@ -44,7 +53,7 @@ Quelles sont, alors, les propositions de la CGT ?
      - un droit à être consulté et à décider des modalités d'usage des IAs. La proposition est intéressante (je suis, de manière générale, toujours pour que les travailleur·euses puissent décider un maximum), je note tout de même une difficulté d'application lorsque le résultat d'une IA est indistinguable de celui d'un humain (ce qui est déjà principalement le cas pour le texte et la musique, et en passe d'être le cas pour l'image et la vidéo).
 
 # Le communiste
-J'étais fort déçu de voir l'état des réflexions de la commission numérique du PCF. Plus encore par le développement de ce représentant en particulier. D'une manière général, son discours mêlait des appels à ne pas considérer les choses indivuduellement ou localement, suivies de propositions locales ou individuelles — j'y vois une instance de ces éléments rituels des prises de paroles à l'extrême gauche, où l'appel à penser les choses structurellement et non individuellement n'est plus une ligne directrice mais une litanie qui sert à se donner une image de gauche, et à s'attirer les faveurs du public.
+J'étais fort déçu de voir l'état des réflexions de la commission numérique du PCF. Plus encore par le développement de ce représentant en particulier. D'une manière général, son discours mêlait des appels à ne pas considérer les choses individuellement ou localement, suivies de propositions locales ou individuelles — j'y vois une instance de ces éléments rituels des prises de paroles à l'extrême gauche, où l'appel à penser les choses structurellement et non individuellement n'est plus une ligne directrice mais une litanie qui sert à se donner une image de gauche, et à s'attirer les faveurs du public.
 Son analyse du travail : « ce ne sont pas les IA qui suppriment des emplois, ce sont les patrons qui suppriment des emplois au nom de l'IA ». Je tiens à souligner à quel point cette phrase qui semble revendicative (et prononcée comme telle) est vide, en la transposant par analogie : « Ce n'est pas l'industrialisation qui à supprimé des emplois, ce sont les patrons qui ont supprimé des emplois au nom de l'industrialisation. ». L'analogie n'est pas parfaite mais je trouve qu'elle fait apparaître le trou dans cette pensée.
 
 Outre la mention de l'IA comme outil de créativité, qui pourrait permettre 
@@ -52,7 +61,27 @@ Outre la mention de l'IA comme outil de créativité, qui pourrait permettre
 
 
 # Le vrai communiste (enfin)
-C'est M. Alexandre Basquin qui, même s'il était minoritaire dans cette discussion, à su apporter une réflexion à mon avis plus digne, plus ancrée dans la réalité et n'ignorant pas les problèmes dans une fuite en avant techno-solutionniste.
+
+C'est M. Alexandre Basquin qui, même s'il était minoritaire dans cette discussion, à su apporter une réflexion à mon avis plus digne, plus ancrée dans la réalité et n'ignorant pas les problèmes dans une fuite en avant techno-solutionniste : effectivement, le développement de l'IA est problématique pour de nombreuses raisons.
+
+ - La fabrications des modèles d'IA (entrainement) passe par l'exploitation de travailleur·euses de pays 
+ - Le développement des IAs appelle la construction de nouveaux datacenters, ce qui est à la fois problématique pour des questions écologiques, mais également pour des questions de conflits d'usage : leur installation est néfaste pour les populations locales (pollution sonore, pollution aquatique...)
+ - L'IA va détruire des emplois. C'est le but affiché non seulement par les personnes qui construisent ces technologies, mais aussi par toute une partie des technophiles (dont des patrons et des cadres qui mettent déjà en application ce remplacement par l'IA)
+ - Les personnes qui dirigent le développement des IAs ont une idéologie précise (les « lumières sombres » autour de Peter Thiel, le longtermisme...) qui glace franchement le sang
+ - L'IA risque fort de créer une dépendance, et en dernière analyse une aliénation :
+     - une dépendance cognitive (on oublie — voire on apprend jamais — comment faire ce que l'on délègue à l'IA)
+     - une dépendance affective (pour les personnes qui dialoguent régulièrement avec ces IAs) à des systèmes contrôlés par des entreprises privées
+
+Par ailleurs, M. Basquin lie ces enjeux d'IA *génératives* (notamment de « grands modèles de langages », *large language models*, dits « LLMs ») avec des problèmes déjà présents avec les systèmes d'IA plus anciens, comme ceux utilisés dans les réseaux sociaux (pour recommander du contenu).
+Les réseaux sociaux sont aussi le lieu de la captation d'un grand nombre de données, où tout ce que nous avons publié sert à entraîner des LLMs.
+
+Surtout, le sénateur a apporté une critique qui à mon sens touche très juste sa cible (à savoir, les autres intervenant·es) : l'IA n'est pas régulable et surtout, la « souveraineté numérique » n'est pas possible.
+</br>
+Que l'IA ne soit pas régulable, cela découle surtout du fait qu'elle est un produit d'entreprises à la capitalisation démesurée, derrière lesquelles s'alignent les gouvernements (les « too big to fail ») et qui s'inscrivent dans une dynamique qui rappelle une véritable *course à l'armement* (chaque pays, chaque entreprise, veut éviter d'être en retard sur le développement des modèles les plus puissants).
+</br>
+Que la « souveraineté numérique » ne soit pas possible, cela découle d'abord du simple fait que les chaines de productions qui produisent l'IA sont mondialisées (il est donc matériellement impossible de ne pas dépendre d'autre pays lorsque l'on construit de nouveaux modèles d'IA). 
+
+
 
 
 

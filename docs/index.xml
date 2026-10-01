@@ -39,6 +39,100 @@
   <pubDate>Wed, 30 Sep 2026 22:00:00 GMT</pubDate>
 </item>
 <item>
+  <title>Débat sur l’IA à la fête de l’humanité 2026</title>
+  <link>https://OsKaR31415.github.io/blog/posts/politique/debat_IA_fete_de_lhumanite_2026.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+
+<p>Le week-end dernier, je suis allé à la fête de l’humanité, notamment avec le collectif <a href="https://reveillons-nous.org">IA : Réveillons nous</a> (qui cherche à lancer une convention citoyenne sur l’intelligence artificielle, notamment par une pétition sur le site du CESE).</p>
+<p>Je suis notamment allé à une table ronde / débat autour du sujet de l’intelligence artificielle (IA). Voici ce que j’en ai retenu.</p>
+<p>En plus d’une dame distribuant la parole, 4 personnes étaient présentes sur scène :</p>
+<ul>
+<li>un enseignant en école d’ingénieurs, présenté comme le plus spécialiste sur les aspects techniques</li>
+<li>une représentante de la CGT (syndicat)</li>
+<li>un représentant du PCF (parti communiste français), notamment du groupe de travail sur le numérique</li>
+<li>un sénateur du nord, affilié au PCF (Alexandre Basquin)</li>
+</ul>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>usage du terme « IA »
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Lorsque, ici, j’utilise le terme « IA », pour dire « intelligence artificielle », je veux la plupart du temps parler des technologies d’intelligence artificielle générative (IAg). J’utilise ce terme et cette signification du terme à la fois car c’est l’usage qui me semble répandu, et car c’est aussi l’usage qui était fait par les intervenant·es dont je parle.</p>
+<p>Je connais et comprends les distinctions et recoupements entre IA symbolique/système expert, IA connectiviste, IA générative, grands modèles de langage… Je choisis ici de simplifier le vocabulaire à la fois pour faire apparaître la faiblesse des connaissances techniques des intervenant·es, et pour garder l’article accessible.</p>
+</div>
+</div>
+</div>
+<section id="le-technophile" class="level1">
+<h1>Le technophile</h1>
+<p>Notre spécialiste des questions techniques était technophile (malheureusement ? évidemment ?). Il a présenté les avancées en IA comme utiles :</p>
+<ul>
+<li>pour la recherche scientifique (trouver de nouvelles molécules pour des médicaments, analyser des données astrophysiques)</li>
+<li>pour filtrer la « surcharge informationnelle », c’est-à-dire nous aider à résumer et trier le flot trop important d’information qui nous atteignent</li>
+<li>pour augmenter la productivité</li>
+</ul>
+<p>Le plus prévisible : la vision de « course à l’IA » (comme une course à l’armement technologique), dans laquelle les États-Unis et la Chine vont lancer des « armées de doctorants armés d’IA » (notre technophile étant tout joyeux d’annoncer que les modèles actuels sont aussi bons et plus rapides que ses doctorants). La remarque aurait appelé à pointer du doigt l’aspect très productiviste de beaucoup de sciences actuellement, où la quantité d’articles publiés devient un but (pour attirer les financements, finir par être publié dans une revue prestigieuse, ou enfin obtenir un résultat spectaculaire qui forgera une réputation). Cette tendance pourrait même explique en partie une « <a href="https://fr.wikipedia.org/wiki/Crise_de_la_reproductibilit%C3%A9#Causes">crise de la reproducibilité</a> » observée dans certains champs scientifiques.</p>
+<p>Il a également resservi le poncif habituel : l’IA « ni intelligente, ni artificielle » :</p>
+<ul>
+<li>pas intelligente car l’IA ne serait « que des calculs de probabilités qui veulent faire plaisir aux utilisateurs ». Comment peut on dire en même temps que les IA sont au niveau de doctorant·es et qu’elles ne sont pas intelligentes ? Sûrement en posant des définitions de l’intelligence qui nous arrangent — un mouvement intellectuel qui à servi à disqualifier les femmes (en incluant des traits masculins dans l’intelligence), les colonisé·es (en définissant l’intelligence sur les standards de la société colonisatrice), les handicapés etc. — pour préserver à tout prix sa supériorité. A la fin, qu’elle soit intelligente ou non, elle peut réaliser des tâches qui, pour les humains, requièrent un grand niveau de savoir, d’expertise, de réflexion… Bref, l’IA est très forte, pourquoi vouloir minimiser ?</li>
+<li>pas artificielle car elle est matérielle : serveurs dans des datacenters, puces (et leurs usines de production)… Tout cela n’est pas virtuel, et des conflits d’usage se produisent déjà : utilisation de l’eau, implantation des datacenters, usage énergétique… Autant d’impacts sur notre monde. Je suis d’accord avec cette constatation que les autres intervenant·es ont complétée (je remarque simplement qu’il ne s’agit pas de dire que l’IA n’est pas artificielle, mais qu’elle n’est pas immatérielle, mais acceptons, par charité, de tordre le sens du mot pour la beauté de la formule).</li>
+</ul>
+</section>
+<section id="la-syndicaliste" class="level1">
+<h1>La syndicaliste</h1>
+<p><em>Le MEDEF affirme que l’IA signe peut être la fin du « diplôme à vie », s’inscrivant dans la politique plus large de sape des diplômes par le MEDEF</em>. Une très bonne critique ! Quelles sont, alors, les propositions de la CGT ?</p>
+<ul>
+<li>Un encadrement de l’IA. La formule est lancée plusieurs fois mais sans jamais dire précisément ce qu’il faudrait encadrer, comment décider de ce cadre, et comment l’appliquer. L’expression finit par sonner comme une phrase qui ne dit rien mais qui sonne bien et ne coûte rien à dire.</li>
+<li>des droits pour les travailleur·euses, à savoir :
+<ul>
+<li>un droit à l’information sur la fabrication des IAs (données utilisées, méthodologies…). J’abonde en ce sens, même si c’est une mesure faible.</li>
+<li>un droit à être consulté et à décider des modalités d’usage des IAs. La proposition est intéressante (je suis, de manière générale, toujours pour que les travailleur·euses puissent décider un maximum), je note tout de même une difficulté d’application lorsque le résultat d’une IA est indistinguable de celui d’un humain (ce qui est déjà principalement le cas pour le texte et la musique, et en passe d’être le cas pour l’image et la vidéo).</li>
+</ul></li>
+</ul>
+</section>
+<section id="le-communiste" class="level1">
+<h1>Le communiste</h1>
+<p>J’étais fort déçu de voir l’état des réflexions de la commission numérique du PCF. Plus encore par le développement de ce représentant en particulier. D’une manière général, son discours mêlait des appels à ne pas considérer les choses individuellement ou localement, suivies de propositions locales ou individuelles — j’y vois une instance de ces éléments rituels des prises de paroles à l’extrême gauche, où l’appel à penser les choses structurellement et non individuellement n’est plus une ligne directrice mais une litanie qui sert à se donner une image de gauche, et à s’attirer les faveurs du public. Son analyse du travail : « ce ne sont pas les IA qui suppriment des emplois, ce sont les patrons qui suppriment des emplois au nom de l’IA ». Je tiens à souligner à quel point cette phrase qui semble revendicative (et prononcée comme telle) est vide, en la transposant par analogie : « Ce n’est pas l’industrialisation qui à supprimé des emplois, ce sont les patrons qui ont supprimé des emplois au nom de l’industrialisation. ». L’analogie n’est pas parfaite mais je trouve qu’elle fait apparaître le trou dans cette pensée.</p>
+<p>Outre la mention de l’IA comme outil de créativité, qui pourrait permettre</p>
+</section>
+<section id="le-vrai-communiste-enfin" class="level1">
+<h1>Le vrai communiste (enfin)</h1>
+<p>C’est M. Alexandre Basquin qui, même s’il était minoritaire dans cette discussion, à su apporter une réflexion à mon avis plus digne, plus ancrée dans la réalité et n’ignorant pas les problèmes dans une fuite en avant techno-solutionniste : effectivement, le développement de l’IA est problématique pour de nombreuses raisons.</p>
+<ul>
+<li>La fabrications des modèles d’IA (entrainement) passe par l’exploitation de travailleur·euses de pays</li>
+<li>Le développement des IAs appelle la construction de nouveaux datacenters, ce qui est à la fois problématique pour des questions écologiques, mais également pour des questions de conflits d’usage : leur installation est néfaste pour les populations locales (pollution sonore, pollution aquatique…)</li>
+<li>L’IA va détruire des emplois. C’est le but affiché non seulement par les personnes qui construisent ces technologies, mais aussi par toute une partie des technophiles (dont des patrons et des cadres qui mettent déjà en application ce remplacement par l’IA)</li>
+<li>Les personnes qui dirigent le développement des IAs ont une idéologie précise (les « lumières sombres » autour de Peter Thiel, le longtermisme…) qui glace franchement le sang</li>
+<li>L’IA risque fort de créer une dépendance, et en dernière analyse une aliénation :
+<ul>
+<li>une dépendance cognitive (on oublie — voire on apprend jamais — comment faire ce que l’on délègue à l’IA)</li>
+<li>une dépendance affective (pour les personnes qui dialoguent régulièrement avec ces IAs) à des systèmes contrôlés par des entreprises privées</li>
+</ul></li>
+</ul>
+<p>Par ailleurs, M. Basquin lie ces enjeux d’IA <em>génératives</em> (notamment de « grands modèles de langages », <em>large language models</em>, dits « LLMs ») avec des problèmes déjà présents avec les systèmes d’IA plus anciens, comme ceux utilisés dans les réseaux sociaux (pour recommander du contenu). Les réseaux sociaux sont aussi le lieu de la captation d’un grand nombre de données, où tout ce que nous avons publié sert à entraîner des LLMs.</p>
+<p>Surtout, le sénateur a apporté une critique qui à mon sens touche très juste sa cible (à savoir, les autres intervenant·es) : l’IA n’est pas régulable et surtout, la « souveraineté numérique » n’est pas possible. <br> Que l’IA ne soit pas régulable, cela découle surtout du fait qu’elle est un produit d’entreprises à la capitalisation démesurée, derrière lesquelles s’alignent les gouvernements (les « too big to fail ») et qui s’inscrivent dans une dynamique qui rappelle une véritable <em>course à l’armement</em> (chaque pays, chaque entreprise, veut éviter d’être en retard sur le développement des modèles les plus puissants). <br> Que la « souveraineté numérique » ne soit pas possible, cela découle d’abord du simple fait que les chaines de productions qui produisent l’IA sont mondialisées (il est donc matériellement impossible de ne pas dépendre d’autre pays lorsque l’on construit de nouveaux modèles d’IA).</p>
+
+
+</section>
+
+ ]]></description>
+  <category>informatique</category>
+  <category>réflexions</category>
+  <guid>https://OsKaR31415.github.io/blog/posts/politique/debat_IA_fete_de_lhumanite_2026.html</guid>
+  <pubDate>Mon, 14 Sep 2026 22:00:00 GMT</pubDate>
+</item>
+<item>
   <title>Le blog change d’adresse</title>
   <link>https://OsKaR31415.github.io/blog/posts/news/migration_du_blog.html</link>
   <description><![CDATA[ 
@@ -235,14 +329,6 @@
   <category>réflexion</category>
   <guid>https://OsKaR31415.github.io/blog/posts/autres/aphorismes_1.html</guid>
   <pubDate>Tue, 30 Sep 2025 22:00:00 GMT</pubDate>
-</item>
-<item>
-  <title></title>
-  <link>https://OsKaR31415.github.io/blog/posts/philosophie/de-l-interet-des-lectures-collectives-de-philosophie.html</link>
-  <description><![CDATA[ undefined ]]></description>
-  <category>philosophie</category>
-  <guid>https://OsKaR31415.github.io/blog/posts/philosophie/de-l-interet-des-lectures-collectives-de-philosophie.html</guid>
-  <pubDate>Sun, 14 Sep 2025 22:00:00 GMT</pubDate>
 </item>
 </channel>
 </rss>
