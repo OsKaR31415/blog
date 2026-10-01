@@ -1,5 +1,6 @@
 ---
 title: "Débat sur l'IA à la fête de l'humanité 2026"
+description: "Mais qu'est-ce-qu'il s'est il donc dit sur l'IA à la fête de l'huma ? (plus un peu mon opinion)"
 categories: [ informatique, réflexions ]
 date: 2026-09-15
 ---
@@ -79,8 +80,12 @@ Surtout, le sénateur a apporté une critique qui à mon sens touche très juste
 </br>
 Que l'IA ne soit pas régulable, cela découle surtout du fait qu'elle est un produit d'entreprises à la capitalisation démesurée, derrière lesquelles s'alignent les gouvernements (les « too big to fail ») et qui s'inscrivent dans une dynamique qui rappelle une véritable *course à l'armement* (chaque pays, chaque entreprise, veut éviter d'être en retard sur le développement des modèles les plus puissants).
 </br>
-Que la « souveraineté numérique » ne soit pas possible, cela découle d'abord du simple fait que les chaines de productions qui produisent l'IA sont mondialisées (il est donc matériellement impossible de ne pas dépendre d'autre pays lorsque l'on construit de nouveaux modèles d'IA). 
+Que la « souveraineté numérique » ne soit pas possible, cela découle d'abord du simple fait que les chaines de productions qui produisent l'IA sont mondialisées (il est donc matériellement impossible de ne pas dépendre d'autre pays lorsque l'on construit de nouveaux modèles d'IA) — c'est ce que M.Basquin à mentionné. Mais un autre argument me vient à l'esprit : lorsque l'on parle de « souveraineté numérique » en France, on essaie souvent en réalité de cacher des partenariats franco-étatsuniens : la souveraineté n'est qu'une façade pour faire avaler la pilule d'une colonisation technologique (une façade avec un drôle de goût nationaliste par ailleurs) — c'est en tout cas ma compréhension des choses.
 
+
+# Conclusion
+
+On est mal barrés mais on est pas non plus seuls !
 
 
 
