@@ -1,6 +1,5 @@
-/env/
-/.quarto/
-*.html
+env/
+.quarto/
 **/.*.icloud
 
 **/*.quarto_ipynb
